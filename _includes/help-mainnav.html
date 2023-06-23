@@ -1,0 +1,189 @@
+<div class="help-mainnav">
+	<div class="container" id="helpHeader">
+		<div class="row">
+			<div class="col-xs-12 col-lg-10">
+				<nav class="navbar-collapse menu" id="menu2" aria-expanded="true">
+					<ul class="nav navbar-nav">
+						<li
+							{% if(page.userRole == "Getting Started")  %}
+							class="open"
+							{% endif %}
+						>
+						<a href="/help/getting-started/{{defaultCategoryGettingStarted || slugify}}/index.html" title="Getting Started">
+							<img class="icon" src="/assets/imgs/icons/getting-started.svg" alt="Getting Started"/>
+							<span class="d-block">Getting Started</span>
+						</a>
+						</li>
+						<li
+							{% if(page.userRole == "Administrator")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/administrator/{{defaultCategoryAdministrator || slugify}}/index.html" title="Administrator">
+								<img class="icon" src="/assets/imgs/icons/icon-admin.svg" alt="Administrator"/>
+								<span class="d-block">Administrator</span>
+							</a>
+						</li>
+						<li {% if(page.userRole == "Creator")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/creator/{{defaultCategoryCreator || slugify}}/index.html" title="Creator">
+								<i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+								<span class="d-block">Creator</span>
+							</a>
+						</li>
+						<li
+							{% if(page.userRole == "Reviewer")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/reviewer/{{defaultCategoryReviewer || slugify}}/index.html" title="Reviewer">
+								<img class="icon" src="/assets/imgs/icons/icon-reviewer.svg" alt="Reviewer"/>
+								<span class="d-block">Reviewer</span>
+							</a>
+						</li>
+						<!-- <li {% if(page.userRole == "Contributor")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/contributor/{{defaultCategoryContributor || slugify}}/index.html" title="Contributor">
+								<img class="icon" src="/images/icons/contributor.svg" alt="Contributor"/>
+								<span class="d-block">Contributor</span>
+							</a>
+						</li>-->
+						<li
+							{% if(page.userRole == "Energised Textbooks")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/energised-textbooks/{{defaultCategoryEnergisedTextbooks || slugify}}/index.html" title="Energised Textbooks">
+								<img class="icon" src="/assets/imgs/icons/energised-textbooks.svg" alt="Energised Textbooks" />
+								<span class="d-block">Energised Textbooks</span>
+							</a>
+						</li>
+						<li
+							{% if(page.userRole == "Courses")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/courses/{{defaultCategoryCourses || slugify}}/index.html" title="Courses">
+								<img class="icon" src="/assets/imgs/icons/courses.svg" alt="Courses" />
+								<span class="d-block">Courses</span>
+							</a>
+						</li>
+						<li
+							{% if(page.userRole == "Surveys")  %}
+							class="open"
+							{% endif %}
+						>
+						<a href="/help/surveys/{{defaultCategorySurveys || slugify}}/index.html" title="Surveys">
+							<img class="icon" src="/images/icons/survey.svg" alt="Surveys" />
+							<span class="d-block">Surveys</span>
+						</a>
+						</li>
+						<li
+							{% if(page.userRole == "Observations")  %}
+							class="open"
+							{% endif %}
+						>
+						<a href="/help/observations/{{defaultCategoryObservations || slugify}}/index.html" title="Observations">
+							<img class="icon" src="/images/icons/observation.svg" alt="observations" />
+							<span class="d-block">Observations</span>
+						</a>
+						</li>
+						<li
+						{% if(page.userRole == "Projects")  %}
+						class="open"
+						{% endif %}
+						>
+						<a href="/help/projects/{{defaultCategoryProjects || slugify}}/index.html" title="Projects">
+						<img class="icon" src="/images/icons/project.svg" alt="Projects" />
+						<span class="d-block">Projects</span>
+						</a>
+						</li>
+						<li
+							{% if(page.userRole == "Programs")  %}
+							class="open"
+							{% endif %}
+						>
+						<a href="/help/programs/{{defaultCategoryPrograms || slugify}}/index.html" title="Programs">
+							<img class="icon" src="/images/icons/program.svg" alt="Programs" />
+							<span class="d-block">Programs</span>
+						</a>
+						</li>
+						<!-- <li
+							{% if(page.userRole == "Glossary")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/glossary/index.html" title="Glossary">
+								<img class="icon" src="/assets/imgs/icons/icon-glossary.svg" alt="Glossary" />
+								<span class="d-block">Glossary</span>
+							</a>
+						</li>-->
+						<li
+							{% if(page.userRole == "Release Notes")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/release-notes/index.html" title="Release Notes">
+								<img src="/assets/imgs/icons/icon-release-notes.png" alt="Release Notes" />
+								<span class="d-block">Release Notes</span>
+							</a>
+						</li>
+						<li
+							{% if(page.userRole == "FAQs")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/faqs/{{defaultCategoryFAQS || slugify}}/index.html"  title="FAQs">
+								<img src="/assets/imgs/icons/troubleshooting.svg" alt="FAQs" />
+								<span class="d-block">FAQs</span>
+							</a>
+						</li>
+						<li
+							{% if(page.userRole == "DIKSHA OSS")  %}
+							class="open"
+							{% endif %}
+						>
+							<a href="/help/diksha-oss/index.html"  title="DIKSHA OSS">
+								<img src="/assets/imgs/icons/icon-release-notes.png" alt="DIKSHA OSS" />
+								<span class="d-block">DIKSHA - OSS</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- <div class="col-xs-12 col-lg-2">
+				{% include search.html %}
+			</div> -->
+		</div>
+	</div>
+</div>
+{% if page.userRole == "Glossary" or page.title == "Search" or page.userRole == "Release Notes" or page.userRole == "DIKSHA OSS" %}
+{% else %}
+<div class="help-catnav">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<ul class="nav-tabs nav">
+					{% for categoryNav in categoryNavs %}
+						{% if categoryNav.name != "" %}
+							<li
+								{% if page.category == categoryNav.name %}
+								class="active"
+								{% endif %}
+							>
+								<a href="/help/{{page.userRole || slugify}}/{{categoryNav.name || slugify}}/index.html">
+									{{categoryNav.name}}
+								</a>
+							 </li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+{% endif %}

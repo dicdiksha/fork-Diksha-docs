@@ -1,0 +1,131 @@
+<style>
+    .footer-container {
+        padding: 0px 0px;
+    width: 96% !important;
+    max-width: 96% !important;
+    margin: 2rem auto;
+    }
+    .footer-container label {
+        margin-bottom:0px;
+    }
+    .section-footer {
+        background: var(--section-footer-bg);
+        padding: 2rem 0 2rem;
+        color: var(--white);
+    }
+
+    .section-footer .img-div {
+        width: 80px;
+        padding: 10px;
+        background: var(--white);
+        border-radius: 5px;
+        margin: 0 auto
+    }
+
+    .section-footer .footer-link,
+    .section-footer .dk-copyright-text {
+        font-size: 0.875rem;
+        color: var(--white);
+        text-align: left;
+        border: none;
+        padding: 0 0 0px 0 !important
+    }
+
+    .section-footer .footer-link:hover {
+        text-decoration: underline;
+    }
+
+    .section-footer .footer-app-details .txt {
+        font-size: 0.875rem;
+        text-align: center
+    }
+
+    .section-footer .footer-app-details .txt label {
+        font-weight: 400
+    }
+
+    .section-footer .footer-app-details .app-img {
+        width: 150px;
+        margin: 0 auto
+    }
+
+    .section-footer .footer-app-details .app-img img {
+        border-radius: 5px
+    }
+
+    .section-footer .page-view-count .txt {
+        font-size: 0.875rem
+    }
+
+    .section-footer .page-view-count .count {
+        font-size: 2rem
+    }
+
+    .section-footer .contact-div .contact-txt label {
+        text-align: left;
+        font-size: 0.875rem;
+        font-weight: 400
+    }
+
+    .section-footer .contact-div .contact-txt label .footer-link {
+        padding-bottom: 1px !important
+    }
+
+    .section-footer .contact-div .contact-txt label .footer-link:hover {
+        color: var(--white);
+    }
+
+    .section-footer .contact-div .terms-of-use-txt {
+        text-align: right
+    }
+
+    .section-footer .contact-div .terms-of-use-txt a {
+        cursor: pointer;
+        font-size: 0.875rem;
+        color: var(--white);
+    }
+
+    .section-footer .contact-div .terms-of-use-txt a.disabled {
+        opacity: 1
+    }
+    .footer-link-list{
+        list-style-type: none;
+    }
+    .footer-link-list li a.active {
+        text-decoration: underline;
+    }
+    @media screen and (max-width:990px) {
+        .footer-container {
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .footer-container label {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem;
+        }
+    }
+</style>
+<footer id="footer">
+    <div class="section-footer bg-black" id="sectionFooter">
+        <div class="footer-container d-flex flex-ai-center flex-jc-space-between">
+            <label>
+                Contact for queries: <a class="btn btn-link footer-link px-0" href="mailto:support@teamdiksha.org"
+                    title="support@teamdiksha.org">support@teamdiksha.org</a>
+            </label>
+            <!-- <ul class="footer-link-list d-flex flex-ai-center flex-jc-space-between mobile only p-0 mb-0">
+                <li><a class="footer-link {% if page.url contains 'sitemap' %}active{% endif %}" href="/sitemap.html">Sitemap</a></li>
+                <li class="mx-4">|</li>
+                <li><a class="footer-link {% if page.url contains 'screenreaderaccess' %}active{% endif %}" href="/screenreaderaccess.html">Screen Reader Access</a></li>
+            </ul> -->
+            <div class="terms-of-use-txt d-flex flex-ai-center flex-jc-space-between">
+                <a class="btn btn-link footer-link d-inline-block px-0" tabindex="0" href="/term-of-use.html" target="_self" title="Terms of Use">
+                    Terms and Policies
+                </a>
+                <span>&nbsp;|&nbsp;</span>
+                <span tabindex="0" class="dk-copyright-text">&copy; 2021, DIKSHA</span>
+            </div>
+        </div>
+    </div>
+</footer>

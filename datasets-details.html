@@ -1,0 +1,46 @@
+---
+layout: null
+permalink: /data/datasets/details/
+title: Datasets Details
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="container-fluid relative p-0 {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
+        <header id="header" class="dk-header">
+            {% include dk-header.html %}
+        </header>
+        <article>
+            <div class="growl-notice-fail"></div>
+            <div class="growl-notice-success"></div>
+            <div>
+                {% include catalogue-breadcrumbs.html %}
+                <div id="scrollMainContent"></div>
+                <section class="catalogue-details-section">
+                    <div class="container-fluid sb-g p-0">
+                        <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-8 sb-g-col-xl-9 sb-g-col-xxl-9 sb-g-col-xxxl-9">
+                            {% include catalogue-datasets-details.html %}
+                        </div>
+                        <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-4 sb-g-col-xl-3 sb-g-col-xxl-3 sb-g-col-xxxl-3 pl-15 pr-0 links-section">
+                            {% include catalogue-useful-links.html %}
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </article>
+        <footer id="footer" class="datasets-footer">
+            {% include dk-footer.html %}
+        </footer>
+    </div>
+</body>
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/catalogue-head-min.js?{{site.time | | date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/catalogue-head-min.js?{{site.time | | date: %d%m%Y}}'">
+</script>
+</html>

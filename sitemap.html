@@ -1,0 +1,116 @@
+---
+layout: null
+title: Sitemap
+---
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include head.html %}
+    <style>
+        .site-map,
+        .screenreader {
+            margin: 0 auto;
+            min-height: calc(100vh - 228px);
+            padding: 2rem 2rem 2rem 1rem;
+        }
+
+        .ul-sitemap, .ul-sitemap ul {
+            font-size: 0.875rem;
+        }
+
+        .ul-sitemap li {
+            margin: 0.5rem 0px;
+            
+        }
+
+        .ul-sitemap li a:hover {
+            text-decoration: underline;
+        }
+
+        .parent {
+            list-style-type: disc;
+        }
+
+        .parent-links {
+            color: var(--black);
+        }
+
+        .page-title {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        .sb-btn:focus{
+            outline: none;
+        }
+        @media screen and (max-width:990px){
+            .site-map, .screenreader{
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid relative p-0">
+        <div id="header">
+            {% include global-header.html %}
+        </div>
+        <div class="container site-map">
+            <button type="button" class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn" onclick="history.back()" title="Go Back"><i class="arrow left"></i> Go Back</button>
+            <div id="scrollMainContent"></div>
+            <h1 class="page-title mb-24 d-flex">Site Map</h1>
+            <ul class="ul-sitemap text-left">
+                {% for nav in site.data.nav.items %}
+                <li>
+                    <a href="{{site.baseurl}}/{{nav.url}}" title="{{nav.title}}">
+                        <span>{{nav.title}}</span>
+                    </a>
+                </li>
+                {% endfor %}
+                </li>
+                <!-- <li><a href="/help/getting-started/explore-diksha/index.html"
+                        title="Help Center">Help Center</a></li> -->
+                <li><a href="/screenreader.html"
+                        title="Accessibility Corner">Accessibility Corner</a></li>
+                <li class="parent">Access Content
+                    <ul id="loggedinUser" class="hide">
+                        <li><a href="/resources?selectedTab=textbook" title="Digital textbooks">Digital textbooks</a></li>
+                        <li><a href="/learn?selectedTab=course" title="Courses">Courses</a></li>
+                        <li><a href="/resources?selectedTab=tvProgram" title="TV classes">TV classes</a></li>
+                        <li><a href="/resources/1?selectedTab=all" title="All contents">All contents</a></li>
+                    </ul>
+                    <ul id="nonloggedinUser" class="hide">
+                        <li><a href="/explore?selectedTab=textbook" title="Digital textbooks">Digital textbooks</a></li>
+                        <li><a href="/explore?selectedTab=course" title="Courses">Courses</a></li>
+                        <li><a href="/explore?selectedTab=tvProgram" title="TV classes">TV classes</a></li>
+                        <li><a href="/explore/1?selectedTab=all" title="All contents">All contents</a></li>
+                    </ul>
+                </li>
+                <li id="userlogin" class="hide"><a href="/resources" title="Login">Login</a></li>
+                <li id="userlogout" class="hide"><a href="/logout" title="logout">Logout</a></li>
+                <li><a href="/explore-groups" title="Groups">Groups</a></li>
+                <li><a href="/faq" title="Help">Help</a></li>
+            </ul>
+        </div>
+        <footer id="footer">
+            {% include global-footer.html %}
+        </footer>
+    </div>
+</body>
+<script type="text/javascript">
+    var url_string = window.location.href
+     var url = new URL(url_string);
+     var c = url.searchParams.get("session");
+     if(c=='true'){
+       document.getElementById("loggedinUser").classList.remove("hide");
+       document.getElementById("userlogout").classList.remove("hide");
+  
+     }else{
+       document.getElementById("nonloggedinUser").classList.remove("hide");
+       document.getElementById("userlogin").classList.remove("hide");
+     }
+   </script>
+<script async defer src="{{site.baseurl}}/assets/js/default/fontSizing.js"></script>
+</html>

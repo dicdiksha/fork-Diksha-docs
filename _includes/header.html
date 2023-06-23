@@ -1,0 +1,196 @@
+<nav class="navbar navbar-expand-lg navbar-light py-0 pl-5 pr-5 no-sticky-top {% if page.url contains 'verticals' or page.url contains 'keymilestones' or page.url contains 'partners' or page.url contains 'term-of-use' %}bg-white-header{% endif %} d-none d-lg-flex"
+    id="menuHeader">
+    <!-- {{include.navbgwhite}} -->
+    <a class="navbar-brand py-0" href="/#">
+        <div class="header-img">
+            <div class="img">
+                <img loading="lazy" decoding="async"  src="{{site.baseurl}}/assets/imgs/logos.svg" alt="DIKSHA">
+            </div>
+        </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuDropDowm" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menuDropDowm">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <ul class="navbar-nav">
+            <!-- <li class="nav-item mr-4">
+                <a class="btn btn-header btn-sm btn-header-ver pl-4 pr-4 {% if page.url contains 'verticals' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/profile-registry/" title="Verticals">Verticals</a>
+            </li> -->
+            <li class="nav-item mr-3">
+                <a class="btn btn-header btn-header-exp btn-sm pl-4 pr-4 explore-contents" href="/explore" title="Explore Content">Explore
+                    Content</a>
+            </li>
+           <!--  <li class="nav-item">
+                <a class="brd-none btn btn-header btn-sm pl-4 pr-4" href="/resources" title="Sign In">
+                    <img id="signInImg" alt="Sign In" src="{% if page.url contains 'verticals' or page.url contains 'keymilestones' or page.url contains 'partners' %}{{site.baseurl}}/assets/imgs/signin-logo-blue.svg {% else %}{{site.baseurl}}/assets/imgs/signin-logo-white.svg{% endif %}">&nbsp;&nbsp;
+                    Sign In
+                </a>
+            </li> -->
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light py-0 pl-0 pr-0 no-sticky-top d-flex d-sm-flex d-md-flex d-lg-none"
+    id="mobileNavBar">
+    <!-- {{include.navbgwhite}} -->
+    <div class="mobile-navbar">
+        <a class="navbar-brand py-0 pl-3" href="/#">
+            <div class="header-img">
+                <div class="img">
+                    <img loading="lazy" decoding="async"  src="{{site.baseurl}}/assets/imgs/logos.svg" alt="DIKSHA">
+                </div>
+            </div>
+        </a>
+
+        <ul class="navbar-nav">
+                <li class="nav-item mr-3">
+                     <a class="btn btn-header btn-header-exp btn-sm pl-4 pr-4 explore-contents" href="/explore" title="Explore Content">Explore
+                         Content</a>
+            </li></ul>
+        <!-- <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#mobileMenu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+            <span class="navbar-toggler-icon"></span>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+        </button> -->
+        <!-- <button class="navbar-toggler navbar-toggler-right mr-2 collapsed" type="button" data-toggle="collapse"
+            data-target="#mobileMenu">
+            <span> </span>
+            <span> </span>
+            <span> </span>
+        </button> -->
+    </div>
+
+    <div class="collapse navbar-collapse" id="mobileMenu">
+        <ul class="navbar-nav {% if !(page.url contains 'verticals' or page.url contains 'keymilestones') %} d-none {% else %} d-block {% endif %}">
+            <!-- <li class="nav-item text-center py-3">
+                <a class="btn btn-header btn-sm pl-4 pr-4" href="{{site.baseurl}}/verticals/profile-registry/" title="Verticals">
+                    Verticals
+                </a>
+            </li> -->
+            <!-- <li class="nav-item pt-3 ml-2 mr-2">
+                <a class="btn btn-block btn-header-exp btn-sm pl-4 pr-4 pt-2 pb-2 explore-contents" href="/explore" title="Explore Content">Explore
+                    Content</a>
+            </li>
+            <li class="nav-item text-center pt-3 pb-3">
+                <a class="btn btn-header btn-sm pl-4 pr-4" href="/resources" title="Sign In">
+                    <img loading="lazy" decoding="async"  id="signInImg" src="{{site.baseurl}}/assets/imgs/signin-logo-blue.svg" alt="Sign In">&nbsp;&nbsp;
+                    Sign In
+                </a>
+            </li> -->
+        </ul>
+        <ul class="navbar-nav {% if !(page.url contains 'verticals') %} d-block {% else %} d-none {% endif %}">
+            <!-- <li class="nav-item pt-4 ml-2 mr-2">
+                <a class="btn btn-block btn-header-exp btn-sm pl-4 pr-4 pt-2 pb-2 explore-contents" href="/explore" title="Explore Content">Explore
+                    Content</a>
+            </li>
+            <li class="nav-item text-center pt-3 pb-3">
+                <a class="btn btn-header btn-sm pl-4 pr-4" href="/home" title="Sign In">
+                    <img loading="lazy" decoding="async"  id="signInImg" src="{{site.baseurl}}/assets/imgs/signin-logo-blue.svg" alt="Sign In">&nbsp;&nbsp;
+                    Sign In
+                </a>
+            </li> -->
+            <li class="nav-item text-left">
+                <div class="pt-3 pb-2 pl-4">
+                    <h5>Verticals</h5>
+                </div>
+            </li>
+            <!-- <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'profile-registry' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/profile-registry/" title="Teacher Profile & Registry">Teacher Profile
+                    &amp; Registry</a>
+
+            </li> -->
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'teaching-and-learning' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/teaching-and-learning/" title="Teaching & Learning Content">Teaching
+                    &amp; Learning Content</a>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'content-creation' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/content-creation/" title="Content Creation Platform">Content
+                    Creation Platform</a>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'teacher-professional-dev' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/teacher-professional-dev/" title="Teacher Professional Development">Teacher
+                    Professional Development</a>
+
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'school-leadership' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/school-leadership/" title="School Leadership Development">School
+                    Leadership Development</a>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'assessment' %} active {% endif %}" href="{{site.baseurl}}/verticals/assessment/"
+                    title="Assessment">Assessment</a>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'innovation-innovative' %} active {% endif %}"
+                    href="{{site.baseurl}}/verticals/innovation-innovative/" title="Innovation & Innovative Pedagogy">Innovation
+                    &amp; Innovative Pedagogy</a>
+
+            </li>
+        </ul>
+        <ul class="navbar-nav {% if !(page.url contains 'keymilestones') %} d-block {% else %} d-none {% endif %}">
+            <!-- <li class="nav-item text-center pt-3">
+                <a class="btn btn-header btn-sm pl-4 pr-4" href="{{site.baseurl}}/verticals/profile-registry/" title="Verticals">
+                    Verticals
+                </a>
+            </li> -->
+            <li class="nav-item pt-3 ml-2 mr-2">
+                <a class="btn btn-block btn-header-exp btn-sm pl-4 pr-4 pt-2 pb-2 explore-contents" href="/explore" title="Explore Content">Explore
+                    Content</a>
+            </li>
+            <li class="nav-item text-center pt-3 pb-3">
+                <a class="btn btn-header btn-sm pl-4 pr-4" href="/home" title="Sign In">
+                    <img loading="lazy" decoding="async"  id="signInImg" src="{{site.baseurl}}/assets/imgs/signin-logo-blue.svg" alt="Sign In">&nbsp;&nbsp;
+                    Sign In
+                </a>
+            </li>
+            <li class="nav-item text-left">
+                <div class="pt-3 pb-2 pl-4">
+                    <h5>Key Milestones</h5>
+                </div>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'state-onboarded' %} active {% endif %}" href="{{site.baseurl}}/keymilestones/state-onboarded/"
+                    title="States Onboarded">States
+                    Onboarded</a>
+
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'textbook-printed' %} active {% endif %}"
+                    href="{{site.baseurl}}/keymilestones/textbook-printed/" title="Textbooks printed by 2019">Textbooks
+                    printed by 2019</a>
+
+
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3 {% if page.url contains 'digital-content' %} active {% endif %}" href="{{site.baseurl}}/keymilestones/digital-content/"
+                    title="Digital content published">Digital content published</a>
+
+            </li>
+            <!-- <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3" href="javascript:void(0)" title="Devices using DIKSHA">Devices using
+                    DIKSHA</a>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3" href="javascript:void(0)" title="Learning experiences">Learning
+                    experiences</a>
+            </li>
+            <li class="nav-item text-left">
+                <a class="nav-link pt-3 pl-4 pb-3" href="javascript:void(0)" title="Hours on DIKSHA">Hours on DIKSHA</a>
+            </li> -->
+        </ul>
+    </div>
+</nav>

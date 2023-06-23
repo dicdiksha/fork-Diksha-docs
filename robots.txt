@@ -1,0 +1,9 @@
+User-agent: *
+
+Disallow: /sunbird_logo.png
+Disallow: /igot/
+Disallow: https://igot.gov.in/
+Disallow: https://diksha.gov.in/igot
+# Sitemap
+
+Sitemap: https://diksha.gov.in/sitemap.xml

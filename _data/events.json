@@ -1,0 +1,35 @@
+{
+    "attributes": "Events",
+    "items": [
+        {
+            "title": "65th National School Table Tennis Championships: Delhi",
+            "eventImg": "Rectangle-3D.png",
+            "url": "",
+            "date": 19,
+            "month": "SEP",
+            "location": "Jawaharlal Nehru Stadium, Delhi",
+            "phone": "+91 10293 84756",
+            "email": "support@diksha.gov.in"
+        },
+        {
+            "title": "National Yoga Quiz Competition - Sep 2020",
+            "eventImg": "Rectangle-3D.png",
+            "url": "",
+            "date": 19,
+            "month": "SEP",
+            "location": "Jawaharlal Nehru Stadium, Delhi",
+            "phone": "+91 10293 84756",
+            "email": "support@diksha.gov.in"
+        },
+        {
+            "title": "National Level Science Talent Search Exam or NLSTSE",
+            "eventImg": "Rectangle-3D.png",
+            "url": "",
+            "date": 19,
+            "month": "SEP",
+            "location": "Jawaharlal Nehru Stadium, Delhi",
+            "phone": "+91 10293 84756",
+            "email": "support@diksha.gov.in"
+        }
+    ]
+}

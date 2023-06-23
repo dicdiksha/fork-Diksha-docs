@@ -1,0 +1,26 @@
+
+<div class="tabs tabs-animation relative mdk-nav-tabs">
+  <ul id="nav-tabs" class="dk-nav-tabs nav nav-tabs px-0">
+    <li><a href="#about-m" class="active" data-translate="aboutdiksha">{{ site.data.text.aboutdiksha }}</a></li>
+    <li><a href="#news-m" data-translate="news">{{ site.data.text.news }}</a></li>
+    <li><a href="#resources-m" data-translate="resources">{{ site.data.text.resources }}</a></li>
+    <li><a href="#events-m" data-translate="events">{{ site.data.text.events }}</a></li>
+    <li class="line"></li>
+  </ul> 
+  <!-- END tabs-nav -->
+  <div id="tabs-content" class="tabs-content">
+    <div id="about-m" class="tab-content">
+      {% include page-about-tab-about.html %}
+    </div>
+    <div id="news-m" class="tab-content p-24">
+      {% include page-about-tab-news.html %}
+    </div>
+    <div id="resources-m" class="tab-content p-24">
+      {% include page-about-tab-resources.html %}
+    </div>
+    <div id="events-m" class="tab-content p-24">
+      {% include page-about-tab-events.html %}
+    </div>
+  </div> <!-- END tabs-content -->
+</div> <!-- END tabs -->
+

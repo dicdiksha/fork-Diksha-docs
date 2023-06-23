@@ -1,0 +1,101 @@
+.milestone-image-section a {
+    &:hover {
+        text-decoration: none;
+    }
+    .col {
+        
+        .mile-stone-icon  {
+            -webkit-mask-size: contain;
+            -webkit-mask-position: 50% 50%;
+            -webkit-mask-repeat: no-repeat;
+           mask-size: contain;
+           mask-position: 50% 50%;
+           mask-repeat: no-repeat;
+           background: #4a4a4a;
+           width: 70px;
+           height: 70px;display: block;
+        }
+        
+        .india-map-icon {
+            -webkit-mask-image: url(../imgs/india-map.svg);
+            mask-image: url(../imgs/india-map.svg);
+        }
+        .textbooks-icon {
+            -webkit-mask-image: url(../imgs/qr-book.svg);
+            mask-image: url(../imgs/qr-book.svg);
+            float:right;
+        }
+        .digital-content-icon {
+            -webkit-mask-image: url(../imgs/digital-content.svg);
+            mask-image: url(../imgs/digital-content.svg);
+        }
+        .multi-device-icon {
+            -webkit-mask-image: url(../imgs/multi-device.svg);
+            mask-image: url(../imgs/multi-device.svg);
+            float:right;
+        }
+        .learning-experience-icon {
+            -webkit-mask-image: url(../imgs/learning-experience.svg);
+            mask-image: url(../imgs/learning-experience.svg);
+        }
+        .hours-diksha-icon {
+            -webkit-mask-image: url(../imgs/hours-on-diksha.svg);
+            mask-image: url(../imgs/hours-on-diksha.svg);
+            float:right;
+        }
+    }
+  
+    .col:first-of-type {
+        border-right: 1px dashed $peacock-blue;
+    }
+    h6 {
+        font-size: 18px !important;
+    }
+    &.col-active {
+        .text-right {
+            border-right: 5px solid $tomato;
+        }
+        h6, p {
+            color: $peacock-blue;
+            font-weight: bold;
+        }
+        .mile-stone-icon {
+            background: $orange;
+        }
+    }
+}
+
+.mlstone-content-center {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    &.item-start {
+        align-items: flex-start;
+    }
+    &.item-end {
+        align-items: flex-end;
+    }
+}
+
+
+.milestone-image-section a {
+    &:hover {
+      .mile-stone-icon {
+        background: $orange;
+      }
+      div.col {
+        color: $peacock-blue;
+        text-decoration: none;
+      }
+    }
+    div.col {
+      color: #4a4a4a;
+      p {
+        line-height: normal;
+        margin-bottom: 0;
+      }
+      h6 {
+        font-weight: bold;
+      }
+    }
+  }

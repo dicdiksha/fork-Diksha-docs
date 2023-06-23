@@ -1,0 +1,358 @@
+---
+layout: null
+title: Accessibility Corner
+---
+<!-- saved from url=(0083)https://preprodall.blob.core.windows.net/termsandcond/terms-and-conditions-v10.html -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include head.html %}
+    <style>
+       .footer-container label {
+    display: none;
+}
+        .mt24{
+            margin-top: 24px;
+        }
+        body{
+            font-size: .875rem;
+        }
+        .mb16{
+            margin-bottom: 16px;
+        }
+        .site-map,
+        .screenreader {
+            margin: 0 auto;
+            min-height: calc(100vh - 228px);
+            padding: 2rem 2rem 2rem 1rem;
+        }
+
+        .page-title {
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+
+        .sb-table {
+            width: 100%;
+            background: var(--gray-0);
+            border: 0.0615rem solid var(--gray-100);
+            box-shadow: none;
+            border-radius: 0.25rem 0.25rem 0 0;
+            text-align: left;
+            color: var(--gray);
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .sb-table-fixed {
+            table-layout: fixed;
+        }
+
+        .sb-table-fixed tbody td {
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            max-width: 15rem;
+        }
+
+        .sb-table-hover tbody tr:hover {
+            background: var(--secondary-0);
+            color: rgba(0, 1, 0, );
+        }
+
+        .sb-table .sb-table-striped tbody tr:nth-child(2n) {
+            background-color: var(--primary-0);
+        }
+
+
+        .sb-table thead th {
+            font-size: 0.75rem;
+            color: var(--gray);
+            padding: 0.5rem 1rem;
+            background-color: var(--primary-0);
+            position: relative;
+            height: 2.5rem;
+            border-bottom: 0.0615rem solid var(--gray-100);
+        }
+
+        .sb-table.sb-table-course-dashboard thead th {
+            font-size: 0.875rem;
+            padding: 1rem;
+            background-color: var(--primary-0);
+        }
+
+        .sb-table.sb-table-lg thead th {
+            padding: 1rem 1.5rem;
+            min-height: 3.5rem;
+        }
+
+        .sb-table.sb-table-lg tbody td {
+            height: 4rem;
+            padding: 1rem 1.5rem;
+        }
+
+        .sb-table tbody td {
+            font-size: 0.875rem;
+            padding: 1rem;
+            color: var(--gray);
+            height: 3.5rem;
+            border-bottom: 0.0615rem solid var(--gray-100);
+            /* background:var(--white); */
+        }
+
+        .sb-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .sb-table tbody .sb-table-active,
+        .sb-table tbody .sb-table-success,
+        .sb-table tbody .sb-table-warning,
+        .sb-table tbody .sb-table-danger {
+            font-weight: var(--font-weight-bold);
+        }
+
+        .sb-table tbody .sb-table-active {
+            background: var(--primary-0);
+        }
+
+        .sb-table tbody .sb-table-active .sb-media .media-heading {
+            font-weight: var(--font-weight-bold);
+        }
+
+        .sb-table tbody .sb-table-success {
+            background: var(--secondary-0);
+        }
+
+        .sb-table tbody .sb-table-warning {
+            background: var(--tertiary-0);
+        }
+
+        .sb-table tbody .sb-table-danger {
+            background: var(--red-0);
+        }
+        .table-container{
+            width: 100% !important;
+            max-width: 100% !important;
+            margin: 0 auto;
+            overflow: auto;
+        }
+        @media screen and (max-width:990px){
+            .site-map, .screenreader{
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid relative p-0 {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
+        <div id="header">
+            {% include global-header.html %}
+        </div>
+
+        <div class="container screenreader" aria-labelledby="Screen-reader-access">
+            <button type="button" class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn" onclick="history.back()"
+                title="Go Back"><i class="arrow left"></i> Go Back</button>
+            <h1 class="page-title mb-24 mt24 d-flex"><strong>Accessibility Corner            </strong></h1>
+            <p class="text-left">Team DIKSHA is always working towards ensuring access to everyone. The platform supports learning in 30+ languages, and is compatible across a wide variety of devices including assistive technology. </p>
+                <p>
+                NCERT has been working to ensure that the UI/UX of the DIKSHA website and mobile app comply with <a target="_blank" href="https://guidelines.india.gov.in/"> Accessibility Guidelines prescribed by the Government of India</a>. These guidelines are derived from International Guidelines and Standards of the <a target="_blank" href="https://www.w3.org/WAI/standards-guidelines/wcag/#:~:text=Web%20Content%20Accessibility%20Guidelines%20(WCAG)%20is%20developed%20through%20the%20W3C,%2C%20organizations%2C%20and%20governments%20internationally."> Web Content Accessibility Guidelines (WCAG) </a>. 
+                </p>
+                <p>
+                In order to achieve compliance and expand access, Team DIKSHA has been running accessibility audits through automated testing tools, external expert agencies, and end user accessibility testing. Below are some of the features that are useful from an accessibility perspective. 
+                </p>
+            <div id="scrollMainContent"></div>
+            <h2 class="mb16">Accessibility for Blind/Low vision users </h2>
+                <ol type="1">
+                    <li>The DIKSHA website complies with World Wide Web Consortium (W3C) Web Content Accessibility Guidelines (WCAG) 2.0 level AA. This will enable people with visual impairments to access the DIKSHA website using assistive technologies, such as screen readers. The information on the website is accessible with different screen readers, such as JAWS, NVDA, SAFA, Supernova, and Window-Eyes. 
+                       <p> The following table lists the information about different screen readers:</p>
+                       <div class="table-container">
+                        <table class="sb-table sb-table-hover sb-table-striped text-left">
+                            <thead>
+                                <tr>
+                                    <th>Screen Reader</th>
+                                    <th>Website</th>
+                                    <th>Free / Commercial</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Non-Visual Desktop Access (NVDA)</td>
+                                    <td>
+                                        <a href="http://www.nvda-project.org/" target="_blank">http://www.nvda-project.org/</a><br>
+                                        (External website that opens in a new window)
+                                    </td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td>System Access To Go</td>
+                                    <td>
+                                        <a href="http://www.satogo.com" target="_blank">http://www.satogo.com</a><br>
+                                        (External website that opens in a new window)
+                                    </td>
+                                    <td>Free</td>
+                                </tr>
+                                <tr>
+                                    <td>Hal</td>
+                                    <td>
+                                        <a href="http://www.yourdolphin.co.uk/productdetail.asp?id=5"
+                                            target="_blank">http://www.yourdolphin.co.uk/productdetail.asp?id=5</a><br>
+                                        (External website that opens in a new window)
+                                    </td>
+                                    <td>Commercial</td>
+                                </tr>
+                                <tr>
+                                    <td>JAWS</td>
+                                    <td>
+                                        <a href="http://www.freedomscientific.com/jaws-hq.asp"
+                                            target="_blank">http://www.freedomscientific.com/jaws-hq.asp</a><br>
+                                        (External website that opens in a new window)
+                                    </td>
+                                    <td>Commercial<br></td>
+                                </tr>
+                                <tr>
+                                    <td>Supernova</td>
+                                    <td>
+                                        <a href="http://www.yourdolphin.co.uk/productdetail.asp?id=1"
+                                            target="_blank">http://www.yourdolphin.co.uk/productdetail.asp?id=1</a><br>
+                                        (External website that opens in a new window)
+                                    </td>
+                                    <td>Commercial<br></td>
+                                </tr>
+                                <tr>
+                                    <td>Window-Eyes</td>
+                                    <td>
+                                        <a href="http://www.gwmicro.com/Window-Eyes/"
+                                            target="_blank">http://www.gwmicro.com/Window-Eyes/</a><br>
+                                        (External website that opens in a new window)
+                                    </td>
+                                    <td>Commercial</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                       </div>
+                    </li>
+                    <li>
+                        You can customize your screen by adjusting the color contrast and font size (using the buttons: A, A+, A-) or switching from normal/light mode to dark mode.  
+
+                    </li>
+                    <li>
+                        Images and graphics that convey information include alt text that can be read by screen readers. 
+                    </li>
+                    <li>
+                        Similarly, we have attempted to describe and label all links, buttons, check-boxes, edit boxes, pop-ups & other elements appropriately. 
+
+                    </li>
+                </ol>
+            
+           <h2 class="mb16">
+            Keyboard access & Swipe navigation
+           </h2>
+           <ol type="1">
+            <li>
+                If you are a keyboard-only user, or you use swipe gestures to navigate, you should have no trouble navigating between interactive elements – links, buttons, labels, and fields to input text using ‘tab’, arrow keys and other keystrokes or swipe gestures to navigate. 
+            </li>
+            <li>
+                The focus area indicators, logical navigation order, heading structure, and navigation regions allow for seamless keyboard navigation: 
+                <ol type="a">
+                    <li>
+                        <b>Focus area indicators - </b>This clearly suggests to the user that there is an interactive element by highlighting it. 
+
+                    </li>
+                    <li>
+                       <b> Logical navigation order  -</b> This capability enables the user to be guided through the navigation inside the application main section. Any collapsible sections & menus can be discovered by this capability. 
+
+                    </li>
+                    <li>
+                       <b> Heading structure - </b> Heading structure will define the structure of the content  for the user. It will help blind users to scan through the page and find information quickly.
+
+                    </li>
+                    <li>
+                       <b> Navigation regions -</b> This helps markup different regions of web pages and applications, so that they can be identified by web browsers and assistive technologies. Ex: Headers, Footers, Main Content, Menu etc.
+
+                    </li>
+                    <li>
+                        Use the “skip to main content” link provided at the start of every page to bypass repetitive links and other elements on each page. 
+
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Click the “site map” for a complete overview of DIKSHA’s structure; you will find all the sections and links in serialized format in one place. 
+
+            </li>
+
+           </ol>
+        <h2 class="mb16">
+            Do you have trouble consuming audio/video and PDF content? 
+
+        </h2>
+        <p>Users have flexibility when viewing videos & documents (in PDF format), using the following features built in the content players:
+        </p>
+        <ol>
+            <li> Audio/Video Speed controls to speed up & slow down content,</li>
+            <li> Full screen mode for video content to maximize the display, and</li>
+            <li> Rotation of PDFs between landscape & portrait orientations. </li>
+        </ol>
+      
+        <p>Note: if online consumption of content presents issues, all content can be downloaded to allow for offline access. </p>
+
+        <h2 class="mb16">Coming soon on DIKSHA
+        </h2>
+        <ol type="1">
+            <li>
+                Drop-down menus that are a combination of search and Multi-select checkboxes (which may make the user-experience of screen reader users better while registering on DIKSHA) .
+            </li>
+            <li>
+                Upcoming fixes to the content player allowing for books (in PDF, epub & other formats) to be read out by a screen reader seamlessly i.e. according to the structure of the document and punctuation on both; the web portal & mobile application
+            </li>
+            <li>
+                The technical capability of adding video transcripts by content creators and using them to show subtitles while the video is playing 
+            </li>
+        </ol>
+       
+        <h2 class="mb16">Our Accessibility Journey so Far </h2>
+        <p>Attaining complete accessibility on DIKSHA is a journey we strive towards. Towards this goal, we have taken the following steps so far:
+        </p>
+        <ol type="1">
+<li>
+    <b>Testing using Accessibility Tools:</b> Team DIKSHA ran an audit on the DIKSHA web portal and mobile app using automated accessibility checking tools like WAVE, AXE and Android talkback to identify accessibility issues. The issues that were identified were then systematically fixed. This was completed in February 2021.
+
+</li>
+<li>
+    <b>Expert Testing:</b> An external expert agency was then engaged to further identify the accessibility & usability issues on the DIKSHA web portal and mobile app & checking for compliance with the World Wide Web Consortium’s Web Content Accessibility Guidelines 2.1 Success Criteria at Levels A and AA. The expert agency used a mix of automated testing conducted by subject matter experts as well as manual testing using specialized software tools. This was completed by July 2021. The development team thereafter spent a substantial amount of time addressing the issues identified by the expert by February 2022.
+
+</li>
+<li>
+    <b>Ongoing Testing:</b> Since the 4.6.0 release of DIKSHA in February, 2022, accessibility related test cases are part of regular DIKSHA release cycles using tools like WAVE, axe-core & NVDA. This is intended to ensure that the health of the compliance levels is continuously maintained. As of June 2022, the team has carried out a comprehensive testing exercise to identify outstanding accessibility and usability issues.
+
+</li>
+<li>
+   <b> User Testing:</b> In order to make DIKSHA more usable & intuitive, the next step is to undertake regular user-testing by persons with atypical needs and users of assistive technology. This exercise is being planned with blind and low vision users of DIKSHA and the feedback from this exercise will give the development team further insight into ensuring the user-experience of screen reader users & users of magnification is improved. Such user-testing if executed regularly will enable communities of such users to help make DIKSHA a more accessible & inclusive resource for all students & teachers across the country.
+
+</li>
+        </ol>
+
+<h2 class="mb16">User testing: Become a DIKSHA Volunteer!
+</h2>
+<p>If you are a screen reader user or a user of magnification, read our <a target="_blank" href="https://ncert.nic.in/pdf/notice_Usertesting.pdf"> Public Notice inviting blind and low vision users to test the usability of DIKSHA and e-Pathshala</a>.
+</p>
+<p>
+Your voice and views matter! If you are a screen reader user or a user of magnification, <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSciihC7cCTkL5oV0HuLIx4i7yth6cfHXVYXmqsgYi-9XOsKdw/viewform"> register on this google form </a>and we will get in touch with you with the details of the process. 
+</p>
+<h2 class="mb16">Need help? Contact Us!
+</h2>
+<p>If you have any queries, accessibility issues or requests, reach out to us at <a target="_blank" href="mailto:dceta.ncert@nic.in">dceta.ncert@nic.in</a>. 
+</p>
+        </div>
+
+        <footer id="footer">
+            {% include global-footer.html %}
+        </footer>
+
+    </div>
+</body>
+<script async defer src="{{site.baseurl}}/assets/js/default/fontSizing.js"></script>
+</html>

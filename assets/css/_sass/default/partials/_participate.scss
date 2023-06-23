@@ -1,0 +1,194 @@
+.relative {
+    position: relative
+}
+
+.relative .vidyaDaan-participate {
+    min-height: 302px;
+    height: auto;
+    width: 92%;
+    margin: 0 auto;
+    border: 4px solid #0076FE;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: -40px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    z-index: 2
+}
+
+.relative .vidyaDaan-participate .box {
+    display: flex;
+    box-sizing: border-box;
+    min-height: 302px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1);
+    padding: 24px;
+    align-items: center;
+    justify-content: space-evenly
+}
+
+.relative .vidyaDaan-participate .box img {
+    width: 352px
+}
+
+.relative .vidyaDaan-participate .box img.divider {
+    width: auto;
+    height: 215px;
+    margin: 0 28px
+}
+
+.relative .vidyaDaan-participate .box .vidyadaan-content {
+    align-items: center;
+    justify-content: center;
+    display: flex
+}
+
+.relative .vidyaDaan-participate .box .vidyadaan-content span img {
+    width: 202px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    margin-left: 16px
+}
+
+.relative .vidyaDaan-participate .box .vidyadaan-content span label {
+    color: #000000;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 27px;
+    margin-bottom: 10px
+}
+
+.relative .vidyaDaan-participate .box .vidyadaan-content span p {
+    color: #000000;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin-bottom: 0
+}
+
+.participate-button {
+    cursor: pointer !important;
+}
+
+.relative .participate,.relative .participate:hover {
+    cursor: pointer !important;
+    border-radius: 8px;
+    background-color: #0076FE;
+    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25);
+    padding: 20px 118px;
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+    outline: 0;
+    border: 0;
+    position: absolute;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: 0 auto
+}
+
+.hidden-lg-up {
+    display: block
+}
+
+.hidden-lg-down {
+    display: none
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1024px) {
+    .relative .participate,.relative .participate:hover {
+        padding:10px 118px;
+        bottom: -25px
+    }
+
+    .relative .vidyaDaan-participate .box .vidyadaan-content span label {
+        font-size: 18px
+    }
+
+    .relative .vidyaDaan-participate .box .vidyadaan-content span p {
+        font-size: 14px
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hidden-lg-up {
+        display:none
+    }
+
+    .hidden-lg-down {
+        display: block
+    }
+
+    .flex-even {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 20px
+    }
+
+    .relative .participate,.relative .participate:hover {
+        cursor: pointer !important;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 24px;
+        text-align: center;
+        padding: 8px 87px;
+        bottom: -20px
+    }
+
+    .relative .vidyaDaan-participate .box {
+        flex-direction: column;
+        padding: 16px
+    }
+
+    .relative .vidyaDaan-participate .box .vidyadaan-content span label {
+        font-size: 14px;
+        line-height: 19px
+    }
+
+    .relative .vidyaDaan-participate .box .vidyadaan-content span p {
+        font-size: 12px !important;
+        line-height: 18px;
+        margin-bottom: 28px
+    }
+
+    // .relative .vidyaDaan-participate .box img {
+    //     width: 206px;
+    //     margin-right: 13px
+    // }
+
+    .relative .vidyaDaan-participate .box img.PMpic {
+        width: 100px;
+        height: 100px;
+        margin-left: 13px;
+        margin-right: 0
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .relative .vidyaDaan-participate .box img {
+        width: 65%;
+        margin-right: 8px;
+    }
+
+    .relative .vidyaDaan-participate .box img.PMpic {
+        width: 35%;
+        margin-left: 8px;
+        height: auto;
+    }
+}

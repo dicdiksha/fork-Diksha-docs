@@ -1,0 +1,17 @@
+<div class="" id="menuDropDowm">
+  <!-- collapse navbar-collapse id="menuDropDowm" //Navigation menu -->
+  <div class="navmenu">
+    {% for nav in site.data.nav.items %}
+    <a href="{{site.baseurl}}/{{nav.url}}" title="{{nav.title}}" tabindex="0"
+      class="nav-header-menu navmenu__item {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}"
+      data-etype="{{nav.etype}}" data-eid="{{nav.eid}}">
+      <div class="navmenu__icon">
+        <div class="icon icon__{{nav.contains}}"></div>
+      </div>
+      <span class="navmenu__title"
+        data-translate="{%if(nav.contains == 'data')%}dashboard{%else%}{{nav.contains}}{%endif%}">{{nav.title}}</span>
+    </a>
+    {% endfor %}
+    <!-- <div class="line"></div> -->
+  </div>
+</div>

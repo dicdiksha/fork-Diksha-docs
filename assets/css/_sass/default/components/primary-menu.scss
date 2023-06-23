@@ -1,0 +1,161 @@
+.navmenu {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-left: calculateRem(24px);
+
+  @include respond-below(md) {
+    padding-left: 0px;
+  }
+
+  &__item {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 calculateRem(8px);
+    padding: 0px calculateRem(8px) calculateRem(8px) calculateRem(8px);
+    border-bottom: calculateRem(6px) solid var(--primary-menu-link-border-bg);
+    // transition: all .3s ease;
+    cursor: pointer;
+
+    // @include respond-below(md) {
+    //   margin: 0 calculateRem(16px);
+    // }
+    @include respond-below(md) {
+      margin: 0 0px;
+    }
+    
+    @include respond-below(sm) {
+      margin: 0 0px;
+    }
+
+    &:hover,&.active {
+      border-bottom: calculateRem(6px) solid var(--primary-menu-link-active);
+      text-decoration: none;
+    }
+    &:hover {
+      .navmenu__icon {
+        background-color: var(--primary-menu-link-hover);
+
+        .icon {
+          background: var(--primary-menu-link);
+        }
+      }
+    }
+
+    &.active {
+      .navmenu__icon {
+        background-color: var(--primary-menu-link);
+
+        .icon {
+          background: var(--primary-menu-link-icon-text);
+        }
+      }
+    }
+
+    &.active {
+      .navmenu__title {
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__title {
+    font-size: calculateRem(14px);
+    color: var(--primary-menu-link);
+    margin-top: calculateRem(8px);
+    text-align: center;
+    @include respond-below(lg) {
+      font-size: calculateRem(12px);
+      min-height: 2.5rem;
+      display: flex;
+      align-items: center;
+    margin-top: calculateRem(0px);
+    }
+  }
+
+  &__icon {
+    border-radius: 50%;
+    height: calculateRem(48px);
+    width: calculateRem(48px);
+    border: calculateRem(1.5px) solid var(--primary-menu-link);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-menu-link-icon-bg);
+
+    .icon {
+      width: calculateRem(28px);
+      height: calculateRem(28px);
+      -webkit-mask-size: contain;
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-position: 50% 50%;
+      mask-position: 50% 50%;
+      mask-size: contain;
+      mask-repeat: no-repeat;
+      background: var(--primary-menu-link);
+      display: inline-block;
+      cursor: pointer;
+
+      &__home {
+        -webkit-mask-image: url(../diksha-mission/home.svg);
+        mask-image: url(../diksha-mission/home.svg);
+      }
+
+      &__data {
+        -webkit-mask-image: url(../diksha-mission/dashboard.svg);
+        mask-image: url(../diksha-mission/dashboard.svg);
+      }
+
+      &__about {
+        -webkit-mask-image: url(../diksha-mission/about.svg);
+        mask-image: url(../diksha-mission/about.svg);
+      }
+
+      &__getapp {
+        -webkit-mask-image: url(../diksha-mission/getapp.svg);
+        mask-image: url(../diksha-mission/getapp.svg);
+      }
+
+      &__contribute {
+        -webkit-mask-image: url(../diksha-mission/contribute.svg);
+        mask-image: url(../diksha-mission/contribute.svg);
+      }
+    }
+  }
+
+
+  // & .line {
+  //   position: absolute;
+  //   height: 6px;
+  //   width: 48px;
+  //   background: var(--secondary-color);
+  //   left: 48px;
+  //   top: 79px;
+  //   transition: all 0.3s ease-in;
+  //   border-radius: 24px;
+  // }
+
+  // & a[title="Dashboard"].active ~ .line {
+  //   left: 144px;
+  //   width: 75.64px;
+  // }
+
+  // & a[title="About"].active ~ .line {
+  //   left: 264.77px;
+  //   width: 48px;
+  // }
+
+  // & a[title="Get App"].active ~ .line {
+  //   left: 361.18px;
+  //   width: 54.95px;
+  // }
+
+  // & a[title="Contribute"].active ~ .line {
+  //   left: 461.18px;
+  //   width: 76.64px;
+  // }
+
+}

@@ -1,0 +1,49 @@
+<div class="border-container text-left">
+  <!-- 1st Card -->
+  {% for board in site.data.boards.items %}
+  <div class="dk-card">
+    <div class="dk-card__expbtn">
+      <a title="{{board.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
+        href="#" data-translate-attr="{board-btntitle: ['title']}">
+        <img loading="lazy" decoding="async"  src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/play.svg"
+          onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission/play.svg'"
+          alt="Explore {{board.title}} content" class="icon">
+        <span data-translate="board-btntitle">{{board.btntitle}}</span>
+      </a>
+    </div>
+    <div class="dk-card__metadata">
+      <div class="dk-card__img"><img loading="lazy" decoding="async" 
+          src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/{{board.thumbnail}}"
+          onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
+          alt="{{board.title}} logo"></div>
+      <h6 class="dk-card__title">{{board.title}}</h6>
+    </div>
+    <p class="dk-card__para" data-translate="board-{{board.slug}}-description">{{board.description}}</p>
+  </div>
+  {% endfor %}
+
+  <!-- 3rd Card -->
+  <div class="dk-card">
+    <div class="dk-card__expbtn">
+      <a class="state-explore" href="#"><img loading="lazy" decoding="async" 
+          src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/play.svg"
+          onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission/play.svg'"
+          alt="Explore content from states/UTs" class="icon"><span
+          data-translate="explore">{{ site.data.text.explore}}</span></a>
+    </div>
+    <div class="dk-card__metadata">
+      <div class="dk-card__img"><img loading="lazy" decoding="async" 
+          src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/about.svg"
+          onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission/about.svg'"
+          alt="logo indicating content from states/UTs on DIKSHA"></div>
+      <h6 class="dk-card__title" data-translate="stateboard">{{ site.data.text.stateboard }}</h6>
+    </div>
+    <div class="dk-card__selection"><label>
+        <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
+          <option value="Select State" selected>Select State</option>
+        </select></label>
+    </div>
+    <p class="dk-card__para" data-translate="stateboardDescription">{{ site.data.text.stateboardDescription }}
+    </p>
+  </div>
+</div>

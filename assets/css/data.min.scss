@@ -1,0 +1,116 @@
+---
+---
+@import "default/bootstrap.min";
+@import "default/partials/variables";
+@import "default/partials/functions";
+@import "default/partials/media-queries";
+// @import "default/components/buttons";
+.sb-btn {
+    white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    // outline: 0;
+    display: inline-block;
+    border: calculateRem(1px) solid;
+    cursor: pointer;
+    min-width: calculateRem(64px);
+    border-radius: calculateRem(4px);
+    position: relative;
+    line-height: 1;
+  
+    text: {
+      transform: inherit;
+      decoration: none;
+    }
+  
+    &:hover {
+      opacity: 1;
+    }
+  
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: calculateRem(3px);
+      height: calculateRem(3px);
+      background: var(--primary-600);
+      opacity: 0;
+      border-radius: 50%;
+      transform: scale(1, 1) translate(-50%);
+      transform-origin: 50% 50%;
+    }
+}
+
+.sb-btn-secondary {
+    background-color: var(--secondary-400);
+    border-color: var(--secondary-400);
+    color: var(--white)
+}
+
+.sb-btn-secondary:hover,.sb-btn-secondary:active,.sb-btn-secondary.active {
+    background-color: var(--secondary-200);
+    border: .0625rem solid transparent;
+    color: var(--white)
+}
+
+.sb-btn-md {
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem
+}
+
+html[dir="rtl"] .sb-right-icon-btn i.icon {
+    margin-right: .25rem;
+    margin-right: 0
+}
+
+.sb-left-icon-btn {
+    padding: .5rem
+}
+
+.sb-left-icon-btn i.icon {
+    margin-right: .25rem
+}
+
+.sb-btn-square.sb-btn-md {
+    height: 4rem;
+    width: 4rem;
+    font-size: 1rem
+}
+
+
+.sb-btn-square.sb-btn-md i.icon {
+    margin: 0 0 0 0;
+    font-size: 2em
+}
+
+@import "default/partials/grid";
+@import "default/partials/colors";
+@import "default/partials/displays";
+@import "default/partials/flexbox";
+@import "default/partials/margins";
+@import "default/partials/overflows";
+@import "default/partials/paddings";
+@import "default/partials/positions";
+@import "default/partials/sizing";
+@import "default/partials/typography";
+// @import "default/partials/common";
+@import "default/partials/mixins";
+// @import "default/partials/index";
+// @import "default/partials/milestone";
+// @import "default/partials/banners";
+@import "default/partials/media-query";
+@import "default/components/primary-menu";
+@import "default/components/cards";
+// @import "default/components/getapp";
+@import "default/components/metrics-data";
+@import "default/components/containers";
+@import "default/components/tabs";
+@import "default/components/footer";
+// @import "default/components/contribute";
+// @import "default/components/sliders";
+@import "default/components/page-diksha";
+// .dk-card__img img {
+//     max-height: 100%;
+// }

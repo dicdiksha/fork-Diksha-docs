@@ -1,0 +1,32 @@
+/*======================
+		Footer
+=======================*/
+footer{
+	background:#E7E7E7;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	color:#000;
+}
+footer address{
+	margin:0;
+}
+footer a{
+	color:#000;
+}
+footer a:hover,
+footer a:active,
+footer a:focus,
+footer a:visited{
+  color:#000;
+  text-decoration:underline;
+}
+.footer-fix {
+	margin-bottom:75px;
+}
+@media (min-width: 992px){
+	.footer-fix {
+		margin-bottom:40px;
+	}
+}

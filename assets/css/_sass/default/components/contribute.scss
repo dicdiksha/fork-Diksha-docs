@@ -1,0 +1,184 @@
+.diksha-contribute-main-section{
+    padding: calculateRem(32px);
+    @include respond-below(sm){
+        padding: calculateRem(20px);
+    }
+}
+.diksha_contribute_para {
+	width: auto;
+	text-align: center;
+	margin: 30px auto;
+	font-size: inherit;
+}
+.diksha-contribute-cards-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: stretch;
+	justify-content: space-evenly;
+	align-items: center;
+    @include respond-below(sm){
+        flex-wrap: wrap !important;
+    }
+}
+.contribute-content-partner-footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.diksha-contribute-card {
+	img {
+		width: 75%;
+	}
+	height: 125px;
+	width: 90%;
+	display: flex;
+	text-align: center;
+	background: #fff;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.diksha-contribute-card-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: -webkit-fill-available;
+	p {
+		margin-top: 10px;
+	}
+}
+.justify-content-center {
+	text-align: center;
+	padding: 30px;
+}
+
+.diksha-contribute{
+    width: 100%;
+    height: 100%;
+    padding: calculateRem(24px) 0;
+    .vidya-daan-logo{
+        max-width: 100%;
+        @include respond-below(sm){
+            width: calculateRem(330px);
+            margin: 0 !important;
+        }
+        html[dir="rtl"] & {
+            @include respond-below(sm){
+                margin: 0 !important;
+            }
+        }
+    }
+    .sb-btn-participate{
+        &:hover{
+            text-decoration: none;
+            border-color: var(--primary-400);
+        }
+    }
+    .world-cloud-img{
+        height: calculateRem(266px);
+        max-width: 100%;
+    }
+    &__text{
+        color: var(--default-text);
+        font-size: calculateRem(16px);
+    }
+    .sb-btn-participate{
+        border: calculateRem(1px) solid var(--rc-0080CA);
+        border-radius: calculateRem(24px);
+        background-color: var(--rc-FFFDFB);
+        color: var(--rc-0080CA);
+        height: calculateRem(48px);
+        font-weight: normal;
+        font-size: calculateRem(14px);
+        font-weight: bold;
+        padding: 0 calculateRem(28px);
+        cursor: pointer;
+    }
+    &__vidyaDaan{
+        background-color: #0B5583;
+        color:var(--rc-FFFDFB);
+        &__title{
+            padding-top: calculateRem(4px);
+            font-size: calculateRem(22px);
+            font-weight: bold;
+        }
+        &__content{
+            p{
+                font-size: calculateRem(16px);
+                padding-top: calculateRem(24px);
+                line-height: calculateRem(32px);
+            }
+        }
+        &__read-more{
+            a{
+                font-size: calculateRem(16px);
+                text-decoration: underline;
+                cursor: pointer;
+                color:var(--rc-FFFDFB);
+            }
+        }
+    }
+    &__types{
+        padding: calculateRem(32px);
+        background: #f1f1f1;
+        border-radius: 0 0 1.5rem 1.5rem;
+        @include respond-below(sm){
+            padding: calculateRem(20px);
+        }
+        &__title{
+            color: var( --default-text);
+            font-size: calculateRem(22px);
+            font-weight: bold;
+            line-height: calculateRem(20px);
+            @include respond-below(sm){
+                font-size: calculateRem(20px);
+            }
+        }
+        &__section{
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            &__info{
+                text-align: center;
+                padding: calculateRem(32px);
+                &:last-child{
+                    @include respond-below(sm){
+                        padding-right: 0;
+                    }
+                    html[dir="rtl"] & {
+                        @include respond-below(sm){
+                            padding-left: 0;
+                        }
+                    }
+                }
+                img{
+                    width: calculateRem(80px);
+                    @include respond-below(sm){
+                        width: calculateRem(60px);
+                    }
+                }
+                @include respond-below(sm){
+                    padding: calculateRem(16px) calculateRem(16px) calculateRem(16px) 0;
+                }
+                html[dir="rtl"] & {
+                    @include respond-below(sm){
+                        padding: calculateRem(16px) 0 calculateRem(16px) calculateRem(16px);
+                    }
+                }
+            }
+            &__title{
+                font-size: calculateRem(18px);
+                padding-top: calculateRem(24px);
+                @include respond-below(sm){
+                    font-size: calculateRem(10px);
+                    padding-top: calculateRem(16px);
+                }
+            }
+        }
+    }
+}
+
+

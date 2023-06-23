@@ -1,0 +1,51 @@
+---
+layout: null
+permalink: /data/datasets/useful-links/
+title: Useful Links - Datasets
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="container-fluid relative p-0 {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
+        <header id="header" class="dk-header">
+            {% include dk-header.html %}
+        </header>
+        <article>
+            <div>
+                {% include catalogue-breadcrumbs.html %}
+                <section class="useful-links-section">
+                    <div class="container-fluid sb-g p-0">
+                        <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-8 sb-g-col-xl-9 sb-g-col-xxl-9 sb-g-col-xxxl-9">
+                            {% include catalogue-links-details.html %}
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </article>
+        <footer id="footer">
+            {% include dk-footer.html %}
+        </footer>
+    </div>
+</body>
+<script type="text/javascript">
+
+    (
+        function()
+        {
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            sc.src = "{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/default-head-min.js?{{site.time | | date: '%d%m%Y'}}";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sc,s);
+        }
+    )();
+
+</script>
+</html>

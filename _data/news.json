@@ -1,0 +1,35 @@
+{
+    "attributes": "News",
+    "items": [
+        {
+            "title": "‘PM eVIDYA’ for digital education, Manodarpan for psychological counselling to be launched: Finance Minister",
+            "newsImg": "https://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2020/05/17/Pictures/conference-finance-minister-nirmala-sitharaman-addresses-press_9a5c876e-9811-11ea-a091-8eb61e4add3b.jpg",
+            "url": "https://www.hindustantimes.com/education/pm-evidya-for-digital-education-manodarpan-for-psychological-counselling-to-be-launched-finance-minister/story-BpTgUmwxjcPBQIkRkaBECJ.html",
+            "date": "May 17, 2020"
+        },
+        {
+            "title": "Usage of Energized Textbooks for all SCERT schools in Nagaland",
+            "newsImg": "/assets/diksha-mission/Rectangle-3D.png",
+            "url": "https://morungexpress.com/usage-of-energized-textbooks-for-all-scert-schools-in-nagaland",
+            "date": "26th June 2020"
+        },
+        {
+            "title": "CBSE releases Resource Manuals for Science & Maths teachers in classes 6-10 on DIKSHA & cbse.nic.in- Link here",
+            "newsImg": "https://imgk.timesnownews.com/story/CBSE_BOARD_5.jpg?tr=w-600,h-450,fo-auto",
+            "url": "https://www.timesnownews.com/education/article/cbse-releases-resource-manuals-for-science-maths-teachers-in-classes-6-10-on-diksha-cbse-nic-in-link-here/641057",
+            "date": "Aug 22, 2020"
+        },
+        {
+            "title": "HRD Minister Launches First Online NISHTHA Programme For 1,200 Key Resources Persons Of Andhra",
+            "newsImg": "/assets/diksha-mission/Rectangle-3D.png",
+            "url": "http://www.businessworld.in/article/HRD-Minister-launches-first-online-NISHTHA-programme-for-1-200-Key-Resources-Persons-of-Andhra/16-07-2020-298348/",
+            "date": "16 July 2020"
+        },
+        {
+            "title": "QR codes in school textbooks a hit with users",
+            "newsImg": "/assets/diksha-mission/Rectangle-3D.png",
+            "url": "https://www.thehindu.com/news/cities/chennai/qr-codes-in-school-textbooks-a-hit-with-users/article26441690.ece",
+            "date": "March 06 2019"
+        }
+    ]
+}

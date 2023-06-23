@@ -1,0 +1,339 @@
+/*==================
+	Carousel
+==================*/
+.carousel-caption{
+	font-stretch: ultra-condensed;
+	bottom: 20px;
+	color: #ffffff;
+	left: 0 !important;
+	right: 0 !important;
+	text-align: center !important;
+	background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+	bottom: 0px;
+	position: absolute;
+	width: 100%;
+	z-index: 0;
+	padding-left: 15px;
+	opacity: 1;
+	box-shadow: 1px 2px 5px #000;
+}
+#myCarousel .carousel-inner>.item>a>img, #myCarousel .carousel-inner>.item>img {
+    width: 100%;
+    margin: auto;
+    height: 250px;
+    object-fit: cover;
+}
+.carousel-caption p{
+	text-shadow: none;
+	opacity: 1;
+	margin:0;
+}
+.circlearrow{
+	color:#fff;
+	padding:8px 15px;
+	margin-top:110%;
+}
+.boxesshadow {
+	min-height: initial;
+}
+.hdrtxt{
+	font-size: 18px;
+	padding-top:25px;
+}
+.dwnbutton {
+	transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+	width: 30px;
+	height: 30px;
+	padding: 0;
+	position: absolute;
+	transform: rotate(180deg);
+	bottom: -18px;
+	border-radius: 3em;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 2;
+}
+.gallery{
+	h3 {
+		color: #414141;
+		text-transform: uppercase;
+		font-size: 20px;
+		letter-spacing: 0px;
+		font-weight: 700;
+		text-align: center;
+		position: relative;
+		margin-bottom: 15px;
+	}
+}
+
+/*========================
+	DIKSHA FOR TEACHERS
+=========================*/
+.dikshaforteachers{
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+	.boxesshadow {
+		box-shadow: 0px 0px 0px 0px rgba(0,0,0,0);
+		transition: box-shadow 0.3s ease-in-out;
+
+		&:hover{
+			box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+		}
+	}
+	.flat{
+		border-radius:0;
+	}
+	.rowBox {
+		display: block;
+		margin-left: 0;
+		margin-right: 0;
+		min-height: 225px;
+		max-height: 225px;
+	}
+	.box1 {
+		color:#FEAC33;
+	}
+	.box2 {
+		color:#00A857;
+	}
+	.box3 {
+		color:#6EA3F8;
+	}
+	.box4 {
+		color:#FE4A4A;
+	}
+	.box5 {
+		color:#F60;
+	}
+	.box6 {
+		color:#007827;
+	}
+	.box7 {
+		color:#114679;
+	}
+	.box8 {
+		color:#F00001;
+	}
+	.imginpnl {
+		background-repeat: no-repeat;
+		height: 100%;
+		object-fit: cover;
+		margin-top: 0px;
+		opacity: 0.87;
+		width: 100%;
+	}
+	h4 {
+		text-align: left;
+		color: #fff;
+		padding: 20px 15px 10px;
+		letter-spacing: 0;
+		font-size: 18px;
+		margin:0;
+	}
+	h5{
+		margin: 0 auto;
+		padding: 8px 15px;
+		font-weight: normal;
+		color: #414141;
+		text-align: left;
+		font-size: 16px;
+		line-height: 22px;
+    }
+    p {
+		margin: 0 auto;
+		padding: 8px 15px;
+    }
+	.infocusbox {
+		border-top: 5px solid #3367D6;
+		margin-bottom: 30px;
+
+		.infocusimg {
+			background-repeat: no-repeat;
+			height: auto !important;
+			width: 100% !important;
+		}
+		.flat {
+			background-color: #fff;
+			border: none;
+			border-radius: 0px;
+			min-height: 500px;
+			margin-bottom: -8px;
+			padding-bottom: 0px;
+			box-shadow: none;
+		}
+		p {
+			color: #fff;
+			position: absolute;
+			bottom: 30px;
+			background: #46abff;
+			padding: 10px 30px;
+			font-size: 18px;
+			left: -15px;
+		}
+		ol.inFocus {
+			padding:10px 15px;
+
+			li{
+				padding: 30px 15px;
+				color: #333;
+				-webkit-padding-after: 12px;
+				text-align: left;
+				list-style: none;
+				line-height: 20px;
+				letter-spacing: 0;
+				border-bottom: 1px solid #ddd;
+				transition: width 0.01s ease-in-out, margin-left 0.01s ease-in-out;
+				width: 100%;
+				margin-left: 0;
+
+				&:hover {
+					padding: 30px 15px;
+					background: #fff;
+					box-shadow: 0 0px 15px 2px rgba(0,0,0,0.2) !important;
+					width: 114%;
+					margin-left: -7%;
+				}
+
+				a {
+					color: #333;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+/*======================
+	Content Partners
+=======================*/
+.contentPartnersList img {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+	box-shadow: 0 1px 2px rgba(0,0,0,0.005);
+	transition: box-shadow 0.3s ease-in-out;
+	border-radius: 10px;
+	width:100%;
+
+    &:hover{
+		box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+		border-radius: 10px;
+	}
+}
+@media (min-width:480px){
+	.dikshaforteachers .rowBox {
+		display: flex;
+	}
+}
+@media (min-width:768px){
+	#myCarousel .carousel-inner>.item>a>img, #myCarousel .carousel-inner>.item>img {
+		height: 400px;
+    }
+    .carousel-control .fa fa-angle-left,  .carousel-control .icon-prev  {
+		margin-left: -10px;
+	}
+	.carousel-control .fa fa-angle-left, .carousel-control .fa fa-angle-right, .carousel-control .icon-prev, .carousel-control .icon-next {
+		width: 30px;
+		height: 30px;
+		margin-top: -10px;
+		font-size: 30px;
+	}
+	.carousel-control {
+		width: 5%;
+		top: 25%;
+		margin-before: 0.4%;
+		-webkit-margin-before: 0.4%;
+	}
+	.carousel-control.left, .carousel-control.right {
+		background-image: none;
+		opacity: 1;
+		z-index: 3;
+	}
+	.carousel-caption{
+		bottom:0;
+		top: initial;
+		padding-bottom: 0px;
+		padding-top: 0px;
+	}
+	.bnrtxt{
+		font-size: 22px;
+		padding: 40px 0px 50px;
+		font-weight: bold;
+		line-height: 30px;
+	}
+	.dikshabanner1 {
+		background-image:  url(/assets/imgs/banners/launch-diksha.jpg);
+		background-repeat: no-repeat;
+		height: 550px !important;
+		width: 100% !important;
+		background-size:  cover;
+     }
+	.dikshabanner2 {
+		background-image:  url(/assets/imgs/banners/1.jpg);
+		background-repeat: no-repeat;
+		height: 550px !important;
+		width: 100% !important;
+		background-size:  cover;
+        background-position:  100% 25%;
+	}
+	.dikshabanner3 {
+		background-image:  url(/assets/imgs/banners/2.jpg);
+		background-repeat: no-repeat;
+		height: 550px !important;
+		width: 100% !important;
+		background-size:  cover;
+		background-position:  100% 90%;
+	}
+	.dikshabanner4 {
+		background-image:  url(/assets/imgs/banners/3.jpg);
+		background-repeat: no-repeat;
+		height: 550px !important;
+		width: 100% !important;
+		background-size:  cover;
+		background-position:  100% 50%;
+	}
+	.dikshabanner5 {
+		background-image:  url(/assets/imgs/banners/4.jpg);
+		background-repeat: no-repeat;
+		height: 550px !important;
+		width: 100% !important;
+		background-size:  cover;
+	}
+	.dwnbutton {
+		width: 70px;
+		height: 70px;
+		bottom: -35px;
+	}
+	.dikshaforteachers {
+		padding-top: 40px;
+	}
+	.gallery h3 {
+		margin-bottom: 30px;
+		font-size:25px;
+	}
+}
+@media (min-width:991px){
+	.dikshaforteachers {
+		padding-top: 90px;
+	}
+	.gallery h3 {
+		margin-bottom: 50px;
+    }
+}
+
+
+.one {
+}
+.two {
+    display: none;
+}
+
+.bannerData{
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	padding: 30px 15px;
+}
+.bannerData1{
+	display: block;
+	padding :30px 15px;
+}

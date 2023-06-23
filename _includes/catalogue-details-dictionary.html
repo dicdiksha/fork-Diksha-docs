@@ -1,0 +1,18 @@
+<div class="container-fluid p-0">
+    <div class="sb-g">
+        <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xl-12 sb-g-col-xxl-12 sb-g-col-xxxl-12">
+            <div class="card-container">
+                <div class="card-header">
+                    <h3 class="card-title">
+                        <img src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/catalogue/dictionary.svg"
+                            onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission/catalogue/dictionary.svg'"
+                            alt="Dictionary Image" class="mr-10" /> <span data-translate="datadictionary">{{site.data.text.datadictionary}}</span></h3>
+                </div>
+                <div class="card-body dictionary-table-data"></div>
+                <div class="card-footer">
+                    <button type="button" class="dictionary-download-button" data-translate="download">{{site.data.text.download}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

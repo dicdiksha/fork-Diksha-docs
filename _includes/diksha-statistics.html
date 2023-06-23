@@ -1,0 +1,50 @@
+<div class="container-fluid">
+    <div class="statistics-box">
+        <div class="row">
+            <div class="col-12">
+                <div class="border-box">
+                    <div class="row">
+                        <label>DIKSHA Usage Till Date</label>
+                        <div class="trendline"><sub style="font-weight: normal; font-size: 14px;"><i>( Last updated on: <span class="updatedOn"></span> )</i>
+                            <sup class="data3" data-tooltip="Report updated weekly - by noon, every Monday">?</sup>
+                        </sub></div>
+                        <div class="col-12">
+                            <p>
+                                <span class="relative lh55">
+                                    <span class="learning-sessions" id="learningSession"></span> 
+                                    <sup class="data1" data-tooltip="Number of times learning activities were undertaken using Diksha infrastructure by learners - till date">?</sup>
+                                </span>
+                                <span class="text1"> Learning sessions across </span>
+                                <span class="relative lh55">
+                                    <span class="x-mins"></span>
+                                    <sup class="data2" data-tooltip="Total Diksha usage time in minutes - till date">?</sup>
+                                </span>
+                                <span class="mins"> Minutes</span>
+                            </p>
+                            <a href="/public-dashboard" class="diksha-dashboard">See Diksha Dashboard</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/default/waypoints.min.js" type="text/javascript"></script>
+<script src="assets/js/default/jquery.counterup.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function(){
+        setTimeout(() => {
+            $("#learningSession").counterUp({
+        delay: 10,
+        time: 1000
+      });
+
+      $(".x-mins").counterUp({
+        delay: 10,
+        time: 1000
+      });
+        }, 1000);
+              
+    })
+</script>

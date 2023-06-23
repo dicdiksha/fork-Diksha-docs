@@ -1,0 +1,39 @@
+.bg-yellow {
+    background-color: #FFD955;
+}
+
+.ui-breadcrumbs{
+    padding: 18px 56px;
+    ol.list {
+        padding-left: 0;
+        margin: 0;
+        line-height: 30px;
+        li{
+            list-style: none;
+            display: inline-block;
+            a{
+                color: #333333;
+                font-size: 18px;
+                font-weight: normal;
+                letter-spacing: 0;
+                line-height: 24px;
+                text-decoration: none;
+                &.active{
+                    font-weight: bold;
+                }
+            }
+        }
+        span{
+            padding: 0 7px;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .ui-breadcrumbs{
+        padding: 16px;
+    }
+    .ui-breadcrumbs ol.list li a{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,126 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="container-fluid relative p-0 {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
+        <header id="header" class="dk-header">
+            {% include dk-header.html %}
+        </header>
+        <article>
+            <div class="computer only" id="webView">
+                <section class="dk-page-main-area">
+                    <div class="container sb-g">
+                        <div
+                            class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-4 sb-g-col-xl-4 sb-g-col-xxl-3 sb-g-col-xxxl-4 mr-40 dk-page-left-area">
+                            <!-- common area in all the pages -->
+                            {% include page-say-diksha.html %}
+                            {% include page-state-boards.html %}
+                            <!-- common area in all the pages -->
+                        </div>
+                        <div
+                            class="sb-g-col-xs-12 sb-g-col-md-8 sb-g-col-lg-8 sb-g-col-xl-8 sb-g-col-xxl-9 sb-g-col-xxxl-12 dk-page-right-area d-flex pr-0">
+                            <div class="dk-page-right-container w-100">
+                                <div class="dk-page-compt-container">
+                                    <!-- page sections -->
+                                    {{content}}
+                                    <!-- page sections -->
+                                    <div class="dk-page-compt-dottedround-container">
+                                        <div class="dk-page-compt-dottedround"></div>
+                                        <!-- <div class="dk-page-compt-container-dotted-round"></div>
+                                        <div class="dk-page-compt-container-round"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>{% include dk-right-circle.html %}</div>
+                </section>
+                <div>
+                    {% include dk-middle-circle.html %}
+                </div>
+            </div>
+
+            <div class="mobile only" id="mobileView">
+                {% contentblock mobileview %}
+            </div>
+
+        </article>
+        <footer id="footer">
+            {% include dk-footer.html %}
+        </footer>
+    </div>
+</body>
+<!-- <script async defer src="{{site.baseurl}}/assets/js/default-foot-min.js"></script> -->
+{% if page.url contains '/help/' or  page.url contains 'search.html' %}
+{% elsif page.url contains '/about/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+<script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/about.js"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/about.js'"></script>
+{% elsif page.url contains '/getapp/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+<script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/getapp.js"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/getapp.js'"></script>
+{% elsif page.url contains '/contribute/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+<script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/contribute.js"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/contribute.js'"></script>
+{% elsif page.url contains '/data/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/dashboard-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/dashboard-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+{% else %}
+<script type="text/javascript">
+
+    (
+        function()
+        {
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            sc.src = "{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/default-head-min.js?{{site.time | | date: '%d%m%Y'}}";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sc,s);
+        }
+    )();
+    var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = "{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    link.media = 'all';
+    head.appendChild(link);
+}
+
+</script>
+<!-- <link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+
+<noscript><link rel="stylesheet" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/default.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/default.min.css?{{site.time || date: %d%m%Y}}'"></noscript>
+{% endif %}
+<script>
+    //
+</script>
+
+</html>

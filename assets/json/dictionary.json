@@ -1,0 +1,124 @@
+{
+    "attributes": "dictionary",
+    "items": [{
+            "id": 1,
+            "column": "Date",
+            "label": "Sync Date",
+            "description": "Default date on which the data is generated"
+        },
+        {
+            "id": 2,
+            "column": "dimensions_pdata_id",
+            "label": "Producer ID",
+            "description": "Which app did the user/usage come from?"
+        },
+        {
+            "id": 3,
+            "column": "dimensions_type",
+            "label": "Type",
+            "description": "\"Type of the summary - Content, Course, Textbook\""
+        },
+        {
+            "id": 4,
+            "column": "dimensions_mode",
+            "label": "Mode",
+            "description": "\"Mode of the summary - edit, play, switch-user. Can be NULL for other interactions such as a QR scan, for eg.\""
+        },
+        {
+            "id": 5,
+            "column": "object_id",
+            "label": "Object ID",
+            "description": "DO id of the object. For eg.: content_id if the object_type is content"
+        },
+        {
+            "id": 6,
+            "column": "object_type",
+            "label": "Object Type",
+            "description": "\"Type of the object - Content, Textbook, Course, Digital Textbook, SelfAssess, LessonPlan, TVLesson\""
+        },
+        {
+            "id": 7,
+            "column": "object_rollup_l1",
+            "label": "Object Rollup L1",
+            "description": "\"Parent ID. For eg.: It can be course id, textbook id for a content linked to a course or a textbook\""
+        },
+        {
+            "id": 8,
+            "column": "content_name",
+            "label": "Content Name",
+            "description": "Name of the content"
+        },
+        {
+            "id": 9,
+            "column": "content_board",
+            "label": "Content Board",
+            "description": "Board of the content"
+        },
+        {
+            "id": 10,
+            "column": "content_medium",
+            "label": "Content Medium",
+            "description": "Medium of the content"
+        },
+        {
+            "id": 11,
+            "column": "content_subject",
+            "label": "Content Subject",
+            "description": "Subject of the content"
+        },
+        {
+            "id": 12,
+            "column": "content_mimetype",
+            "label": "Content Mimetype",
+            "description": "\"The content mimetype. To identify whether the content is video, pdf, ecml, youtube, h5p, webm, epub, mp3, jpeg, png\""
+        },
+        {
+            "id": 13,
+            "column": "collection_name",
+            "label": "Collection Name",
+            "description": "Name of the collection if object rollup l1 is present"
+        },
+        {
+            "id": 14,
+            "column": "collection_board",
+            "label": "Collection Board",
+            "description": "Board of the collection if object rollup l1 is present"
+        },
+        {
+            "id": 15,
+            "column": "collection_medium",
+            "label": "Collection Medium",
+            "description": "Medium of the collection"
+        },
+        {
+            "id": 16,
+            "column": "collection_subject",
+            "label": "Collection Subject",
+            "description": "Subject of the collection"
+        },
+        {
+            "id": 17,
+            "column": "collection_type",
+            "label": "Collection Type",
+            "description": "\"Type of the collection - Textbook, Course, LessonPlan, Collection\""
+        },
+        {
+            "id": 18,
+            "column": "total_interactions",
+            "label": "Total Interactions",
+            "description": "Total number of interactions done within the content"
+        },
+        {
+            "id": 19,
+            "column": "total_count",
+            "label": "Total Count",
+            "description": "Total Count. Denotes summaries/sessions/plays based on the query dimensions"
+        },
+        {
+            "id": 20,
+            "column": "total_timespent",
+            "label": "Total Time spent",
+            "description": "Total timespent in hours"
+        }
+    ]
+}

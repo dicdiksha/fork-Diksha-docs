@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row video-player-div">
+        <div class="col-sm-12 col-md-12 text-center featured-content-text">
+            <div class="title pb-5 pt-3">
+                <h2>
+                    Featured Content
+                </h2>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12 text-center">
+            {% include feature-content-player.html %}
+        </div>
+    </div>
+    <div class="featured-content-card-container d-none d-md-flex py-5 justify-content-md-center" id="featureContentCardContainer">
+
+    </div>
+    <div class="featured-content-sm featured-content-card-container d-flex d-sm-flex d-md-none py-5" id="featureContentCardContainerMobile">
+    </div>
+</div>
+<script async defer src="{{site.baseurl}}/assets/js/default/featured-content-video.js"></script>

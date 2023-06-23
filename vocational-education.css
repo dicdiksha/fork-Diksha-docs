@@ -1,0 +1,134 @@
+img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    content-visibility: auto;
+}
+
+.FLN-explore {
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    text-indent: 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 5px 5px 2px 0 rgb(0 0 0 / 10%);
+    padding: 5px 11px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 14px;
+}
+
+.FLN-explore img {
+    width: 20px !important;
+    display: inline;
+}
+
+
+.intro-section .bg-mask-1 img {
+    display: block;
+    width: 100%;
+}
+
+.about-section {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.about-section h3 {
+    margin-top: 10px;
+}
+
+.about-section p {
+    color: #4e4d4c;
+    font-weight: 300;
+    line-height: 24px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.about-section .more-text {
+    display: none;
+}
+
+.about-section .more-less-button {
+    color: #bd2429;
+    font-weight: 500;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.sectors-section {
+    background: #ececec;
+    border-top: 4px solid #cecece;
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+
+.sectors-section .container-asset {
+    max-width: 70%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-cl {
+    background: #00338e;
+    margin: 5px 10px;
+    min-width: 90px;
+    font-size: 14px;
+}
+
+label.accordion-label {
+    border: 2px solid #ddd;
+    background: #fff;
+    border-radius: 40px;
+    padding: 10px 15px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+label.accordion-label i {
+    border-radius: 100%;
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+ul.content {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.accordions-div {
+    background: rgb(221, 221, 221);
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+
+.blue {
+    background-color: lightblue !important;
+}
+
+.yellow {
+    background-color: #ffc567 !important;
+}
+
+label.accordion-label.blue,
+label.accordion-label.yellow {
+    border: none;
+}
+
+.blue i,
+.yellow i {
+    border: 2px solid #fff;
+}
+
+.no-bg {
+    background: none;
+}

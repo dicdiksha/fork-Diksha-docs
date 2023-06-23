@@ -1,0 +1,80 @@
+{% assign docs = site.pages | where:"layout","documents" | sort: 'categoryOrder' | group_by: "category"   %}
+<div class="panel-group documents-list" id="docsaccordion" role="tablist" aria-multiselectable="true">
+	{% for docscategory in docs %} 
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="heading{{forloop.index}}">
+				<h4 class="panel-title">
+					<a 
+						role="button" 
+						data-toggle="collapse" 
+						data-parent="#docsaccordion" 
+						href="#collapse{{forloop.index}}"
+						aria-controls="collapse{{forloop.index}}"
+						{% if docscategory.name == page.category %}
+							aria-expanded="true"
+						{% else %}
+							aria-expanded="false" class="collapsed"
+						{% endif %}
+					>
+						<span class="folder-heading">
+							<span class="folder-heading-left">
+								<i class="material-icons">folder_open</i>
+							</span>
+							<span class="folder-heading-center">
+								<span class="folder-heading-title">{{docscategory.name}}</span>
+								<span class="folder-heading-meta">
+									<span>{{docscategory.items | size}} Items</span>
+								</span>
+							</span>
+							<span class="folder-heading-right">
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<i class="fa fa-angle-up" aria-hidden="true"></i>
+							</span>
+						</span>
+					</a>
+				</h4>
+			</div>
+			<div 
+				id="collapse{{forloop.index}}"
+				{% if docscategory.name == page.category %}
+					class="panel-collapse collapse in"
+				{% else %}
+					class="panel-collapse collapse"
+				{% endif %}
+				role="tabpanel" 
+				aria-labelledby="heading{{forloop.index}}"
+			>
+				<div class="panel-body">
+					{% for docitems in docscategory.items %}
+					{% if docitems.showSidebar == "true" %}
+						<div 
+							{% if docitems.url == page.url %}
+								class="playlist-list-item active"
+							{% else %}
+								class="playlist-list-item"
+							{% endif %}
+						>
+							<a href="{{docitems.url}}" class="iframeupdater">
+								{{docitems.title}}
+							</a>
+							{% if docitems.downloadURL != ''  %}
+								<a href="{{docitems.url}}" title="{{docitems.title}} " class="iframeupdater">
+									<i class="material-icons">file_download</i>
+								</a>
+							{% else %}
+								<a  
+									title="{{docitems.title}}" 
+									class="iframeupdater"
+									href="{{docitems.url}}"
+								>
+									<i class="fa fa-youtube-play"></i>
+								</a>
+							{% endif %}	
+						</div>
+						{% endif %}
+					{% endfor %}
+			</div>
+		</div>
+	</div>
+	{% endfor %}
+</div>

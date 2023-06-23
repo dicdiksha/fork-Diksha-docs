@@ -1,0 +1,273 @@
+.diksha-statistics {
+    padding-top: 5rem !important;
+
+    .statistics-box {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+
+        .top-row{
+            border: 3px solid #f6711d;
+            border-radius: 6px;
+            padding: 15px;
+            background: #f6711d;
+
+            h3{
+                display: block;
+                text-align: center;
+                margin: 0 auto;
+                color: #fff;
+
+                [data-tooltip] {
+                    top: 0.5em;
+                    margin-left: 15px;
+                    color: #333;
+                
+                }
+
+                [data-tooltip]::before{
+                    width: 230px;
+                    left: -50px;
+                }
+            }
+        }
+
+        .bottom-row {
+            border: 3px solid #f6711d;
+            border-radius: 20px;
+            border-top: none;
+            padding: 45px 15px 60px;
+            text-align: center;
+        }
+
+        .diksha-dashboard, .diksha-dashboard:hover {
+            cursor: pointer !important;
+            border-radius: 8px;
+            background-color: #f6711d;
+            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.25);
+            padding: 20px 80px;
+            color: #FFFFFF;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 30px;
+            text-align: center;
+            outline: 0;
+            border: 0;
+            position: relative;
+            bottom: -35px;
+            left: 0;
+            right: 0;
+            display: block;
+            margin: 0 auto;
+            border-radius: 33px;
+            background-color: #FFFFFF;
+            box-shadow: 0 10px 20px -10px rgba(0,0,0,0.1);
+            color: #008840;
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 0;
+            line-height: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            display: inline-block;
+        }
+        .border-box{
+            border-radius: 8px;
+            background-color: #E0F5EA;
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 40px;
+              /* border: 2px solid #024F9D;
+              border-radius: 10px;
+              background: #f1f7ff;
+              margin-bottom: 30px;
+              padding: 40px 15px 15px;
+              text-align: center; */
+          }
+          
+          .border-box label {
+              color: #333333;
+              font-size: 24px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 26px;
+              text-align: center;
+              display: block;
+              width: 100%;
+              margin-bottom: 10px;
+          }
+          
+          .border-box p {
+              margin-bottom: 0;
+          }
+          
+          .border-box p  span.learning-sessions {
+              color: #008840;
+              font-size: 40px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 55px;
+          }
+          
+          .border-box p span.text1 {
+              color: #008840;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: 33px;
+          }
+          
+          .border-box p span.x-mins {
+              color: #007CFF;
+              font-size: 40px;
+              font-weight: bold;
+              letter-spacing: 0;
+              line-height: 55px;
+          }
+          
+          .border-box p span.mins {
+              color: #0091FF;
+              font-size: 24px;
+              letter-spacing: 0;
+              line-height: 33px;
+            
+          }
+    }
+    [data-tooltip] {
+        background: #fff;
+        border: 1px solid #333;
+        border-radius: 100px;
+        padding: 9px 6px;
+        line-height: 0px;
+        font-size: 14px;
+        top: -2.5em;
+        position: absolute;
+        margin-left: -10px;
+    }
+
+    [data-tooltip]::before,
+    [data-tooltip]::after {
+        opacity: 0;
+        visibility: hidden;
+        margin-top: -0.5em;
+    }
+
+    [data-tooltip]::before {
+        content: attr(data-tooltip);
+        display: block;
+        position: absolute;
+        top: -86px;
+        left: -10PX;
+        margin-left: -4.75em;
+        width: 150px;
+        text-align: center;
+        border-radius: 4px;
+        background: black;
+        color: white;
+        font-size: 0.8em;
+        line-height: 1.1;
+        padding: 0.75em 0.95em;
+        z-index: 3;
+        line-height: 14px;
+    }
+
+    .data1[data-tooltip]::before{
+        top: -70px;
+        left: 50%;
+        margin-left: -9.75em;
+        width: 220px;
+      }
+    
+      .data2[data-tooltip]::before{
+        top: -56px;
+        left: 50%;
+        margin-left: -6.75em;
+        width: 150px;
+      }
+
+    [data-tooltip]::after {
+        content: "";
+        border: 10px solid transparent;
+        border-top-color: black;
+        position: absolute;
+        top: -12px;
+        left: 10px;
+        margin-left: -10px;
+    }
+
+    [data-tooltip]:hover {
+        cursor: help;
+    }
+
+    [data-tooltip]:hover::before,
+    [data-tooltip]:hover::after {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .diksha-statistics{
+        padding-top: 23rem;
+    }
+
+    [data-tooltip] {
+        top: -1.5em !important;
+    }
+
+    .border-box p span.learning-sessions, 
+    .border-box p span.x-mins,
+    .border-box p span.text1,
+    .border-box p span.mins {
+        line-height: 30px !important;
+    }
+
+    .border-box p span.learning-sessions, 
+    .border-box p span.x-mins{
+        font-size: 20px !important;
+    }
+
+    .border-box p span.text1,
+    .border-box p span.mins{
+        font-size: 18px !important;
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.lh55 {
+    line-height: 55px;
+}
+
+@media only screen and (max-width: 430px){
+    .diksha-statistics .statistics-box .diksha-dashboard, .diksha-statistics .statistics-box .diksha-dashboard:hover {
+        padding: 20px 10px;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+.data3[data-tooltip]{
+    top: -0.5em;
+    right: -2em;
+    padding: 7px 4px;
+    font-size: 10px;
+  }
+
+  .data3[data-tooltip]::before{
+      top: -50px;
+      margin-left: -6.75em;
+  }
+  .data3[data-tooltip]::after{
+      top: -10px;
+  }
+
+  .trendline {
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+}

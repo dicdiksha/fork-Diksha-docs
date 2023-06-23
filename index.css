@@ -1,0 +1,789 @@
+img{
+    content-visibility: auto;
+   
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(./fonts/NotoSans-Regular.woff2) format("woff2"), url(./fonts/NotoSans-Regular.woff) format("woff");
+    font-display: swap
+}
+
+@font-face {
+    font-family: 'Noto Sans Bold';
+    src: url(./fonts/NotoSans-Bold.woff2) format("woff2"), url(./fonts/NotoSans-Bold.woff) format("woff");
+    font-display: swap;
+    font-weight: bold
+}
+
+.wrapper {
+    padding-left: 54px;
+    padding-right: 54px;
+    padding-bottom: 54px;
+}
+
+h1 {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: -0.27px;
+    line-height: 61.2px;
+    margin-bottom: 40px;
+}
+
+h4 {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.11px;
+    line-height: 27.2px;
+    margin-bottom: 12px;
+}
+
+.p-l-r-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.bg-mask-1 {
+    position: relative;
+    /* background: url(./images/banner.png);
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: 100% 568px;
+    background-position: top; */
+}
+
+.py-30 {
+   
+  
+    padding: 30px;
+}
+.book-column-img{
+    width: 100%;
+    padding: 20px;
+}
+.row-book{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.bg-mask-1 > img{
+    width: 100%;
+    border-radius: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+.fln-mission-document {
+    background-color: #FFFFFF;
+    height: 73px;
+    margin: 5px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 2px 0 rgb(0 0 0 / 10%);
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.fln-mission-document div.button-wrapper-div {
+    height: 65px;
+    width: 240px;
+    background-color: #FFFFFF;
+    border: 1px dashed rgba(151, 151, 151, 0.27);
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.w23{
+    width: 28%;
+}
+
+.fln-mission-document div p {
+    margin-bottom: 0;
+    width: 151px;
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 19px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex-align-center {
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+/* 
+.intro-row {
+    padding: 146px 92px;
+} */
+
+.intro-section .image-wrapper img {
+    width: 100%;
+}
+
+.fln-about-section {
+    padding: 50px;
+}
+
+h3 {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 51px;
+}
+
+.column-count {
+    column-count: 2;
+    column-gap: 94px;
+}
+
+.fln-about-section p {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+.fln-footer-section {
+    padding: 15px;
+    background-color: #fff;
+}
+
+/* .fln-footer-section .row.flex-align-center {
+    align-items: flex-end;
+} */
+
+.fln-footer-section h3 {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 51px;
+    margin-bottom: 25px;
+}
+
+.fln-footer-section p {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.fln-footer-section button {
+    height: 24px;
+    width: 120px;
+    /* color: #FFFFFF; */
+    font-family: "Noto Sans";
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 24px;
+    height: 48px;
+    width: 152px;
+    border-radius: 8px;
+    /* background-color: #024F9D; */
+    box-shadow: 5px 5px 2px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.fln-content-section {
+    /* padding: 20px; */
+    margin: 0 -54px;
+    background-color: #F3F3E5;
+}
+
+.fln-content-section .fln-development-goals {
+    padding: 0 54px;
+}
+
+.fln-content-section .fln-development-goals .header {
+    background: url("./images/Mask2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 428px;
+}
+
+.fln-content-section .fln-development-goals .header h3 {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 51px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.fln-content-section .fln-development-goals .card-contents {
+    width: 100%;
+    margin-top: -20%;
+}
+
+.fln-content-section .fln-development-goals .card-contents .cards {
+    padding: 50px 45px;
+    background-color: #fff;
+    border-radius: 8px;
+    height: 100%;
+    min-height: 642px;
+    position: relative;
+}
+
+
+
+.fln-content-section .fln-development-goals .card-contents .cards h4 {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 32px;
+    margin-bottom: 35px;
+}
+
+.fln-content-section .fln-development-goals .card-contents .cards p {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.fln-content-section .fln-development-goals .card-contents .cards ul.tags {
+    padding: 0;
+}
+
+.fln-content-section .fln-development-goals .card-contents .cards ul.tags li {
+    display: inline-block;
+    padding: 5px;
+    color: #024F9D;
+    font-family: "Noto Sans";
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 20px;
+}
+
+.fln-content-section .fln-development-goals .card-contents .cards ul.tags>li:before {
+    content: "•";
+    margin-right: 0.5em;
+    color: blue;
+}
+
+
+.feature-content-section .video-player-div {
+    position: relative;
+}
+
+.feature-content-section .video-player-div h3 {
+    color: #333333;
+    line-height: 33px;
+}
+
+.feature-content-section.featured-content-container .featured-content-card-container {
+    position: relative !important;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start !important;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar
+}
+
+.featured-content-video {
+    padding-left: 0px;
+}
+
+.featured-content-video .video-container .video-player {
+    height: 380px;
+    max-width: 800px;
+    border: 10px solid black;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative
+}
+
+.featured-content-video .video-container .video-player iframe {
+    border: none;
+    border-radius: 5px
+}
+
+.featured-content-video .video-container .phone-sensors {
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: auto;
+    left: 0;
+    background: black;
+    padding: 10px 5px 10px 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px
+}
+
+.featured-content-video .video-container .phone-sensors .sensor {
+    width: 8px;
+    height: 8px;
+    background: #252525;
+    border-radius: 50%
+}
+
+.featured-content-video .video-container .phone-sensors .speaker {
+    width: 5px;
+    height: 74px;
+    background: #252525;
+    border-radius: 10px;
+    margin: 10px 0 10px 1px
+}
+
+.featured-content-video .video-container .play-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: url("./images/featured-content.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+.relative {
+    position: relative;
+}
+
+.card-content {
+    position: relative;
+    background: #fcfcfc;
+    padding: 15px;
+    min-width: 270px;
+    min-height: 200px;
+    margin: 0 10px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 5px
+}
+
+.card-content .card-section1 {
+    clear: both;
+    display: block;
+    overflow: hidden
+}
+
+.card-content .card-section1 .img-div {
+    width: 70px;
+    float: left
+}
+
+.card-content .card-section1 .card-details {
+    max-width: 145px;
+    float: left
+}
+
+.card-content .card-section1 .card-details .action-label {
+    margin-bottom: 15px
+}
+
+.card-content .card-section1 .card-details .action-label label {
+    font-size: 12px;
+    padding: 2px 10px;
+    border: 1px solid #024f9d;
+    border-radius: 5px;
+    color: #024f9d;
+    cursor: pointer
+}
+
+.card-content .card-section1 .card-details .subject-details label {
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer
+}
+
+.card-content .card-section2 .card-title label {
+    font-size: 14px;
+    width: 240px;
+    font-weight: bold;
+    color: #024f9d
+}
+
+.card-content .card-section2 .syslabs-details {
+    position: absolute;
+    bottom: 5px;
+    left: 15px
+}
+
+.card-content .card-section2 .syslabs-details label {
+    font-size: 14px;
+    color: #999
+}
+
+.card-content.active {
+    box-shadow: 0 2px 7px 3px rgba(2, 79, 157, 0.4);
+    border: 1px solid rgba(2, 79, 157, 0.4);
+    top: -10px
+}
+
+.card-content {
+    position: relative;
+    background: #fcfcfc;
+    padding: 15px;
+    min-width: 270px;
+    min-height: 200px;
+    margin: 0 10px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 5px
+}
+
+.card-content .card-section1 {
+    clear: both;
+    display: block;
+    overflow: hidden
+}
+
+.card-content .card-section1 {
+    clear: none;
+    overflow: none;
+}
+
+
+.card-content .card-section1 .img-div {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    clear: both;
+}
+
+.img-fluid {
+    /* width: 100%; */
+    /* object-fit: none; */
+    height: inherit;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-content .card-section1 .card-details {
+    max-width: 145px;
+    float: left
+}
+
+.card-content .card-section1 .card-details .action-label {
+    margin-bottom: 15px
+}
+
+.card-content .card-section1 .card-details .action-label label {
+    font-size: 12px;
+    padding: 2px 10px;
+    border: 1px solid #024f9d;
+    border-radius: 5px;
+    color: #024f9d;
+    cursor: pointer
+}
+
+.card-content .card-section1 .card-details .subject-details label {
+    font-size: 12px;
+    color: #666666;
+    cursor: pointer
+}
+
+.card-content .card-section2 .card-title label {
+    font-size: 14px;
+    width: 240px;
+    font-weight: bold;
+    color: #024f9d
+}
+
+.card-content .card-section2 .syslabs-details {
+    position: absolute;
+    bottom: 5px;
+    left: 15px
+}
+
+.card-content .card-section2 .syslabs-details label {
+    font-size: 14px;
+    color: #999
+}
+
+.card-content.active {
+    box-shadow: 0 2px 7px 3px rgba(2, 79, 157, 0.4);
+    border: 1px solid rgba(2, 79, 157, 0.4);
+    top: -10px
+}
+.fln-footer-section img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.p24{
+    padding: 24px;
+}
+@media only screen and (min-width: 1201px) {
+    .featured-content-container .featured-content-card-container {
+        position: relative !important;
+        width: 1140px !important;
+    }
+}
+
+.carousel-inner .carousel-item>img {
+    width: 100%;
+}
+
+/* .carousel-inner .carousel-item.active{
+    height: 568px;
+} */
+
+
+
+
+.carousel-inner .carousel-item.active.carousel3>img,.carousel-inner .carousel-item.active.carousel2>img{
+    border-radius: 40px;
+   
+}
+.carousel-indicators li{
+    background-color: rgb(55 53 101);
+}
+.carousel-indicators .active {
+    background-color: #ffba33;
+}
+
+
+
+html, body {
+    overflow-x: hidden;
+}
+.video-icon{
+    width: 13%;
+}
+.hreftoButton{
+    display: block;
+    width: 25%;
+    height: auto;
+    background: #4E9CAF;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.sub-heading{
+    text-align: center;
+}
+.intro-row{
+    display: flex;
+    width: 100%;
+}
+.flex-card-grade{
+    display: flex;
+}
+.cards-dg{
+    padding: 10px;
+}
+.page-content a, .dept-content a{
+    color: #111;
+}
+.bg-light {
+    background-color: #fff;
+    margin-bottom: 3px;
+    box-shadow: 1px 2px 3px #919191;
+}
+.btn-intor-row{
+    margin: 0px 78px;
+}
+@media only screen and (max-width: 992px) {
+    .column-count {
+        column-count: 1;
+        column-gap: 0;
+    }
+    .fln-content-section .fln-development-goals .card-contents .col-sm-12.col-md-6.col-lg-4 {
+        margin-bottom: 20px;
+    }
+    .fln-about-section {
+        padding: 54px 0 54px;
+    }
+    .container{
+        max-width: 92.5%;
+    }
+    .featured-content-video .video-container .video-player{
+        max-width: 100%;
+    }
+    .card-content {
+        margin: 0 20px 0 0;
+    }
+    .fln-footer-section{
+        padding: 54px 0 0;
+    }
+    /* .carousel-inner .carousel-item.active{
+        height: 380px;
+    } */
+    /* .intro-row {
+        padding: 76px 70px;
+    } */
+ 
+    h4{
+        line-height: 27.2px;
+        margin-bottom: 12px;
+        margin-top: 15px;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 20px;
+    }
+    .fln-content-section .fln-development-goals .card-contents{
+        margin-top: 0;
+    }
+    .fln-content-section .fln-development-goals .header h3{
+        margin-bottom: 0;
+        padding-bottom: 50px;
+    }.fln-content-section .fln-development-goals .header{
+        height: auto;
+    }
+    .bg-mask-1 > img{
+        height: auto;
+        object-fit: unset;
+    }
+    .flex-card-grade{
+        display: contents;
+    }
+    .fln-content-section{
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper,
+    .fln-content-section .fln-development-goals {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .fln-about-section {
+        padding: 20px 0px 40px;
+    }
+
+    .fln-content-section,
+    .fln-content-section {
+        margin: 0 -24px;
+    }
+
+    .fln-content-section .fln-development-goals .header {
+        background-size: 100% 125px;
+        height: 125px;
+    }
+
+    .fln-content-section {
+        padding: 24px 0;
+    }
+
+    .fln-content-section .fln-development-goals .header h3 {
+        padding: 0 20px;
+        margin-bottom: 0;
+    }
+
+    .fln-content-section .fln-development-goals .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fln-content-section .fln-development-goals .card-contents {
+        margin-top: 0;
+    }
+
+    .fln-content-section .fln-development-goals .card-contents .cards {
+        padding: 24px;
+        min-height: auto;
+    }
+
+    .container {
+        width: 97%;
+        max-width: 100%;
+    }
+
+    .feature-content-section.featured-content-container .featured-content-card-container.py-5,
+    .featured-content-container.pt-5.feature-content-section {
+        padding-top: 2rem !important;
+        padding-bottom: 1rem !important;
+    }
+
+    .fln-footer-section {
+        padding: 40px 0 0;
+    }
+
+    .fln-footer-section button {
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width:767px) and (min-width : 540px) {
+    .featured-content-video .video-container .video-player {
+        height: 40vw;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 540px) {
+    .featured-content-video .video-container .video-player {
+        height: 215px;
+        width: 100%;
+    }
+    /* .carousel-inner .carousel-item.active{
+        height: 250px;
+    } */
+    .bg-mask-1 > img{
+        border-radius: 0;
+    }
+    .intro-section {
+        margin: 0 -24px;
+    }
+    .fln-mission-document div.button-wrapper-div{
+        height: 45px;
+    width: 240px;
+    }
+    .fln-mission-document{
+        height: 53px;
+        width: auto;
+    }.absolute-row{
+        bottom: 10px;
+        margin-left: auto;
+        padding: initial;
+    }
+    .intro-row{
+        display: block;
+    }
+    .w23{
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1480px){
+    .fln-content-section .fln-development-goals .card-contents {
+        margin-top: -15%;
+    }
+}
+.nipun-bharat-folder{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}

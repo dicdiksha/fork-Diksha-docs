@@ -1,0 +1,64 @@
+{% assign helpPages = site.pages | where:"userRole",page.userRole %}
+{% assign categoryNavs = helpPages | sort: 'categoryOrder' | group_by: "category" %}
+{% assign sidebarNavs = helpPages | where:"category",page.category | sort: 'order' %}
+
+
+<!-- Default Categories -->
+{% assign userRoles = site.pages | group_by: "userRole" %}
+
+{% for userRoleGroups in userRoles %}
+	{% if userRoleGroups.name != ""  %}
+
+	    {% assign userRoledefaultCategory = userRoleGroups.items | where: "categoryOrder","1" | first  %}
+
+		{% if userRoleGroups.name == "Getting Started" %}
+			{% assign defaultCategoryGettingStarted = userRoledefaultCategory.category%}
+		{% endif %}
+
+		{% if userRoleGroups.name == "Creator" %}
+			{% assign defaultCategoryCreator = userRoledefaultCategory.category%}
+		{% endif %}
+		
+		<!-- {% if userRoleGroups.name == "Contributor" %}
+			{% assign defaultCategoryContributor = userRoledefaultCategory.category%}
+		{% endif %} -->
+
+		{% if userRoleGroups.name == "Energised Textbooks" %}
+			{% assign defaultCategoryEnergisedTextbooks = userRoledefaultCategory.category%}
+		{% endif %}
+
+		{% if userRoleGroups.name == "Courses" %}
+		{% assign defaultCategoryCourses = userRoledefaultCategory.category%}
+		{% endif %}
+
+		{% if userRoleGroups.name == "Projects" %}
+			{% assign defaultCategoryProjects = userRoledefaultCategory.category%}
+		{% endif %}
+		
+		{% if userRoleGroups.name == "Programs" %}
+			{% assign defaultCategoryPrograms = userRoledefaultCategory.category%}
+		{% endif %}
+		
+		{% if userRoleGroups.name == "Surveys" %}
+			{% assign defaultCategorySurveys = userRoledefaultCategory.category%}
+		{% endif %}
+		
+		{% if userRoleGroups.name == "Observations" %}
+			{% assign defaultCategoryObservations = userRoledefaultCategory.category%}
+		{% endif %}
+		
+		{% if userRoleGroups.name == "Administrator" %}
+			{% assign defaultCategoryAdministrator = userRoledefaultCategory.category%}
+		{% endif %}
+
+		{% if userRoleGroups.name == "Reviewer" %}
+			{% assign defaultCategoryReviewer = userRoledefaultCategory.category%}
+		{% endif %}
+		
+		{% if userRoleGroups.name == "FAQs" %}
+			{% assign defaultCategoryFAQS = userRoledefaultCategory.category%}
+		{% endif %}
+
+	{% endif %}
+{% endfor %}
+<!-- / Default Categories -->

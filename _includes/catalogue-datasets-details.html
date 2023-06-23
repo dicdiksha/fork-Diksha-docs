@@ -1,0 +1,29 @@
+<div class="content-text"></div>
+<h3 class="h3-download-text mb-24 webview">Download</h3>
+<!-- <div class="container-fluid sb-g p-0 mb-48 webview download-set-webview"></div> -->
+<div class="container-fluid sb-g p-0 mb-48 webview">
+    <div class="sb-g-col-xs-12 sb-g-col-sm-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xl-12 sb-g-col-xxl-12 sb-g-col-xxxl-12">
+    <input type="text" class="download-date-picker" name="datethirty" value="" />
+    <div class="download-details mt-32">
+        <h4>DIKSHA consumption dataset</h4>
+        <p class="sub hide" id="lastUpdate-consumption"></p>
+        <div> 
+            <a onclick="checkIfLinkExist('https://ntpproductionall.blob.core.windows.net/public-reports/public/diksha-data-exhaust/'+getDateLink()+'.csv')" class="download-buttons" download="">Download CSV</a> 
+        </div>
+    </div>
+    </div>
+</div>
+<div class="container-fluid sb-g p-0 mb-36 mobileview downloads-data">
+    <div class="sb-g-col-xs-12 sb-g-col-sm-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xl-12 sb-g-col-xxl-12 sb-g-col-xxxl-12">
+        <h3 class="h3-download-text mb-24">Download</h3>
+        <select name="list" id="download-list" class="mb-16">
+        </select>
+        <h4 id="d-l-head"></h4>
+        <p class="sub d-l-updated"></p>
+        <div>
+            <a class="d-l-download download-buttons">Download CSV</a>
+        </div>
+    </div>
+</div>
+
+{% include catalogue-details-dictionary.html %}

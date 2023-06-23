@@ -1,0 +1,84 @@
+<style>
+html,body{margin:0px;padding:0px;}
+#header nav {
+    padding: 0.5rem 2.5rem;
+    height: 4.75rem;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0.125rem .875rem 0.5rem rgba(0, 0, 0,10%);
+}
+
+#header .btn-header {
+    width: 9.875rem;
+    color: var(--primary-color);
+    padding: .25rem .5rem !important;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+}
+
+.no-sticky-top {
+    position: sticky;
+    background: 0 0;
+    z-index: 999;
+    width: 100%;
+    top: 0px;
+    background: var(--white);
+}
+
+#header .btn-header-exp {
+    border: 0.0625rem solid var(--primary-color);
+    text-align: center;
+}
+.arrow {
+    border: solid var(--primary-color);
+    border-width: 0 0.125rem 0.125rem 0;
+    display: inline-block;
+    padding: 0.15625rem;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+@media screen and (max-width:768px){
+    #header nav{
+        padding: 0.5rem 2rem;
+    }
+}
+</style>
+<div class="brand-header-tail">
+    <div class="container">
+        {% include dk-accessbility-bar.html %}
+    </div>
+</div>
+<header id="header" class="no-sticky-top">
+    <nav>
+        <a class="navbar-brand py-0 domain-binder" href="/">
+            <div class="header-img">
+                <div class="img">
+                    <img src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/imgs/logos.svg" alt="DIKSHA">
+                </div>
+            </div>
+        </a>
+        <a class="btn btn-header btn-header-exp btn-sm pl-4 pr-4 explore-contents" href="/explore"
+            title="Explore Content">Explore Content</a>
+    </nav>
+</header>

@@ -1,0 +1,76 @@
+.milestone-path {
+	fill: none;
+	stroke: #0971da;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 10, 10;
+	animation: line 3s linear infinite reverse;
+}
+
+.milestone-stroke {
+	fill: none;
+	stroke: #EC2024;
+	stroke-width: 4;
+	stroke-miterlimit: 10;
+	opacity: 1;
+	fill: #231F20;
+}
+
+.milestone-stroke {
+	stroke-width: 10;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 380, 75;
+	stroke: transparent;
+	fill: transparent;
+}
+
+.milestone-stroke:hover, .group-icon:hover .milestone-stroke {
+	stroke: $tomato;
+	stroke-width: 10;
+	stroke-linecap: round;
+	stroke-miterlimit: 10;
+	stroke-dasharray: 380, 75;
+	stroke-dasharray: 500;
+	stroke-dashoffset: 0;
+	animation: dash 1s linear;
+	animation-fill-mode: both;
+}
+.horizontal-circle-shadow{opacity:0;}
+// .group-icon {
+// 	cursor: pointer;
+// }
+.group-icon:hover path.icon,.group-icon:hover text {
+	fill: $tomato;
+	stroke-width: 2;
+}
+.group-icon path.icon {
+	fill: #666;
+	stroke-width: 1;
+}
+
+.miliestone_no {
+	font-size: 24px;
+	font-weight: bold;
+}
+.milestone-path {
+	stroke-dasharray: 10;
+	stroke-dashoffset: 10;
+}
+
+@keyframes line {
+	100% {
+		stroke-dashoffset: 50;
+	}
+}
+
+@keyframes dash {
+	from {
+		stroke-dashoffset: 500;
+	}
+	to {
+		stroke-dashoffset: 0;
+	}
+}

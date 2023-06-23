@@ -1,0 +1,35 @@
+{
+    "attributes": "Resources",
+    "items": [
+        {
+            "title": "DIKSHA - Learnings from India Experience",
+            "icon": "icon-pdf.svg",
+            "url": "/assets/download/Secretary_DoSEL_Presentation_World_Bank_Webinar.pdf"
+        },
+        {
+            "title": "India Report Digital Education - 2020",
+            "icon": "icon-pdf.svg",
+            "url": "https://www.mhrd.gov.in/sites/upload_files/mhrd/files/India_Report_Digital_Education_0.pdf"
+        },
+        {
+            "title": "India Report Digital Education - 2021",
+            "icon": "icon-pdf.svg",
+            "url": "https://www.education.gov.in/sites/upload_files/mhrd/files/irde_21.pdf"
+        },
+        {
+            "title": "NATIONAL TEACHER PLATFORM (Strategy and Approach)",
+            "icon": "icon-pdf.svg",
+            "url": "https://diksha.gov.in/assets/download/National%20Teachers%20Platform-%20Strategy%20&%20Approach.pdf"
+        },
+        {
+            "title": "PRAGYATA, Guidelines for Digital Education",
+            "icon": "icon-pdf.svg",
+            "url": "https://www.mhrd.gov.in/sites/upload_files/mhrd/files/pragyata-guidelines_0.pdf"
+        },
+        {
+            "title": " Design and Architecture Framework for Education Ecosystem Registry",
+            "icon": "icon-pdf.svg",
+            "url": "https://www.education.gov.in/sites/upload_files/mhrd/files/upload_document/EER-v9.pdf"
+        }
+    ]
+}

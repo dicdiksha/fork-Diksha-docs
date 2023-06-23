@@ -1,0 +1,746 @@
+.navbar {
+    &.no-sticky-top {
+        // position: absolute;
+        // background: transparent;
+        // z-index: 999;
+        width: 100%;
+
+        .btn-header-exp {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+
+        .btn-header-ver {
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            border-radius: 15px;
+        }
+
+        .btn-header {
+            width: 100%;
+            background: transparent;
+            color: $black;
+            box-shadow: none;
+
+            &:hover {
+               
+            }
+        }
+    }
+
+    &.bg-white-header {
+        transition: ease-in 0.25s;
+        background: $white;
+        box-shadow: 0 2px 14px 10px rgba(0, 0, 0, 0.1);
+
+        .btn-header-exp {
+            border: 1px solid rgba(2, 79, 157, 0.4);
+        }
+
+        .btn-header-ver {
+            border: 1px solid rgba(2, 79, 157, 0.4);
+            border-radius: 15px;
+        }
+
+        .btn-header {
+            width: 158px;
+            color: $tertiary-color;
+
+            &:hover,
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+// Section 1 styles
+// .section-1 {
+//     position: relative;
+//     overflow: hidden;
+//     background-image: url('/assets/imgs/bg-image.jpeg');
+//     background-repeat: no-repeat;
+//     background-size: cover;
+
+//     &.no-sticky-top {
+//         // padding-top: 80px !important;
+//     }
+
+//     .title-txt {
+//         .title {
+//             h1 {
+//                 font-size: 36px;
+//                 color: $white;
+//                 font-weight: bold;
+//                 line-height: 38px;
+//             }
+//         }
+
+//         .title-description {
+//             color: $white;
+
+//             .tag {
+//                 font-size: 14px;
+//             }
+
+//             .tagBold {
+//                 font-size: 18px;
+//                 font-weight: bold;
+//             }
+//         }
+
+//         .app-logo {
+//             max-width: 150px;
+//             margin: 0 auto;
+
+//             img {
+//                 border-radius: 5px;
+//             }
+
+//             a {
+//                 border: none;
+//             }
+//         }
+//     }
+
+//     .down-arrow-div {
+//         .arrow-img {
+//             width: 50px;
+//             margin: 0 auto;
+//             text-align: center;
+
+//             img {
+//                 width: 30px;
+//             }
+//         }
+//     }
+
+//     .homeBanner {
+//         border: none;
+//         height: 700px;
+//         display: none;
+//         transform: scale(1.1);
+//     }
+
+//     .homeBannerImg {
+//         transform: scale(1.09);
+//         transition: 0.25s;
+//         padding-right: 25px;
+//         padding-top: 32px;
+//     }
+
+//     .home-banner-Img {
+//         position: relative;
+//         padding-top: 100px;
+
+//         .iframe-div {
+//             position: absolute;
+//             top: -160px;
+//             left: 0;
+//             right: 0;
+//             bottom: 0;
+//             width: 600px;
+//             margin: 0 auto;
+//             iframe {
+//                 border: 0;
+//             }
+//         }
+//     }
+// }
+
+// .section-1:after {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: -100px;
+//     overflow: visible;
+//     width: 100%;
+//     height: 100px;
+//     background: $white;
+//     -webkit-transform: skewY(-5deg);
+//     -moz-transform: skewY(-5deg);
+//     -ms-transform: skewY(-5deg);
+//     -o-transform: skewY(-5deg);
+//     transform: skewY(-5deg);
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: initial;
+//     z-index: 1;
+// }
+
+// .section-1:before {
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: -100px;
+//     overflow: visible;
+//     width: 100%;
+//     height: 100px;
+//     background: $white;
+//     -webkit-transform: skewY(5deg);
+//     -moz-transform: skewY(5deg);
+//     -ms-transform: skewY(5deg);
+//     -o-transform: skewY(5deg);
+//     transform: skewY(5deg);
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: initial;
+//     z-index: 1;
+// }
+
+// Section 2 Styles
+.section-2 {
+    .milestone-div {
+        width: 100%;
+        position: relative;
+        margin-top: -25px;
+
+        .milestone-text {
+            max-width: 475px;
+            padding: 15px;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 40px;
+            position: absolute;
+            background: $white;
+            top: -50px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+            h2 {
+                font-size: 24px;
+                font-weight: bold;
+                color: $tomato;
+            }
+        }
+    }
+}
+
+// header Image Style
+.header-img {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    padding: 10px 10px;
+    background: $white;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    .img {
+        padding: 0 10px;
+    }
+}
+
+// footer Section
+.section-footer {
+    $links-font-size: 12px;
+    $count-number-size: 32px;
+    $section-bg-color: $black;
+    $section-text-color: $white;
+    background: $peacock-blue;
+    padding: 4rem 0 1rem;
+    color: $section-text-color;
+
+    .img-div {
+        width: 80px;
+        padding: 10px;
+        background: $white;
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+
+    .footer-link {
+        font-size: 0.875rem;
+        color: $white;
+        text-align: left;
+        border: none;
+        padding: 0px 0px 15px 0px !important;
+    }
+
+    .footer-app-details {
+        .txt {
+            font-size: 14px;
+            text-align: center;
+
+            label {
+                font-weight: normal;
+            }
+        }
+
+        .app-img {
+            width: 150px;
+            margin: 0 auto;
+
+            img {
+                border-radius: 5px;
+            }
+        }
+    }
+
+    .page-view-count {
+        .txt {
+            font-size: 14px;
+        }
+
+        .count {
+            font-size: 32px;
+        }
+    }
+
+    .contact-div {
+        .contact-txt {
+            label {
+                text-align: left;
+                font-size: 14px;
+                font-weight: normal;
+
+                .footer-link {
+                    padding-bottom: 1px !important;
+                    &:hover{
+                        color:#fff;
+                    }
+                }
+            }
+        }
+
+        .terms-of-use-txt {
+            text-align: right;
+
+            a {
+                cursor: pointer;
+                font-size: 14px;
+                color:#fff;
+                &.disabled {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.landingPage-footer {
+    padding-top: 180px;
+}
+
+// testimoninal Section Styles
+.testimoninal-container {
+    padding-top: 10rem;
+
+    .title-div {
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: $peacock-blue;
+        }
+    }
+
+    .testimoninal-slides {
+        p {
+            line-height: 2.17;
+        }
+
+        .img-div {
+            overflow: hidden;
+            width: 370px;
+
+            img {
+                border-radius: 35px;
+                width: 100%;
+            }
+        }
+
+        .carousel-indicators {
+            bottom: -10px;
+
+            li {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                background: #d8d8d8;
+
+                &.active {
+                    background: $tertiary-color;
+                    width: 16px;
+                    height: 16px;
+                    margin-top: 6px;
+                }
+            }
+        }
+
+        .discription-div {
+            color: $black;
+            min-height: 320px;
+
+            .name-title {
+                label {
+                    font-size: 22px;
+                    font-weight: bold;
+                    color: $orange;
+                }
+            }
+
+            .occupation {
+                font-size: 14px;
+            }
+
+            .discription {
+                .p-container {
+                    position: relative;
+
+                    .quotation-open {
+                        width: 40px;
+                        position: absolute;
+                        top: 5px;
+                        left: -15px;
+                    }
+
+                    .quotation-close {
+                        width: 40px;
+                        position: absolute;
+                        top: 5px;
+                        right: -15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// In Foucs Styles
+.inFocus-container {
+    position: relative;
+
+    .container1 {
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: $white;
+        }
+    }
+
+    .container2 {
+        .card-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            width: 950px;
+            margin: 0 auto;
+            justify-content: center;
+            padding: 2% 1%;
+            -webkit-overflow-scrolling: touch;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            a {
+                color: $black;
+
+                &:hover {
+                    color: $black;
+                    text-decoration: none;
+                }
+            }
+
+            .card-content {
+                margin-top: 10px;
+                margin-bottom: 10px;
+                transition: transform 0.2s;
+                flex: 0 0 auto;
+                min-width: auto;
+                height: 310px;
+                background: $white-hafl;
+                box-shadow: 0 2px 7px 2px rgba(0, 0, 0, 0.1);
+                position: relative; // &:hover {
+
+                //     -ms-transform: scale(1.15, 1.15);
+                //     -webkit-transform: scale(1.15, 1.15);
+                //     transform: scale(1.15, 1.15);
+                //     background: $whitefff;
+                // }
+                .card-title {
+                    label {
+                        font-weight: bold;
+                        font-size: 14px;
+                        line-height: 1.25;
+                        margin-bottom: 15.5px;
+                    }
+                }
+
+                .card-description {
+                    p {
+                        font-size: 12px;
+                        line-height: 1.43;
+                    }
+                }
+
+                .card-media-name {
+                    position: absolute;
+                    bottom: 0;
+                    font-size: 12px;
+                    width: 100%;
+                    left: 0;
+                    padding-left: 1.2rem;
+
+                    label {
+                        margin-bottom: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .container3 {
+        background-image: linear-gradient(to top, #024f9d, #9400a6,
+            #c10088, #d82c6e, #e0575e);
+        padding: 0 0 150px;
+    }
+
+    .container4 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -120px;
+
+        .dikshaMobile-container {
+            .container {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                background: #f2f2f2;
+                border-radius: 10px;
+            }
+
+            .text-content {
+                border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+                .title {
+                    font-weight: bold;
+                    font-size: 24px;
+                }
+
+                .discription {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .app-logo {
+                a {
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.featured-content-container {
+    position: relative;
+    padding-bottom: 10rem;
+    background-image: linear-gradient(to bottom, #4dceb2, #3ecab9, #30c5bf, #27c0c4, #25bbc8);
+
+    .featured-content-text {
+        color: $white;
+
+        .title {
+            h2 {
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    }
+
+    .featured-content-sm {
+        max-width: 300px;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        .card-content {
+            flex: 0 0 auto;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    .featured-content-card-container {
+        position: absolute;
+        bottom: -9rem;
+        left: 0;
+        right: 0;
+
+        .card-content {
+            &:hover {
+                box-shadow: 0 2px 7px 3px rgba(2, 79, 157, 0.4);
+                border: 1px solid rgba(2, 79, 157, 0.4);
+                top: -10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.vertical-sections {
+    position: relative;
+    overflow: hidden;
+    padding-top: 8rem; //8rem // margin-top: -50px;
+
+    .vertical-img {
+        position: absolute;
+        top: 0;
+    }
+
+    .vertical-title {
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: $tertiary-color;
+        }
+    }
+
+    .title-section {
+        label:first-child {
+            color: $tertiary-color;
+            font-size: 14px;
+        }
+
+        label:last-child {
+            color: $tertiary-color;
+            font-size: 24px;
+        }
+    }
+
+    .slides-container {
+        .carousel-inner {
+            min-height: 250px;
+        }
+
+        .slide-title {
+            label {
+                font-size: 24px;
+                color: $black;
+                line-height: normal;
+            }
+        }
+
+        .slide-discription {
+            p {
+                font-size: 18px;
+                line-height: 1.78;
+                color: #333;
+            }
+        }
+
+        .slide-footer {
+            a {
+                font-size: 14px;
+                padding: 10px 30px;
+            }
+        }
+    }
+}
+
+.section-path {
+    #Layer_1 {
+        padding-top: 20px;
+    }
+}
+
+.cd-resize-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    /* Force Hardware Acceleration in WebKit */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.is-visible .cd-resize-img {
+    width: 50%;
+    /* bounce in animation of the modified image */
+    animation: cd-bounce-in 0.7s;
+}
+
+@keyframes cd-bounce-in {
+    0% {
+        width: 0;
+    }
+
+    60% {
+        width: 55%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+.teaching-learning-container {
+    .card-container {
+        overflow-x: auto;
+    }
+}
+
+.assessment-tab-container {
+    .nav-tabs {
+        border: none;
+
+        .nav-item {
+            .nav-link {
+                background: $white;
+                border: 1px solid rgba(9, 113, 218, 0.4);
+                border-radius: 4px;
+
+                &.active {
+                    color: $white;
+                    background: $cerulean-blue;
+                    border-color: $cerulean-blue;
+                    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        padding: 20px 0;
+        border: none;
+    }
+
+    .teachers-card-container {
+        border: 1px solid #d8d8d8;
+        border-radius: 4px;
+        min-height: 215px;
+
+        .div-img {
+            padding: 20px 84px;
+
+            &.pdf-bg {
+                background: #fa867d;
+            }
+
+            &.doc-bg {
+                background: #9ec2ff;
+            }
+
+            &.html-bg {
+                background: #92c15a;
+            }
+        }
+
+        .card-title {
+            .title-name {
+                font-size: 18px;
+                font-weight: bold;
+                color: $peacock-blue;
+            }
+
+            .tag {
+                font-size: 14px;
+            }
+        }
+    }
+}

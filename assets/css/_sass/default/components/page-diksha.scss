@@ -1,0 +1,188 @@
+.dk-header {background:var(--header-bg)}
+img {
+  content-visibility: auto;
+}
+.dk-primary-navigation {
+  .dk-brand-area {
+    background: var(--brand-area-bg);
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
+  @include respond-below(md) {
+    width: 100% !important;
+    padding: 0px;
+    margin: 0px;
+    max-width: 100% !important;
+    border-bottom: 1px solid #ddd;
+    .dk-navbar .sb-g-col-xs-12.sb-g-col-md-4 {
+      margin-right: 0 !important;
+    }
+    .navbar-brand {
+      margin-right: 0;
+    }
+  }
+}
+#mobile-about-tabs {
+  .nav-tabs {
+    border-bottom: 0px solid transparent;
+  }
+  .tabs {
+    background: var(--tertiary-color);
+    padding-top: calculateRem(24px);
+  }
+  .dk-nav-tabs {
+    margin-bottom: 0px;
+  }
+  .tabs-content {
+    background: var(--tabs-content);
+    p{
+      padding:0px 1.5rem;
+    }
+  }
+  .tab-content {
+    padding:24px;
+  }
+  #about.tab-content {
+    padding:0px;
+  }
+}
+
+#about p {
+  width:calculateRem(640px);
+  max-width: 100%;
+  font-size:calculateRem(16px);
+  line-height: calculateRem(24px);
+}
+.about-page-para{
+  margin-top: calculateRem(32px);
+  text-align: justify;
+  @include respond-below(sm) {
+    margin-top: calculateRem(60px);
+  }
+}
+.about-page-image-text{
+  text-align: center;
+  font-weight: bold;
+}
+.about-page-image{
+  width: 120%;
+  @include respond-below(sm) {
+    width: 100%;
+  }
+}
+.sb-btn-explore-diksha {
+  border-radius: calculateRem(16px);
+  // background-color: #ff714ad1;
+  // border-color: #ff714ad1;
+  background-color: #A82400;
+  border-color: #A82400;
+  &:hover{
+    background-color: #804A00;
+  }
+}
+
+//contribute
+.diksha-contribute__vidyaDaan__content {
+  width: 100%;
+  max-width: 45em;
+}
+
+.diksha-contribute__text + div.d-flex {
+  @include respond-below(md) {
+    justify-content: center;
+  }
+}
+.d-inline-flex {
+  display:inline-flex;
+}
+.tooltip.fade.show, .tooltip, .tooltip.fade {
+  background: transparent;
+  padding:0px;
+  margin:0px;
+}
+
+div.tooltip {	
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 5px 10px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+div.map_tooltip { 
+  position: absolute;
+  text-align: center;
+  width: auto;
+  height: auto;
+  font: 12px sans-serif;
+  background: #fff;
+  border: 1px dashed #333;
+  pointer-events: none;
+  padding: 5px;    
+}
+
+.bar {
+  fill: #3690c0;
+}
+.bar:hover {
+  fill: brown;
+}
+.line {
+  fill: none;
+  stroke: #3690c0;
+  stroke-width: 3px;
+}
+.line1 {
+    fill: none;
+    stroke: #e55928;
+    stroke-width: 3px;
+}
+
+.circle {
+  fill: #3690c0;
+}
+
+.circle1 {
+    fill: #e55928;
+}
+
+.circle:hover, .circle1:hover{
+    fill: black;
+}
+
+.svg-container {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.dk-pagedata{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  .map_legends{
+    margin-bottom: 54px;
+    margin: 0 auto;
+    display: table;
+    .legend-flex{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      span.legend-box{
+        width:15px;
+        height:15px;
+      }
+      .legend_text{
+        font-size: 12px;
+        margin-left: 8px;
+        color: #333333;
+      }
+    }
+  }
+}

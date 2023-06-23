@@ -1,0 +1,63 @@
+//@import "./partials/functions";
+
+.diksha-app-images{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .diksha-mobile-img{
+        max-width: 100%;
+        height: calculateRem(155px);
+    }
+    .diksha-desk-img{
+        width:100%;
+    }
+}
+.diksha-app-label{
+    font-size: calculateRem(24px);
+    font-weight: 500;
+    color: var(--dk-app-title);
+    @include respond-below(md) {
+        margin-top:calculateRem(32px);
+    }
+}
+.diksha-app-text{
+    color:var(--default-text);
+    line-height: normal;
+    font-size: calculateRem(16px);
+    line-height: calculateRem(24px);
+}
+.sb-btn-download{
+    border: calculateRem(1px) solid var(--primary-color);
+    border-radius: calculateRem(24px);
+    background-color: var(--rc-FFFDFB);
+    padding: 0 calculateRem(28px);
+    height: calculateRem(48px);
+    font-size: calculateRem(14px);
+    font-weight: bold;
+    color: var(--primary-color);
+}
+.right-col-section{
+    border-bottom: calculateRem(0.5px) solid var(--hr-line);
+    padding-bottom: calculateRem(40px);
+}
+.diksha-coming-soon{
+  color: var(--rc-6D7278);
+  font-size: calculateRem(14px);
+  font-weight: bold;
+}
+
+.dk-pagedata {
+    img {
+        @include respond-below(sm) {
+            max-width: 100%;
+        }
+    }
+}
+
+.dk-dikshaformobile, .dk-dikshaforweb, .dk-dikshaoffline {
+    @include respond-below(md) {
+        padding-top:calculateRem(48px) !important;
+    }
+}

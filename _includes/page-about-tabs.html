@@ -1,0 +1,25 @@
+
+<div class="tabs tabs-animation relative">
+  <ul id="nav-tabs" class="dk-nav-tabs nav nav-tabs px-0">
+    <li><a href="#about" class="active about-tabs" aria-current="page" data-etype="select-abioutdiksha" data-eid="static-about" data-translate="aboutdiksha">{{ site.data.text.aboutdiksha }}</a></li>
+    <!-- <li><a href="#news">{{ site.data.text.news }}</a></li> -->
+    <li><a href="#resources" class="about-tabs" aria-current="page" data-etype="select-resources" data-eid="static-about" data-translate="resources">{{ site.data.text.resources }}</a></li>
+    <!-- <li><a href="#events">{{ site.data.text.events }}</a></li> -->
+    <li class="line"></li>
+  </ul> 
+  <!-- END tabs-nav -->
+  <div id="tabs-content" class="tabs-content">
+    <div id="about" class="tab-content">
+      {% include page-about-tab-about.html %}
+    </div>
+    <!-- <div id="news" class="tab-content">
+      {% include page-about-tab-news.html %}
+    </div> -->
+    <div id="resources" class="tab-content">
+      {% include page-about-tab-resources.html %}
+    </div>
+    <!-- <div id="events" class="tab-content">
+      {% include page-about-tab-events.html %}
+    </div> -->
+  </div> <!-- END tabs-content -->
+</div> <!-- END tabs -->

@@ -1,0 +1,14 @@
+{
+    "production": {
+        "baseCdnUrl": "https://static.diksha.gov.in/tenants/ntp",
+        "baseBlobUrl": "https:\\/\\/ntpproductionall.blob.core.windows.net/tenants/ntp"
+    },
+    "preProduction": {
+        "baseCdnUrl": "https://static.preprod.ntp.net.in/tenants/ntp",
+        "baseBlobUrl": "https:\\/\\/preprodall.blob.core.windows.net/tenants/ntp"
+    },
+    "development": {
+        "baseCdnUrl": "/assets",
+        "baseBlobUrl": "/assets"
+    }
+}

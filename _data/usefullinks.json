@@ -1,0 +1,13 @@
+{
+    "attributes": "Usefullinks",
+    "items": [{
+            "title": "How to download entire dataset",
+            "description": "Download eitire dataset using your terminal with the following command:",
+            "link": "$ git clone https://github.com/DIKSHA dataset.git"
+        },
+        {
+            "title": "How to configure API’s on local servers",
+            "description": "The DIKSHA Dataset package is meant to provide you, the developer, with a set of tools to help you easily and quickly build your own custom Datasets."
+        }
+    ]
+}

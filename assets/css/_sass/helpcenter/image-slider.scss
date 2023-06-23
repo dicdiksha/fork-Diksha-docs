@@ -1,0 +1,181 @@
+/*========================
+		Image Slider
+========================*/
+
+.image-slider {
+	position: relative;
+	overflow: hidden;
+}
+.iis-slide {
+	display: block;
+	bottom: 0;
+	text-decoration: none;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	width: 80%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	text-indent: -9999px;
+}
+
+/* Slide effect */
+.iis-effect-slide .iis-slide {
+	opacity: 0;
+	-webkit-transition-property: -webkit-transform;
+	   -moz-transition-property: -moz-transform;
+		 -o-transition-property: -o-transform;
+			transition-property: transform;
+	-webkit-transition-timing-function: ease-out;
+	   -moz-transition-timing-function: ease-out;
+		 -o-transition-timing-function: ease-out;
+			transition-timing-function: ease-out;
+	-webkit-transform: translateX(0%);
+		-ms-transform: translateX(0%);
+			transform: translateX(0%);
+}
+.iis-effect-slide .iis-current-slide {
+	opacity: 1;
+	z-index: 1;
+}
+.iis-effect-slide .iis-previous-slide {
+	-webkit-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+			transform: translateX(-100%);
+}
+.iis-effect-slide .iis-next-slide {
+	-webkit-transform: translateX(100%);
+		-ms-transform: translateX(100%);
+			transform: translateX(100%);
+}
+.iis-effect-slide.iis-direction-next .iis-previous-slide,
+.iis-effect-slide.iis-direction-previous .iis-next-slide { opacity: 1; }
+
+/* Touch styles */
+.iis-touch-enabled .iis-slide { z-index: 1; }
+.iis-touch-enabled .iis-current-slide { z-index: 2; }
+.iis-touch-enabled.iis-is-touching .iis-previous-slide,
+.iis-touch-enabled.iis-is-touching .iis-next-slide { opacity: 1; }
+
+/* Fade effect */
+.iis-effect-fade .iis-slide {
+	-webkit-transition-property: opacity;
+	   -moz-transition-property: opacity;
+		 -o-transition-property: opacity;
+			transition-property: opacity;
+	-webkit-transition-timing-function: ease-in;
+	   -moz-transition-timing-function: ease-in;
+		 -o-transition-timing-function: ease-in;
+			transition-timing-function: ease-in;
+	opacity: 0;
+}
+.iis-effect-fade .iis-current-slide {
+	opacity: 1;
+	z-index: 1;
+}
+/* Navigation */
+.iis-previous-nav,
+.iis-next-nav {
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	z-index:2;
+}
+.iis-previous-nav {
+	left: 10px;
+}
+.iis-next-nav {
+	right: 10px;
+}
+.iis-previous-nav:before,
+.iis-next-nav:before {
+	cursor: pointer;
+	color: #919191;
+    background: #e8e8e8;
+    padding: 8px 9px;
+    border-radius: 50%;
+    z-index:2;
+}
+.iis-next-nav:hover::before,
+.iis-previous-nav:hover::before {
+	color: #fff !important;
+	background:#2d73b3 !important;
+}
+.iis-previous-nav:before {
+	content: "\f060";
+}
+.iis-next-nav:before {
+	content: "\f061";
+}
+
+.image-slider:hover .iis-previous-nav:hover,
+.image-slider:hover .iis-next-nav:hover { opacity: 1.0; }
+
+/* Bullet Navigation */
+.iis-bullet-nav {
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+	z-index: 15;
+	width: 90%;
+	text-align: right;
+	-webkit-transition: 0.3s ease-out;
+	   -moz-transition: 0.3s ease-out;
+		 -o-transition: 0.3s ease-out;
+			transition: 0.3s ease-out;
+}
+.iis-has-captions .iis-bullet-nav { max-width: 42%; }
+.iis-bullet-nav a {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: transparent;
+	margin: 0 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	-webkit-transition: 0.3s ease-out;
+	   -moz-transition: 0.3s ease-out;
+		 -o-transition: 0.3s ease-out;
+			transition: 0.3s ease-out;
+}
+
+
+/* Captions */
+.iis-has-captions .iis-slide {
+	text-indent: 0;
+	font-size: 17px;
+	font-weight:600;
+	color: #464646;
+	text-align:center;
+}
+.iis-caption {
+	position: absolute;
+	width:100%;
+	top: 0;
+	z-index: 10;
+	padding: 5px 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.iis-caption .iis-caption-title { font-weight: bold; }
+.iis-caption .iis-caption-content {
+	font-size: 17px;
+	font-weight:600;
+	line-height: 1.6em;
+	color: #464646;
+	text-align:center;
+}
+.iis-caption .iis-caption-content a,
+.iis-caption .iis-caption-content a:visited {
+	color: #464646;
+	text-decoration: underline;
+	border: 0;
+}

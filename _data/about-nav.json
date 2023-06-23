@@ -1,0 +1,16 @@
+{
+    "attributes": "About Page Navigation",
+    "items": [{
+            "title": "About DIKSHA"
+        },
+        {
+            "title": "News"
+        },
+        {
+            "title": "Resources"
+        },
+        {
+            "title": "Events"
+        }
+    ]
+}

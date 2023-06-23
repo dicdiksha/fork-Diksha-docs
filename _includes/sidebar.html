@@ -1,0 +1,54 @@
+<div class="bg-white sidebar-inner">
+	<div class="top-section pb-20">
+		<h4>
+			{{page.category}}
+		</h4>
+	</div>
+	<div class="bottom-section pt-20">
+		<ul
+			{% if page.userRole == "Glossary" %}
+				class="glossary"
+			{% else %}
+				class="nav nav-tabs"
+			{% endif %}
+		>
+		{% for sidebarNav in sidebarNavs %}
+
+			{% if sidebarNav.userRole != "Glossary"%}
+				{% if sidebarNav.showSidebar%}
+					<li
+						{% if page.url == sidebarNav.url %}
+						class="active"
+						{% endif %}
+					>
+							<a href="{{sidebarNav.url}}">
+								{{sidebarNav.title}}
+							</a>
+					</li>
+				{% endif %}
+			{% endif %}
+
+			{% if sidebarNav.userRole == "Glossary"%}
+				{% if sidebarNav.title != "Glossary" %}
+					<li
+						{% if page.url == sidebarNav.url %}
+						class="active"
+						{% endif %}
+					>
+						{% if sidebarNav.showSidebar %}
+							<a href="{{sidebarNav.url}}">
+								{{sidebarNav.title}}
+							</a>
+						{% else %}
+							<span>
+								{{sidebarNav.title}}
+							</span>
+						{% endif %}
+					</li>
+				{% endif %}
+			{% endif %}
+
+		{% endfor %}
+		</ul>
+	</div>
+</div>

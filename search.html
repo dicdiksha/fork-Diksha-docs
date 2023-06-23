@@ -1,0 +1,87 @@
+---
+layout: blank
+title: Search
+description: National Digital Infrastructure for Our Teachers, Our Heroes.
+language: en-Gb
+keywords:
+allowSearch: false
+---
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns/website#" lang="en">
+	<head>
+		{% include head.html %}
+		<meta name="robots" content="noindex,nofollow">
+	</head>
+	<body>
+		<!-- Header -->
+		{% include header_old.html %}
+		<!-- /Header -->
+
+		<!-- Help Navigation-->
+		{% include help-mainnav.html %}
+		<!-- /Help Navigation--->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="search-inner p-20 mt-20">
+						<p>
+							<span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span>
+						</p>
+						<ul id="search-results" class="nav nav-tabs"></ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	<script>
+		window.data = {
+			{% for post in site.pages %}
+			    {% if post.allowSearch %}
+					{% if post.title %}
+							{% if added %},{% endif %}
+							{% assign added = false %}
+							"{{ post.url | slugify }}": {
+								"id": "{{ post.url | slugify }}",
+								"title": "{{ post.title | xml_escape }}",
+								"keywords": "{{ post.keywords | join: ", "  | xml_escape }}",
+								"description": "{{ post.description | xml_escape }}",
+								"category": "{{ post.category | join: ", " | xml_escape }}",
+								"userRole": "{{ post.userRole }}",
+								"url": " {{ post.url | xml_escape }}",
+								"content": {{ post.content | strip_html | replace_regex: "[\s/\n]+"," " | strip | jsonify }}
+							}
+							{% assign added = true %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
+		};
+	</script>
+	<script>
+		var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+				sURLVariables = sPageURL.split('&'),
+				sParameterName,
+				i;
+			for (i = 0; i < sURLVariables.length; i++) {
+				sParameterName = sURLVariables[i].split('=');
+				if (sParameterName[0] === sParam) {
+					return sParameterName[1] === undefined ? true : sParameterName[1];
+				}
+			}
+		};
+		var searchQuery = getUrlParameter('q');
+		$("#searchBoxInput").val(searchQuery);
+	</script>
+
+	<script type="text/javascript" src="/assets/js/helpcenter/lunr.min.js?{{site.time}}"></script>
+	<script type="text/javascript" src="/assets/js/helpcenter/search.js?{{site.time}}"></script>
+
+	<!-- Footer -->
+	<div class="footer-fix">&nbsp;</div>
+	{% include footer.html %}
+	<!-- /Footer -->
+
+    </body>
+</html>

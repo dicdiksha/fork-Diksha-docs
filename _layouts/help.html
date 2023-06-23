@@ -1,0 +1,95 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns/website#" lang="en">
+<head>
+	{% include head.html %}
+	<meta name="robots" content="index,follow">
+</head>
+<body class="body {{page.pageClass}} folder-{{page.folder}} bg-gray" id="body">
+
+	<!-- Header -->
+	{% include header_old.html %}
+	<!-- /Header -->
+
+	<!-- Help Navigation-->
+	{% include help-mainnav.html %}
+	<!-- /Help Navigation--->
+
+	<!-- Main Area-->
+	<div class="bg-gray pt-25 wrapper">
+		<div class="container document-page-cover">
+
+			<div class="row">
+				{% if page.userRole == "Glossary" or page.showSidebar == true %}
+				<!--Sidebar-->
+				<div class="col-md-4 col-xs-12 help-sidebar mb-10">
+					<div class="visible-xs mb-10 text-right">
+						<span onclick="toggleFAQ()" class="btn btn-default btn-sm">Toggle Sidebar</span>
+					</div>
+						{% include sidebar.html %}
+				</div>
+				{% endif %}
+				<!--/Sidebar-->
+
+				<!-- Main content Cover-->
+				<div class='{% if page.userRole == "Glossary" or page.showSidebar == true %} col-md-8 {% else %} col-md-12 {% endif %} col-xs-12 content-cover'>
+					<div class="bg-white content" id="tab-content">
+
+						<!-- Download PDF button-->
+						{% if page.userRole != "Release Notes" %}
+						<!--<button onclick="generatepdf()" class="pull-right btn-pdf" id="nopdf">
+							<i class="fa fa-download"></i>Download PDF
+						</button>-->
+						<button onclick="window.print()" class="pull-right btn-pdf">
+							<i class="fa fa-print"></i>Print page
+						</button>
+						{% endif %}
+						<!-- /Download PDF button-->
+						<div id="pdf-cover" class="pdf-cover">
+							<!-- Page Title -->
+							<h1 class="page__title">{{page.title}}</h1>
+							<!-- /Page Title -->
+
+							<!-- Content -->
+							{{content  | toc_generate }}
+							<!-- /Content -->
+                        </div>
+					</div>
+				</div>
+				<!-- /Main content Cover -->
+
+			</div>
+		</div>
+	</div>
+	<!-- /Main Area-->
+
+	<!-- Footer -->
+	{% include footer.html %}
+	<!-- /Footer -->
+
+	<!-- Scroll to top -->
+	<a href="{{page.url}}" id="toTop" class="scrollup" style="display: none;"><span class="toTopHover"></span>To Top</a>
+	<!-- /Scroll to top -->
+
+	<script async defer src="{{site.baseurl}}/assets/js/dist/default-foot-min.js"></script>
+
+	{% if page.iis_slider_active %}
+	<script type="text/javascript" src="{{site.baseurl}}/assets/js/helpcenter/image-slider.js"></script>
+	<!-- Sliders on pages -->
+	{% for script in page.iis_slider_scripts %}
+		{{ script }}
+	{% endfor %}
+	<!-- Sliders on indexes -->
+	{% for post in paginator.posts %}
+		{% for script in post.iis_slider_scripts %}
+		{{ script }}
+		{% endfor %}
+	{% endfor %}
+	{% endif %}
+
+</body>
+
+
+</html>

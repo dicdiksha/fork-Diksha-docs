@@ -1,0 +1,29 @@
+{
+    "attributes": "Boards",
+    "items": [{
+            "title": "NCERT",
+            "slug": "ncert",
+            "url": "/ncert/explore",
+            "btntitle": "Explore",
+            "thumbnail": "diksha-mission/ncert.png",
+            "description": "Explore content published by NCERT (National Council of Educational Research and Training)"
+        },
+        {
+            "title": "CBSE",
+            "slug": "cbse",
+            "url": "/cbse/explore",
+            "btntitle": "Explore",
+            "thumbnail": "diksha-mission/cbse.png",
+            "description": "Explore content published by CBSE (Central Board of Secondary Education)"
+        },
+        {
+            "title": "NIOS",
+            "slug": "nios",
+            "url": "/nios/explore",
+            "btntitle": "Explore",
+            "thumbnail": "diksha-mission/nios.svg",
+            "description": "Explore content published by NIOS (The National Institute of Open Schooling)"
+        }
+
+    ]
+}

@@ -1,0 +1,338 @@
+.container {
+  width: 96% !important;
+  max-width: 96% !important;
+  margin: 0 auto;
+}
+
+.dk-navbar {
+  width: 100%;
+
+  .sb-g {
+    min-height: calculateRem(108px);
+
+    @include respond-below(md) {
+      height: auto;
+
+      & [class^="sb-g-col"] {
+        margin: calculateRem(8px) 0px;
+      }
+    }
+
+    .dk-menu-column {
+      align-self: end;
+
+      @include respond-below(md) {
+        justify-self: center;
+        margin: calculateRem(8px) 0px 0px;
+      }
+    }
+  }
+}
+
+// home page
+.dk-page-main-area {
+  --sbt-body-bg: var(--dk-page-main-area-left-bg);
+  --sbt-body-bg2: var(--section-theme-bg);
+  background: linear-gradient(to right, var(--sbt-body-bg) 0%, var(--sbt-body-bg) 35%, var(--sbt-body-bg2) 60%, var(--sbt-body-bg2) 84%, var(--sbt-body-bg2) 100%);
+  position: relative;
+  overflow: hidden;
+
+  html[dir="rtl"] & {
+    background: linear-gradient(to left, var(--sbt-body-bg) 0%, var(--sbt-body-bg) 35%, var(--sbt-body-bg2) 60%, var(--sbt-body-bg2) 84%, var(--sbt-body-bg2) 100%);
+  }
+}
+
+.dk-page-right-area {
+  background: var(--section-theme-bg);
+  border-radius: calculateRem(32px) 0px 0px calculateRem(32px);
+  padding: calculateRem(24px);
+
+  html[dir="rtl"] & {
+    border-top-right-radius: calculateRem(24px);
+    border-bottom-right-radius: calculateRem(24px);
+  }
+}
+
+.dk-page-left-area {
+  position: relative;
+  z-index: 3;
+}
+
+.dk-page-left-area.mr-40 {
+  @include respond-between(md, lg) {
+    margin-right: calculateRem(16px) !important;
+
+    html[dir='rtl'] & {
+      margin-left: calculateRem(16px) !important;
+      margin-right: 0px !important;
+    }
+  }
+}
+
+.dk-page-right-container {
+  border-radius: calculateRem(24px);
+  background-color: var(--dk-page-right-container-bg);
+  box-shadow: 0 calculateRem(2px) calculateRem(20px) calculateRem(4px) rgba(var(--rc-rgba-ff714), 0.4);
+  min-height: calculateRem(720px);
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.dk-right-img-container {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  z-index: 1;
+  box-shadow: 0 calculateRem(2px) calculateRem(24px) 0 rgba(var(--rc-rgba-black), 0.2);
+  border-radius: 100%;
+  transform: translate(50%, -50%);
+
+  html[dir="rtl"] & {
+    right: unset;
+    left: 0;
+    transform: translate(-50%);
+  }
+
+  img {
+    width: calculateRem(500px);
+    height: calculateRem(500px);
+    animation: spin 40s linear infinite;
+  }
+}
+
+.dk-page-home-circle {
+  .dk-right-img-container {
+    z-index: -1;
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dk-middle-img-container {
+  position: absolute;
+  left: 30%;
+  // top: 50%;
+  z-index: 2;
+  opacity: 0.75;
+
+  // transform: translate(42%, -50%);
+  html[dir="rtl"] & {
+    right: 30%;
+    // transform: translate(-42%, -78%);
+    left: unset;
+  }
+}
+
+.dk-page-compt-container {
+  position: relative;
+  z-index: 4;
+  overflow: hidden;
+  height: 100%;
+}
+
+.matrix-diksha-small-font {
+  font-size: calculateRem(11px) !important;
+}
+
+.dk-page-home-slider {
+
+  overflow: hidden;
+  border-radius: calculateRem(24px) calculateRem(24px) 0px 0px;
+  background: var(--gray-0);
+  padding-bottom: 2rem;
+}
+
+.dk-page-home-metrics {
+  padding: calculateRem(32px);
+
+  @include respond-above(xl) {
+    .usage-metrics-content {
+      .usage-label {
+        font-size: calculateRem(24px);
+      }
+
+      .diksha-app-text {
+        font-size: calculateRem(16px) !important;
+        line-height: 24px;
+      }
+
+      .dk-usagetilldate {
+        font-size: calculateRem(18px);
+      }
+    }
+  }
+}
+
+.dk-page-compt-container-dotted-round {
+  box-sizing: border-box;
+  height: calculateRem(750px);
+  width: calculateRem(750px);
+  border: calculateRem(0.5px) dashed var(--rc-979797);
+  opacity: 0.66;
+  border-radius: 100%;
+}
+
+.dk-page-compt-container-round {
+  height: calculateRem(552px);
+  width: calculateRem(552px);
+  border-radius: 100%;
+  background-color: var(--rc-F8F6F5);
+}
+
+.dk-page-compt-dottedround-container {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  z-index: 1;
+  transform: translate(50%, -50%);
+
+  html[dir="rtl"] & {
+    right: unset;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+
+  .dk-page-compt-dottedround {
+    animation: spin 40s linear infinite;
+    width: calculateRem(720px);
+    height: calculateRem(720px);
+    border-radius: 100%;
+    border: calculateRem(0.5px) dashed var(--rc-979797);
+    padding: calculateRem(72px);
+    opacity: 0.66;
+
+    &:after {
+      content: '';
+      height: calculateRem(547px);
+      width: calculateRem(547px);
+      top: 50%;
+      left: 50%;
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      background-color: var(--rc-F8F6F5);
+      position: absolute;
+    }
+  }
+}
+
+.dk-page-say-diksha {
+  .dk-info {
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.dk-circlerotate-left,
+.dk-circlerotate-right {
+  position: relative;
+  overflow: hidden;
+
+  .dk-right-img-container {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    transform: unset;
+
+    img {
+      max-width: 100%;
+      width: auto;
+      height: auto;
+    }
+  }
+}
+.table-data-matrix{
+  @include respond-below(md) {
+    position: relative;
+        z-index: 99999;
+}
+}
+
+.dk-circlerotate-left {
+  .dk-right-img-container {
+    left: -60%;
+    right: unset;
+    top: 15%;
+  }
+}
+
+.dk-circlerotate-right {
+  .dk-right-img-container {
+    right: -50%;
+    top: 10%;
+  }
+
+  &.dk-page-datadashboard {
+    .dk-right-img-container {
+      bottom: 10%;
+      top: unset;
+      height: auto;
+    }
+  }
+
+  &.dk-getapp-mobile {
+    overflow: hidden;
+
+    .dk-right-img-container {
+      top: 20%;
+    }
+  }
+}
+
+.dk-page-datadashboard {
+  overflow: hidden;
+
+  .diksha-app-text {
+    margin-bottom: 8px !important;
+  }
+
+  .diksha-last-days {
+    margin-top: 8px !important;
+  }
+
+  .diksha-last-updated {
+    padding-right: 0 !important;
+  }
+}
+
+.dk-getapp-mobile {
+
+  .diksha-web-info,
+  .diksha-mobile-info,
+  .diksha-offline-info {
+    padding: 0 !important;
+  }
+}
+
+.relative2 {
+  position: relative;
+  z-index: 2;
+}
+
+.relative5 {
+  position: relative;
+  z-index: 5;
+}
+
+p {
+  line-height: normal;
+}
+
+@media only screen and (max-width: 769px) {
+  .sb-tooltip {
+    top: 0 !important;
+  }
+}
+
+.download-overall {
+  font-size: 0.625rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}

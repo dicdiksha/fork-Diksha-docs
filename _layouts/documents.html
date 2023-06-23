@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns/website#" lang="en">
+<head>
+	{% include head.html %}
+	{% if page.allowSearch == "true" %}
+		<meta name="robots" content="index, follow">
+	{% else %}
+		<meta name="robots" content="noindex,nofollow">
+	{% endif %}
+</head>
+<body class="body {{page.class}}  folder-{{page.folder}}" id="body">
+
+	<!-- Header -->
+	{% include header.html %}
+	<!-- /Header -->
+
+	<!-- Help Navigation-->
+	{% comment %}
+	{% include help-mainnav.html %}
+	{% endcomment %}
+	<!-- /Help Navigation--->
+
+	<!-- Main Area-->
+	<div class="bg-gray pb-75">
+		<div class="container document-page-cover">
+			<div class="row">
+				<div class="col-sm-4 top-space sidebar documents-tab">
+					<ul class="nav nav-tabs help-nav">
+						<li class='active'>
+							<a href="/help/documents/general/index.html">Documents</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<!--Sidebar-->
+				<div class="col-sm-4 sidebar mb-10 documents-playlist">
+					<div class="visible-xs m-10 p-15 text-right bg-white">
+						<span onclick="toggleFAQ()" class="btn btn-default btn-sm">Toggle Sidebar</span>
+					</div>
+					<ul class="nav faqs bg-white downloads-section" id="sidebar-cover">
+					{% include sidebar-docs.html %}
+					</ul>
+				</div>
+				<!--/Sidebar-->
+
+				<!-- Main content Cover-->
+				<div class="col-sm-8 content-cover">
+					<div class="bg-white content " id="tab-content">
+
+						<!-- Page Title -->
+						<h1 class="page__title">{{page.title}}</h1>
+						<!-- /Page Title -->
+
+						<!-- Documents Page Header -->
+							<p class="text-gray">
+								{% if page.downloadURL != ''  %}
+								<a class="text-brown pull-right" href="{{page.downloadURL}}" download="">
+									<i class="material-icons">file_download</i>
+								</a>
+								{% endif %}
+								<span id="iframeBoxSize">{{page.size}}</span> | <span id="iframeBoxDate">{{page.publishedDate}}</span>
+							</p>
+							<div class="responsive-video mb-10" id="iframeBox">
+								<iframe src="{{page.iFrameURL}}" frameborder="0" allowfullscreen=""></iframe>
+							</div>
+						<!-- /Documents Page Header -->
+
+					</div>
+				</div>
+				<!-- /Main content Cover -->
+
+			</div>
+		</div>
+	</div>
+	<!-- /Main Area-->
+
+	<!-- Footer -->
+	{% include footer.html %}
+	<!-- /Footer -->
+
+	<!-- Scroll to top -->
+	<a href="{{page.url}}" id="toTop" class="scrollup" style="display: none;"><span class="toTopHover"></span>To Top</a>
+	<!-- /Scroll to top -->
+
+</body>
+</html>

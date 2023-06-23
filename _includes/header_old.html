@@ -1,0 +1,46 @@
+{% include variables.html %}
+<header class="old-header">
+	<nav class="navbar bg-white-header">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+				 aria-expanded="false">
+					<span> </span>
+					<span> </span>
+					<span> </span>
+				</button>
+				<a class="navbar-brand p-0" href="/#">
+					<div class="header-img">
+						<div class="img">
+							<img src="{{site.baseurl}}/assets/imgs/logos.svg" alt="DIKSHA">
+						</div>
+					</div>
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right pt-20">
+					<!-- <li class="nav-item">
+						<a class="brd-none btn btn-header {% if page.url contains 'verticals' %} active {% endif %}"
+						 href="{{site.baseurl}}/verticals/profile-registry/" title="Verticals">Verticals</a>
+					</li> -->
+					<li >
+						<a class="btn btn-header btn-header-exp explore-contents" href="/explore" title="Explore Content">Explore
+							Content</a>
+					</li>
+					<li class="nav-item">
+						<a class="brd-none btn btn-header" href="/resources" title="Sign In">
+							<img id="signInImg" alt="Sign In" src="{{site.baseurl}}/assets/imgs/signin-logo-blue.svg">&nbsp;&nbsp;
+							Sign In
+						</a>
+					</li>
+					<li class="nav-item mx-20">
+						{% include search.html %}
+					</li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</header>

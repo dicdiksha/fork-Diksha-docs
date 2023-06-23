@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+    <div class="container-fluid relative p-0 {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
+        <header id="header">
+            {% include header.html %}
+        </header>
+        {{content}}
+        <footer id="footer">
+            {% include footer.html %}
+        </footer>
+    </div>
+</body>
+<script async defer src="{{site.baseurl}}/assets/js/dist/default-foot-min.js"></script>
+</html>

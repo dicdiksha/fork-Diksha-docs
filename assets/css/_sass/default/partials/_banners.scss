@@ -1,0 +1,39 @@
+.environment-banner {
+    width: 92%;
+    padding-top: 25rem;
+    margin: 0 auto;
+    
+    img {
+        width: 100%;
+    }
+
+    .lg-show {
+        display: block;
+    }   
+    .sm-show {
+        display: none;
+    }
+
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 992px){
+    .environment-banner {
+        .lg-show {
+            display: none;
+        }   
+        .sm-show {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .environment-banner{
+        padding-top: 23rem;
+    }
+}
+

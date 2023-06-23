@@ -1,0 +1,15 @@
+<div class="dk-news-grid">
+  {% for news in site.data.news.items %}
+  <div class="card" onclick="window.open('{{news.url}}')" title="{{news.title}}">
+    <div class="news-container"
+      style="background-image: url('{{news.newsImg}}');">
+      <div class="news-text p-24">
+        <div>
+          <div class="fs-1 font-weight-bold text-left mb-0 sb__ellipsis sb__ellipsis--three">{{news.title}}</div>
+          <div class="fsmall text-left pt-8">{{news.date}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,16 @@
+<h2>How to download entire dataset</h2>
+<p>Download entire dataset using your terminal with the following command:</p>
+<p>There are also “tip-of-tree builds”, which are the very latest code that passes integration tests on Chromium CI. This is updated much more frequently than tagged releases, but may be less stable (we tag releases manually using a more careful procedure). Tip-of-tree builds may be useful for continuous integration that uses the emsdk (as Emscripten’s GitHub CI does), and you may want to use it in your own CI as well, so that if you find a regression on your project you can report it and prevent it from reaching a tagged release. Tip-of-builds may also be useful if you want to test a feature that just landed but didn’t reach a release yet. To use a tip-of-tree build, use the tot target, and note that you must specify the backend explicitly,</p>
+<h4>Installation instructions using the emsdk (recommended)</h4>
+<p>First check the Platform-specific notes below and install any prerequisites.<br />The core driver is a Python script. You can get it for the first time with</p>
+<div class="card">
+    <p># Get the emsdk repo<br />git clone https://github.com/emscripten-core/emsdk.git</p>
+    <p># Enter that directory<br />cd emsdk</p>
+</div>
+<p>Run the following emsdk commands to get the latest tools from GitHub and set them as active: Tip-of-tree builds may be useful for continuous integration that uses the emsdk (as Emscripten’s GitHub CI does), and you may want to use it in your own CI as well, so that if you find a regression on your project you can report it and prevent it from </p>
+<div class="card">
+    <p># Fetch the latest version of the emsdk (not needed the first time you clone)<br />git pull</p>
+    <p># Download and install the latest SDK tools.<br />./emsdk install latest</p>
+    <p># Make the "latest" SDK "active" for the current user. (writes .emscripten file)<br />./emsdk activate latest</p>
+    <p># Activate PATH and other environment variables in the current terminal<br />source ./emsdk_env.sh</p>
+</div>
