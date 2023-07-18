@@ -1,0 +1,10 @@
+<div class="">
+    <div class="navMenu">
+        {% for nav-new in site.data.nav-new.items %}
+        <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
+        class="" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+           <span data-translate="{%if(nav-nav.contains == 'data')%}dashboard{%else%}{{nav-nav.contains}}{%endif%}">{{nav-new.title}}</span>
+        </a>
+        {% endfor %}
+    </div>
+</div>

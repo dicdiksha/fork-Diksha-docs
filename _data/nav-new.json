@@ -1,0 +1,33 @@
+{
+    "attributes": "Primary Menu Navigation",
+    "items": [
+        {
+            "title": "Dashboard",
+            "url": "data/",
+            "contains":"data",
+            "etype":"select-dashboard",
+            "eid": "public-dashboard"
+        },
+        {
+            "title": "About",
+            "url": "about/",
+            "contains":"about",
+            "etype": "select-about",
+            "eid": "static-about"
+        },
+        {
+            "title": "Get App",
+            "url": "getapp/",
+            "contains":"getapp",
+            "etype": "select-getapp",
+            "eid": "static-getapp"
+        },
+        {
+            "title": "Contribute",
+            "url": "contribute/",
+            "contains":"contribute",
+            "etype": "select-contribute",
+            "eid": "static-contribute"
+        }
+    ]
+}

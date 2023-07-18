@@ -180,6 +180,185 @@ body {
     }
 }
 
+//========NEW HOME PAGE HEADER==============//
+.brand-top-header{
+    background: $dark-blue;
+    min-height: calculateRem(48px);
+    font-size: calculateRem(12px);
+    color: var(--brand-header-tail-text);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem; background-color: $dark-blue;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:0 0px;
+        @include respond-below(sm) {
+            width: 100% !important;
+            max-width: 100% !important;
+            padding: 0 0.5rem;
+            flex-direction: column;
+        }
+
+        @include respond-below(md) {
+            & div:first-child {
+                // margin: 0 auto;
+            }
+        }
+
+        @include respond-below(xs) {
+            flex-direction: column;
+            align-items: initial;
+        }
+    }
+
+    @include respond-below(sm) {
+        .head-tail-right-side {
+            margin-top: 0.5rem;
+            align-self: flex-end;
+            width: 100%;
+        }
+    }
+
+    .dk-country-flag {
+        @include respond-below(sm) {
+            text-align: center;
+        }
+    }
+
+    div.dk-top-head-ul {
+        display: flex;
+
+        @include respond-below(sm) {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+
+            li {
+                text-align: center;
+            }
+
+            li a {
+                color: var(--white);
+            }
+
+            li a:hover,
+            li a.active {
+                text-decoration: underline;
+                color: var(--primary-menu-link-active);
+            }
+
+            &:first-child {
+                li:last-child {
+                    @include respond-below(sm) {
+                        display: none;
+                    }
+                }
+            }
+
+            &:last-child {
+                @include respond-below(sm) {
+                    margin-top: 0.5rem;
+                }
+            }
+
+        }
+
+        .skip-content-link {}
+
+        .screen-reader-link,
+        .sitemap-link {}
+
+        .sitemap-link {}
+    }
+
+    .fontResize-container {
+        .fontResizeBtn_A- {
+            font-size: 0.75rem;
+        }
+
+        .fontResizeBtn_A {
+            font-size: 0.85rem;
+        }
+
+        .fontResizeBtn_A+ {
+            font-size: 1rem;
+        }
+
+        .fontResizeBtn {
+            border: 0.0625rem solid #484848;
+            background: none;
+            color: var(--white);
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px 0.25rem;
+            padding: 0px 0.5rem;
+            transition: all .3s ease-in-out;
+            border-radius: 50%;
+
+            &:hover,
+            &:active {
+                // background: var(--secondary-color);
+                background: #A82400;
+                color: var(--white);
+                cursor: pointer;
+                // outline: 0px;
+            }
+
+            &:disabled,
+            &[disabled] {
+                opacity: 0.5;
+                cursor: default;
+                border-radius: 50%;
+
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+    }
+
+    .fontResizeBtn:focus,
+    .dark-mode-toggle:focus {
+        outline: none;
+    }
+
+    .dark-mode-toggle {
+        border: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 2rem;
+        height: 2rem;
+        padding: 0px;
+        background: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            outline: none;
+            background: #A82400;
+            border-radius: 50%;
+        }
+    }
+
+}
+
+
+
 html.darkmode {
     //terms page styles
     .brand-header-tail {

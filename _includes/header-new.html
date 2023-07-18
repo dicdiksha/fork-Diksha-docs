@@ -1,0 +1,105 @@
+<style>
+    .brand-top-header{
+        background-color: #482BAC;
+        color: #EBEBEB;
+        font-size: 12px;
+        padding: 8px;
+    }
+    .brand-top-header .container {
+    width: 96% !important;
+    max-width: 96% !important;
+    margin: 0 auto;
+    }
+    .brand-top-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+    }
+    .brand-top-header div.dk-top-head-ul {
+    display: flex;
+    }
+    .brand-top-header div.dk-top-head-ul ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    }
+    .brand-top-header div.dk-top-head-ul ul li {
+    text-align: center;
+    }
+    .brand-top-header div.dk-top-head-ul ul li a {
+    color: #EBEBEB;
+    }
+    .main-top-header .mainHeader{
+        display: flex;
+    }
+    .main-top-header .mainHeader .logo-action{
+        padding-right: 162px;
+        
+    }
+    .main-top-header .mainHeader .nav-action{
+        display: flex;
+        align-items: center;
+        color: #434141;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .navMenu a {
+    padding: 0 13px;
+    /* font-weight: bold; */
+    letter-spacing: 0.1px;
+    }
+
+    a.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .navbar-brand .vidyadan{
+        padding: 0 10px;
+    }
+
+    .footer-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+    @media only screen and (max-width: 992px) {
+        .dropdown-wrapper {
+            justify-content: center;
+        }
+        .dropdown-wrapper ul{
+            top: 100%;
+        }
+    }
+    
+
+</style>
+<div class="brand-top-header">
+    <div class="container">
+        {% include new-accessbility-bar.html %}
+    </div>
+</div>
+
+<div class="container dk-primary-navigation">
+    <nav class="main-top-header" >
+        <div class="mainHeader">
+            <div  class="logo-action">
+                <a class="navbar-brand py-0" href="/#">
+                    <span><img src="../images/ashok-stambh.png" alt="ashok-stambh"></span>
+                    <span><img src="../images/Diksha-logo.png" alt="Diksha-logo"></span>
+                    <span class="vidyadan"><img src="../images/vidyadan.png" alt="vidyadan-logo"></span>
+                    <span class="gtwenty"><img src="../images/G20_India_2023_logo 1.png" alt="g20-logo"></span>
+                </a>
+            </div>
+            <div  class="nav-action">
+                {% include page-primary-menu-new.html %}
+            </div>
+            
+
+        </div>
+    </nav>
+</div>
