@@ -7,7 +7,7 @@
   - Gulp 3
   - switch directory to the repo and run command `npm install`. This will install all the packages mentioned in package.json.
 
-## Workflow
+## Workflow #######
 - **For local development:**
   - run command `bundle exec jekyll serve` in terminal. and open url http://localhost:3000/
   - If doing any UI changes run command `gulp` in another terminal.
