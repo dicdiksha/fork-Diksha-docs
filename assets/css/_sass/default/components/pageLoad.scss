@@ -6,12 +6,54 @@
     font-size: 1rem;
     line-height: 1.5rem
 }
-
+.diksha-app-new-text {
+    color: var(--white);
+    line-height: normal;
+    font-size: 1rem;
+    line-height: 1.5rem
+}
 .usage-metrics-content .usage-label {
     font-size: 1.5rem;
     color: #bf5537;
     font-weight: bold
 }
+.usage-metrics-content-new .usage-label {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: bold
+}
+
+.vertical {
+       border-left: 1px solid var(--white);
+       height: 96px;
+       position: absolute;
+       left: 11%;
+       margin-left: -162px;
+       top: 132px;
+  }
+  .vertical::before {
+    content: "";
+    border-radius: 50%;
+    height: 10px; /* Changed */
+    width: 10px; /* Changed */
+    background-color: var(--white);
+    position: absolute; /* Added */
+    left: -8px; /* Added */
+  }
+  .vertical::after {
+       content: "";
+       border-radius: 50%;
+       height: 10px;
+       width: 10px;
+       background-color: var(--white);
+       position: absolute;
+       left: -8px;
+       top: 96px;
+  }
+  .usage-label-panel {
+    margin: 1px 29px 43px 33px;
+
+  }
 
 .usage-metrics-content .view-dashboard {
     background-color: var(--dashboard-btn-bg);
@@ -1288,6 +1330,14 @@ ol li {
     line-height: normal;
     margin-bottom: .5rem
 }
+.dk-number__centertitle {  
+    
+    color: #FFFFFF;
+    text-align: center;  
+    line-height: 99px;
+    margin: .5rem 0rem .5rem 0rem;
+}
+
 
 .border-container {
     border: .03125rem solid var(--dk-theme-border-color);
@@ -1297,6 +1347,9 @@ ol li {
 
 .border-container:focus {
     outline: none
+}
+.last-update-text {
+    color: #fff;
 }
 
 .dk-card {
@@ -1544,18 +1597,21 @@ ol li {
 .dk-page-home-metrics {
     padding: 2rem
 }
-
+.dk-page-home-metrics-new {
+    padding: 2rem;
+    color: #fff;
+}
 @media (min-width: 1440px) {
-    .dk-page-home-metrics .usage-metrics-content .usage-label {
+    .dk-page-home-metrics .dk-page-home-metrics-new .usage-metrics-content .usage-metrics-content-new .usage-label {
         font-size: 1.5rem
     }
 
-    .dk-page-home-metrics .usage-metrics-content .diksha-app-text {
+    .dk-page-home-metrics .dk-page-home-metrics-new .usage-metrics-content .usage-metrics-content-new .diksha-app-text {
         font-size: 1rem !important;
         line-height: 24px
     }
 
-    .dk-page-home-metrics .usage-metrics-content .dk-usagetilldate {
+    .dk-page-home-metrics .dk-page-home-metrics-new .usage-metrics-content .usage-metrics-content-new .dk-usagetilldate {
         font-size: 1.125rem
     }
 }
@@ -1636,6 +1692,10 @@ ol li {
 p {
     line-height: normal
 }
+.download-text {
+    color:#fff;
+    
+  }
 
 .download-overall {
     font-size: 0.625rem
@@ -1677,6 +1737,9 @@ p {
 .footer-terms-area .right-column {
     text-align: right;
     padding-right: 5%
+}
+.diksha-number-container{
+    background-image: linear-gradient(to right,rgba(38, 53, 181, 1),rgba(27, 35, 103, 1),rgba(103, 50, 218, 1));
 }
 
 @media (max-width: 1279px) {
