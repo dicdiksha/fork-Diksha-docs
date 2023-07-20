@@ -1457,6 +1457,23 @@ ol li {
     max-height: 100%
 }
 
+.dk-card-new__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.dk-card-new__img img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;    
+    max-height: 100%
+}
+
+
 .dk-card__title {
     font-size: 1rem;
     font-weight: bold;
