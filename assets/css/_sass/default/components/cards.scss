@@ -320,7 +320,7 @@
 // browser by board grid
 .dk-browser-by-board-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(14.875rem, 1fr));
   grid-gap: 1rem;
   grid-auto-rows: 138px;
   margin: 29px 17px 2px 54px;
