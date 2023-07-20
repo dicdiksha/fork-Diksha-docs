@@ -235,33 +235,7 @@
       }
     }
   }
-  .inner-column-img {
-    float: left;
-    width: 10%;
-    .left-border {
-      height: calculateRem(32px);
-      position: relative;
-      // left: calculateRem(5px);
-      border-left: calculateRem(4px) solid var(--primary-color);
-      html[dir="rtl"] & {
-        border-right: calculateRem(4px) solid var(--primary-color);
-        border-left:none;
-      }
-      .date {
-        font-size: calculateRem(24px);
-        font-weight: bold;
-        label {
-          font-size: calculateRem(10px);
-          text-transform: uppercase;
-          display: block;
-          font-weight: normal;
-          padding: 0;
-          border: 0;
-        }
-      }
-    }
-  }
-
+                                                    
   .inner-column2 {
     float: right;
     width: 80%;
@@ -273,17 +247,7 @@
     .sb-btn-border {
       border-radius: calculateRem(24px);
     }
-  }
-  .inner-column4 {
-    float: right;
-    width: 20%;
-    .cards-text {
-      font-size: calculateRem(10px);
-    }
-    .sb-btn-border {
-      border-radius: calculateRem(24px);
-    }
-  }
+  } 
   
 }
 
@@ -356,10 +320,10 @@
 // browser by board grid
 .dk-browser-by-board-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
   grid-gap: 1rem;
   grid-auto-rows: 138px;
-  margin: 66px 17px 2px 54px;
+  margin: 29px 17px 2px 54px;
   .card {
     border-radius: calculateRem(16px);
     background-color: var(--rcard-bg);
