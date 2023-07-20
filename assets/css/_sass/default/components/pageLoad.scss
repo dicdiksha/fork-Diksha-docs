@@ -29,11 +29,11 @@
 
 .vertical {      
     border-left: 0.063rem solid var(--white);
-    height: 5.6rem;
+    height: 5.0rem;
     position: absolute;
-    left: 12.5rem;
+    left: 12.9rem;
     margin-left: -10.125rem; 
-    top:8.313rem;     
+    top:6.813rem;     
       
   }
   .vertical::before {
@@ -53,7 +53,7 @@
        background-color: var(--white);
        position: absolute;
        left: -0.4rem;
-       top: 5.6rem;
+       top: 5.0rem;
   }
   .usage-label-panel {
     margin: 0.063rem 0rem 0rem 2.063rem;
@@ -1470,9 +1470,47 @@ ol li {
     object-fit: contain;
     margin: 0 auto;
     display: block;    
-    max-height: 100%
+    max-height: 100%;  
+    
 }
 
+.dk-card-about-new__img {
+    position: relative;    
+    height: 3.583rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+
+
+
+
+.about-new {
+    position: absolute;
+    top: -1.188rem;
+    left: 0rem;    
+    z-index: 1;
+  }
+  .about-new1 {
+       position: absolute;
+       top: -2.813rem;
+       left: -0.063rem;
+       z-index: 2;
+  }
+  .about-new2 {
+    position: absolute;
+        top: -1.125rem;
+        left: 2.875rem;
+        z-index: 3;
+  }
+  .about-new3 {
+       position: absolute;
+       top: -2.563rem;
+       left: 3rem;
+       z-index: 4;
+  }
 
 .dk-card__title {
     font-size: 1rem;
@@ -1631,7 +1669,7 @@ ol li {
     padding: 2rem
 }
 .dk-page-home-metrics-new {
-    padding: 2rem;
+    padding: 0.9rem 0rem 0rem 2.7rem;
     color: #fff;
 }
 @media (min-width: 1440px) {
