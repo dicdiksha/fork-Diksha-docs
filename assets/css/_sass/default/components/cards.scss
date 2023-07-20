@@ -322,8 +322,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14.875rem, 1fr));
   grid-gap: 1rem;
-  grid-auto-rows: 138px;
-  margin: 29px 17px 2px 54px;
+  grid-auto-rows: 138px;  
   .card {
     border-radius: calculateRem(16px);
     background-color: var(--rcard-bg);
