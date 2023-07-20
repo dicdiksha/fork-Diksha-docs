@@ -24793,12 +24793,8 @@ $(document).ready(function () {
     e.preventDefault();
       let slug =e.currentTarget.getAttribute('data-slug');
       let  name = e.currentTarget.getAttribute('data-name');
-      // window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-      if(name === "NCERT"){
-        window.open('/' + slug + '/explore/1?id=cisce_k-12&selectedTab=all&se_boards=CBSE%2FNCERT&&&&', "_self");
-      } else {
-        window.open('/' + slug + '/explore', "_self");
-      }
+      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+      window.open('/' + slug + '/explore', "_self");
       return false;
   });
 

@@ -132,3 +132,104 @@ label.accordion-label.yellow {
 .no-bg {
     background: none;
 }
+
+/*----vocationa CSS----*/
+.new-drop-down{
+    margin-top: 10px;   
+}
+.new-drop-down label{
+    font-weight: bold;
+}
+
+.new-drop-down .dropdown {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    /* z-index: 99999999; */
+
+}
+
+.new-drop-down .dropdown li {
+    position: relative;
+}
+
+.new-drop-down .dropdown li a {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 4px 10px;
+    /* border: 2px solid #4e4d4c; */
+    color: #fff;
+}
+
+.new-drop-down .dropdown li ul {
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    line-height: normal;
+    width: 100%;
+    z-index: 99999999;
+    /* background-color: #333; */
+}
+
+.new-drop-down .dropdown li ul li a {
+    text-align: left;
+    font-size: 14px;
+    padding: 7px 10px;
+    display: block;
+    white-space: nowrap;
+    overflow: auto;
+    text-wrap: inherit;
+}
+
+.new-drop-down .dropdown li ul li ul {
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+.new-drop-down ul li:hover>a {
+   border:1px solid darkgray;
+    color: #fff;
+   
+}
+.new-drop-down ul li:hover>ul {
+    display: block;
+}
+
+.new-drop-down .sm-dropdown{
+    width: 100px !important;
+}
+.new-drop-down .md-dropdown{
+    width: 230% !important;
+    word-break: break-all;
+}
+
+@media only screen and (max-width: 769px){
+    .new-drop-down .dropdown li ul li ul {
+        left: 0;
+        top: 100%;
+        width: 100%;
+        z-index: 9999999999999999999;
+        height: 99%;
+    }
+
+    .new-drop-down .dropdown li ul li ul {
+        left: 0;
+        top: 100%;
+        width: 100% !important;
+    }
+
+    .new-drop-down .sm-dropdown {
+        width: 100% !important;
+    }
+    .new-drop-down .md-dropdown {
+        width: 100%;
+    }
+    
+}
+@media only screen and (min-width: 769px){  
+}

@@ -1,4 +1,4 @@
-const gulp = require('gulp-v3');
+const gulp = require('gulp');
 const concat = require('gulp-concat');
 const minify = require('gulp-minify');
 
