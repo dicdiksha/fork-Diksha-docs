@@ -1,0 +1,189 @@
+<style>
+    .footer{
+    }
+
+    .footer .bottom-footer{
+        background-color: #000000;
+        color: #fff;
+        padding: 10px;
+        font-size: 14px;
+    }
+    .footer .bottom-update{
+        display: flex;
+    }
+    .term-and-condition {
+        background-color: #482BAC;
+        color: #EBEBEB;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        padding: 13px;
+    }
+    .text-detail {
+    width: 100%;
+    }
+    .footer-details{
+        font-size: 14px;
+    }
+    .footer-details .footer-item {
+    width: 30%;
+    }
+    .footer-details  .diksha-logo {
+    display: flex;
+    flex-direction: column;
+    }
+    .footer-details .footer-logo {
+    color: #482BAC;
+    font-weight: bold;
+    font-size: 19px;
+}
+.diksha-links .links-head, 
+.diksha-explore .explore-head, 
+.diksha-contribute .contribute-head {
+    font-size: 14px;
+    font-weight: bold;
+    color: #434141;
+}
+.diksha-links .heading-links ul,
+.diksha-explore .explore-links ul,
+.diksha-contribute .contribute-link ul {
+    padding: 0;
+}
+.diksha-links .heading-links ul li,
+.diksha-explore .explore-links ul li,
+.diksha-contribute .contribute-link ul li{
+    list-style: none;
+    padding: 5px 0;
+}
+
+.footer-details {
+    font-size: 14px;
+    padding: 20px 85px;
+}
+
+.diksha-contribute .diksha-nerd {
+    display: flex;
+    flex-direction: column;
+}
+
+ .diksha-nerd .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.diksha-social-media {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 50px;
+}
+.diksha-social-media span {
+    padding: 7px;
+}
+.diksha-nerd .icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.diksha-nerd .icons span{
+    padding: 0 5px;
+}
+
+.footer-item.diksha-nerd {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+</style>
+<div class="footer" >
+        <div class="main-footer">
+            <div class="container">
+                <div class="footer-details">
+                    <div class="footer-item diksha-info">
+                            <div class="diksha-logo">
+                                <span class="footer-logo">
+                                    <img src="../images/Diksha-logo.png" alt="Diksha-logo">
+                                    <span>DIKSHA</span>
+                                </span>
+                                <span>Digital Infrastucture For <br> Knoeledge Sharing</span>
+                            </div>
+                            <div class="diksha-social-media">
+                                <span><img src="../images/link_in.png" alt=""></span>
+                                <span><img src="../images/facebook.png" alt=""></span>
+                                <span><img src="../images/instagram.png" alt=""></span>
+                                <span><img src="../images/youtube.png" alt=""></span>
+                                <span><img src="../images/twitter.png" alt=""></span>
+                            </div>
+
+                    </div>
+                    <div class="footer-item diksha-links">
+                        <div class="links-head">
+                            DIKSHA
+                        </div>
+                        <div class="heading-links">
+                           <ul>
+                            <li><a href="">About DIKSHA</a></li>
+                            <li><a href="">Help Center/FAQ</a></li>
+                           </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item diksha-explore">
+                        <div class="explore-head">Explore</div>
+                        <div class="explore-links">
+                            <ul>
+                                <li><a href="">Digital Textbooks</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-item diksha-contribute">
+                        <div class="contribute-head">Contribute</div>
+                        <div class="contribute-link">
+                            <ul>
+                                <li><a href="">VidyaDaan</a></li>
+                            </ul>
+                        </div>
+                    </div> 
+                    <div class="footer-item diksha-nerd">
+                        <div class="info"> 
+                            <span>
+                                <img src="../images/negd-removebg-preview 1.png">
+                            </span>
+                            <span>
+                                Digital India Corporation <br>Ministry of Electronics & IT (MeitY), <br>Government of India
+                            </span>
+                        </div>
+                        <div class="icons">
+                            <span>Powered by</span>
+                            <img src="../images/Digital-India-Color 1.png">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="term-and-condition">
+            <a class="sb-color-white terms-policies" target="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">
+                {{ site.data.text.TermsofUse }}
+            </a> | 
+            <span data-translate="copyright">{{ site.data.text.copyright }}</span>
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="bottom-update">
+                    <div class="text-update">
+                        <div class="font-weight-bold mr-16 diksha-update-txt" tabindex="0" data-translate="DIKSHAUpdates">{{ site.data.text.DIKSHAUpdates }}</div>
+                    </div>
+                    <div class="text-detail">
+                        <marquee class="text">
+                            <span data-translate="">{{ site.data.text.updateticker1 }}</span>
+                            <span> &nbsp;| &nbsp;</span>
+                            <span data-translate="updateticker2">{{ site.data.text.updateticker2 }}</span>
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

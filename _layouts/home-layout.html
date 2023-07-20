@@ -1,0 +1,95 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        {% include head.html %}
+    </head>
+    <body>
+        <div class="container-fluid relative p-0 home-page {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
+            <header id="header" class="dk-header">
+                {% include header-new.html %}
+            </header>
+            <article>
+                <div class="computer only" id="webView">
+                    <!-- page sections -->
+                    {{content}}
+                    <!-- page sections -->
+                <div>
+    
+                <div class="mobile only" id="mobileView">
+                </div>
+    
+            </article>
+            <footer id="footer">
+                {% include footer-new.html %}
+            </footer>
+        </div>
+    </body>
+    <!-- <script async defer src="{{site.baseurl}}/assets/js/default-foot-min.js"></script> -->
+{% if page.url contains '/help/' or  page.url contains 'search.html' %}
+{% elsif page.url contains '/about/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+<script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/about.js"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/about.js'"></script>
+{% elsif page.url contains '/getapp/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+<script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/getapp.js"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/getapp.js'"></script>
+{% elsif page.url contains '/contribute/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+<script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/contribute.js"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/contribute.js'"></script>
+{% elsif page.url contains '/data/' %}
+<script async defer
+    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/dashboard-head-min.js?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/dashboard-head-min.js?{{site.time || date: %d%m%Y}}'">
+</script>
+{% else %}
+<script type="text/javascript">
+
+    (
+        function()
+        {
+            var sc = document.createElement('script');
+            sc.type = 'text/javascript';
+            sc.async = true;
+            sc.src = "{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/default-head-min.js?{{site.time | | date: '%d%m%Y'}}";
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(sc,s);
+        }
+    )();
+    var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = "{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    link.media = 'all';
+    head.appendChild(link);
+}
+
+</script>
+<!-- <link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+
+<noscript><link rel="stylesheet" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/default.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/default.min.css?{{site.time || date: %d%m%Y}}'"></noscript>
+{% endif %}
+<script>
+    //
+</script>
+</html>

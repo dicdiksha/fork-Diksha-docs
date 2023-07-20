@@ -1,0 +1,32 @@
+<div class="usage-metrics-content-new">
+    <div class="mb-24">
+        <!-- <h2 class="usage-label" tabindex="0" data-translate="contributionMetrics">{{ site.data.text.contributionMetrics }}</h2> -->
+        <p class="mt-4 diksha-app-new-text mb-16" data-translate="contributionDescription">{{ site.data.text.contributionDescription }}</p>
+        <!-- <button type="button" tabindex="0" -->
+            <!-- class="sb-btn sb-btn-normal sb-btn-outline-primary sb-btn-radius px-16 view-dashboard" category="creation" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</button> -->
+    </div>
+</div>
+<div class="usage-metrics-content-new">
+    <div class="my-16 dk-usagetilldate sb-h6" role="heading" aria-level="3" data-translate="dikshaContentContribution">{{ site.data.text.dikshaContentContribution }}</div>
+    <div style="margin: 0.063rem 1.813rem 2.688rem 2.063rem;">
+    <div class="vertical"></div>
+    <div>
+        <div class="usage-label d-inline-flex" aria-live="polite" tabindex="0" data-toggle="tooltip" data-placement="bottom"
+            title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}"><span class="total-contributions mr-8"
+                id="totalContributions"></span> <img loading="lazy" decoding="async"  
+                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                alt="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['alt']}" /></div>
+                <div class="fsmall diksha-app-new-text" data-translate="contributions">{{ site.data.text.contributions }}</div>
+    </div>
+
+    <div class=" my-24">
+        <div class="usage-label d-inline-flex" aria-live="polite" tabindex="0" data-toggle="tooltip" data-placement="bottom"
+            title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}"><span class="total-contributors mr-8" id="totalContributors"></span> <img loading="lazy" decoding="async"  
+                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                alt="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['alt']}" /></div>
+        <div class="fsmall diksha-app-new-text" data-translate="contributors">{{ site.data.text.contributors }}</div>
+    </div>
+</div>
+</div>
