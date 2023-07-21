@@ -388,7 +388,12 @@ $(document).ready(function () {
     window.open('/explore', "_self");
     return false;
   });
-
+  $(".diksha-action").click(function (e) {
+    e.preventDefault();
+    window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+    window.open('/explore', "_self");
+    return false;
+  });
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
