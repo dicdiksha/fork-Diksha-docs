@@ -24903,13 +24903,22 @@ $(window).resize(function () {
 $(document).ready(function () {
     let origin = '';
     (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') ? origin = window.origin : origin = 'https://preprod.ntp.net.in';
-    let totalContentPlays = `https://diksha.gov.in/data/reports/public/cumulative_content_plays_till_date.json`,
-        totalcontenttime = `https://diksha.gov.in/data/reports/public/overall_time_spent.json`,
-        totalContributions = `https://diksha.gov.in/data/reports/public/total_contents_created.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_contents_created.json`,
-        totalContributors = `https://diksha.gov.in/data/reports/public/no_of_users_contributed.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/no_of_users_contributed.json`,
-        totalCourses = `https://diksha.gov.in/data/reports/public/total_courses_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_courses_new.json`,
-        totalEnrollments = `https://diksha.gov.in/data/reports/public/total_enrolments_new_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_enrolments_new_new.json`,
-        totalCompletions = `https://diksha.gov.in/data/reports/public/total_completions.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_completions.json`,
+    // let totalContentPlays = `https://diksha.gov.in/data/reports/public/cumulative_content_plays_till_date.json`,
+    //     totalcontenttime = `https://diksha.gov.in/data/reports/public/overall_time_spent.json`,
+    //     totalContributions = `https://diksha.gov.in/data/reports/public/total_contents_created.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_contents_created.json`,
+    //     totalContributors = `https://diksha.gov.in/data/reports/public/no_of_users_contributed.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/no_of_users_contributed.json`,
+    //     totalCourses = `https://diksha.gov.in/data/reports/public/total_courses_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_courses_new.json`,
+    //     totalEnrollments = `https://diksha.gov.in/data/reports/public/total_enrolments_new_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_enrolments_new_new.json`,
+    //     totalCompletions = `https://diksha.gov.in/data/reports/public/total_completions.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_completions.json`,
+
+    let totalContentPlays = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/cumulative_content_plays_till_date.json`,
+        totalcontenttime = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/overall_time_spent.json`,
+        totalContributions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_contents_created.json`,
+        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed.json`,
+        totalCourses = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_courses_new.json`,
+        totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
+        totalCompletions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_completions.json`,
+        
         category = '',
         queryString = window.location.search;
     let a = new URLSearchParams(queryString);
@@ -25094,8 +25103,11 @@ $(document).ready(function () {
     let origin = '';
     (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') ? origin = window.origin : origin = 'https://preprod.ntp.net.in';
 
-    let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
-        stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
+    //     stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    
+    let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
+        stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
         mapsJson = `/assets/json/maps.json`,
         contentPlayData = d3.map(),
         tenantSlugs = [],
