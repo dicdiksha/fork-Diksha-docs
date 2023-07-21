@@ -9,8 +9,10 @@
 .diksha-app-new-text {
     color: var(--white);
     line-height: normal;
-    font-size: 1rem;
-    line-height: 1.5rem
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+    font-family: lato;
+    font-weight: 500;    
 }
 .usage-metrics-content .usage-label {
     font-size: 1.5rem;
@@ -1371,11 +1373,13 @@ ol li {
     line-height: 2.1rem;    
 }
 .dk-number__centertitle {  
-    
     color: #FFFFFF;
-    text-align: center;  
-    line-height: 99px;
-    margin: .5rem 0rem .5rem 0rem;
+    text-align: center;
+    font-size: 2.5rem;   
+    font-weight: 600;
+    line-height: 2.1rem;
+    padding: 1.75rem; 
+    
 }
 
 
@@ -1489,11 +1493,11 @@ ol li {
 }
 
 .dk-card-new__img {
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center
+    width: 4.5rem;
+    height: 4.625rem;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center
 }
 
 .dk-card-new__img img {
@@ -2282,4 +2286,21 @@ body {
 
 .sb-color-error {
     color: #A82400 !important
+}
+.byb-title {
+    font-family: Lato;
+    font-weight: 700;
+    line-height: 30px;
+    //text-align: center !important;
+    font-size: 20px !important;
+
+}
+.byb-text {
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 18.2px;
+    width: 178px;
+    height: 44px;
+    font-size: 14px !important;
+
 }

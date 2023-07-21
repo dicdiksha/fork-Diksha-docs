@@ -320,9 +320,9 @@
 // browser by board grid
 .dk-browser-by-board-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(14.875rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(17.625rem, 1fr));
   grid-gap: 1rem;
-  grid-auto-rows: 138px;  
+  grid-auto-rows: 130px;  
   .card {
     border-radius: calculateRem(16px);
     background-color: var(--rcard-bg);
@@ -330,7 +330,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding: calculateRem(16px);
+    padding: calculateRem(24px);
     border:0px;
   }
 }
