@@ -416,7 +416,7 @@ $(document).ready(function () {
       $(".minutes-of-usage").show();
       switch (callType || type) {
         case 'usage': generateTopoGraphMap(use); $(".state-wise-value").hide(); $(".state-ut-text").show(); break;
-        case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); break;
+        case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); getTotalEnrollments(); break;
         case 'default': generateTopoGraphMap(use); break;
       }
       if (use == 'usage' || use == 'course') {
@@ -425,6 +425,20 @@ $(document).ready(function () {
 
       window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
     }
+  }
+
+  function getTotalEnrollments() {
+    $.ajax({
+      type: 'GET',
+      url: totalEnrollments,
+      success: function (data, textStatus, request) {
+        data = typeof data == "string" ? JSON.parse(data) : data;
+        $("#totalEnrolments").text(parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN"));
+      },
+      error: function (request, textStatus, errorThrown) {
+        console.log(errorThrown);
+      }
+    });
   }
 
   function generateTopoGraphMap(use) {
