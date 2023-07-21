@@ -17,8 +17,8 @@
 .dk-usagetilldate-new {
     font-family: Lato;
     font-weight: 500;
-    font-size: 1.5rem;
-    line-height: 2.1rem;
+    font-size: 1.5rem !important;
+    line-height: 2.1rem !important;
 
 
 }
@@ -44,7 +44,7 @@
     position: absolute;
     left: 12.9rem;
     margin-left: -10.125rem; 
-    top:7.813rem;     
+    top:8.613rem;     
       
   }
   .vertical::before {
@@ -68,11 +68,11 @@
   }
   .vertical-3 {      
     border-left: 0.063rem solid var(--white);
-    height: 9.6rem;
+    height: 12.6rem;
     position: absolute;
     left: 12.9rem;
     margin-left: -10.125rem; 
-    top:7.813rem;     
+    top:8.613rem;     
       
   }
   .vertical-3::before {
@@ -92,13 +92,19 @@
        background-color: var(--white);
        position: absolute;
        left: -0.4rem;
-       top: 9.6rem;
+       top: 12.6rem;
   }
   .usage-label-panel {
     margin: 0.063rem 0rem 0rem 2.063rem;
 
   }
+.dk-numbers-new {
+    font-weight: 200;
+    font-size: 40px;
+    line-height: 33.6px;
+    font-family: lato;
 
+}
 .usage-metrics-content .view-dashboard {
     background-color: var(--dashboard-btn-bg);
     color: var(--dashboard-btn-text);
@@ -1525,7 +1531,13 @@ ol li {
     justify-content: center
 }
 
-
+.dk-no-right-text {
+    font-family: lato;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2.1rem;
+    color: #ffffff;
+}
 
 
 
@@ -1853,7 +1865,13 @@ p {
     padding-right: 5%
 }
 .diksha-number-container{
-    background-image: linear-gradient(to right,rgba(38, 53, 181, 1),rgba(27, 35, 103, 1),rgba(103, 50, 218, 1));
+    //  background-image: url('/assets/diksha-mission/diksh-number-bg.png');
+    //  background-size: contain;
+    //  background-repeat: no-repeat;
+    //  display: inline-block;
+   //background-image: linear-gradient(to left,  #6732da,#2635b5,#1b2367);
+   background-image: linear-gradient(to left, #6732DA 10%, #1B2367 100%, #2635B5 100%);
+   //background-image: linear-gradient(to left,  #6732da,#1b2367,#2635b5);
 }
 
 @media (max-width: 1279px) {
