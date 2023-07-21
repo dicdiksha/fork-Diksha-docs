@@ -2,12 +2,15 @@
 layout: home-layout
 title: Home
 ---
-
-
 <div id="scrollMainContent"></div>
+{% include page-home-slider-new.html %}  
 <div class="container">
     {% include explore-diksha.html %}
 </div>
 <div class="container">
     {% include mobile-device-app.html %}
+</div>
+    <h2 class="dk-info-home__sectiontitle">Browser By Board</h2>
+    {% include browser-by-board.html %}   
+    <!-- {% include home-mobile.html %} -->
 </div>

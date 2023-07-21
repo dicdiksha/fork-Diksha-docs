@@ -6,12 +6,88 @@
     font-size: 1rem;
     line-height: 1.5rem
 }
-
+.diksha-app-new-text {
+    color: var(--white);
+    line-height: normal;
+    font-size: 1rem;
+    line-height: 1.5rem
+}
 .usage-metrics-content .usage-label {
     font-size: 1.5rem;
     color: #bf5537;
     font-weight: bold
 }
+.usage-metrics-content-new .usage-label {
+   
+    color: #ffffff;
+    
+}
+.usage-metrics-content-new .usage-label img {
+    height: 20px;
+    width: 20px;
+    margin: 0.193rem;
+}
+
+.vertical {      
+    border-left: 0.063rem solid var(--white);
+    height: 5.0rem;
+    position: absolute;
+    left: 12.9rem;
+    margin-left: -10.125rem; 
+    top:6.813rem;     
+      
+  }
+  .vertical::before {
+    content: "";
+    border-radius: 50%;
+    height: 0.625rem; /* Changed */
+    width: 0.625rem; /* Changed */
+    background-color: var(--white);
+    position: absolute; /* Added */
+    left: -0.4rem; /* Added */
+  }
+  .vertical::after {
+       content: "";
+       border-radius: 50%;
+       height: 0.625rem;
+       width: 0.625rem;
+       background-color: var(--white);
+       position: absolute;
+       left: -0.4rem;
+       top: 5.0rem;
+  }
+  .vertical-3 {      
+    border-left: 0.063rem solid var(--white);
+    height: 9.6rem;
+    position: absolute;
+    left: 12.9rem;
+    margin-left: -10.125rem; 
+    top:6.813rem;     
+      
+  }
+  .vertical-3::before {
+    content: "";
+    border-radius: 50%;
+    height: 0.625rem; /* Changed */
+    width: 0.625rem; /* Changed */
+    background-color: var(--white);
+    position: absolute; /* Added */
+    left: -0.4rem; /* Added */
+  }
+  .vertical-3::after {
+       content: "";
+       border-radius: 50%;
+       height: 0.625rem;
+       width: 0.625rem;
+       background-color: var(--white);
+       position: absolute;
+       left: -0.4rem;
+       top: 9.6rem;
+  }
+  .usage-label-panel {
+    margin: 0.063rem 0rem 0rem 2.063rem;
+
+  }
 
 .usage-metrics-content .view-dashboard {
     background-color: var(--dashboard-btn-bg);
@@ -1288,6 +1364,20 @@ ol li {
     line-height: normal;
     margin-bottom: .5rem
 }
+.dk-info-home__sectiontitle {    
+    font-size: 1.5rem;  
+    font-weight: 500;   
+    color: #434141;
+    line-height: 2.1rem;    
+}
+.dk-number__centertitle {  
+    
+    color: #FFFFFF;
+    text-align: center;  
+    line-height: 99px;
+    margin: .5rem 0rem .5rem 0rem;
+}
+
 
 .border-container {
     border: .03125rem solid var(--dk-theme-border-color);
@@ -1298,6 +1388,16 @@ ol li {
 .border-container:focus {
     outline: none
 }
+.last-update-text {
+    color: #fff;
+}
+.last-update-text-new {
+    color: #fff;
+}
+.last-update-text-new img{
+    margin: 0.263rem;
+}
+
 
 .dk-card {
     border-radius: 1.125rem;
@@ -1387,6 +1487,61 @@ ol li {
     filter: grayscale(100%);
     max-height: 100%
 }
+
+.dk-card-new__img {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.dk-card-new__img img {
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;    
+    max-height: 100%;  
+    
+}
+
+.dk-card-about-new__img {
+    position: relative;    
+    height: 3.583rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+
+
+
+
+
+.about-new {
+    position: absolute;
+    top: -1.188rem;
+    left: 0rem;    
+    z-index: 1;
+  }
+  .about-new1 {
+       position: absolute;
+       top: -2.813rem;
+       left: -0.063rem;
+       z-index: 2;
+  }
+  .about-new2 {
+    position: absolute;
+        top: -1.125rem;
+        left: 2.875rem;
+        z-index: 3;
+  }
+  .about-new3 {
+       position: absolute;
+       top: -2.563rem;
+       left: 3rem;
+       z-index: 4;
+  }
 
 .dk-card__title {
     font-size: 1rem;
@@ -1544,18 +1699,21 @@ ol li {
 .dk-page-home-metrics {
     padding: 2rem
 }
-
+.dk-page-home-metrics-new {
+    padding: 0.9rem 0rem 0rem 2.7rem;
+    color: #fff;
+}
 @media (min-width: 1440px) {
-    .dk-page-home-metrics .usage-metrics-content .usage-label {
+    .dk-page-home-metrics .dk-page-home-metrics-new .usage-metrics-content .usage-metrics-content-new .usage-label {
         font-size: 1.5rem
     }
 
-    .dk-page-home-metrics .usage-metrics-content .diksha-app-text {
+    .dk-page-home-metrics .dk-page-home-metrics-new .usage-metrics-content .usage-metrics-content-new .diksha-app-text {
         font-size: 1rem !important;
         line-height: 24px
     }
 
-    .dk-page-home-metrics .usage-metrics-content .dk-usagetilldate {
+    .dk-page-home-metrics .dk-page-home-metrics-new .usage-metrics-content .usage-metrics-content-new .dk-usagetilldate {
         font-size: 1.125rem
     }
 }
@@ -1636,6 +1794,10 @@ ol li {
 p {
     line-height: normal
 }
+.download-text {
+    color:#fff;
+    
+  }
 
 .download-overall {
     font-size: 0.625rem
@@ -1677,6 +1839,9 @@ p {
 .footer-terms-area .right-column {
     text-align: right;
     padding-right: 5%
+}
+.diksha-number-container{
+    background-image: linear-gradient(to right,rgba(38, 53, 181, 1),rgba(27, 35, 103, 1),rgba(103, 50, 218, 1));
 }
 
 @media (max-width: 1279px) {

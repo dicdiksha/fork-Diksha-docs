@@ -15,7 +15,54 @@
 }
 
 .homepage-slides {
-    height: 100%;
+    height: 27.188rem !important;
+
+    .carousel-control-prev-icon {
+        background-image: url(/assets/imgs/icons/left-arrow.png) !important;
+    }
+    .carousel-control-next-icon {
+        background-image: url(/assets/imgs/icons/right-arrow.png) !important;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        background: transparent no-repeat center center;
+        background-size: 100% 100%;
+    }
+    .carousel-control .icon-prev {
+        content: "\2039";
+        
+    }
+    .carousel-control .icon-next {
+       content: "\203a";
+      
+    }
+    .carousel-control {
+        position: absolute;
+        top: 17.250rem;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        font-size: 20px;
+        color: #FFFFFF;
+        text-align: center;    
+    }
+    .carousel-control.left {
+        left:10.848rem;       
+    }
+    .carousel-control.right {
+        right: 14.875rem;
+        left: auto;      
+    }
+    // .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+        // position: absolute;
+        // top: 96%;
+        // z-index: 5;
+        // display: inline-block;
+        // margin-top: -10px;
+    // }
+    // 
 
     .carousel-indicators {
         margin-bottom: 0;
@@ -60,10 +107,10 @@
     }
 
     .carousel-inner {
-        height: 100%;
+        height: 27.188rem !important;
 
         .carousel-item {
-            height: 100%;
+            height: 27.188rem !important;
 
             img {
                 width: 100%;
@@ -199,6 +246,7 @@
     //     }
     // }
 }
+
 
 .carousel3-bg {
 

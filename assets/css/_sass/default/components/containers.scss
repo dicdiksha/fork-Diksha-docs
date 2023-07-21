@@ -166,6 +166,18 @@
         font-size: calculateRem(18px);
       }
     }
+    .usage-metrics-content-new {
+      .usage-label {
+        font-size: calculateRem(24px);
+      }
+      .diksha-app-text {
+        font-size: calculateRem(16px) !important;
+        line-height: 24px;
+      }
+      .dk-usagetilldate {
+        font-size: calculateRem(18px);
+      }
+    }
   }
 }
 
