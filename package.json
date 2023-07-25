@@ -9,8 +9,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "3": "^2.1.0",
     "@project-sunbird/content-player": "^1.0.1",
-    "graceful-fs": "^4.2.9"
+    "graceful-fs": "^4.2.9",
+    "Gulp": "npm:gulp@^3.9.1",
+    "gulp-v3": "^3.12.1",
+    "node-gyp": "^9.4.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

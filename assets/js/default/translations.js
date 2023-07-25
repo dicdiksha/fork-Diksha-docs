@@ -3,7 +3,7 @@ const languageTranslations = {
         "language": "English",
         "diksha": "DIKSHA",
         "govofIndia": "भारत सरकार | Government of India",
-        "dikshamoto": "Digital Infrastructure for Knowledge Sharing",
+        "dikshamoto": "Digital Infrastructure for Knowledge Sharing",       
         "dikshaDescription": "An initiative of the National Council of Educational Research and Training (Ministry of Education, Govt of India)",
         "btnExploreDiksha": "Explore DIKSHA",
         "explore": "Explore",

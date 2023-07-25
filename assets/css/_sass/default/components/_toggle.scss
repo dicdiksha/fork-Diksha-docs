@@ -100,3 +100,59 @@
 #linegraph{
     position: relative;
 }
+
+.switch-field-new {
+	display: flex;
+	margin: calculateRem(30px) calculateRem(14px) calculateRem(-15px);
+    z-index: 9999;
+    position: relative;
+}
+
+.switch-field-new input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field-new label {
+    background-color: #fff;
+    color: #004e9d;
+    font-size: calculateRem(12px);
+    line-height: 1;
+    text-align: center;
+    padding: calculateRem(20px) calculateRem(14px);
+    margin-right: calculateRem(-1px);
+    margin-left: 25px;
+    border: calculateRem(1px) solid #004e9d;
+    box-shadow: none;
+    transition: all 0.1s ease-in-out;
+ }
+ .switch-field-new label:hover {
+     cursor: pointer;
+ }
+ .switch-field-new input:checked + label {
+    background-color: #0473B7;
+    box-shadow: none;
+    color: #fff;
+ }
+ .switch-field-new label:first-of-type {
+     border-radius: calculateRem(10px) calculateRem(10px) calculateRem(10px) calculateRem(10px);
+    html[dir="rtl"] & {
+        border-radius: calculateRem(10px) calculateRem(10px) calculateRem(10px) calculateRem(10px);
+    }
+ }
+ .switch-field-new label:nth-of-type(2) {
+    border-radius: calculateRem(10px) calculateRem(10px) calculateRem(10px) calculateRem(10px);
+   html[dir="rtl"] & {
+       border-radius: calculateRem(10px) calculateRem(10px) calculateRem(10px) calculateRem(10px);
+   }
+}
+ .switch-field-new label:last-of-type {
+     border-radius: calculateRem(10px) calculateRem(10px) calculateRem(10px) calculateRem(10px);
+    html[dir="rtl"] & {
+        border-radius: calculateRem(10px) calculateRem(10px) calculateRem(10px) calculateRem(10px);
+    }
+ }
