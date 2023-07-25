@@ -12,7 +12,7 @@ $(document).ready(function () {
     let totalContentPlays = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/cumulative_content_plays_till_date.json`,
         totalcontenttime = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/overall_time_spent.json`,
         totalContributions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_contents_created.json`,
-        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed.json`,
+        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed_new.json`,
         totalCourses = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_courses_new.json`,
         totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
         totalCompletions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_completions.json`,
