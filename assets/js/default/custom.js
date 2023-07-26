@@ -748,7 +748,7 @@ $(document).ready(function () {
   let stateRes = [];
   function generateStateWiseTrendLine(slug) {
     if (category == 'usage') {
-        $.get(`https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`, function (data) {
+        $.get(`https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`, function (data) {
         const data_temp = [];
         let plays = 0;
         const temp = typeof data == "string" ? JSON.parse(data) : data;
