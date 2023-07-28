@@ -1,0 +1,68 @@
+<style>
+
+.hero-section{
+
+}
+.main-hero {
+    position: relative;
+
+}
+.main-hero  img{
+    width: 100%;
+}
+
+.main-hero .caption {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 39%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+}
+.bottom-image{
+    position: relative;
+}
+.caption .bottom-image::after{
+    content: " ";
+    background-image: url(/images/img-bottom.png);
+    width: 100%;
+    height: 100%;
+    bottom: -30px;
+    left: 0px;
+    position: absolute;
+    
+}
+.main-hero .text-highlight{
+    font-size: 60px;
+    /* font-weight: bold; */
+    line-height: 1.3;
+}
+.caption-button{
+    border: 0px;
+    background-color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    letter-spacing: 0.15px;
+    font-size: 16px;
+}
+.text-description {
+    margin-top: 30px;
+}
+</style>
+
+<div class="hero-section">
+        <div class="main-hero">
+            <img src="../images/Hero-section 1.jpg" alt="Hero section 1">
+            <div class="caption">
+                <span class="text-highlight">Explore, Learn and <br>Grow with <span class="bottom-image">DIKSHA</span>  </span>
+                <span class="text-description">Discover a world of knowledge, engage in interactive lessons, and expand your horizons with our comprehensive collection of educational resources</span>
+                <span class="mt-15">
+                    <button class="caption-button">Explore Diksha</button>
+                </span>
+            </div>
+        </div>
+   
+</div>
