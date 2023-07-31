@@ -8,8 +8,12 @@ $(document).ready(function () {
     origin = 'https://preprod.ntp.net.in'
   }
 
-  let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
-    stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+  // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
+  //   stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    
+  let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`,
+    stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
     mapsJson = `/assets/json/maps.json`,
     contentPlayData = d3.map(),
     tenantSlugs = [],
@@ -412,7 +416,7 @@ $(document).ready(function () {
       $(".minutes-of-usage").show();
       switch (callType || type) {
         case 'usage': generateTopoGraphMap(use); $(".state-wise-value").hide(); $(".state-ut-text").show(); break;
-        case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); break;
+        case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); getTotalEnrollments(); break;
         case 'default': generateTopoGraphMap(use); break;
       }
       if (use == 'usage' || use == 'course') {
@@ -421,6 +425,20 @@ $(document).ready(function () {
 
       window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
     }
+  }
+
+  function getTotalEnrollments() {
+    $.ajax({
+      type: 'GET',
+      url: totalEnrollments,
+      success: function (data, textStatus, request) {
+        data = typeof data == "string" ? JSON.parse(data) : data;
+        $("#totalEnrolments").text(parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN"));
+      },
+      error: function (request, textStatus, errorThrown) {
+        console.log(errorThrown);
+      }
+    });
   }
 
   function generateTopoGraphMap(use) {
@@ -730,7 +748,7 @@ $(document).ready(function () {
   let stateRes = [];
   function generateStateWiseTrendLine(slug) {
     if (category == 'usage') {
-        $.get(`https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`, function (data) {
+        $.get(`https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`, function (data) {
         const data_temp = [];
         let plays = 0;
         const temp = typeof data == "string" ? JSON.parse(data) : data;

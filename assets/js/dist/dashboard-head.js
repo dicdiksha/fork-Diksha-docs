@@ -24903,13 +24903,22 @@ $(window).resize(function () {
 $(document).ready(function () {
     let origin = '';
     (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') ? origin = window.origin : origin = 'https://preprod.ntp.net.in';
-    let totalContentPlays = `https://diksha.gov.in/data/reports/public/cumulative_content_plays_till_date.json`,
-        totalcontenttime = `https://diksha.gov.in/data/reports/public/overall_time_spent.json`,
-        totalContributions = `https://diksha.gov.in/data/reports/public/total_contents_created.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_contents_created.json`,
-        totalContributors = `https://diksha.gov.in/data/reports/public/no_of_users_contributed.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/no_of_users_contributed.json`,
-        totalCourses = `https://diksha.gov.in/data/reports/public/total_courses_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_courses_new.json`,
-        totalEnrollments = `https://diksha.gov.in/data/reports/public/total_enrolments_new_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_enrolments_new_new.json`,
-        totalCompletions = `https://diksha.gov.in/data/reports/public/total_completions.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_completions.json`,
+    // let totalContentPlays = `https://diksha.gov.in/data/reports/public/cumulative_content_plays_till_date.json`,
+    //     totalcontenttime = `https://diksha.gov.in/data/reports/public/overall_time_spent.json`,
+    //     totalContributions = `https://diksha.gov.in/data/reports/public/total_contents_created.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_contents_created.json`,
+    //     totalContributors = `https://diksha.gov.in/data/reports/public/no_of_users_contributed.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/no_of_users_contributed.json`,
+    //     totalCourses = `https://diksha.gov.in/data/reports/public/total_courses_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_courses_new.json`,
+    //     totalEnrollments = `https://diksha.gov.in/data/reports/public/total_enrolments_new_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_enrolments_new_new.json`,
+    //     totalCompletions = `https://diksha.gov.in/data/reports/public/total_completions.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_completions.json`,
+
+    let totalContentPlays = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/cumulative_content_plays_till_date.json`,
+        totalcontenttime = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/overall_time_spent.json`,
+        totalContributions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_contents_created.json`,
+        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed.json`,
+        totalCourses = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_courses_new.json`,
+        totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
+        totalCompletions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_completions.json`,
+        
         category = '',
         queryString = window.location.search;
     let a = new URLSearchParams(queryString);
@@ -25100,8 +25109,12 @@ $(document).ready(function () {
     origin = 'https://preprod.ntp.net.in'
   }
 
-  let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
-    stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+  // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
+  //   stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    
+  let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
+    stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
     mapsJson = `/assets/json/maps.json`,
     contentPlayData = d3.map(),
     tenantSlugs = [],
@@ -25504,7 +25517,7 @@ $(document).ready(function () {
       $(".minutes-of-usage").show();
       switch (callType || type) {
         case 'usage': generateTopoGraphMap(use); $(".state-wise-value").hide(); $(".state-ut-text").show(); break;
-        case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); break;
+        case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); getTotalEnrollments(); break;
         case 'default': generateTopoGraphMap(use); break;
       }
       if (use == 'usage' || use == 'course') {
@@ -25513,6 +25526,20 @@ $(document).ready(function () {
 
       window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
     }
+  }
+
+  function getTotalEnrollments() {
+    $.ajax({
+      type: 'GET',
+      url: totalEnrollments,
+      success: function (data, textStatus, request) {
+        data = typeof data == "string" ? JSON.parse(data) : data;
+        $("#totalEnrolments").text(parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN"));
+      },
+      error: function (request, textStatus, errorThrown) {
+        console.log(errorThrown);
+      }
+    });
   }
 
   function generateTopoGraphMap(use) {
@@ -26208,6 +26235,7 @@ const languageTranslations = {
         "LearningLessons": "Learning sessions",
         "minutes": "Minutes",
         "TermsofUse": "Terms and Policies",
+        "needHelp": "Need Help",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "Skip to Main Content",
         "sitemap": "Site Map",
@@ -26314,6 +26342,7 @@ const languageTranslations = {
         "LearningLessons": "শিক্ষণৰ বৈঠকসমূহ",
         "minutes": "মিনিট",
         "TermsofUse": "চৰ্ত আৰু নীতিসমূহ",
+        "needHelp":"সহায়ৰ প্ৰয়োজন",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "মুখ্য বিষয়বস্তুলৈ পাৰ হৈ যাওক",
         "sitemap": "স্থানৰ মানচিত্ৰ",
@@ -26420,6 +26449,7 @@ const languageTranslations = {
         "LearningLessons": "শেখার সেশনস",
         "minutes": "মিনিটস",
         "TermsofUse": "শর্তাদি এবং নীতিসমূহ",
+        "needHelp":"সাহায্য দরকার",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "স্কিপ করে মূল কনটেন্টে যাও",
         "sitemap": "সাইটের মানচিত্র",
@@ -26526,6 +26556,7 @@ const languageTranslations = {
         "LearningLessons": "અધ્યયન સત્રો",
         "minutes": "મિનિટ",
         "TermsofUse": "નિયમો અને નીતિઓ",
+        "needHelp": "મદદ જોઈતી",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "મુખ્ય વિષયવસ્તુ પર જાઓ",
         "sitemap": "સાઇટ નકશો",
@@ -26632,6 +26663,7 @@ const languageTranslations = {
         "LearningLessons": "सीखने के सत्र",
         "minutes": "मिनट्स",
         "TermsofUse": "नियम और शर्तें",
+        "needHelp":"मदद की ज़रूरत है",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "मुख्य कंटेन्ट पर जाएं",
         "sitemap": "साइट का नक्शा",
@@ -26737,6 +26769,7 @@ const languageTranslations = {
         "LearningLessons": "ಕಲಿಕಾ ಸೆಶನ್‍ ಗಳು",
         "minutes": "ನಿಮಿಷಗಳು",
         "TermsofUse": "ಕರಾರುಗಳು ಮತ್ತು ನೀತಿಗಳು",
+        "needHelp": "ಸಹಾಯ ಬೇಕು",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "ಮುಖ್ಯ ಪಠ್ಯಾಂಶಕ್ಕೆ ಹೋಗಿ",
         "sitemap": "ಸೈಟ್ ಮ್ಯಾಪ್",
@@ -26843,6 +26876,7 @@ const languageTranslations = {
         "LearningLessons": "अभ्यास सत्रे",
         "minutes": "मिनिट्स",
         "TermsofUse": "अटी व धोरणे",
+        "needHelp":"मदत पाहिजे",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "थेट मुख्य सामग्रीवर जा",
         "sitemap": "साइटचा नकाशा",
@@ -26979,6 +27013,7 @@ const languageTranslations = {
         "LearningLessons": "ଶିକ୍ଷଣ ସେସନ୍",
         "minutes": "ମିନିଟ୍",
         "TermsofUse": "ସର୍ତ୍ତାବଳୀ ଏବଂ ନୀତି",
+        "needHelp": "ସାହାଯ୍ୟ ଦରକାର| ",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "ସ୍କିପ୍ କରି ମୁଖ୍ୟ କଣ୍ଟେଣ୍ଟକୁ ଯାଆନ୍ତୁ",
         "sitemap": "ସାଇଟ୍ ମ୍ୟାପ୍",
@@ -27085,6 +27120,7 @@ const languageTranslations = {
         "LearningLessons": "ਸਿਖਲਾਈ ਸੈਸ਼ਨ",
         "minutes": "ਮਿੰਟਸ",
         "TermsofUse": "ਨਿਯਮ ਅਤੇ ਨੀਤੀਆਂ",
+        "needHelp" : "ਮਦਦ ਦੀ ਲੋੜ ਹੈ",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "ਮੁੱਖ ਕੰਟੇਂਟ ਨੂੰ ਛੱਡੋ",
         "sitemap": "ਸਾਈਟ ਦਾ ਨਕਸ਼ਾ",
@@ -27191,6 +27227,7 @@ const languageTranslations = {
         "LearningLessons": "கற்றல் அமர்வுகள்",
         "minutes": "நிமிடங்கள்",
         "TermsofUse": "விதிமுறைகள் மற்றும் கொள்கைகள்",
+        "needHelp": "సహాయం కావాలి",
         "copyright": "© 2021,தீக்‌ஷா",
         "skipMainContent": "முதன்மை உள்ளடக்கத்திற்கு செல்க",
         "sitemap": "தள வரைபடம்",
@@ -27297,6 +27334,7 @@ const languageTranslations = {
         "LearningLessons": "అభ్యాస సెషన్లు",
         "minutes": "నిమిషాలు",
         "TermsofUse": "నిబంధనలు మరియు విధానాలు",
+        "needHelp" : "సహాయం కావాలి",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "ప్రధాన కంటెంట్‌కు దాటవేయి",
         "sitemap": "సైట్ మ్యాప్",
@@ -27403,6 +27441,7 @@ const languageTranslations = {
         "LearningLessons": "سیشن سیکھنا",
         "minutes": "منٹ",
         "TermsofUse": "شرائط اور پالیسیاں",
+        "needHelp": "مدد چاہیے",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "مرکزی مواد پر جائیں",
         "sitemap": "سائٹ کا نقشہ",
