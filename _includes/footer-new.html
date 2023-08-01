@@ -1,24 +1,39 @@
 <style>
     .footer{
     }
+    .main-footer{
+        background-color: #ECF6FF;
 
+    }
     .footer .bottom-footer{
-        background-color: #000000;
+        background-color: #00034F;
         color: #fff;
-        padding: 10px;
+        /* padding: 10px; */
         font-size: 14px;
+        
     }
     .footer .bottom-update{
         display: flex;
     }
-    .term-and-condition {
-        background-color: #482BAC;
+
+    .footer .bottom-footer .term-details{
+       display: flex;
+       justify-content: space-between;
+       padding: 14px 0;
+        
+    }
+    .term-details .terms-condition span{
+        padding: 0 20px;
+
+    }
+    /* .term-and-condition {
+        background-color: #00034F;
         color: #EBEBEB;
         font-size: 14px;
         display: flex;
         justify-content: center;
         padding: 13px;
-    }
+    } */
     .text-detail {
     width: 100%;
     }
@@ -126,7 +141,10 @@
                         <div class="heading-links">
                            <ul>
                             <li><a href="">About DIKSHA</a></li>
-                            <li><a href="">Help Center/FAQ</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Resources</a></li>
+                            <li><a href="">Dashboard</a></li>
+                            <li><a href="">FAQs</a></li>
                            </ul>
                         </div>
                     </div>
@@ -135,6 +153,8 @@
                         <div class="explore-links">
                             <ul>
                                 <li><a href="">Digital Textbooks</a></li>
+                                <li><a href="">Courses</a></li>
+                                <li><a href="">TV Classes</a></li>
                             </ul>
                         </div>
                     </div>
@@ -164,13 +184,26 @@
                 </div>
             </div>
         </div>
-        <div class="term-and-condition">
-            <a class="sb-color-white terms-policies" target="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="container-box">
+                    <div class="term-details">
+                        <div class="copyright-desc">
+                            © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
+                        </div>
+                        <div class="terms-condition">
+                            <span> <a href="">{{ site.data.text.TermsofUse }}</a> </span>
+                            <span> <a href="">Privacy Policy </a> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <a class="sb-color-white terms-policies" target="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">
                 {{ site.data.text.TermsofUse }}
             </a> | 
-            <span data-translate="copyright">{{ site.data.text.copyright }}</span>
+            <span data-translate="copyright">{{ site.data.text.copyright }}</span> -->
         </div>
-        <div class="bottom-footer">
+        <!-- <div class="bottom-footer">
             <div class="container">
                 <div class="bottom-update">
                     <div class="text-update">
@@ -185,5 +218,5 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>

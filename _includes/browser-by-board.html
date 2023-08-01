@@ -1,64 +1,198 @@
-<div class="dk-browser-by-board-grid">   
-<div class="card">
-    <div class="d-flex flex-ai-center">
-      <div class="inner-column1">
-         <div class="d-flex dk-card-new__img">
-            <img loading="lazy" decoding="async" src="/assets/diksha-mission/ncert-new.png" onerror="this.src='/assets/diksha-mission/ncert-new.png'" alt="NCERT logo">
-         </div>
-      </div>
-      <div class="inner-column2 pl-8">
-        <div class="fnormal byb-title mb-0">NCERT</div>
-        <div class="fnormal byb-text mb-0">National Council of Educational Research and Training</div>
-      </div>    
-    </div>    
+<style>
+    .explore-study {
+      margin: 50px 0;
+    }
+    .head-title {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin: 27px;
+    }
+    .head-title .bottom-image {
+    position: relative;
+    }
+    .head-title .bottom-image::after{
+      content: " ";
+      background-image: url(/images/img-bottom.png);
+      width: 100%;
+      height: 100%;
+      bottom: -16px;
+      left: 0px;
+      position: absolute;
+    }
+    .category_title {
+      font-size: 24px;
+
+    }
+    .dk-browser-by-board { 
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    .dk-browser-by-board .item{
+      width: 24%;
+      display: flex;
+      box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+      background-color: #fff;
+      border-radius: 16px;
+      align-items: center;
+      margin: 20px 10px
+    }
+
+    .dk-browser-by-board .item .item-img img {
+      height: 72px;
+      width: 72px;
+      margin: 5px;
+    }
+    .dk-browser-by-board .item .item-desc{
+      display: flex;
+      flex-direction: column;
+    }
+    .dk-browser-by-board .item .item-desc .item-desc-title{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+    .dk-browser-by-board .items {
+      width: 20%;
+      
+      border-radius: 16px;
+      margin: 20px 10px;
+    }
+
+    .dk-browser-by-board .items .state-items{
+      display: flex;
+      flex-direction: column;
+    }
+    .dk-browser-by-board .items .state-items .group-items{
+      display: flex;
+      justify-content: center;
+      width: 100%
+    }
+
+    .dk-browser-by-board .items .state-items .group-items .group-images {
+      position: relative;
+      margin-bottom: 10px;
+      height: 63px;
+      width: 100%;
+    }
+    .dk-browser-by-board .items .state-items .group-items .group-images .img {
+      height: 60px;
+      width: 60px;
+    }
+    .dk-browser-by-board .items .state-items  .group-items .group-images .text {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background-color: #fff;
+      font-size: 16px;
+      color: #01202B;
+      padding: 5px;
+      font-weight: bold;
+      line-height: 15px;
+      letter-spacing: -0.5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .dk-browser-by-board .items .state-items{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .dk-browser-by-board .items .state-items .group-items .group-images .state_1{
+      position: absolute;
+      top: 6px;
+      left: 29px;
+      z-index: 1;
+    }
+    .dk-browser-by-board .items .state-items  .group-items .group-images .state_2{
+      position: absolute;
+      top: 5px;
+      left: 48px;
+      z-index: 2;
+      height: 63px;
+      width: 63px;
+    }
+    .dk-browser-by-board .items .state-items .group-items .group-images .state_3{
+      position: absolute;
+      top: 6px;
+      left: 71px;
+      z-index: 3;
+    }
+    .dk-browser-by-board .items .state-items .group-items .group-images .state_4{
+      position: absolute;
+      top: 6px;
+      left: 100px;
+      z-index: 3;
+      box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .dk-browser-by-board .items .state-items .items-deopdown select{
+      border: 1px solid #D5D5D5;
+      padding: 5px;
+      width: 200px;
+      border-radius: 4px;
+    } 
+
+</style>
+<div class="explore-study">
+  <div class="head-title">
+    <div class="text">Explore Our <span class="bottom-image">Study Material</span> </div>
   </div>
-  <div class="card">
-    <div class="d-flex flex-ai-center">
-      <div class="inner-column1">
-         <div class="d-flex dk-card-new__img">
-            <img loading="lazy" decoding="async" src="/assets/diksha-mission/cbse-new.png" onerror="this.src='/assets/diksha-mission/cbse-new.png'" alt="CBSE logo">
-         </div>
-      </div>
-      <div class="inner-column2 pl-8">
-        <div class="fnormal byb-title mb-0">CBSE</div>
-        <div class="fnormal byb-text  mb-0">Central Board of Secondary Education</div>
-      </div>    
-    </div>    
-  </div>
-  <div class="card">
-    <div class="d-flex flex-ai-center">
-      <div class="inner-column1">
-         <div class="d-flex dk-card-new__img">
-            <img loading="lazy" decoding="async" src="/assets/diksha-mission/nios-new.png" onerror="this.src='/assets/diksha-mission/nios-new.png'" alt="NIOS logo">
-         </div>
-      </div>
-      <div class="inner-column2 pl-8">
-        <div class="fnormal byb-title mb-0">NIOS</div>
-        <div class="fnormal byb-text  mb-0">National Institute of Open School</div>
-      </div>    
-    </div>    
-  </div>
-  <div class="card">
-    <div class="d-flex flex-ai-center">
-      <div class="inner-column1">
-         <!--<div class="d-flex dk-card-new__img">
-            <img loading="lazy" decoding="async" src="/assets/diksha-mission/about-new.png" onerror="this.src='/assets/diksha-mission/about-new.png'" alt="logo indicating content from states/UTs on DIKSHA">
-         </div>-->
-      </div>
-      <div class="inner-column2 pl-8">
-        <div class="fnormal text-left mb-0">
-          <div class="d-flex dk-card-about-new__img"> 
-            <img  class="about-new" loading="lazy" decoding="async" src="/assets/diksha-mission/about-new.png" onerror="this.src='/assets/diksha-mission/about-new.png'" alt="logo indicating content from states/UTs on DIKSHA">
-            <img  class="about-new1" loading="lazy" decoding="async" src="/assets/diksha-mission/about-new1.png" onerror="this.src='/assets/diksha-mission/about-new1.png'" alt="logo indicating content from states/UTs on DIKSHA">
-            <img  class="about-new2" loading="lazy" decoding="async" src="/assets/diksha-mission/about-new2.png" onerror="this.src='/assets/diksha-mission/about-new2.png'" alt="logo indicating content from states/UTs on DIKSHA">
-            <img  class="about-new3" loading="lazy" decoding="async" src="/assets/diksha-mission/about-new3.png" onerror="this.src='/assets/diksha-mission/about-new3.png'" alt="logo indicating content from states/UTs on DIKSHA">
+  <div class="container">
+    <div class="container-box">
+      <h2 class="category_title">Browser By Board</h2>
+      <div class="dk-browser-by-board">   
+        <div class="item">
+              <div class="item-img p-10">
+                    <img loading="lazy" decoding="async" src="/images/cbsc.png" onerror="this.src='/images/cbsc.png'" alt="NCERT logo">
+              </div>
+              <div class="item-desc">
+                <div class="item-desc-title">NCERT</div>
+                <div class="item-desc-detail">National Council of Educational Research and Training</div>
+              </div>    
+        </div>
+        <div class="item">
+              <div class="item-img p-10">
+                    <img loading="lazy" decoding="async" src="/images/NIOS.png" onerror="this.src='/images/NIOS.png'" alt="NCERT logo">
+              </div>
+              <div class="item-desc">
+                <div class="item-desc-title">NIOS</div>
+                <div class="item-desc-detail">National Institute of Open School</div>
+              </div>    
+        </div>
+        <div class="item">
+              <div class="item-img p-10">
+                    <img loading="lazy" decoding="async" src="/images/CISCE.png" onerror="this.src='/images/CISCE.png'" alt="NCERT logo">
+              </div>
+              <div class="item-desc">
+                <div class="item-desc-title">CISCE</div>
+                <div class="item-desc-detail">Council For The Indian School Certificate Exam..</div>
+              </div>    
+        </div>
+       <div class="items">
+        <div class="state-items">
+          <div class="group-items">
+            <div class="group-images">
+              <img class="img state_1" src="/images/item-state1.png" alt="">
+              <img class="img state_2" src="/images/item-state2.png" alt="">
+              <img class="img state_3" src="/images/item-state3.png" alt="">
+              <span class="text state_4">22+ States</span>
+            </div>
           </div>
+          <div class="items-deopdown">
+            <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
+              <option value="Select State" selected>Select State</option>
+            </select>
           </div>
-        <div class="fnormal text-left mb-0">
-          <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
-          <option value="Select State" selected>Select State</option>
-        </select></div>
-      </div>    
-    </div>    
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
-  </div>
+</div>
+
+
+

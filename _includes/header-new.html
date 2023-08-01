@@ -1,6 +1,10 @@
 <style>
+    .container .container-box{
+    width: 90%;
+    margin: 0 auto;
+   }
     .brand-top-header{
-        background-color: #482BAC;
+        background-color: #00034F;
         color: #EBEBEB;
         font-size: 12px;
         padding: 8px;
@@ -10,7 +14,7 @@
     max-width: 96% !important;
     margin: 0 auto;
     }
-    .brand-top-header .container {
+    .brand-top-header .container .top-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -35,9 +39,10 @@
     }
     .main-top-header .mainHeader{
         display: flex;
+        justify-content: space-between;
     }
     .main-top-header .mainHeader .logo-action{
-        padding-right: 162px;
+        /* padding-right: 162px; */
         
     }
     .main-top-header .mainHeader .nav-action{
@@ -58,6 +63,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: -20px;
     }
     .navbar-brand .vidyadan{
         padding: 0 10px;
@@ -66,7 +72,21 @@
     .footer-details {
     display: flex;
     justify-content: space-around;
-}
+    }
+    .mainHeader .nav-explore {
+    display: flex;
+    align-items: center;
+    }
+
+    .mainHeader .nav-explore .nav-exp {
+        border: 0;
+        background-color: #005DA3;
+        padding: 7px 18px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
 
     @media only screen and (max-width: 992px) {
         .dropdown-wrapper {
@@ -81,26 +101,32 @@
 </style>
 <div class="brand-top-header">
     <div class="container">
-        {% include new-accessbility-bar.html %}
+        <div class="container-box">
+            {% include new-accessbility-bar.html %}
+        </div>
     </div>
 </div>
 
 <div class="container dk-primary-navigation">
-    <nav class="main-top-header" >
-        <div class="mainHeader">
-            <div  class="logo-action">
-                <a class="navbar-brand py-0" href="/#">
-                    <span><img src="../images/ashok-stambh.png" alt="ashok-stambh"></span>
-                    <span><img src="../images/Diksha-logo.png" alt="Diksha-logo"></span>
-                    <span class="vidyadan"><img src="../images/vidyadan.png" alt="vidyadan-logo"></span>
-                    <span class="gtwenty"><img src="../images/G20_India_2023_logo 1.png" alt="g20-logo"></span>
-                </a>
+    <div class="container-box">
+        <nav class="main-top-header" >
+            <div class="mainHeader">
+                <div  class="logo-action">
+                    <a class="navbar-brand py-0" href="/#">
+                        <span><img src="../images/ashok-stambh.png" alt="ashok-stambh"></span>
+                        <span><img src="../images/Diksha-logo.png" alt="Diksha-logo"></span>
+                        <span class="vidyadan"><img src="../images/vidyadan.png" alt="vidyadan-logo"></span>
+                        <span class="gtwenty"><img src="../images/G20_India_2023_logo 1.png" alt="g20-logo"></span>
+                    </a>
+                </div>
+                <div  class="nav-action">
+                    {% include page-primary-menu-new.html %}
+                </div>
+                <div class="nav-explore">
+                    <a class="nav-exp" href="">Get Started</a>
+                </div> 
             </div>
-            <div  class="nav-action">
-                {% include page-primary-menu-new.html %}
-            </div>
-            
-
-        </div>
-    </nav>
+        </nav>
+    </div>
+   
 </div>
