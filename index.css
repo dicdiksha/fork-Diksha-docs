@@ -551,9 +551,6 @@ h3 {
     height: 568px;
 } */
 
-
-
-
 .carousel-inner .carousel-item.active.carousel3>img,.carousel-inner .carousel-item.active.carousel2>img{
     border-radius: 40px;
    
@@ -642,6 +639,21 @@ html, body {
 }
 
 
+/*=======START NEW HOME=============*/
+.bottom-image{
+    background-image: url(images/img-bottom.png);
+
+   }
+   .container .container-box{
+    width: 80%;
+    width: 0 auto;
+   }
+
+   .head-title{
+    
+   }
+
+/*=======END NEW HOME=============*/
 
 
 /*========End explore diksha========*/
@@ -824,3 +836,5 @@ html, body {
     align-content: center;
     justify-content: space-around;
 }
+
+

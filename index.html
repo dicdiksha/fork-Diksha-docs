@@ -2,27 +2,20 @@
 layout: home-layout
 title: Home
 ---
-<div id="scrollMainContent"></div>
-{% include hero-section.html %}
-<div class="container">
-    <h1 class="dk-info-home__maintitle">Explore Our Study Material</h1>
-    <h2 class="dk-info-home__sectiontitle">Browser By Board</h2>
+    <div id="scrollMainContent"></div>
+    {% include hero-section.html %}
     {% include browser-by-board.html %}      
-</div>
-
-<div class="container">
-    {% include explore-diksha.html %}
-</div>
-<div class="container">
-    {% include learning-classes.html %}
-</div>
-{% include explore-ncrt.html %}
-{% include diksha-numbers.html %}
-{% include explore-vidyadaan.html %}
-<div class="container">
-    {% include mobile-device-app.html %}
-</div>
-{% include diksha-mobile-app.html %}
+    {% include page-home-slider-new.html %}
+    <div class="container">
+        {% include learning-classes.html %}
+    </div>
+    {% include explore-ncrt.html %}
+    <!-- {% include diksha-numbers.html %} -->
+    {% include explore-vidyadaan.html %}
+    <div class="container">
+        <!-- {% include mobile-device-app.html %} -->
+    </div>
+    {% include diksha-mobile-app.html %}
 
 
 
