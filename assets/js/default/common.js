@@ -402,7 +402,11 @@ $(document).ready(function () {
       let slug =e.currentTarget.getAttribute('data-slug');
       let  name = e.currentTarget.getAttribute('data-name');
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-      window.open('/' + slug + '/explore', "_self");
+      if(name === "NCERT"){
+        window.open('/' + slug + '/explore/1?publisher=NCERT', "_self");
+      } else {
+        window.open('/' + slug + '/explore', "_self");
+      }
       return false;
   });
 
