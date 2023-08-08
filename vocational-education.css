@@ -136,6 +136,7 @@ label.accordion-label.yellow {
 /*----vocationa CSS----*/
 .new-drop-down{
     margin-top: 10px;   
+    height: 200px;
 }
 .new-drop-down label{
     font-weight: bold;
