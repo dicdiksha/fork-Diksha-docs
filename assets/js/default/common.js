@@ -403,7 +403,7 @@ $(document).ready(function () {
       let  name = e.currentTarget.getAttribute('data-name');
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
-        window.open('/' + slug + '/explore/1?id=cisce_k-12&selectedTab=all&se_boards=CBSE%2FNCERT&&&&', "_self");
+        window.open('/' + slug + '/explore/1?publisher=NCERT', "_self");
       } else {
         window.open('/' + slug + '/explore', "_self");
       }
