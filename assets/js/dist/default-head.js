@@ -24794,7 +24794,11 @@ $(document).ready(function () {
       let slug =e.currentTarget.getAttribute('data-slug');
       let  name = e.currentTarget.getAttribute('data-name');
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-      window.open('/' + slug + '/explore', "_self");
+      if(name === "NCERT"){
+        window.open('/' + slug + '/explore/1?publisher=NCERT', "_self");
+      } else {
+        window.open('/' + slug + '/explore', "_self");
+      }
       return false;
   });
 
@@ -24914,7 +24918,7 @@ $(document).ready(function () {
     let totalContentPlays = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/cumulative_content_plays_till_date.json`,
         totalcontenttime = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/overall_time_spent.json`,
         totalContributions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_contents_created.json`,
-        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed.json`,
+        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed_new.json`,
         totalCourses = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_courses_new.json`,
         totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
         totalCompletions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_completions.json`,
@@ -25106,7 +25110,7 @@ $(document).ready(function () {
     // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
     //     stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
     
-    let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
+    let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`,
         stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
         mapsJson = `/assets/json/maps.json`,
         contentPlayData = d3.map(),
