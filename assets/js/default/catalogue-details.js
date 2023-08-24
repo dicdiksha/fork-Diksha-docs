@@ -85,6 +85,7 @@ $(document).ready(function () {
     }
     $('input[name="datethirty"]').daterangepicker({
         singleDatePicker: true,
+        "startDate": moment(new Date()).subtract(1, 'd'),
         "dateFormat": "dd-mm-yy",
         "minDate": moment(new Date()).add(-1, 'M'),
         "maxDate": new Date()
