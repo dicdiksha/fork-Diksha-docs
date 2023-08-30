@@ -5,7 +5,7 @@ $(document).ready(function () {
     // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
     //     stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
     
-    let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`,
+    let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
         stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
         mapsJson = `/assets/json/maps.json`,
         contentPlayData = d3.map(),
