@@ -8,12 +8,12 @@ $(document).ready(function () {
     origin = 'https://preprod.ntp.net.in'
   }
 
-  // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
-  //   stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
-    
-  let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
-    stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
-    totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
+  let weeklyPlaysByState = `https://diksha.gov.in/data/reports/weekly_plays_by_state.json`,
+    stateWiseDataCount = `https://diksha.gov.in/data/reports/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    totalEnrollments = `https://diksha.gov.in/data/reports/total_enrolments_new_new.json`,
+  // let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
+  //   stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    // totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
     mapsJson = `/assets/json/maps.json`,
     contentPlayData = d3.map(),
     tenantSlugs = [],
@@ -734,7 +734,7 @@ $(document).ready(function () {
   let stateRes = [];
   function generateStateWiseTrendLine(slug) {
     if (category == 'usage') {
-        $.get(`https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`, function (data) {
+        $.get(`https://diksha.gov.in/data/reports/weekly_plays_by_state.json`, function (data) {
         const data_temp = [];
         let plays = 0;
         const temp = typeof data == "string" ? JSON.parse(data) : data;
