@@ -4,7 +4,7 @@ layout: compress
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        {% include head.html %}
+        {% include head-new.html %}
     </head>
     <body>
         <div class="container-fluid relative p-0 home-page {% if page.url contains 'keymilestone' %} bg-light-blue {% endif %}">
@@ -12,16 +12,19 @@ layout: compress
                 {% include header-new.html %}
             </header>
             <article>
+
                 <div class="computer only" id="webView">
                     <!-- page sections -->
                     {{content}}
                     <!-- page sections -->
-                <div>
+                </div>
     
                 <div class="mobile only" id="mobileView">
+                    {% contentblock mobileview %}
                 </div>
     
             </article>
+
             <footer id="footer">
                 {% include footer-new.html %}
             </footer>

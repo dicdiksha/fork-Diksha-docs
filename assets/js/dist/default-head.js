@@ -24786,7 +24786,6 @@ $(document).ready(function () {
     window.open('/explore', "_self");
     return false;
   });
-
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
@@ -24799,7 +24798,7 @@ $(document).ready(function () {
     e.preventDefault();
       let slug =e.currentTarget.getAttribute('data-slug');
       let  name = e.currentTarget.getAttribute('data-name');
-      // window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
         window.open('/' + slug + '/explore/1?id=cisce_k-12&selectedTab=all&se_boards=CBSE%2FNCERT&&&&', "_self");
       } else {
@@ -24948,6 +24947,107 @@ $(document).ready(function () {
       return date;
     };
 
+    $(document).ready(function() {
+      // GET USES MATRICS
+            $.ajax({
+              type: 'GET',
+              url: totalcontenttime,
+              success: function (data, textStatus, request) {
+                  data = typeof data == "string" ? JSON.parse(data) : data;
+                  var valInt = data.data[0]['Total Time Spent'] * 60;
+                  $(".x-mins").text(parseInt(valInt).toLocaleString("en-IN"));
+                  usageMetricsObj['xMins'] = parseInt(valInt).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                  console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+                type: 'GET',
+                url: totalContentPlays,
+                success: function (data, textStatus, request) {
+                    data = typeof data == "string" ? JSON.parse(data) : data;
+                    $("#learningSession").text(parseInt(data.data[0]['Total Plays']).toLocaleString("en-IN"));
+                    $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
+                    usageMetricsObj['learningSession'] = parseInt(data.data[0]['Total Plays']).toLocaleString("en-IN");
+                    usageMetricsObj['updatedOn'] = $.date(request.getResponseHeader('Last-Modified'));
+                },
+                error: function (request, textStatus, errorThrown) {
+                    console.log(errorThrown);
+                }
+            });
+      //GET CREATION MATRICS
+            $.ajax({
+              type: 'GET',
+              url: totalContributions,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                console.log("alert1" + data)
+                $("#totalContributions").text(parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN"));
+                $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
+                creationMetricsObj['totalContributions'] = parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN");
+                creationMetricsObj['updatedOn'] = $.date(request.getResponseHeader('Last-Modified'));
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+              type: 'GET',
+              url: totalContributors,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalContributors").text(parseInt(data.data[0]['No of Users Contributed']).toLocaleString("en-IN"));
+                creationMetricsObj['totalContributors'] = parseInt(data.data[0]['No of Users Contributed']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+      //GET COURSE MATRICS
+            $.ajax({
+              type: 'GET',
+              url: totalCourses,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalCourses").text(parseInt(data.data[0]['Total Courses']).toLocaleString("en-IN"));
+                courseMetricsObj['totalCourses'] = parseInt(data.data[0]['Total Courses']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+              type: 'GET',
+              url: totalEnrollments,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalEnrolments").text(parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN"));
+                courseMetricsObj['totalEnrolments'] = parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+              type: 'GET',
+              url: totalCompletions,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalCompletions").text(parseInt(data.data[0]['Total Completions']).toLocaleString("en-IN"));
+                courseMetricsObj['totalCompletions'] = parseInt(data.data[0]['Total Completions']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+     });
+     
+
     function radioTabsClickType(clickType) {
         switch (clickType) {
             case 'usage':
@@ -25015,7 +25115,7 @@ $(document).ready(function () {
             $(".updatedOn").text(usageMetricsObj['updatedOn']);
         }
     }
-
+    
     function getCreationMetrics() {
         if($.isEmptyObject(creationMetricsObj)){
             $.ajax({
@@ -25023,6 +25123,7 @@ $(document).ready(function () {
                 url: totalContributions,
                 success: function (data, textStatus, request) {
                   data = typeof data == "string" ? JSON.parse(data) : data;
+                  console.log("alert1" + data)
                   $("#totalContributions").text(parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN"));
                   $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
                   creationMetricsObj['totalContributions'] = parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN");
@@ -26035,7 +26136,7 @@ const languageTranslations = {
         "language": "English",
         "diksha": "DIKSHA",
         "govofIndia": "भारत सरकार | Government of India",
-        "dikshamoto": "Digital Infrastructure for Knowledge Sharing",
+        "dikshamoto": "Digital Infrastructure for Knowledge Sharing",       
         "dikshaDescription": "An initiative of the National Council of Educational Research and Training (Ministry of Education, Govt of India)",
         "btnExploreDiksha": "Explore DIKSHA",
         "explore": "Explore",

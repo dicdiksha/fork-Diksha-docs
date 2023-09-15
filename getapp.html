@@ -1,18 +1,12 @@
 ---
-layout: dk-mission
+layout: home-layout
 permalink: /getapp/
 title: Get App
 ---
 
-<div class="p-32 relative5">
-    <div id="scrollMainContent"></div>
-    {% include page-getapp.html %}
+
+<div>
+    {% include get-app-banner.html %}
+    {% include diksha-mobile-app.html %}
 </div>
 
-{% contentfor mobileview %}
-<div class="p-16 text-center dk-getapp-mobile dk-circlerotate-right">
-    <div id="scrollMainContent"></div>
-    <div class="relative2">{% include page-getapp.html %}</div>
-    {% include dk-right-circle.html %}
-</div>
-{% endcontentfor %}

@@ -1,174 +1,92 @@
 ---
-layout: dk-mission
+layout: home-layout
 permalink: /data/
 title: Dashboard
 ---
 
-<div class="p-32 relative5 dashboard">
-    <div class="usage-metrics-content">
-        <div class="usage-label" role="heading" aria-level="1" data-translate="DataDashboard">{{ site.data.text.DataDashboard }}</div>
-    </div>
-   
-    <div id="scrollMainContent"></div>
-    <div class="sb-g relative5 mt-10">
-        <div class="sb-g-col-xs-12 flex">
-            <div class="switch-field">
-                <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
-                <label for="radio-four" tabindex="0" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
-                <input type="radio" id="radio-five" name="switch-two" value="creationMetrics" />
-                <label for="radio-five" tabindex="0" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
-                <input type="radio" id="radio-six" name="switch-two" value="courseMetrics" />
-                <label for="radio-six" tabindex="0" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
-            </div>
-            <button type="button"
-                class="sb-btn sb-btn-normal sb-btn-radius px-16 sb-btn-secondary sb-btn-explore-diksha datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button>
-        </div>
-    </div>
-    {% include page-data-dashboard.html %}
-    <div class="sb-g section-usageMetrics">
-        <div class="sb-g-col-xs-12 sb-g-col-md-6 sb-g-col-lg-6 sb-g-col-xxxl-8 border-container d-flex text-left">
-            <div class="ml-16">
-                {% include page-diksha-usage-tilldate.html %}
-            </div>
-        </div>
-        <div class="sb-g-col-xs-12 sb-g-col-md-6 sb-g-col-lg-6 sb-g-col-xxxl-8">
-        </div>
-    </div>
-</div>
+<style>
+
+.dashbord-matrics-data {
+    margin: 50px 0;
+
+}
+.dashbord-matrics-data .switch-field {
+  display: flex;
+  margin: 0;
+  z-index: auto;
+  z-index: inherit;
+  position: static;
+}
 
 
-{% contentfor mobileview %}
-<div class="mobile-metrics-container p-24 text-left">
-    <div class="sb-g relative5 mt-10">
-        <div class="sb-g-col-xs-12 flex">
-          <div class="usage-metrics-content">
-            <div class="usage-label" role="heading" aria-level="1" data-translate="DataDashboard">{{ site.data.text.DataDashboard }}</div>
-          </div>
-          <div id="scrollMainContent"></div>
-            <div class="switch-field">
-                <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
-                <label for="radio-four" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
-                <input type="radio" id="radio-five" name="switch-two" value="creationMetrics" />
-                <label for="radio-five" id="contribution-matrix-tab" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
-                <input type="radio" id="radio-six" name="switch-two" value="courseMetrics" />
-                <label for="radio-six" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
-            </div>
-            <button type="button"
-                class="sb-btn sb-btn-normal sb-btn-radius px-16 sb-btn-secondary sb-btn-explore-diksha datasetsButton datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button>
-        </div>
-    </div>
-    <div class="sb-g">
-        <div class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-6 sb-g-col-xxxl-4 section-usageMetrics">
-          <div>
-            <div class="usage-metrics-content text-left">
-              <div class="usage-label" role="heading" aria-level="2" data-translate="usageMetrics">{{ site.data.text.usageMetrics }}</div>
-              <p class="mt-4 diksha-app-text" data-translate="viewUsagepattern">{{ site.data.text.viewUsagepattern }}</p>
-              <div class="fsmall pr-32 mt-32 mb-8 state-wise-value" data-translate="last7Weeks">{{ site.data.text.last7Weeks }}</div>
-              <div class="dk-card__selection d-flex"><select tabindex="0" name="state" class="dashboard-states" type="usage" aria-label="{{ site.data.text.selectState }}" role="presentation">
-                </select>
-              </div>
-              {% include page-diksha-usage-tilldate.html %}
-            </div>
-          </div>
-        </div>
-        <div class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-6 sb-g-col-xxxl-4 section-creationMetrics text-left">
-          <div class="usage-metrics-content">
-            <div class="usage-label" role="heading" aria-level="3" data-translate="contributionMetrics">{{ site.data.text.contributionMetrics }}</div>
-            <p class="mt-4 diksha-app-text mb-0" data-translate="contributionDescription">{{ site.data.text.contributionDescription }}</p>
-          </div>
-          <div class="sb-g">
-            <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xxxl-12">
-              <div class="ml-0">
-                <div class="usage-metrics-content">
-                  <div class="my-16 dk-usagetilldate sb-h6" role="heading" aria-level="4" data-translate="dikshaContentContribution">{{ site.data.text.dikshaContentContribution }}</div>
-                  <div>
-                    <div class="usage-label d-inline-flex" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                      title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}"><span class="total-contributions mr-8"
-                        id="totalContributions"></span> <img loading="lazy" decoding="async" 
-                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
-                        onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
-                        alt="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['alt']}" /></div>
-                        <div class="fsmall diksha-app-text" data-translate="contributions">{{ site.data.text.contributions }}</div>
-                  </div>
-      
-                  <div class=" my-24">
-                    <div class="usage-label d-inline-flex" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                      title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}"><span class="total-contributors mr-8"
-                        id="totalContributors"></span> <img loading="lazy" decoding="async" 
-                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
-                        onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
-                        alt="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['alt']}" /></div>
-                        <div class="fsmall diksha-app-text" data-translate="contributors">{{ site.data.text.contributors }}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-6 sb-g-col-xxxl-4 section-courseMetrics text-left">
-          <div class="usage-metrics-content">
-          <div class="usage-label" data-translate="courseMetrics" role="heading" aria-level="5">{{ site.data.text.courseMetrics }}</div>
-          <p class="mt-4 diksha-app-text" data-translate="courseMetricsDescription">{{ site.data.text.courseMetricsDescription }}</p>
-          <div class="dk-card__selection"><select name="state" id="state" class="dashboard-states" type="course" aria-label="{{ site.data.text.selectState }}" role="presentation">
-          </select>
-        </div>
-          </div>
-          <div class="sb-g">
-            <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xxxl-12">
-              <div class="ml-0">
-                <div class="usage-metrics-content">
-                  <div class="my-16 dk-usagetilldate sb-h6" role="heading" aria-level="6" data-translate="courseUsage">{{ site.data.text.courseUsage }}</div>
-                  <div class="state-courses">
-                    <div class="usage-label d-inline-flex" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                      title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}"><span class="total-courses mr-8"
-                        id="totalCourses"></span> <img loading="lazy" decoding="async" 
-                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
-                        onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
-                        alt="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['alt']}" /></div>
-                    <div class="fsmall diksha-app-text" data-translate="courses">{{ site.data.text.courses }}</div>
-                  </div>
-      
-                  <div>
-                    <div class="usage-label d-inline-flex" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                      title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}"><span class="total-enrolments mr-8"
-                        id="totalEnrolments"></span> <img loading="lazy" decoding="async" 
-                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
-                        onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
-                        alt="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['alt']}" /></div>
-                    <div class="fsmall diksha-app-text" data-translate="Enrolments">{{ site.data.text.Enrolments }}</div>
-                  </div>
-                  <div>
-                    <div class="usage-label d-inline-flex" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                      title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}"><span class="total-completions mr-8"
-                        id="totalCompletions"></span> <img loading="lazy" decoding="async" 
-                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
-                        onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
-                        alt="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['alt']}" /></div>
-                    <div class="fsmall diksha-app-text" data-translate="completions">{{ site.data.text.completions }}</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+.dashbord-matrics-data .switch-field label {
+font-family: 'Noto Sans';
+margin: 0 12px;
+border: 1px solid #0C4E9E;
+font-size: 16px;
+padding: 8px 16px;
+border-radius: 4px;
+}
+
+.dashbord-matrics-data .switch-field input:checked+label {
+background-color: #004e9d;
+box-shadow: none;
+color: #fff;
+}
+
+.dashbord-matrics-data .diksha-app-text {
+  margin: 20px 0;
+  font-size: 18px;
+  
+}
+.dashbord-matrics-data .country-dropdown{
+  margin: 15px 0;
+}
+.dashbord-matrics-data .country-dropdown select{
+  font-size: 12px;
+    background-color: transparent;
+    border: 1px solid #0C4E9E;
+    padding: 8px 5px;
+}
+.dashbord-matrics-data .country-dropdown select:focus-visible{
+  border: 1px solid #0C4E9E !important;
+}
+.dashbord-matrics-data .top-states-table table tr:first-child{
+  background-color: #0C4E9E;
+    /* border-radius: 18px 18px 0 0; */
+    border-collapse: collapse;
+    border-radius: 15px;
+
+}
+</style>
+
+
+<div >
+  {% include dashboard-banner.html %}
 </div>
-<div class="p-24 dk-circlerotate-right dk-page-datadashboard">
-    <div class="mt-24 mb-24">
-      <div class="table-responsive top-states-table table-data-matrix mb-15">
+<div class="dashbord-matrics-data">
+<div class="container">
+<div class="container-box">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="switch-field">
+              <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
+              <label for="radio-four" tabindex="0" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
+              <input type="radio" id="radio-five" name="switch-two" value="creationMetrics" />
+              <label for="radio-five" tabindex="0" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
+              <input type="radio" id="radio-six" name="switch-two" value="courseMetrics" />
+              <label for="radio-six" tabindex="0" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
+          </div>
       </div>
-    </div>
-    <div class="">
-        <div id="linegraph"></div>
+      <div class="col-sm-6">
+          <div class="download-report">
+              <!-- <button type="button"
+              class="sb-btn sb-btn-normal sb-btn-radius px-16 sb-btn-secondary sb-btn-explore-diksha datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button> -->
+          </div>
       </div>
-    {% include dk-right-circle.html %}
-    <div class="relative2">
-        <div class="sb-g-col-xs-12 sb-g-col-md-8 sb-g-col-lg-6 sb-g-col-xxxl-12">
-            <div>
-              {% include page-india-metrics.html %}
-            </div>
-        </div>
-    </div>
+  </div>
+  {% include page-data-dashboard-new.html %}
+</div>
+</div>
 </div>
 
-{% endcontentfor %}

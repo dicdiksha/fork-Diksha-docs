@@ -1,8 +1,29 @@
+<style>
+    .navMenu a {
+    padding: 8px 0px;
+    margin: 0 10px;
+    text-decoration: none;
+    border-style: none;
+    outline: none;
+    /* border-bottom: 3px solid #0C4E9E; */
+
+    }
+    .navMenu a:hover, .navMenu a :active{
+        padding: 8px 0px;
+        margin: 0 10px;
+        text-decoration: none;
+        border-bottom: 2px solid #0C4E9E;
+    }   
+    
+    
+  
+    
+</style>
 <div class="">
     <div class="navMenu">
         {% for nav-new in site.data.nav-new.items %}
         <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
-        class="" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+        class=" {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
            <span data-translate="{%if(nav-nav.contains == 'data')%}dashboard{%else%}{{nav-nav.contains}}{%endif%}">{{nav-new.title}}</span>
         </a>
         {% endfor %}

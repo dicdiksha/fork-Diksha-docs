@@ -1,0 +1,128 @@
+<div class="row">
+  <div class="col-md-4">
+    <div>
+      <div class=" section-usageMetrics">
+        <!-- <div class=""> -->
+        <div class="usage-metrics-content">
+          <!-- <div class="usage-label" role="heading" aria-live="2" data-translate="usageMetrics">{{ site.data.text.usageMetrics }}</div> -->
+          <p class="diksha-app-text" data-translate="viewUsagepattern">{{ site.data.text.viewUsagepattern }}</p>
+          <div class="fsmall pr-32 mt-32 mb-8 state-wise-value" data-translate="last7Weeks">
+            {{ site.data.text.last7Weeks }}</div>
+          <div class="dk-card__selection d-flex country-dropdown"><select name="state" class="dashboard-states" tabindex="0" type="usage" aria-label="{{ site.data.text.selectState }}" role="presentation">
+            </select>
+          </div>
+          <div class="">
+            <div id="linegraph"></div>
+            <div class="table-responsive top-states-table mb-15">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" section-creationMetrics">
+        <div class="usage-metrics-content">
+          <!-- <div class="usage-label" tabindex="0" role="heading" aria-level="2" data-translate="contributionMetrics">{{ site.data.text.contributionMetrics }}</div> -->
+          <p class="mt-4 diksha-app-text" data-translate="contributionDescription">{{ site.data.text.contributionDescription }}</p>
+        </div>
+        <div class="sb-g">
+          <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xxxl-12 border-container">
+            <div class="ml-16">
+              <div class="usage-metrics-content">
+                <div class="my-16 dk-usagetilldate sb-h6" role="heading" aria-level="3" data-translate="dikshaContentContribution">
+                  {{ site.data.text.dikshaContentContribution }}</div>
+                <div>
+                  <div class="usage-label d-inline-flex" tabindex="0" role="heading" aria-level="3" data-toggle="tooltip" data-placement="bottom"
+                    title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
+                    <span class="total-contributions mr-8" id="totalContributions"></span>
+                     <img loading="lazy" decoding="async"  
+                      src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                      onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                      alt="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['alt']}" />
+                  </div>
+                  <div class="fsmall diksha-app-text" data-translate="contributions">{{ site.data.text.contributions }}
+                  </div>
+                </div>
+    
+                <div class=" my-24">
+                  <div class="usage-label d-inline-flex" tabindex="0" role="heading" aria-level="4" data-toggle="tooltip" data-placement="bottom"
+                    title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
+                    <span class="total-contributors mr-8" id="totalContributors"></span> <img loading="lazy" decoding="async"  
+                      src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                      onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                      alt="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['alt']}" />
+                  </div>
+                  <div class="fsmall diksha-app-text" data-translate="contributors">{{ site.data.text.contributors }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-courseMetrics text-left">
+        <div class="usage-metrics-content">
+        <!-- <div class="usage-label" tabindex="0" role="heading" aria-level="2" data-translate="courseMetrics">{{ site.data.text.courseMetrics }}</div> -->
+        <p class="mt-4 diksha-app-text" tabindex="0" data-translate="courseMetricsDescription">{{ site.data.text.courseMetricsDescription }}</p>
+        <div class="dk-card__selection"><select name="state" id="state" class="dashboard-states" type="course" aria-label="{{ site.data.text.selectState }}" role="presentation">
+        </select>
+      </div>
+        </div>
+        <div class="sb-g">
+          <div class="sb-g-col-xs-12 sb-g-col-md-12 sb-g-col-lg-12 sb-g-col-xxxl-12 border-container">
+            <div class="ml-16">
+              <div class="usage-metrics-content">
+                <div class="my-16 dk-usagetilldate sb-h6" role="heading" aria-level="3" data-translate="courseUsage">{{ site.data.text.courseUsage }}
+                </div>
+                <div class="state-courses">
+                  <div class="usage-label d-inline-flex" role="heading" aria-level="6" tabindex="0" data-toggle="tooltip" data-placement="bottom"
+                    title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}"><span
+                      class="total-courses mr-8" id="totalCourses"></span> <img loading="lazy" decoding="async"  
+                      src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                      onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                      alt="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['alt']}" /></div>
+                  <div class="fsmall diksha-app-text" data-translate="courses">{{ site.data.text.courses }}</div>
+                </div>
+    
+                <div>
+                  <div class="usage-label d-inline-flex" role="heading" aria-level="7" tabindex="0" data-toggle="tooltip" data-placement="bottom"
+                    title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}"><span
+                      class="total-enrolments mr-8" id="totalEnrolments"></span> <img loading="lazy" decoding="async"  
+                      src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                      onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                      alt="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['alt']}" /></div>
+                  <div class="fsmall diksha-app-text" data-translate="Enrolments">{{ site.data.text.Enrolments }}</div>
+                </div>
+                <div>
+                  <div class="usage-label d-inline-flex" role="heading" aria-level="8" tabindex="0" data-toggle="tooltip" data-placement="bottom"
+                    title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
+                    <span class="total-completions mr-8" id="totalCompletions"></span> <img loading="lazy" decoding="async"  
+                      src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/whatisthis.svg"
+                      onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/whatisthis.svg'"
+                      alt="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['alt']}" />
+                  </div>
+                  <div class="fsmall diksha-app-text" data-translate="completions">{{ site.data.text.completions }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div >
+      <div class="section-usageMetrics">
+        <div class="sb-g-col-xs-12 sb-g-col-md-6 sb-g-col-lg-6 sb-g-col-xxxl-8 border-container d-flex text-left">
+            <div class="ml-16">
+                {% include page-diksha-usage-tilldate.html %}
+            </div>
+        </div>
+        <div class="sb-g-col-xs-12 sb-g-col-md-6 sb-g-col-lg-6 sb-g-col-xxxl-8">
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  
+  <div class="col-md-8">
+    <div>
+      {% include page-india-metrics.html %}
+    </div>
+  </div>
+</div>

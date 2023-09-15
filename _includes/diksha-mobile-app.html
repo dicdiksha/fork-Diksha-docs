@@ -22,7 +22,7 @@
 }
  .app-download {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     margin-top: 40px;
 }
 .scan-img{
@@ -38,13 +38,29 @@
     flex-direction: column;
 }
 .app-download .border-line {
-       /* height: 100%; */
-       border: 1px solid #888888;
-    margin: 16px 40px;
-    width: 1px
+        /* height: 100%; */
+        border: 1px solid #888888;
+    /* margin: 16px 40px; */
+    width: 1px;
+    margin-bottom: 15%;
 
 } 
-
+.play-store-link {
+    background-color: #EAEEFF;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+.app-details {
+    margin: 0 50px;
+}
+.download-app-link {
+    margin-bottom: 50px;
+}
 </style>
 <div class="mobile-app">
     <div class="container">
@@ -56,16 +72,26 @@
                         <div class="scan-img">
                             <img src="../images/mobile_app_scanner.png" alt="mobile-app-scanner">
                             <span>Scan to Download</span>
+                            <span class="app-icon my-5">
+                                <img src="../assets/imgs/get-app/play-store.png" alt="paly store">
+                            </span>
                         </div>
                         <div class="border-line"></div>
-                        <div class="app-img">
+                        <div class="scan-img">
+                            <img src="../images/mobile_app_scanner.png" alt="mobile-app-scanner">
+                            <span>Scan to Download</span>
+                            <span class="app-icon my-5">
+                                <img src="../assets/imgs/get-app/apple-store.png" alt="apple store">
+                            </span>
+                        </div>
+                        <!-- <div class="app-img">
                             <span class="google-play">
                                 <img src="../images/google-play-app-store.png" alt="google-play">
                             </span>
                             <span class="app-store">
                                 <img src="../images/google-play-app-store-apple.png" alt="apple-store">
                             </span>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -74,4 +100,30 @@
             </div>
         </div>
     </div>
+</div>
+<div class="download-app-link">
+    <div class="container">
+        <div class="container-box">
+            <div class="row play-store-link">
+                <div class="col-md-1"> <img src="../assets/imgs/get-app/play-store-icon.png" alt="play-store-icon"></span></div>
+                <div class="col-md-3">Download Link For Android</div>
+                <div class="col-md-8">
+                    <a href="https://play.google.com/store/apps/details?id=in.gov.diksha.app&hl=en&gl=US" target="_blank">
+                        https://play.google.com/store/apps/details?id=in.gov.diksha.app&hl=en&gl=US
+                    </a>
+                </div>
+            </div>
+            <div class="row play-store-link">
+                <div class="col-md-1"> <img src="../assets/imgs/get-app/apple-store-icon.png" alt="apple-store-icon"></span></div>
+                <div class="col-md-3">Download Link For iOS</div>
+                <div class="col-md-8">
+                    <a href="https://apps.apple.com/in/app/diksha/id1587874277" target="_blank">
+                        https://apps.apple.com/in/app/diksha/id1587874277
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </div>

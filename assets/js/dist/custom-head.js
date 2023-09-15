@@ -4393,7 +4393,6 @@ $(document).ready(function () {
     window.open('/explore', "_self");
     return false;
   });
-
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
@@ -4626,7 +4625,7 @@ const languageTranslations = {
         "language": "English",
         "diksha": "DIKSHA",
         "govofIndia": "भारत सरकार | Government of India",
-        "dikshamoto": "Digital Infrastructure for Knowledge Sharing",
+        "dikshamoto": "Digital Infrastructure for Knowledge Sharing",       
         "dikshaDescription": "An initiative of the National Council of Educational Research and Training (Ministry of Education, Govt of India)",
         "btnExploreDiksha": "Explore DIKSHA",
         "explore": "Explore",

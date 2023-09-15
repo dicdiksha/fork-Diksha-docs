@@ -1,291 +1,233 @@
 
 <style>
-    .dk-no-column-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(19.063rem, 1fr));
-      grid-gap: 2.438rem;     
-    }    
-    .dk-no-column-grid .box {     
-      background-color: #fff;
-      height:28.938rem;
-      padding: 5% 0;
-       border-radius: 1.25rem;
-    }
-    .dk-no-column-grid .lightblue {
-      background-color: #EAEEFF;
-      box-shadow: 0.125rem 0.125rem 0.375rem 0px #EAEEFF;
-    }
-    .dk-no-column-grid .lightyellow {
-      box-shadow: 0.125rem 0.125rem 0.375rem 0px #FFF6EC;
-      background-color: #FFF6EC;
+  /* .head-title {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  margin: 27px;
   }
-  .dk-no-column-grid .purple {
-     background-color: #F1E8FB;
-     box-shadow: 0.125rem 0.125rem 0.375rem 0px #F1E8FB;
-   }
-    .dk-no-column-grid .boxtitle  {
-      text-align: center;
-      margin: 1.25rem;
-      font-weight: 600;
-      font-size: 1.336rem;
-      line-height: 1.671rem;
+  .head-title .bottom-image {
+  position: relative;
+  }
+  .head-title .bottom-image::after{
+    content: " ";
+    background-image: url(/images/img-bottom.png);
+    width: 100%;
+    height: 100%;
+    bottom: -16px;
+    left: 0px;
+    position: absolute;
+  } */
+    .number-wrapper {
+        background-color: #F5FBFF;
+        padding: 50px;
+        border: 2px solid #D9FFE5;
+        border-radius: 51px;
+        padding: 50px 78px;
+        position: relative;
+        z-index: 9999;
+    background: radial-gradient(circle, rgb(4 89 141 / 6%) 12%, rgb(217 255 229 / 23%) 87%)
 
-    }   
-    
-   .dk-no-column-grid .text {
-      padding: 0px 1.25rem 1.25rem 1.875rem;
-      color: #808285;
-      margin-bottom: 1.25rem;  
     }
-    
-    .dk-no-column-grid .btn {
-      margin-top: 1.25rem;
-      background-color: #e0d4e9;
-        border: 0;
-        border-radius: 0.313rem;
-        color: #000;
-        font-size: 0.938rem;
-        padding: 0.313rem 0.625rem 0.313rem 0.625rem;
-      line-height: 5;
-      font-family: 'Roboto', sans-serif;
-      text-decoration: none;
+        
+    .dashboard-data {
+      background-color: #fff;
+      /* margin-top: 30px; */
+      padding: 20px;
+      box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+      border-radius: 12px;
+      margin: 30px 20px;
+      height: 392px;
       
-    }
-    
-    .btn:hover {
-      background: #d1d3d4;
-      transition-duration: 80ms;
-    }    
-    h3 { 
-      color: #000;
-      text-align: left;
-    }  
-   
-    .childrow {
-        flex-basis: 40%;
-        display: grid;
-        align-items: center; 
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 5px;
-      }
-      .childrow .image img {
-        width: 43.65px;
-        height: 2.617rem;   
-        margin: 0px 0px 3rem 1.188rem;
-   }
-   .childrow .text {
-        font-size: 1.25rem;
-        padding-right: 8.125rem;
-      }
-      .childrow .text p {
-        white-space:nowrap;
-        font-size: 1.114rem;
-        font-weight: 400;
-        line-height: 1.871rem;
-        color: #202124;
-    
-    }
-    .childrow .text h1 {
-   
-      white-space: nowrap;
-    font-size: 2.227rem;
-    font-weight: 400;
-    line-height: 1.871rem;
-    margin: 0.313rem 0px 0.938rem 0px;
-    color: #202124; 
-   
-    }
-    .box {
+  }
+  .dashboard-card {
+      display: flex;
+      align-items: center;
+      margin: 20px;
+      margin: 36px 20px;
+      
+  }
+  .dashboard-title {
+      display: flex;
       justify-content: center;
-    }
-    .titleheeader  {      
-      text-align: center;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 33.6px;
-      color:#434141;
-      position: relative;
-    }
-    .titleheeader img {
-      position: absolute;
-      margin: 0px 0px 9px -166px;
-      width: 238.88px;
-      height: 60px;
-
-    }
-    .titledec {     
-      text-align: center;
-      font-family: Lato;
-      font-weight: 400;
-      font-size: 18px;
-      color: #202124;
-      width: 963.08px;
-      height: 56px;
-      padding-left: 330.46px;
-      margin: 45px 0px 23px 0px;     
-
-    }
-    .view-dashboard {
-      text-align: center;
-      margin: 26px;
-    }
-    .view-dashboard .btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #fff;
-    border: 1px solid #1A73E9;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;  
-    font-weight: 500;
-    line-height: 1.5;
-    color: #005DA3;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
- 
-}
-.view-dashboard .btn .btn-lg {
-  padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
+      font-size: 23px;
+      font-weight: bold;
+      color: #0C4E9E;
+  }
+  .card-logo {
+      margin-right: 16px;
+  }
+  .data-number {
+      font-size: 30px;
+      color: #343082;
+  }
+  .data-title{
+    color: #6D6D6D;
+    font-size: 16px;
 
 }
-.head-title {
-display: flex;
-justify-content: center;
-font-size: 40px;
-margin: 27px;
-}
-.head-title .bottom-image {
-position: relative;
-}
-.head-title .bottom-image::after{
-  content: " ";
-  background-image: url(/images/img-bottom.png);
-  width: 100%;
-  height: 100%;
-  bottom: -16px;
-  left: 0px;
-  position: absolute;
-}
+  .diksha-numbers {
+    margin: 60px 0;
+  }
+  .view-dashboard{
+    display: flex;
+    justify-content: center;
+
+  
+  }
+  .view-dashboard button{
+    font-size: 15px;
+    background-color: #0C4E9E;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border-color: transparent;
     
-            </style>
+  }
+  .icon.icon1 {
+    position: absolute;
+    right: 0;
+    top: -53px;
+}
+</style>
 
-
-    <div class="container">     
-      
-        <!-- <div class="titleheeader">DIKSHA in Numbers <img loading="lazy" decoding="async" src="/images/pseudo.png" onerror="this.src='/images/pseudo.png'" alt="DIKSHA in Numbers"></div> -->
-
-        <div class="head-title">
-          <div class="text">DIKSHA in  <span class="bottom-image">Numbers</span> </div>
-        </div>
-        
-       
-        <div class="titledec">Know the impact of our platform through these key statistics. Each number represents a transformed life, an empowered mind, and a brighter future.</div>
-             
-      <main class="dk-no-column-grid">        
-        <article>         
-           <div class="boxtitle">Usage Metrics</div>   
-           <div class="box purple">       
-            <div class="childrow">
-              <div class="image">             
-                <img loading="lazy" decoding="async" src="/images/Sessions-new.png" onerror="this.src='/images/Vector-1.png'" alt="Live Learning Sessions">
-              </div>
-              <div class="text">
-                <h1>44,543</h1>
-                <p>Live Learning Sessions</p>
-                </div>
-              </div>
-            
-              <div class="childrow">
-                <div class="image">             
-                  <img loading="lazy" decoding="async" src="/images/live-users.png" onerror="this.src='/images/live-users.png'" alt="Live Users">
-                </div>
-                <div class="text">
-                  <h1>16,133</h1>
-                  <p>Live Users</p>
+<div class="diksha-numbers">
+  <div class="head-title">
+    <div class="text">DIKSHA in  <span class="bottom-image">Numbers</span> </div>
+  </div>
+  <!-- <div class="titledec">
+    Know the impact of our platform through these key statistics. Each number represents a </br>transformed life, an empowered mind, and a brighter future.
+  </div> -->
+  <div class="container">     
+      <div class="container-box">
+        <div class="number-wrapper">
+          <div class="row row-eq-height">
+            <section class="col-sm-4  usage-metrics-content" >
+              <div class="dashboard-title">{{site.data.text.usageMetrics}}</div>
+              <div class="dashboard-data">
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/learning-sessions.png" alt="live learing Sessions">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number" 
+                    title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
+                    <span class="learning-sessions mr-8" id="learningSession"></div>
+                    <div class="data-title" >{{ site.data.text.LearningLessons }}</div>
                   </div>
                 </div>
-                <div class="childrow">
-                  <div class="image">             
-                    <img loading="lazy" decoding="async" src="/images/app-availability.png" onerror="this.src='/images/app-availability.png'" alt="Application Availability">
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/usage-minuts.png" alt="usage minus">
                   </div>
-                  <div class="text">
-                    <h1>100%.</h1>
-                    <p>Application Availability</p>
+                  <div class="card-data">
+                    <div class="data-number" data-placement="bottom"
+                        title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
+                        <span class="x-mins mr-8"></span>
+                  </div>
+                    <div class="data-title">{{ site.data.text.minutes }}</div>
+                  </div>
+                </div>
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/app-availiblity.png" alt="live learing Sessions">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number">100% </div>
+                    <div class="data-title">Application Availability</div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="col-sm-4 ">
+              <div class="dashboard-title">{{site.data.text.courseMetrics}}</div>
+              <div class="dashboard-data">
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/enrolments.png" alt="Enrolments">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
+                    title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}"><span class="total-enrolments mr-8"
+                      id="totalEnrolments"></span>
                     </div>
-                  </div>               
-                  </div>   
-        </article>
-                                                                                                                                                      
-        <article> 
-          <div class="boxtitle">Course Metrics</div> 
-          <div class="box lightblue">          
-          <div class="childrow">
-            <div class="image">             
-              <img loading="lazy" decoding="async" src="/images/enrolments.png" onerror="this.src='/images/enrolments.png'" alt="Enrolments">
-            </div>
-            <div class="text">
-              <h1>16,87,79,861</h1>
-              <p>Enrolments</p>
-              </div>
-            </div>
-          
-            <div class="childrow">
-              <div class="image">             
-                <img loading="lazy" decoding="async" src="/images/courses-new.png" onerror="this.src='/images/courses-new.png'" alt="Courses">
-              </div>
-              <div class="text">
-                <h1>9,692</h1>
-                <p>Courses</p>
-                </div>
-              </div>
-              <div class="childrow">
-                <div class="image">             
-                  <img loading="lazy" decoding="async" src="/images/course-completions.png" onerror="this.src='/images/course-completions.png'" alt="Course Completions">
-                </div>
-                <div class="text">
-                  <h1>13,77,53,685</h1>
-                  <p>Course Completions</p>
+                    <div class="data-title">{{ site.data.text.Enrolments }}</div>
                   </div>
-                </div>               
-                   </div>
-      </article>
-                                                                                                                                                   
-      <article> 
-        <div class="boxtitle">Contribution Metrics</div> 
-        <div class="box lightyellow">          
-        <div class="childrow">
-          <div class="image">             
-            <img loading="lazy" decoding="async" src="/images/contributions-new.png" onerror="this.src='/images/contributions-new.png'" alt="Contributions">
-          </div>
-          <div class="text">
-            <h1>2,43,444</h1>
-            <p>Contributions</p>
-            </div>
-          </div>
-        
-          <div class="childrow">
-            <div class="image">             
-              <img loading="lazy" decoding="async" src="/images/contributors-new.png" onerror="this.src='/images/contributors-new.png'" alt="Contributors">
-            </div>
-            <div class="text">
-              <h1>11,624</h1>
-              <p>Contributors</p>
+                </div>
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/Courses.png" alt="Courses">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number"data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
+                      <span class="total-courses mr-8"  id="totalCourses"></span>  </div>
+                    <div class="data-title">{{ site.data.text.courses }}</div>
+                  </div>
+                </div>
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/course-completions.png" alt="Course Completions">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
+                      <span class="total-completions mr-8"  id="totalCompletions"></span> 
+                    </div>
+                    <div class="data-title">{{ site.data.text.completions }}</div>
+                  </div>
+                </div>
               </div>
-            </div>         
-           </div>      
-    </article>     
+            </section>
+            <section class="col-sm-4 ">
+              <div class="dashboard-title">{{site.data.text.contributionMetrics}}</div>
+              <div class="dashboard-data">
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/Contributions.png" alt="Contributions">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number"  data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
+                          <span class="total-contributions mr-8" id="totalContributions"></span>
+                       </div>
+                    <div class="data-title">{{ site.data.text.contributions }}</div>
+                  </div>
+                </div>
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors">
+                  </div>
+                  <div class="card-data">
+                    <div class="data-number" data-placement="bottom"
+                    title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
+                    <span class="total-contributors mr-8" id="totalContributors"></span></div>
+                    <div class="data-title">{{ site.data.text.contributors }}</div>
+                  </div>
+                </div>
+               
+                <div class="dashboard-card">
+                  <div class="card-logo">
+                    <!-- <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors"> -->
+                  </div>
+                  <div class="card-data">
+                    <!-- <div class="data-number">11,624 </div> -->
+                    <!-- <div class="data-title">Contributors</div> -->
+                  </div>
+                </div>
+               
+              </div>
+            </section>
+          </div>
+          <div class="view-dashboard"> 
+            <button>View Dashboard</button>
+          </div>
+          <div class="icon icon1">
+            <img src="../assets/numberIcon/vector1.png" alt="vector img">
+          </div>
+        </div>
+       
+      </div>
     
-      </main>
+  </div>
+</div>
 
-      <div class="view-dashboard"> <button type="button" class="btn btn-lg btn-primary" disabled>View Dashboard</button> </div>
-    </div>
+
  

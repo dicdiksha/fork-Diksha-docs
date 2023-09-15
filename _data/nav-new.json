@@ -2,6 +2,13 @@
     "attributes": "Primary Menu Navigation",
     "items": [
         {
+            "title": "Home",
+            "url": "",
+            "contains":"data",
+            "etype":"select-dashboard",
+            "eid": "public-dashboard"
+        },
+        {
             "title": "Dashboard",
             "url": "data/",
             "contains":"data",

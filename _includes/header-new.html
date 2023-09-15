@@ -1,4 +1,12 @@
 <style>
+    html{
+        font-family: 'Lato', sans-serif;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    p{
+        font-family: 'Lato', sans-serif;
+    }
     .container .container-box{
     width: 90%;
     margin: 0 auto;
@@ -78,7 +86,7 @@
     align-items: center;
     }
 
-    .mainHeader .nav-explore .nav-exp {
+    .mainHeader .nav-explore .nav-exp-active {
         border: 0;
         background-color: #005DA3;
         padding: 7px 18px;
@@ -87,6 +95,21 @@
         font-size: 16px;
         cursor: pointer;
     }
+    .mainHeader .nav-explore .nav-exp {
+        border: 0;
+        /* background-color: #; */
+        padding: 7px 18px;
+        border-radius: 4px;
+        color: #005DA3;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #005DA3;
+    }
+   .main-top-header .sb-btn-explore-diksha{
+    border-radius: 0;
+    background-color: transparent;
+    border-color: transparent;
+   }
 
     @media only screen and (max-width: 992px) {
         .dropdown-wrapper {
@@ -109,7 +132,7 @@
 
 <div class="container dk-primary-navigation">
     <div class="container-box">
-        <nav class="main-top-header" >
+        <nav class="main-top-header py-10" >
             <div class="mainHeader">
                 <div  class="logo-action">
                     <a class="navbar-brand py-0" href="/#">
@@ -123,7 +146,14 @@
                     {% include page-primary-menu-new.html %}
                 </div>
                 <div class="nav-explore">
-                    <a class="nav-exp" href="">Get Started</a>
+                    <div class="sb-btn-explore-diksha">
+                        <a class="nav-exp-active mx-5 " href="">Explore DIKSHA</a>
+                    </div>
+                   
+                    <div class="">
+                        <a class="nav-exp mx-5" href="https://diksha.gov.in/auth/realms/sunbird/protocol/openid-connect/auth?client_id=portal&state=b7b29470-2b44-4cfd-858a-757128fe0238&redirect_uri=https%3A%2F%2Fdiksha.gov.in%2Fresources%3Fboard%3DCBSE%26medium%3DHindi%26gradeLevel%3DSecondary%26%26id%3Dnios_fw%26selectedTab%3Dtextbook%26auth_callback%3D1&scope=openid&response_type=code&version=4" target="_blank">Registration</a>
+                    </div>
+                    
                 </div> 
             </div>
         </nav>

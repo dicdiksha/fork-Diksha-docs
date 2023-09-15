@@ -51,8 +51,9 @@
     color: #482BAC;
     font-weight: bold;
     font-size: 19px;
+    margin-bottom: 10px;
 }
-.diksha-links .links-head, 
+/* .diksha-links .links-head, 
 .diksha-explore .explore-head, 
 .diksha-contribute .contribute-head {
     font-size: 14px;
@@ -69,7 +70,7 @@
 .diksha-contribute .contribute-link ul li{
     list-style: none;
     padding: 5px 0;
-}
+} */
 
 .footer-details {
     font-size: 14px;
@@ -86,12 +87,7 @@
     flex-direction: column;
 }
 
-.diksha-social-media {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    margin-top: 50px;
-}
+
 .diksha-social-media span {
     padding: 7px;
 }
@@ -111,19 +107,89 @@
     flex-direction: column;
     align-items: baseline;
 }
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+/*neww*/
+.footer-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li{
+list-style: none;
+display: flex;
+/* padding: 0 10px; */
+color: #434141;
+align-items: center;
+}
+
+.footer-links ul li::after {
+    content: "|";
+    font-size: 20px;
+    padding: 0 10px;
+    color: #909090;
+
+}
+.footer-links ul li:last-child:after {
+    content: "";
+    font-size: 20px;
+    padding: 0 10px;
+    display: none;
+
+}
+.diksha-social-media {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.info .logo-ngerd{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.info .logo-ngerd span::after {
+    content: "|";
+    font-size: 25px;
+    padding: 0 7x;
+    color: #909090;
+}
+.info .logo-ngerd span:last-child:after {
+    content: "|";
+    font-size: 25px;
+    padding: 0 10px;
+    display: none;
+}
 
 </style>
 <div class="footer" >
-        <div class="main-footer">
+    <div class="main-footer">
+        <div  class="footer-details">
             <div class="container">
-                <div class="footer-details">
-                    <div class="footer-item diksha-info">
-                            <div class="diksha-logo">
-                                <span class="footer-logo">
-                                    <img src="../images/Diksha-logo.png" alt="Diksha-logo">
-                                    <span>DIKSHA</span>
-                                </span>
-                                <span>Digital Infrastucture For <br> Knoeledge Sharing</span>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="diksha-logo">
+                            <span class="footer-logo">
+                                <img src="../images/Diksha-logo.png" alt="Diksha-logo">
+                                <span>DIKSHA</span>
+                            </span>
+                            <span>Digital Infrastucture For <br> Knoeledge Sharing</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="diksha-links">
+                            <div class="footer-links">
+                                <ul>
+                                <li><a href="">About DIKSHA</a></li>
+                                <li><a href="">Contact Us</a></li>
+                                <li><a href="">Resources</a></li>
+                                <li><a href="">Dashboard</a></li>
+                                <li><a href="">FAQs</a></li>
+                                </ul>
                             </div>
                             <div class="diksha-social-media">
                                 <span><img src="../images/link_in.png" alt=""></span>
@@ -132,91 +198,50 @@
                                 <span><img src="../images/youtube.png" alt=""></span>
                                 <span><img src="../images/twitter.png" alt=""></span>
                             </div>
-
+                            
+                        </div>
+                       
                     </div>
-                    <div class="footer-item diksha-links">
-                        <div class="links-head">
-                            DIKSHA
-                        </div>
-                        <div class="heading-links">
-                           <ul>
-                            <li><a href="">About DIKSHA</a></li>
-                            <li><a href="">Contact Us</a></li>
-                            <li><a href="">Resources</a></li>
-                            <li><a href="">Dashboard</a></li>
-                            <li><a href="">FAQs</a></li>
-                           </ul>
-                        </div>
-                    </div>
-                    <div class="footer-item diksha-explore">
-                        <div class="explore-head">Explore</div>
-                        <div class="explore-links">
-                            <ul>
-                                <li><a href="">Digital Textbooks</a></li>
-                                <li><a href="">Courses</a></li>
-                                <li><a href="">TV Classes</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer-item diksha-contribute">
-                        <div class="contribute-head">Contribute</div>
-                        <div class="contribute-link">
-                            <ul>
-                                <li><a href="">VidyaDaan</a></li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="footer-item diksha-nerd">
+                    <div class="col-md-3">
                         <div class="info"> 
-                            <span>
-                                <img src="../images/negd-removebg-preview 1.png">
-                            </span>
-                            <span>
-                                Digital India Corporation <br>Ministry of Electronics & IT (MeitY), <br>Government of India
-                            </span>
-                        </div>
-                        <div class="icons">
-                            <span>Powered by</span>
-                            <img src="../images/Digital-India-Color 1.png">
-                        </div>
-
+                            <div class="logo-ngerd"> 
+                                <span>
+                                    <img src="../images/negd.png">
+                                </span>
+                                <span> 
+                                     <div class="icons"><img src="../images/Digital-India.png"></div>
+                                </span>
+                            </div>
+                       
+                        <span>
+                            Digital India Corporation <br>Ministry of Electronics & IT (MeitY), <br>Government of India
+                        </span>
+                    </div>
+                  
                     </div>
                 </div>
-            </div>
+            </div>     
         </div>
-        <div class="bottom-footer">
-            <div class="container">
-                <div class="container-box">
-                    <div class="term-details">
-                        <div class="copyright-desc">
-                            © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
-                        </div>
-                        <div class="terms-condition">
-                            <span> <a href="">{{ site.data.text.TermsofUse }}</a> </span>
-                            <span> <a href="">Privacy Policy </a> </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <a class="sb-color-white terms-policies" target="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">
-                {{ site.data.text.TermsofUse }}
-            </a> | 
-            <span data-translate="copyright">{{ site.data.text.copyright }}</span> -->
-        </div>
-        <!-- <div class="bottom-footer">
-            <div class="container">
-                <div class="bottom-update">
-                    <div class="text-update">
-                        <div class="font-weight-bold mr-16 diksha-update-txt" tabindex="0" data-translate="DIKSHAUpdates">{{ site.data.text.DIKSHAUpdates }}</div>
-                    </div>
-                    <div class="text-detail">
-                        <marquee class="text">
-                            <span data-translate="">{{ site.data.text.updateticker1 }}</span>
-                            <span> &nbsp;| &nbsp;</span>
-                            <span data-translate="updateticker2">{{ site.data.text.updateticker2 }}</span>
-                        </marquee>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="container-box">
+                <div class="term-details">
+                    <div class="copyright-desc">
+                        © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
+                    </div>
+                    <div class="terms-condition">
+                        <span> <a href="">{{ site.data.text.needHelp }}</a> </span>
+                        <span> <a href="">{{ site.data.text.TermsofUse }}</a> </span>
+                        <span> <a href="">{{ site.data.text.PrivacyPolicy }}</a> </span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="sb-color-white terms-policies" target="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">
+            {{ site.data.text.TermsofUse }}
+        </a> | 
+        <span data-translate="copyright">{{ site.data.text.copyright }}</span> -->
+    </div>
+</div>
