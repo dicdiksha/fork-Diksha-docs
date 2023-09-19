@@ -16,7 +16,7 @@
     }
     .items-card{
         display: flex;
-        justify-content: flex-start;
+        justify-content: start;
         flex-wrap: wrap;
 
     }    
@@ -48,7 +48,8 @@
     padding-left: 15px;
 }
 .text-discr {
-    font-size: 16px;
+    font-size: 14px;
+    text-align: justify;
 }
 
 .text-title {
@@ -59,96 +60,117 @@
 </style>
 <div>
     <div class="head-title">
-    <div class="text">Focus Areas <span class="bottom-image">of DIKSHA</span> </div>
+        <span class="text">Focus Areas of DIKSHA<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
+    <!-- <div class="text"> <span class="bottom-image"></span> </div> -->
   </div>
     <div class="focus-area">
         <dic class="container">
             <div class="container-box">
                 <div class="items-card">
-                        <a href="" class="item-card">
+                    <a href="/fln.html" target="_blank" class="item-card">
+                        <div class="cart-logo">
+                            <div class="logo-bg">
+                                <div class="cart-logo">
+                                    <img src="../assets/imgs/nipun_bharat.png" alt="nipun bharat">                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-disc">
+                            <div class="desc">
+                                <div class="text-title">{{site.data.text.nipunBharat}} </div>
+                                <div class="text-discr">{{site.data.text.nipunBharatDesc}}</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://bit.ly/BhashaSangam" target="_blank" class="item-card">
                             <div class="cart-logo">
                                 <div class="logo-bg">
                                     <div class="cart-logo">
-                                        <img src="../assets/imgs/nipun_bharat.png" alt="nipun bharat">                                </div>
+                                        <img src="../assets/imgs/bhasha_sangam.png" alt="bhasha sangam">                                </div>
                                 </div>
                             </div>
                             <div class="cart-disc">
                                 <div class="desc">
-                                    <div class="text-title">Nipun Bharat </div>
-                                    <div class="text-discr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                    <div class="text-title">{{site.data.text.bhasaSangam}} </div>
+                                    <div class="text-discr">{{site.data.text.bhasaSangamDesc}} </div>
                                 </div>
                             </div>
-                        </a>
-                    <div class="item-card">
-                        <div class="cart-logo">
-                            <div class="logo-bg">
-                                <div class="cart-logo">
-                                    <img src="../assets/imgs/bhasha_sangam.png" alt="bhasha sangam">                                </div>
+                        
+                    </a>
+                    <a href="/jadoo/index.html" target="_blank" class="item-card">
+                            <div class="cart-logo">
+                                <div class="logo-bg">
+                                    <div class="cart-logo">
+                                        <img src="../assets/imgs/jadui_pitara.png" alt="Jaadui Pitara">                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-disc">
-                            <div class="desc">
-                                <div class="text-title">Bhasha Sangam </div>
-                                <div class="text-discr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="cart-disc">
+                                <div class="desc">
+                                    <div class="text-title">{{site.data.text.jaduiPitara}} </div>
+                                    <div class="text-discr">{{site.data.text.jaduiPitaraDesc}}</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <div class="cart-logo">
-                            <div class="logo-bg">
-                                <div class="cart-logo">
-                                    <img src="../assets/imgs/jadui_pitara.png" alt="Jaadui Pitara">                                </div>
+                        
+                    </a>
+                    <a href="/adult-education.html" target="_blank"  class="item-card">
+                            <div class="cart-logo">
+                                <div class="logo-bg">
+                                    <div class="cart-logo">
+                                        <img src="../assets/imgs/courses.png" alt="Courses">                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-disc">
-                            <div class="desc">
-                                <div class="text-title">Jaadui Pitara </div>
-                                <div class="text-discr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="cart-disc">
+                                <div class="desc">
+                                    <div class="text-title">{{site.data.text.adultEducation}} </div>
+                                    <div class="text-discr">{{site.data.text.adultEducationDesc}}</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <div class="cart-logo">
-                            <div class="logo-bg">
-                                <div class="cart-logo">
-                                    <img src="../assets/imgs/courses.png" alt="Courses">                                </div>
+                       
+                    </a>
+                    <a href="/cwsn.html"  target="_blank" class="item-card">
+                            <div class="cart-logo">
+                                <div class="logo-bg">
+                                    <div class="cart-logo">
+                                        <img src="../assets/imgs/quizzes.png" alt="Quizzes">                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-disc">
-                            <div class="desc">
-                                <div class="text-title">Courses </div>
-                                <div class="text-discr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="cart-disc">
+                                <div class="desc">
+                                    <div class="text-title">{{site.data.text.cwsn}} </div>
+                                    <div class="text-discr">{{site.data.text.cwsnDesc}}</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <div class="cart-logo">
-                            <div class="logo-bg">
-                                <div class="cart-logo">
-                                    <img src="../assets/imgs/quizzes.png" alt="Quizzes">                                </div>
+                        
+                    </a>
+                    <a href="/vocational-education.html"  target="_blank" class="item-card">
+                            <div class="cart-logo">
+                                <div class="logo-bg">
+                                    <div class="cart-logo">
+                                        <img src="../assets/imgs/teacher-training.png" alt="Teacher Training Courses">                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-disc">
-                            <div class="desc">
-                                <div class="text-title">Quizzes </div>
-                                <div class="text-discr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="cart-disc">
+                                <div class="desc">
+                                    <div class="text-title">{{site.data.text.vocationEducation}}</div>
+                                    <div class="text-discr">{{site.data.text.vocationEducationDesc}}</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="item-card">
-                        <div class="cart-logo">
-                            <div class="logo-bg">
-                                <div class="cart-logo">
-                                    <img src="../assets/imgs/teacher-training.png" alt="Teacher Training Courses">                                </div>
+                       
+                    </a>
+                    <a href="/virtuallabs.html"  target="_blank" class="item-card">
+                            <div class="cart-logo">
+                                <div class="logo-bg">
+                                    <div class="cart-logo">
+                                        <img src="../assets/imgs/teacher-training.png" alt="Teacher Training Courses">                                </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-disc">
-                            <div class="desc">
-                                <div class="text-title">Teacher Training Courses </div>
-                                <div class="text-discr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                            <div class="cart-disc">
+                                <div class="desc">
+                                    <div class="text-title">{{site.data.text.virtualLab}}</div>
+                                    <div class="text-discr"> {{site.data.text.virtualLabDesc}}</div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                       
+                    </a>
                 </div>
             </div>
         </dic>

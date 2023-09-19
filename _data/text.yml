@@ -119,3 +119,47 @@ Details: Details
 selectState: select state to explore
 selectedLanguage: selected language
 openPdf: open in pdf
+
+#======Start New home Page=======#
+exploreStudy: Explore Our Study Material
+focusArea: Focus Areas of DIKSHA
+learningClasses: Comprehensive Learning for Foundational to Secondary
+dikshaNumbers: DIKSHA in Numbers
+dikshaPlatformTitle:  DIKSHA - One Nation, One Digital Platform
+missionVisionTitle: Mission & Vision
+contributeBanner: Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.
+footerLogoDiksha: Digital Infrastucture For <br> Knoeledge Sharing.
+footerLogoNegrd:  Digital India Corporation <br>Ministry of Electronics & IT (MeitY),<br>Government of India
+footerBottom:  © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
+getAppDesc: The DIKSHA application is available on play store & app store,  You can also scan QR code to download it.
+download:  Download the
+mobileApp:  Mobile App Today!
+downloadLinkAndroid: Download Link For Android
+downloadLinkIos: Download Link For iOS
+scanDownload: Scan to Download
+Dashboarddesc: Various metrics across the country
+nipunBharat: Nipun Bharat
+nipunBharatDesc: Foundational Literacy & Numeracy (FLN) Explore Developmental Goal wise e-content.
+bhasaSangam: Bhasha Sangam
+bhasaSangamDesc: This interaction based program is meant to encourage children to listen to, and try to learn and speak languages.
+jaduiPitara: Jaadui Pitara
+jaduiPitaraDesc: Jaadui Pitara has been developed as an example of content that is needed in any school for the Foundational Stage.
+adultEducation: Adult Education
+adultEducationDesc: The National Education Policy (NEP) 2020 envisions that the opportunity to attain foundational literacy.
+cwsn: CWSN
+cwsnDesc: One Nation One Platform  DIKSHA - Equitable and Inclusive Education Vertical, which is evolving in nature.
+vocationEducation: Vocational Education
+vocationEducationDesc: The Institute is also a UNEVOC (International Project on Technical and Vocational Education) Network Centre in India
+virtualLab: Virtual Lab
+virtualLabDesc: The policy recommends creating virtual laboratories so that all students have equal access to quality practicals and hands-on experience.
+
+
+compleateCoverage: Complete K-12 Coverage
+compleateCoverageDesc: Access complete K-12 study material covering all <br>boards, classes and subjects
+practiceContent: Unlimited Practice Content
+practiceContentDesc: Access practice content such as NCERT solutions and trending content
+studyMaterial: Interactive Study Material
+studyMaterialDesc: Media-rich visually engaging 2D 3D videos in accordance with the syllabus
+participateQuiz: Participate in Quizzes
+participateQuizDesc: Quizzes makes learning fun and help students perform better
+#======End New home Page=======#

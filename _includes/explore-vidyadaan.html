@@ -18,12 +18,16 @@
         }
         .vidyadaan-desc {
             margin: 39px 0;
+            font-size: 18px;
         }
-        .vidyadaan-action a{
+        .vidyadaan-action .participate-contribute{
             border: 1px solid #005DA3;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
+            background-color: transparent;
+            font-size: 18px;
+            color: #0473B7;
         }
         .vidyadaan {
     flex-basis: 40%;
@@ -43,10 +47,12 @@
                     <img src="../images/Diksha-VidyaDaan-Logo.png" alt="vidyadaan-logo">
                 </div>
                 <div class="vidyadaan-desc">
-                    A program of the nation, for the nation and by the nation for managing continuity of quality learning
+                    {{ site.data.text.VidyaDaanIntro }}
+                    <!-- A program of the nation, for the nation and by the nation for managing continuity of quality learning -->
                 </div>
                 <div class="vidyadaan-action">
-                    <a href="">Participate</a>
+                    <button  type="button" tabindex="0" class="participate-contribute" data-translate="btnParticipate">{{ site.data.text.btnParticipate }}</button>
+                    <!-- <a href=""></a> -->
                 </div>
             </div>
             <div class="vidyadaan">
