@@ -5,8 +5,8 @@ dikshaDescription: An initiative of the National Council of Educational Research
 btnExploreDiksha: Explore Diksha
 explore: Explore
 ExploreDikshaContent: Explore DIKSHA's world of open digital content
-stateboard: States / UTs
-stateboardDescription: Explore content published by 22+ states and UTs
+stateboard: State / UT Board 
+stateboardDescription: Explore content published by States and UTs
 about: About
 home: Home
 dashboard: Dashboard
@@ -74,7 +74,7 @@ DIKSHAUsageTillDate: DIKSHA current usage
 LearningLessons: Learning sessions
 minutes: Minutes
 application : Application Availability
-needHelp : Need Help
+needHelp: Need Help
 TermsofUse: Terms and Policies
 PrivacyPolicy: Privacy Policy
 copyright: © 2021, DIKSHA
@@ -83,7 +83,7 @@ sitemap: Site Map
 ScreenReaderAccess: Accessibility Corner
 DIKSHAUpdates: DIKSHA Updates
 lastupdatedonresult: Report updated weekly - by noon, every monday
-lastupdatedonresult1: Report Updated Daily
+lastupdatedonresultdaily: Report Updated Daily
 totalDIKSHAusage: Total DIKSHA usage time in minutes
 applicationAvailability: Application Availability in the last 3 months 
 numberLearningActivities: Number of times learning activities were undertaken using DIKSHA infrastructure by learners

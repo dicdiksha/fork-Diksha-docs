@@ -7,7 +7,7 @@
             "dateofupdate": "11/02/2021",
             "typeofupdate": "Updated Daily",
             "shortDescription": "Generic consumption dataset that aggregates data from across various DIKSHA consumption channels, different types of content on the platform, as well as tags it to additional content metadata that is available. This dataset is generated daily for all consumption on the platform.",
-            "link": "https://ntpproductionall.blob.core.windows.net/public-reports/public/diksha-data-exhaust/"
+            "link": "https://diksha.gov.in/data/reports/diksha-data-exhaust/"
         }
     ]
 }
