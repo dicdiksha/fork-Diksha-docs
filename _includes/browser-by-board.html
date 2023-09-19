@@ -9,7 +9,7 @@
     margin: 27px;
     font-weight: 600;
     }
-    .head-title .bottom-image {
+    /* .head-title .bottom-image {
     position: relative;
     }
     .head-title .bottom-image::after{
@@ -20,9 +20,21 @@
       bottom: -16px;
       left: 0px;
       position: absolute;
+    } */
+
+    .head-title .text {
+      position: relative;
     }
+
+    .head-title .text .bottom-image{
+      bottom: -18px;
+      right: -17px;
+      position: absolute;
+    } 
+
     .category_title {
       font-size: 24px;
+      margin-bottom: 10px;
 
     }
     .dk-browser-by-board { 
@@ -152,14 +164,15 @@
 </style>
 <div class="explore-study">
   <div class="head-title">
-    <div class="text">Explore Our <span class="bottom-image">Study Material</span> </div>
+    <!-- <div class="text">Explore Our <span class="bottom-image">Study Material</span> </div> -->
+    <span class="text">Explore Our Study Material<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
   </div>
   <div class="container">
     <div class="container-box">
       <h2 class="category_title">Browser By Board</h2>
       <div class="row g-2 dk-browser-by-board">  
         {% for board in site.data.boards.items %}
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12 my-sm-5">
           
             <div class="item" title="{{board.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
             data-translate-attr="{board-btntitle: ['title']}">
@@ -209,7 +222,7 @@
                       </div>    
                 </div>
               </div>-->
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-12">
             <div class="item ">
               <div class="items">
                 <div class="state-items">

@@ -1,13 +1,22 @@
 <style>
   /****** START COMMON TITLE DESING******/
   .head-title {
-    display: flex;
-    justify-content: center;
     font-size: 40px;
     margin: 27px;
     font-weight: 600;
+    text-align: center;
     }
-    .head-title .bottom-image {
+    
+    .head-title .text {
+      position: relative;
+    }
+
+    .head-title .text .bottom-image{
+      bottom: -18px;
+      right: -17px;
+      position: absolute;
+    } 
+    /* .head-title .bottom-image {
     position: relative;
     }
     .head-title .bottom-image::after{
@@ -18,7 +27,7 @@
       bottom: -16px;
       left: 0px;
       position: absolute;
-    }
+    } */
     /******COMMON TITLE DESING******/
 
     .misstion-visstion {
@@ -44,7 +53,8 @@
 <div class="container">
     <div class="container-box">
         <div class="head-title">
-            <div class="text">DIKSHA - One Nation, One <span class="bottom-image">Digital Platform</span> </div>
+            <!-- <div class="text">DIKSHA - One Nation, One <span class="bottom-image">Digital Platform</span> </div> -->
+            <span class="text">DIKSHA - One Nation, One Digital Platform<span class="bottom-image"><img src="../images/img-bottom.png"></span></span>
         </div>
         <div class="about">
             DIKSHA (Digital Infrastructure for Knowledge Sharing) is a national platform for school education, an initiative of National Council for Educational Research and Training (NCERT), under the aegis of the Ministry of Education (MoE), GoI. Launched in 2017 by Honourable Vice President of India – Shri M. Venkaiah Naidu, DIKSHA has been adopted by almost all the States, Union Territories, central autonomous bodies/boards including CBSE.
@@ -67,13 +77,14 @@
         <div class="row d-flex">
             <div class="col-md-6 col-sm-12">
                 <div class=" content misstion-visstion">
-                    <img src="../assets/imgs/about/vision_and_mission.jpg" alt="vision">
+                    <img src="../assets/imgs/about/mission-vision.png" alt="vision">
                 </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="content">
                     <div class="  head-title">
-                        <div class="text">Mission <span class="bottom-image">& Vision</span> </div>
+                        <!-- <div class="text">Mission <span class="bottom-image">& Vision</span> </div> -->
+                        <span class="text">Mission & Vision<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
                     </div>
                     <div class="mission">
                         <p>At Diksha, our mission is to create a revolutionary learning ecosystem that empowers students to thrive in the 21st century. We believe that education should be accessible, engaging, and tailored to the individual needs of each learner.</p>
