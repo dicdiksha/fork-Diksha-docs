@@ -1,0 +1,57 @@
+<style>
+.homepage-slides .carousel-indicators {
+    width:100%;
+}
+</style>
+<div id="homePageSlide" class="carousel homepage-slides" data-ride="carousel">
+    <div class="carousel-inner" title="banner-carousel">
+        <div class="carousel-item carousel3-bg active" role="option">
+            <img loading="lazy" decoding="async" class="carousel-img-height" 
+                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/imgs/dikshaonenation.png"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/imgs\/dikshaonenation.png'"
+                alt="DIKSHA One nation one digital platform">
+        </div>
+        <div class="carousel-item carousel3-bg " role="option">
+            <a href="" target="_blank">
+                <img loading="lazy" decoding="async"  class="carousel-img-height"
+                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/b1.jpg"
+                    alt="FLN explore" loading="lazy" decoding="async">
+            </a>
+        </div> 
+        <div class="carousel-item carousel3-bg" role="option">
+        
+            <img loading="lazy" decoding="async" class="carousel-img-height"
+            src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/g20.jpg"
+            alt="G 20">
+           
+       
+        </div>
+        <div class="carousel-item carousel3-bg" role="option">
+            <a href="/adult-education.html" target="_blank">
+                <img loading="lazy" decoding="async" class="carousel-img-height"
+                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/c1.jpg"
+                    alt="Adult Education and Life Long Learnings Explore">
+            </a>
+        </div>
+    </div>   
+    <ol class="carousel-indicators">      
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+        aria-controls="carousel-items" aria-label="CWSN"></li>
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page"
+        aria-controls="carousel-items" aria-label="man ki baat"></li>
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="2" aria-current="page" 
+        aria-controls="carousel-items" aria-label="jadoo pitara"></li>
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="3" aria-current="page"
+        aria-controls="carousel-items" aria-label="G 20"></li>
+    </ol>
+
+     <!-- Left and right controls -->
+ <!--<a class="left carousel-control" href="#homePageSlide" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    
+   </a>
+   <a class="right carousel-control" href="#homePageSlide" role="button" data-slide="next">
+    
+     <span class="carousel-control-next-icon"></span>
+   </a>-->
+</div>

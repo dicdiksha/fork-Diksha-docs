@@ -1,0 +1,268 @@
+<style>
+    .footer{
+        background-color: #ECF6FF;
+    }
+    a {
+    color: inherit;
+    }
+    a:hover {
+    color: inherit;
+    text-decoration: none;
+    }
+    .ma
+    .main-footer{
+        background-color: #ECF6FF;
+
+    }
+    .footer .bottom-footer{
+        background-color: #00034F;
+        color: #fff;
+        /* padding: 10px; */
+        font-size: 14px;
+        
+    }
+    .footer .bottom-update{
+        display: flex;
+    }
+    .footer-details {
+    font-size: 14px;
+    padding: 20px 85px;
+    font-size: 14px;
+        /* width: 90%; */
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+
+    .footer .bottom-footer .term-details{
+       display: flex;
+       justify-content: space-between;
+       padding: 14px 0;
+        
+    }
+    .term-details .terms-condition span{
+        padding: 0 20px;
+
+    }
+    /* .term-and-condition {
+        background-color: #00034F;
+        color: #EBEBEB;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        padding: 13px;
+    } */
+    .text-detail {
+    width: 100%;
+    }
+    
+    .footer-details .footer-item {
+    width: 30%;
+    }
+    .footer-details  .diksha-logo {
+    display: flex;
+    flex-direction: column;
+    }
+    .footer-details .footer-logo {
+    color: #482BAC;
+    font-weight: bold;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+/* .diksha-links .links-head, 
+.diksha-explore .explore-head, 
+.diksha-contribute .contribute-head {
+    font-size: 14px;
+    font-weight: bold;
+    color: #434141;
+}
+.diksha-links .heading-links ul,
+.diksha-explore .explore-links ul,
+.diksha-contribute .contribute-link ul {
+    padding: 0;
+}
+.diksha-links .heading-links ul li,
+.diksha-explore .explore-links ul li,
+.diksha-contribute .contribute-link ul li{
+    list-style: none;
+    padding: 5px 0;
+} */
+
+
+
+.diksha-contribute .diksha-nerd {
+    display: flex;
+    flex-direction: column;
+}
+
+ .diksha-nerd .info {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.diksha-social-media span {
+    padding: 7px;
+}
+.diksha-nerd .icons{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.diksha-nerd .icons span{
+    padding: 0 5px;
+}
+
+.footer-item.diksha-nerd {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+}
+
+/*neww*/
+.footer-links ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links ul li{
+list-style: none;
+display: flex;
+/* padding: 0 10px; */
+color: #434141;
+align-items: center;
+}
+
+.footer-links ul li::after {
+    content: "|";
+    font-size: 20px;
+    padding: 0 10px;
+    color: #909090;
+
+}
+.footer-links ul li:last-child:after {
+    content: "";
+    font-size: 20px;
+    padding: 0 10px;
+    display: none;
+
+}
+.diksha-social-media {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.info .logo-ngerd{
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.info .logo-ngerd span::after {
+    content: "|";
+    font-size: 25px;
+    padding: 0 7x;
+    color: #909090;
+}
+.info .logo-ngerd span:last-child:after {
+    content: "|";
+    font-size: 25px;
+    padding: 0 10px;
+    display: none;
+}
+.capitalize-text{
+    text-transform: capitalize;
+}
+</style>
+<div class="footer" >
+   
+    <div class="main-footer">
+        <div class="container">
+            <div class="container-box">
+                <div  class="footer-details">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="diksha-logo">
+                                <span class="footer-logo">
+                                    <img src="../images/Diksha-logo.png" alt="Diksha-logo">
+                                    <span>DIKSHA</span>
+                                </span>
+                                <!-- <span>Digital Infrastucture For <br> Knoeledge Sharing</span> -->
+                                <span class="capitalize-text">{{ site.data.text.footerLogoDiksha}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="diksha-links">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="homepage/" title="homepahe">{{ site.data.text.home}}</a></li>
+                                        <li><a href="about-us/"  title="About">{{ site.data.text.about}}</a></li>
+                                        <li><a href="data-dashboard/" title="Dashboard">{{ site.data.text.dashboard}} </a></li>
+                                        <li><a href="get-app/" title="Getapp">{{ site.data.text.getapp}}</a></li>
+                                        <li><a href="contribute-us/" title="contribute">{{ site.data.text.contribute}}</a></li>
+                                    </ul>
+                                </div>
+                                <div class="diksha-social-media">
+                                    <span><img src="../images/link_in.png" alt=""></span>
+                                    <span><img src="../images/facebook.png" alt=""></span>
+                                    <span><img src="../images/instagram.png" alt=""></span>
+                                    <span><img src="../images/youtube.png" alt=""></span>
+                                    <span><img src="../images/twitter.png" alt=""></span>
+                                </div>
+                                
+                            </div>
+                           
+                        </div>
+                        <div class="col-md-3">
+                            <div class="info"> 
+                                <div class="logo-ngerd"> 
+                                    <span>
+                                        <img src="../images/negd.png">
+                                    </span>
+                                    <span> 
+                                         <div class="icons"><img src="../images/Digital-India.png"></div>
+                                    </span>
+                                </div>
+                           
+                            <span>
+                                <!-- Digital India Corporation <br>Ministry of Electronics & IT (MeitY), <br>Government of India -->
+                                {{ site.data.text.footerLogoNegrd}} 
+                            </span>
+                        </div>
+                      
+                        </div>
+                    </div>
+                    
+            </div>
+            </div>
+        </div>
+     
+    </div>
+    <div class="bottom-footer">
+        <div class="container">
+            <div class="container-box">
+                <div class="term-details">
+                    <div class="copyright-desc">
+                        {{site.data.text.footerBottom}}
+                    </div>
+                    <div class="terms-condition">
+                        <span> <a href="https://support.diksha.gov.in/" target="_blank" title="{{ site.data.text.needHelp }}" data-translate="needHelp" data-translate-attr="{needHelp: ['title']}">{{ site.data.text.needHelp }}</a> </span>
+                        <span> <a arget="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">{{ site.data.text.TermsofUse }}</a> </span>
+                        <span> <a href="" class="terms-policies">{{site.data.text.PrivacyPolicy}}</a> </span>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="sb-color-white terms-policies" target="_self" title="{{ site.data.text.TermsofUse }}" href="#" data-translate="TermsofUse" data-translate-attr="{TermsofUse: ['title']}">
+            {{ site.data.text.TermsofUse }}
+        </a> | 
+        <span data-translate="copyright">{{ site.data.text.copyright }}</span> -->
+    </div>
+</div>

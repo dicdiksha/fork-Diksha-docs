@@ -76,7 +76,7 @@ minutes: Minutes
 application : Application Availability
 needHelp: Need Help
 TermsofUse: Terms and Policies
-needHelp: Need Help
+PrivacyPolicy : Privacy Policy
 copyright: © 2021, DIKSHA
 skipMainContent: Skip to Main Content
 sitemap: Site Map
@@ -119,3 +119,44 @@ Details: Details
 selectState: select state to explore
 selectedLanguage: selected language
 openPdf: open in pdf
+
+
+#======Start New home Page=======#
+footerLogoDiksha:   Digital Infrastucture For <br>  Knowledge Sharing
+footerLogoNegrd:  Digital India Corporation <br>Ministry of Electronics & IT (MeitY),<br>Government of India
+footerBottom:  © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
+nipunBharat: Nipun Bharat
+nipunBharatDesc: National Initiative for Proficiency in Reading with Understanding and Numeracy.
+bhasaSangam: Bhasha Sangam
+bhasaSangamDesc: National Initiative to teach basic sentences of everyday usage in 22 Indian languages.
+jaduiPitara: Jaadui Pitara
+jaduiPitaraDesc: Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.    .
+adultEducation: Adult Education
+adultEducationDesc: To impart foundational literacy and numeracy, critical life skills for Citizens
+cwsn: CWSN
+cwsnDesc: Enable Study and learning materials for Visually/ Hearning Impaired Learners
+vocationEducation: Vocational Education
+vocationEducationDesc: Initative to focus on integration of vocational training with general education
+virtualLab: Virtual Lab
+virtualLabDesc: Virtual laboratories access for students to enhance actual laboratory experiences
+compleateCoverage: Complete K-12 Coverage
+compleateCoverageDesc: Access complete K-12 study material covering all <br>boards, classes and subjects
+practiceContent: Unlimited Practice Content
+practiceContentDesc: Access practice content such as NCERT solutions and trending content
+studyMaterial: Interactive Study Material
+studyMaterialDesc: Media-rich visually engaging 2D 3D videos in accordance with the syllabus
+participateQuiz: Participate in Quizzes
+participateQuizDesc: Quizzes makes learning fun and help students perform better
+
+#about-us
+
+#contribute
+contributeBanner: Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.
+#getapp
+getAppDesc: The DIKSHA application is available on play store & app store,  You can also scan QR code to download it.
+downloadLinkAndroid: Download Link For Android
+downloadLinkIos: Download Link For iOS
+scanDownload: Scan to Download
+#dashboard
+Dashboarddesc: Various metrics across the country
+#======END New home Page=======#

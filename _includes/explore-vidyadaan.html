@@ -1,0 +1,63 @@
+<style>
+    .explore-vidyadaan{
+        padding: 40px 0;
+        /* background: rgb(215,255,224);
+        background: linear-gradient(61deg, rgba(215,255,224,1) 0%, rgba(217,231,239,0.42638305322128855) 100%); */
+    }
+
+    .vidyadaan-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .vidyadaan-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 120px;
+        font-size: 18px;
+        }
+        .vidyadaan-desc {
+            margin: 39px 0;
+            font-size: 18px;
+        }
+        .vidyadaan-action .participate-contribute{
+            border: 1px solid #005DA3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            background-color: transparent;
+            font-size: 18px;
+            color: #0473B7;
+        }
+        .vidyadaan {
+    flex-basis: 40%;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+</style>
+
+<div class="explore-vidyadaan">
+    <div class="container">
+        <div class="container-box vidyadaan-wrapper">
+            
+            <div class="vidyadaan">
+                <div class="vidyadaan-img">
+                    <img src="../images/Diksha-VidyaDaan-Logo.png" alt="vidyadaan-logo">
+                </div>
+                <div class="vidyadaan-desc">
+                    {{ site.data.text.VidyaDaanIntro }}
+                    <!-- A program of the nation, for the nation and by the nation for managing continuity of quality learning -->
+                </div>
+                <div class="vidyadaan-action">
+                    <button  type="button" tabindex="0" class="participate-contribute" data-translate="btnParticipate">{{ site.data.text.btnParticipate }}</button>
+                </div>
+            </div>
+            <div class="vidyadaan">
+                <img src="../images/explore_vidyadan.png" alt="vidyadaan">
+            </div>
+            
+        </div>
+    </div>
+</div>

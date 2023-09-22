@@ -1,0 +1,51 @@
+<style>
+    /****** START COMMON TITLE DESING******/
+    .head-title {
+    font-size: 40px;
+    margin: 27px;
+    font-weight: 600;
+    text-align: center;
+    }
+    
+    .head-title .text {
+      position: relative;
+    }
+
+    .head-title .text .bottom-image{
+      bottom: -18px;
+      right: -17px;
+      position: absolute;
+    } 
+    /******COMMON TITLE DESING******/
+
+    
+    .new-banner{
+        width: 100%;
+        background: rgb(150,74,218);
+        background: linear-gradient(258deg, rgba(150,74,218,0.6362920168067228) 0%, rgba(150,74,218,1) 40%, rgba(40,24,95,1) 86%);
+
+    }
+    .about-caption{
+        padding: 52px 0;
+        color: #fff;
+        
+    }
+    .about-caption .diksha-title{
+        font-size: 48px;
+        font-weight: 600px;
+    } 
+    .about-caption .diksha-desc{
+        font-size: 18px;
+
+    } 
+</style>
+<div class="new-banner">
+    <div class="container">
+        <div class="container-box">
+            <div class="about-caption"> 
+                <div class="diksha-title">{{ site.data.text.aboutdiksha }}</div>
+                <div class="diksha-desc">{{ site.data.text.dikshaDescription }}</div>
+            </div>
+        </div>
+    </div>
+</div>

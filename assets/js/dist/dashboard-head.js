@@ -24907,21 +24907,21 @@ $(window).resize(function () {
 $(document).ready(function () {
     let origin = '';
     (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') ? origin = window.origin : origin = 'https://preprod.ntp.net.in';
-    // let totalContentPlays = `https://diksha.gov.in/data/reports/public/cumulative_content_plays_till_date.json`,
-    //     totalcontenttime = `https://diksha.gov.in/data/reports/public/overall_time_spent.json`,
-    //     totalContributions = `https://diksha.gov.in/data/reports/public/total_contents_created.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_contents_created.json`,
-    //     totalContributors = `https://diksha.gov.in/data/reports/public/no_of_users_contributed.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/no_of_users_contributed.json`,
-    //     totalCourses = `https://diksha.gov.in/data/reports/public/total_courses_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_courses_new.json`,
-    //     totalEnrollments = `https://diksha.gov.in/data/reports/public/total_enrolments_new_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_enrolments_new_new.json`,
-    //     totalCompletions = `https://diksha.gov.in/data/reports/public/total_completions.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_completions.json`,
+    let totalContentPlays = `https://diksha.gov.in/data/reports/cumulative_content_plays_till_date.json`,
+        totalcontenttime = `https://diksha.gov.in/data/reports/overall_time_spent.json`,
+        totalContributions = `https://diksha.gov.in/data/reports/total_contents_created.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_contents_created.json`,
+        totalContributors = `https://diksha.gov.in/data/reports/no_of_users_contributed_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/no_of_users_contributed.json`,
+        totalCourses = `https://diksha.gov.in/data/reports/total_courses_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_courses_new.json`,
+        totalEnrollments = `https://diksha.gov.in/data/reports/total_enrolments_new_new.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_enrolments_new_new.json`,
+        totalCompletions = `https://diksha.gov.in/data/reports/total_completions.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/total_completions.json`,
 
-    let totalContentPlays = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/cumulative_content_plays_till_date.json`,
-        totalcontenttime = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/overall_time_spent.json`,
-        totalContributions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_contents_created.json`,
-        totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed_new.json`,
-        totalCourses = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_courses_new.json`,
-        totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
-        totalCompletions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_completions.json`,
+    // let totalContentPlays = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/cumulative_content_plays_till_date.json`,
+    //     totalcontenttime = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/overall_time_spent.json`,
+    //     totalContributions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_contents_created.json`,
+    //     totalContributors = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/no_of_users_contributed_new.json`,
+    //     totalCourses = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_courses_new.json`,
+    //     totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
+    //     totalCompletions = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_completions.json`,
         
         category = '',
         queryString = window.location.search;
@@ -24950,6 +24950,106 @@ $(document).ready(function () {
       var date = day + "-" + month + "-" + year;
       return date;
     };
+
+    $(document).ready(function() {
+      // GET USES MATRICS
+            $.ajax({
+              type: 'GET',
+              url: totalcontenttime,
+              success: function (data, textStatus, request) {
+                  data = typeof data == "string" ? JSON.parse(data) : data;
+                  var valInt = data.data[0]['Total Time Spent'] * 60;
+                  $(".x-mins").text(parseInt(valInt).toLocaleString("en-IN"));
+                  usageMetricsObj['xMins'] = parseInt(valInt).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                  console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+                type: 'GET',
+                url: totalContentPlays,
+                success: function (data, textStatus, request) {
+                    data = typeof data == "string" ? JSON.parse(data) : data;
+                    $("#learningSession").text(parseInt(data.data[0]['Total Plays']).toLocaleString("en-IN"));
+                    $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
+                    usageMetricsObj['learningSession'] = parseInt(data.data[0]['Total Plays']).toLocaleString("en-IN");
+                    usageMetricsObj['updatedOn'] = $.date(request.getResponseHeader('Last-Modified'));
+                },
+                error: function (request, textStatus, errorThrown) {
+                    console.log(errorThrown);
+                }
+            });
+      //GET CREATION MATRICS
+            $.ajax({
+              type: 'GET',
+              url: totalContributions,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                console.log("alert1" + data)
+                $("#totalContributions").text(parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN"));
+                $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
+                creationMetricsObj['totalContributions'] = parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN");
+                creationMetricsObj['updatedOn'] = $.date(request.getResponseHeader('Last-Modified'));
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+              type: 'GET',
+              url: totalContributors,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalContributors").text(parseInt(data.data[0]['No of Users Contributed']).toLocaleString("en-IN"));
+                creationMetricsObj['totalContributors'] = parseInt(data.data[0]['No of Users Contributed']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+      //GET COURSE MATRICS
+            $.ajax({
+              type: 'GET',
+              url: totalCourses,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalCourses").text(parseInt(data.data[0]['Total Courses']).toLocaleString("en-IN"));
+                courseMetricsObj['totalCourses'] = parseInt(data.data[0]['Total Courses']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+              type: 'GET',
+              url: totalEnrollments,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalEnrolments").text(parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN"));
+                courseMetricsObj['totalEnrolments'] = parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+
+            $.ajax({
+              type: 'GET',
+              url: totalCompletions,
+              success: function (data, textStatus, request) {
+                data = typeof data == "string" ? JSON.parse(data) : data;
+                $("#totalCompletions").text(parseInt(data.data[0]['Total Completions']).toLocaleString("en-IN"));
+                courseMetricsObj['totalCompletions'] = parseInt(data.data[0]['Total Completions']).toLocaleString("en-IN");
+              },
+              error: function (request, textStatus, errorThrown) {
+                console.log(errorThrown);
+              }
+            });
+     });
 
     function radioTabsClickType(clickType) {
         switch (clickType) {
@@ -25113,12 +25213,12 @@ $(document).ready(function () {
     origin = 'https://preprod.ntp.net.in'
   }
 
-  // let weeklyPlaysByState = `https://diksha.gov.in/data/reports/public/weekly_plays_by_state.json`,
-  //   stateWiseDataCount = `https://diksha.gov.in/data/reports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
-    
-  let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`,
-    stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
-    totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
+  let weeklyPlaysByState = `https://diksha.gov.in/data/reports/weekly_plays_by_state.json`,
+    stateWiseDataCount = `https://diksha.gov.in/data/reports/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    totalEnrollments = `https://diksha.gov.in/data/reports/total_enrolments_new_new.json`,
+  // let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
+  //   stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
+    // totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
     mapsJson = `/assets/json/maps.json`,
     contentPlayData = d3.map(),
     tenantSlugs = [],
@@ -25853,7 +25953,7 @@ $(document).ready(function () {
   let stateRes = [];
   function generateStateWiseTrendLine(slug) {
     if (category == 'usage') {
-        $.get(`https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state_new.json`, function (data) {
+        $.get(`https://diksha.gov.in/data/reports/weekly_plays_by_state.json`, function (data) {
         const data_temp = [];
         let plays = 0;
         const temp = typeof data == "string" ? JSON.parse(data) : data;
@@ -26188,8 +26288,8 @@ const languageTranslations = {
         "btnExploreDiksha": "Explore DIKSHA",
         "explore": "Explore",
         "ExploreDikshaContent": "Explore DIKSHA\'s world of open digital content",
-        "stateboard": "States / UTs",
-        "stateboardDescription": "Explore content published by 22+ states and UTs",
+        "stateboard": "State / UT Board",
+        "stateboardDescription": "Explore content published by States and UTs",
         "about": "About",
         "home": "Home",
         "dashboard": "Dashboard",
@@ -26246,7 +26346,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "Accessibility Corner",
         "DIKSHAUpdates": "DIKSHA Updates",
         "lastupdatedonresult": "Report updated weekly - by noon, every monday",
-        "lastupdatedonresult1": "Report Updated Daily",
+        "lastupdatedonresultdaily": "Report Updated Daily",
         "totalDIKSHAusage": "Total DIKSHA usage time in minutes",
         "numberLearningActivities": "Number of times learning activities were undertaken using DIKSHA infrastructure by learners",
         "noevents": "No upcoming events available",
@@ -26353,7 +26453,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "একচেছিবিলিটী কৰ্নাৰ",
         "DIKSHAUpdates": "DIKSHA-ৰ আপডেটসমূহ",
         "lastupdatedonresult": "প্ৰতিবেদন সাপ্তাহিকভাৱে আপডেট কৰা হৈছে - দুপৰীয়া, প্ৰতি সোমবাৰে",
-        "lastupdatedonresult1": "প্ৰতিবেদন দৈনিক আপডেট কৰা হৈছে",
+        "lastupdatedonresultdaily": "প্ৰতিবেদন দৈনিক আপডেট কৰা হৈছে",
         "totalDIKSHAusage": "মিনিটত DIKSHA ব্যৱহাৰৰ মুঠ সময়",
         "numberLearningActivities": "শিক্ষাৰ্থীসকলে DIKSHA-ৰ আন্তঃগাঁথনি ব্যৱহাৰ কৰি গ্ৰহণ কৰা শিক্ষণ কাৰ্যকলাপৰ সময়ৰ সংখ্যা",
         "noevents": "কোনো আগন্তুক ইভেণ্ট উপলব্ধ নাই",
@@ -26460,7 +26560,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "অ্যাক্সেসযোগ্যতা কর্নার",
         "DIKSHAUpdates": "DIKSHA আপডেট",
         "lastupdatedonresult": "সপ্তাহিক রিপোর্ট আপডেট- প্রত্যেক সোমবার দুপুরের মধ্যে",
-        "lastupdatedonresult1": "রিপোর্ট প্রত্যেক দিন আপডেট হয়",
+        "lastupdatedonresultdaily": "রিপোর্ট প্রত্যেক দিন আপডেট হয়",
         "totalDIKSHAusage": "DIKSHA ব্যবহারে মোট সময় মিনিটে",
         "numberLearningActivities": "DIKSHA ইনফ্রাস্ট্রাকচার ব্যবহার করে শিক্ষার্থী দ্বারা শিখন কার্যক্রমগুলি বেশ কয়েকবার পরিচালিত হয়েছিল",
         "noevents": "কোন আসন্ন ইভেন্ট উপলব্ধ নেই",
@@ -26567,7 +26667,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "સુલભતા કોર્નર",
         "DIKSHAUpdates": "DIKSHA સુધારાઓ",
         "lastupdatedonresult": "અહેવાલ સાપ્તાહિક અપડેટ - બપોર પછી, દરેક સોમવાર",
-        "lastupdatedonresult1": "દરરોજ અહેવાલ",
+        "lastupdatedonresultdaily": "દરરોજ અહેવાલ",
         "totalDIKSHAusage": "મિનિટમાં કુલ DIKSHA વપરાશ સમય",
         "numberLearningActivities": "શીખનારાઓ દ્વારા DIKSHA ઇન્ફ્રાસ્ટ્રક્ચરનો ઉપયોગ કરીને શીખવાની પ્રવૃત્તિઓ કેટલી વાર હાથ ધરવામાં આવી",
         "noevents": "કોઈ આગામી ઇવેન્ટ્સ ઉપલબ્ધ નથી",
@@ -26674,7 +26774,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "अभिगम्यता कॉर्नर",
         "DIKSHAUpdates": "DIKSHA अपडेट",
         "lastupdatedonresult": "साप्ताहिक रिपोर्ट अपडेट, हर सोमवार -दोपहर",
-        "lastupdatedonresult1": "रिपोर्ट रोजाना अपडेट होती है",
+        "lastupdatedonresultdaily": "रिपोर्ट रोजाना अपडेट होती है",
         "totalDIKSHAusage": "DIKSHA का मिनटों में कुल उपयोग समय",
         "numberLearningActivities": "शिक्षार्थियों द्वारा DIKSHA बुनियादी ढांचे का उपयोग करते हुए कई बार सीखने की गतिविधियाँ की गई थीं",
         "noevents": "कोई आगामी कार्यक्रम उपलब्ध नहीं है",
@@ -26780,7 +26880,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "ಅಸೆಸಿಬಿಲಿಟಿ ಕಾರ್ನರ್",
         "DIKSHAUpdates": "DIKSHA ಅಪ್ಡೇಟ್‍ಗಳು",
         "lastupdatedonresult": "ವರದಿಯು ವಾರಕ್ಕೊಮ್ಮೆ ಅಪ್ಡೇಟ್ ಆಗುವುದು - ಪ್ರತಿ ಮಂಗಳವಾರ, ಮಧ್ಯಾಹ್ನ",
-        "lastupdatedonresult1": "ವರದಿಯು ಪ್ರತಿದಿನ ಅಪ್ಡೇಟ್ ಆಗುವುದು",
+        "lastupdatedonresultdaily": "ವರದಿಯು ಪ್ರತಿದಿನ ಅಪ್ಡೇಟ್ ಆಗುವುದು",
         "totalDIKSHAusage": "ಒಟ್ಟು DIKSHA ಬಳಕೆ ನಿಮಿಷಗಳಲ್ಲಿ",
         "numberLearningActivities": "ವಿದ್ಯಾರ್ಥಿಗಳು DIKSHA ಮೂಲಸೌಕರ್ಯವನ್ನು ಬಳಸಿಕೊಂಡು ಎಷ್ಟು ಸಲ ಕಲಿಕಾ ಚಟುವಟಿಕೆಗಳನ್ನು ತೆಗೆದುಕೊಂಡಿದ್ದಾರೆ",
         "noevents": "ಮುಂಬರಲಿರುವ ಯಾವುದೇ ಇವೆಂಟ್ ಗಳು ಲಭ್ಯವಿಲ್ಲ",
@@ -26887,7 +26987,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "सुलभता कोपरा",
         "DIKSHAUpdates": "DIKSHA अपडेट्स",
         "lastupdatedonresult": "साप्ताहिक रिपोर्ट अपडेट - दार सोमवारी, दुपारपर्यंत",
-        "lastupdatedonresult1": "रिपोर्ट दररोज अपडेट होतो",
+        "lastupdatedonresultdaily": "रिपोर्ट दररोज अपडेट होतो",
         "totalDIKSHAusage": "मिनिटांमध्ये एकूण DIKHA वापर अवधी",
         "numberLearningActivities": "किती वेळा विद्यार्थ्यांनी DIKSHA च्या पायाभूत सुविधा वापरून शैक्षणिक उपक्रम हाती घेतले",
         "noevents": "कोणतेही आगामी कार्यक्रम उपलब्ध नाहीत",
@@ -27024,7 +27124,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "ଆକ୍ସେସିବିଲିଟି ବିଭାଗ",
         "DIKSHAUpdates": "DIKSHA ଅପଡେଟ୍",
         "lastupdatedonresult": "ରିପୋର୍ଟ ସାପ୍ତାହିକ ଭାବରେ - ପ୍ରତି ସୋମବାର ମଧ୍ୟାହ୍ନରେ ଅପଡେଟ୍ ହୁଏ",
-        "lastupdatedonresult1": "ରିପୋର୍ଟ ଦୈନିକ ଅପଡେଟ୍ ହୁଏ",
+        "lastupdatedonresultdaily": "ରିପୋର୍ଟ ଦୈନିକ ଅପଡେଟ୍ ହୁଏ",
         "totalDIKSHAusage": "ମୋଟ DIKSHA ବ୍ୟବହାର ସମୟ ମିନିଟରେ",
         "numberLearningActivities": "ଶିକ୍ଷାର୍ଥୀମାନଙ୍କ ଦ୍ୱାରା DIKSHA ଭିତ୍ତିଭୂମି ବ୍ୟବହାର କରି କେତେଥର ଶିକ୍ଷଣ କାର୍ଯ୍ୟକଳାପ ହୋଇଛି",
         "noevents": "କୌଣସି ଆସନ୍ତା କାର୍ଯ୍ୟକ୍ରମ ଉପଲବ୍ଧ ନାହିଁ",
@@ -27131,7 +27231,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "ਪਹੁੰਚਣਯੋਗ ਕੋਨਾ",
         "DIKSHAUpdates": "DIKSHA ਆਪਡੇਟਸ",
         "lastupdatedonresult": "ਹਰ ਹਫ਼ਤੇ ਦੁਪਹਿਰ ਤੋਂ - ਹਫ਼ਤਾਵਾਰੀ ਅਪਡੇਟ ਕੀਤੀ ਰਿਪੋਰਟ",
-        "lastupdatedonresult1": "ਰਿਪੋਰਟ ਰੋਜ਼ਾਨਾ ਅਪਡੇਟ ਕੀਤੀ",
+        "lastupdatedonresultdaily": "ਰਿਪੋਰਟ ਰੋਜ਼ਾਨਾ ਅਪਡੇਟ ਕੀਤੀ",
         "totalDIKSHAusage": "ਮਿੰਟਾਂ ਵਿੱਚ ਕੁੱਲ DIKSHA ਵਰਤੋਂ ਦਾ ਸਮਾਂ",
         "numberLearningActivities": "ਸਿਖਿਆਰਥੀਆਂ ਦੁਆਰਾ DIKSHA ਢਾਂਚੇ ਦੀ ਵਰਤੋਂ ਕਰਦਿਆਂ ਸਿੱਖਣ\nਦੀਆਂ ਗਤੀਵਿਧੀਆਂ ਦੀ ਗਿਣਤੀ",
         "noevents": "ਕੋਈ ਆਗਾਮੀ ਇਵੈਂਟਸ ਉਪਲੱਬਧ ਨਹੀਂ ਹਨ",
@@ -27238,7 +27338,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "அணுகல் மூலை",
         "DIKSHAUpdates": "தீக்‌ஷா புதுப்பிப்புகள்",
         "lastupdatedonresult": "வாரந்தோறும் திங்கட்கிழமை மதியம் அறிக்கைகள் புதுப்பிக்கப்படும்",
-        "lastupdatedonresult1": "தினசரி புதுப்பிக்கப்பட்ட அறிக்கை",
+        "lastupdatedonresultdaily": "தினசரி புதுப்பிக்கப்பட்ட அறிக்கை",
         "totalDIKSHAusage": "நிமிடங்களில் மொத்த தீக்‌ஷா பயன்பாட்டு நேரம்",
         "numberLearningActivities": "கற்றவர்களால் தீக்‌ஷா உள்கட்டமைப்பைப் பயன்படுத்தி கற்றல் நடவடிக்கைகள் எத்தனை முறை மேற்கொள்ளப்பட்டன",
         "noevents": "வரவிருக்கும் நிகழ்வுகள் எதுவும் கிடைக்கவில்லை",
@@ -27345,7 +27445,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "స్క్రీన్ రీడర్ యాక్సెస్",
         "DIKSHAUpdates": "DIKSHA నవీకరణలు",
         "lastupdatedonresult": "ప్రతి వారం నవీకరించబడిన నివేదిక - మధ్యాహ్నం నాటికి, ప్రతి సోమవారం",
-        "lastupdatedonresult1": "రోజువారీ నవీకరించబడిన నివేదిక",
+        "lastupdatedonresultdaily": "రోజువారీ నవీకరించబడిన నివేదిక",
         "totalDIKSHAusage": "నిమిషాల్లో మొత్తం DIKSHA వినియోగ సమయం",
         "numberLearningActivities": "అభ్యాసకులు DIKSHA మౌలిక సదుపాయాలను ఉపయోగించి ఎన్నిసార్లు అభ్యాస కార్యకలాపాలు చేపట్టారు",
         "noevents": "రాబోయే ఈవెంట్‌లు ఏవీ అందుబాటులో లేవు",
@@ -27452,7 +27552,7 @@ const languageTranslations = {
         "ScreenReaderAccess": "رسائی کارنر",
         "DIKSHAUpdates": "DIKSHA تازہ ترین معلومات",
         "lastupdatedonresult": "رپورٹ ہفتہ وار - ہر پیر کے بعد دوپہر تک اپ ڈیٹ ہوجائے گی",
-        "lastupdatedonresult1": "روزانہ تازہ ترین خبر",
+        "lastupdatedonresultdaily": "روزانہ تازہ ترین خبر",
         "totalDIKSHAusage": "منٹوں میں کل DIKSHA استعمال کا وقت",
         "numberLearningActivities": "سیکھنے والوں کے ذریعہ DIKSHA انفراسٹرکچر کا استعمال کرتے ہوئے سیکھنے کی کتنی بار سرگرمیاں کی گئیں",
         "noevents": "کوئی آنے والا واقعہ دستیاب نہیں ہے",

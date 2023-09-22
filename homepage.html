@@ -1,0 +1,26 @@
+---
+layout: home-layout
+title: Homepage
+---
+    <div>
+        {% include page-home-slider-new.html %}
+        {% include browser-by-board.html %} 
+        {% include focus-areas.html %}
+        {% include learning-classes.html %}
+        {% include diksha-numbers.html %}
+    </div>
+  
+
+
+    {% contentfor mobileview %}
+    <div>
+        {% include page-home-slider-new.html %}
+        {% include browser-by-board.html %} 
+        {% include focus-areas.html %}
+        {% include learning-classes.html %}
+        {% include diksha-numbers.html %}
+    </div>
+    {% endcontentfor %}
+
+
+

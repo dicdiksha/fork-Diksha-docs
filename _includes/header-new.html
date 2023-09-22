@@ -1,0 +1,206 @@
+<style>
+    html{
+        font-family: 'Lato', sans-serif;
+        font-family: 'Outfit', sans-serif;
+    }
+
+    p{
+        font-family: 'Lato', sans-serif;
+    }
+    .container .container-box{
+    width: 90%;
+    margin: 0 auto;
+   }
+    .brand-top-header{
+        background-color: #00034F;
+        color: #EBEBEB;
+        font-size: 12px;
+        padding: 8px;
+    }
+    .brand-top-header .container {
+    width: 96% !important;
+    max-width: 96% !important;
+    margin: 0 auto;
+    }
+    .brand-top-header .container .top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0px;
+    }
+    .brand-top-header div.dk-top-head-ul {
+    display: flex;
+    }
+    .brand-top-header div.dk-top-head-ul ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    }
+    .brand-top-header div.dk-top-head-ul ul li {
+    text-align: center;
+    }
+    .brand-top-header div.dk-top-head-ul ul li a {
+    color: #EBEBEB;
+    }
+    .main-top-header .mainHeader{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-top-header .mainHeader .nav-action{
+        display: flex;
+        align-items: center;
+        color: #434141;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+    .navMenu a {
+    padding: 0 13px;
+    /* font-weight: bold; */
+    letter-spacing: 0.1px;
+    color: #434141;
+    }
+
+    a.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -33px;
+    }
+    .navbar-brand .vidyadan{
+        padding: 0 10px;
+    }
+
+    /* .footer-details {
+    display: flex;
+    justify-content: space-around;
+    } */
+    .mainHeader .nav-explore {
+    display: flex;
+    align-items: center;
+    }
+
+    .mainHeader .nav-explore .nav-exp-active {
+        border: 0;
+        background-color: #005DA3;
+        padding: 7px 18px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .mainHeader .nav-explore .nav-exp {
+        border: 0;
+        /* background-color: #; */
+        padding: 7px 18px;
+        border-radius: 4px;
+        color: #005DA3;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #005DA3;
+    }
+   .main-top-header .sb-btn-explore-diksha{
+    border-radius: 0;
+    background-color: transparent;
+    border-color: transparent;
+    margin: 0 10px;
+   }
+
+    @media only screen and (max-width: 1024) {
+        .dropdown-wrapper {
+            justify-content: center;
+        }
+        .dropdown-wrapper ul{
+            top: 100%;
+        }
+    }
+    /* For Tablet View */
+@media screen and (max-width: 768px){
+    .container .container-box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen
+	and (max-width: 640px) {
+	
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-width: 425px){
+
+}
+	
+	
+
+
+
+
+
+
+/* For iPhone 4 Portrait or Landscape View */
+@media screen and (min-device-width: 320px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+
+/* For iPhone 5 Portrait or Landscape View */
+@media (device-height: 568px)
+	and (device-width: 320px)
+	and (-webkit-min-device-pixel-ratio: 2) {
+	
+}
+
+/* For iPhone 6 and 6 plus Portrait or Landscape View */
+@media (min-device-height: 667px)
+	and (min-device-width: 375px)
+	and (-webkit-min-device-pixel-ratio: 3) {
+	
+};
+
+
+
+</style>
+<div class="brand-top-header">
+    <div class="container">
+        <div class="container-box">
+            {% include new-accessbility-bar.html %}
+        </div>
+    </div>
+</div>
+
+<div class="container dk-primary-navigation">
+    <div class="container-box">
+        <nav class="main-top-header py-10" >
+            <div class="mainHeader">
+                <div  class="logo-action">
+                    <a class="navbar-brand py-0" href="/#">
+                        <span><img src="../images/ashok-stambh.png" alt="ashok-stambh"></span>
+                        <span><img src="../images/Diksha-logo.png" alt="Diksha-logo"></span>
+                        <span class="vidyadan"><img src="../images/vidyadan.png" alt="vidyadan-logo"></span>
+                        <span class="gtwenty"><img src="../images/G20_India_2023_logo 1.png" alt="g20-logo"></span>
+                    </a>
+                </div>
+                <div  class="nav-action">
+                    {% include page-primary-menu-new.html %}
+                </div>
+                <div class="nav-explore">
+                    <div class="sb-btn-explore-diksha">
+                        <a class="nav-exp-active mx-5 " href="">Explore DIKSHA</a>
+                    </div>
+                   
+                    <div class="">
+                        <a class="nav-exp mx-5" href="https://diksha.gov.in/auth/realms/sunbird/protocol/openid-connect/auth?client_id=portal&state=b7b29470-2b44-4cfd-858a-757128fe0238&redirect_uri=https%3A%2F%2Fdiksha.gov.in%2Fresources%3Fboard%3DCBSE%26medium%3DHindi%26gradeLevel%3DSecondary%26%26id%3Dnios_fw%26selectedTab%3Dtextbook%26auth_callback%3D1&scope=openid&response_type=code&version=4" target="_blank">Registration</a>
+                    </div>
+                    
+                </div> 
+            </div>
+        </nav>
+    </div>
+   
+</div>
