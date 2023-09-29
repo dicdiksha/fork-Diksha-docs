@@ -135,8 +135,9 @@ label.accordion-label.yellow {
 
 /*----vocationa CSS----*/
 .new-drop-down{
-    margin-top: 10px;   
-    height: 200px;
+    /* margin-top: 10px;    */
+    /* height: 200px; */
+    /* margin: 20px 0; */
 }
 .new-drop-down label{
     font-weight: bold;
@@ -162,6 +163,7 @@ label.accordion-label.yellow {
     padding: 4px 10px;
     /* border: 2px solid #4e4d4c; */
     color: #fff;
+    width: 100%;
 }
 
 .new-drop-down .dropdown li ul {
@@ -174,6 +176,7 @@ label.accordion-label.yellow {
     line-height: normal;
     width: 100%;
     z-index: 99999999;
+    background-color: #17a2b8;
     /* background-color: #333; */
 }
 
@@ -208,7 +211,76 @@ label.accordion-label.yellow {
     width: 230% !important;
     word-break: break-all;
 }
+.dropdown-section{
+    /* background: #ececec; */
+    border-top: 4px solid #cecece;
+    /* padding-top: 40px; */
+    /* padding-bottom: 90px; */
+}
+ul.header-menu {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    background-color: #17a2b8;
+    padding: 0 50px;
+    justify-content: center;
+}
 
+.header-menu .btn-info {
+    color: #fff;
+   
+    
+}
+.header-menu li {
+    list-style: none;
+    display: flex;
+}
+
+
+.header-menu .dropdown {
+
+}
+
+.header-menu  ul li ul {
+    width: 100%;
+}
+
+.header-menu li ul ul {
+    width: 100%;
+}
+.inner-dropdown{
+
+}
+
+.resource-section{
+    background-color: #F3F3E5;
+}
+.resource-section .title {
+    font-size: 48px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+.resource-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+    justify-content: center;
+}
+.resource-item {
+    /* padding: 10px; */
+    width: 182px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.img-bg {
+    background-color: #f6af45;
+    padding: 25px;
+    border-radius: 10px;
+}
 @media only screen and (max-width: 769px){
     .new-drop-down .dropdown li ul li ul {
         left: 0;

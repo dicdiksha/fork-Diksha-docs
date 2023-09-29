@@ -123,6 +123,24 @@
 	.thumbnail .videos{
 		background-color: #5D28B8;
 	}
+	.thumbnail-title {
+		font-family: inherit;
+		font-weight: 500;
+		line-height: 1.2;
+		color: inherit;
+		font-size: 32px;
+		padding: 14px 0;
+		text-align: center;
+	}
+	section.thumbnail-heading {
+		color: #fff;
+		background-color: #64b2dc;
+		margin: 0 -54px;
+	}
+	select {
+    border: 1px;
+    background-color: transparent;
+	}
 	</style>
 </head>
 
@@ -164,7 +182,7 @@
 							</div>
 						</div>
 						<div class="action mt-3">
-							<a class="btn text-light collapsed " style="background-color: #60BEEC;" target="_blank" href="#">
+							<a class="btn text-light collapsed " style="background-color: #f8a445;" target="_blank" href="#">
 								<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore </strong>
 							</a>
 						</div>
@@ -178,7 +196,7 @@
 							</div>
 						</div>
 						<div class="action mt-3">
-							<a class="btn text-light collapsed" style="background-color: #5DC48A;" target="_blank" href="#">
+							<a class="btn text-light collapsed" style="background-color: #5D28B8;" target="_blank" href="#">
 								<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore </strong>
 							</a>
 						</div>
@@ -236,42 +254,15 @@
 					</div> <a href="javascript:void(0);" class="read-more" title="Read More">Read More</a> </div>
 			</div>
 		</section>
+		<section class="thumbnail-heading">
+			<div class="thumbnail-title"> Explore e-content</div>
+		</section>
 		<section class="fln-content-section">
 			<section class="cards-dg">
 				<!-- <h2 class="sub-heading mt-4 mb-3">CWSN Stakeholders</h2> -->
 				<div class="container">
 					<div class="row text-center">
 						<div class="container flex-card-grade">
-							<!-- <div class="col-sm-4 mb-4">
-								<div class="image mb-2"> 
-									<img src="/images/cwsn/parent-min.png" class="img-fluid"> 
-								</div>
-                                 <a class="btn text-light collapsed" style="background-color: #D55F37;" target="_blank" href="#">
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore </strong>
-								</a>
-							</div>
-							<div class="col-sm-4 mb-4">
-								<div class="image mb-2"> 
-									<img src="/images/cwsn/teacher-min.png" class="img-fluid">
-								 </div> <a class="btn text-light" style="background-color:#60BEEC;" target="_blank" href="#">
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore </strong></a>
-							</div> -->
-							<!-- <div class="col-sm-4 mb-4">
-								<div class="image mb-2"> 
-									<img src="/images/cwsn/teachereducator-min.png" class="img-fluid"> 
-								</div>
-								<a class="btn text-light" style="background-color:#f8a445;" target="_blank" href="#">
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong>
-								</a>
-								
-							</div> -->
-							<!-- <div class="col-sm-4 mb-4">
-								<div class="image mb-2">
-									 <img src="/images/cwsn/student-min.png" class="img-fluid">
-								 </div> 
-								 <a class="btn text-light" style="background-color:#5DC48A;" target="_blank" href="#" >
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-							</div> -->
 						</div>
 					</div>
 					<div class="row text-center">
@@ -286,9 +277,34 @@
 								<div id="collapseOne" class="collapse" aria-labelledby="headingfifteen">
                                     <div class="card-body-cwsn card-body text-left">
 										<ul>
-                                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="" aria-expanded="false">
+                                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapseCurricular" aria-expanded="false">
                                                 </i>&nbsp;<strong>Curricular Resources</strong>
-                                            </li><br>
+												<div id="collapseCurricular" class="collapse" aria-labelledby="heading0" data-parent="#accordion">
+													<div class="card-body-cwsn card-body text-left">
+														<ul>
+															<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#gradDetails" aria-expanded="false">
+																</i>&nbsp;<strong>Grade</strong>
+																<div id="gradDetails" class="collapse" aria-labelledby="headingfifteen">
+																	<div class="card-body-cwsn card-body text-left">
+																		<div class="space-letter" href="" data-toggle="collapse" data-target="#gradDetails" aria-expanded="false">
+																			</i>&nbsp;<strong>
+																				<a target="_blank" >Grade 1</a>
+																				<a target="_blank" >Grade 2</a>
+																				<a target="_blank" >Grade 3</a>
+																				<a target="_blank" >Grade 4</a>
+																				<a target="_blank" >Grade 5</a>
+																				<a target="_blank" >Grade 6</a>
+																			</strong>
+																		</div>
+																	</div>
+																</div>
+															</li><br>
+														
+														</ul>
+													</div>
+												</div>
+
+                                            </li><br> 
                                             <li class="far fa-hand-point-right" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapse00">
                                                 </i>&nbsp;<strong>Supplementary Resources</strong><br>
                                             </li><br>

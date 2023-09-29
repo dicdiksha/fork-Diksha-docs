@@ -26008,6 +26008,14 @@ $(document).ready(function () {
     }
 
     $("body").ready(function ($) {
+        $(".view-dashboard-redirect").click(function (e) {
+            e.preventDefault();
+            var type = $(this).attr('category');
+            window.logInteractEvent('homepage', 'select-dashboard', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+            window.location.href = '/data/?type=' + type;
+            return false;
+        });
+
         $(".view-dashboard").click(function (e) {
             e.preventDefault();
             var type = $(this).attr('category');

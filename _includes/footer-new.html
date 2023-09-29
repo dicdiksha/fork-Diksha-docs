@@ -198,14 +198,18 @@ align-items: center;
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="diksha-links">
+                            <div class="diksha-links-pages">
                                 <div class="footer-links">
                                     <ul>
-                                        <li><a href="homepage/" title="homepahe">{{ site.data.text.home}}</a></li>
-                                        <li><a href="about-us/"  title="About">{{ site.data.text.about}}</a></li>
-                                        <li><a href="data-dashboard/" title="Dashboard">{{ site.data.text.dashboard}} </a></li>
-                                        <li><a href="get-app/" title="Getapp">{{ site.data.text.getapp}}</a></li>
-                                        <li><a href="contribute-us/" title="contribute">{{ site.data.text.contribute}}</a></li>
+                                        {% for nav-new in site.data.nav-new.items %}
+                                    <li>
+                                        <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}" tabindex="0"
+                                        class=" {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}" 
+                                        data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+                                        <span data-translate="{%if(nav-nav.contains == 'data')%}dashboard{%else%}{{nav-nav.contains}}{%endif%}">{{nav-new.title}}</span>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
                                     </ul>
                                 </div>
                                 <div class="diksha-social-media">
