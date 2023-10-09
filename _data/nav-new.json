@@ -3,7 +3,7 @@
     "items": [
         {
             "title": "Home",
-            "url": "homepage.html/",
+            "url": "homepage.html",
             "contains":"homepage",
             "etype":"select-dashboard",
             "eid": "public-dashboard"

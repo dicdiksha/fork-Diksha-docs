@@ -149,10 +149,48 @@ participateQuiz: Participate in Quizzes
 participateQuizDesc: Quizzes makes learning fun and help students perform better
 
 #about-us
+aboutDikshaHeading : DIKSHA - One Nation, One Digital Platform
+aboutDescription :  DIKSHA (Digital Infrastructure for Knowledge Sharing) is a national platform for school education, an initiative of National Council for Educational Research and Training (NCERT), under the aegis of the Ministry of Education (MoE), GoI. Launched in 2017 by Honourable Vice President of India – Shri M. Venkaiah Naidu, DIKSHA has been adopted by almost all the States, Union Territories, central autonomous bodies/boards including CBSE.
+missionVision: Mission & Vision
+missionVisionDisc : At Diksha, our mission is to create a revolutionary learning ecosystem that empowers students to thrive in the 21st century. We believe that education should be accessible, engaging, and tailored to the individual needs of each learner. <br> >Our vision is to transform the way education is delivered by leveraging technology and innovation. We aim to provide students with a holistic learning experience that goes beyond traditional classrooms. Through our platform, we want to equip students with the skills they need not only for academic success but also for personal growth and development.
+dikshaGlance : DIKSHA at a Glance
+userDesc : DIKSHA can be accessed by learners and teachers across the country and currently supports 36 Indian languages
+aboutGlanceStudent : Student
+aboutGlanceTeacher : Teacher
+aboutGlanceParent : Parent
+aboutGlanceHTOfficials : HT & Officials
+aboutGlanceOther : Other
+aboutUserTitle : State of the art learning ecosystem for users
+aboutUserTextbook :   Energized Textbook
+aboutUserTeacher : Teacher Proffesional Development
+aboutUserBank : Question bank
+aboutUserSourcing : Content Sourcing
+aboutUserAuthoring : Content Authoring
+aboutUserQuizzes : Quizzes
+aboutUserCusumption : Content Cusumption
+aboutUserdataTools: Data tool and Dashboard
+aboutUserChatbot : Chatbot
+aboutUserCredential : Digital Credential
+aboutUserCollaboration : Collaboration
+aboutUserPhygital : Phygital
+aboutUserCcube : Ccube
+aboutUserSurvey : Survey
+aboutUserTranslations : Language Translations
+aboutUserMentoring : Mentoring
+aboutUserSunbird : Sunbird  Registry and Credential
+documentTitle : DIKSHA - Learnings from India Experience
+viewDoc : view
 
 #contribute
 contributeBanner: Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.
 mobileApp:  Mobile App Today!
+eLearningTitle :  Types of e-learning resources you can contribute
+eLearningExplanation:  Explanation Videos
+eLearningPractice: Practice Questions
+eLearningTeaching: Teaching Videos
+eLearningLearningVideos: Experiential Learning Videos
+eLearningLesson: Lesson Plans
+
 #getapp
 getAppDesc: The DIKSHA application is available on play store & app store,  You can also scan QR code to download it.
 downloadLinkAndroid: Download Link For Android
