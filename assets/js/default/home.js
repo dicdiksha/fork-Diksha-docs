@@ -804,9 +804,9 @@ $(document).ready(function () {
 
     $("body").ready(function ($) {
         $(".view-dashboard-redirect").click(function (e) {
-            e.preventDefault();
+            e.preventDefault($(this).attr('category'));
             var type = $(this).attr('category');
-            window.logInteractEvent('homepage', 'select-dashboard', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+            window.logInteractEvent('homepage', 'select-dashboardData', '', 'static-homepage', 'static-homepage', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
             window.location.href = '/data/?type=' + type;
             return false;
         });

@@ -125,11 +125,11 @@ openPdf: open in pdf
 footerLogoDiksha:   Digital Infrastucture For <br>  Knowledge Sharing
 footerLogoNegrd:  Digital India Corporation <br>Ministry of Electronics & IT (MeitY),<br>Government of India
 footerBottom:  © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
-nipunBharat: Nipun Bharat
+nipunBharat: NIPUN BHARAT
 nipunBharatDesc: National Initiative for Proficiency in Reading with Understanding and Numeracy.
 bhasaSangam: Bhasha Sangam
 bhasaSangamDesc: National Initiative to teach basic sentences of everyday usage in 22 Indian languages.
-jaduiPitara: Jaadui Pitara
+jaduiPitara: JAADUI PITARA
 jaduiPitaraDesc: Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.    .
 adultEducation: Adult Education
 adultEducationDesc: To impart foundational literacy and numeracy, critical life skills for Citizens
@@ -137,7 +137,7 @@ cwsn: CWSN
 cwsnDesc: Enable Study and learning materials for Visually/ Hearning Impaired Learners
 vocationEducation: Vocational Education
 vocationEducationDesc: Initative to focus on integration of vocational training with general education
-virtualLab: Virtual Lab
+virtualLab: Virtual Labs
 virtualLabDesc: Virtual laboratories access for students to enhance actual laboratory experiences
 compleateCoverage: Complete K-12 Coverage
 compleateCoverageDesc: Access complete K-12 study material covering all <br>boards, classes and subjects
@@ -147,6 +147,8 @@ studyMaterial: Interactive Study Material
 studyMaterialDesc: Media-rich visually engaging 2D 3D videos in accordance with the syllabus
 participateQuiz: Participate in Quizzes
 participateQuizDesc: Quizzes makes learning fun and help students perform better
+ContentContributors : Content Contributors
+ContentContributions :  Content Contributions
 
 #about-us
 aboutDikshaHeading : DIKSHA - One Nation, One Digital Platform
@@ -179,6 +181,7 @@ aboutUserTranslations : Language Translations
 aboutUserMentoring : Mentoring
 aboutUserSunbird : Sunbird  Registry and Credential
 documentTitle : DIKSHA - Learnings from India Experience
+aboutDocument : Documents
 viewDoc : view
 
 #contribute
@@ -196,6 +199,7 @@ getAppDesc: The DIKSHA application is available on play store & app store,  You 
 downloadLinkAndroid: Download Link For Android
 downloadLinkIos: Download Link For iOS
 scanDownload: Scan to Download
+clickHere : Click Here
 #dashboard
 Dashboarddesc: Various metrics across the country
 #======END New home Page=======#

@@ -4402,7 +4402,7 @@ $(document).ready(function () {
       let  name = e.currentTarget.getAttribute('data-name');
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
-        window.open('/' + slug + '/explore/1?publisher=NCERT', "_self");
+        window.open('/' + slug + '/exploren/1?publisher=NCERT&selectedTab=textbook', "_self");
       } else {
         window.open('/' + slug + '/explore', "_self");
       }

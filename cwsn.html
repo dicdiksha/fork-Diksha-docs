@@ -141,6 +141,18 @@
     border: 1px;
     background-color: transparent;
 	}
+
+	.card-body-cwsn.cwsn-grade ul {
+    	list-style: none;
+	}
+	.grade-item {
+		display: flex;
+		flex-direction: column;
+		/* padding: 10px; */
+		margin: 5px;
+		font-size: 1rem;
+		font-weight: bold;
+	}
 	</style>
 </head>
 
@@ -255,7 +267,7 @@
 			</div>
 		</section>
 		<section class="thumbnail-heading">
-			<div class="thumbnail-title"> Explore e-content</div>
+			<div class="thumbnail-title"> Explore E-content</div>
 		</section>
 		<section class="fln-content-section">
 			<section class="cards-dg">
@@ -277,50 +289,32 @@
 								<div id="collapseOne" class="collapse" aria-labelledby="headingfifteen">
                                     <div class="card-body-cwsn card-body text-left">
 										<ul>
-                                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapseCurricular" aria-expanded="false">
+                                            <li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapseCurricular" aria-expanded="false" aria-controls="collapseCurricular">
                                                 </i>&nbsp;<strong>Curricular Resources</strong>
-												<div id="collapseCurricular" class="collapse" aria-labelledby="heading0" data-parent="#accordion">
-													<div class="card-body-cwsn card-body text-left">
+											</li>
+												<div id="collapseCurricular" class="collapse" aria-labelledby="heading0" data-parent="#accordion">  
+													<div class="card-body-cwsn cwsn-grade">
 														<ul>
-															<li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapse00" aria-expanded="false" aria-controls="collapse00">
+															<li class="grade-data" data-toggle="collapse" data-target="#collapseGrad" aria-expanded="false" aria-controls="collapseGrad">
 															</i>&nbsp;<strong>Grade</strong><br>
-														</li>
-														<div id="collapse00" class="collapse" aria-labelledby="heading0" data-parent="#accordion">
-															<div class="card-body-cwsn card-body text-left">
-																<ul>
-																	<li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapse0_1" aria-expanded="false" aria-controls="collapse0_1">
-																		</i>&nbsp;<strong>Grade 1</strong>
-																	
-																	</li><br>
-																	<li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapse0_2" aria-expanded="false" aria-controls="collapse0_2">
-																		</i>&nbsp;<strong>Grade 2</strong>
-																		
-																		</li><br>
-																	<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical52" aria-expanded="true">
-																		</i>&nbsp;<strong>Grade 3</strong>
-																	
-																				</li><br>
-																	<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical54" aria-expanded="true">
-																		</i>&nbsp;<strong>Grade 4</strong>
-																		
-																	</li><br>
-																	<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical55" aria-expanded="true">
-																		</i>&nbsp;<strong>Grade 5</strong>
-																		
-																		</li><br>
-																		<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical56" aria-expanded="true">
-																		</i>&nbsp;<strong>Grade 6</strong>
-																		
-																		</li>
-																</ul>
-															</div>
-														</div>
-														
+																<div id="collapseGrad" class="collapse" >
+																	<div class="grade-items">
+																		<div class="grade-item"  class="collapse" >
+																			<div>Grade 1 <span class="far fdivnd-point-right"></span></div>
+																			<div>Grade 2</div>
+																			<div>Grade 3</div>
+																			<div>Grade 4</div>
+																			<div>Grade 5</div>
+																			<div>Grade 6</div>
+																		</div>
+																	</div>
+																</div>
+															</li>
 														</ul>
 													</div>
 												</div>
-
-                                            </li><br> 
+											
+                                           <br> 
                                             <li class="far fa-hand-point-right" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapse00">
                                                 </i>&nbsp;<strong>Supplementary Resources</strong><br>
                                             </li><br>
@@ -407,10 +401,7 @@
 																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">X</a>
 																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">Y</a>
 																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">Z</a>
-																
-			
 															</strong>
-															
 														</div>
                                                     </div>
                                                 </div>
