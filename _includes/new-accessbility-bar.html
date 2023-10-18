@@ -6,30 +6,28 @@
     }
     .brand-top-header div.dk-top-head-ul ul li a:hover, 
     .brand-top-header div.dk-top-head-ul ul li a.active {
-    /* text-decoration: underline; */
-    text-decoration: none;
-    /* color: var(--primary-menu-link-active); */
-    color: inherit;
+        /* text-decoration: underline; */
+        text-decoration: none;
+        /* color: var(--primary-menu-link-active); */
+        color: inherit;
     }
     .brand-top-header .fontResize-container .fontResizeBtn {
-    border: 0;
-   
-    background: none;
-    color: var(--white);
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .3s ease-in-out;
-    outline :none;
-    padding: 21px 19px;
+        border: 0;
+        background: none;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        outline :none;
+        padding: 15px 19px;
     }
     .brand-top-header .fontResize-container .fontResizeBtn:hover,
-     .brand-top-header .fontResize-container .fontResizeBtn:active {
-    background: transparent;
-    color: var(--white);
-    cursor: pointer;
-}    
+    .brand-top-header .fontResize-container .fontResizeBtn:active {
+        background: transparent;
+        color: var(--white);
+        cursor: pointer;
+    }    
 
 .brand-top-header .dark-mode-toggle {
     border: 0px;
@@ -60,6 +58,14 @@
     /* margin: 0; */
 }
 
+.fontResize-container{
+    display: flex;
+}
+
+.top-header .header-content-right {
+    display: flex;
+    justify-content: end;
+}
 /* For Desktop mac View */
 @media screen and (max-width: 1024px) {
     .main-top-header .mainHeader {
@@ -156,8 +162,8 @@
         </div>
     </div>
     <div class="col-md-7">
-        <div class="d-flex flex-ai-center head-tail-right-side justify-content-end">
-            <div class="pull-right dk-top-head-ul">
+        <div class="header-content-right d-flex flex-ai-center head-tail-right-side justify-content-end">
+            <div class="dk-top-head-ul">
                 <ul>
                     <li class="skip-content-link"><a href="javascript: scrollMainContent();"
                             title="{{ site.data.text.skipMainContent }}" data-translate="skipMainContent" data-translate-attr="{skipMainContent: ['title']}">{{ site.data.text.skipMainContent }}</a></li>
