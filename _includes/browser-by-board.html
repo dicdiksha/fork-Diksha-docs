@@ -61,7 +61,7 @@
     text-transform: uppercase;
     margin-bottom: 6px;
     }
-    .dk-browser-by-board .items {
+    .dk-browser-by-board .item {
       border-radius: 16px;
       /* margin: 20px 10px; */
     }
@@ -70,23 +70,17 @@
       display: flex;
       flex-direction: column;
     }
-    .dk-browser-by-board .items .state-items .group-items{
+    .dk-browser-by-board .item .state-items .group-items{
       display: flex;
       justify-content: center;
       width: 100%
     }
 
-    .dk-browser-by-board .items .state-items .group-items .group-images {
-      position: relative;
-      margin-bottom: 10px;
-      height: 63px;
-      width: 100%;
-    }
-    .dk-browser-by-board .items .state-items .group-items .group-images .img {
+    .dk-browser-by-board .item .state-items .group-items .group-images .img {
       height: 60px;
       width: 60px;
     }
-    .dk-browser-by-board .items .state-items  .group-items .group-images .text {
+    .dk-browser-by-board .item .state-items  .group-items .group-images .text {
       height: 60px;
       width: 60px;
       border-radius: 50%;
@@ -101,19 +95,30 @@
       justify-content: center;
       align-items: center;
     }
-    .dk-browser-by-board .items .state-items{
+    /* .dk-browser-by-board .item .state-items{
       display: flex;
       justify-content: center;
       align-items: center;
+    } */
+
+    .dk-browser-by-board .item .item-desc .items-deopdown {
+      width: 100%;
+      font-size: 12px !important;
     }
 
-    .dk-browser-by-board .items .state-items .group-items .group-images .state_1{
+    .dk-browser-by-board .item .item-img .group-images {
+      position: relative;
+      margin-bottom: 10px;
+      height: 63px;
+      width: 100%;
+    }
+    .dk-browser-by-board .item .item-img .group-images .state_1{
       position: absolute;
       top: 6px;
       left: 29px;
       z-index: 1;
     }
-    .dk-browser-by-board .items .state-items  .group-items .group-images .state_2{
+    .dk-browser-by-board .item .item-img  .group-images .state_2{
       position: absolute;
       top: 5px;
       left: 48px;
@@ -121,13 +126,13 @@
       height: 63px;
       width: 63px;
     }
-    .dk-browser-by-board .items .state-items .group-items .group-images .state_3{
+    .dk-browser-by-board .item .item-img  .group-images .state_3{
       position: absolute;
       top: 6px;
       left: 71px;
       z-index: 3;
     }
-    .dk-browser-by-board .items .state-items .group-items .group-images .state_4{
+    .dk-browser-by-board .item .item-img  .group-images .state_4{
       position: absolute;
       top: 6px;
       left: 100px;
@@ -135,7 +140,7 @@
       box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
       text-align: center;
     }
-    .dk-browser-by-board .items .state-items .items-deopdown select{
+    .dk-browser-by-board .item .item-img .items-deopdown select{
       border: 1px solid #D5D5D5;
       padding: 5px;
       width: 200px;
@@ -158,7 +163,7 @@
   <div class="container">
     <div class="container-box">
       <h2 class="category_title">Browser By Board</h2>
-      <div class="row g-2 dk-browser-by-board">  
+      <div class="row dk-browser-by-board">  
         {% for board in site.data.boards.items %}
         <div class="col-md-3 col-lg-3 col-sm-12 my-sm-5">
             <a  href="#"  title="{{board.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
@@ -180,17 +185,19 @@
         {% endfor %}
           
         <div class="col-md-3 col-lg-3  col-sm-12">
-            <div class="item ">
-              <div class="items">
-                <div class="state-items">
-                  <div class="group-items">
-                    <div class="group-images">
-                      <img class="img state_1" src="/images/item-state1.png" alt="">
-                      <img class="img state_2" src="/images/item-state2.png" alt="">
-                      <img class="img state_3" src="/images/item-state3.png" alt="">
-                      <span class="text state_4">22+ States</span>
-                    </div>
-                  </div>
+            <div class="item">
+                <div class="item-img">
+                    <!-- <div class="group-images">
+                        <img class="img state_1" src="/images/item-state1.png" alt="">
+                        <img class="img state_2" src="/images/item-state2.png" alt="">
+                        <img class="img state_3" src="/images/item-state3.png" alt="">
+                        <span class="text state_4">22+ States</span>
+                    </div> -->
+                    <img src="/assets/diksha-mission/ut-board.png" alt="UT-Borad">
+                </div>
+                <div class="item-desc">
+                  <div class="item-desc-title">{{ site.data.text.stateboard }}</div>
+                  <div class="item-desc-detail">{{ site.data.text.stateboardDescription }}</div>
                   <div class="items-deopdown ">
                     <a href="#" class="state-explore">
                       <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
@@ -199,7 +206,6 @@
                     </a>
                   </div>
                 </div>
-                  
               </div>
             </div>
         </div>

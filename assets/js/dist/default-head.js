@@ -26012,7 +26012,7 @@ $(document).ready(function () {
             e.preventDefault($(this).attr('category'));
             var type = $(this).attr('category');
             window.logInteractEvent('homepage', 'select-dashboardData', '', 'static-homepage', 'static-homepage', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
-            window.location.href = '/data/?type=' + type;
+            window.location.href = '/data-dashboard/?type=' + type;
             return false;
         });
 
@@ -27462,9 +27462,11 @@ const languageTranslations = {
 
 $(document).ready(function(){
     let language = localStorage.getItem('portalLanguage');
+    console.log(language)
     (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
     $(".dropdown-wrapper-div").click(function(){
+        alert("click");
         if(($(this).hasClass("open"))){
             $(this).removeClass("open");
             $("i.dropdown").removeClass("rotate");
@@ -27484,6 +27486,7 @@ $(document).ready(function(){
         $("ul.language-dropdown").slideUp("slow");
     });
 })
+
 
 function getLangTranslations() {
     const lang = localStorage.getItem('portalLanguage') || 'en';

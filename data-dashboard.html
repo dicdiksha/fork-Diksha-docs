@@ -57,7 +57,7 @@ title: Data-dashboard
         border-collapse: collapse;
         border-radius: 15px;
     }
-    .download-overall{
+    .download-overall, .download-statewise, .download-creation, .download-course{
         color: #0C4E9E;
         font-size: 14px;
         font-weight: bold;
@@ -107,18 +107,20 @@ title: Data-dashboard
         color: #202124;
         font-size: 33px;
     }
-    .usage-metrics-content .dk-card__selection  select {
+    .usage-metrics-content select,
+    .section-courseMetrics select {
       font-size: 14px;
-    padding: 8px 5px;
-    font-weight: bold;
-    color: #0C4E9E;
+      padding: 8px 5px;
+      font-weight: bold;
+      color: #0C4E9E;
     }
-    .usage-metrics-content .country-dropdown select {
-    font-size: 12px;
-    background-color: transparent;
-    border: 1px solid #0C4E9E;
-    padding: 8px 5px;
-}
+    .usage-metrics-content .country-dropdown select,
+    .section-courseMetrics  .country-dropdown select{
+      font-size: 12px;
+      background-color: transparent;
+      border: 1px solid #0C4E9E;
+      padding: 8px 5px;
+    }
 .matrix-data-details {
     margin: 39px 0;
 }
@@ -130,6 +132,29 @@ title: Data-dashboard
  }
  .usage-metrics-content .country-dropdown select {
   font-size: 15px !important;
+ }
+ .download-report-updated{
+  display: flex;
+  justify-content: end;
+ }
+ .download-report-updated button {
+  font-family: 'Noto Sans';
+    margin: 0 8px;
+    border: 1px solid #0C4E9E;
+    font-size: 16px;
+    padding: 3px 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #0C4E9E;
+    font-weight: bold;
+
+ }
+
+ .download-report-updated button:hover {
+  background-color: #004e9d;
+    box-shadow: none;
+    color: #fff;
+
  }
 </style>
     
@@ -155,8 +180,11 @@ title: Data-dashboard
           </div>
           <div class="col-sm-6">
               <div class="download-report">
-                  <!-- <button type="button"
-                  class="sb-btn sb-btn-normal sb-btn-radius px-16 sb-btn-secondary sb-btn-explore-diksha datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button> -->
+                <div class="download-report-updated">
+                  <button type="button"
+                  class=" datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button>
+                </div>
+                 
               </div>
           </div>
       </div>

@@ -44,20 +44,61 @@
     background:inherit;
     border-radius: 0;
 }
-.language-text {
-    position: relative;
-    width: 75px;
+
+.brand-top-header .dropdown-wrapper .dropdown-wrapper-div{
     display: flex;
+} 
+.brand-top-header .dropdown-wrapper .dropdown-wrapper-div span {
+    margin: 0 5px;
 }
-.language-text:after {
-    content: "\8744";
+.brand-top-header .dropdown-wrapper .language-text {
+    /* position: relative;
+     width: 75px;  */
+    display: flex;     
+    cursor: pointer;
+
+ } 
+ .brand-top-header .dropdown-wrapper .language-text:after {
+    content: "";
+    background-image: url(../images/dropdown.png);
+    background-repeat: no-repeat;
+    height: 12px;
+    width: 9px;
+    margin-left: 5px;
+    margin-top: 7px;
+}
+.brand-top-header .dropdown-wrapper{
+    position: relative;
+}
+.brand-top-header .dropdown-wrapper ul {
     position: absolute;
-    right: 16px;
-}
-.main-top-header .navbar-brand:focus, .navbar-brand:hover{
-    /* margin: 0; */
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #000;
+    z-index: 9999;
+    top: 33px;
+    width: 145px;
+    border-radius: 8px;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    display: none;
 }
 
+.brand-top-header .dropdown-wrapper .language-dropdown li{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid #0c4e9e26;
+    cursor: pointer;
+    width: 100%;
+    color: #0C4E9E
+}
+
+.brand-top-header .dropdown-wrapper .language-dropdown li:last-child {
+    border-bottom: 0px ;
+}
 .fontResize-container{
     display: flex;
 }
@@ -65,6 +106,15 @@
 .top-header .header-content-right {
     display: flex;
     justify-content: end;
+}
+
+
+.dropdown-wrapper-lang {
+    display: flex;
+}
+
+.dropdown-wrapper-lang span {
+    margin: 0 5px;
 }
 /* For Desktop mac View */
 @media screen and (max-width: 1024px) {
@@ -203,13 +253,13 @@
                         <div
                         class="sb-g-col-xs-12 sb-g-col-md-2 sb-g-col-lg-2 sb-g-col-xl-2 sb-g-col-xxl-3 sb-g-col-xxxl-4 d-flex dropdown-wrapper">
                         <div class="dropdown-wrapper-div" tabindex="0">
-                            <div class="language-text">English 
+                            <span> <img src="../images/globe.png" alt="language-icon"> </span>
+                            <span class="language-text">English 
                                 <!-- <span> <img src="../images/Filled.png"></span> -->
-                            </div>
-                            
+                            </span>
                         </div>
                         <ul class="language-dropdown">
-                            <!-- <li tabindex="0" role="img" title="English" data-value="en" lang="en" class="active">English<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                            <li tabindex="0" role="img" title="English" data-value="en" lang="en" class="active">English<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
                             <li tabindex="0" role="img" title="hindi" data-value="hi" lang="hi">हिंदी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
                             <li tabindex="0" role="img" title="kannada" data-value="kn" lang="kn">ಕನ್ನಡ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
                             <li tabindex="0" role="img" title="marathi" data-value="mr" lang="mr">मराठी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
@@ -220,7 +270,7 @@
                             <li tabindex="0" role="img" title="assamese" data-value="as" lang="as">অসমীয়া<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
                             <li tabindex="0" role="img" title="odia" data-value="or" lang="or">ଓଡ଼ିଆ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
                             <li tabindex="0" role="img" title="gujrati" data-value="gu" lang="gu">ગુજરાતી<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                            <li tabindex="0" role="img" title="punjabi" data-value="pa" lang="pa">ਪੰਜਾਬੀ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li> -->
+                            <li tabindex="0" role="img" title="punjabi" data-value="pa" lang="pa">ਪੰਜਾਬੀ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
                         </ul>
                     </div>
                     </li>

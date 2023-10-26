@@ -1316,9 +1316,11 @@ const languageTranslations = {
 
 $(document).ready(function(){
     let language = localStorage.getItem('portalLanguage');
+    console.log(language)
     (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
     $(".dropdown-wrapper-div").click(function(){
+        alert("click");
         if(($(this).hasClass("open"))){
             $(this).removeClass("open");
             $("i.dropdown").removeClass("rotate");
@@ -1338,6 +1340,7 @@ $(document).ready(function(){
         $("ul.language-dropdown").slideUp("slow");
     });
 })
+
 
 function getLangTranslations() {
     const lang = localStorage.getItem('portalLanguage') || 'en';
