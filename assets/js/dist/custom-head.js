@@ -5936,8 +5936,7 @@ $(document).ready(function(){
     console.log(language)
     (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
-    $(".dropdown-wrapper-div").click(function(){
-        alert("click");
+    $('.dropdown-wrapper-div').click(function(){
         if(($(this).hasClass("open"))){
             $(this).removeClass("open");
             $("i.dropdown").removeClass("rotate");

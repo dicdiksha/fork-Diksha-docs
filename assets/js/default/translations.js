@@ -1319,13 +1319,16 @@ $(document).ready(function(){
     console.log(language)
     (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
-    $(".dropdown-wrapper-div").click(function(){
-        alert("click");
+    $('.dropdown-wrapper-div').click(function(){
+        console.log("click----dropdown-wrapper-div ")
+
         if(($(this).hasClass("open"))){
+            console.log("open");
             $(this).removeClass("open");
             $("i.dropdown").removeClass("rotate");
             $("ul.language-dropdown").slideUp("slow");
         }else{
+            console.log("close")
             $(this).addClass("open");
             $("i.dropdown").addClass("rotate");
             $("ul.language-dropdown").slideDown( "slow" );
