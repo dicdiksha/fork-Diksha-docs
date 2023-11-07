@@ -39,8 +39,8 @@ img {
 }
 
 .about-section p {
-    color: #28306d;
-    font-weight: 400;
+    color: #4e4d4c;
+    font-weight: 300;
     line-height: 24px;
     font-size: 16px;
     text-align: justify;
@@ -166,8 +166,6 @@ label.accordion-label.yellow {
     color: #fff;
     width: 100%;
     font-weight: bold;
-    background-color: transparent;
-    border: 0px;
 }
 
 .new-drop-down .dropdown li ul {
@@ -180,8 +178,8 @@ label.accordion-label.yellow {
     line-height: normal;
     width: 100%;
     z-index: 99999999;
-    background-color: #28306d;
-   
+    background-color: #17a2b8;
+    /* background-color: #333; */
 }
 
 .new-drop-down .dropdown li ul li a {
@@ -226,7 +224,7 @@ ul.header-menu {
     padding: 0;
     margin: 0;
     display: flex;
-    background-color: #28306d;
+    background-color: #17a2b8;
     padding: 0 50px;
     justify-content: center;
 }
