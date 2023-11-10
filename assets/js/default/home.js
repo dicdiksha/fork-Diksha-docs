@@ -337,7 +337,7 @@ $(document).ready(function () {
             $(".state-ut-text").show();
         }
 
-        window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+        // window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
     }
 
     function generateTopoGraphMap(use) {
