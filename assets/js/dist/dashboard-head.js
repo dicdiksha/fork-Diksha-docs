@@ -24625,131 +24625,163 @@ $(document).ready(function () {
 
   const states = [{
     label: "Andaman & Nicobar Islands",
-    value: "an"
+    value: "an",
+    tenantPageExist: false
   },
   {
-    label: "Arunachal Pradesh",
-    value: "ar"
+    label: "Arunachal Pradesh", 
+    value: "ar",
+    tenantPageExist: false
   },
   {
     label: "Andhra Pradesh",
-    value: "apekx"
+    value: "apekx",
+    tenantPageExist: true
   },
   {
     label: "Assam",
-    value: "as"
+    value: "as",
+    tenantPageExist: true
   },
   {
     label: "Bihar",
-    value: "br"
+    value: "br",
+    tenantPageExist: true
   },
   {
     label: "Chhattisgarh",
-    value: "cg"
+    value: "cg",
+    tenantPageExist: true
   },
   {
     label: "Chandigarh",
-    value: "ch"
+    value: "ch",
+    tenantPageExist: false
   },
   {
     label: "Delhi",
-    value: "dl"
+    value: "dl",
+    tenantPageExist: true
   },
   {
     label: "Goa",
-    value: "ga"
+    value: "ga",
+    tenantPageExist: true
   },
   {
     label: "Gujarat",
-    value: "gj"
+    value: "gj",
+    tenantPageExist: true
   },
   {
     label: "Himachal Pradesh",
-    value: "hp"
+    value: "hp",
+    tenantPageExist: false
   },
   {
     label: "Haryana",
-    value: "hr"
+    value: "hr",
+    tenantPageExist: true
   },
   {
     label: "Jharkhand",
-    value: "jh"
+    value: "jh",
+    tenantPageExist: true
   },
   {
     label: "Jammu And Kashmir",
-    value: "jk"
+    value: "jk",
+    tenantPageExist: true
   },
   {
     label: "Karnataka",
-    value: "ka"
+    value: "ka",
+    tenantPageExist: true
   },
   {
     label: "Kerala",
-    value: "kl"
+    value: "kl",
+    tenantPageExist: false
   },
   {
     label: "Maharashtra",
-    value: "mitra"
+    value: "mitra",
+    tenantPageExist: true
   },
   {
     label: "Meghalaya",
-    value: "ml"
+    value: "ml",
+    tenantPageExist: true
   },
   {
     label: "Manipur",
-    value: "mn"
+    value: "mn",
+    tenantPageExist: true
   },
   {
     label: "Madhya Pradesh",
-    value: "mp"
+    value: "mp",
+    tenantPageExist: true
   },
   {
     label: "Mizoram",
-    value: "mz"
+    value: "mz",
+    tenantPageExist: true
   },
   {
     label: "Nagaland",
-    value: "nl"
+    value: "nl",
+    tenantPageExist: true
   },
   {
     label: "Odisha",
-    value: "od"
+    value: "od",
+    tenantPageExist: true
   },
   {
     label: "Punjab",
-    value: "pb"
+    value: "pb",
+    tenantPageExist: true
   },
   {
     label: "Pondicherry",
-    value: "py"
+    value: "py",
+    tenantPageExist: false
   },
   {
     label: "Rajasthan",
-    value: "rj"
+    value: "rj",
+    tenantPageExist: true
   },
   {
     label: "Sikkim",
-    value: "sk"
+    value: "sk",
+    tenantPageExist: true
   },
   {
     label: "Tamil Nadu",
-    value: "tn"
+    value: "tn",
+    tenantPageExist: true
   },
   {
     label: "Tripura",
-    value: "tp"
+    value: "tp",
+    tenantPageExist: false
   },
   {
     label: "Telangana",
-    value: "ts"
+    value: "ts",
+    tenantPageExist: true
   },
   {
     label: "Uttarakhand",
-    value: "uk"
+    value: "uk",
+    tenantPageExist: false
   },
   {
     label: "Uttar Pradesh",
-    value: "up"
+    value: "up",
+    tenantPageExist: true
   }];
 
   states.forEach(element => {
@@ -24785,7 +24817,12 @@ $(document).ready(function () {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
     window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-    window.open('/' + slug + '/explore', "_self");
+    let pageExists =states.some(eachVal=>eachVal.value== slug && eachVal.tenantPageExist);
+    if(pageExists) {
+      window.open('/' + slug , "_self");
+    } else{
+      window.open('/' + slug + '/explore' , "_self");
+    }
     return false;
   });
 
@@ -24795,7 +24832,7 @@ $(document).ready(function () {
       let  name = e.currentTarget.getAttribute('data-name');
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
-        window.open('/' + slug + '/exploren/1?publisher=NCERT&selectedTab=textbook', "_self");
+        window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
       } else {
         window.open('/' + slug + '/explore', "_self");
       }
@@ -27600,11 +27637,15 @@ $(document).ready(function(){
     (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
     $('.dropdown-wrapper-div').click(function(){
+        console.log("click----dropdown-wrapper-div ")
+
         if(($(this).hasClass("open"))){
+            console.log("open");
             $(this).removeClass("open");
             $("i.dropdown").removeClass("rotate");
             $("ul.language-dropdown").slideUp("slow");
         }else{
+            console.log("close")
             $(this).addClass("open");
             $("i.dropdown").addClass("rotate");
             $("ul.language-dropdown").slideDown( "slow" );
