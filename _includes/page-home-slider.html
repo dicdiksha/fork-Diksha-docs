@@ -2,14 +2,20 @@
     <div class="carousel-inner" title="banner-carousel">
         <div class="carousel-item carousel3-bg active" role="option">
             <img loading="lazy" decoding="async" class="carousel-img-height" 
+                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/imgs/vivo-ignite-banner.jpeg"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/imgs/vivo-ignite-banner.jpeg'"
+                alt="vivoIgnite award">
+        </div>
+        <div class="carousel-item carousel3-bg " role="option">
+            <img loading="lazy" decoding="async" class="carousel-img-height" 
                 src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/imgs/Banner_Swachhata_Hi_Seva-english.jpg"
-                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/Banner_Swachhata_Hi_Seva-english.jpg'"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/imgs/Banner_Swachhata_Hi_Seva-english.jpg'"
                 alt="Banner Swachhata Hi Seva english">
         </div>
         <div class="carousel-item carousel3-bg " role="option">
             <img loading="lazy" decoding="async" class="carousel-img-height" 
                 src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/imgs/Banner_Swachhata_Hi_Seva-hindi.jpg"
-                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/Banner_Swachhata_Hi_Seva-hindi.jpg'"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/imgs/Banner_Swachhata_Hi_Seva-hindi.jpg'"
                 alt="Banner Swachhata Hi Seva hindi">
         </div>
         <div class="carousel-item carousel3-bg " role="option">
@@ -141,26 +147,28 @@
     </div>
     <ol class="carousel-indicators">
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+        aria-controls="carousel-items" aria-label="vivoIgnite award"></li>
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page"
         aria-controls="carousel-items" aria-label="Banner Swachhata Hi Seva english"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
-        aria-controls="carousel-items" aria-label="Banner Swachhata Hi Seva hindi"></li>
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="2" aria-current="page" 
+        aria-controls="carousel-items" aria-label="Banner Swachhata Hi Seva hindi"></li>
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="3" aria-current="page" 
             aria-controls="carousel-items" aria-label="Fundational Literacy and Numeracy"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="3" aria-current="page"
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="4" aria-current="page"
             aria-controls="carousel-items" aria-label="CWSN"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="4" aria-current="page" 
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="5" aria-current="page" 
             aria-controls="carousel-items" aria-label="jadoo pitara"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="5" aria-current="page"
-            aria-controls="carousel-items" aria-label="G 20"></li>
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="6" aria-current="page"
-            aria-controls="carousel-items" aria-label="Adult Education and Life Long Learnings"></li>
+            aria-controls="carousel-items" aria-label="G 20"></li>
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="7" aria-current="page"
-            aria-controls="carousel-items" aria-label="DIKSHA"></li>
+            aria-controls="carousel-items" aria-label="Adult Education and Life Long Learnings"></li>
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="8" aria-current="page"
-            aria-controls="carousel-items" aria-label="Basha Sangam"></li>
+            aria-controls="carousel-items" aria-label="DIKSHA"></li>
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="9" aria-current="page"
-            aria-controls="carousel-items" aria-label="vocational-education"></li>
+            aria-controls="carousel-items" aria-label="Basha Sangam"></li>
         <li data-target="#homePageSlide" tabindex="0" data-slide-to="10" aria-current="page"
+            aria-controls="carousel-items" aria-label="vocational-education"></li>
+        <li data-target="#homePageSlide" tabindex="0" data-slide-to="11" aria-current="page"
             aria-controls="carousel-items" aria-label="virtual lab landing page on DIKSHA"></li>
             <!-- <li data-target="#homePageSlide" tabindex="0" data-slide-to="9" aria-current="page"
             aria-controls="carousel-items" aria-label="Vidya Amrit Mahotsav"></li> -->

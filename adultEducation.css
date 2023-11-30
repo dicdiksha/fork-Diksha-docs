@@ -333,13 +333,21 @@ hr{
 }
 
 .basic_education_details{
-    display: flex;
+    /* display: flex; */
 }
+#headingOne, #headingTwo, #headingThree{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .levelHeading {
     display: flex;
     flex-direction: column;
-    font-weight: bold;
+    /* font-weight: bold; */
     cursor: pointer;
+    text-align: left;
+    margin-left: 12px;
 }
 .class-option-data{
     text-align: left;
