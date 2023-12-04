@@ -340,6 +340,9 @@ hr{
     justify-content: left;
     align-items: center;
 }
+#collapseOne, #collapseTwo, #collapseThree{
+    padding-left: 27px;
+}
 
 .levelHeading {
     display: flex;
