@@ -186,7 +186,7 @@
 }
 .intro::after {
   content: ".";
-  background-image: url(./../img/footer-bg.svg);
+  /* background-image: url(./../img/footer-bg.svg); */
   background-color: transparent;
   background-size: cover;
   width: 100%;
