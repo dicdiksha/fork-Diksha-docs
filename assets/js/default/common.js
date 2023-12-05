@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  let origin = '';s
+  let origin = '';
   if (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') {
     origin = window.origin;
   } else {

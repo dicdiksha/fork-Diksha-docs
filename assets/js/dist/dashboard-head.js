@@ -24392,7 +24392,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 $(document).ready(function () {
 
-  let origin = '';s
+  let origin = '';
   if (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') {
     origin = window.origin;
   } else {
@@ -26239,7 +26239,7 @@ const languageTranslations = {
         "LearningLessons": "Learning sessions",
         "minutes": "Minutes",
         "TermsofUse": "Terms and Policies",
-        "needHelp": "Need Help",
+        "needHelp": "DIKSHA Help",
         "copyright": "© 2021, DIKSHA",
         "skipMainContent": "Skip to Main Content",
         "sitemap": "Site Map",
