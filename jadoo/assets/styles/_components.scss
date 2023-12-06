@@ -20,12 +20,12 @@
     }
 }
 .primary_btn {
-padding: 1rem 2.5rem;
+padding: 0.875rem 2rem !important;
 background:var(--btn-primary-bg);
 border-radius: 2.5rem;
 border: none;
 font-weight: bold;
-font-size: 1rem;
+font-size: 0.875rem !important;
 color: var(--btn-primary-bg-contrast);
 text-transform: uppercase;
 cursor: pointer;
