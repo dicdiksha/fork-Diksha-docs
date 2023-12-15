@@ -23,7 +23,7 @@ There are 3 tabs in the Improvement Project Template- Instructions, Project Uplo
       <td>User with Content Creator role</td>
   </tr>
   <tr><td>What is needed?</td>
-      <td>Editable copy of the Template for <a href="https://docs.google.com/spreadsheets/d/10CyZBbIpXl0MzWCw7PtgRCw1CxkrHNYV-gMAcEU7b0E/edit?usp=sharing" target="_blank">
+      <td>Editable copy of the Template for <a href="https://docs.google.com/spreadsheets/d/1YnWTcHrmvDYVedGktKr2V25G7qBNUmYjwk1huHwGwNc/edit#gid=65026616" target="_blank">
       Creating Improvement Project</a></td>
   </tr>
 </table>
