@@ -4436,12 +4436,19 @@ $(document).ready(function () {
   $(".nonstate-explore").click(async(e) =>{
     e.preventDefault();
       let slug =e.currentTarget.getAttribute('data-slug');
+      console.log(slug);
       let  name = e.currentTarget.getAttribute('data-name');
-      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+      console.log(name)
+      // window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
-        window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
-      } else {
-        window.open('/' + slug + '/explore', "_self");
+        // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
+        window.open('/' + slug,"_self");
+      } else if (name === "CBSE"){
+        window.open('/' + slug ,"_self")
+      } else if (name === "NIOS"){
+        window.open('/' + slug ,"_self")
+      }else {
+        window.open('/' + slug ,"_self");
       }
       return false;
   });
