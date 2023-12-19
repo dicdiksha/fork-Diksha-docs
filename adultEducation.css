@@ -313,6 +313,75 @@ hr{
     margin-top: 32rem;
 }
 
+/* Start new CSS*/
+.major-area-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    /* justify-content: space-between; */
+}
+.education-details {
+    /* margin-right: -50%; */
+    /* margin-left: -50%; */
+    /* background: #fff; */
+    /* top: 100%; */
+    /* z-index: 9999; */
+    /* text-align: center; */
+    /* padding: 20px; */
+    width: 100%;
+   
+}
+
+.basic_education_details{
+    /* display: flex; */
+}
+#headingOne, #headingTwo, #headingThree{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#collapseOne, #collapseTwo, #collapseThree{
+    padding-left: 27px;
+}
+
+.levelHeading {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 12px;
+}
+.class-option-data{
+    text-align: left;
+    display: flex;
+    padding: 4px 0;
+}
+
+.class-option-data a {
+    line-height: 1.2;
+    color: #000;
+    text-decoration: none;
+}
+.class-option-data .fas{
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.level-data {
+    padding: 0 5px;
+    /* width: 150px; */
+
+}
+.img-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 273px;
+}
+/*End new CSS*/
 @media only screen and (min-width: 769px){
     .fln-footer-section img {
         width: 75%;
