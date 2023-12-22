@@ -1,7 +1,10 @@
 <style>
 .homepage-slides .carousel-indicators {
     width:100%;
+    bottom: 1rem !important;
 }
+
+
 /* .homepage-heading {
     display: flex;
     font-size: 18px;
@@ -12,6 +15,28 @@
     border-bottom: 1px solid #fff;
     font-weight: bold;
 } */
+
+.homepage-slides .carousel-indicators li {
+    /* width: .4375rem;
+    height: .4375rem; */
+    background: var(--rc-806F45);
+    margin-right: .6875rem;
+    cursor: pointer;
+    height: 5px;
+    width: 13px;
+    border: none;
+}
+.homepage-slides .carousel-indicators li,.homepage-slides .carousel-indicators .active {
+    border-radius: 36%
+}
+
+.homepage-slides .carousel-indicators .active {
+    /* width: .75rem;
+    height: .75rem; */
+    height: 5px;
+    width: 13px;
+    background-color:#8C8C8C
+}
 </style>
 
 <div id="homePageSlide" class="carousel homepage-slides" data-ride="carousel">

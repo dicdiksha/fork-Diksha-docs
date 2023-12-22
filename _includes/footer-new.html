@@ -15,7 +15,7 @@
 
     }
     .footer .bottom-footer{
-        background-color: #00034F;
+        background-color: #20242A;
         color: #fff;
         /* padding: 10px; */
         font-size: 14px;
@@ -128,7 +128,7 @@ align-items: center;
 }
 .diksha-social-media {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 20px 0;
 }
 
@@ -159,7 +159,7 @@ align-items: center;
         <div class="container">
             <div class="container-box">
                 <div  class="footer-details">
-                    <div class="row">
+                    <div class="row d-flex">
                         <div class="col-md-3">
                             <div class="diksha-logo">
                                 <span class="footer-logo">
@@ -168,9 +168,16 @@ align-items: center;
                                 </span>
                                 <!-- <span>Digital Infrastucture For <br> Knoeledge Sharing</span> -->
                                 <span class="capitalize-text">{{ site.data.text.footerLogoDiksha}}</span>
+                                <div class="diksha-social-media">
+                                    <span><img src="../images/link_in.png" alt=""></span>
+                                    <span><img src="../images/facebook.png" alt=""></span>
+                                    <span><img src="../images/instagram.png" alt=""></span>
+                                    <span><img src="../images/youtube.png" alt=""></span>
+                                    <!-- <span><img src="../images/twitter.png" alt=""></span> -->
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-flex align-items-center justify-content-center">
                             <div class="diksha-links-pages">
                                 <div class="footer-links">
                                     <ul>
@@ -185,13 +192,7 @@ align-items: center;
                                     {% endfor %}
                                     </ul>
                                 </div>
-                                <div class="diksha-social-media">
-                                    <span><img src="../images/link_in.png" alt=""></span>
-                                    <span><img src="../images/facebook.png" alt=""></span>
-                                    <span><img src="../images/instagram.png" alt=""></span>
-                                    <span><img src="../images/youtube.png" alt=""></span>
-                                    <span><img src="../images/twitter.png" alt=""></span>
-                                </div>
+                               
                                 
                             </div>
                            
@@ -200,11 +201,11 @@ align-items: center;
                             <div class="info"> 
                                 <div class="logo-ngerd"> 
                                     <span>
-                                        <img src="../images/negd.png">
+                                        <img src="../assets/homepage/footer-logo.png">
                                     </span>
-                                    <span> 
+                                    <!-- <span> 
                                          <div class="icons"><img src="../images/Digital-India.png"></div>
-                                    </span>
+                                    </span> -->
                                 </div>
                            
                             <span>

@@ -1,17 +1,23 @@
 <style>
+  .title-diksha-color{
+    color:#024F9D;
+  }
     .explore-study {
-      margin: 50px 0;
+      padding: 50px 0;
+      background-color: #F8F8F8
     }
     .head-title {
+    font-family: 'Outfit', sans-serif;
     display: flex;
     justify-content: center;
     font-size: 40px;
-    margin: 27px;
+    margin-bottom: 50px;
     font-weight: 600;
     }
 
     .head-title .text {
       position: relative;
+      font-family: 'Outfit', sans-serif;
     }
 
     .head-title .text .bottom-image{
@@ -36,36 +42,75 @@
       box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
       background-color: #fff;
       border-radius: 16px;
-      align-items: center;
-      justify-content: center;
-      /* margin: 20px 0px; */
-      padding: 10px 5px;
+      /* align-items: center; */
       height: 100%;
+      border-radius: 16px;
+      flex-direction: column;
+      font-family: 'Lato', sans-serif;
+      overflow: hidden;
+      justify-content: space-between;
     }
 
     .dk-browser-by-board .item .item-img img {
       /* height: 72px; */
-      width: 72px;
+      /* width: 72px;
       margin: 5px;
-      padding: 5px;
+      padding: 5px; */
     }
     .dk-browser-by-board .item .item-desc{
       display: flex;
       flex-direction: column;
-      height: 100%;
+      /* height: 100%; */
       justify-content: flex-start;
     }
-    .dk-browser-by-board .item .item-desc .item-desc-title{
+    .dk-browser-by-board .item .img-title .item-desc-title{
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 6px;
+    padding-left: 10px;
     }
-    .dk-browser-by-board .item {
-      border-radius: 16px;
-      /* margin: 20px 10px; */
+    .dk-browser-by-board .item .item-desc .item-desc-detail{
+      /* padding: 0 25px; */
+      padding-left: 20px;
+      padding-right: 35px;
     }
 
+    .dk-browser-by-board .item .img-title {
+      display: flex;
+      align-items: center;
+      /* justify-content: space-between; */
+      width: 100%;
+      font-size: 20px;
+      font-weight: 700;
+      padding: 20px;
+    }
+
+
+    .dk-browser-by-board .item .img-title .item-desc-title {
+      /* justify-content: center; */
+      align-items: center;
+      display: flex;
+    }
+
+    .dk-browser-by-board .item  .item-action{
+      background-color: #024F9D;
+      padding: 10px;
+      color: #FFFFFF;
+      width: 100%;
+      text-align: center;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+
+    .dk-browser-by-board .item  .state-dropdown select {
+      width: 181px;
+      border-color: #33333382 !important;
+      padding: 4px;
+      border-radius: 6px;
+      color: #434141;
+      font-weight: 500;
+    }
     .dk-browser-by-board .items .state-items{
       display: flex;
       flex-direction: column;
@@ -148,6 +193,7 @@
     } 
     .dk-browser-by-board a {
       margin: 0;
+      text-decoration: none;
     }
 
     .state-boards :focus-visible {
@@ -158,26 +204,32 @@
 </style>
 <div class="explore-study">
   <div class="head-title">
-    <span class="text">Explore Our Study Material<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
+    <span class="text">View <span class="title-diksha-color">DIKSHA's</span>  world of open digital content </span>
   </div>
   <div class="container">
     <div class="container-box">
-      <h2 class="category_title">Browser By Board</h2>
+      <!-- <h2 class="category_title">Browser By Board</h2> -->
       <div class="row dk-browser-by-board">  
-        {% for board in site.data.boards.items %}
+        {% for board in site.data.boards-new.items %}
         <div class="col-md-3 col-lg-3 col-sm-12 my-sm-5">
-            <a  href="#"  title="{{board.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
+            <a  href="#"  title="{{board-new.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
                   data-translate-attr="{board-btntitle: ['title']}">
               <div class="item" >
-                <div class="item-img">
-                    <img loading="lazy" decoding="async" src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/{{board.thumbnail}}"
-                            onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
-                            alt="{{board.title}} logo">
+                <div class="img-title">
+                    <div class="item-img">
+                      <img loading="lazy" decoding="async" src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/{{board.thumbnail}}"
+                              onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
+                              alt="{{board.title}} logo">
+                  </div>
+                  <div class="item-desc-title">{{board.title}}</div>
                 </div>
                 <div class="item-desc">
-                  <div class="item-desc-title">{{board.title}}</div>
                   <div class="item-desc-detail">{{board.description}}</div>
-                </div>  
+                </div> 
+                <div class="item-action">
+                  <div class="view_more"> View More <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
+                  </div>
+                </div> 
               </div> 
             </a>    
 
@@ -186,34 +238,38 @@
           
         <div class="col-md-3 col-lg-3  col-sm-12">
             <div class="item">
-                <div class="item-img">
-                    <!-- <div class="group-images">
-                        <img class="img state_1" src="/images/item-state1.png" alt="">
-                        <img class="img state_2" src="/images/item-state2.png" alt="">
-                        <img class="img state_3" src="/images/item-state3.png" alt="">
-                        <span class="text state_4">22+ States</span>
-                    </div> -->
-                    <img src="/assets/diksha-mission/ut-board.png" alt="UT-Borad">
+                <div class="img-title">
+                    <div class="item-img">
+                      <img src="/assets/homepage/all-state.png" alt="UT-Borad">
+                    </div>
+                    <div class="title-dropdown">
+                        <div class="item-desc-title">{{ site.data.text.stateboard }}</div>
+                        <div class="state-dropdown">
+                          <a href="#" class="state-explore">
+                            <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
+                              <option value="Select State" selected>Select State</option>
+                            </select>
+                          </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="item-desc">
-                  <div class="item-desc-title">{{ site.data.text.stateboard }}</div>
                   <div class="item-desc-detail">{{ site.data.text.stateboardDescription }}</div>
                   <div class="items-deopdown ">
-                    <a href="#" class="state-explore">
-                      <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
-                        <option value="Select State" selected>Select State</option>
-                      </select>
-                    </a>
                   </div>
                 </div>
-              </div>
+                <div class="item-action">
+                  <div class="view_more"> View More <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
+                  </div>
+                </div> 
             </div>
         </div>
-      </div> 
-    </div>
+      </div>
+    </div> 
   </div>
-  
 </div>
+  
+
 
 
 
