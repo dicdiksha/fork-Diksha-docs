@@ -440,7 +440,7 @@ $(document).ready(function () {
       console.log(slug);
       let  name = e.currentTarget.getAttribute('data-name');
       console.log(name)
-      // window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
         // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
         window.open('/' + slug,"_self");
