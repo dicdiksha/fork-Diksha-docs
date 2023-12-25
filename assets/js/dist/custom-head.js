@@ -3997,6 +3997,22 @@ define(function () {
         throw new Error('unknown environment');
     }
 })());
+/*=====================focus area slider==============*/
+
+$(document).ready(function(){  
+  $('#myCarousel .carousel-item').each(function () {
+    // alert("Hello");
+    var minPerSlide = 4;
+    var next = $(this).next();
+    if (!next.length) {
+    next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+    
+    for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
+})
+
+
 $(document).ready(function () {
 
   let origin = '';
@@ -4439,7 +4455,7 @@ $(document).ready(function () {
       console.log(slug);
       let  name = e.currentTarget.getAttribute('data-name');
       console.log(name)
-      // window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
         // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
         window.open('/' + slug,"_self");
@@ -4478,6 +4494,7 @@ $(document).ready(function () {
   // });
 
 });
+
 
 /******************************************************************* */
 var x = window.matchMedia("(max-width: 992px)");
@@ -4554,6 +4571,8 @@ $(window).resize(function () {
     }
   }
 });
+
+
 
 /* font resizer */
 var min = 12;

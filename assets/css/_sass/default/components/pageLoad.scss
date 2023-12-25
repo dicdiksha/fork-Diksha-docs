@@ -35,14 +35,23 @@
 .homepage-slides {
     height: 100%
 }
+.focus-area{
+    width: 100%;
+}
 
 .homepage-slides .carousel-inner {
     height: 100%
 }
+// .focus-area .carousel-inner {
+//     height: 100%
+// }
 
 .homepage-slides .carousel-inner .carousel-item {
     height: 100%
 }
+// .focus-area .carousel-inner .carousel-item {
+//     // width: 25%
+// }
 
 :root {
     --blue: #007bff;
