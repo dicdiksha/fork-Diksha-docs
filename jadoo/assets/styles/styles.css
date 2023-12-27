@@ -125,12 +125,16 @@
   background-size: cover;
   margin-top: -35.1875rem;
 }
-@media (max-width: 1024px) {
-  .footer-container {
-    background-position: right;
-  }
-}
 
+
+#homeVideo {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+}
 .home_footer {
   position: absolute;
   bottom: 0;
@@ -179,10 +183,14 @@
 .intro {
   width: 100%;
   height: 100vh;
-  background-color: var(--surface-bg); /* Used if the image is unavailable */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-color: var(--surface-bg);  */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-image: url(../img/jadui-pitara-bg.jpg);
+  background-repeat: round;
+ 
+
 }
 .intro::after {
   content: ".";
@@ -198,13 +206,9 @@
   background-repeat: no-repeat;
   right: 0;
   background-position: 0 bottom;
-  background-size: 110%;
+  /* background-size: 110%; */
 }
-@media (max-width: 767.98px) {
-  .intro::after {
-    background-size: 130%;
-  }
-}
+
 .intro__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,11 +224,7 @@
   display: flex;
   align-items: center;
 }
-@media (max-width: 767.98px) {
-  .intro__content {
-    height: auto;
-  }
-}
+
 .intro__content p {
   font-size: 0.875rem;
   /* color: #fff; */
@@ -235,13 +235,7 @@
 .intro__img {
   max-width: 100%;
 }
-@media (max-width: 767.98px) {
-  .intro__img {
-    position: relative;
-    z-index: 2;
-    margin-top: -11.25rem;
-  }
-}
+
 .intro__logo img {
   width: 9.375rem;
 }
@@ -412,26 +406,8 @@ video {
   pointer-events: none;
 }
 
-#homeVideo {
-  position: fixed;
-  z-index: 1;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  left: 0;
-}
-@media (min-aspect-ratio: 16/9) {
-  #homeVideo {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  #homeVideo {
-    width: auto;
-    height: 100%;
-  }
-}
+
+
 
 :root {
   --primary-theme:#7132BD;
@@ -458,9 +434,11 @@ html, body {
 }
 
 body {
-  background-color: var(--surface-bg);
+  /* background-color: var(--surface-bg); */
+  background-image: url(../img/jadui-pitara-bg.jpg);
   font-family: "MuseoModerno", cursive, Arial, Helvetica, sans-serif;
   font-display: auto;
+  background-repeat: round;
 }
 
 .primary-font {
@@ -475,11 +453,6 @@ p {
   padding-bottom: 29.5625rem;
 }
 
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 95%;
-  }
-}
 .explore-page {
   background-image: url(./../img/2ndpage-bubbles.svg); /* The image used */
   background-color: var(--surface-bg); /* Used if the image is unavailable */
@@ -487,3 +460,84 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
 }/*# sourceMappingURL=styles.css.map */
+
+.pitara-video-desktop {
+  height: 100% !important;
+  /* background-image: url(../img/jadui-pitara-bg.jpg); */
+  width: 100%;
+  cursor: pointer;
+  position: fixed;
+}
+.pitara-video-mobile{
+  display: none;
+}
+
+.jadui-pitara-section img{
+  height: 100%;
+  width: 100%;
+    
+}
+
+.jadui-pitara-section .card-item{
+
+  margin: 20px 10px;
+  border: 18px solid #fff;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .footer-container {
+    background-position: right;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro::after {
+    /* background-size: 130%; */
+  }
+}
+@media (max-width: 767.98px) {
+  .intro__content {
+    height: auto;
+  }
+}
+@media (max-width: 767.98px) {
+  .intro__img {
+    position: relative;
+    z-index: 2;
+    margin-top: -11.25rem;
+  }
+}
+@media (min-aspect-ratio: 16/9) {
+  #homeVideo {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  #homeVideo {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 767px) {
+  .pitara-video-desktop {
+    /* height: 100% !important; */
+    /* background-image: url(../img/jadui-pitara-bg.jpg); */
+    display: none;
+  
+  }
+  .pitara-video-mobile{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+  }
+ 
+}
