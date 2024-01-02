@@ -4287,6 +4287,11 @@ $(document).ready(function () {
     tenantPageExist: true
   },
   {
+    label: "Dadra And Nagar Haveli And Daman And Diu",
+    value: "DD",
+    tenantPageExist: false
+  },
+  {
     label: "Goa",
     value: "ga",
     tenantPageExist: true
@@ -4324,6 +4329,16 @@ $(document).ready(function () {
   {
     label: "Kerala",
     value: "kl",
+    tenantPageExist: false
+  },
+  {
+    label: "Ladkah",
+    value: "ld",
+    tenantPageExist: false
+  },
+  {
+    label: "Lakshdweep",
+    value: "lk",
     tenantPageExist: false
   },
   {
@@ -4452,9 +4467,7 @@ $(document).ready(function () {
   $(".nonstate-explore").click(async(e) =>{
     e.preventDefault();
       let slug =e.currentTarget.getAttribute('data-slug');
-      console.log(slug);
       let  name = e.currentTarget.getAttribute('data-name');
-      console.log(name)
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
         // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
