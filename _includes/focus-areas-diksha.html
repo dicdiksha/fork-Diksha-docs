@@ -6,7 +6,7 @@
     .focus-areas {
     margin-left: 5%;
     position: relative;
-}
+    }
     .focus-items{
         font-family: 'Outfit', sans-serif;
         display: flex;
@@ -133,6 +133,15 @@
     #myCarousel .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
+    .focus-item {
+    width: 94%;
+    }
+
+    .focus-areas {
+    margin-left: 0%;
+    /* position: relative; */
+    }
+
 }
 
 #myCarousel .carousel-inner .carousel-item.active,
@@ -143,24 +152,6 @@
 }
 
 @media (min-width: 768px) {
-    #myCarousel .carousel-inner .carousel-item-right.active,
-    #myCarousel  .carousel-inner .carousel-item-next,
-    #myCarousel .carousel-item-next:not(.carousel-item-start) {
-        /* transform: translateX(25%) !important; */
-    }
-
-    #myCarousel .carousel-inner .carousel-item-left.active,
-    #myCarousel .carousel-item-prev:not(.carousel-item-end),
-    #myCarousel .active.carousel-item-start,
-    #myCarousel .carousel-item-prev:not(.carousel-item-end) {
-        /* transform: translateX(-25%) !important; */
-    }
-
-    #myCarousel .carousel-item-next.carousel-item-start,
-    #myCarousel .active.carousel-item-end {
-        /* transform: translateX(0) !important; */
-    }
-
     #myCarousel .carousel-inner .carousel-item-prev,
     #myCarousel .carousel-item-prev:not(.carousel-item-end) {
         transform: translateX(-25%) !important;
@@ -176,13 +167,11 @@
         </div>
         <div>
             <div>
-               
                 <div class="focus-areas">
-                    
                     <div id="myCarousel" class=" focus-area carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner ">
                             <div class="carousel-item active">
-                                <div>
+                                <div class="focus-container">
                                     <div class="focus-item">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
@@ -194,7 +183,7 @@
                                                 National Initiative for Proficiency in Reading with Understanding and Numeracy
                                                 <br>
                                                 <span class="read-more">
-                                                    <a href="/fln.html  ">
+                                                    <a href="/fln.html">
                                                         Read More 
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
@@ -251,7 +240,7 @@
                                                 To impart foundational literacy and numeracy, critical life skills for Citizens
                                                 <br>
                                                 <span class="read-more">
-                                                    <a href="">
+                                                    <a href="/jadoo/index.html">
                                                         Read More 
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
@@ -305,7 +294,7 @@
                                             <div class="focus-details">
                                                 National Initiative for Proficiency in Reading with Understanding and Numeracy
                                                 <br> <span class="read-more">
-                                                    <a href="/vocational-education.html">
+                                                    <a href="/virtuallabs.html">
                                                         Read More 
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
@@ -315,7 +304,7 @@
                                             </div>
                                         </div>
                                         <div class="focus-img">
-                                            <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
+                                            <img src="../assets/homepage/focus-area/vietual-lab.png" alt="nipun bharat">
                                         </div>
                                     </div>
                                 </div>
@@ -332,7 +321,7 @@
                                             <div class="focus-details">
                                                 Initative to focus on integration of vocational training with general education
                                                 <br> <span class="read-more">
-                                                    <a href="">
+                                                    <a href="/vocational-education.html">
                                                         Read More 
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
