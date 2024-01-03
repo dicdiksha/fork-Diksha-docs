@@ -244,7 +244,7 @@
 
 <div class="diksha-numbers">
   <div class="head-title">
-    <span class="text">DIKSHA<span class="title-diksha-color"> Dashboard</span></span>
+    <span class="text">{{site.data.text.diksha}} <span class="title-diksha-color"> {{site.data.text.dashboard}}</span></span>
   </div>
   <div class="container">
     <div class="container-box">
@@ -256,7 +256,7 @@
         <div class="vecter-five"></div>
         <div class="vecter-six"></div>
         <div class="row">
-          <div class="col-ms-4 col-sm-4 fix-height">
+          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
             <div class="dashboard-head">
               {{site.data.text.usageMetrics}}
             </div>
@@ -266,13 +266,10 @@
                   <div>
                     <div class="learn-sessions">
                       <div class="data">
-                        <div class="data-count">
-                          17,08,80,584
+                        <div class="data-count" title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
+                          <span class="learning-sessions mr-8" id="learningSession">
                         </div>
-                        <div class="data-lable">
-                          Learning sessions
-                        </div>
-
+                        <div class="data-lable">{{ site.data.text.LearningLessons }}</div>
                       </div>
                       <div class="icon">
                           <div class="icon-img">
@@ -282,11 +279,11 @@
                     </div>
                     <div class="learn-sessions">
                       <div class="data">
-                        <div class="data-count">
-                          61,25,92,87,716
+                        <div class="data-count" ddata-placement="bottom" title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
+                        <span class="x-mins mr-8"></span>
                         </div>
                         <div class="data-lable">
-                          Minutes
+                          {{ site.data.text.minutes }}
                         </div>
 
                       </div>
@@ -302,7 +299,7 @@
                           100%
                         </div>
                         <div class="data-lable">
-                          Application Availability
+                          {{ site.data.text.application }}
                         </div>
 
                       </div>
@@ -318,13 +315,13 @@
                       Last updated: 06-Nov-2023
                     </div>
                     <div class="download">
-                      Download Report
+                      <a href="" class="download-overall"> {{site.data.text.downloadReport}}</a>
                     </div>
                   </div>
                 </div>
               </div>
           </div>
-          <div class="col-ms-4 col-sm-4 fix-height">
+          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
             <div class="dashboard-head">
               {{site.data.text.contributionMetrics}}
             </div>
@@ -333,11 +330,11 @@
                   <div>
                     <div class="learn-sessions">
                       <div class="data">
-                        <div class="data-count">
-                          2,43,444
+                        <div class="data-count" data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
+                          <span class="total-contributions mr-8" id="totalContributions"></span>
                         </div>
                         <div class="data-lable">
-                          Contributions
+                          {{ site.data.text.ContentContributions }}
                         </div>
   
                       </div>
@@ -349,11 +346,12 @@
                     </div>
                     <div class="learn-sessions">
                       <div class="data">
-                        <div class="data-count">
-                          11,624
+                        <div class="data-count"  data-placement="bottom"
+                        title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
+                        <span class="total-contributors mr-8" id="totalContributors"></span>
                         </div>
                         <div class="data-lable">
-                          Contributors
+                          {{ site.data.text.ContentContributors }}
                         </div>
   
                       </div>
@@ -377,7 +375,7 @@
 
               </div>
           </div>
-          <div class="col-ms-4 col-sm-4 fix-height">
+          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
             <div class="dashboard-head">
               {{site.data.text.courseMetrics}}
             </div>
@@ -387,11 +385,11 @@
                   <div>
                     <div class="learn-sessions">
                       <div class="data">
-                        <div class="data-count">
-                          13,644
+                        <div class="data-count" data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
+                          <span class="total-courses mr-8"  id="totalCourses"></span> 
                         </div>
                         <div class="data-lable">
-                          Courses
+                          {{site.data.text.courses}}
                         </div>
   
                       </div>
@@ -403,11 +401,12 @@
                   </div>
                   <div class="learn-sessions">
                     <div class="data">
-                      <div class="data-count">
-                        16,87,79,861
+                      <div class="data-count" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
+                      title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}">
+                      <span class="total-enrolments mr-8" id="totalEnrolments"></span>
                       </div>
                       <div class="data-lable">
-                        Enrollments
+                        {{site.data.text.enrollments}}
                       </div>
   
                     </div>
@@ -419,11 +418,12 @@
                   </div>
                   <div class="learn-sessions">
                     <div class="data">
-                      <div class="data-count">
-                        13,77,53,685
+                      <div class="data-count" aria-live="polite" data-toggle="tooltip" data-placement="bottom" 
+                      title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
+                        <span class="total-completions mr-8"  id="totalCompletions"></span> 
                       </div>
                       <div class="data-lable">
-                        Course Completions
+                        {{site.data.text.completions}}
                       </div>
   
                     </div>
@@ -439,7 +439,7 @@
                     Last updated: 06-Nov-2023
                   </div>
                   <div class="download">
-                    Download Report
+                    <a href="" class="download-course"> {{site.data.text.downloadReport}}</a>
                   </div>
                 </div>
                 </div>

@@ -1,6 +1,6 @@
 <style>
     .learning-class {
-        margin:50px 0;
+        padding:50px 0;
     }
     .learing-items{
      font-family: 'Lato', sans-serif;
@@ -54,18 +54,33 @@
 .border-blue{
     border-color: #6A9BFF;
 }
+@media (max-width: 768px) {
+
+    .student-learning{
+        text-align: center;
+    }
+    .student-learning .gif-section {
+        top: -69px;
+        left: 31px;
+    }
+
+}
+@media (max-width: 620px) {}
+
+
+
 </style>
 
 
         <div class="learning-class">
-            <div class="head-title">
-                <span class="text"><span class="title-diksha-color">Comprehensive Learning</span> for Foundational to Secondary</span>
-            </div>
             <div class="container">
                 <div class="container-box">
+                    <div class="head-title">
+                        <span class="text"><span class="title-diksha-color">{{site.data.text.compreLearning }}</span>  {{site.data.text.foundationalsecondary }}</span>
+                    </div>
                     <div class="class-details">
                         <div class="row">
-                            <div class="col-md-5 cal-sm-12">
+                            <div class="col-lg-5 col-md-12 cal-sm-12">
                                 <div class="student-learning ">
                                     <img src="../assets/homepage/learning-section.png" alt="leaning section">
 
@@ -77,67 +92,67 @@
                                 </div>
                             </div>
                          
-                            <div class="col-md-7 cal-sm-12">
-                                <div class="row">
-                                    <div class="col-md-6 cal-sm-12">
+                            <div class="col-lg-7 col-md-12 cal-sm-12">
+                                <div class="row lean-detail">
+                                    <div class="col-lg-6 col-md-6 cal-sm-12">
                                         <div class="learing-items border-green ">
                                             <div class="leaning-heading">
                                                 <div class="image">
                                                     <img src="../assets/homepage/coverage.png" alt="leaning classes">
                                                 </div>
                                                 <div class="title">
-                                                    Complete K-12 Coverage 
+                                                    {{site.data.text.compleateCoverage }}
                                                 </div>
                                             </div>
                                             <div class="learning-descp">
-                                                Access complete K-12 study material covering all boards, classes and subjects
+                                                {{site.data.text.compleateCoverageDesc }}
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6 cal-sm-12">
+                                    <div class="col-lg-6 col-md-6 cal-sm-12">
                                         <div class="learing-items border-yellow ">
                                             <div class="leaning-heading">
                                                 <div class="image">
                                                     <img src="../assets/homepage/material.png" alt="leaning classes">
                                                 </div>
                                                 <div class="title">
-                                                    Interactive Study Material
+                                                   {{site.data.text.studyMaterial }}
                                                 </div>
                                             </div>
                                             <div class="learning-descp">
-                                                Media-rich visually engaging 2D, 3D videos in accordance with the  syllabus
+                                                {{site.data.text.studyMaterialDesc }}
                                             </div>
                                         </div>
 
                                     </div>
-                                    <div class="col-md-6 cal-sm-12">
+                                    <div class="col-lg-6 col-md-6 cal-sm-12">
                                         <div class="learing-items border-orange ">
                                             <div class="leaning-heading">
                                                 <div class="image">
                                                     <img src="../assets/homepage/practice.png" alt="leaning classes">
                                                 </div>
                                                 <div class="title">
-                                                    Unlimited Practice Content
+                                                   {{site.data.text.participateQuiz }}
                                                 </div>
                                             </div>
                                             <div class="learning-descp">
-                                                Access practice content such as NCERT solutions and trending content
+                                                {{site.data.text.practiceContentDesc }}
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-6 cal-sm-12">
+                                    <div class="col-lg-6 col-md-6 cal-sm-12">
                                         <div class="learing-items border-blue">
                                             <div class="leaning-heading">
                                                 <div class="image">
                                                     <img src="../assets/homepage/quiz.png" alt="leaning classes">
                                                 </div>
                                                 <div class="title">
-                                                    Participate in Quizzes 
+                                                    {{site.data.text.participateQuiz }}
                                                 </div>
                                             </div>
                                             <div class="learning-descp">
-                                                Quizzes makes learning fun and help students perform better.
+                                             {{site.data.text.participateQuizDesc }}
                                             </div>
                                         </div>
                                     </div>

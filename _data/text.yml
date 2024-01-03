@@ -123,8 +123,21 @@ openPdf: open in pdf
 
 
 #======Start New home Page=======#
+
+#=======title=======#
+view : View 
+dikshatitle: Diksha's
+digitalcontent: world of open digital content
+focusArea: Focus Areas of 
+compreLearning: Comprehensive Learning
+foundationalsecondary :  for Foundational to Secondary
+viewMore : View More
+
+
+
+#=======Homepage=======#
 footerLogoDiksha:   Digital Infrastucture For <br>  Knowledge Sharing
-footerLogoNegrd:  Central Institute of Educational Technology(CIET), National Council of Educational Research And Training (NCERT), Sri Aurobindo Marg, New Delhi-110016
+footerLogoNegrd:  National Council of Educational Research And Training (NCERT), </br> Sri Aurobindo Marg, New Delhi-110016
 footerBottom:  © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
 nipunBharat: NIPUN BHARAT
 nipunBharatDesc: National Initiative for Proficiency in Reading with Understanding and Numeracy.
@@ -150,7 +163,8 @@ participateQuiz: Participate in Quizzes
 participateQuizDesc: Quizzes makes learning fun and help students perform better
 ContentContributors : Content Contributors
 ContentContributions :  Content Contributions
-
+downloadReport : Download Report
+enrollments : Enrollments
 #about-us
 aboutDikshaHeading : DIKSHA - One Nation, One Digital Platform
 aboutDescription :  DIKSHA (Digital Infrastructure for Knowledge Sharing) is a national platform for school education, an initiative of National Council for Educational Research and Training (NCERT), under the aegis of the Ministry of Education (MoE), GoI. Launched in 2017 by Honourable Vice President of India – Shri M. Venkaiah Naidu, DIKSHA has been adopted by almost all the States, Union Territories, central autonomous bodies/boards including CBSE.

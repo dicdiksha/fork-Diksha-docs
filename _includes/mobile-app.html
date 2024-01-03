@@ -2,6 +2,7 @@
 
 .mobile-app-title{
     font-weight: bold;
+    text-align: center;
 }
 .mobile-app-title .diksha{
     text-transform: uppercase;
@@ -15,7 +16,7 @@
 }
  .app-download {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 40px;
 }
 .scan-img{
@@ -24,6 +25,7 @@
     font-size: 12px;
     color: #0A589A;
     align-items: center;
+    justify-content: center;
 }
 
 .app-download .app-img {
@@ -31,16 +33,15 @@
     flex-direction: column;
 }
 .app-download .border-line {
-        /* height: 100%; */
+        
         border: 1px solid #888888;
-    /* margin: 16px 40px; */
-    width: 1px;
-    margin: 10px 0;
+        width: 1px;
+        margin: 10px 30px;
     
 } 
 .mobile-app-diksha {
     background-color: #FFFFFF;
-    padding: 50px;
+    padding: 50px 0;
 }
 .play-store-link {
     background-color: #EAEEFF;
@@ -62,15 +63,18 @@
     text-decoration: none;
     color: inherit;
 }
+.mobile-app-left img{
+    width: 100%;
+}
 </style>
 <div class="mobile-app-diksha">
     <div class="container">
-        <div class="container-box mobile-app-wrapper">
-            <div class="row">
-                <div class="col-md-612 col-md-6 col-lg-6 mobile-app-left ">
-                    <img src="../assets/homepage/mobile-app.jpg" alt="mobile-app">
+        <div class="container-box">
+            <div class="mobile-app-wrapper row">
+                <div class="col-lg-6 col-md-12 col-sm-12  mobile-app-left ">
+                    <img src="../assets/homepage/mobile-app.png" alt="mobile-app">
                 </div>
-                <div class="col-md-612 col-md-6 col-lg-6 mobile-app-right">
+                <div class="col-lg-6 col-md-12 col-sm-12 mobile-app-right">
                     <div class="mobile-app-title">
                         {{site.data.text.download}} <span class="diksha"> {{site.data.text.diksha}} </span> <br>{{site.data.text.mobileApp}}
                         <div class="app-download">
@@ -80,10 +84,10 @@
                             </div>
                             <div class="border-line"></div>
                             <div class="scan-img">
-                                <span class="app-icon my-3">
+                                <span class="app-icon my-5">
                                     <img src="../assets/imgs/get-app/play-store.png" alt="paly store">
                                 </span>
-                                <span class="app-icon my-3">
+                                <span class="app-icon my-5">
                                     <img src="../assets/imgs/get-app/apple-store.png" alt="apple store">
                                 </span>
                             </div>
