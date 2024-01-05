@@ -25,20 +25,31 @@
 .user-glance .user-desc{
     font-size: 18px;
 }
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 620px) {
+    .row-eq-height img{
+    width: 100%;
+
+}
+}
+
 </style>
 <div class="container">
     <div class="container-box">
         <div class=" content head-title">
-            <!-- <div class="text">DIKSHA <span class="bottom-image">at a Glance</span> </div> -->
-            <span class="text">  {{site.data.text.dikshaGlance}}<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
+            <span class="text">  {{site.data.text.dikshaGlance}}</span>
         </div>
         <div class="user-glance">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-lg-8 col-md-12 col-sm-12">
                     <div class="row-eq-height">
                         <div class="user-desc">  {{site.data.text.userDesc}}</div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="user-card">
                                     <div class="user-image">
                                         <img src="../assets/imgs/about/student.png" alt="student">
@@ -46,7 +57,7 @@
                                     <div class="user-name">Student</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="user-card">
                                     <div class="user-image">
                                         <img src="../assets/imgs/about/teacher.png" alt="Teacher">
@@ -54,7 +65,7 @@
                                     <div class="user-name">Teacher</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="user-card">
                                     <div class="user-image">
                                         <img src="../assets/imgs/about/parent.png" alt="Parent">
@@ -62,7 +73,7 @@
                                     <div class="user-name">Parent</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="user-card">
                                     <div class="user-image">
                                         <img src="../assets/imgs/about/professional.png" alt="HT & Officials">
@@ -70,7 +81,7 @@
                                     <div class="user-name">HT & Officials</div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
                                 <div class="user-card">
                                     <div class="user-image">
                                         <img src="../assets/imgs/about/other.png" alt="Other">
@@ -83,7 +94,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="row-eq-height">
-                        <img src="../assets/imgs/about/mobile-app.jpg" alt="mobile-app">
+                        <img src="../assets/homepage/mobile-app-mobile.png" alt="mobile-app">
                     </div>
                 </div>
             </div>

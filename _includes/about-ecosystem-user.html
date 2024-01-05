@@ -59,7 +59,7 @@
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
-    border-radius: 4px;
+    border-radius: 15px;
     width: 112px;
     height: 113px;
 }
@@ -73,13 +73,23 @@
     display: flex;
     justify-content: center;
 }
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 620px) {
+    .learning-users{
+        justify-content: center;
+    }
+}
+
 </style>
 
 <div class="container">
     <div class="container-box">
         <div class=" content head-title">
-            <!-- <div class="text">State of the art learning ecosystem  <span class="bottom-image">for users</span> </div> -->
-            <span class="text">  {{site.data.text.aboutUserTitle}}<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
+            <span class="text">  {{site.data.text.aboutUserTitle}}</span>
         </div>
         <div class="learning-users">
             <div class="users">

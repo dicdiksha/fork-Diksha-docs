@@ -73,10 +73,6 @@ title: Data-dashboard
         font-weight: bold;
         padding: 13px 10px;
     }
-       
-    
-    
-    
     .matrix-diksha-small-font{
       color: #434141;
       font-size: 14px !important;
@@ -147,19 +143,62 @@ title: Data-dashboard
     background-color: transparent;
     color: #0C4E9E;
     font-weight: bold;
-
  }
 
  .download-report-updated button:hover {
   background-color: #004e9d;
     box-shadow: none;
     color: #fff;
-
  }
+
+ .top-states-table table{
+  /* overflow: hidden; */
+  border-color: var(--dk-theme-border-color);
+ }
+
+ .play-store-link img{
+    filter: brightness(0) invert(1);
+ }
+
 </style>
     
     
     
+<div>
+  {% include line-banner.html %}
+  {% include dashboard-banner.html %}
+</div>
+<div class="dashbord-matrics-data">
+  <div class="container">
+    <div class="container-box">
+      <div class="row">
+          <div class="col-md-6 mt-3">
+              <div class="switch-field">
+                  <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
+                  <label for="radio-four" tabindex="0" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
+                  <input type="radio" id="radio-five" name="switch-two" value="creationMetrics" />
+                  <label for="radio-five" tabindex="0" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
+                  <input type="radio" id="radio-six" name="switch-two" value="courseMetrics" />
+                  <label for="radio-six" tabindex="0" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
+              </div>
+          </div>
+          <div class="col-sm-6">
+              <div class="download-report">
+                <div class="download-report-updated">
+                  <button type="button"
+                  class=" datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button>
+                </div>
+                 
+              </div>
+          </div>
+      </div>
+      {% include page-data-dashboard-updated.html %}
+    </div>
+  </div>
+</div>
+
+
+{% contentfor mobileview %}
 <div>
   {% include line-banner.html %}
   {% include dashboard-banner.html %}
@@ -193,3 +232,4 @@ title: Data-dashboard
   </div>
 </div>
 
+{% endcontentfor %}
