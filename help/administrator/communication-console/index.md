@@ -48,7 +48,7 @@ To add a new conversation in the ODK form:
   <td><img src="../images/communication-console/add-conv5.png"></td>
 </tr>
 <tr>
-  <td>For details about ODK form creation refer to <a target="_blank" href="https://bmzbbujw9kal.compat.objectstorage.ap-mumbai-1.oraclecloud.com/ntp-content-production/uci/UCI%20_%20ODK%20Instruction%20Manual.pdf">Instruction Manual</a> and <a target="_blank" href= "https://trigyntl-my.sharepoint.com/:x:/g/personal/salabh_kishor_trigyn_com/EUHM2114QCNCsswEhAgBFf8BXQBwpnHTsV65kXCM5JnarA?wdOrigin=TEAMS-MAGLEV.null_ns.rwc&wdExp=TEAMS-TREATMENT&wdhostclicktime=1704189272498&web=1">Sample ODK Form </a></td>
+  <td>For details about ODK form creation refer to <a target="_blank" href="https://bmzbbujw9kal.compat.objectstorage.ap-mumbai-1.oraclecloud.com/ntp-content-production/uci/UCI%20_%20ODK%20Instruction%20Manual.pdf">Instruction Manual</a> and <a href= "../../../assets/docs/Sample_ODK.xlsx" download > Sample ODK Form </a></td>
 </tr>
 <tr>
   <td><img src="../images/communication-console/add-conv6.png"></td>

@@ -42,7 +42,7 @@
         
     }
     .term-details .terms-condition span{
-        padding: 0 20px;
+        padding: 0 10px;
 
     }
     .terms-condition  a , .terms-condition  a:hover {
@@ -177,14 +177,24 @@ align-items: center;
     }
     .diksha-links-pages {
     margin: 20px 0;
-}
+    }
     
 }
 @media (max-width: 620px) {
-    
+    .footer-details .diksha-logo{
+        text-align: center;
+        align-items: center;
+    }
+    .info{
+        text-align: center;
+    }
+    .info .logo-ngerd {
+        justify-content: center;
+    }
+    .footer-logo .footer-items {
+        flex-wrap: wrap;
+    }
 }
-
-
 </style>
 
 <div class="footer-logo">
@@ -236,8 +246,8 @@ align-items: center;
                         <div class="col-lg-3 order-lg-first col-md-6 col-sm-12">
                             <div class="diksha-logo">
                                 <span class="footer-logo">
-                                    <img src="../images/Diksha-logo.png" alt="Diksha-logo">
-                                    <span>DIKSHA</span>
+                                    <img src="../assets/homepage/diksha-logo-footer.png" alt="Diksha-logo">
+                                    <!-- <span>DIKSHA</span> -->
                                 </span>
                                 <!-- <span>Digital Infrastucture For <br> Knoeledge Sharing</span> -->
                                 <span class="capitalize-text">{{ site.data.text.footerLogoDiksha}}</span>
