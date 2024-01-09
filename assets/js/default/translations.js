@@ -248,7 +248,7 @@ const languageTranslations = {
         "contributeBanner": "সমগ্ৰ ভাৰতৰ শিক্ষাৰ্থীসকলৰ বাবে গুণগত মানৰ শিক্ষা অব্যাহত ৰখাটো নিশ্চিত কৰিবলৈ শিক্ষাৰ ক্ষেত্ৰত ই-লৰ্ণিং সম্পদসমূহৰ অৱদান আগবঢ়াব।",
         "aboutDikshaHeading" : "দীক্ষা-এক ৰাষ্ট্ৰ, এক ডিজিটেল মঞ্চ ",
         "aboutDescription": "দীক্ষা (ডিজিটেল ইনফ্ৰাষ্ট্ৰাকচাৰ ফৰ নলেজ শ্বেয়াৰিং) হৈছে বিদ্যালয় শিক্ষাৰ বাবে এক ৰাষ্ট্ৰীয় মঞ্চ, যিটো ৰাষ্ট্ৰীয় শৈক্ষিক গৱেষণা আৰু প্ৰশিক্ষণ পৰিষদ (এনচিইআৰটি) ৰ এক পদক্ষেপ, যি শিক্ষা মন্ত্ৰালয় (এমওই), ভাৰত চৰকাৰৰ তত্বাৱধানত আছে। ভাৰতৰ সন্মানীয় উপ-ৰাষ্ট্ৰপতি শ্ৰী এম ভেংকায়া নাইডুৱে 2017 চনত আৰম্ভ কৰা দীক্ষা প্ৰায় সকলো ৰাজ্য, কেন্দ্ৰীয় শাসিত অঞ্চল, কেন্দ্ৰীয় স্বায়ত্তশাসিত সংস্থা/ব ৰ্ডৰ দ্বাৰা গ্ৰহণ কৰা হৈছে।",
-        "missionVision": ""
+
 
     },
     "bn": {
@@ -367,7 +367,7 @@ const languageTranslations = {
         "contributeBanner": "সারা ভারতে শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা যাতে অব্যাহত থাকে তা নিশ্চিত করতে শিক্ষার ক্ষেত্রে ই-লার্নিং সম্পদের অবদান রাখুন।",
         "aboutDikshaHeading" : "জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (শিক্ষা মন্ত্রক, ভারত সরকার) একটি উদ্যোগ ",
         "aboutDescription": "দীক্ষা (ডিজিটাল ইনফ্রাস্ট্রাকচার ফর নলেজ শেয়ারিং) হল স্কুল শিক্ষার জন্য একটি জাতীয় মঞ্চ, যা ভারত সরকারের শিক্ষা মন্ত্রকের অধীনে জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (এন. সি. ই. আর. টি) একটি উদ্যোগ। 2017 সালে ভারতের মাননীয় উপরাষ্ট্রপতি শ্রী এম ভেঙ্কাইয়া নাইডু দ্বারা চালু হওয়া দীক্ষা সিবিএসই সহ প্রায় সমস্ত রাজ্য, কেন্দ্রশাসিত অঞ্চল, কেন্দ্রীয় স্বায়ত্তশাসিত সংস্থা/বোর্ড দ্বারা গৃহীত হয়েছে।",
-        "missionVision": ""
+        
 
 
 
@@ -1469,9 +1469,10 @@ const languageTranslations = {
 };
 
 $(document).ready(function(){
-    let language = localStorage.getItem('portalLanguage');
-    console.log(language)
-    (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
+    // let language = localStorage.getItem('portalLanguage');
+    // let language = setPageLanguage("en")  ?? setPageLanguage(localStorage.getItem('portalLanguage'));
+    // console.log("old language dropdown");
+    // (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
     $('.dropdown-wrapper-div').click(function(){
         console.log("click----dropdown-wrapper-div")
@@ -1498,7 +1499,36 @@ $(document).ready(function(){
     });
 })
 
+$(document).ready(function(){
+    // let language = setPageLanguage("en")  ?? setPageLanguage(localStorage.getItem('portalLanguage'));
+    // console.log(language);
+    // (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
+    // language = setPageLanguage("en")  ?? setPageLanguage(localStorage.getItem('portalLanguage'));
 
+    $('.dropdown-language-div').click(function(){
+        console.log("click----dropdown-wrapper-div")
+
+        if(($(this).hasClass("open"))){
+            console.log("open");
+            $(this).removeClass("open");
+            $("i.dropdown").removeClass("rotate");
+            $("ul.language-dropdown").slideUp("slow");
+        }else{
+            console.log("close")
+            $(this).addClass("open");
+            $("i.dropdown").addClass("rotate");
+            $("ul.language-dropdown").slideDown( "slow" );
+        }
+    });
+    $('.dropdown-language-div ul.language-dropdown li').click(function(){
+        $(".dropdown-language-div ul.language-dropdown li").removeClass("active");
+        $(this).addClass("active");
+        setPageLanguage($(this).attr("data-value"));
+        $("dropdown-language-div").removeClass("open");
+        $("i.dropdown").removeClass("rotate");
+        $("ul.language-dropdown").slideUp("slow");
+    });
+})
 function getLangTranslations() {
     const lang = localStorage.getItem('portalLanguage') || 'en';
 
@@ -1551,12 +1581,66 @@ function getLangTranslations() {
     }
 }
 
+function getLangTranslations() {
+    const lang = localStorage.getItem('portalLanguage') || 'en';
+
+    $(".dropdown-language-div ul.language-dropdown li").removeClass("active");
+    $('.dropdown-language-div ul.language-dropdown li[data-value= '+lang+']').addClass('active');
+    
+    $(".language-text").text(languageTranslations[lang]['language']);
+    const translations = languageTranslations[lang];
+    if (translations && Object.keys(translations).length) {
+        const allTags = document.querySelectorAll("*[data-translate]");
+        const allAttrTags = document.querySelectorAll("*[data-translate-attr]");
+        // console.log(allTags);
+        allTags.forEach(function (elem) {
+            const translateKey = elem.getAttribute('data-translate');
+            const hasKey = Object.keys(translations).find(key => translateKey == key);
+            if (hasKey) {
+                elem.innerText = translations[translateKey];
+            }
+        });
+
+        allAttrTags.forEach(function (elem) {
+            const translateAttr = elem.getAttribute('data-translate-attr');
+            const toggleAttr = elem.getAttribute('data-toggle');
+            const attrObj = translateAttr.split(':');
+            const translateKey = attrObj[0].replace(/[^a-zA-Z]/g, '');
+            const hasKey = Object.keys(translations).find(key => translateKey == key);
+            if (hasKey) {
+                try{
+                    attrObj[1].split(',').forEach(val => {
+                        const attr = val.replace(/[^a-zA-Z]/g, '');
+                        console.log(attr);
+                        elem.setAttribute(attr, translations[translateKey]);
+                        if (toggleAttr && toggleAttr == 'tooltip') {
+                            $(elem).tooltip("dispose").attr("title", translations[translateKey]).tooltip();
+                        }
+                    });
+                }catch(e){
+                    console.log(e);
+                }
+           
+            }
+        });
+
+        if (lang == 'ur') {
+            document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+            document.documentElement.setAttribute('dir', 'ltr');
+        }
+
+    }
+}
+
 window.onclick = function(event) {
+    console.log("window on click------------");
     if (!(
         event.target.matches('ul.language-dropdown') ||
         event.target.matches('ul.language-dropdown li') || 
         event.target.matches('ul.language-dropdown li span') || 
         event.target.matches('.dropdown-wrapper-div') || 
+        event.target.matches('.dropdown-language-div') || 
         event.target.matches('span.language') || 
         event.target.matches('span.language-text') ||
         event.target.matches('i.dropdown.rotate') ||
@@ -1564,6 +1648,7 @@ window.onclick = function(event) {
         $(".dropdown-wrapper-div").removeClass("open");
         $("i.dropdown").removeClass("rotate");
         $("ul.language-dropdown").slideUp("slow");
+        $("dropdown-language-div").removeClass("open");
     }
   }
   

@@ -4812,7 +4812,22 @@ const languageTranslations = {
         "downloadLinkIos": "Download Link For iOS",
         "scanDownload": "Scan to Download",
         "clickHere" : "Click Here",
-        "contributeBanner": "Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India."
+        "contributeBanner": "Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.",
+        "aboutDikshaHeading" : "DIKSHA - One Nation, One Digital Platform.",
+        "aboutDescription" :  "DIKSHA (Digital Infrastructure for Knowledge Sharing) is a national platform for school education, an initiative of National Council for Educational Research and Training (NCERT), under the aegis of the Ministry of Education (MoE), GoI. Launched in 2017 by Honourable Vice President of India – Shri M. Venkaiah Naidu, DIKSHA has been adopted by almost all the States, Union Territories, central autonomous bodies/boards including CBSE.",
+        "missionVision": "Mission & Vision",
+        "dikshaGlance" : "DIKSHA at a Glance",
+        "userDesc" : "DIKSHA can be accessed by learners and teachers across the country and currently supports 36 Indian languages",
+        "dikshaGlance" :" DIKSHA at a Glance",
+        "userDesc" : "DIKSHA can be accessed by learners and teachers across the country and currently supports 36 Indian languages",
+        "aboutGlanceStudent" : "Student",
+        "aboutGlanceTeacher" : "Teacher",
+        "aboutGlanceParent" : "Parent",
+        "aboutGlanceHTOfficials" :" HT & Officials",
+        "aboutGlanceOther" : "Other",
+        "aboutUserTitle" : "State of the art learning ecosystem for users",
+        "viewDoc" : "view",
+        "aboutDocument" : "Documents",
 
 
 
@@ -4931,6 +4946,10 @@ const languageTranslations = {
         "scanDownload": "ଡାଉନ୍ଲୋଡ୍ କରିବା ପାଇଁ ସ୍କାନ୍ କରନ୍ତୁ",
         "clickHere" : "ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ",
         "contributeBanner": "সমগ্ৰ ভাৰতৰ শিক্ষাৰ্থীসকলৰ বাবে গুণগত মানৰ শিক্ষা অব্যাহত ৰখাটো নিশ্চিত কৰিবলৈ শিক্ষাৰ ক্ষেত্ৰত ই-লৰ্ণিং সম্পদসমূহৰ অৱদান আগবঢ়াব।",
+        "aboutDikshaHeading" : "দীক্ষা-এক ৰাষ্ট্ৰ, এক ডিজিটেল মঞ্চ ",
+        "aboutDescription": "দীক্ষা (ডিজিটেল ইনফ্ৰাষ্ট্ৰাকচাৰ ফৰ নলেজ শ্বেয়াৰিং) হৈছে বিদ্যালয় শিক্ষাৰ বাবে এক ৰাষ্ট্ৰীয় মঞ্চ, যিটো ৰাষ্ট্ৰীয় শৈক্ষিক গৱেষণা আৰু প্ৰশিক্ষণ পৰিষদ (এনচিইআৰটি) ৰ এক পদক্ষেপ, যি শিক্ষা মন্ত্ৰালয় (এমওই), ভাৰত চৰকাৰৰ তত্বাৱধানত আছে। ভাৰতৰ সন্মানীয় উপ-ৰাষ্ট্ৰপতি শ্ৰী এম ভেংকায়া নাইডুৱে 2017 চনত আৰম্ভ কৰা দীক্ষা প্ৰায় সকলো ৰাজ্য, কেন্দ্ৰীয় শাসিত অঞ্চল, কেন্দ্ৰীয় স্বায়ত্তশাসিত সংস্থা/ব ৰ্ডৰ দ্বাৰা গ্ৰহণ কৰা হৈছে।",
+
+
     },
     "bn": {
         "language": "বাংলা",
@@ -5046,6 +5065,12 @@ const languageTranslations = {
         "scanDownload": "ডাউনলোড করতে স্ক্যান করুন",
         "clickHere" : "এখানে ক্লিক করুন",
         "contributeBanner": "সারা ভারতে শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা যাতে অব্যাহত থাকে তা নিশ্চিত করতে শিক্ষার ক্ষেত্রে ই-লার্নিং সম্পদের অবদান রাখুন।",
+        "aboutDikshaHeading" : "জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (শিক্ষা মন্ত্রক, ভারত সরকার) একটি উদ্যোগ ",
+        "aboutDescription": "দীক্ষা (ডিজিটাল ইনফ্রাস্ট্রাকচার ফর নলেজ শেয়ারিং) হল স্কুল শিক্ষার জন্য একটি জাতীয় মঞ্চ, যা ভারত সরকারের শিক্ষা মন্ত্রকের অধীনে জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (এন. সি. ই. আর. টি) একটি উদ্যোগ। 2017 সালে ভারতের মাননীয় উপরাষ্ট্রপতি শ্রী এম ভেঙ্কাইয়া নাইডু দ্বারা চালু হওয়া দীক্ষা সিবিএসই সহ প্রায় সমস্ত রাজ্য, কেন্দ্রশাসিত অঞ্চল, কেন্দ্রীয় স্বায়ত্তশাসিত সংস্থা/বোর্ড দ্বারা গৃহীত হয়েছে।",
+        
+
+
+
     },
     "gu": {
         "language": "ગુજરાતી",
@@ -5161,6 +5186,8 @@ const languageTranslations = {
         "scanDownload": "ડાઉનલોડ કરવા માટે સ્કેન કરો",
         "clickHere" : "અહીં ક્લિક કરો",
         "contributeBanner": "સમગ્ર ભારતમાં વિદ્યાર્થીઓ માટે ગુણવત્તાયુક્ત શિક્ષણ ચાલુ રહે તે સુનિશ્ચિત કરવા માટે શિક્ષણ ક્ષેત્રમાં ઇ-લર્નિંગ સંસાધનોનું યોગદાન આપવું.",
+        "aboutDikshaHeading" : "દીક્ષા-એક રાષ્ટ્ર, એક ડિજિટલ મંચ ",
+        "aboutDescription": "દીક્ષા (ડિજિટલ ઇન્ફ્રાસ્ટ્રક્ચર ફોર નોલેજ શેરિંગ) એ શાળા શિક્ષણ માટેનું એક રાષ્ટ્રીય મંચ છે, જે શિક્ષણ મંત્રાલય (એમઓઇ), ભારત સરકારના નેજા હેઠળ રાષ્ટ્રીય શૈક્ષણિક સંશોધન અને તાલીમ પરિષદ (એનસીઇઆરટી) ની પહેલ છે. ભારતના માનનીય ઉપરાષ્ટ્રપતિ-શ્રી એમ. વેંકૈયા નાયડુ દ્વારા 2017 માં શરૂ કરાયેલ, દીક્ષા લગભગ તમામ રાજ્યો, કેન્દ્રશાસિત પ્રદેશો, કેન્દ્રીય સ્વાયત્ત સંસ્થાઓ/બોર્ડ દ્વારા અપનાવવામાં આવી છે જેમાં સીબીએસઈનો સમાવેશ થાય છે.",
         
     },
     "hi": {
@@ -5277,6 +5304,8 @@ const languageTranslations = {
         "scanDownload": "डाउनलोड के लिए स्कैन करें",
         "clickHere" : "यहाँ क्लिक करें",
         "contributeBanner": "शिक्षा के क्षेत्र में ई-लर्निंग संसाधनों का योगदान करें ताकि यह सुनिश्चित किया जा सके कि पूरे भारत में शिक्षार्थियों के लिए गुणवत्तापूर्ण शिक्षा जारी रहे।",
+        "aboutDikshaHeading" : "दीक्षा - वन नेशन, वन डिजिटल प्लेटफॉर्म ",
+        "aboutDescription": "दीक्षा (ज्ञान साझा करने के लिए डिजिटल इन्फ्रास्ट्रक्चर) स्कूली शिक्षा के लिए एक राष्ट्रीय मंच है, जो शिक्षा मंत्रालय (एमओई), भारत सरकार के तत्वावधान में राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद (एनसीईआरटी) की एक पहल है। भारत के माननीय उपराष्ट्रपति श्री एम. वेंकैया नायडू द्वारा 2017 में शुरू की गई, दीक्षा को सीबीएसई सहित लगभग सभी राज्यों, केंद्र शासित प्रदेशों, केंद्रीय स्वायत्त निकायों / बोर्डों द्वारा अपनाया गया है।",
         
 
     },
@@ -5393,6 +5422,8 @@ const languageTranslations = {
         "scanDownload": "ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
         "clickHere" : "ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ",
         "contributeBanner": "ಭಾರತದಾದ್ಯಂತ ಕಲಿಯುವವರಿಗೆ ಗುಣಮಟ್ಟದ ಕಲಿಕೆ ಮುಂದುವರಿಯುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಇ-ಲರ್ನಿಂಗ್ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಒದಗಿಸಿ.",
+        "aboutDikshaHeading" : "ದೀಕ್ಷಾ-ಒಂದು ರಾಷ್ಟ್ರ, ಒಂದು ಡಿಜಿಟಲ್ ವೇದಿಕೆ",
+        "aboutDescription": "ದೀಕ್ಷಾ (ಡಿಜಿಟಲ್ ಇನ್ಫ್ರಾಸ್ಟ್ರಕ್ಚರ್ ಫಾರ್ ನಾಲೆಡ್ಜ್ ಶೇರಿಂಗ್) ಶಾಲಾ ಶಿಕ್ಷಣದ ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಯಾಗಿದ್ದು, ಇದು ಶಿಕ್ಷಣ ಸಚಿವಾಲಯದ (ಎಂ. ಓ. ಇ.) ಆಶ್ರಯದಲ್ಲಿರುವ ರಾಷ್ಟ್ರೀಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಮಂಡಳಿಯ (ಎನ್. ಸಿ. ಇ. ಆರ್. ಟಿ.) ಉಪಕ್ರಮವಾಗಿದೆ. 2017ರಲ್ಲಿ ಭಾರತದ ಗೌರವಾನ್ವಿತ ಉಪರಾಷ್ಟ್ರಪತಿ ಶ್ರೀ ಎಂ. ವೆಙ್ಕಯ್ಯ ನಾಯ್ಡು ಅವರು ಪ್ರಾರಂಭಿಸಿದ ದಿಕ್ಷಾವನ್ನು ಸಿಬಿಎಸ್ಇ ಸೇರಿದಂತೆ ಬಹುತೇಕ ಎಲ್ಲಾ ರಾಜ್ಯಗಳು, ಕೇಂದ್ರಾಡಳಿತ ಪ್ರದೇಶಗಳು, ಕೇಂದ್ರ ಸ್ವಾಯತ್ತ ಸಂಸ್ಥೆಗಳು/ಮಂಡಳಿಗಳು ಅಳವಡಿಸಿಕೊಂಡಿವೆ.",
     },
     "mr": {
         "language": "मराठी",
@@ -5508,6 +5539,8 @@ const languageTranslations = {
         "scanDownload": "डाउनलोड करण्यासाठी स्कॅन करा",
         "clickHere" : "येथे क्लिक करा",
         "contributeBanner": "भारतभरातील विद्यार्थ्यांसाठी दर्जेदार शिक्षण सुरू राहील हे सुनिश्चित करण्यासाठी शैक्षणिक क्षेत्रात ई-शिक्षण संसाधनांचे योगदान द्या.",
+        "aboutDikshaHeading" : " DIKSHA-एक राष्ट्र, एक डिजिटल मंच",
+        "aboutDescription": "दीक्षा (डिजिटल इन्फ्रास्ट्रक्चर फॉर नॉलेज शेअरिंग) हा शालेय शिक्षणासाठीचा एक राष्ट्रीय मंच आहे, जो शिक्षण मंत्रालय (एम. ओ. ई.), भारत सरकारच्या अखत्यारीत येणाऱ्या राष्ट्रीय शैक्षणिक संशोधन आणि प्रशिक्षण परिषदेचा (एन. सी. ई. आर. टी.) एक उपक्रम आहे. भारताचे माननीय उपराष्ट्रपती-एम. व्यंकय्या नायडू यांनी 2017 मध्ये सुरू केलेली दीक्षा, सी. बी. एस. ई. सह जवळजवळ सर्व राज्ये, केंद्रशासित प्रदेश, केंद्रीय स्वायत्त संस्था/मंडळांनी स्वीकारली आहे.",
     },
     "ml": {
         "language": "മലയാളം",
@@ -5545,6 +5578,9 @@ const languageTranslations = {
         "downloadLinkIos": "",
         "scanDownload": "",
         "clickHere" : "",
+        "aboutDikshaHeading" : " ",
+        "aboutDikshaHeading" : " ",
+        "aboutDescription": "",
     },
     "or": {
         "language": "ଓଡ଼ିଆ",
@@ -5660,6 +5696,8 @@ const languageTranslations = {
         "scanDownload": "ଡାଉନ୍ଲୋଡ୍ କରିବା ପାଇଁ ସ୍କାନ୍ କରନ୍ତୁ",
         "clickHere" : "ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ",
         "contributeBanner": "ସମଗ୍ର ଭାରତରେ ବିଦ୍ଯ଼ାର୍ଥୀମାନଙ୍କ ପାଇଁ ଗୁଣାତ୍ମକ ଶିକ୍ଷା ଜାରି ରଖିବା ସୁନିଶ୍ଚିତ କରିବା ପାଇଁ ଶିକ୍ଷା କ୍ଷେତ୍ରରେ ଇ-ଲର୍ଣ୍ଣିଂ ସମ୍ବଳର ଯୋଗଦାନ କରନ୍ତୁ।",
+        "aboutDikshaHeading" : "ଦୀକ୍ଷା-ଏକ ରାଷ୍ଟ୍ର, ଏକ ଡିଜିଟାଲ ମଞ୍ଚ",
+        "aboutDescription": "ଦୀକ୍ଷା (ଜ୍ଞାନ ବାଣ୍ଟିବା ପାଇଁ ଡିଜିଟାଲ ଭିତ୍ତିଭୂମି) ହେଉଛି ବିଦ୍ଯ଼ାଳଯ଼ ଶିକ୍ଷା ପାଇଁ ଏକ ଜାତୀଯ଼ ପ୍ଲାଟଫର୍ମ, ଯାହା ଶିକ୍ଷା ମନ୍ତ୍ରଣାଳଯ଼ (ଏମଓଇ), ଭାରତ ସରକାରଙ୍କ ତତ୍ତ୍ୱାବଧାନରେ ଜାତୀଯ଼ ଶିକ୍ଷା ଗବେଷଣା ଏବଂ ତାଲିମ ପରିଷଦ (ଏନସିଇଆରଟି) ର ଏକ ପଦକ୍ଷେପ। ଭାରତର ମାନ୍ଯ଼ବର ଉପରାଷ୍ଟ୍ରପତି ଶ୍ରୀ ଏମ୍. ଭେଙ୍କେଯ଼ା ନାଇଡୁଙ୍କ ଦ୍ୱାରା 2017 ରେ ଆରମ୍ଭ ହୋଇଥିବା ଦୀକ୍ଷା ସିବିଏସ୍ଇ ସମେତ ପ୍ରାଯ଼ ସମସ୍ତ ରାଜ୍ଯ଼, କେନ୍ଦ୍ରଶାସିତ ଅଞ୍ଚଳ, କେନ୍ଦ୍ରୀଯ଼ ସ୍ୱଯ଼ଂଶାସିତ ସଂସ୍ଥା/ବୋର୍ଡ ଦ୍ୱାରା ଗ୍ରହଣ କରାଯାଇଛି।",
     },
     "pa": {
         "language": "ਪੰਜਾਬੀ",
@@ -5775,6 +5813,7 @@ const languageTranslations = {
         "scanDownload": "ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਸਕੈਨ ਕਰੋ",
         "clickHere" : "ਇਥੇ ਕਲਿੱਕ ਕਰੋ",
         "contributeBanner": "ਸਿੱਖਿਆ ਦੇ ਖੇਤਰ ਵਿੱਚ ਈ-ਲਰਨਿੰਗ ਸਰੋਤਾਂ ਦਾ ਯੋਗਦਾਨ ਪਾਓ ਤਾਂ ਜੋ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕੀਤਾ ਜਾ ਸਕੇ ਕਿ ਪੂਰੇ ਭਾਰਤ ਵਿੱਚ ਸਿੱਖਣ ਵਾਲਿਆਂ ਲਈ ਗੁਣਵੱਤਾਪੂਰਨ ਸਿੱਖਿਆ ਜਾਰੀ ਰਹੇ।",
+        "aboutDikshaHeading" : "DIKSHA (ਗਿਆਨ ਸਾਂਝਾ ਕਰਨ ਲਈ ਡਿਜੀਟਲ ਬੁਨਿਆਦੀ ਢਾਂਚਾ) ਭਾਰਤ ਸਰਕਾਰ ਦੇ ਸਿੱਖਿਆ ਮੰਤਰਾਲੇ (MoE), ਦੀ ਅਗਵਾਈ ਹੇਠ, ਸਕੂਲੀ ਸਿੱਖਿਆ ਲਈ ਇੱਕ ਰਾਸ਼ਟਰੀ ਪਲੇਟਫਾਰਮ ਹੈ, ਜੋ ਕਿ ਨੈਸ਼ਨਲ ਕੌਂਸਲ ਫਾਰ ਐਜੂਕੇਸ਼ਨਲ ਰਿਸਰਚ ਐਂਡ ਟ੍ਰੇਨਿੰਗ (NCERT) ਦੀ ਇੱਕ ਪਹਿਲਕਦਮੀ ਹੈ। ਭਾਰਤ ਦੇ ਮਾਨਯੋਗ ਉਪ ਰਾਸ਼ਟਰਪਤੀ - ਸ਼੍ਰੀ ਐਮ. ਵੈਂਕਈਆ ਨਾਇਡੂ ਦੁਆਰਾ 2017 ਵਿੱਚ ਸ਼ੁਰੂ ਕੀਤੀ ਗਈ, DIKSHA ਨੂੰ CBSE ਸਮੇਤ ਲਗਭਗ ਸਾਰੇ ਰਾਜਾਂ, ਕੇਂਦਰ ਸ਼ਾਸਤ ਪ੍ਰਦੇਸ਼ਾਂ, ਕੇਂਦਰੀ ਖੁਦਮੁਖਤਿਆਰ ਸੰਸਥਾਵਾਂ/ਬੋਰਡਾਂ ਦੁਆਰਾ ਅਪਣਾਇਆ ਗਿਆ ਹੈ।",
     },
     "ta": {
         "language": "தமிழ்",
@@ -5890,6 +5929,8 @@ const languageTranslations = {
         "scanDownload": "பதிவிறக்கம் செய்ய ஸ்கேன்",
         "clickHere" : "இங்கே சொடுக்கவும்",
         "contributeBanner": " இந்தியா முழுவதும் உள்ள கற்பவர்களுக்கு தரமான கற்றல் தொடர்வதை உறுதி செய்வதற்காக கல்வி களத்தில் மின்னணு கற்றல் வளங்களை பங்களிக்கவும்.",
+        "aboutDikshaHeading" : "தீக்ஷா-ஒரு நாடு, ஒரு டிஜிட்டல் தளம்",
+        "aboutDescription": "தீக்ஷா (அறிவு பகிர்வுக்கான டிஜிட்டல் உள்கட்டமைப்பு) என்பது பள்ளிக் கல்விக்கான ஒரு தேசிய தளமாகும், இது இந்திய அரசின் கல்வி அமைச்சகத்தின் (எம். ஓ. இ) ஆதரவின் கீழ் தேசிய கல்வி ஆராய்ச்சி மற்றும் பயிற்சி கவுன்சிலின் (என். சி. இ. ஆர். டி) முன்முயற்சியாகும். மாண்புமிகு குடியரசுத் துணைத் தலைவர் திரு. எம். வெங்கையா நாயுடு அவர்களால் 2017 ஆம் ஆண்டில் தொடங்கப்பட்ட தீக்ஷா, சிபிஎஸ்இ உட்பட கிட்டத்தட்ட அனைத்து மாநிலங்கள், யூனியன் பிரதேசங்கள், மத்திய தன்னாட்சி அமைப்புகள்/வாரியங்களால் ஏற்றுக்கொள்ளப்பட்டுள்ளது.",
     },
     "te": {
         "language": "తెలుగు",
@@ -6005,6 +6046,8 @@ const languageTranslations = {
         "scanDownload": "డౌన్లోడ్ చేయడానికి స్కాన్ చేయండి",
         "clickHere" : "ఇక్కడ క్లిక్ చేయండి",
         "contributeBanner": "భారతదేశం అంతటా అభ్యాసకులకు నాణ్యమైన అభ్యాసం కొనసాగేలా విద్యా రంగంలో ఇ-లెర్నింగ్ వనరులను అందించండి.",
+        "aboutDikshaHeading" : "దీక్షా-ఒక దేశం, ఒక డిజిటల్ వేదిక ",
+        "aboutDescription": "దీక్షా (డిజిటల్ ఇన్ఫ్రాస్ట్రక్చర్ ఫర్ నాలెడ్జ్ షేరింగ్) అనేది పాఠశాల విద్య కోసం ఒక జాతీయ వేదిక, ఇది భారత ప్రభుత్వ విద్యా మంత్రిత్వ శాఖ (ఎంఓఈ) ఆధ్వర్యంలో నేషనల్ కౌన్సిల్ ఫర్ ఎడ్యుకేషనల్ రీసెర్చ్ అండ్ ట్రైనింగ్ (ఎన్సీఈఆర్టీ) యొక్క చొరవ. 2017లో భారత గౌరవనీయ ఉపరాష్ట్రపతి శ్రీ ఎం. వెంకటేశ్వర్లు ప్రారంభించిన దీక్షను సిబిఎస్ఇతో సహా దాదాపు అన్ని రాష్ట్రాలు, కేంద్రపాలిత ప్రాంతాలు, కేంద్ర స్వయంప్రతిపత్తి సంస్థలు/బోర్డులు స్వీకరించాయి.",
     },
     "ur": {
         "language": "اردو",
@@ -6120,13 +6163,16 @@ const languageTranslations = {
         "scanDownload":"ڈاؤن لوڈ کرنے کے لئے اسکین کریں",
         "clickHere" : "یہاں کلک کریں",
         "contributeBanner": "اس بات کو یقینی بنانے کے لئے کہ ہندوستان بھر میں سیکھنے والوں کے لئے معیاری تعلیم جاری رہے، تعلیم کے شعبے میں ای لرننگ وسائل کا حصہ ڈالیں۔",
+        "aboutDikshaHeading" : "دیکشا - ایک قوم، ایک ڈیجیٹل پلیٹ فارم",
+        "aboutDescription": "دیکشا (ڈیجیٹل انفراسٹرکچر فار نالج شیئرنگ) اسکولی تعلیم کے لئے ایک قومی پلیٹ فارم ہے، جو وزارت تعلیم (ایم او ای)، حکومت ہند کی سرپرستی میں نیشنل کونسل فار ایجوکیشنل ریسرچ اینڈ ٹریننگ (این سی ای آر ٹی) کی ایک پہل ہے۔ نائب صدر جمہوریہ ہند جناب ایم وینکیا نائیڈو کے ذریعہ 2017 میں شروع کئے گئے دیکشا کو سی بی ایس ای سمیت تقریبا تمام ریاستوں ، مرکز کے زیر انتظام علاقوں ، مرکزی خود مختار اداروں / بورڈوں نے اپنایا ہے۔",
     }
 };
 
 $(document).ready(function(){
-    let language = localStorage.getItem('portalLanguage');
-    console.log(language)
-    (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
+    // let language = localStorage.getItem('portalLanguage');
+    // let language = setPageLanguage("en")  ?? setPageLanguage(localStorage.getItem('portalLanguage'));
+    // console.log("old language dropdown");
+    // (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
     $('.dropdown-wrapper-div').click(function(){
         console.log("click----dropdown-wrapper-div")
@@ -6153,7 +6199,36 @@ $(document).ready(function(){
     });
 })
 
+$(document).ready(function(){
+    // let language = setPageLanguage("en")  ?? setPageLanguage(localStorage.getItem('portalLanguage'));
+    // console.log(language);
+    // (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
+    // language = setPageLanguage("en")  ?? setPageLanguage(localStorage.getItem('portalLanguage'));
 
+    $('.dropdown-language-div').click(function(){
+        console.log("click----dropdown-wrapper-div")
+
+        if(($(this).hasClass("open"))){
+            console.log("open");
+            $(this).removeClass("open");
+            $("i.dropdown").removeClass("rotate");
+            $("ul.language-dropdown").slideUp("slow");
+        }else{
+            console.log("close")
+            $(this).addClass("open");
+            $("i.dropdown").addClass("rotate");
+            $("ul.language-dropdown").slideDown( "slow" );
+        }
+    });
+    $('.dropdown-language-div ul.language-dropdown li').click(function(){
+        $(".dropdown-language-div ul.language-dropdown li").removeClass("active");
+        $(this).addClass("active");
+        setPageLanguage($(this).attr("data-value"));
+        $("dropdown-language-div").removeClass("open");
+        $("i.dropdown").removeClass("rotate");
+        $("ul.language-dropdown").slideUp("slow");
+    });
+})
 function getLangTranslations() {
     const lang = localStorage.getItem('portalLanguage') || 'en';
 
@@ -6206,12 +6281,66 @@ function getLangTranslations() {
     }
 }
 
+function getLangTranslations() {
+    const lang = localStorage.getItem('portalLanguage') || 'en';
+
+    $(".dropdown-language-div ul.language-dropdown li").removeClass("active");
+    $('.dropdown-language-div ul.language-dropdown li[data-value= '+lang+']').addClass('active');
+    
+    $(".language-text").text(languageTranslations[lang]['language']);
+    const translations = languageTranslations[lang];
+    if (translations && Object.keys(translations).length) {
+        const allTags = document.querySelectorAll("*[data-translate]");
+        const allAttrTags = document.querySelectorAll("*[data-translate-attr]");
+        // console.log(allTags);
+        allTags.forEach(function (elem) {
+            const translateKey = elem.getAttribute('data-translate');
+            const hasKey = Object.keys(translations).find(key => translateKey == key);
+            if (hasKey) {
+                elem.innerText = translations[translateKey];
+            }
+        });
+
+        allAttrTags.forEach(function (elem) {
+            const translateAttr = elem.getAttribute('data-translate-attr');
+            const toggleAttr = elem.getAttribute('data-toggle');
+            const attrObj = translateAttr.split(':');
+            const translateKey = attrObj[0].replace(/[^a-zA-Z]/g, '');
+            const hasKey = Object.keys(translations).find(key => translateKey == key);
+            if (hasKey) {
+                try{
+                    attrObj[1].split(',').forEach(val => {
+                        const attr = val.replace(/[^a-zA-Z]/g, '');
+                        console.log(attr);
+                        elem.setAttribute(attr, translations[translateKey]);
+                        if (toggleAttr && toggleAttr == 'tooltip') {
+                            $(elem).tooltip("dispose").attr("title", translations[translateKey]).tooltip();
+                        }
+                    });
+                }catch(e){
+                    console.log(e);
+                }
+           
+            }
+        });
+
+        if (lang == 'ur') {
+            document.documentElement.setAttribute('dir', 'rtl');
+        } else {
+            document.documentElement.setAttribute('dir', 'ltr');
+        }
+
+    }
+}
+
 window.onclick = function(event) {
+    console.log("window on click------------");
     if (!(
         event.target.matches('ul.language-dropdown') ||
         event.target.matches('ul.language-dropdown li') || 
         event.target.matches('ul.language-dropdown li span') || 
         event.target.matches('.dropdown-wrapper-div') || 
+        event.target.matches('.dropdown-language-div') || 
         event.target.matches('span.language') || 
         event.target.matches('span.language-text') ||
         event.target.matches('i.dropdown.rotate') ||
@@ -6219,6 +6348,7 @@ window.onclick = function(event) {
         $(".dropdown-wrapper-div").removeClass("open");
         $("i.dropdown").removeClass("rotate");
         $("ul.language-dropdown").slideUp("slow");
+        $("dropdown-language-div").removeClass("open");
     }
   }
   
