@@ -291,6 +291,9 @@ html.darkmode {
     .diksha-coming-soon{
         color: var(--white) ;
     }
+    .diksha-logo-text {
+        filter: brightness(0) invert(1);
+    }
 }
 
 .usage-metrics-content {

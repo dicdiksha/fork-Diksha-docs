@@ -2,36 +2,39 @@
     .bg-yellow{
         background-image: url(../assets/imgs/about/yellow.png);
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
     .bg-blue{
         background-image: url(../assets/imgs/about/blue.png);
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
     .bg-red{
         background-image: url(../assets/imgs/about/red.png);
         background-repeat: no-repeat;
+        background-size: cover;
 
     }
     .dovument {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
 }
 
 .pdf-doc {
-    padding:30px;
+    padding:1.875rem;
     width: 322px;
-    margin: 30px;
-    border-radius: 12px;
+    margin: 1.875rem;
+    border-radius: 0.75rem;
 }
 button.view-pdf {
     outline: none;
     border: 0;
-    border-radius: 19px;
-    padding: 2px 11px;
+    border-radius: 1.1875rem;
+    padding: 0.125rem 0.6875rem;
    
 }
 button.view-pdf a{
@@ -39,11 +42,11 @@ button.view-pdf a{
     color: #fff;
     font-weight: bold;
     border: none;
-    border-radius: 4px;
-    font-size: 16px;
+    border-radius: 0.25rem;
+    font-size: 1rem;
 }
 .pdf-content {
-    padding: 15px 0;
+    padding: 0.9375rem 0;
 }
 .btn-yellow{
     background-color: #B19834;
@@ -62,7 +65,7 @@ button.view-pdf a{
             <span class="text">  {{site.data.text.aboutDocument}} </span>
         </div>
         <div class="row document">
-            <div class="col-lg-4 col-md-6 col-sm-12"> 
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex"> 
                 <div class="pdf-doc bg-yellow">
                     <div class="pdf-deatils">
                         <div class="pdf">
@@ -79,7 +82,7 @@ button.view-pdf a{
                     </div>  
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="col-lg-4 col-md-6 col-sm-12 d-flex">
                 <div class="pdf-doc bg-blue ">
                     <div class="pdf-deatils">
                         <div class="pdf">

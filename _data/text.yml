@@ -125,13 +125,14 @@ openPdf: open in pdf
 #======Start New home Page=======#
 
 #=======title=======#
-view : View 
+# view : View 
 dikshatitle: Diksha's
 digitalcontent: world of open digital content
 focusArea: Focus Areas of 
 compreLearning: Comprehensive Learning
 foundationalsecondary :  for Foundational to Secondary
 viewMore : View More
+login: LOGIN
 
 
 
@@ -154,7 +155,7 @@ vocationEducationDesc: Initative to focus on integration of vocational training 
 virtualLab: Virtual Labs
 virtualLabDesc: Virtual laboratories access for students to enhance actual laboratory experiences
 compleateCoverage: Complete K-12 Coverage
-compleateCoverageDesc: Access complete K-12 study material covering all <br>boards, classes and subjects
+compleateCoverageDesc: Access complete K-12 study material covering all boards, classes and subjects
 practiceContent: Unlimited Practice Content
 practiceContentDesc: Access practice content such as NCERT solutions and trending content
 studyMaterial: Interactive Study Material
@@ -200,17 +201,11 @@ aboutDocument : Documents
 viewDoc : view
 
 #contribute
-contributeBanner: Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.
 mobileApp:  Mobile App Today!
-eLearningTitle :  Types of e-learning resources you can contribute
-eLearningExplanation:  Explanation Videos
-eLearningPractice: Practice Questions
-eLearningTeaching: Teaching Videos
-eLearningLearningVideos: Experiential Learning Videos
-eLearningLesson: Lesson Plans
+contributeBanner: Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.
 
 #getapp
-getAppDesc: The DIKSHA application is available on play store & app store,  You can also scan QR code to download it.
+getAppDesc: The DIKSHA application is available on play store & app store, You can also scan QR code to download it.
 downloadLinkAndroid: Download Link For Android
 downloadLinkIos: Download Link For iOS
 scanDownload: Scan to Download

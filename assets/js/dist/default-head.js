@@ -24390,7 +24390,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
 
-/*=====================focus area slider==============*/
+/*===================== Start focus area slider==============*/
 
 $(document).ready(function(){  
   $('#myCarousel .carousel-item').each(function () {
@@ -24404,7 +24404,7 @@ $(document).ready(function(){
     
     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 })
-
+/*=====================End focus area slider==============*/
 
 $(document).ready(function () {
 
@@ -24725,7 +24725,7 @@ $(document).ready(function () {
     tenantPageExist: false
   },
   {
-    label: "Ladkah",
+    label: "Ladakh",
     value: "ld",
     tenantPageExist: false
   },
@@ -24896,7 +24896,14 @@ $(document).ready(function () {
     window.open('/term-of-use.html',"_self");
     return false;
   });
-
+  /*===================== Start login button==============*/
+  $(".login-home-btn").click(function (e) {
+    e.preventDefault();
+    window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+    window.open('/resources', "_self");
+    return false;
+  });
+    /*===================== End login button==============*/
   // });
 
 });
@@ -26326,7 +26333,18 @@ const languageTranslations = {
         "board-ncert-description": "Explore content published by NCERT (National Council of Educational Research and Training)",
         "board-cbse-description": "Explore content published by CBSE (Central Board of Secondary Education)",
         "board-nios-description": "Explore content published by NIOS (The National Institute of Open Schooling)",
-        "board-btntitle": "Explore"
+        "board-btntitle": "Explore",   
+        "login" : "LOGIN",
+        "getAppDesc": "The DIKSHA application is available on play store & app store, You can also scan QR code to download it.",
+        "mobileApp":  "Mobile App Today!",
+        "downloadLinkAndroid": "Download Link For Android",
+        "downloadLinkIos": "Download Link For iOS",
+        "scanDownload": "Scan to Download",
+        "clickHere" : "Click Here",
+        "contributeBanner": "Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India."
+
+
+
     },
     "as": {
         "language": "অসমীয়া",
@@ -26433,7 +26451,15 @@ const languageTranslations = {
         "board-ncert-description": "এনচিইআৰটি (শৈক্ষিক গৱেষণা আৰু প্ৰশিক্ষণৰ ৰাষ্ট্ৰীয় পৰিষদ)ৰ দ্বাৰা প্ৰকাশিত বিষয়বস্তুৰ সন্ধান কৰক",
         "board-cbse-description": "চিবিএচই (মাধ্যমিক শিক্ষাৰ কেন্দ্ৰীয় ব’ৰ্ড)ৰ দ্বাৰা প্ৰকাশিত বিষয়বস্তুৰ সন্ধান কৰক",
         "board-nios-description": "এনআইঅ’এচ (মুক্ত বিদ্যালয় শিক্ষাৰ ৰাষ্ট্ৰীয় প্ৰতিষ্ঠান)ৰ দ্বাৰা প্ৰকাশিত বিষয়বস্তুৰ সন্ধান কৰক",
-        "board-btntitle": "অনুসন্ধান কৰক"
+        "board-btntitle": "অনুসন্ধান কৰক",
+        "login" : "লগিন কৰক",
+        "getAppDesc": "ଦୀକ୍ଷା ଆପ୍ଲିକେସନ୍ ପ୍ଲେ ଷ୍ଟୋର୍ ଏବଂ ଆପ୍ ଷ୍ଟୋରରେ ଉପଲବ୍ଧ, ଆପଣ ଏହାକୁ ଡାଉନଲୋଡ୍ କରିବାକୁ କ୍ଯ଼ୁଆର୍ କୋଡ୍ ସ୍କାନ୍ ମଧ୍ଯ଼ କରିପାରିବେ |",
+        "mobileApp":  "ଆଜି ମୋବାଇଲ୍ ଆପ୍!",
+        "downloadLinkAndroid": "ଆଣ୍ଡ୍ରଏଡ୍ ପାଇଁ ଲିଙ୍କ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+        "downloadLinkIos": "ଆଇ. ଓ. ଏସ୍. ପାଇଁ ଲିଙ୍କ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+        "scanDownload": "ଡାଉନ୍ଲୋଡ୍ କରିବା ପାଇଁ ସ୍କାନ୍ କରନ୍ତୁ",
+        "clickHere" : "ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ",
+        "contributeBanner": "সমগ্ৰ ভাৰতৰ শিক্ষাৰ্থীসকলৰ বাবে গুণগত মানৰ শিক্ষা অব্যাহত ৰখাটো নিশ্চিত কৰিবলৈ শিক্ষাৰ ক্ষেত্ৰত ই-লৰ্ণিং সম্পদসমূহৰ অৱদান আগবঢ়াব।",
     },
     "bn": {
         "language": "বাংলা",
@@ -26540,7 +26566,15 @@ const languageTranslations = {
         "board-ncert-description": "এনসিআরটি দ্বারা প্রকাশিত কনটেন্ট এক্সপ্লোর করুন ( ন্যাশনাল কাউন্সিল অফ এডুকেশনাল রিসার্চ এন্ড ট্রেনিং)",
         "board-cbse-description": "সিবিএসই দ্বারা প্রকাশিত কনটেন্ট এক্সপ্লোর করুন (সেন্ট্রাল বোর্ড অফ সেকেন্ডারি এডুকেশন)",
         "board-nios-description": "এনআইওএস দ্বারা প্রকাশিত কনটেন্ট এক্সপ্লোর করুন ( দি ন্যাশনাল ইনস্টিটিউট অফ ওপেন স্কুলিং)",
-        "board-btntitle": "এক্সপ্লোর করুন"
+        "board-btntitle": "এক্সপ্লোর করুন",
+        "login" : "লগইন করুন",
+        "getAppDesc": "দীক্ষা অ্যাপ্লিকেশনটি প্লে স্টোর এবং অ্যাপ স্টোরে পাওয়া যায়, আপনি এটি ডাউনলোড করতে কিউআর কোড স্ক্যানও করতে পারেন।",
+        "mobileApp":  "DIKSHA  ডাউনলোড করুন",
+        "downloadLinkAndroid": "অ্যান্ড্রয়েডের জন্য ডাউনলোড লিঙ্ক",
+        "downloadLinkIos": "আইওএস-এর জন্য ডাউনলোড লিঙ্ক",
+        "scanDownload": "ডাউনলোড করতে স্ক্যান করুন",
+        "clickHere" : "এখানে ক্লিক করুন",
+        "contributeBanner": "সারা ভারতে শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা যাতে অব্যাহত থাকে তা নিশ্চিত করতে শিক্ষার ক্ষেত্রে ই-লার্নিং সম্পদের অবদান রাখুন।",
     },
     "gu": {
         "language": "ગુજરાતી",
@@ -26647,7 +26681,16 @@ const languageTranslations = {
         "board-ncert-description": "NCERT (શૈક્ષણિક સંશોધન અને તાલીમ રાષ્ટ્રીય સમિતિ) દ્વારા પ્રકાશિત સામગ્રીનું અન્વેષણ કરો",
         "board-cbse-description": "CBSE (સેન્ટ્રલ બોર્ડ ઓફ સેકન્ડરી એજ્યુકેશન) દ્વારા પ્રકાશિત સામગ્રીનું અન્વેષણ કરો",
         "board-nios-description": "NIOS (નેશનલ ઇન્સ્ટિટ્યૂટ ઓપન સ્કૂલિંગ) દ્વારા પ્રકાશિત સામગ્રીનું અન્વેષણ કરો",
-        "board-btntitle": "એક્સપ્લોર"
+        "board-btntitle": "એક્સપ્લોર",
+        "login" : "લોગિન કરો",
+        "getAppDesc": "દીક્ષા એપ્લિકેશન પ્લે સ્ટોર અને એપ સ્ટોર પર ઉપલબ્ધ છે, તમે તેને ડાઉનલોડ કરવા માટે ક્યુ. આર. કોડ પણ સ્કેન કરી શકો છો.",
+        "mobileApp":  "મોબાઇલ એપ્લિકેશન આજે!",
+        "downloadLinkAndroid": "",
+        "downloadLinkIos": "આઇ. ઓ. એસ. માટે લિંક ડાઉનલોડ કરો",
+        "scanDownload": "ડાઉનલોડ કરવા માટે સ્કેન કરો",
+        "clickHere" : "અહીં ક્લિક કરો",
+        "contributeBanner": "સમગ્ર ભારતમાં વિદ્યાર્થીઓ માટે ગુણવત્તાયુક્ત શિક્ષણ ચાલુ રહે તે સુનિશ્ચિત કરવા માટે શિક્ષણ ક્ષેત્રમાં ઇ-લર્નિંગ સંસાધનોનું યોગદાન આપવું.",
+        
     },
     "hi": {
         "language": "हिंदी",
@@ -26754,7 +26797,17 @@ const languageTranslations = {
         "board-ncert-description": "एन सी ई आर टी (राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद)  द्वारा प्रकाशित सामग्री का अन्वेषण करें",
         "board-cbse-description": "सीबीएसई (केंद्रीय माध्यमिक शिक्षा बोर्ड) द्वारा प्रकाशित सामग्री का अन्वेषण करें",
         "board-nios-description": "NIOS (राष्ट्रीय मुक्त विद्यालयी शिक्षा संस्थान) द्वारा प्रकाशित सामग्री का अन्वेषण करें",
-        "board-btntitle": "अन्वेषण"
+        "board-btntitle": "अन्वेषण",
+        "login" : "लॉगइन करें",
+        "getAppDesc": "दीक्षा एप्लीकेशन प्ले स्टोर और ऐप स्टोर पर उपलब्ध है, आप इसे डाउनलोड करने के लिए क्यू. आर. कोड भी स्कैन कर सकते हैं।",
+        "mobileApp":  "मोबाइल ऐप आज!",
+        "downloadLinkAndroid": "एंड्रॉइड के लिए लिंक डाउनलोड करें",
+        "downloadLinkIos": "आई. ओ. एस. के लिए डाउनलोड लिंक",
+        "scanDownload": "डाउनलोड के लिए स्कैन करें",
+        "clickHere" : "यहाँ क्लिक करें",
+        "contributeBanner": "शिक्षा के क्षेत्र में ई-लर्निंग संसाधनों का योगदान करें ताकि यह सुनिश्चित किया जा सके कि पूरे भारत में शिक्षार्थियों के लिए गुणवत्तापूर्ण शिक्षा जारी रहे।",
+        
+
     },
     "kn": {
         "language": "ಕನ್ನಡ",
@@ -26860,7 +26913,15 @@ const languageTranslations = {
         "board-ncert-description": "ಎನ್.ಸಿ.ಇ.ಆರ್.ಟಿ.ಯು (ರಾಷ್ಟ್ರೀಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನಾ ಮತ್ತು ತರಬೇತಿ ಪರಿಷತ್ತು) ಪ್ರಕಟಿಸಿದ ಪಠ್ಯಾಂಶಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
         "board-cbse-description": "ಸಿ.ಬಿ.ಎಸ್.ಇ.ಯು (ಕೇಂದ್ರೀಯ ಪ್ರೌಢ ಶಿಕ್ಷಣ ಮಂಡಳಿ) ಪ್ರಕಟಿಸಿದ ಪಠ್ಯಾಂಶಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
         "board-nios-description": "ಎನ್‍.ಐ.ಒ.ಎಸ್. (ರಾಷ್ಟ್ರೀಯ ಮುಕ್ತ ಶಾಲಾ ಶಿಕ್ಷಣ ಸಂಸ್ಥೆ) ಪ್ರಕಟಿಸಿದ ಪಠ್ಯಾಂಶಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
-        "board-btntitle": "ಅನ್ವೇಷಿಸಿ"
+        "board-btntitle": "ಅನ್ವೇಷಿಸಿ",
+        "login" : "ಲಾಗ್ಇನ್",
+        "getAppDesc": "ದೀಕ್ಷಾ ಅಪ್ಲಿಕೇಶನ್ ಪ್ಲೇ ಸ್ಟೋರ್ ಮತ್ತು ಆಪ್ ಸ್ಟೋರ್ನಲ್ಲಿ ಲಭ್ಯವಿದೆ, ನೀವು ಅದನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಕ್ಯೂಆರ್ ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಬಹುದು.",
+        "mobileApp":  "ಮೊಬೈಲ್ ಅಪ್ಲಿಕೇಶನ್ ಇಂದು!",
+        "downloadLinkAndroid": "ಆಂಡ್ರಾಯ್ಡ್ಗಾಗಿ ಕೊಂಡಿಯನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ",
+        "downloadLinkIos": "ಆಂಡ್ರಾಯ್ಡ್ಗಾಗಿ ಕೊಂಡಿಯನ್ನು ಡೌನ್ಲೋಡ್ ಮಾಡಿ",
+        "scanDownload": "ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
+        "clickHere" : "ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ",
+        "contributeBanner": "ಭಾರತದಾದ್ಯಂತ ಕಲಿಯುವವರಿಗೆ ಗುಣಮಟ್ಟದ ಕಲಿಕೆ ಮುಂದುವರಿಯುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಇ-ಲರ್ನಿಂಗ್ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಒದಗಿಸಿ.",
     },
     "mr": {
         "language": "मराठी",
@@ -26967,7 +27028,15 @@ const languageTranslations = {
         "board-ncert-description": "एन सी ई आर टी (शैक्षणिक संशोधन आणि प्रशिक्षण राष्ट्रीय परिषद) तर्फे प्रकाशित झालेल्या सामग्रीचे अन्वेषण करा",
         "board-cbse-description": "सी बी एस ई (केंद्रीय माध्यमिक शिक्षण मंडळ) तर्फे प्रकाशित झालेल्या सामग्रीचे अन्वेषण करा",
         "board-nios-description": "एन आय ओ एस (राष्ट्रीय मुक्त विद्यालयी शिक्षा संस्थात) तर्फे प्रकाशित झालेल्या सामग्रीचे अन्वेषण करा",
-        "board-btntitle": "अन्वेषण करा"
+        "board-btntitle": "अन्वेषण करा",
+        "login" : "लॉगइन करा",
+        "getAppDesc": "दीक्षा ऍप्लिकेशन प्ले स्टोअर आणि ऍप स्टोअरवर उपलब्ध आहे, तुम्ही ते डाउनलोड करण्यासाठी क्यू. आर. कोड स्कॅन देखील करू शकता.",
+        "mobileApp":  "दीक्षा डाउनलोड करा",
+        "downloadLinkAndroid": "अँड्रॉइडसाठी लिंक डाउनलोड करा",
+        "downloadLinkIos": "आय. ओ. एस. साठी डाउनलोड लिंक",
+        "scanDownload": "डाउनलोड करण्यासाठी स्कॅन करा",
+        "clickHere" : "येथे क्लिक करा",
+        "contributeBanner": "भारतभरातील विद्यार्थ्यांसाठी दर्जेदार शिक्षण सुरू राहील हे सुनिश्चित करण्यासाठी शैक्षणिक क्षेत्रात ई-शिक्षण संसाधनांचे योगदान द्या.",
     },
     "ml": {
         "language": "മലയാളം",
@@ -26997,7 +27066,14 @@ const languageTranslations = {
         "board-ncert-description": "NCERT( ദേശീയ വിദ്യാഭ്യാസ ഗവേഷണ പരിശീലന സമിതി) പ്രസിദ്ധീകരിച്ച ഉള്ളടക്കം എക്‌സ്‌പ്ലോർ  ചെയ്യുക",
         "board-cbse-description": "CBSE( (സെൻട്രൽ ബോർഡ് ഓഫ് സെക്കൻഡറി എജ്യുക്കേഷൻ) പ്രസിദ്ധീകരിച്ച ഉള്ളടക്കം )  എക്‌സ്‌പ്ലോർ  ചെയ്യുക",
         "board-nios-description": "NIOS(   (നാഷണൽ ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ് ഓപ്പൺ സ്കൂൾ)  പ്രസിദ്ധീകരിച്ച ഉള്ളടക്കം എക്‌സ്‌പ്ലോർ  ചെയ്യുക",
-        "board-btntitle": "എക്‌സ്‌പ്ലോർ ചെയ്യുക"
+        "board-btntitle": "എക്‌സ്‌പ്ലോർ ചെയ്യുക",
+        "login" : "ലോഗിൻ",
+        "getAppDesc": " ",
+        "mobileApp":  "",
+        "downloadLinkAndroid": "",
+        "downloadLinkIos": "",
+        "scanDownload": "",
+        "clickHere" : "",
     },
     "or": {
         "language": "ଓଡ଼ିଆ",
@@ -27104,7 +27180,15 @@ const languageTranslations = {
         "board-ncert-description": "NCERT (ଜାତୀୟ ଶିକ୍ଷା ଗବେଷଣା ଓ ପ୍ରଶିକ୍ଷଣ ପରିଷଦ) ଦ୍ୱାରା ପବ୍ଲିସ୍ ହୋଇଥିବା କଣ୍ଟେଣ୍ଟ ଦେଖନ୍ତୁ",
         "board-cbse-description": "CBSE (କେନ୍ଦ୍ରୀୟ ମାଧ୍ୟମିକ ଶିକ୍ଷା ବୋର୍ଡ) ଦ୍ୱାରା ପବ୍ଲିସ୍ ହୋଇଥିବା କଣ୍ଟେଣ୍ଟ ଦେଖନ୍ତୁ",
         "board-nios-description": "NIOS (ରାଷ୍ଟ୍ରୀୟ ମୁକ୍ତ ବିଦ୍ୟାଳୟ ଶିକ୍ଷା ପ୍ରତିଷ୍ଠାନ) ଦ୍ୱାରା ପବ୍ଲିସ୍ ହୋଇଥିବା କଣ୍ଟେଣ୍ଟ ଦେଖନ୍ତୁ",
-        "board-btntitle": "ଦେଖନ୍ତୁ"
+        "board-btntitle": "ଦେଖନ୍ତୁ",
+        "login" : "ଲଗଇନ୍ କରନ୍ତୁ",
+        "getAppDesc": "ଦୀକ୍ଷା ଆପ୍ଲିକେସନ୍ ପ୍ଲେ ଷ୍ଟୋର୍ ଏବଂ ଆପ୍ ଷ୍ଟୋରରେ ଉପଲବ୍ଧ, ଆପଣ ଏହାକୁ ଡାଉନଲୋଡ୍ କରିବାକୁ କ୍ଯ଼ୁଆର୍ କୋଡ୍ ସ୍କାନ୍ ମଧ୍ଯ଼ କରିପାରିବେ |",
+        "mobileApp":  "ଆଜି ମୋବାଇଲ୍ ଆପ୍!",
+        "downloadLinkAndroid": "ଆଣ୍ଡ୍ରଏଡ୍ ପାଇଁ ଲିଙ୍କ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+        "downloadLinkIos": "ଆଇ. ଓ. ଏସ୍. ପାଇଁ ଲିଙ୍କ ଡାଉନଲୋଡ୍ କରନ୍ତୁ",
+        "scanDownload": "ଡାଉନ୍ଲୋଡ୍ କରିବା ପାଇଁ ସ୍କାନ୍ କରନ୍ତୁ",
+        "clickHere" : "ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ",
+        "contributeBanner": "ସମଗ୍ର ଭାରତରେ ବିଦ୍ଯ଼ାର୍ଥୀମାନଙ୍କ ପାଇଁ ଗୁଣାତ୍ମକ ଶିକ୍ଷା ଜାରି ରଖିବା ସୁନିଶ୍ଚିତ କରିବା ପାଇଁ ଶିକ୍ଷା କ୍ଷେତ୍ରରେ ଇ-ଲର୍ଣ୍ଣିଂ ସମ୍ବଳର ଯୋଗଦାନ କରନ୍ତୁ।",
     },
     "pa": {
         "language": "ਪੰਜਾਬੀ",
@@ -27211,7 +27295,15 @@ const languageTranslations = {
         "board-ncert-description": "NCERT (ਨੈਸ਼ਨਲ ਕੌਂਸਲ ਆਫ਼ ਐਜੂਕੇਸ਼ਨਲ ਰਿਸਰਚ ਐਂਡ ਟ੍ਰੇਨਿੰਗ) ਦੁਆਰਾ ਪ੍ਰਕਾਸ਼ਤ ਕੰਟੇਂਟ ਦੀ ਪੜਚੋਲ ਕਰੋ",
         "board-cbse-description": "CBSE (ਕੇਂਦਰੀ ਸੈਕੰਡਰੀ ਸਿੱਖਿਆ ਬੋਰਡ) ਦੁਆਰਾ ਪ੍ਰਕਾਸ਼ਤ ਕੰਟੇਂਟ ਦੀ ਪੜਚੋਲ ਕਰੋ",
         "board-nios-description": "NIOS (ਨੈਸ਼ਨਲ ਇੰਸਟੀਚਿ ਆਫ਼ ਓਪਨ ਸਕੂਲਿੰਗ) ਦੁਆਰਾ ਪ੍ਰਕਾਸ਼ਤ ਕੰਟੇਂਟ ਦੀ ਪੜਚੋਲ ਕਰੋ",
-        "board-btntitle": "ਪੜਚੋਲ ਕਰੋ"
+        "board-btntitle": "ਪੜਚੋਲ ਕਰੋ",
+        "login" : "ਲੌਗਇਨ ਕਰੋ",
+        "getAppDesc": "ਦੀਕਸ਼ਾ ਐਪਲੀਕੇਸ਼ਨ ਪਲੇ ਸਟੋਰ ਅਤੇ ਐਪ ਸਟੋਰ ਉੱਤੇ ਉਪਲਬਧ ਹੈ, ਤੁਸੀਂ ਇਸ ਨੂੰ ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਕਿਊ. ਆਰ. ਕੋਡ ਨੂੰ ਵੀ ਸਕੈਨ ਕਰ ਸਕਦੇ ਹੋ। ",
+        "mobileApp":  "ਮੋਬਾਈਲ ਐਪ ਅੱਜ!",
+        "downloadLinkAndroid": "ਐਂਡਰਾਇਡ ਲਈ ਲਿੰਕ ਡਾਊਨਲੋਡ ਕਰੋ",
+        "downloadLinkIos": "ਆਈਓਐਸ ਲਈ ਲਿੰਕ ਡਾਊਨਲੋਡ ਕਰੋ",
+        "scanDownload": "ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਸਕੈਨ ਕਰੋ",
+        "clickHere" : "ਇਥੇ ਕਲਿੱਕ ਕਰੋ",
+        "contributeBanner": "ਸਿੱਖਿਆ ਦੇ ਖੇਤਰ ਵਿੱਚ ਈ-ਲਰਨਿੰਗ ਸਰੋਤਾਂ ਦਾ ਯੋਗਦਾਨ ਪਾਓ ਤਾਂ ਜੋ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕੀਤਾ ਜਾ ਸਕੇ ਕਿ ਪੂਰੇ ਭਾਰਤ ਵਿੱਚ ਸਿੱਖਣ ਵਾਲਿਆਂ ਲਈ ਗੁਣਵੱਤਾਪੂਰਨ ਸਿੱਖਿਆ ਜਾਰੀ ਰਹੇ।",
     },
     "ta": {
         "language": "தமிழ்",
@@ -27318,7 +27410,15 @@ const languageTranslations = {
         "board-ncert-description": "என்.சி.இ.ஆர்.டி (கல்வி ஆராய்ச்சி மற்றும் பயிற்சி தேசிய கவுன்சில்) வெளியிட்ட உள்ளடக்கத்தை ஆராயுங்கள்",
         "board-cbse-description": "சிபிஎஸ்இ (மத்திய இடைநிலைக் கல்வி வாரியம்) வெளியிட்ட உள்ளடக்கத்தை ஆராயுங்கள்",
         "board-nios-description": "NIOS (தி நேஷனல் இன்ஸ்டிடியூட் ஆப் ஓபன் ஸ்கூலிங்) வெளியிட்ட உள்ளடக்கத்தை ஆராயுங்கள்",
-        "board-btntitle": "ஆராயுங்கள்"
+        "board-btntitle": "ஆராயுங்கள்",
+        "login" : "உள்நுழைவு",
+        "getAppDesc": "தீக்ஷா பயன்பாடு பிளே ஸ்டோர் மற்றும் ஆப் ஸ்டோரில் கிடைக்கிறது, அதை பதிவிறக்கம் செய்ய நீங்கள் கியூஆர் குறியீட்டை ஸ்கேன் செய்யலாம்.",
+        "mobileApp":  "மொபைல் செயலி இன்று!",
+        "downloadLinkAndroid": "ஆண்ட்ராய்டு இணைப்பைப் பதிவிறக்கவும்",
+        "downloadLinkIos": "IOS க்கான இணைப்பைப் பதிவிறக்கவும்",
+        "scanDownload": "பதிவிறக்கம் செய்ய ஸ்கேன்",
+        "clickHere" : "இங்கே சொடுக்கவும்",
+        "contributeBanner": " இந்தியா முழுவதும் உள்ள கற்பவர்களுக்கு தரமான கற்றல் தொடர்வதை உறுதி செய்வதற்காக கல்வி களத்தில் மின்னணு கற்றல் வளங்களை பங்களிக்கவும்.",
     },
     "te": {
         "language": "తెలుగు",
@@ -27425,7 +27525,15 @@ const languageTranslations = {
         "board-ncert-description": "NCERT (నేషనల్ కౌన్సిల్ ఆఫ్ ఎడ్యుకేషనల్ రీసెర్చ్ అండ్ ట్రైనింగ్) ప్రచురించిన కంటెంట్‌ను అన్వేషించండి",
         "board-cbse-description": "సిబిఎస్‌ఇ (సెంట్రల్ బోర్డ్ ఆఫ్ సెకండరీ ఎడ్యుకేషన్ ప్రచురించిన కంటెంట్‌ను అన్వేషించండి",
         "board-nios-description": "NIOS ప్రచురించిన కంటెంట్‌ను అన్వేషించండి (ది నేషనల్ ఇన్స్టిట్యూట్ ఆఫ్ ఓపెన్ స్కూలింగ్",
-        "board-btntitle": "అన్వేషించండి"
+        "board-btntitle": "అన్వేషించండి",
+        "login" : "లాజినిక్ కరెంట్",
+        "getAppDesc": "దీక్షా అప్లికేషన్ ప్లే స్టోర్ మరియు యాప్ స్టోర్లో అందుబాటులో ఉంది, మీరు దానిని డౌన్లోడ్ చేయడానికి క్యూఆర్ కోడ్ను కూడా స్కాన్ చేయవచ్చు.",
+        "mobileApp":  "ఈ రోజు మొబైల్ యాప్!",
+        "downloadLinkAndroid": "ఆండ్రాయిడ్ కోసం డౌన్లోడ్ లింక్",
+        "downloadLinkIos": "ఐఓఎస్ కోసం డౌన్లోడ్ లింక్",
+        "scanDownload": "డౌన్లోడ్ చేయడానికి స్కాన్ చేయండి",
+        "clickHere" : "ఇక్కడ క్లిక్ చేయండి",
+        "contributeBanner": "భారతదేశం అంతటా అభ్యాసకులకు నాణ్యమైన అభ్యాసం కొనసాగేలా విద్యా రంగంలో ఇ-లెర్నింగ్ వనరులను అందించండి.",
     },
     "ur": {
         "language": "اردو",
@@ -27532,7 +27640,15 @@ const languageTranslations = {
         "board-ncert-description": "این سی ای آر ٹی (نیشنل کونسل آف ایجوکیشنل ریسرچ اینڈ ٹریننگ) کے ذریعہ شائع کردہ مواد کی کھوج کریں۔",
         "board-cbse-description": "سی بی ایس ای (سنٹرل بورڈ آف سیکنڈری ایجوکیشن) کے ذریعہ شائع کردہ مواد کو دریافت کریں",
         "board-nios-description": "این آئ او ایس (دی نیشنل انسٹی ٹیوٹ آف اوپن اسکولنگ) کے ذریعہ شائع کردہ مواد کی کھوج کریں",
-        "board-btntitle": "دریافت کریں"
+        "board-btntitle": "دریافت کریں",
+        "login" : "لاگ ان",
+        "getAppDesc": " دیکشا ایپلی کیشن پلے اسٹور اور ایپ اسٹور پر دستیاب ہے ، آپ اسے ڈاؤن لوڈ کرنے کے لئے کیو آر کوڈ بھی اسکین کرسکتے ہیں۔",
+        "mobileApp":  "",
+        "downloadLinkAndroid": "اینڈروئیڈ کے لئے ڈاؤن لوڈ لنک",
+        "downloadLinkIos":"آئی او ایس کے لئے ڈاؤن لوڈ لنک",
+        "scanDownload":"ڈاؤن لوڈ کرنے کے لئے اسکین کریں",
+        "clickHere" : "یہاں کلک کریں",
+        "contributeBanner": "اس بات کو یقینی بنانے کے لئے کہ ہندوستان بھر میں سیکھنے والوں کے لئے معیاری تعلیم جاری رہے، تعلیم کے شعبے میں ای لرننگ وسائل کا حصہ ڈالیں۔",
     }
 };
 
@@ -27542,7 +27658,7 @@ $(document).ready(function(){
     (language == null || language == 'null') ? setPageLanguage("en") : setPageLanguage(localStorage.getItem('portalLanguage'))
 
     $('.dropdown-wrapper-div').click(function(){
-        console.log("click----dropdown-wrapper-div ")
+        console.log("click----dropdown-wrapper-div")
 
         if(($(this).hasClass("open"))){
             console.log("open");
