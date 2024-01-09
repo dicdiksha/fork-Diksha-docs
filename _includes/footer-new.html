@@ -238,7 +238,7 @@ img.digital-india {
                                         <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}" tabindex="0"
                                         class=" {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}" 
                                         data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
-                                        <span data-translate="{%if(nav-nav.contains == 'data')%}dashboard{%else%}{{nav-nav.contains}}{%endif%}">{{nav-new.title}}</span>
+                                        <span data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}">{{nav-new.title}}</span>
                                         </a>
                                     </li>
                                     {% endfor %}
@@ -252,7 +252,7 @@ img.digital-india {
                                 <span class="footer-logo">
                                 
                                     <span class="diksha-logo-header"><img src="../assets/homepage/logo-img.png" alt="ashok-stambh"></span>
-                                    <span class="diksha-logo-text mx-5"><img src="../assets/homepage/logo-text.png" alt="Diksha-logo"></span>
+                                    <span class="diksha-logo-text"><img src="../assets/homepage/logo-text.png" alt="Diksha-logo"></span>
                                 </span>
                             </a>
                             <!-- <span>Digital Infrastucture For <br> Knoeledge Sharing</span> -->

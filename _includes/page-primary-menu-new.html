@@ -21,8 +21,8 @@
     <div class="navMenu">
         {% for nav-new in site.data.nav-new.items %}
         <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
-        class=" {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
-           <span data-translate="{%if(nav-nav.contains == 'data')%}dashboard{%else%}{{nav-nav.contains}}{%endif%}">{{nav-new.title}}</span>
+        class=" {% if page.url contains {{nav-new.contains}} or page.title == {{nav-new.title}} %} active {% endif %}" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+           <span data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}" >{{nav-new.title}}</span>
         </a>
         {% endfor %}
     </div>
