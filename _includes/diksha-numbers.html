@@ -258,7 +258,7 @@
         <div class="vecter-six"></div>
         <div class="row">
           <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
-            <div class="dashboard-head">
+            <div class="dashboard-head" data-translate="usageMetrics">
               {{site.data.text.usageMetrics}}
             </div>
               <div class="matrix-dash">
@@ -313,7 +313,7 @@
                   </div>
                   <div class="dashboard-footer">
                     <div class="update-report">
-                      Last updated: 06-Nov-2023
+                      <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
                     </div>
                     <div class="download">
                       <a href="" data-translate="downloadReport"> {{site.data.text.downloadReport}}</a>
@@ -334,8 +334,8 @@
                         <div class="data-count" data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
                           <span class="total-contributions mr-8" id="totalContributions"></span>
                         </div>
-                        <div class="data-lable" data-translate="ContentContributions">
-                          {{ site.data.text.ContentContributions }}
+                        <div class="data-lable" data-translate="contributions">
+                          {{ site.data.text.contributions }}
                         </div>
   
                       </div>
@@ -351,8 +351,8 @@
                         title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
                         <span class="total-contributors mr-8" id="totalContributors"></span>
                         </div>
-                        <div class="data-lable" data-translate="ContentContributors">
-                          {{ site.data.text.ContentContributors }}
+                        <div class="data-lable" data-translate="contributors">
+                          {{ site.data.text.contributors }}
                         </div>
   
                       </div>
@@ -366,7 +366,7 @@
                  
                   <div class="dashboard-footer">
                     <div class="update-report">
-                      Last updated: 06-Nov-2023
+                      <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
                     </div>
                     <!-- <div class="download">
                       Download Report
@@ -406,8 +406,8 @@
                       title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}">
                       <span class="total-enrolments mr-8" id="totalEnrolments"></span>
                       </div>
-                      <div class="data-lable" data-translate="enrollments">
-                        {{site.data.text.enrollments}}
+                      <div class="data-lable" data-translate="Enrolments    ">
+                        {{site.data.text.Enrolments}}
                       </div>
   
                     </div>
@@ -437,7 +437,7 @@
                   </div>
                 <div class="dashboard-footer">
                   <div class="update-report">
-                    Last updated: 06-Nov-2023
+                    <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
                   </div>
                   <div class="download" data-translate="downloadReport">
                     <a href=""> {{site.data.text.downloadReport}}</a>

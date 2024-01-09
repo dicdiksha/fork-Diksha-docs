@@ -4,7 +4,7 @@
         {
             "title": "Home",
             "url": "homepage.html",
-            "contains":"homepage",
+            "contains":"home",
             "etype":"select-homepage",
             "eid": "static-homepage"
         },
