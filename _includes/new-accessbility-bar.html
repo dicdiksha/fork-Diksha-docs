@@ -77,27 +77,57 @@
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    color: #000;
+    color: #434141;
     z-index: 9999;
-    top: 2.063rem;
-    width: 9.063rem;
-    border-radius: 0.5rem;
+    top: 20px;
+    width: 145px;
+    border-radius: 10px;
     box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
     display: none;
+    min-width: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: opacity .1s ease;
 }
 
 .brand-top-header .dropdown-wrapper .language-dropdown li{
-    padding: 0.313rem;
-    font-size: 0.938rem;
-    font-weight: bold;
-    border-bottom: 0.063rem solid #0c4e9e26;
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #0c4e9e26;
     cursor: pointer;
     width: 100%;
-    color: #0C4E9E
+    color: #434141;
+    text-align: left;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
+.brand-top-header .dropdown-wrapper .language-dropdown li.active{
+    font-weight: 700;
+}
 .brand-top-header .dropdown-wrapper .language-dropdown li:last-child {
     border-bottom: 0px ;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow{
+    background: url(../assets/homepage/arrow_back.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    transform: rotate(270deg);
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow.arrow-rotate{
+    transform: rotate(90deg);
+}
+.brand-top-header .dropdown-wrapper .dropdown-wrapper-div:hover #langDropdown{
+    display: block;
+}
+.brand-top-header .dropdown-wrapper .language-text.collapsed:after {
+    transform: rotate(180deg);
+    margin-top: 0;
 }
 .fontResize-container{
     display: flex;
@@ -108,14 +138,31 @@
     justify-content: end;
 }
 
-
 .dropdown-wrapper-lang {
     display: flex;
 }
 
 .dropdown-wrapper-lang span {
-    margin: 0 0.313rem;
+    margin: 0 5px;
 }
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 9px;
+        height: .3125rem;
+    }
+
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar-thumb {
+        cursor: pointer;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, .25);
+        transition: color .2s ease;
+    }
+
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, .1);
+        border-radius: 0;
+    }
+
 /* For Desktop mac View */
 @media (max-width: 991.98px) {
     .main-top-header .mainHeader {
@@ -226,21 +273,22 @@
                                 <span class="language-text">English 
                                     <!-- <span> <img src="../images/Filled.png"></span> -->
                                 </span>
+                                <ul class="language-dropdown" id="langDropdown">
+                                    <li tabindex="0" role="img" title="Select Language">Select Language<span class="language-dropdown-arrow arrow-rotate" aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="English" data-value="en" lang="en" class="active">English<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="hindi" data-value="hi" lang="hi">हिंदी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="kannada" data-value="kn" lang="kn">ಕನ್ನಡ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="marathi" data-value="mr" lang="mr">मराठी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="bengali" data-value="bn" lang="bn">বাংলা<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="tamil" data-value="ta" lang="ta">தமிழ்<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="telugu" data-value="te" lang="te">తెలుగు<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="urdu" data-value="ur" lang="ur">اردو<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="assamese" data-value="as" lang="as">অসমীয়া<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="odia" data-value="or" lang="or">ଓଡ଼ିଆ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="gujrati" data-value="gu" lang="gu">ગુજરાતી<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="punjabi" data-value="pa" lang="pa">ਪੰਜਾਬੀ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                </ul>
                             </div>
-                            <ul class="language-dropdown">
-                                <li tabindex="0" role="img" title="English" data-value="en" lang="en" class="active">English<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="hindi" data-value="hi" lang="hi">हिंदी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="kannada" data-value="kn" lang="kn">ಕನ್ನಡ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="marathi" data-value="mr" lang="mr">मराठी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="bengali" data-value="bn" lang="bn">বাংলা<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="tamil" data-value="ta" lang="ta">தமிழ்<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="telugu" data-value="te" lang="te">తెలుగు<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="urdu" data-value="ur" lang="ur">اردو<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="assamese" data-value="as" lang="as">অসমীয়া<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="odia" data-value="or" lang="or">ଓଡ଼ିଆ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="gujrati" data-value="gu" lang="gu">ગુજરાતી<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                                <li tabindex="0" role="img" title="punjabi" data-value="pa" lang="pa">ਪੰਜਾਬੀ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
-                            </ul>
                         </div>
                         </li>
                     </ul>

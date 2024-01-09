@@ -1,4 +1,4 @@
-/*=====================focus area slider==============*/
+/*===================== Start focus area slider==============*/
 
 $(document).ready(function(){  
   $('#myCarousel .carousel-item').each(function () {
@@ -12,7 +12,7 @@ $(document).ready(function(){
     
     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 })
-
+/*=====================End focus area slider==============*/
 
 $(document).ready(function () {
 
@@ -333,7 +333,7 @@ $(document).ready(function () {
     tenantPageExist: false
   },
   {
-    label: "Ladkah",
+    label: "Ladakh",
     value: "ld",
     tenantPageExist: false
   },
@@ -504,7 +504,14 @@ $(document).ready(function () {
     window.open('/term-of-use.html',"_self");
     return false;
   });
-
+  /*===================== Start login button==============*/
+  $(".login-home-btn").click(function (e) {
+    e.preventDefault();
+    window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+    window.open('/resources', "_self");
+    return false;
+  });
+    /*===================== End login button==============*/
   // });
 
 });
