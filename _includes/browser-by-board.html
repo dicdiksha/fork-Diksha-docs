@@ -65,6 +65,7 @@
       font-size: 1.25rem;
       font-weight: 700;
       padding: 1.25rem;
+      padding-bottom: 0;
     }
 
 
@@ -80,7 +81,7 @@
       color: #FFFFFF;
       width: 100%;
       text-align: center;
-      margin-top: 1.25rem;
+      /* margin-top: 1.25rem; */
       font-size: 1.125rem;
       cursor: pointer;
     }
@@ -217,7 +218,9 @@
                   <div class="item-desc-detail" data-translate="board-{{board.slug}}-description">{{board.description}}</div>
                 </div> 
                 <div class="item-action">
-                  <div class="view_more" data-translate="viewMore">{{site.data.text.viewMore}} <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
+                  <div class="view_more">
+                    <span data-translate="viewMore">{{site.data.text.viewMore}}</span>
+                    <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
                   </div>
                 </div> 
               </div> 
@@ -247,7 +250,11 @@
                   </div>
                 </div>
                 <div class="item-action">
-                  <div class="view_more state-explore" data-translate="viewMore">{{site.data.text.viewMore}}<span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
+                  <div class="view_more state-explore" >
+                    
+                    <span  data-translate="viewMore">{{site.data.text.viewMore}}</span> 
+                    <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
+
                   </div>
                 </div> 
             </div>

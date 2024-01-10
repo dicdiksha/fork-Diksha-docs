@@ -126,9 +126,15 @@
     display: block;
     transition: -webkit-transform .6s ease-in;
     transition: transform .3s ease-in;
-    transition: transform .3s ease-in, -webkit-transform .3s ease-in
+    transition: transform .3s ease-in;
+     /* -webkit-transform .3s ease-in; */
     /* transition: none !important; */
 }
+
+#myCarousel .carousel-item.active .focus-item {
+    /* background-color: hsl(43.2deg 98.43% 75.1%); */
+}
+
 #myCarousel .carousel-inner .carousel-item.active,
 #myCarousel .carousel-inner .carousel-item-start,
 #myCarousel .carousel-inner .carousel-item-next,
@@ -202,7 +208,7 @@
                     <div id="myCarousel" class=" focus-area carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner ">
                             <div class="carousel-item active">
-                                <div class="focus-container">
+                                <div>
                                     <div class="focus-item">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
@@ -365,209 +371,37 @@
                                             </div>
                                         </div>
                                         <div class="focus-img">
-                                            <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
+                                            <img src="../assets/homepage/focus-area/vocation-education.png" alt="nipun bharat">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                        <ol class="carousel-indicators">      
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="1" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="2" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="3" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="4" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="5" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                        </ol>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
-                        </button> 
-
-                        <ol class="carousel-indicators">      
-                            <li data-target="#myCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
-                            aria-controls="carousel-items" aria-label="nipun bharat"></li>
-                            <li data-target="#myCarousel" tabindex="0" data-slide-to="1" aria-current="page"
-                            aria-controls="carousel-items" aria-label="man ki baat"></li>
-                            <li data-target="#myCarousel" tabindex="0" data-slide-to="2" aria-current="page"
-                            aria-controls="carousel-items" aria-label="jadoo pitara"></li>
-                            <li data-target="#myCarousel" tabindex="0" data-slide-to="3" aria-current="page"
-                            aria-controls="carousel-items" aria-label="G 20"></li>
-                            <li data-target="#myCarousel" tabindex="0" data-slide-to="4" aria-current="page"
-                            aria-controls="carousel-items" aria-label="G 20"></li>
-                            <li data-target="#myCarousel" tabindex="0" data-slide-to="5" aria-current="page"
-                            aria-controls="carousel-items" aria-label="G 20"></li>
-                        </ol>
+                        </button> -->
                         
                     </div>
-                    
                 </div>
-              
-                
-                <!-- <div id="focus-areas" class="carousel focus-area" data-ride="carousel">
-                    <div class="carousel-inner" title="banner-carousel">
-                        <div class="carousel-item  " role="option">
-                            <div class="focus-item">
-                                <div class="focus-desc">
-                                    <div class="focus-heading">
-                                        Nipun Bharat 
-                                    </div>
-                                    <div class="focus-details">
-                                        National Initiative for Proficiency in Reading with Understanding and Numeracy
-                                        <span class="read-more">
-                                            Read More 
-                                             <span>
-                                                <img src="../assets/homepage/raed-more.png" alt="read more">
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="focus-img">
-                                    <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item  " role="option">
-                            <div class="focus-item">
-                                <div class="focus-desc">
-                                    <div class="focus-heading">
-                                        Nipun Bharat 
-                                    </div>
-                                    <div class="focus-details">
-                                        National Initiative for Proficiency in Reading with Understanding and Numeracy
-                                        <span class="read-more">
-                                            Read More 
-                                            <span>
-                                                <img src="../assets/homepage/raed-more.png" alt="read more">
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="focus-img">
-                                    <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
-                                </div>
-                            </div>
-                        </div> 
-                        <div class="carousel-item " role="option">
-                            <div class="focus-item">
-                                <div class="focus-desc">
-                                    <div class="focus-heading">
-                                        Nipun Bharat 
-                                    </div>
-                                    <div class="focus-details">
-                                        National Initiative for Proficiency in Reading with Understanding and Numeracy
-                                        <span class="read-more">
-                                            Read More 
-                                            <span>
-                                                <img src="../assets/homepage/raed-more.png" alt="read more">
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="focus-img">
-                                    <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
-                                </div>
-                            </div>
-                       
-                        </div>
-                        <div class="carousel-item " role="option">
-                            <div class="focus-item">
-                                <div class="focus-desc">
-                                    <div class="focus-heading">
-                                        Nipun Bharat 
-                                    </div>
-                                    <div class="focus-details">
-                                        National Initiative for Proficiency in Reading with Understanding and Numeracy
-                                        <span class="read-more">
-                                            Read More 
-                                            <span>
-                                                <img src="../assets/homepage/raed-more.png" alt="read more">
-                                            </span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="focus-img">
-                                    <img src="../assets/homepage/focus-area/bhasha-sangam.png" alt="nipun bharat">
-                                </div>
-                            </div>
-                        </div>
-                    </div>   
-                    <ol class="carousel-indicators">      
-                        <li data-target="#focus-area" tabindex="0" data-slide-to="0" aria-current="page" 
-                        aria-controls="carousel-items" aria-label=""></li>
-                        <li data-target="#focus-area" tabindex="0" data-slide-to="1" aria-current="page"
-                        aria-controls="carousel-items" aria-label=""></li>
-                        <li data-target="focus-area" tabindex="0" data-slide-to="2" aria-current="page" 
-                        aria-controls="carousel-items" aria-label=""></li>
-                        <li data-target="#focus-area" tabindex="0" data-slide-to="3" aria-current="page"
-                        aria-controls="carousel-items" aria-label=""></li>
-                    </ol>
-                </div> -->
-                <!-- <div class="focus-items">
-                    <div class="focus-item">
-                        <div class="focus-desc">
-                            <div class="focus-heading">
-                                Nipun Bharat 
-                            </div>
-                            <div class="focus-details">
-                                National Initiative for Proficiency in Reading with Understanding and Numeracy
-                                <span class="read-more">
-                                    Read More 
-                                </span>
-                            </div>
-                        </div>
-                        <div class="focus-img">
-                            <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
-                        </div>
-                    </div>
-                    <div class="focus-item">
-                        <div class="focus-desc">
-                            <div class="focus-heading">
-                                Bhasha Sangam
-                            </div>
-                            <div class="focus-details">
-                                National Initiative to teach basic sentences of everyday usage in 22 Indian languages 
-                                <span class="read-more">
-                                    <a href="">
-                                        Read More 
-                                    </a>
-                                    
-                                </span>
-                            </div>
-                        </div>
-                        <div class="focus-img">
-                            <img src="../assets/homepage/focus-area/bhasha-sangam.png" alt="nipun bharat">
-                        </div>
-                    </div>
-                    <div class="focus-item">
-                        <div class="focus-desc">
-                            <div class="focus-heading">
-                                Jaadui Pitara 
-                            </div>
-                            <div class="focus-details">
-                                To impart foundational literacy and numeracy, critical life skills for Citizens
-                                <span class="read-more">
-                                    Read More 
-                                </span>
-                            </div>
-                        </div>
-                        <div class="focus-img">
-                            <img src="../assets/homepage/focus-area/jadui-pitara.png" alt="nipun bharat">
-                        </div>
-                    </div>
-                    <div class="focus-item">
-                        <div class="focus-desc">
-                            <div class="focus-heading">
-                                Nipun Bharat 
-                            </div>
-                            <div class="focus-details">
-                                National Initiative for Proficiency in Reading with Understanding and Numeracy
-                                <span class="read-more">
-                                    Read More 
-                                </span>
-                            </div>
-                        </div>
-                        <div class="focus-img">
-                            <img src="../assets/homepage/focus-area/bhasha-sangam.png" alt="nipun bharat">
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

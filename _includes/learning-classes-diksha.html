@@ -7,7 +7,7 @@
         background-image: url(../assets/homepage/leaning-bg.png);
         background-repeat: no-repeat;
     border: 1px solid;
-    padding: 50px 30px;
+    padding: 40px 30px;
     background-position: bottom left;
     margin: 20px 13px;
     border-radius: 10px;
@@ -20,11 +20,14 @@
 
     .student-learning {
         position: relative;
+        display: flex;
+    /* justify-content: center;
+    align-items: center */
     }
     .student-learning .gif-section {
         position: absolute;
-        top: -63px;
-    left: -53px;
+    top: -62px;
+    left: 18px;
     width: 100%;
     }
     .class-details {
@@ -53,7 +56,15 @@
 }
 .border-blue{
     border-color: #6A9BFF;
+    
 }
+
+.student-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
 
     .student-learning{
@@ -81,7 +92,7 @@
                     </div>
                     <div class="class-details">
                         <div class="row">
-                            <div class="col-lg-5 col-md-12 cal-sm-12">
+                            <div class="col-lg-5 col-md-12 cal-sm-12 student-img">
                                 <div class="student-learning ">
                                     <img src="../assets/homepage/learning-section.png" alt="leaning section">
 
