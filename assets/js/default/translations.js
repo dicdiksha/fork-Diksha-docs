@@ -2,6 +2,7 @@ const languageTranslations = {
     "en": {
         "language": "English",
         "diksha": "DIKSHA",
+        "dikshatitle": "DIKSHA",
         "govofIndia": "भारत सरकार | Government of India",
         "dikshamoto": "Digital Infrastructure for Knowledge Sharing",
         "dikshaDescription": "An initiative of the National Council of Educational Research and Training (Ministry of Education, Govt of India)",
@@ -105,7 +106,7 @@ const languageTranslations = {
         "board-cbse-description": "Explore content published by CBSE (Central Board of Secondary Education)",
         "board-nios-description": "Explore content published by NIOS (The National Institute of Open Schooling)",
         "board-btntitle": "Explore",   
-        "login" : "LOGIN",
+        "login" : "Login",
         "getAppDesc": "The DIKSHA application is available on play store & app store, You can also scan QR code to download it.",
         "mobileApp":  "Mobile App Today!",
         "downloadLinkAndroid": "Download Link For Android",
@@ -161,10 +162,12 @@ const languageTranslations = {
         "digitalcontent" : "world of open digital content",
         "focusArea": "Focus Areas of ",
         "application" : "Application Availability",
-        "downloadReport" : "Download Report"
+        "downloadReport" : "Download Report",
+        "view" : "View"
 
     },
     "as": {
+        "view" : "চোৱা",
         "language": "অসমীয়া",
         "diksha": "DIKSHA",
         "govofIndia": "ভাৰত চৰকাৰ",
@@ -173,7 +176,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA-ত অনুসন্ধান কৰক",
         "explore": "অনুসন্ধান কৰক",
         "ExploreDikshaContent": "DIKSHA-ৰ মুক্ত ডিজিটেল বিষয়বস্তুৰ জগতত অনুসন্ধান কৰক",
-        "stateboard": "ৰাজ্য / কেন্দ্ৰীয় শাসিত অঞ্চলসমূহ",
+        "stateboard": "ৰাজ্য / কেন্দ্ৰীয় শাসিত অঞ্চল ব'ৰ্ড",
         "stateboardDescription": "22+ ৰাজ্য আৰু কেন্দ্ৰীয় শাসিত অঞ্চলৰদ্বাৰা প্ৰকাশিত বিষয়বস্তুৰ অনুসন্ধান কৰক",
         "about": "বিষয়ে",
         "home": "হ’ম",
@@ -325,6 +328,7 @@ const languageTranslations = {
 
     },
     "bn": {
+        "view" : "দেখুন",
         "language": "বাংলা",
         "diksha": "DIKSHA",
         "govofIndia": "ভারত সরকার",
@@ -333,7 +337,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA - তে এক্সপ্লোর করুন",
         "explore": "এক্সপ্লোর করুন",
         "ExploreDikshaContent": "DIKSHA - এর ওপেন ডিজিটাল কনটেন্ট এর দুনিয়াই এক্সপ্লোর করুন",
-        "stateboard": "রাজ্য/ কেন্দ্ৰীয় শাসিত অঞ্চলসমূহ",
+        "stateboard": "রাজ্য/ইউটি বোর্ড",
         "stateboardDescription": "22+ রাজ্য এবং কেন্দ্রশাসিত অঞ্চলগুলির দ্বারা প্রকাশিত কনটেন্ট এক্সপ্লোর করুন",
         "about": "সম্পর্কে",
         "home": "হোম",
@@ -487,6 +491,7 @@ const languageTranslations = {
 
     },
     "gu": {
+        "view" : "દર્શન કરો",
         "language": "ગુજરાતી",
         "diksha": "DIKSHA",
         "govofIndia": "ભારત સરકાર",
@@ -495,7 +500,7 @@ const languageTranslations = {
         "btnExploreDiksha": "એક્સપ્લોર DIKSHA",
         "explore": "એક્સપ્લોર",
         "ExploreDikshaContent": "ખુલ્લી ડિજિટલ સામગ્રીની DIKSHA ની દુનિયાનું એક્સપ્લોર કરો",
-        "stateboard": "રાજ્યો / કેન્દ્રશાસિત કેન્દ્રો",
+        "stateboard": "રાજ્ય/યુટી બોર્ડ",
         "stateboardDescription": "22+ રાજ્યો અને કેન્દ્રશાસિત કેન્દ્રો દ્વારા પ્રકાશિત સામગ્રીનું એક્સપ્લોર કરો",
         "about": "વિશે",
         "home": "હોમ",
@@ -647,6 +652,7 @@ const languageTranslations = {
         
     },
     "hi": {
+        "view" : "देखिये",
         "language": "हिंदी",
         "diksha": "DIKSHA",
         "govofIndia": "भारत सरकार",
@@ -655,7 +661,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA का अन्वेषण कीजिए",
         "explore": "अन्वेषण",
         "ExploreDikshaContent": "DIKSHA से विवृत डिजिटल कंटेन्ट की दुनिया का अन्वेषण कीजिए",
-        "stateboard": "राज्य/केंद्र शासित प्रदेश",
+        "stateboard": "राज्य/केंद्रशासित प्रदेश बोर्ड",
         "stateboardDescription": "22+ राज्य और केंद्र शासित प्रदेश द्वारा प्रकाशित कंटेन्ट का अन्वेषण कीजिए",
         "about": "के बारे में",
         "home": "होम",
@@ -807,6 +813,7 @@ const languageTranslations = {
 
     },
     "kn": {
+        "view" : "ನೋಟ",
         "language": "ಕನ್ನಡ",
         "diksha": "DIKSHA",
         "govofIndia": "ಭಾರತ ಸರ್ಕಾರ",
@@ -815,7 +822,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA ಅನ್ವೇಷಿಸಿ",
         "explore": "ಅನ್ವೇಷಿಸಿ",
         "ExploreDikshaContent": "ಮುಕ್ತ ಡಿಜಿಟಲ್ ಪಠ್ಯಾಂಶಗಳ DIKSHA ಜಗತ್ತನ್ನು ಅನ್ವೇಷಿಸಿ",
-        "stateboard": "ರಾಜ್ಯಗಳು/ಕೇಂದ್ರಾಡಳಿತ ಪ್ರದೇಶಗಳು",
+        "stateboard": "ರಾಜ್ಯ / ಯುಟಿ ಮಂಡಳಿ",
         "stateboardDescription": "22+ ರಾಜ್ಯಗಳು ಮತ್ತು ಕೇಂದ್ರಾಡಳಿತ ಪ್ರದೇಶಗಳು ಪ್ರಕಟಿಸಿದ ಪಠ್ಯಾಂಶಗಳನ್ನು ಅನ್ವೇಷಿಸಿ",
         "about": "ಕುರಿತು",
         "home": "ಹೋಂ",
@@ -965,6 +972,7 @@ const languageTranslations = {
         "downloadReport" : "ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
     },
     "mr": {
+        "view" : "पहा",
         "language": "मराठी",
         "diksha": "DIKSHA",
         "govofIndia": "भारत सरकार",
@@ -973,7 +981,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA चे अन्वेषण करा",
         "explore": "अन्वेषण करा",
         "ExploreDikshaContent": "DIKSHA च्या जगातील खुल्या डिजिटल सामग्रीचे अन्वेषण करा",
-        "stateboard": "राज्य / केंद्रशासित प्रदेश",
+        "stateboard": "राज्य / केंद्रशासित प्रदेश मंडळ",
         "stateboardDescription": "२२+ राज्य व केंद्रशासित प्रदेशांमधून प्रकाशित झालेल्या सामग्रीचे अन्वेषण करा",
         "about": "बद्दल",
         "home": "मुख्यपृष्ठ",
@@ -1182,6 +1190,7 @@ const languageTranslations = {
         "application" : "Application Availability"
     },
     "or": {
+        "view" : "ଦେଖନ୍ତୁ",
         "language": "ଓଡ଼ିଆ",
         "diksha": "DIKSHA",
         "govofIndia": "ଭାରତ ସରକାର",
@@ -1190,7 +1199,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA କୁ ଦେଖନ୍ତୁ",
         "explore": "ଦେଖନ୍ତୁ",
         "ExploreDikshaContent": "DIKSHA ର ମୁକ୍ତ ଡିଜିଟାଲ୍ କଣ୍ଟେଣ୍ଟର ଦୁନିଆକୁ ଦେଖନ୍ତୁ",
-        "stateboard": "ରାଜ୍ୟ / କେନ୍ଦ୍ରଶାସିତ ଅଞ୍ଚଳ",
+        "stateboard": "ରାଜ୍ୟ / UT ବୋର୍ଡ |",
         "stateboardDescription": "22+ ରାଜ୍ୟ ଏବଂ କେନ୍ଦ୍ରଶାସିତ ଅଞ୍ଚଳ ଦ୍ୱାରା ପବ୍ଲିସ୍ କରାଯାଇଥିବା କଣ୍ଟେଣ୍ଟ୍ ଦେଖନ୍ତୁ",
         "about": "ବିଷୟରେ",
         "home": "ହୋମ୍",
@@ -1341,6 +1350,7 @@ const languageTranslations = {
         "downloadReport" : "ରିପୋର୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |"
     },
     "pa": {
+        "view" : "ਦ੍ਰਿਸ਼",
         "language": "ਪੰਜਾਬੀ",
         "diksha": "DIKSHA",
         "govofIndia": "ਭਾਰਤ ਸਰਕਾਰ",
@@ -1349,7 +1359,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA ਦੀ ਪੜਚੋਲ ਕਰੋ",
         "explore": "ਪੜਚੋਲ ਕਰੋ",
         "ExploreDikshaContent": "DIKSHA ਦੀ ਖੁੱਲੀ ਡਿਜੀਟਲ ਕੰਟੇਂਟ ਦੀ ਦੁਨੀਆ ਦੀ ਪੜਚੋਲ ਕਰੋ",
-        "stateboard": "ਰਾਜ / ਕੇਂਦਰ ਸ਼ਾਸਤ ਪ੍ਰਦੇਸ਼",
+        "stateboard": "ਰਾਜ/ਯੂਟੀ ਬੋਰਡ",
         "stateboardDescription": "22+ ਰਾਜਾਂ ਅਤੇ ਕੇਂਦਰ ਸ਼ਾਸਤ ਪ੍ਰਦੇਸ਼ ਦੁਆਰਾ ਪ੍ਰਕਾਸ਼ਿਤ\nਕੰਟੇਂਟ ਦੀ ਪੜਚੋਲ ਕਰੋ",
         "about": "ਬਾਰੇ",
         "home": "ਘਰ",
@@ -1499,6 +1509,7 @@ const languageTranslations = {
         "downloadReport" : "ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰੋ"
     },
     "ta": {
+        "view" : "பார்",
         "language": "தமிழ்",
         "diksha": "தீக்‌ஷா",
         "govofIndia": "இந்திய அரசு",
@@ -1507,7 +1518,7 @@ const languageTranslations = {
         "btnExploreDiksha": "ஆராயுங்கள் DIKSHA",
         "explore": "ஆராயுங்கள்",
         "ExploreDikshaContent": "திறந்த டிஜிட்டல் உள்ளடக்கத்தின் தீக்‌ஷாவின் \nஉலகத்தை ஆராயுங்கள்",
-        "stateboard": "மாநிலங்கள் / யூ.டி.க்கள்",
+        "stateboard": "மாநிலம் / யூடி வாரியம்",
         "stateboardDescription": "22+ மாநிலங்கள் மற்றும் யூ.டி.க்களால் \nவெளியிடப்பட்ட உள்ளடக்கத்தை ஆராயுங்கள்",
         "about": "பற்றி",
         "home": "வீடு",
@@ -1645,8 +1656,6 @@ const languageTranslations = {
         "vocationEducationDesc": "தொழிற்பயிற்சியை பொதுக் கல்வியுடன் ஒருங்கிணைப்பதில் கவனம் செலுத்துதல்",
         "virtualLab": "மெய்நிகர் ஆய்வகம்",
         "virtualLabDesc": "புரிதல் மற்றும் எண்கணிதத்துடன் வாசிப்பில் தேர்ச்சி பெறுவதற்கான தேசிய முயற்சி",
-        "compreLearning": "సమగ్ర అభ్యాసం",
-        "foundationalsecondary" : "పునాది నుండి సెకండరీ వరకు",
         "compleateCoverage": "முழுமையான கே-12 கவரேஜ்",
         "compleateCoverageDesc": "அனைத்து வாரியங்கள், வகுப்புகள் மற்றும் பாடங்களை உள்ளடக்கிய முழுமையான கே-12 படிப்புப் பொருட்களை அணுகவும்",
        " practiceContent": "ஊடாடும் படிப்புப் பொருள்",
@@ -1659,6 +1668,7 @@ const languageTranslations = {
         "downloadReport" : "அறிக்கையைப் பதிவிறக்கவும்"
     },
     "te": {
+        "view" : "వీక్షించండి",
         "language": "తెలుగు",
         "diksha": "DIKSHA",
         "govofIndia": "భారతదేశం యొక్క ప్రభుత్వం",
@@ -1667,7 +1677,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA ను అన్వేషించండి",
         "explore": "అన్వేషించండి",
         "ExploreDikshaContent": "DIKSHA కంటెంట్‌ను అన్వేషించండి",
-        "stateboard": "రాష్ట్రాలు / యుటిలు",
+        "stateboard": "రాష్ట్రం / UT బోర్డు",
         "stateboardDescription": "22+ రాష్ట్రాలు మరియు యుటిలు ప్రచురించిన కంటెంట్‌ను అన్వేషించండి",
         "about": "గురించి",
         "home": "ఇల్లు",
@@ -1764,7 +1774,7 @@ const languageTranslations = {
         "board-cbse-description": "సిబిఎస్‌ఇ (సెంట్రల్ బోర్డ్ ఆఫ్ సెకండరీ ఎడ్యుకేషన్ ప్రచురించిన కంటెంట్‌ను అన్వేషించండి",
         "board-nios-description": "NIOS ప్రచురించిన కంటెంట్‌ను అన్వేషించండి (ది నేషనల్ ఇన్స్టిట్యూట్ ఆఫ్ ఓపెన్ స్కూలింగ్",
         "board-btntitle": "అన్వేషించండి",
-        "login" : "లాజినిక్ కరెంట్",
+        "login" : "ప్రవేశించండి",
         "getAppDesc": "DIKSHAా అప్లికేషన్ ప్లే స్టోర్ మరియు యాప్ స్టోర్లో అందుబాటులో ఉంది, మీరు దానిని డౌన్లోడ్ చేయడానికి క్యూఆర్ కోడ్ను కూడా స్కాన్ చేయవచ్చు.",
         "mobileApp":  "ఈ రోజు మొబైల్ యాప్!",
         "downloadLinkAndroid": "ఆండ్రాయిడ్ కోసం డౌన్లోడ్ లింక్",
@@ -1789,7 +1799,7 @@ const languageTranslations = {
         "aboutGlanceParent" : "పేరెంట్",
         "aboutGlanceHTOfficials" :"HT & అధికారులు",
         "aboutGlanceOther" : "ఇతర",
-        "aboutUserTitle" : "వినియోగదారుల కోసం అత్యాధు compreLearning",
+        "aboutUserTitle" : "వినియోగదారుల కోసం స్టేట్ ఆఫ్ ది ఆర్ట్ లెర్నింగ్ ఎకోసిస్టమ్",
         "foundationalsecondary" : "పునాది నుండి సెకండరీ వరకు",
         "aboutDocument" : "డాక్యుమెంట్లు",
         "nipunBharatDesc": "అవగాహన మరియు సంఖ్యాశాస్త్రంతో చదవడంలో నైపుణ్యం కోసం జాతీయ చొరవ",
@@ -1812,9 +1822,11 @@ const languageTranslations = {
         "digitalcontent" : "ఓపెన్ డిజిటల్ కంటెంట్ ప్రపంచం",
         "focusArea": "దృష్టి కేంద్రీకరించిన ప్రాంతం",
         "application" : "అప్లికేషన్ లభ్యత",
-        "downloadReport" : "నివేదికను డౌన్‌లోడ్ చేయండి"
+        "downloadReport" : "నివేదికను డౌన్‌లోడ్ చేయండి",
+        "compreLearning" : "సమగ్ర అభ్యాసం"
     },
     "ur": {
+        "view" : "منظر",
         "language": "اردو",
         "diksha": "DIKSHA",
         "govofIndia": "حکومت ہند",
@@ -1823,7 +1835,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA کو دریافت کریں",
         "explore": "دریافت کریں",
         "ExploreDikshaContent": "کھلی ڈیجیٹل مواد کی DIKSHA کی دنیا کو تلاش کریں",
-        "stateboard": "ریاستیں / UTs",
+        "stateboard": "ریاست / UT بورڈ",
         "stateboardDescription": "22+ ریاستوں اور UTs کے ذریعہ شائع کردہ مواد کو دریافت کریں",
         "about": "کے بارے میں",
         "home": "گھر",
@@ -1938,7 +1950,7 @@ const languageTranslations = {
         "footerBottom":"نیشنل کونسل آف ایجوکیشنل ریسرچ اینڈ ٹریننگ (این سی ای آر ٹی)، شری اروند مارگ، نئی دہلی-110016",
         "dikshaGlance" : "ایک نظر میں دیکشا",
         "missionVision":"مشن اور وژن",
-        "nipunBharat": "نپون بھارت",
+        "nipunBharat": "نپن بھرت",
         "userDesc" : "DIKSHAتک ملک بھر میں سیکھنے والے اور اساتذہ رسائی حاصل کرسکتے ہیں اور فی الحال 36 ہندوستانی زبانوں کی حمایت کرتا ہے۔",
         "aboutGlanceStudent" : "طالب علم",
         "aboutGlanceTeacher" : "استاد",
@@ -1951,13 +1963,13 @@ const languageTranslations = {
         "bhasaSangam": "بھاشا سنگم",
         "bhasaSangamDesc":"22 ہندوستانی زبانوں میں روزمرہ استعمال کے بنیادی جملے سکھانے کے لئے قومی اقدام۔ ",
         "jaduiPitara": "جادوئی پٹارا",
-        "jaduiPitaraDesc":"شہریوں کے لئے بنیادی خواندگی اور اعداد و شمار، زندگی کی اہم مہارتیں فراہم کرنا",    
+        "jaduiPitaraDesc":"کھلونے، کھیل، پہیلیاں، کٹھ پتلی، پوسٹرز، فلیش کارڈز وغیرہ کے ساتھ بنیادی مرحلے کا مواد۔",    
         "adultEducation": "بالغوں کی تعلیم",
-        "adultEducationDesc": "تفہیم اور اعداد و شمار کے ساتھ پڑھنے میں مہارت کے لئے قومی اقدام",
+        "adultEducationDesc": "بنیادی خواندگی اور اعداد و شمار فراہم کرنے کے لیے، شہریوں کے لیے زندگی کی اہم مہارتیں۔",
         "vocationEducation": "پیشہ ورانہ تعلیمی",
         "vocationEducationDesc": "پیشہ ورانہ تربیت کو عام تعلیم کے ساتھ ضم کرنے پر توجہ مرکوز کرنا",
-        "virtualLab": 'مجازیLab',
-        "virtualLabDesc": "مجازیLab",
+        "virtualLab":"ورچوئل لیب",
+        "virtualLabDesc": "حقیقی لیبارٹری کے تجربات کو بڑھانے کے لیے طلباء کے لیے ورچوئل لیبارٹریز تک رسائی",
         "compreLearning": "جامع تعلیم",
         "foundationalsecondary" : "فاؤنڈیشن سے سیکنڈری کے لیے",
         "compleateCoverage": "مکمل K-12 کوریج",

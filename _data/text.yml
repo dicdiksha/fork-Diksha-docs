@@ -125,14 +125,14 @@ openPdf: open in pdf
 #======Start New home Page=======#
 
 #=======title=======#
-# view : View 
-dikshatitle: Diksha's
+view : View 
+dikshatitle: DIKSHA
 digitalcontent: world of open digital content
 focusArea: Focus Areas of 
 compreLearning: Comprehensive Learning
 foundationalsecondary :  for Foundational to Secondary
 viewMore : View More
-login: LOGIN
+login: Login
 footerDoc: Digital Infrastructure ForKnowledge Sharing
 footerNCERT: National Council of Educational Research And Training (NCERT)
 ncertAdd: Aurobindo Marg, New Delhi-110016
