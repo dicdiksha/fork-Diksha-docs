@@ -3,8 +3,8 @@
     "items": [
         {
             "title": "Home",
-            "url": "homepage.html",
-            "contains":"home",
+            "url": "",
+            "contains":"homepage",
             "etype":"select-homepage",
             "eid": "static-homepage"
         },
