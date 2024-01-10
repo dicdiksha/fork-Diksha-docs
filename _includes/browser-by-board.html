@@ -201,7 +201,7 @@
       <div class="row dk-browser-by-board">  
         {% for board in site.data.boards-new.items %}
         <div class="col-lg-3 col-md-6 col-sm-12 my-10">
-            <a  href="#"  title="{{board-new.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
+            <a  href="#"  title="{{boards-new.btntitle}}s" class="nonstate-explore" data-slug="{{boards-new.slug}}" data-name="{{boards-new.title}}"
                   data-translate-attr="{board-btntitle: ['title']}">
               <div class="item" >
                 <div class="img-title">
@@ -210,7 +210,7 @@
                               onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
                               alt="{{board.title}} logo">
                   </div>
-                  <div class="item-desc-title" data-translate="board-btntitle">{{board.title}}</div>
+                  <div class="item-desc-title">{{board.title}}</div>
                 </div>
                 <div class="item-desc">
                   <div class="item-desc-detail" data-translate="board-{{board.slug}}-description">{{board.description}}</div>

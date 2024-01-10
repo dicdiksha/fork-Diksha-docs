@@ -50,7 +50,7 @@ PracticeQuestions: Practice Questions
 TeachingVideos: Teaching Videos
 ExperierntialLearningVideos: Experiential Learning Videos
 LessonPlans: Lesson Plans
-readmore: Read more
+readmore: Read More
 DIKSHAforMobile: DIKSHA for Mobile
 DIKSHAforMobileDescription: The DIKSHA platform offers engaging learning material, relevant to the prescribed school curriculum, to teachers, students and parents. Download the DIKSHA app and scan QR codes in your textbooks for easy access to all your lessons. {Android 5.1 and above}
 DIKSHAforWeb: DIKSHA for Web
@@ -142,20 +142,21 @@ ncertAdd: Aurobindo Marg, New Delhi-110016
 # footerLogoDiksha:   Digital Infrastructure For <br>  Knowledge Sharing
 # footerLogoNegrd: Sri Aurobindo Marg, New Delhi-110016
 footerBottom:  © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
-nipunBharat: NIPUN BHARAT
+nipunBharat: Nipun Bharat
 nipunBharatDesc: National Initiative for Proficiency in Reading with Understanding and Numeracy.
 bhasaSangam: Bhasha Sangam
 bhasaSangamDesc: National Initiative to teach basic sentences of everyday usage in 22 Indian languages.
-jaduiPitara: JAADUI PITARA
+jaduiPitara: Jaadui Pitara 
 jaduiPitaraDesc: Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.    .
 adultEducation: Adult Education
 adultEducationDesc: To impart foundational literacy and numeracy, critical life skills for Citizens
+vocationEducation: Vocation Educational
+vocationEducationDesc: Initative to focus on integration of vocational training with general education
+virtualLab: Virtual Lab 
+virtualLabDesc: Virtual laboratories access for students to enhance actual laboratory experiences
 cwsn: CWSN
 cwsnDesc: Enable Study and learning materials for Visually/ Hearning Impaired Learners
-vocationEducation: Vocational Education
-vocationEducationDesc: Initative to focus on integration of vocational training with general education
-virtualLab: Virtual Labs
-virtualLabDesc: Virtual laboratories access for students to enhance actual laboratory experiences
+
 compleateCoverage: Complete K-12 Coverage
 compleateCoverageDesc: Access complete K-12 study material covering all boards, classes and subjects
 practiceContent: Unlimited Practice Content
