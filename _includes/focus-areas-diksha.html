@@ -117,6 +117,10 @@
     background-color: hsl(43.2deg 98.43% 75.1%);
 }
 
+[dir="rtl"] .focus-areas .carousel-indicators {
+        right: auto;
+}
+
 #myCarousel .carousel-item.active {
     display: block;
     transition: -webkit-transform .6s ease-in;
@@ -373,24 +377,25 @@
                         <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
-                        </button>
+                        </button> 
+
+                        <ol class="carousel-indicators">      
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+                            aria-controls="carousel-items" aria-label="nipun bharat"></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="1" aria-current="page"
+                            aria-controls="carousel-items" aria-label="man ki baat"></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="2" aria-current="page"
+                            aria-controls="carousel-items" aria-label="jadoo pitara"></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="3" aria-current="page"
+                            aria-controls="carousel-items" aria-label="G 20"></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="4" aria-current="page"
+                            aria-controls="carousel-items" aria-label="G 20"></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="5" aria-current="page"
+                            aria-controls="carousel-items" aria-label="G 20"></li>
+                        </ol>
                         
                     </div>
-                 
-                      <ol class="carousel-indicators">      
-                        <li data-target="#myCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
-                        aria-controls="carousel-items" aria-label="nipun bharat"></li>
-                        <li data-target="#myCarousel" tabindex="0" data-slide-to="1" aria-current="page"
-                        aria-controls="carousel-items" aria-label="man ki baat"></li>
-                        <li data-target="#myCarousel" tabindex="0" data-slide-to="2" aria-current="page" 
-                        aria-controls="carousel-items" aria-label="jadoo pitara"></li>
-                        <li data-target="#myCarousel" tabindex="0" data-slide-to="3" aria-current="page"
-                        aria-controls="carousel-items" aria-label="G 20"></li>
-                        <li data-target="#myCarousel" tabindex="0" data-slide-to="4" aria-current="page"
-                        aria-controls="carousel-items" aria-label="G 20"></li>
-                        <li data-target="#myCarousel" tabindex="0" data-slide-to="5" aria-current="page"
-                        aria-controls="carousel-items" aria-label="G 20"></li>
-                    </ol>
+                    
                 </div>
               
                 
