@@ -35,13 +35,26 @@
 .homepage-slides {
     height: 100%
 }
+.focus-area{
+    width: 100%;
+}
 
 .homepage-slides .carousel-inner {
     height: 100%
 }
+// .focus-area .carousel-inner {
+//     height: 100%
+// }
 
 .homepage-slides .carousel-inner .carousel-item {
     height: 100%
+}
+// .focus-area .carousel-inner .carousel-item {
+//     // width: 25%
+// }
+.dk-primary-navigation{
+    background-color: var(--dk-primary-navigation-bg-color);
+
 }
 
 :root {
@@ -1564,7 +1577,7 @@ ol li {
     position: absolute;
     right: 0%;
     top: 50%;
-    z-index: 1;
+    z-index: -1;
     transform: translate(50%, -50%)
 }
 

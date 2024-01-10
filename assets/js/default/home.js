@@ -337,7 +337,7 @@ $(document).ready(function () {
             $(".state-ut-text").show();
         }
 
-        window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+        // window.logInteractEvent('home', 'select-india', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
     }
 
     function generateTopoGraphMap(use) {
@@ -803,6 +803,14 @@ $(document).ready(function () {
     }
 
     $("body").ready(function ($) {
+        $(".view-dashboard-redirect").click(function (e) {
+            e.preventDefault($(this).attr('category'));
+            var type = $(this).attr('category');
+            window.logInteractEvent('homepage', 'select-dashboardData', '', 'static-homepage', 'static-homepage', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+            window.location.href = '/data-dashboard/?type=' + type;
+            return false;
+        });
+
         $(".view-dashboard").click(function (e) {
             e.preventDefault();
             var type = $(this).attr('category');

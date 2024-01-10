@@ -1,0 +1,36 @@
+<style>
+    .about-vidyadan{
+        background-color: #EAEEFF;
+        padding: 3.125rem 0;
+    }
+    .vidyadaan-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.25rem;
+    margin-bottom: 1.875rem;
+}
+.vidyadaan-details p{
+    font-size: 1.125rem;
+    line-height: 2.25rem;
+    text-align: justify;
+    letter-spacing: -0.1px;
+}
+</style>
+
+<div class="about-vidyadan">
+    <div class="container">
+        <div class="container-box">
+            <div class="vidyadaan-title" data-translate="AboutVidyaDaan">
+                 {{ site.data.text.AboutVidyaDaan }}
+            </div>
+            <div class="vidyadaan-details">
+                <p data-translate="AboutVidyaDaanDescription">
+                    {{ site.data.text.AboutVidyaDaanDescription }}
+                </p>
+                <p data-translate="AboutVidyaDaanMoreDescription">
+                    {{ site.data.text.AboutVidyaDaanMoreDescription }}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

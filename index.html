@@ -1,63 +1,30 @@
 ---
-layout: dk-mission
-title: Home
+layout: home-layout
+title: Homepage
 ---
-<div class="dk-page-home-slider">{% include page-home-slider.html %}</div>
-<div id="scrollMainContent"></div>
-
-<div class="switch-field">
-    <input type="radio" id="radio-one" name="switch-two" value="usageMetrics" checked />
-    <label for="radio-one" tabindex="0" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
-    <input type="radio" id="radio-two" name="switch-two" value="creationMetrics" />
-    <label for="radio-two" tabindex="0" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
-    <input type="radio" id="radio-three" name="switch-two" value="courseMetrics" />
-    <label for="radio-three" tabindex="0" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
-</div>
-<div class="sb-g relative5">
-    <div class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-4 sb-g-col-xxxl-4 section-usageMetrics">
-        <div class="dk-page-home-metrics text-left">{% include page-home-metrics.html %}</div>
+    <div>
+        {% include page-home-slider-new.html %}
+        {% include line-banner.html %}
+        {% include browser-by-board.html %} 
+        <div id="scrollMainContent"></div>
+        {% include focus-areas-diksha.html %}
+        {% include learning-classes-diksha.html %}
+        {% include diksha-numbers.html %}
+        {% include mobile-app.html %}
     </div>
-    <div class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-4 sb-g-col-xxxl-4 section-creationMetrics">
-        <div class="dk-page-home-metrics text-left">{% include page-creation-metrics.html %}</div>
+    
+    {% contentfor mobileview %}
+    <div>
+        {% include page-home-slider-new.html %}
+        {% include line-banner.html %}
+        {% include browser-by-board.html %} 
+        <div id="scrollMainContent"></div>
+        {% include focus-areas-diksha.html %}
+        {% include learning-classes-diksha.html %}
+        {% include diksha-numbers.html %}
+        {% include mobile-app.html %}
     </div>
-    <div class="sb-g-col-xs-12 sb-g-col-md-4 sb-g-col-lg-4 sb-g-col-xxxl-4 section-courseMetrics">
-        <div class="dk-page-home-metrics text-left">{% include page-courses-metrics.html %}</div>
-    </div>
-    <div class="sb-g-col-xs-12 sb-g-col-md-8 sb-g-col-lg-8 sb-g-col-xxxl-12">
-        <div class="pt-32 pr-32">
-            {% include page-india-metrics.html %}
-        </div>
-    </div>
-</div>
+    {% endcontentfor %}
 
 
-{% contentfor mobileview %}
-<div class="dk-page-home-slider">{% include page-home-slider.html %}</div>
-<div class="px-24 pb-0 pt-40 dk-page-say-diksha dk-circlerotate-left">
-    {% include dk-right-circle.html %}
-<div id="scrollMainContent"></div>
-    {% include page-say-diksha.html %}
-</div>
-<div class="mobile-metrics-container px-24 pt-24 pb-4 text-left">
-    <div class="sb-g relative5">
-        <div class="sb-g-col-xs-12">
-            <div class="switch-field">
-                <input type="radio" id="radio-one" name="switch-two" value="usageMetrics" checked />
-                <label for="radio-one" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
-                <input type="radio" id="radio-two" name="switch-two" value="creationMetrics" />
-                <label for="radio-two" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
-                <input type="radio" id="radio-three" name="switch-two" value="courseMetrics" />
-                <label for="radio-three" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
-            </div>
-        </div>
-    </div>
-    <div class="section-usageMetrics">{% include page-home-metrics.html %}</div>
-    <div class="section-creationMetrics">{% include page-creation-metrics.html %}</div>
-    <div class="section-courseMetrics">{% include page-courses-metrics.html %}</div>
-</div>
-<div class="p-24 dk-circlerotate-right">
-    {% include page-india-metrics.html %}
-    <div class="dk-page-home-circle">{% include dk-right-circle.html %}</div>
-</div>
-<div class="p-24">{% include page-state-boards.html %}</div>
-{% endcontentfor %}
+

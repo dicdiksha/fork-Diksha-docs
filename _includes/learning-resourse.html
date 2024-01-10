@@ -1,0 +1,118 @@
+<style>
+.online-resourse-title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.online-resources {
+    margin: 50px 0;
+}
+.resources-items {
+    display: flex;
+    justify-content: center;
+}
+.resources-item {
+    flex-basis: 20%;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    padding: 35px 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+.resources-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* margin: 23px; */
+}
+.resources-card span {
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 620px) {
+    .vidyadaan img {
+        width: 100%;
+    }
+    .resources-items{
+        flex-direction: column;
+    }
+    .vidyadaan-img img{
+    width: 100%;
+}
+}
+
+
+</style>
+<div class="online-resources">
+
+    <div class="container">
+        <div class="container-box">
+            <div >
+                <div class="online-resourse-title" data-translate="VidyaDaanTypes">
+                    {{site.data.text.VidyaDaanTypes}}
+                </div>
+                <div class="resources-items">
+                    <div class="resources-item">
+                        <div class="resources-card">
+                            <span>
+                                <img src="../assets/imgs/contribute/explanation.png" alt="experiental">
+                            </span>
+                            <span data-translate="ExplanationVideos">
+                                {{site.data.text.ExplanationVideos}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="resources-item">
+                        <div class="resources-card">
+                            <span>
+                                <img src="../assets/imgs/contribute/explore-video.png" alt="Practice Questions">
+                            </span>
+                            <span data-translate="PracticeQuestions">
+                                {{site.data.text.PracticeQuestions}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="resources-item">
+                        <div class="resources-card">
+                            <span>
+                                <img src="../assets/imgs/contribute/teaching.png" alt="Teaching Videos">
+                            </span>
+                            <span data-translate="TeachingVideos">
+                                {{site.data.text.TeachingVideos}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="resources-item">
+                        <div class="resources-card">
+                            <span>
+                                <img src="../assets/imgs/contribute/experiental.png" alt="Experiential Learning Videos">
+                            </span>
+                            <span data-translate="ExperierntialLearningVideos">
+                                {{site.data.text.ExperierntialLearningVideos}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="resources-item">
+                        <div class="resources-card">
+                            <span>
+                                <img src="../assets/imgs/contribute/lesstion.png" alt="Lesson Plans">
+                            </span>
+                            <span data-translate="LessonPlans">
+                                {{site.data.text.LessonPlans}}
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

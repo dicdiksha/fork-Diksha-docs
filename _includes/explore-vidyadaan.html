@@ -1,0 +1,82 @@
+<style>
+    .explore-vidyadaan{
+        padding: 2.5rem 0;
+        /* background: rgb(215,255,224);
+        background: linear-gradient(61deg, rgba(215,255,224,1) 0%, rgba(217,231,239,0.42638305322128855) 100%); */
+    }
+
+    .vidyadaan-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .vidyadaan-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 7.5rem;
+        font-size: 1.125rem;
+        }
+        .vidyadaan-desc {
+            margin: 2.4375rem 0;
+            font-size: 1.125rem;
+        }
+        .vidyadaan-action .participate-contribute{
+            border: 1px solid #005DA3;
+            padding: 0.625rem 1.25rem;
+            border-radius: 0.3125rem;
+            text-decoration: none;
+            background-color: transparent;
+            font-size: 1.125rem;
+            color: #0473B7;
+        }
+        .vidyadaan {
+    flex-basis: 40%;
+    justify-content: center;
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.vidyadaan-img img{
+    max-width: 100%;
+    }
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 620px) {
+    .vidyadaan-img img{
+    max-width: 100%;
+    }
+}
+
+</style>
+
+<div class="explore-vidyadaan">
+    <div class="container">
+        <div class="container-box vidyadaan-wrapper">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="vidyadaan">
+                        <div class="vidyadaan-img">
+                            <img src="../assets/homepage/vidya_daan_logo.png" alt="vidyadaan-logo">
+                        </div>
+                        <div class="vidyadaan-desc" data-translate="VidyaDaanIntro">
+                            {{ site.data.text.VidyaDaanIntro }}
+                        </div>
+                        <div class="vidyadaan-action">
+                            <button  type="button" tabindex="0" class="participate-contribute" data-translate="btnParticipate">{{ site.data.text.btnParticipate }}</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="vidyadaan">
+                        <img src="../images/explore_vidyadan.png" alt="vidyadaan">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

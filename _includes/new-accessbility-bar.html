@@ -1,0 +1,299 @@
+<style>
+    .brand-top-header {
+        margin: 0;
+        padding: 0;
+        min-height: auto;
+    }
+    .brand-top-header div.dk-top-head-ul ul li a:hover, 
+    .brand-top-header div.dk-top-head-ul ul li a.active {
+        /* text-decoration: underline; */
+        text-decoration: none;
+        /* color: var(--primary-menu-link-active); */
+        color: inherit;
+    }
+    .brand-top-header .fontResize-container .fontResizeBtn {
+        border: 0;
+        background: none;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        outline :none;
+        padding: 0.938em 1.188rem;
+    }
+    .brand-top-header .fontResize-container .fontResizeBtn:hover,
+    .brand-top-header .fontResize-container .fontResizeBtn:active {
+        background: transparent;
+        color: var(--white);
+        cursor: pointer;
+    }    
+
+.brand-top-header .dark-mode-toggle {
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: 0.625rem 0.5rem;
+}
+.brand-top-header .dark-mode-toggle:hover {
+    outline: none;
+    background:inherit;
+    border-radius: 0;
+}
+
+.brand-top-header .dropdown-wrapper .dropdown-language-div{
+    display: flex;
+} 
+.brand-top-header .dropdown-wrapper .dropdown-language-div span {
+    margin: 0 0.313rem;
+}
+.brand-top-header .dropdown-wrapper .language-text {
+    /* position: relative;
+     width: 75px;  */
+    display: flex;     
+    cursor: pointer;
+
+ } 
+ .brand-top-header .dropdown-wrapper .language-text:after {
+    content: "";
+    background-image: url(../images/dropdown.png);
+    background-repeat: no-repeat;
+    height: 0.75rem;
+    width: 0.563rem;
+    margin-left: 0.313rem;
+    margin-top: 0.438rem;
+}
+.brand-top-header .dropdown-wrapper{
+    position: relative;
+}
+.brand-top-header .dropdown-wrapper ul.language-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #434141;
+    z-index: 9999;
+    top: 20px;
+    width: 145px;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    display: none;
+    min-width: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: opacity .1s ease;
+}
+
+.brand-top-header .dropdown-wrapper .language-dropdown li{
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #0c4e9e26;
+    cursor: pointer;
+    width: 100%;
+    color: #434141;
+    text-align: left;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li.active{
+    font-weight: 700;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li:last-child {
+    border-bottom: 0px ;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow{
+    background: url(../assets/homepage/arrow_back.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    transform: rotate(270deg);
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow.arrow-rotate{
+    transform: rotate(90deg);
+}
+.brand-top-header .dropdown-wrapper .dropdown-language-div:hover #langDropdown{
+    /* display: block; */
+}
+.brand-top-header .dropdown-wrapper .language-text.collapsed:after {
+    transform: rotate(180deg);
+    margin-top: 0;
+}
+.fontResize-container{
+    display: flex;
+}
+
+.top-header .header-content-right {
+    display: flex;
+    justify-content: end;
+}
+
+.dropdown-wrapper-lang {
+    display: flex;
+}
+
+.dropdown-wrapper-lang span {
+    margin: 0 5px;
+}
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 9px;
+        height: .3125rem;
+    }
+
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar-thumb {
+        cursor: pointer;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, .25);
+        transition: color .2s ease;
+    }
+
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, .1);
+        border-radius: 0;
+    }
+
+/* For Desktop mac View */
+@media (max-width: 991.98px) {
+    .main-top-header .mainHeader {
+            flex-direction: column;
+            align-items: center;
+        }
+        .nav-action {
+            margin: 0.938rem 0;
+        }
+}
+
+/* For lablet View */
+@media (max-width: 768px) {
+    .top-header {
+        flex-direction: column;
+        margin: 0.625rem;
+    }
+
+    .pull-right.dk-top-head-ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0.625rem 0;
+    }
+
+    .brand-top-header div.dk-top-head-ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dk-country-flag {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .top-header .header-content-right {
+        justify-content: center !important;
+    }
+}
+
+/* For mobile View */
+@media (max-width: 578px) {
+    .container .container-box{
+    width: 100%;
+    width: 0 auto;
+   }
+
+    .navMenu a {
+    display: flex;
+    justify-content: center;
+    }
+}
+</style>
+<div class="top-header row">
+        <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="dk-country-flag">
+                <img loading="lazy" decoding="async" 
+                data-translate-attr="{govofIndia: ['title','alt']}" 
+                title="{{ site.data.text.govofIndia }}"
+                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/Flag_of_India.svg"
+                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/Flag_of_India.svg'"
+                width="32" alt="{{ site.data.text.govofIndia }}" />
+                <span data-translate="govofIndia">{{ site.data.text.govofIndia }}</span>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="header-content-right d-flex flex-ai-center head-tail-right-side justify-content-end">
+                <div class="dk-top-head-ul">
+                    <ul>
+                        <li class="skip-content-link"><a href="javascript: scrollMainContent();"
+                                title="{{ site.data.text.skipMainContent }}" data-translate="skipMainContent" data-translate-attr="{skipMainContent: ['title']}">{{ site.data.text.skipMainContent }}</a></li>
+                        <li class="mx-4">|</li>
+                        <li class="screen-reader-link"><a href="{{site.baseurl}}/screenreaderaccess.html"
+                                class="{% if page.url contains 'screenreaderaccess' %}active{% endif %}"
+                                title="{{ site.data.text.ScreenReaderAccess }}" data-translate="ScreenReaderAccess" data-translate-attr="{ScreenReaderAccess: ['title']}">{{ site.data.text.ScreenReaderAccess }}</a></li>
+                        <li class="mx-4">|</li> 
+                        <li class="sitemap-link "><a class="{% if page.url contains 'sitemap' %}active{% endif %}"
+                                href="{{site.baseurl}}/sitemap.html"
+                                title="{{ site.data.text.sitemap }}" data-translate="sitemap" data-translate-attr="{sitemap: ['title']}">{{ site.data.text.sitemap }}</a></li>
+                        <li class="mx-4">|</li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="fontResize-container d-flex flex-ai-center pull-right">
+                                <span class="fxsmall computer only mr-8 hide hidden"><span class="hide hidden">(<span
+                                            id="currentFont"></span>)</span></span>
+                                <button type="button" class="fontResizeBtn fontResizeBtn_A-" title="Decrease Font Size"
+                                    id="DecreaseFontSize" onclick="DecreaseFontSize();">A-</button>
+                                <button type="button" class="fontResizeBtn fontResizeBtn_A" title="Reset to Default"
+                                    onclick="ResetFontSize();" id="ResetFontSize">A</button>
+                                <button type="button" class="fontResizeBtn fontResizeBtn_A+" title="Increase Font Size"
+                                    onclick="IncreaseFontSize();" id="IncreaseFontSize">A+</button>
+                            </div>
+                        </li>
+                        <li class="mx-4">|</li>
+                        <li><button id="dark-mode-toggle" class="dark-mode-toggle" title="Dark mode/Normal mode">
+                                <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496">
+                                    <path fill="var(--white)"
+                                        d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z"
+                                        transform="translate(-8 -8)" /></svg>
+                            </button>
+                        </li>
+                        <li class="mx-4">|</li>
+                        <li>
+                            <div
+                            class="sb-g-col-xs-12 sb-g-col-md-2 sb-g-col-lg-2 sb-g-col-xl-2 sb-g-col-xxl-3 sb-g-col-xxxl-4 d-flex dropdown-wrapper">
+                            <div class="dropdown-language-div" tabindex="0">
+                                <span> <img src="../images/globe.png" alt="language-icon"> </span>
+                                <span class="language-text">English 
+                                    <!-- <span> <img src="../images/Filled.png"></span> -->
+                                </span>
+                                <ul class="language-dropdown" id="langDropdown">
+                                    <li tabindex="0" role="img" title="Select Language">Select Language<span class="language-dropdown-arrow arrow-rotate" aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="English" data-value="en" lang="en" class="active">English<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="hindi" data-value="hi" lang="hi">हिंदी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="kannada" data-value="kn" lang="kn">ಕನ್ನಡ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="marathi" data-value="mr" lang="mr">मराठी<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="bengali" data-value="bn" lang="bn">বাংলা<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="tamil" data-value="ta" lang="ta">தமிழ்<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="telugu" data-value="te" lang="te">తెలుగు<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="urdu" data-value="ur" lang="ur">اردو<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="assamese" data-value="as" lang="as">অসমীয়া<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="odia" data-value="or" lang="or">ଓଡ଼ିଆ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="gujrati" data-value="gu" lang="gu">ગુજરાતી<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                    <li tabindex="0" role="img" title="punjabi" data-value="pa" lang="pa">ਪੰਜਾਬੀ<span aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+</div>

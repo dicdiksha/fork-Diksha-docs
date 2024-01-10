@@ -205,6 +205,8 @@ $tertiary-color: $peacock-blue;
   --rcard-bg:var(--white);
   --catalogue-section-bg: #F5F7FB;
   --section-footer-bg:var(--primary-color);
+  --dk-primary-navigation-bg-color:var(--white);
+ 
 }
 
 html.darkmode {
@@ -253,6 +255,8 @@ html.darkmode {
   --rcard-bg:#333;
   --catalogue-section-bg: #20242a;
   --section-footer-bg:#333;
+  --dk-primary-navigation-bg-color:#2A2C38;
+ 
   .download-overall {
     color:var(--white);
   }
@@ -347,4 +351,294 @@ html.darkmode {
   .legends-svg {
     fill: #fff;
   }
+  .mainHeader .nav-explore .nav-exp{
+    filter: brightness(0) invert(1);
+
+  }
+  /*============Dark mode new home page==========*/
+ .explore-study {
+    background-color: #191919;
+  }
+/*============Dark mode title==========*/
+ .head-title {
+    color: #FFFFFF;
+  }
+ .head-title .text .title-diksha-color {
+    color:var(--tertiary-color);
+  }
+
+ .head-title .text .title-diksha-color { 
+
+  }
+  .mainHeader .nav-explore .nav-exp-active {
+    background-color: var(--tertiary-color);
+    color: #666666;
+  }
+  .navMenu a {
+    color: #FFFFFF;
+  }
+
+/*============header==========*/
+// html.darkmode .dk-primary-navigation{
+//     background-color: #2A2C38;
+
+// }
+
+ .main-top-header{
+    background-color: #2A2C38 !important;
+  }
+
+ .mainHeader .nav-explore .nav-exp{
+    filter: brightness(0) invert(1);
+  } 
+/*============brouse by board==========*/
+  .dk-browser-by-board .item {
+  background-color:#2A2C38;
+  border: 1px solid var(--tertiary-color);
+}
+
+ .dk-browser-by-board .item .state-dropdown select{
+  filter: brightness(7);
+}
+
+ .item-img img {
+  filter: invert(2);
+}
+
+ .focus-area-diksha {
+  background-color: #061F35;
+}
+
+  .learing-items{
+  filter: brightness(8) invert(2);
+}
+
+/*============focus area==========*/
+
+ .dk-browser-by-board .item .item-action {
+  background-color: var(--tertiary-color);
+}
+
+ .dk-browser-by-board .item .item-action .view_more{
+  filter: brightness(0.4);
+}
+
+ .focus-areas .carousel-inner .focus-item {
+  background-color: #2A2C38 ;
+  color: #DBDCDF;
+}
+
+ .focus-heading .focus-border-bottom{
+  background-color: var(--tertiary-color);
+}
+ .read-more img {
+  filter: invert(1);
+}
+
+ .read-more{
+  color:  var(--tertiary-color);
+}
+ .read-more img{
+
+}
+ .lean-detail {
+  filter: brightness(0) invert(1);
+
+}
+/*============diksha-numbers==========*/
+
+ .diksha-numbers{
+  background-color: #191919;
+}
+ .dashboard-head{
+  filter: brightness(0) invert(1);
+}
+
+ .diksha-numbers .vecter-one,
+ .diksha-numbers .vecter-two,
+ .diksha-numbers .vecter-three,
+ .diksha-numbers .vecter-five,
+ .diksha-numbers .vecter-four,
+ .diksha-numbers .vecter-six {
+  filter: grayscale(1);
+
+}
+
+ .matrix-dash{
+  background-color: #414141;
+
+}
+ .view-dashboards button {
+  background-color: var(--tertiary-color);
+  color: #666666;
+
+}
+ .matrix-dash .data{
+  filter: brightness(0) invert(1);
+}
+ .learn-sessions{
+  border-color: var(--tertiary-color);
+
+}
+/*============MObile App==========*/
+ .mobile-app-diksha{
+  background-color: #2A2C38;
+}
+ .mobile-app-title .diksha
+{
+  color:var(--tertiary-color);
+}
+
+
+/*============footer==========*/
+ .main-footer{
+  background-color: #061F35;
+}
+ .logo-ngerd img {
+  filter: brightness(0) invert(1);
+}
+ .footer-links ul li{
+  filter: brightness(0) invert(1);
+
+}
+ .ciet-footer-logo,
+ .gov-footer-logo {
+  filter: brightness(0) invert(1);
+}
+/*============learning-class==========*/
+
+ .learning-class{
+  background-color: #414141;
+}
+ .dashboard-footer{
+  background-color:var(--tertiary-color);
+  color: #666666;
+}
+
+ .dashboard-body .icon-img {
+  background-color: #FFE350;
+
+}
+.dashboard-body .icon-img img{
+  filter: grayscale(1);
+}
+/*============learning-class==========*/
+
+/*============learning-class==========*/
+
+/*============Contribute us==========*/
+.explore-vidyadaan {
+  background-color: #2A2C38;
+}
+.about-vidyadan{
+  background-color: #191919;
+}
+.matrix-diksha-small-font{
+  filter: brightness(0) invert(1);
+}
+.dashbord-matrics-data .switch-field input:checked+labe{
+  background-color: var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+.dashbord-matrics-data .switch-field label{
+  border-color: var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+.usage-metrics-content .usage-label{
+  filter: brightness(0) invert(1);
+
+}
+.dashbord-matrics-data .country-dropdown select{
+  border-color: var(--tertiary-color);
+  color: var(--tertiary-color);
+
+}
+.dashbord-matrics-data .switch-field input:checked+label{
+  background-color: var(--tertiary-color);
+  color: #333333;
+
+}
+.dashbord-matrics-data .top-states-table table tr:first-child{
+  background-color: var(--tertiary-color);
+
+}
+.dk-usagetilldate{
+  filter: brightness(0) invert(1); 
+}
+.download-report-updated button{
+  border-color: var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+.download-report-updated button:hover{
+  background-color: var(--tertiary-color);
+  color: #333333;
+
+}
+.top-states-table table tr td:first-child {
+  background-color: transparent;
+  border-right: 1px solid rgba(179,179,179,0.5);
+  
+}
+
+.dashbord-matrics-data .dashbord-matrics-data .country-dropdown select{
+  background-color: #2A2C38;
+
+}
+  .user-card{
+    box-shadow: 0 0.025rem 0.775rem 0 #ffc107;
+
+  }
+  .user-card .user-name{
+    filter: brightness(0) invert(1);
+  }
+  .learning-users .users .image-title{
+    filter: brightness(0) invert(1);
+  }
+  .image-bg{
+    border: 1px solid #fff;
+  }
+  .resources-item{
+    box-shadow: 0rem 0.525rem 0.975rem 0 #FFE3508F;
+
+  }
+  .resources-card img{
+    filter: invert(0.8);
+  }
+  .top-states-table table tr:first-child th{
+    color: #333333;
+  }
+  .top-states-table table{
+    border-color: #fff
+
+  }
+
+  .vidyadaan-action .participate-contribute{
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+  }
+  .pdf-doc {
+    border: 1px solid #fff;
+  }
+
+  .pdf-doc.bg-yellow,
+  .pdf-doc.bg-blue,
+  .pdf-doc.bg-red 
+  {
+      background-size: cover;
+  }
+  .mobile-app{
+
+  }
+  .play-store-link{
+    background-color: #191919;
+  }
+  .play-store-link img{
+    filter: brightness(0) invert(1);
+ }
+ .applink{
+  color: var(--tertiary-color);
+ }
+ .dashbord-matrics-data .top-states-table table tr td:first-child  {
+  color: #fff;
+ }
 }

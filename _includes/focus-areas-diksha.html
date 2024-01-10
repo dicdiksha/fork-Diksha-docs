@@ -1,0 +1,409 @@
+<style>
+    .focus-area-diksha{
+        padding: 3.125rem 0;
+        background-color: #ECF6FF;
+    }
+    .focus-areas {
+    margin-left: 5%;
+    position: relative;
+    }
+    .focus-items{
+        font-family: 'Outfit', sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .focus-item{
+        background-color: #fff;
+        box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+        display:flex;
+        margin: 1.25rem;
+        border-radius: 0.9375rem;
+        padding: 1.25rem;
+        width: 435px;
+        color: #202124;
+        padding-bottom: 3.125rem;
+    }
+    
+    .focus-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .focus-desc .focus-heading{
+        font-size: 1.5rem;
+        font-weight: 600;
+        position: relative;
+    }
+    .focus-desc .focus-details {
+        padding-right: 1.125rem;
+        padding-top: 10px;
+    }
+.read-more {
+    color: #024F9D;
+    font-size: 0.875rem;
+    font-weight: bold;
+}
+.read-more span {
+    padding: 0 0.3125rem;
+}
+
+#myCarousel {
+    margin-top: 3.125rem;
+}
+
+#myCarousel .carousel-control-next{
+    right: 43%
+}
+#myCarousel .carousel-control-prev{
+    left: 44%
+}
+
+#myCarousel .carousel-control-next,
+#myCarousel .carousel-control-prev {
+    top: auto !important;
+    bottom: auto !important;
+    width: auto !important;
+   
+}
+
+#myCarousel .carousel-control-next-icon {
+    background-image: url(../assets/homepage/arrow_back.png);
+    background-repeat: no-repeat;
+}
+
+#myCarousel .carousel-control-prev-icon {
+    background-image: url(../assets/homepage/arrow_prev.png);
+    background-repeat: no-repeat;
+}
+
+#myCarousel .carousel-control-prev-icon,
+#myCarousel .carousel-control-next-icon {
+    top: auto !important;
+    bottom: auto !important;
+    background-position: unset !important;
+    background-size: unset !important;
+
+}
+.focus-areas  .carousel-indicators {
+    bottom: -10px !important;
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    margin-bottom: 0 !important;
+    width: 100% !important
+}
+
+.focus-areas .carousel-indicators li {
+    background-color:#8C8C8C;
+    height: 6px;
+    width: 16px;
+
+}
+
+.focus-areas .carousel-indicators .active{
+    height: 9px;
+    width: 24px;
+    background-color:#024F9D
+
+}
+
+.focus-heading .focus-border-bottom {
+    position: absolute;
+    left: 0;
+    height: 7px;
+    width: 30%;
+    background-color: #024F9D;
+    border-radius: 10px;
+}
+.focus-item:hover {
+    background-color: hsl(43.2deg 98.43% 75.1%);
+}
+
+[dir="rtl"] .focus-areas .carousel-indicators {
+        right: auto;
+}
+
+#myCarousel .carousel-item.active {
+    display: block;
+    transition: -webkit-transform .6s ease-in;
+    transition: transform .3s ease-in;
+    transition: transform .3s ease-in;
+     /* -webkit-transform .3s ease-in; */
+    /* transition: none !important; */
+}
+
+#myCarousel .carousel-item.active .focus-item {
+    /* background-color: hsl(43.2deg 98.43% 75.1%); */
+}
+
+#myCarousel .carousel-inner .carousel-item.active,
+#myCarousel .carousel-inner .carousel-item-start,
+#myCarousel .carousel-inner .carousel-item-next,
+#myCarousel .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+@media (min-width: 768px) {
+    #myCarousel .carousel-inner .carousel-item-prev,
+    #myCarousel .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+    }
+    #myCarousel .carousel-control-next {
+        right: 37%;
+    }
+    #myCarousel .carousel-control-prev {
+        left: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    #myCarousel .carousel-inner .carousel-item>div {
+        display: none;
+    }
+
+    #myCarousel .carousel-inner .carousel-item>div:first-child {
+        display: block;
+    }
+    .focus-item {
+    width: 94%;
+    }
+
+    .focus-areas {
+    margin-left: 0%;
+    /* position: relative; */
+    }
+
+}
+
+
+@media (max-width: 620px) {
+    .focus-item {
+    width: 92%;
+    }
+    .focus-desc .focus-details{
+        padding-right: 5px;
+        margin-top: 12px;
+
+    }
+    #myCarousel .carousel-control-next {
+        right: 27%;
+    }
+    #myCarousel .carousel-control-prev {
+        left: 27%;
+    }
+
+}
+</style>
+
+
+<div>
+    <div class="focus-area-diksha">
+        <div class="container">
+            <div class="head-title">
+                <span class="text" data-translate="focusArea" >{{site.data.text.focusArea}}</span>
+                 <span class="title-diksha-color"  data-translate="diksha">{{site.data.text.diksha}}</span>
+            </div>
+        </div>
+        <div>
+            <div>
+                <div class="focus-areas">
+                    <div id="myCarousel" class=" focus-area carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner ">
+                            <div class="carousel-item active">
+                                <div>
+                                    <div class="focus-item">
+                                        <div class="focus-desc">
+                                            <div class="focus-heading">
+                                                <span data-translate="nipunBharat">{{site.data.text.nipunBharat}}</span>
+                                                <div class="focus-border-bottom">
+                                                </div>
+                                            </div>
+                                            <div class="focus-details">
+                                                <span data-translate="nipunBharatDesc"> {{site.data.text.nipunBharatDesc}}</span>
+                                                <br>
+                                                <span class="read-more">
+                                                    <a href="/fln.html" >
+                                                        <span data-translate="readmore">{{site.data.text.readmore}}</span>
+                                                        <span>
+                                                            <img src="../assets/homepage/raed-more.png" alt="read more">
+                                                        </span>
+                                                    </a>
+                                                  
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="focus-img">
+                                            <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div class="focus-item">
+                                        <div class="focus-desc">
+                                            <div class="focus-heading">
+
+                                                <span data-translate="bhasaSangam">{{site.data.text.bhasaSangam}}</span>
+                                                <div class="focus-border-bottom">
+                                                </div>
+                                            </div>
+                                            <div class="focus-details">
+                                                <span data-translate="bhasaSangamDesc">{{site.data.text.bhasaSangamDesc}}</span>
+                                                <br>
+                                                <span class="read-more">
+                                                    <a href="https://bit.ly/BhashaSangam">
+                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                        <span>
+                                                            <img src="../assets/homepage/raed-more.png" alt="read more">
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="focus-img">
+                                            <img src="../assets/homepage/focus-area/bhasha-sangam.png" alt="nipun bharat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div >
+                                    <div class="focus-item">
+                                        <div class="focus-desc">
+                                            <div class="focus-heading">
+                                                <span data-translate="jaduiPitara">{{site.data.text.jaduiPitara}}</span>
+                                                <div class="focus-border-bottom">
+                                                </div>
+                                            </div>
+                                            <div class="focus-details">
+                                                <span data-translate="jaduiPitaraDesc">{{site.data.text.jaduiPitaraDesc}}</span>
+                                                <br>
+                                                <span class="read-more">
+                                                    <a href="/jadoo/index.html">
+
+                                                       <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                        <span>
+                                                            <img src="../assets/homepage/raed-more.png" alt="read more">
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="focus-img">
+                                            <img src="../assets/homepage/focus-area/jadui-pitara.png" alt="nipun bharat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div class="focus-item">
+                                        <div class="focus-desc">
+                                            <div class="focus-heading">
+                                                <span data-translate="adultEducation">{{site.data.text.adultEducation}}</span>
+                                                <div class="focus-border-bottom">
+                                                </div>
+                                            </div>
+                                            <div class="focus-details" >
+                                                <span data-translate="adultEducationDesc">{{site.data.text.adultEducationDesc}}</span>
+                                                <br> <span class="read-more">
+                                                    <a href="/adult-education.html">
+                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                        <span>
+                                                            <img src="../assets/homepage/raed-more.png" alt="read more">
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="focus-img">
+                                            <img src="../assets/homepage/focus-area/adult-education.png" alt="nipun bharat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div class="focus-item">
+                                        <div class="focus-desc">
+                                            <div class="focus-heading">
+                                                <span data-translate="virtualLab">{{site.data.text.virtualLab}}</span>
+                                                <div class="focus-border-bottom">
+                                                </div>
+                                            </div>
+                                            <div class="focus-details">
+                                                <span data-translate="virtualLabDesc">{{site.data.text.virtualLabDesc}}</span>
+                                            
+                                                <br> <span class="read-more">
+                                                    <a href="/virtuallabs.html" >
+                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                        <span>
+                                                            <img src="../assets/homepage/raed-more.png" alt="read more">
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="focus-img">
+                                            <img src="../assets/homepage/focus-area/vietual-lab.png" alt="nipun bharat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div>
+                                    <div class="focus-item">
+                                        <div class="focus-desc">
+                                            <div class="focus-heading">
+                                                <span data-translate="vocationEducation">{{site.data.text.vocationEducation}}</span>
+                                                <div class="focus-border-bottom">
+                                                </div>
+                                            </div>
+                                            <div class="focus-details">
+                                                <span data-translate="vocationEducationDesc"> {{site.data.text.vocationEducationDesc}}</span>
+                                                <br> <span class="read-more">
+                                                    <a href="/vocational-education.html">
+                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                        <span>
+                                                            <img src="../assets/homepage/raed-more.png" alt="read more">
+                                                        </span>
+                                                    </a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="focus-img">
+                                            <img src="../assets/homepage/focus-area/vocation-education.png" alt="nipun bharat">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ol class="carousel-indicators">      
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="1" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="2" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="3" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="4" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                            <li data-target="#myCarousel" tabindex="0" data-slide-to="5" aria-current="page"
+                            aria-controls="carousel-items" aria-label=""></li>
+                        </ol>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button> -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

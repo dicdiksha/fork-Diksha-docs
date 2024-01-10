@@ -1,0 +1,104 @@
+
+<style>
+    .user-glance {
+        width: 80%;
+        margin: 0 auto;
+}
+.user-card {
+    padding: 0.625rem 1.25rem;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    font-size: 1.25rem;
+    line-height: 1.5625rem;
+    border-radius: 0.3125rem;
+    margin: 1.25rem 0.3125rem;
+    color: #1C1D1F;
+}
+.user-card .user-image img{
+    height: 4.625rem;
+    width: 4.4375rem;
+    
+}
+.user-name {
+    padding: 0 1.4375rem;
+}
+.user-glance .user-desc{
+    font-size: 1.125rem;
+}
+
+@media (max-width: 768px) {
+}
+
+
+@media (max-width: 620px) {
+    .row-eq-height img{
+    width: 100%;
+
+}
+}
+
+</style>
+<div class="container">
+    <div class="container-box">
+        <div class=" content head-title">
+            <span class="text" data-translate="dikshaGlance">  {{site.data.text.dikshaGlance}}</span>
+        </div>
+        <div class="user-glance">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="row-eq-height">
+                        <div class="user-desc" data-translate="userDesc">{{site.data.text.userDesc}}</div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="user-card">
+                                    <div class="user-image">
+                                        <img src="../assets/imgs/about/student.png" alt="student">
+                                    </div>
+                                    <div class="user-name" data-translate="aboutGlanceStudent">  {{site.data.text.aboutGlanceStudent}}</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="user-card">
+                                    <div class="user-image">
+                                        <img src="../assets/imgs/about/teacher.png" alt="Teacher">
+                                    </div>
+                                    <div class="user-name" data-translate="aboutGlanceTeacher">  {{site.data.text.aboutGlanceTeacher}}</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="user-card">
+                                    <div class="user-image">
+                                        <img src="../assets/imgs/about/parent.png" alt="Parent">
+                                    </div>
+                                    <div class="user-name" data-translate="aboutGlanceParent">  {{site.data.text.aboutGlanceParent}}</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="user-card">
+                                    <div class="user-image">
+                                        <img src="../assets/imgs/about/professional.png" alt="HT & Officials">
+                                    </div>
+                                    <div class="user-name" data-translate="aboutGlanceHTOfficials">  {{site.data.text.aboutGlanceHTOfficials}}</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="user-card">
+                                    <div class="user-image">
+                                        <img src="../assets/imgs/about/other.png" alt="Other">
+                                    </div>
+                                    <div class="user-name" data-translate="aboutGlanceOther">  {{site.data.text.aboutGlanceOther}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row-eq-height">
+                        <img src="../assets/homepage/mobile-app-mobile.png" alt="mobile-app">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

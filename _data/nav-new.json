@@ -1,0 +1,40 @@
+{
+    "attributes": "Primary Menu Navigation",
+    "items": [
+        {
+            "title": "Home",
+            "url": "homepage.html",
+            "contains":"home",
+            "etype":"select-homepage",
+            "eid": "static-homepage"
+        },
+        {
+            "title": "Dashboard",
+            "url": "data-dashboard/",
+            "contains":"data",
+            "etype":"select-dashboardData",
+            "eid": "public-dashboardData"
+        },
+        {
+            "title": "About",
+            "url": "about-us/",
+            "contains":"about",
+            "etype": "select-aboutUS",
+            "eid": "static-aboutUS"
+        },
+        {
+            "title": "Get App",
+            "url": "get-app/",
+            "contains":"getapp",
+            "etype": "select-getappInfo",
+            "eid": "static-getappInfo"
+        },
+        {
+            "title": "Contribute",
+            "url": "contribute-us/",
+            "contains":"contribute",
+            "etype": "select-contributeUs",
+            "eid": "static-contributeUs"
+        }
+    ]
+}

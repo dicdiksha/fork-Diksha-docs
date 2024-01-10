@@ -50,7 +50,7 @@ PracticeQuestions: Practice Questions
 TeachingVideos: Teaching Videos
 ExperierntialLearningVideos: Experiential Learning Videos
 LessonPlans: Lesson Plans
-readmore: Read more
+readmore: Read More
 DIKSHAforMobile: DIKSHA for Mobile
 DIKSHAforMobileDescription: The DIKSHA platform offers engaging learning material, relevant to the prescribed school curriculum, to teachers, students and parents. Download the DIKSHA app and scan QR codes in your textbooks for easy access to all your lessons. {Android 5.1 and above}
 DIKSHAforWeb: DIKSHA for Web
@@ -74,9 +74,10 @@ DIKSHAUsageTillDate: DIKSHA current usage
 LearningLessons: Learning sessions
 minutes: Minutes
 application : Application Availability
-TermsofUse: Terms and Policies
 needHelp: DIKSHA Help
 teacherNeedHelp: Teacher Help
+TermsofUse: Terms and Policies
+PrivacyPolicy : Privacy Policy
 copyright: © 2021, DIKSHA
 skipMainContent: Skip to Main Content
 sitemap: Site Map
@@ -119,3 +120,99 @@ Details: Details
 selectState: select state to explore
 selectedLanguage: selected language
 openPdf: open in pdf
+
+
+#======Start New home Page=======#
+
+#=======title=======#
+view : View 
+dikshatitle: DIKSHA
+digitalcontent: world of open digital content
+focusArea: Focus Areas of 
+compreLearning: Comprehensive Learning
+foundationalsecondary :  for Foundational to Secondary
+viewMore : View More
+login: Login
+footerDoc: Digital Infrastructure ForKnowledge Sharing
+footerNCERT: National Council of Educational Research And Training (NCERT)
+ncertAdd: Aurobindo Marg, New Delhi-110016
+
+
+#=======Homepage=======#
+# footerLogoDiksha:   Digital Infrastructure For <br>  Knowledge Sharing
+# footerLogoNegrd: Sri Aurobindo Marg, New Delhi-110016
+footerBottom:  © 2023 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India®2023 DIKSHA
+nipunBharat: Nipun Bharat
+nipunBharatDesc: National Initiative for Proficiency in Reading with Understanding and Numeracy.
+bhasaSangam: Bhasha Sangam
+bhasaSangamDesc: National Initiative to teach basic sentences of everyday usage in 22 Indian languages.
+jaduiPitara: Jaadui Pitara 
+jaduiPitaraDesc: Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.    .
+adultEducation: Adult Education
+adultEducationDesc: To impart foundational literacy and numeracy, critical life skills for Citizens
+vocationEducation: Vocation Educational
+vocationEducationDesc: Initative to focus on integration of vocational training with general education
+virtualLab: Virtual Lab 
+virtualLabDesc: Virtual laboratories access for students to enhance actual laboratory experiences
+cwsn: CWSN
+cwsnDesc: Enable Study and learning materials for Visually/ Hearning Impaired Learners
+
+compleateCoverage: Complete K-12 Coverage
+compleateCoverageDesc: Access complete K-12 study material covering all boards, classes and subjects
+practiceContent: Unlimited Practice Content
+practiceContentDesc: Access practice content such as NCERT solutions and trending content
+studyMaterial: Interactive Study Material
+studyMaterialDesc: Media-rich visually engaging 2D 3D videos in accordance with the syllabus
+participateQuiz: Participate in Quizzes
+participateQuizDesc: Quizzes makes learning fun and help students perform better
+ContentContributors : Content Contributors
+ContentContributions :  Content Contributions
+downloadReport : Download Report
+enrollments : Enrollments
+#about-us
+aboutDikshaHeading : DIKSHA - One Nation, One Digital Platform
+aboutDescription :  DIKSHA (Digital Infrastructure for Knowledge Sharing) is a national platform for school education, an initiative of National Council for Educational Research and Training (NCERT), under the aegis of the Ministry of Education (MoE), GoI. Launched in 2017 by Honourable Vice President of India – Shri M. Venkaiah Naidu, DIKSHA has been adopted by almost all the States, Union Territories, central autonomous bodies/boards including CBSE.
+missionVision: Mission & Vision
+missionVisionDisc : At Diksha, our mission is to create a revolutionary learning ecosystem that empowers students to thrive in the 21st century. We believe that education should be accessible, engaging, and tailored to the individual needs of each learner. <br> Our vision is to transform the way education is delivered by leveraging technology and innovation. We aim to provide students with a holistic learning experience that goes beyond traditional classrooms. Through our platform, we want to equip students with the skills they need not only for academic success but also for personal growth and development.
+dikshaGlance : DIKSHA at a Glance
+userDesc : DIKSHA can be accessed by learners and teachers across the country and currently supports 36 Indian languages
+aboutGlanceStudent : Student
+aboutGlanceTeacher : Teacher
+aboutGlanceParent : Parent
+aboutGlanceHTOfficials : HT & Officials
+aboutGlanceOther : Other
+aboutUserTitle : State of the art learning ecosystem for users
+aboutUserTextbook :   Energized Textbook
+aboutUserTeacher : Teacher Proffesional Development
+aboutUserBank : Question bank
+aboutUserSourcing : Content Sourcing
+aboutUserAuthoring : Content Authoring
+aboutUserQuizzes : Quizzes
+aboutUserCusumption : Content Cusumption
+aboutUserdataTools: Data tool and Dashboard
+aboutUserChatbot : Chatbot
+aboutUserCredential : Digital Credential
+aboutUserCollaboration : Collaboration
+aboutUserPhygital : Phygital
+aboutUserCcube : Ccube
+aboutUserSurvey : Survey
+aboutUserTranslations : Language Translations
+aboutUserMentoring : Mentoring
+aboutUserSunbird : Sunbird  Registry and Credential
+documentTitle : DIKSHA - Learnings from India Experience
+aboutDocument : Documents
+viewDoc : view
+
+#contribute
+mobileApp:  Mobile App Today!
+contributeBanner: Contribute e-learning resources in the education domain to ensure that quality learning continues for learners across India.
+
+#getapp
+getAppDesc: The DIKSHA application is available on play store & app store, You can also scan QR code to download it.
+downloadLinkAndroid: Download Link For Android
+downloadLinkIos: Download Link For iOS
+scanDownload: Scan to Download
+clickHere : Click Here
+#dashboard
+Dashboarddesc: Various metrics across the country
+#======END New home Page=======#

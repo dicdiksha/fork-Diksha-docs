@@ -291,6 +291,13 @@ html.darkmode {
     .diksha-coming-soon{
         color: var(--white) ;
     }
+    .diksha-logo-text {
+        filter: brightness(0) invert(1);
+    }
+    .digital-india{
+        // filter: brightness(0) invert(1);
+    }
+
 }
 
 .usage-metrics-content {
@@ -354,3 +361,4 @@ html.darkmode .dk-pagedata .svg-container svg g text{
 html.darkmode .sb-color-error{
     color: #FF9375 !important;
 }
+

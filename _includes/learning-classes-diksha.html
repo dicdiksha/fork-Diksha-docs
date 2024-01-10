@@ -1,0 +1,179 @@
+<style>
+    .learning-class {
+        padding:50px 0;
+    }
+    .learing-items{
+     font-family: 'Lato', sans-serif;
+        background-image: url(../assets/homepage/leaning-bg.png);
+        background-repeat: no-repeat;
+    border: 1px solid;
+    padding: 40px 30px;
+    background-position: bottom left;
+    margin: 20px 13px;
+    border-radius: 10px;
+        color: #202124;
+
+    }
+    .student-learning img {
+        max-width: 100%;
+    }
+
+    .student-learning {
+        position: relative;
+        display: flex;
+    /* justify-content: center;
+    align-items: center */
+    }
+    .student-learning .gif-section {
+        position: absolute;
+    top: -62px;
+    left: 18px;
+    width: 100%;
+    }
+    .class-details {
+    margin-top: 49px;
+}
+
+
+.leaning-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 22px;
+}
+.leaning-heading .title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 23px;
+}
+.border-green {
+    border-color: #0ABE8E;
+}
+.border-yellow{
+    border-color: #FFAD3A;
+}
+.border-orange{
+    border-color: #FA5D29;
+}
+.border-blue{
+    border-color: #6A9BFF;
+    
+}
+
+.student-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+
+    .student-learning{
+        text-align: center;
+    }
+    .student-learning .gif-section {
+        top: -69px;
+        left: 31px;
+    }
+
+}
+@media (max-width: 620px) {}
+
+
+
+</style>
+
+
+        <div class="learning-class">
+            <div class="container">
+                <div class="container-box">
+                    <div class="head-title">
+                        <span class="text">
+                            <span class="title-diksha-color" data-translate="compreLearning">{{site.data.text.compreLearning }} </span> <span data-translate="foundationalsecondary">{{site.data.text.foundationalsecondary }}</span> </span>
+                    </div>
+                    <div class="class-details">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 cal-sm-12 student-img">
+                                <div class="student-learning ">
+                                    <img src="../assets/homepage/learning-section.png" alt="leaning section">
+
+                                    <div class="gif-section">
+                                        <img src="../assets/homepage/education.gif" alt="gif">
+                                    </div>
+
+                                    
+                                </div>
+                            </div>
+                         
+                            <div class="col-lg-7 col-md-12 cal-sm-12">
+                                <div class="row lean-detail">
+                                    <div class="col-lg-6 col-md-6 cal-sm-12 d-flex" >
+                                        <div class="learing-items border-green ">
+                                            <div class="leaning-heading">
+                                                <div class="image">
+                                                    <img src="../assets/homepage/coverage.png" alt="leaning classes">
+                                                </div>
+                                                <div class="title" data-translate="compleateCoverage">
+                                                    {{site.data.text.compleateCoverage }}
+                                                </div>
+                                            </div>
+                                            <div class="learning-descp" data-translate="compleateCoverageDesc">
+                                                {{site.data.text.compleateCoverageDesc }}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 cal-sm-12 d-flex">
+                                        <div class="learing-items border-yellow ">
+                                            <div class="leaning-heading">
+                                                <div class="image">
+                                                    <img src="../assets/homepage/material.png" alt="leaning classes">
+                                                </div>
+                                                <div class="title" data-translate="studyMaterial">
+                                                   {{site.data.text.studyMaterial }}
+                                                </div>
+                                            </div>
+                                            <div class="learning-descp" data-translate="studyMaterialDesc">
+                                                {{site.data.text.studyMaterialDesc }}
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 cal-sm-12 d-flex">
+                                        <div class="learing-items border-orange ">
+                                            <div class="leaning-heading">
+                                                <div class="image">
+                                                    <img src="../assets/homepage/practice.png" alt="leaning classes">
+                                                </div>
+                                                <div class="title" data-translate="participateQuiz">
+                                                   {{site.data.text.participateQuiz }}
+                                                </div>
+                                            </div>
+                                            <div class="learning-descp" data-translate="practiceContentDesc">
+                                                {{site.data.text.practiceContentDesc }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 cal-sm-12 d-flex">
+                                        <div class="learing-items border-blue">
+                                            <div class="leaning-heading">
+                                                <div class="image">
+                                                    <img src="../assets/homepage/quiz.png" alt="leaning classes">
+                                                </div>
+                                                <div class="title" data-translate="participateQuiz">
+                                                    {{site.data.text.participateQuiz }}
+                                                </div>
+                                            </div>
+                                            <div class="learning-descp" data-translate="participateQuizDesc">
+                                             {{site.data.text.participateQuizDesc }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+         </div>
+    </div>
+</div>

@@ -1,0 +1,231 @@
+---
+layout: home-layout
+permalink: /data-dashboard/
+title: Data-dashboard
+---
+
+<style>
+
+    .dashbord-matrics-data {
+        margin: 50px 0;
+    
+    }
+    .dashbord-matrics-data .switch-field {
+      display: flex;
+      margin: 0;
+      z-index: auto;
+      z-index: inherit;
+      position: static;
+    }
+    
+    
+    .dashbord-matrics-data .switch-field label {
+    font-family: 'Noto Sans';
+    margin: 0 12px;
+    border: 1px solid #0C4E9E;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    }
+    
+    .dashbord-matrics-data .switch-field input:checked+label {
+    background-color: #004e9d;
+    box-shadow: none;
+    color: #fff;
+    }
+    
+    .dashbord-matrics-data .diksha-app-text {
+      margin: 20px 0;
+      font-size: 18px;
+      
+    }
+    .dashbord-matrics-data .country-dropdown{
+      margin: 15px 0;
+    }
+    .dashbord-matrics-data .country-dropdown select{
+      font-size: 12px;
+        background-color: transparent;
+        border: 1px solid #0C4E9E;
+        padding: 8px 5px;
+    }
+    .dashbord-matrics-data .country-dropdown select:focus-visible{
+      border: 1px solid #0C4E9E !important;
+    }
+    .dashbord-matrics-data .top-states-table table tr:first-child{
+      background-color: #0C4E9E;
+        /* border-radius: 18px 18px 0 0; */
+        border-collapse: collapse;
+        border-radius: 15px;
+    }
+    .download-overall, .download-statewise, .download-creation, .download-course{
+        color: #0C4E9E;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    .download-overall:hover{
+      text-decoration: none;
+    
+    }
+    .top-states-table table tr:first-child th {
+        color: #fff;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 13px 10px;
+    }
+    .matrix-diksha-small-font{
+      color: #434141;
+      font-size: 14px !important;
+    }
+    .top-states-table table tr td {
+      font-size: 14px;
+      padding: 11px 16px;
+    }
+    .dashbord-matrics-data .country-dropdown select {
+        font-size: 14px;
+        padding: 8px 5px;
+        font-weight: bold;
+        color: #0C4E9E;
+    }
+    .dk-usagetilldate {
+        font-size: 18px;
+        color: #6D6D6D;
+        font-weight: 500;
+    }
+    .dashbord-matrics-data .diksha-app-text {
+        margin: 8px 0;
+        font-size: 16px !important;
+    }
+    .usage-metrics-content .usage-label {
+        /* font-size: 1.5rem; */
+        /* color: #bf5537; */
+        font-weight: bold;
+        color: #202124;
+        font-size: 33px;
+    }
+    .usage-metrics-content select,
+    .section-courseMetrics select {
+      font-size: 14px;
+      padding: 8px 5px;
+      font-weight: bold;
+      color: #0C4E9E;
+    }
+    .usage-metrics-content .country-dropdown select,
+    .section-courseMetrics  .country-dropdown select{
+      font-size: 12px;
+      background-color: transparent;
+      border: 1px solid #0C4E9E;
+      padding: 8px 5px;
+    }
+.matrix-data-details {
+    margin: 39px 0;
+}
+.usage-metrics-content {
+    margin: 20px 5px;
+}
+ .matrix-data-details .country-dropdown{
+  font-size: 15px !important;
+ }
+ .usage-metrics-content .country-dropdown select {
+  font-size: 15px !important;
+ }
+ .download-report-updated{
+  display: flex;
+  justify-content: end;
+ }
+ .download-report-updated button {
+  font-family: 'Noto Sans';
+    margin: 0 8px;
+    border: 1px solid #0C4E9E;
+    font-size: 16px;
+    padding: 3px 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #0C4E9E;
+    font-weight: bold;
+ }
+
+ .download-report-updated button:hover {
+  background-color: #004e9d;
+    box-shadow: none;
+    color: #fff;
+ }
+
+ .top-states-table table{
+  /* overflow: hidden; */
+  border-color: var(--dk-theme-border-color);
+ }
+
+ .play-store-link img{
+    filter: brightness(0) invert(1);
+ }
+
+</style>   
+<div>
+  {% include line-banner.html %}
+  {% include dashboard-banner.html %}
+</div>
+<div id="scrollMainContent"></div>
+<div class="dashbord-matrics-data">
+  <div class="container">
+    <div class="container-box">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="switch-field">
+                  <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
+                  <label for="radio-four" tabindex="0" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
+                  <input type="radio" id="radio-five" name="switch-two" value="creationMetrics" />
+                  <label for="radio-five" tabindex="0" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
+                  <input type="radio" id="radio-six" name="switch-two" value="courseMetrics" />
+                  <label for="radio-six" tabindex="0" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="download-report">
+                <div class="download-report-updated">
+                  <button type="button" class="datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button>
+                </div>
+                 
+              </div>
+          </div>
+      </div>
+      {% include page-data-dashboard-updated.html %}
+    </div>
+  </div>
+</div>
+
+
+{% contentfor mobileview %}
+<div>
+  {% include line-banner.html %}
+  {% include dashboard-banner.html %}
+</div>
+<div class="dashbord-matrics-data">
+  <div class="container">
+    <div class="container-box">
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+              <div class="switch-field">
+                  <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
+                  <label for="radio-four" tabindex="0" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</label>
+                  <input type="radio" id="radio-five" name="switch-two" value="creationMetrics" />
+                  <label for="radio-five" tabindex="0" data-translate="contributionMetrics">{{site.data.text.contributionMetrics}}</label>
+                  <input type="radio" id="radio-six" name="switch-two" value="courseMetrics" />
+                  <label for="radio-six" tabindex="0" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</label>
+              </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="download-report">
+                <div class="download-report-updated">
+                  <button type="button"
+                  class=" datasets-navigation" data-translate="Datasets">{{ site.data.text.Datasets }}</button>
+                </div>
+                 
+              </div>
+          </div>
+      </div>
+      {% include page-data-dashboard-updated.html %}
+    </div>
+  </div>
+</div>
+{% endcontentfor %}

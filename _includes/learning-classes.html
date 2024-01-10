@@ -1,0 +1,87 @@
+<style>
+    .learning-class {
+        margin-top: 75px;
+    }
+    .class-details {
+        margin: 50px 100px 0;
+    }
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 26px;
+    margin: 46px 0;
+    font-size: 16px;
+}
+
+.learing-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+
+}
+.learing-img img {
+    width: 100%;
+    padding: 43px;
+}
+.card .heading {
+    font-size: 24px;
+    line-height: 1.3;
+    margin: 9px 0;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 620px) {
+    
+}
+
+</style>
+
+<div class="container">
+    <div class="container-box">
+        <div class="learning-class">
+            <div class="head-title">
+                <span class="text">Comprehensive Learning for Foundational to Secondary<span class="bottom-image"><img src="../images/img-bottom.png"></span> </span>
+                <!-- <div class="text">Comprehensive Learning for Foundational <span class="bottom-image">to Secondary</span>  -->
+                    
+                </div>
+            </div>
+            <div class="class-details">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="../assets/imgs/learning1.png" alt="compleate Coverage">
+                            <span class="heading">{{site.data.text.compleateCoverage}} </span>
+                            <span>{{site.data.text.compleateCoverageDesc}}</span>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/imgs/learning2.png" alt="practice Content">
+                            <span class="heading">{{site.data.text.practiceContent}} </span>
+                            <span>{{site.data.text.practiceContentDesc}}</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 learing-img">
+                           <img src="../assets/imgs/learning-class.png" alt="learning class">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card">
+                            <img src="../assets/imgs/learning3.png" alt="study Material">
+                            <span class="heading">{{site.data.text.studyMaterial}} </span>
+                            <span>{{site.data.text.studyMaterialDesc}}</span>
+                        </div>
+                        <div class="card">
+                            <img src="../assets/imgs/learning4.png" alt=" participate Quiz">
+                            <span class="heading"> {{site.data.text.participateQuiz}}</span>
+                            <span>{{site.data.text.participateQuizDesc}}</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+    </div>
+</div>

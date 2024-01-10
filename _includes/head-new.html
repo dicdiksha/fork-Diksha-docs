@@ -1,0 +1,135 @@
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!---START Bootsrap CSS Link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Outfit:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Outfit:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!---/START Bootsrap CSS Link-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- CSS -->
+{% if page.url contains '/help/' or  page.url contains 'search.html' %}
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/helpcenter.min.css?{{site.time || date: '%d%m%Y'}}" />
+{% elsif page.url contains '/useful-links/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/useful-links.min.css?{{site.time || date: '%d%m%Y'}}"
+onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/useful-links.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/details/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/catalogue-details.min.css?{{site.time || date: '%d%m%Y'}}"
+onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/catalogue-details.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/datasets/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/catalogue.min.css?{{site.time || date: '%d%m%Y'}}"
+onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/catalogue.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/data/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/dashboard.min.css?{{site.time || date: '%d%m%Y'}}" 
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/dashboard.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/about/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}" 
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/about.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/about.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/getapp/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/getapp.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/getapp.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/contribute/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/contribute.min.css?{{site.time || date: '%d%m%Y'}}"
+onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/contribute.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% else %}
+<!-- <link rel="stylesheet" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/preload.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/preload.css?{{site.time || date: %d%m%Y}}'" /> -->
+<!-- <link rel="preload" href="{{site.baseurl}}/assets/css/default.min.css?{{site.time || date: '%d%m%Y'}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/home.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/home.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% endif %} 
+<!-- /CSS -->
+
+<!--JS-->
+{% if page.url contains '/help/' or  page.url contains 'search.html' %}
+<script type="text/javascript" src="/assets/js/dist/helpcenter-preload-min.js?{{site.time || date: '%d%m%Y'}}"></script>
+<script async defer type="text/javascript" src="/assets/js/dist/helpcenter-postload-min.js?{{site.time || date: '%d%m%Y'}}"></script>
+{% else %}
+{% endif %} 
+<!--/JS-->
+<!---START Bootsrap JS Link-->
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!---/START Bootsrap JS Link-->
+
+<!---- start owl charosel-->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!---- END owl charosel-->
+<!-- Favicons -->
+<link rel="icon"  href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/assets/favicons/android-chrome-192x192.png">
+<meta name="theme-color" content="#024f9d"/>
+<!-- /Favicons -->
+<link rel="manifest" href='/manifest.json' />
+
+<!--Preload assets-->
+{% if page.url == '/' %}
+{% endif %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/fonts/NotoSans-Regular.woff2" 
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/fonts\/NotoSans-Regular.woff2'" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/fonts/NotoSans-Bold.woff2" 
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/fonts\/NotoSans-Bold.woff2'" as="font" type="font/woff2" crossorigin="anonymous">
+<!--/Preload assets-->
+
+<title>{{page.title | default: site.title }}</title>
+<meta name="description" content="{{page.description | default: site.description}}"/>
+<meta name="author" content="{{site.author}}"/>
+<link rel="canonical" href="{{site.url}}{{page.url}}" />
+
+<!-- Og Tags -->
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="{{site.title}}"/>
+<meta property="og:locale" content="{{site.language}}"/>
+<meta property="og:title" content="{{page.title | default: site.title}}" />
+<meta property="og:description" content="{{page.description | default: site.description}}" />
+<meta property="og:url" content="{{site.url}}{{page.url}}" />
+<meta property="og:image" content="{{site.url}}/assets/imgs/preview.jpg" />
+<!-- /Og Tags -->
+
+<!--Twitter Cards -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="{{site.twitter}}" />
+<meta name="twitter:creator" content="{{site.twitter}}" />
+<meta name="twitter:url" content="{{site.url}}{{page.url}}" />
+<meta name="twitter:title" content="{{page.title | default: site.title}}" />
+<meta name="twitter:description" content="{{page.description | default: site.description}}" />
+<meta name="twitter:image" content="{{site.url}}/assets/imgs/preview.jpg" />
+<!-- /Twitter Cards -->
+
+<!-- Caching Fixes -->
+<meta http-equiv="cache-control" content="max-age=24" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-store" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="last-modified" content="{{site.time}}" />
+<meta http-equiv="Expires" content="600" />
+<!-- /Caching Fixes -->
+

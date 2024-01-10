@@ -10,7 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@project-sunbird/content-player": "^1.0.1",
-    "graceful-fs": "^4.2.9"
+    "graceful-fs": "^4.2.9",
+    "gulp-cli": "^2.3.0",
+    "gulp-install": "^1.1.0",
+    "gulp-v3": "^3.12.1",
+    "node-gyp": "^9.4.0",
+    "node-sass": "^9.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
