@@ -2,7 +2,7 @@
     "attributes": "Primary Menu Navigation",
     "items": [{
             "title": "Home",
-            "url": "",
+            "url": "homepage.html",
             "contains":"home",
             "etype":"select-home",
             "eid": "static-home"
