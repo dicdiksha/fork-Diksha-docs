@@ -10,28 +10,28 @@
         },
         {
             "title": "Dashboard",
-            "url": "data-dashboard/",
+            "url": "data/",
             "contains":"data",
             "etype":"select-dashboardData",
             "eid": "public-dashboardData"
         },
         {
             "title": "About",
-            "url": "about-us/",
+            "url": "about/",
             "contains":"about",
             "etype": "select-aboutUS",
             "eid": "static-aboutUS"
         },
         {
-            "title": "Get App",
-            "url": "get-app/",
+            "title": "Getapp",
+            "url": "getapp/",
             "contains":"getapp",
             "etype": "select-getappInfo",
             "eid": "static-getappInfo"
         },
         {
             "title": "Contribute",
-            "url": "contribute-us/",
+            "url": "contribute/",
             "contains":"contribute",
             "etype": "select-contributeUs",
             "eid": "static-contributeUs"

@@ -1,15 +1,26 @@
 ---
-layout: dk-mission
+layout: home-layout
 permalink: /about/
 title: About
 ---
 
-<div class="p-32 relative5">
-<div id="scrollMainContent"></div>
-    {% include page-about-tabs.html %}
+<div class="about-page">
+    {% include line-banner.html %}
+    {% include about-banner.html %}
+    <div id="scrollMainContent"></div>
+    {% include about-description.html %}
+    {% include about-glance.html %}
+    {% include about-ecosystem-user.html %}
+    {% include about-document.html %}
 </div>
 
+
 {% contentfor mobileview %}
-<div id="scrollMainContent"></div>
-<div class="" id="mobile-about-tabs">{% include page-about-tabs.html %}</div>
+    {% include line-banner.html %}
+    {% include about-banner.html %}
+    <div id="scrollMainContent"></div>
+    {% include about-description.html %}
+    {% include about-glance.html %}
+    {% include about-ecosystem-user.html %}
+    {% include about-document.html %}
 {% endcontentfor %}
