@@ -417,7 +417,9 @@ $(document).ready(function () {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
     window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-    window.open('/' + slug + '/explore', "_self");
+    if(slug){
+      window.open('/' + slug + '/explore', "_self");
+    } 
     return false;
   });
 

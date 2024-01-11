@@ -484,11 +484,7 @@ const languageTranslations = {
         "digitalcontent" : "উন্মুক্ত ডিজিটাল বিষয়বস্তুর জগৎ",
         "focusArea": "ফোকাস এলাকা",
         "application" : "অ্যাপ্লিকেশন প্রাপ্যতা",
-        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন",
-        "availabilityInLast3Months" : ""
-
-
-
+        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন"
     },
     "gu": {
         "availabilityInLast3Months" : "છેલ્લા 3 મહિનામાં એપ્લિકેશનની ઉપલબ્ધતા",
@@ -650,7 +646,6 @@ const languageTranslations = {
         "focusArea": "ધ્યાન કેન્દ્રિત વિસ્તાર",
         "application" : "એપ્લિકેશન ઉપલબ્ધતા",
         "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો",
-        "availabilityInLast3Months" :
         
     },
     "hi": {
@@ -1966,7 +1961,7 @@ const languageTranslations = {
         "focusArea": "فوکس ایریاز",
         "application" : "درخواست کی دستیابی",
         "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔",
-        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی";
+        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی"
     }
 };
 
