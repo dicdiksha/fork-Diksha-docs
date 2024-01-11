@@ -280,6 +280,10 @@ $(document).ready(function () {
     value: "dl"
   },
   {
+    label: "Dadra And Nagar Haveli And Daman And Diu",
+    value: "dd",
+  },
+  {
     label: "Goa",
     value: "ga"
   },
@@ -307,9 +311,13 @@ $(document).ready(function () {
     label: "Karnataka",
     value: "ka"
   },
-  {
-    label: "Kerala",
+  { 
+    label: "Kerala", 
     value: "kl"
+  },
+  {
+    label: "Ladakh",
+    value: "ld",
   },
   {
     label: "Maharashtra",
