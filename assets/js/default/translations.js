@@ -163,7 +163,8 @@ const languageTranslations = {
         "focusArea": "Focus Areas of ",
         "application" : "Application Availability",
         "downloadReport" : "Download Report",
-        "view" : "View"
+        "view" : "View",
+        "availabilityInLast3Months" : "Application Availability In Last 3 Months"
 
     },
     "as": {
@@ -324,10 +325,12 @@ const languageTranslations = {
         "digitalcontent" : "মুকলি ডিজিটেল সমলৰ জগত",
         "focusArea": "কেন্দ্ৰীয় ক্ষেত্ৰ",
         "application" : "এপ্লিকেচনৰ উপলব্ধতা",
-        "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক"
+        "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক",
+        "availabilityInLast3Months" : "যোৱা ৩ মাহত আবেদনৰ উপলব্ধতা"
 
     },
     "bn": {
+        "availabilityInLast3Months" : "গত 3 মাসে আবেদনের উপলব্ধতা",
         "view" : "দেখুন",
         "language": "বাংলা",
         "diksha": "DIKSHA",
@@ -485,12 +488,14 @@ const languageTranslations = {
         "digitalcontent" : "উন্মুক্ত ডিজিটাল বিষয়বস্তুর জগৎ",
         "focusArea": "ফোকাস এলাকা",
         "application" : "অ্যাপ্লিকেশন প্রাপ্যতা",
-        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন"
+        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন",
+        "availabilityInLast3Months" : ""
 
 
 
     },
     "gu": {
+        "availabilityInLast3Months" : "છેલ્લા 3 મહિનામાં એપ્લિકેશનની ઉપલબ્ધતા",
         "view" : "દર્શન કરો",
         "language": "ગુજરાતી",
         "diksha": "DIKSHA",
@@ -600,7 +605,7 @@ const languageTranslations = {
         "login" : "લોગિન કરો",
         "getAppDesc": "DIKSHA એપ્લિકેશન પ્લે સ્ટોર અને એપ સ્ટોર પર ઉપલબ્ધ છે, તમે તેને ડાઉનલોડ કરવા માટે ક્યુ. આર. કોડ પણ સ્કેન કરી શકો છો.",
         "mobileApp":  "મોબાઇલ એપ્લિકેશન આજે!",
-        "downloadLinkAndroid": "",
+        "downloadLinkAndroid": "Android માટે લિંક ડાઉનલોડ કરો",
         "downloadLinkIos": "આઇ. ઓ. એસ. માટે લિંક ડાઉનલોડ કરો",
         "scanDownload": "ડાઉનલોડ કરવા માટે સ્કેન કરો",
         "clickHere" : "અહીં ક્લિક કરો",
@@ -648,10 +653,12 @@ const languageTranslations = {
         "digitalcontent" : "ખુલ્લી ડિજિટલ સામગ્રીની દુનિયા",
         "focusArea": "ધ્યાન કેન્દ્રિત વિસ્તાર",
         "application" : "એપ્લિકેશન ઉપલબ્ધતા",
-        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો"
+        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો",
+        "availabilityInLast3Months" :
         
     },
     "hi": {
+        "availabilityInLast3Months" : "पिछले 3 महीनों में आवेदन की उपलब्धता",
         "view" : "देखिये",
         "language": "हिंदी",
         "diksha": "DIKSHA",
@@ -813,6 +820,7 @@ const languageTranslations = {
 
     },
     "kn": {
+        "availabilityInLast3Months" : "ಕಳೆದ 3 ತಿಂಗಳುಗಳಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
         "view" : "ನೋಟ",
         "language": "ಕನ್ನಡ",
         "diksha": "DIKSHA",
@@ -972,6 +980,7 @@ const languageTranslations = {
         "downloadReport" : "ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
     },
     "mr": {
+        "availabilityInLast3Months" : "मागील 3 महिन्यांत अर्जाची उपलब्धता",
         "view" : "पहा",
         "language": "मराठी",
         "diksha": "DIKSHA",
@@ -1161,35 +1170,9 @@ const languageTranslations = {
         "board-nios-description": "NIOS(   (നാഷണൽ ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ് ഓപ്പൺ സ്കൂൾ)  പ്രസിദ്ധീകരിച്ച ഉള്ളടക്കം എക്‌സ്‌പ്ലോർ  ചെയ്യുക",
         "board-btntitle": "എക്‌സ്‌പ്ലോർ ചെയ്യുക",
         "login" : "ലോഗിൻ",
-        "getAppDesc": " ",
-        "mobileApp":  "",
-        "downloadLinkAndroid": "",
-        "downloadLinkIos": "",
-        "scanDownload": "",
-        "clickHere" : "",
-        "aboutDikshaHeading" : " ",
-        "aboutDescription": "",
-        "viewMore" : "",
-        "teacherNeedHelp": "",
-        "footerDoc": "",
-        "footerNCERT":"",
-        "ncertAdd": "",
-        "footerBottom":"",
-        "compreLearning": "",
-        "foundationalsecondary" :  "",
-        "compleateCoverage": "",
-        "compleateCoverageDesc": "",
-        "practiceContent": "",
-        "practiceContentDesc" :" ",
-        "studyMaterial": "",
-        "studyMaterialDesc":" ",
-        "participateQuiz": "",
-        "participateQuizDesc": "",
-        "digitalcontent" : "",
-        "focusArea": "",
-        "application" : "Application Availability"
     },
     "or": {
+        "availabilityInLast3Months" : "ଗତ 3 ମାସରେ ଆବେଦନ ଉପଲବ୍ଧତା |",
         "view" : "ଦେଖନ୍ତୁ",
         "language": "ଓଡ଼ିଆ",
         "diksha": "DIKSHA",
@@ -1350,6 +1333,7 @@ const languageTranslations = {
         "downloadReport" : "ରିପୋର୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |"
     },
     "pa": {
+        "availabilityInLast3Months" : "ਪਿਛਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ", 
         "view" : "ਦ੍ਰਿਸ਼",
         "language": "ਪੰਜਾਬੀ",
         "diksha": "DIKSHA",
@@ -1509,6 +1493,7 @@ const languageTranslations = {
         "downloadReport" : "ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰੋ"
     },
     "ta": {
+        "availabilityInLast3Months" : "கடந்த 3 மாதங்களில் விண்ணப்பம் கிடைக்கும்",
         "view" : "பார்",
         "language": "தமிழ்",
         "diksha": "தீக்‌ஷா",
@@ -1668,6 +1653,7 @@ const languageTranslations = {
         "downloadReport" : "அறிக்கையைப் பதிவிறக்கவும்"
     },
     "te": {
+        "availabilityInLast3Months" : "గత 3 నెలల్లో అప్లికేషన్ లభ్యత",
         "view" : "వీక్షించండి",
         "language": "తెలుగు",
         "diksha": "DIKSHA",
@@ -1934,7 +1920,7 @@ const languageTranslations = {
         "board-btntitle": "دریافت کریں",
         "login" : "لاگ ان",
         "getAppDesc": " DIKSHAایپلی کیشن پلے اسٹور اور ایپ اسٹور پر دستیاب ہے ، آپ اسے ڈاؤن لوڈ کرنے کے لئے کیو آر کوڈ بھی اسکین کرسکتے ہیں۔",
-        "mobileApp":  "",
+        "mobileApp":  "آج موبائل ایپ!",
         "downloadLinkAndroid": "اینڈروئیڈ کے لئے ڈاؤن لوڈ لنک",
         "downloadLinkIos":"آئی او ایس کے لئے ڈاؤن لوڈ لنک",
         "scanDownload":"ڈاؤن لوڈ کرنے کے لئے اسکین کریں",
@@ -1983,7 +1969,8 @@ const languageTranslations = {
         "digitalcontent" : "کھلے ڈیجیٹل مواد کی دنیا",
         "focusArea": "فوکس ایریاز",
         "application" : "درخواست کی دستیابی",
-        "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔"
+        "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔",
+        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی";
     }
 };
 
