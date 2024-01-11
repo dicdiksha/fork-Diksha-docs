@@ -1,16 +1,26 @@
---- 
-layout: dk-mission
+---
+layout: home-layout
 permalink: /contribute/
 title: Contribute
 ---
 
-<div class="relative5">
+
+<div>
+    {% include line-banner.html %}
+    {% include contribute-banner.html %}
     <div id="scrollMainContent"></div>
-    {% include page-contribute.html %}
+    {% include explore-vidyadaan.html %}
+    {% include about-vidyadaan.html %}
+    {% include learning-resourse.html %}
 </div>
 
-
 {% contentfor mobileview %}
-<div id="scrollMainContent"></div>
-<div>{% include page-contribute.html %}</div>
+<div>
+    {% include line-banner.html %}
+    {% include contribute-banner.html %}
+    <div id="scrollMainContent"></div>
+    {% include explore-vidyadaan.html %}
+    {% include about-vidyadaan.html %}
+    {% include learning-resourse.html %}
+</div>
 {% endcontentfor %}

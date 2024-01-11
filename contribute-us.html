@@ -1,26 +1,16 @@
----
-layout: home-layout
-permalink: /contribute-us/
-title: Contribute
+--- 
+layout: dk-mission
+permalink:  /contribute-us/
+title: Contribute-us
 ---
 
-
-<div>
-    {% include line-banner.html %}
-    {% include contribute-banner.html %}
+<div class="relative5">
     <div id="scrollMainContent"></div>
-    {% include explore-vidyadaan.html %}
-    {% include about-vidyadaan.html %}
-    {% include learning-resourse.html %}
+    {% include page-contribute.html %}
 </div>
+
 
 {% contentfor mobileview %}
-<div>
-    {% include line-banner.html %}
-    {% include contribute-banner.html %}
-    <div id="scrollMainContent"></div>
-    {% include explore-vidyadaan.html %}
-    {% include about-vidyadaan.html %}
-    {% include learning-resourse.html %}
-</div>
+<div id="scrollMainContent"></div>
+<div>{% include page-contribute.html %}</div>
 {% endcontentfor %}
