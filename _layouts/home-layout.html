@@ -32,28 +32,28 @@ layout: compress
     </body>
     <!-- <script async defer src="{{site.baseurl}}/assets/js/default-foot-min.js"></script> -->
 {% if page.url contains '/help/' or  page.url contains 'search.html' %}
-{% elsif page.url contains '/about-us/' %}
+{% elsif page.url contains '/about/' %}
 <script async defer
     src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
 </script>
 <script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/about.js"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/about.js'"></script>
-{% elsif page.url contains '/get-app/' %}
+{% elsif page.url contains '/getapp/' %}
 <script async defer
     src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
 </script>
 <script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/getapp.js"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/getapp.js'"></script>
-{% elsif page.url contains '/contribute-us/' %}
+{% elsif page.url contains '/contribute/' %}
 <script async defer
     src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/custom-head-min.js?{{site.time || date: '%d%m%Y'}}"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/custom-head-min.js?{{site.time || date: %d%m%Y}}'">
 </script>
 <script async defer src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/default/contribute.js"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/default/contribute.js'"></script>
-{% elsif page.url contains '/data-dashboard/' %}
+{% elsif page.url contains '/data/' %}
 <script async defer
     src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/js/dist/dashboard-head-min.js?{{site.time || date: '%d%m%Y'}}"
     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/js/dist/dashboard-head-min.js?{{site.time || date: %d%m%Y}}'">

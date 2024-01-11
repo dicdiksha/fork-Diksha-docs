@@ -807,7 +807,7 @@ $(document).ready(function () {
             e.preventDefault($(this).attr('category'));
             var type = $(this).attr('category');
             window.logInteractEvent('homepage', 'select-dashboardData', '', 'static-homepage', 'static-homepage', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
-            window.location.href = '/data/?type=' + type;
+            window.location.href = '/data-dashboard/?type=' + type;
             return false;
         });
 
@@ -815,11 +815,16 @@ $(document).ready(function () {
             e.preventDefault();
             var type = $(this).attr('category');
             window.logInteractEvent('home', 'select-dashboard', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
-            window.location.href = '/data-dashboard/?type=' + type;
+            window.location.href = '/data/?type='+ type;
             return false;
         });
 
         $(".download-overall").on('click', function () {
+            download(dataset, 'India');
+            window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
+            return false;
+        })
+        $(".download-overall-updated").on('click', function () {
             download(dataset, 'India');
             window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
             return false;

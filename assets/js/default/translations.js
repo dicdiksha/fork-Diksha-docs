@@ -137,10 +137,6 @@ const languageTranslations = {
         "nipunBharatDesc": "National Initiative for Proficiency in Reading with Understanding and Numeracy.",
         "bhasaSangam": "Bhasha Sangam",
         "bhasaSangamDesc":" National Initiative to teach basic sentences of everyday usage in 22 Indian languages.",
-        "nipunBharat": "Nipun Bharat",
-        "nipunBharatDesc": "National Initiative for Proficiency in Reading with Understanding and Numeracy.",
-        "bhasaSangam": "Bhasha Sangam",
-        "bhasaSangamDesc": "National Initiative to teach basic sentences of everyday usage in 22 Indian languages.",
         "jaduiPitara": "Jaadui Pitara ",
         "jaduiPitaraDesc": "Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.",
         'adultEducation': "Adult Education",
@@ -163,7 +159,8 @@ const languageTranslations = {
         "focusArea": "Focus Areas of ",
         "application" : "Application Availability",
         "downloadReport" : "Download Report",
-        "view" : "View"
+        "view" : "View",
+        "availabilityInLast3Months" : "Application Availability In Last 3 Months"
 
     },
     "as": {
@@ -324,10 +321,12 @@ const languageTranslations = {
         "digitalcontent" : "মুকলি ডিজিটেল সমলৰ জগত",
         "focusArea": "কেন্দ্ৰীয় ক্ষেত্ৰ",
         "application" : "এপ্লিকেচনৰ উপলব্ধতা",
-        "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক"
+        "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক",
+        "availabilityInLast3Months" : "যোৱা ৩ মাহত আবেদনৰ উপলব্ধতা"
 
     },
     "bn": {
+        "availabilityInLast3Months" : "গত 3 মাসে আবেদনের উপলব্ধতা",
         "view" : "দেখুন",
         "language": "বাংলা",
         "diksha": "DIKSHA",
@@ -485,12 +484,14 @@ const languageTranslations = {
         "digitalcontent" : "উন্মুক্ত ডিজিটাল বিষয়বস্তুর জগৎ",
         "focusArea": "ফোকাস এলাকা",
         "application" : "অ্যাপ্লিকেশন প্রাপ্যতা",
-        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন"
+        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন",
+        "availabilityInLast3Months" : ""
 
 
 
     },
     "gu": {
+        "availabilityInLast3Months" : "છેલ્લા 3 મહિનામાં એપ્લિકેશનની ઉપલબ્ધતા",
         "view" : "દર્શન કરો",
         "language": "ગુજરાતી",
         "diksha": "DIKSHA",
@@ -600,7 +601,7 @@ const languageTranslations = {
         "login" : "લોગિન કરો",
         "getAppDesc": "DIKSHA એપ્લિકેશન પ્લે સ્ટોર અને એપ સ્ટોર પર ઉપલબ્ધ છે, તમે તેને ડાઉનલોડ કરવા માટે ક્યુ. આર. કોડ પણ સ્કેન કરી શકો છો.",
         "mobileApp":  "મોબાઇલ એપ્લિકેશન આજે!",
-        "downloadLinkAndroid": "",
+        "downloadLinkAndroid": "Android માટે લિંક ડાઉનલોડ કરો",
         "downloadLinkIos": "આઇ. ઓ. એસ. માટે લિંક ડાઉનલોડ કરો",
         "scanDownload": "ડાઉનલોડ કરવા માટે સ્કેન કરો",
         "clickHere" : "અહીં ક્લિક કરો",
@@ -648,10 +649,12 @@ const languageTranslations = {
         "digitalcontent" : "ખુલ્લી ડિજિટલ સામગ્રીની દુનિયા",
         "focusArea": "ધ્યાન કેન્દ્રિત વિસ્તાર",
         "application" : "એપ્લિકેશન ઉપલબ્ધતા",
-        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો"
+        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો",
+        "availabilityInLast3Months" :
         
     },
     "hi": {
+        "availabilityInLast3Months" : "पिछले 3 महीनों में आवेदन की उपलब्धता",
         "view" : "देखिये",
         "language": "हिंदी",
         "diksha": "DIKSHA",
@@ -777,7 +780,7 @@ const languageTranslations = {
         "dikshaGlance" : "DIKSHA एक नज़र में",
         "userDesc" : "DIKSHA का उपयोग देश भर के शिक्षार्थियों और शिक्षकों द्वारा किया जा सकता है और वर्तमान में यह 36 भारतीय भाषाओं का समर्थन करता है",
         "missionVision":"मिशन और विजन",
-        "nipunBharat": "निपुन भारत",
+        "nipunBharat": "निपुण भारत",
         "aboutGlanceStudent" : "छात्र",
         "aboutGlanceTeacher" : "टीचर",
         "aboutGlanceParent" : "जनक",
@@ -813,6 +816,7 @@ const languageTranslations = {
 
     },
     "kn": {
+        "availabilityInLast3Months" : "ಕಳೆದ 3 ತಿಂಗಳುಗಳಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
         "view" : "ನೋಟ",
         "language": "ಕನ್ನಡ",
         "diksha": "DIKSHA",
@@ -972,6 +976,7 @@ const languageTranslations = {
         "downloadReport" : "ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
     },
     "mr": {
+        "availabilityInLast3Months" : "मागील 3 महिन्यांत अर्जाची उपलब्धता",
         "view" : "पहा",
         "language": "मराठी",
         "diksha": "DIKSHA",
@@ -1096,7 +1101,7 @@ const languageTranslations = {
         "missionVision":"ध्येय आणि दृष्टीकोन",
         "ncertAdd": "श्री अरबिंदो मार्ग, नवी दिल्ली-110016",
         "footerBottom":"© 2024-कॉपीराइट DIKSHA. सर्व हक्क राखून ठेवले आहेत. एन. ई. जी. डी. द्वारे समर्थित। एम. ई. आय. टी. वाय. भारत सरकार® 2024 DIKSHA",
-        "nipunBharat": "निपुन भारत",
+        "nipunBharat": "निपुण भारत",
         "userDesc" : "देशभरातील विद्यार्थी आणि शिक्षक DIKSHAचा लाभ घेऊ शकतात आणि सध्या ती 36 भारतीय भाषांना आधार देते.",
         "aboutGlanceStudent" : "विद्यार्थी",
         "aboutGlanceTeacher" : "शिक्षक",
@@ -1108,7 +1113,7 @@ const languageTranslations = {
         "nipunBharatDesc": "समज आणि संख्यात्मकतेसह वाचनातील प्रवीणतेसाठी राष्ट्रीय उपक्रम",
         "bhasaSangam": "भाषा संगम",
         "bhasaSangamDesc":"दैनंदिन वापराची मूलभूत वाक्ये 22 भारतीय भाषांमध्ये शिकवण्यासाठी राष्ट्रीय उपक्रम",
-        "jaduiPitara": "जादुई पितारा",
+        "jaduiPitara": "जादुई पिटारा",
         "jaduiPitaraDesc":"नागरिकांसाठी मूलभूत साक्षरता आणि संख्यात्मकता, महत्त्वपूर्ण जीवन कौशल्ये प्रदान करणे",    
         "adultEducation": "प्रौढ शिक्षण",
         "adultEducationDesc": "समज आणि संख्यात्मकतेसह वाचनातील प्रवीणतेसाठी राष्ट्रीय उपक्रम",
@@ -1161,35 +1166,9 @@ const languageTranslations = {
         "board-nios-description": "NIOS(   (നാഷണൽ ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ് ഓപ്പൺ സ്കൂൾ)  പ്രസിദ്ധീകരിച്ച ഉള്ളടക്കം എക്‌സ്‌പ്ലോർ  ചെയ്യുക",
         "board-btntitle": "എക്‌സ്‌പ്ലോർ ചെയ്യുക",
         "login" : "ലോഗിൻ",
-        "getAppDesc": " ",
-        "mobileApp":  "",
-        "downloadLinkAndroid": "",
-        "downloadLinkIos": "",
-        "scanDownload": "",
-        "clickHere" : "",
-        "aboutDikshaHeading" : " ",
-        "aboutDescription": "",
-        "viewMore" : "",
-        "teacherNeedHelp": "",
-        "footerDoc": "",
-        "footerNCERT":"",
-        "ncertAdd": "",
-        "footerBottom":"",
-        "compreLearning": "",
-        "foundationalsecondary" :  "",
-        "compleateCoverage": "",
-        "compleateCoverageDesc": "",
-        "practiceContent": "",
-        "practiceContentDesc" :" ",
-        "studyMaterial": "",
-        "studyMaterialDesc":" ",
-        "participateQuiz": "",
-        "participateQuizDesc": "",
-        "digitalcontent" : "",
-        "focusArea": "",
-        "application" : "Application Availability"
     },
     "or": {
+        "availabilityInLast3Months" : "ଗତ 3 ମାସରେ ଆବେଦନ ଉପଲବ୍ଧତା |",
         "view" : "ଦେଖନ୍ତୁ",
         "language": "ଓଡ଼ିଆ",
         "diksha": "DIKSHA",
@@ -1350,6 +1329,7 @@ const languageTranslations = {
         "downloadReport" : "ରିପୋର୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |"
     },
     "pa": {
+        "availabilityInLast3Months" : "ਪਿਛਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ", 
         "view" : "ਦ੍ਰਿਸ਼",
         "language": "ਪੰਜਾਬੀ",
         "diksha": "DIKSHA",
@@ -1509,6 +1489,7 @@ const languageTranslations = {
         "downloadReport" : "ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰੋ"
     },
     "ta": {
+        "availabilityInLast3Months" : "கடந்த 3 மாதங்களில் விண்ணப்பம் கிடைக்கும்",
         "view" : "பார்",
         "language": "தமிழ்",
         "diksha": "தீக்‌ஷா",
@@ -1668,6 +1649,7 @@ const languageTranslations = {
         "downloadReport" : "அறிக்கையைப் பதிவிறக்கவும்"
     },
     "te": {
+        "availabilityInLast3Months" : "గత 3 నెలల్లో అప్లికేషన్ లభ్యత",
         "view" : "వీక్షించండి",
         "language": "తెలుగు",
         "diksha": "DIKSHA",
@@ -1934,7 +1916,7 @@ const languageTranslations = {
         "board-btntitle": "دریافت کریں",
         "login" : "لاگ ان",
         "getAppDesc": " DIKSHAایپلی کیشن پلے اسٹور اور ایپ اسٹور پر دستیاب ہے ، آپ اسے ڈاؤن لوڈ کرنے کے لئے کیو آر کوڈ بھی اسکین کرسکتے ہیں۔",
-        "mobileApp":  "",
+        "mobileApp":  "آج موبائل ایپ!",
         "downloadLinkAndroid": "اینڈروئیڈ کے لئے ڈاؤن لوڈ لنک",
         "downloadLinkIos":"آئی او ایس کے لئے ڈاؤن لوڈ لنک",
         "scanDownload":"ڈاؤن لوڈ کرنے کے لئے اسکین کریں",
@@ -1983,7 +1965,8 @@ const languageTranslations = {
         "digitalcontent" : "کھلے ڈیجیٹل مواد کی دنیا",
         "focusArea": "فوکس ایریاز",
         "application" : "درخواست کی دستیابی",
-        "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔"
+        "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔",
+        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی";
     }
 };
 

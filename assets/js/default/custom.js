@@ -849,6 +849,9 @@ $(document).ready(function () {
   $(".datasets-navigation").on("click", function () {
     window.location.href = '/data/datasets/';
   });
+  $(".datasets-navigation-updated").on("click", function () {
+    window.location.href = '/data/datasets-update/';
+  });
 });
 
 function convertToCSV(objArray) {
