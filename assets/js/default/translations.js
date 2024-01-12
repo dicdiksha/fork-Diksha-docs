@@ -649,8 +649,7 @@ const languageTranslations = {
         "digitalcontent" : "ખુલ્લી ડિજિટલ સામગ્રીની દુનિયા",
         "focusArea": "ધ્યાન કેન્દ્રિત વિસ્તાર",
         "application" : "એપ્લિકેશન ઉપલબ્ધતા",
-        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો",
-        "availabilityInLast3Months" :
+        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો"
         
     },
     "hi": {
@@ -1966,7 +1965,7 @@ const languageTranslations = {
         "focusArea": "فوکس ایریاز",
         "application" : "درخواست کی دستیابی",
         "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔",
-        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی";
+        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی"
     }
 };
 

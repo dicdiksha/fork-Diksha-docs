@@ -824,11 +824,11 @@ $(document).ready(function () {
             window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
             return false;
         })
-        $(".download-overall-updated").on('click', function () {
-            download(dataset, 'India');
-            window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
-            return false;
-        })
+        // $(".download-overall-updated").on('click', function () {
+        //     download(dataset, 'India');
+        //     window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
+        //     return false;
+        // })
 
         $('#ppc-modal').on('hidden.bs.modal', function (e) {
             $('#ppc-modal video').attr("src", $("#ppc-modal video").attr("src"));
