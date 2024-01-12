@@ -1808,7 +1808,7 @@ const languageTranslations = {
         "compreLearning" : "సమగ్ర అభ్యాసం"
     },
     "ur": {
-        "view" : "منظر",
+        "view" : "دیکھیں",
         "language": "اردو",
         "diksha": "DIKSHA",
         "govofIndia": "حکومت ہند",
@@ -1817,7 +1817,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA کو دریافت کریں",
         "explore": "دریافت کریں",
         "ExploreDikshaContent": "کھلی ڈیجیٹل مواد کی DIKSHA کی دنیا کو تلاش کریں",
-        "stateboard": "ریاست / UT بورڈ",
+        "stateboard": "ریاست / یوٹی بورڈ",
         "stateboardDescription": "22+ ریاستوں اور UTs کے ذریعہ شائع کردہ مواد کو دریافت کریں",
         "about": "کے بارے میں",
         "home": "گھر",
