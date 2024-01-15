@@ -26103,7 +26103,7 @@ $(document).ready(function () {
             e.preventDefault();
             var type = $(this).attr('category');
             window.logInteractEvent('home', 'select-dashboard', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
-            window.location.href = '/data/?type=' + type;
+            window.location.href = '/data/?type='+ type;
             return false;
         });
 
@@ -26112,6 +26112,11 @@ $(document).ready(function () {
             window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
             return false;
         })
+        // $(".download-overall-updated").on('click', function () {
+        //     download(dataset, 'India');
+        //     window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
+        //     return false;
+        // })
 
         $('#ppc-modal').on('hidden.bs.modal', function (e) {
             $('#ppc-modal video').attr("src", $("#ppc-modal video").attr("src"));
@@ -26358,7 +26363,7 @@ const languageTranslations = {
         "aboutDocument" : "Documents",
         "teacherNeedHelp": "Teacher Help",
         "viewMore" : "View More",
-        "footerDoc": "Digital Infrastructure ForKnowledge Sharing",
+        "footerDoc": "Digital Infrastructure For Knowledge Sharing",
         "footerNCERT":" National Council of Educational Research And Training (NCERT)",
         "ncertAdd": "Aurobindo Marg, New Delhi-110016",
         "footerBottom": " © 2024 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India ®2024 DIKSHA",
@@ -26366,10 +26371,6 @@ const languageTranslations = {
         "nipunBharatDesc": "National Initiative for Proficiency in Reading with Understanding and Numeracy.",
         "bhasaSangam": "Bhasha Sangam",
         "bhasaSangamDesc":" National Initiative to teach basic sentences of everyday usage in 22 Indian languages.",
-        "nipunBharat": "Nipun Bharat",
-        "nipunBharatDesc": "National Initiative for Proficiency in Reading with Understanding and Numeracy.",
-        "bhasaSangam": "Bhasha Sangam",
-        "bhasaSangamDesc": "National Initiative to teach basic sentences of everyday usage in 22 Indian languages.",
         "jaduiPitara": "Jaadui Pitara ",
         "jaduiPitaraDesc": "Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.",
         'adultEducation': "Adult Education",
@@ -26392,7 +26393,10 @@ const languageTranslations = {
         "focusArea": "Focus Areas of ",
         "application" : "Application Availability",
         "downloadReport" : "Download Report",
-        "view" : "View"
+        "view" : "View",
+        "availabilityInLast3Months" : "Application Availability In Last 3 Months",
+        "missionVisionDiscp1" : "At Diksha, our mission is to create a revolutionary learning ecosystem that empowers students to thrive in the 21st century. We believe that education should be accessible, engaging, and tailored to the individual needs of each learner." ,
+        "missionVisionDiscp2" :" Our vision is to transform the way education is delivered by leveraging technology and innovation. We aim to provide students with a holistic learning experience that goes beyond traditional classrooms. Through our platform, we want to equip students with the skills they need not only for academic success but also for personal growth and development.",
 
     },
     "as": {
@@ -26553,10 +26557,14 @@ const languageTranslations = {
         "digitalcontent" : "মুকলি ডিজিটেল সমলৰ জগত",
         "focusArea": "কেন্দ্ৰীয় ক্ষেত্ৰ",
         "application" : "এপ্লিকেচনৰ উপলব্ধতা",
-        "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক"
+        "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক",
+        "availabilityInLast3Months" : "যোৱা ৩ মাহত আবেদনৰ উপলব্ধতা",
+        "missionVisionDiscp1" : "দীক্ষাত, আমাৰ লক্ষ্য হৈছে এক বিপ্লৱী শিক্ষণ পৰিৱেশ তন্ত্ৰ সৃষ্টি কৰা যি শিক্ষাৰ্থীসকলক একবিংশ শতিকাত উন্নতি কৰিবলৈ শক্তিশালী কৰে। আমি বিশ্বাস কৰোঁ যে শিক্ষা প্ৰতিজন শিক্ষাৰ্থীৰ ব্যক্তিগত প্ৰয়োজনীয়তা অনুসৰি সুলভ, আকৰ্ষণীয় আৰু উপযোগী হোৱা উচিত।" ,
+        "missionVisionDiscp2" :"আমাৰ দৃষ্টিভংগী হৈছে প্ৰযুক্তি আৰু উদ্ভাৱনৰ জৰিয়তে শিক্ষা প্ৰদানৰ পদ্ধতি সলনি কৰা। আমি শিক্ষাৰ্থীসকলক পৰম্পৰাগত শ্ৰেণীকোঠাৰ বাহিৰেও এক সামগ্ৰিক শিক্ষণৰ অভিজ্ঞতা প্ৰদান কৰাৰ লক্ষ্য লৈছো। আমাৰ মঞ্চৰ জৰিয়তে আমি শিক্ষাৰ্থীসকলক কেৱল শৈক্ষিক সফলতাৰ বাবেই নহয়, ব্যক্তিগত বিকাশ আৰু বিকাশৰ বাবেও প্ৰয়োজনীয় দক্ষতাৰে সজ্জিত কৰিব বিচাৰো। ",
 
     },
     "bn": {
+        "availabilityInLast3Months" : "গত 3 মাসে আবেদনের উপলব্ধতা",
         "view" : "দেখুন",
         "language": "বাংলা",
         "diksha": "DIKSHA",
@@ -26714,12 +26722,16 @@ const languageTranslations = {
         "digitalcontent" : "উন্মুক্ত ডিজিটাল বিষয়বস্তুর জগৎ",
         "focusArea": "ফোকাস এলাকা",
         "application" : "অ্যাপ্লিকেশন প্রাপ্যতা",
-        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন"
+        "downloadReport" : "প্রতিবেদন ডাউনলোড করুন",
+        "missionVisionDiscp1" : "দীক্ষায়, আমাদের লক্ষ্য হল একবিংশ শতাব্দীতে শিক্ষার্থীদের সাফল্য অর্জনের জন্য ক্ষমতায়িত করে এমন একটি বৈপ্লবিক শিক্ষার বাস্তুতন্ত্র তৈরি করা। আমরা বিশ্বাস করি যে শিক্ষা প্রতিটি শিক্ষার্থীর ব্যক্তিগত চাহিদা অনুযায়ী সহজলভ্য, আকর্ষণীয় এবং উপযোগী হওয়া উচিত। " ,
+        "missionVisionDiscp2" :"আমাদের লক্ষ্য হল প্রযুক্তি ও উদ্ভাবনের মাধ্যমে শিক্ষার পদ্ধতির রূপান্তর ঘটানো। আমাদের লক্ষ্য হল শিক্ষার্থীদের ঐতিহ্যবাহী শ্রেণিকক্ষের বাইরেও একটি সামগ্রিক শিক্ষার অভিজ্ঞতা প্রদান করা। আমাদের প্ল্যাটফর্মের মাধ্যমে, আমরা শিক্ষার্থীদের কেবল একাডেমিক সাফল্যের জন্যই নয়, ব্যক্তিগত বৃদ্ধি এবং বিকাশের জন্যও প্রয়োজনীয় দক্ষতার সাথে সজ্জিত করতে চাই। ",
+
 
 
 
     },
     "gu": {
+        "availabilityInLast3Months" : "છેલ્લા 3 મહિનામાં એપ્લિકેશનની ઉપલબ્ધતા",
         "view" : "દર્શન કરો",
         "language": "ગુજરાતી",
         "diksha": "DIKSHA",
@@ -26829,7 +26841,7 @@ const languageTranslations = {
         "login" : "લોગિન કરો",
         "getAppDesc": "DIKSHA એપ્લિકેશન પ્લે સ્ટોર અને એપ સ્ટોર પર ઉપલબ્ધ છે, તમે તેને ડાઉનલોડ કરવા માટે ક્યુ. આર. કોડ પણ સ્કેન કરી શકો છો.",
         "mobileApp":  "મોબાઇલ એપ્લિકેશન આજે!",
-        "downloadLinkAndroid": "",
+        "downloadLinkAndroid": "Android માટે લિંક ડાઉનલોડ કરો",
         "downloadLinkIos": "આઇ. ઓ. એસ. માટે લિંક ડાઉનલોડ કરો",
         "scanDownload": "ડાઉનલોડ કરવા માટે સ્કેન કરો",
         "clickHere" : "અહીં ક્લિક કરો",
@@ -26877,10 +26889,13 @@ const languageTranslations = {
         "digitalcontent" : "ખુલ્લી ડિજિટલ સામગ્રીની દુનિયા",
         "focusArea": "ધ્યાન કેન્દ્રિત વિસ્તાર",
         "application" : "એપ્લિકેશન ઉપલબ્ધતા",
-        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો"
+        "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો",
+        "missionVisionDiscp1" : "દીક્ષા ખાતે, અમારું મિશન એક ક્રાંતિકારી શિક્ષણ ઇકોસિસ્ટમ બનાવવાનું છે જે વિદ્યાર્થીઓને 21મી સદીમાં સફળ થવા માટે સશક્ત બનાવે છે. અમારું માનવું છે કે શિક્ષણ સુલભ, આકર્ષક અને દરેક શીખનારની વ્યક્તિગત જરૂરિયાતો અનુસાર હોવું જોઈએ. " ,
+        "missionVisionDiscp2" :"અમારું વિઝન ટેકનોલોજી અને નવીનતાનો લાભ લઈને શિક્ષણ પ્રદાન કરવાની રીતમાં પરિવર્તન લાવવાનું છે. અમારું લક્ષ્ય વિદ્યાર્થીઓને એક સર્વગ્રાહી શિક્ષણ અનુભવ પ્રદાન કરવાનું છે જે પરંપરાગત વર્ગખંડોથી આગળ વધે છે. અમારા મંચ દ્વારા, અમે વિદ્યાર્થીઓને માત્ર શૈક્ષણિક સફળતા માટે જ નહીં પરંતુ વ્યક્તિગત વિકાસ અને વિકાસ માટે પણ જરૂરી કુશળતાથી સજ્જ કરવા માંગીએ છીએ. ",
         
     },
     "hi": {
+        "availabilityInLast3Months" : "पिछले 3 महीनों में आवेदन की उपलब्धता",
         "view" : "देखिये",
         "language": "हिंदी",
         "diksha": "DIKSHA",
@@ -27006,7 +27021,7 @@ const languageTranslations = {
         "dikshaGlance" : "DIKSHA एक नज़र में",
         "userDesc" : "DIKSHA का उपयोग देश भर के शिक्षार्थियों और शिक्षकों द्वारा किया जा सकता है और वर्तमान में यह 36 भारतीय भाषाओं का समर्थन करता है",
         "missionVision":"मिशन और विजन",
-        "nipunBharat": "निपुन भारत",
+        "nipunBharat": "निपुण भारत",
         "aboutGlanceStudent" : "छात्र",
         "aboutGlanceTeacher" : "टीचर",
         "aboutGlanceParent" : "जनक",
@@ -27017,7 +27032,7 @@ const languageTranslations = {
         "nipunBharatDesc": "समझने और संख्यात्मकता के साथ पढ़ने में प्रवीणता के लिए राष्ट्रीय पहल",
         "bhasaSangam": "भाषा संगम",
         "bhasaSangamDesc":"22 भारतीय भाषाओं में रोजमर्रा के उपयोग के बुनियादी वाक्यों को पढ़ाने के लिए राष्ट्रीय पहल। ",
-        "jaduiPitara": "जादुई पितारा",
+        "jaduiPitara": "जादुई पिटारा",
         "jaduiPitaraDesc":"नागरिकों के लिए मूलभूत साक्षरता और संख्यात्मकता, महत्वपूर्ण जीवन कौशल प्रदान करना।",    
         "adultEducation": "प्रौढ़ शिक्षा",
         "adultEducationDesc": "समझने और संख्यात्मकता के साथ पढ़ने में प्रवीणता के लिए राष्ट्रीय पहल",
@@ -27038,10 +27053,13 @@ const languageTranslations = {
         "digitalcontent" : "खुली डिजिटल सामग्री की दुनिया",
         "focusArea": "फोकस क्षेत्र",
         "application" : "आवेदन उपलब्धता",
-        "downloadReport" : "रिपोर्ट डाउनलोड करें"
+        "downloadReport" : "रिपोर्ट डाउनलोड करें",
+        "missionVisionDiscp1" : "दीक्षा में, हमारा मिशन एक क्रांतिकारी शिक्षण पारिस्थितिकी तंत्र बनाना है जो छात्रों को 21वीं सदी में फलने-फूलने के लिए सशक्त बनाता है। हम मानते हैं कि शिक्षा सुलभ, आकर्षक और प्रत्येक शिक्षार्थी की व्यक्तिगत जरूरतों के अनुरूप होनी चाहिए।" ,
+        "missionVisionDiscp2" :" हमारी दृष्टि प्रौद्योगिकी और नवाचार का लाभ उठाकर शिक्षा प्रदान करने के तरीके को बदलना है। हमारा उद्देश्य छात्रों को एक समग्र शिक्षण अनुभव प्रदान करना है जो पारंपरिक कक्षाओं से परे है। अपने मंच के माध्यम से, हम छात्रों को उन कौशलों से लैस करना चाहते हैं जिनकी उन्हें न केवल शैक्षणिक सफलता के लिए बल्कि व्यक्तिगत विकास और विकास के लिए भी आवश्यकता है।",
 
     },
     "kn": {
+        "availabilityInLast3Months" : "ಕಳೆದ 3 ತಿಂಗಳುಗಳಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
         "view" : "ನೋಟ",
         "language": "ಕನ್ನಡ",
         "diksha": "DIKSHA",
@@ -27198,9 +27216,12 @@ const languageTranslations = {
         "digitalcontent" : "ಮುಕ್ತ ಡಿಜಿಟಲ್ ವಿಷಯದ ಜಗತ್ತು",
         "focusArea": "ಕೇಂದ್ರೀಕೃತ ಪ್ರದೇಶ",
         "application" : "ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
-        "downloadReport" : "ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+        "downloadReport" : "ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+        "missionVisionDiscp1" : "ದೀಕ್ಷೆಯಲ್ಲಿ, 21ನೇ ಶತಮಾನದಲ್ಲಿ ಅಭಿವೃದ್ಧಿ ಹೊಂದಲು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಧಿಕಾರ ನೀಡುವ ಕ್ರಾಂತಿಕಾರಿ ಕಲಿಕಾ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯನ್ನು ರಚಿಸುವುದು ನಮ್ಮ ಉದ್ದೇಶವಾಗಿದೆ. ಶಿಕ್ಷಣವು ಪ್ರತಿಯೊಬ್ಬ ಕಲಿಯುವವರ ವೈಯಕ್ತಿಕ ಅಗತ್ಯಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ಲಭ್ಯವಾಗಬೇಕು, ಆಕರ್ಷಕವಾಗಿರಬೇಕು ಮತ್ತು ಹೊಂದಿಕೆಯಾಗಬೇಕು ಎಂದು ನಾವು ನಂಬುತ್ತೇವೆ . " ,
+        "missionVisionDiscp2" :"ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ನಾವೀನ್ಯತೆಯನ್ನು ಸದುಪಯೋಗಪಡಿಸಿಕೊಳ್ಳುವ ಮೂಲಕ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ವಿಧಾನವನ್ನು ಪರಿವರ್ತಿಸುವುದು ನಮ್ಮ ದೃಷ್ಟಿಕೋನವಾಗಿದೆ. ಸಾಂಪ್ರದಾಯಿಕ ತರಗತಿ ಕೊಠಡಿಗಳನ್ನು ಮೀರಿದ ಸಮಗ್ರ ಕಲಿಕೆಯ ಅನುಭವವನ್ನು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಒದಗಿಸುವ ಗುರಿಯನ್ನು ನಾವು ಹೊಂದಿದ್ದೇವೆ. ನಮ್ಮ ವೇದಿಕೆಯ ಮೂಲಕ, ನಾವು ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಶೈಕ್ಷಣಿಕ ಯಶಸ್ಸಿಗೆ ಮಾತ್ರವಲ್ಲದೆ ವೈಯಕ್ತಿಕ ಬೆಳವಣಿಗೆ ಮತ್ತು ಅಭಿವೃದ್ಧಿಗೆ ಅಗತ್ಯವಾದ ಕೌಶಲ್ಯಗಳೊಂದಿಗೆ ಸಜ್ಜುಗೊಳಿಸಲು ಬಯಸುತ್ತೇವೆ. ",
     },
     "mr": {
+        "availabilityInLast3Months" : "मागील 3 महिन्यांत अर्जाची उपलब्धता",
         "view" : "पहा",
         "language": "मराठी",
         "diksha": "DIKSHA",
@@ -27325,7 +27346,7 @@ const languageTranslations = {
         "missionVision":"ध्येय आणि दृष्टीकोन",
         "ncertAdd": "श्री अरबिंदो मार्ग, नवी दिल्ली-110016",
         "footerBottom":"© 2024-कॉपीराइट DIKSHA. सर्व हक्क राखून ठेवले आहेत. एन. ई. जी. डी. द्वारे समर्थित। एम. ई. आय. टी. वाय. भारत सरकार® 2024 DIKSHA",
-        "nipunBharat": "निपुन भारत",
+        "nipunBharat": "निपुण भारत",
         "userDesc" : "देशभरातील विद्यार्थी आणि शिक्षक DIKSHAचा लाभ घेऊ शकतात आणि सध्या ती 36 भारतीय भाषांना आधार देते.",
         "aboutGlanceStudent" : "विद्यार्थी",
         "aboutGlanceTeacher" : "शिक्षक",
@@ -27337,7 +27358,7 @@ const languageTranslations = {
         "nipunBharatDesc": "समज आणि संख्यात्मकतेसह वाचनातील प्रवीणतेसाठी राष्ट्रीय उपक्रम",
         "bhasaSangam": "भाषा संगम",
         "bhasaSangamDesc":"दैनंदिन वापराची मूलभूत वाक्ये 22 भारतीय भाषांमध्ये शिकवण्यासाठी राष्ट्रीय उपक्रम",
-        "jaduiPitara": "जादुई पितारा",
+        "jaduiPitara": "जादुई पिटारा",
         "jaduiPitaraDesc":"नागरिकांसाठी मूलभूत साक्षरता आणि संख्यात्मकता, महत्त्वपूर्ण जीवन कौशल्ये प्रदान करणे",    
         "adultEducation": "प्रौढ शिक्षण",
         "adultEducationDesc": "समज आणि संख्यात्मकतेसह वाचनातील प्रवीणतेसाठी राष्ट्रीय उपक्रम",
@@ -27358,7 +27379,9 @@ const languageTranslations = {
         "digitalcontent" : "खुल्या डिजिटल सामग्रीचे जग",
         "focusArea": "केंद्रबिंदू क्षेत्र",
         "application" : "अर्ज उपलब्धता",
-        "downloadReport" : "अहवाल डाउनलोड करा"
+        "downloadReport" : "अहवाल डाउनलोड करा",
+        "missionVisionDiscp1" : "21 व्या शतकात विद्यार्थ्यांना भरभराटीसाठी सक्षम करणारी एक क्रांतिकारी शिक्षण परिसंस्था तयार करणे हे दीक्षा येथे आमचे ध्येय आहे. आमचे असे मत आहे की शिक्षण सुलभ, आकर्षक आणि प्रत्येक विद्यार्थ्याच्या वैयक्तिक गरजांनुसार असावे. " ,
+        "missionVisionDiscp2" :"तंत्रज्ञान आणि नाविन्याचा लाभ घेऊन शिक्षण देण्याच्या पद्धतीत बदल घडवून आणणे हा आमचा दृष्टीकोन आहे. विद्यार्थ्यांना पारंपारिक वर्गांच्या पलीकडे जाऊन शिकण्याचा सर्वांगीण अनुभव देण्याचे आमचे उद्दिष्ट आहे. आमच्या व्यासपीठाच्या माध्यमातून, आम्हाला विद्यार्थ्यांना केवळ शैक्षणिक यशासाठीच नव्हे तर वैयक्तिक वाढ आणि विकासासाठी आवश्यक असलेल्या कौशल्यांनी सुसज्ज करायचे आहे. ",
     },
     "ml": {
         "language": "മലയാളം",
@@ -27390,35 +27413,9 @@ const languageTranslations = {
         "board-nios-description": "NIOS(   (നാഷണൽ ഇൻസ്റ്റിറ്റ്യൂട്ട് ഓഫ് ഓപ്പൺ സ്കൂൾ)  പ്രസിദ്ധീകരിച്ച ഉള്ളടക്കം എക്‌സ്‌പ്ലോർ  ചെയ്യുക",
         "board-btntitle": "എക്‌സ്‌പ്ലോർ ചെയ്യുക",
         "login" : "ലോഗിൻ",
-        "getAppDesc": " ",
-        "mobileApp":  "",
-        "downloadLinkAndroid": "",
-        "downloadLinkIos": "",
-        "scanDownload": "",
-        "clickHere" : "",
-        "aboutDikshaHeading" : " ",
-        "aboutDescription": "",
-        "viewMore" : "",
-        "teacherNeedHelp": "",
-        "footerDoc": "",
-        "footerNCERT":"",
-        "ncertAdd": "",
-        "footerBottom":"",
-        "compreLearning": "",
-        "foundationalsecondary" :  "",
-        "compleateCoverage": "",
-        "compleateCoverageDesc": "",
-        "practiceContent": "",
-        "practiceContentDesc" :" ",
-        "studyMaterial": "",
-        "studyMaterialDesc":" ",
-        "participateQuiz": "",
-        "participateQuizDesc": "",
-        "digitalcontent" : "",
-        "focusArea": "",
-        "application" : "Application Availability"
     },
     "or": {
+        "availabilityInLast3Months" : "ଗତ 3 ମାସରେ ଆବେଦନ ଉପଲବ୍ଧତା |",
         "view" : "ଦେଖନ୍ତୁ",
         "language": "ଓଡ଼ିଆ",
         "diksha": "DIKSHA",
@@ -27576,9 +27573,12 @@ const languageTranslations = {
         "digitalcontent" : "ମୁକ୍ତ ଡିଜିଟାଲ ବିଷଯ଼ବସ୍ତୁର ଦୁନିଆ",
         "focusArea": "ଫୋକସ୍ କ୍ଷେତ୍ର",
         "application" : "ପ୍ରୟୋଗ ଉପଲବ୍ଧତା |",
-        "downloadReport" : "ରିପୋର୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |"
+        "downloadReport" : "ରିପୋର୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |",
+        "missionVisionDiscp1" : "ଦୀକ୍ଷାରେ, ଆମର ଲକ୍ଷ୍ଯ଼ ହେଉଛି ଏକ ବୈପ୍ଳବିକ ଶିକ୍ଷଣ ଇକୋସିଷ୍ଟମ ସୃଷ୍ଟି କରିବା ଯାହା ଛାତ୍ରମାନଙ୍କୁ ଏକବିଂଶ ଶତାବ୍ଦୀରେ ଉନ୍ନତି କରିବାକୁ ସଶକ୍ତ କରେ। ଆମେ ବିଶ୍ୱାସ କରୁ ଯେ ଶିକ୍ଷା ସୁଲଭ, ଆକର୍ଷଣୀଯ଼ ଏବଂ ପ୍ରତ୍ଯ଼େକ ଶିକ୍ଷାର୍ଥୀଙ୍କ ବ୍ଯ଼କ୍ତିଗତ ଆବଶ୍ଯ଼କତା ଅନୁଯାଯ଼ୀ ହେବା ଉଚିତ। " ,
+        "missionVisionDiscp2" :" ପ୍ରଯୁକ୍ତିବିଦ୍ଯ଼ା ଏବଂ ନବସୃଜନର ଲାଭ ଉଠାଇ ଶିକ୍ଷା ପ୍ରଦାନ କରିବାର ଉପାଯ଼କୁ ପରିବର୍ତ୍ତନ କରିବା ହେଉଛି ଆମର ଲକ୍ଷ୍ଯ଼। ଆମର ଲକ୍ଷ୍ଯ଼ ହେଉଛି ବିଦ୍ଯ଼ାର୍ଥୀମାନଙ୍କୁ ଏକ ସାମଗ୍ରିକ ଶିକ୍ଷଣ ଅଭିଜ୍ଞତା ପ୍ରଦାନ କରିବା, ଯାହା ପାରମ୍ପରିକ ଶ୍ରେଣୀଗୃହ ଠାରୁ ଆଗକୁ ଯାଇପାରିବ। ଆମର ପ୍ଲାଟଫର୍ମ ମାଧ୍ଯ଼ମରେ, ଆମେ ଛାତ୍ରଛାତ୍ରୀମାନଙ୍କୁ କେବଳ ଏକାଡେମିକ୍ ସଫଳତା ପାଇଁ ନୁହେଁ ବରଂ ବ୍ଯ଼କ୍ତିଗତ ଅଭିବୃଦ୍ଧି ଏବଂ ବିକାଶ ପାଇଁ ଆବଶ୍ଯ଼କ କୌଶଳ ସହିତ ସଜ୍ଜିତ କରିବାକୁ ଚାହୁଁଛୁ।",
     },
     "pa": {
+        "availabilityInLast3Months" : "ਪਿਛਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ", 
         "view" : "ਦ੍ਰਿਸ਼",
         "language": "ਪੰਜਾਬੀ",
         "diksha": "DIKSHA",
@@ -27727,7 +27727,7 @@ const languageTranslations = {
         "compleateCoverage": "ਸੰਪੂਰਨ ਕੇ-12 ਕਵਰੇਜ",
         "compleateCoverageDesc": "ਸਾਰੇ ਬੋਰਡਾਂ, ਕਲਾਸਾਂ ਅਤੇ ਵਿਸ਼ਿਆਂ ਨੂੰ ਕਵਰ ਕਰਨ ਵਾਲੀ ਪੂਰੀ ਕੇ-12 ਅਧਿਐਨ ਸਮੱਗਰੀ ਤੱਕ ਪਹੁੰਚ",
        " practiceContent": "ਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓ",
-        "practiceContentDesc" :"",
+        "practiceContentDesc" :"ਅਭਿਆਸ ਸਮੱਗਰੀ ਜਿਵੇਂ ਕਿ NCERT ਹੱਲ ਅਤੇ ਰੁਝਾਨ ਵਾਲੀ ਸਮੱਗਰੀ ਤੱਕ ਪਹੁੰਚ ਕਰੋ",
         "studyMaterial": "ਇੰਟਰਐਕਟਿਵ ਅਧਿਐਨ ਸਮੱਗਰੀ",
         "studyMaterialDesc":"ਅਭਿਆਸ ਸਮੱਗਰੀ ਜਿਵੇਂ ਕਿ ਐੱਨਸੀਈਆਰਟੀ ਹੱਲ ਅਤੇ ਟ੍ਰੈਂਡਿੰਗ ਸਮੱਗਰੀ ਤੱਕ ਪਹੁੰਚ",
         "participateQuiz": "ਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓ",
@@ -27735,9 +27735,12 @@ const languageTranslations = {
         "digitalcontent" : "ਖੁੱਲ੍ਹੀ ਡਿਜੀਟਲ ਸਮੱਗਰੀ ਦੀ ਦੁਨੀਆ",
         "focusArea": "ਦਾ ਫੋਕਸ ਖੇਤਰ",
         "application" : "ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ",
-        "downloadReport" : "ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰੋ"
+        "downloadReport" : "ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰੋ",
+        "missionVisionDiscp1" : "ਦੀਕਸ਼ਾ ਵਿੱਚ, ਸਾਡਾ ਮਿਸ਼ਨ ਇੱਕ ਕ੍ਰਾਂਤੀਕਾਰੀ ਸਿੱਖਣ ਦਾ ਈਕੋਸਿਸਟਮ ਬਣਾਉਣਾ ਹੈ ਜੋ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ 21ਵੀਂ ਸਦੀ ਵਿੱਚ ਪ੍ਰਫੁੱਲਤ ਕਰਨ ਲਈ ਸਮਰੱਥ ਬਣਾਉਂਦਾ ਹੈ। ਸਾਡਾ ਮੰਨਣਾ ਹੈ ਕਿ ਸਿੱਖਿਆ ਪਹੁੰਚਯੋਗ, ਆਕਰਸ਼ਕ ਅਤੇ ਹਰੇਕ ਸਿੱਖਣ ਵਾਲੇ ਦੀਆਂ ਵਿਅਕਤੀਗਤ ਜ਼ਰੂਰਤਾਂ ਦੇ ਅਨੁਸਾਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ। " ,
+        "missionVisionDiscp2" :"ਸਾਡਾ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਟੈਕਨੋਲੋਜੀ ਅਤੇ ਇਨੋਵੇਸ਼ਨ ਦਾ ਲਾਭ ਉਠਾ ਕੇ ਸਿੱਖਿਆ ਪ੍ਰਦਾਨ ਕਰਨ ਦੇ ਤਰੀਕੇ ਨੂੰ ਬਦਲਣਾ ਹੈ। ਸਾਡਾ ਉਦੇਸ਼ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਇੱਕ ਸੰਪੂਰਨ ਸਿੱਖਣ ਦਾ ਤਜਰਬਾ ਪ੍ਰਦਾਨ ਕਰਨਾ ਹੈ ਜੋ ਰਵਾਇਤੀ ਕਲਾਸਰੂਮਾਂ ਤੋਂ ਪਰੇ ਹੈ। ਆਪਣੇ ਮੰਚ ਰਾਹੀਂ, ਅਸੀਂ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਉਨ੍ਹਾਂ ਹੁਨਰਾਂ ਨਾਲ ਲੈਸ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਜਿਨ੍ਹਾਂ ਦੀ ਉਨ੍ਹਾਂ ਨੂੰ ਨਾ ਸਿਰਫ ਅਕਾਦਮਿਕ ਸਫਲਤਾ ਲਈ ਬਲਕਿ ਵਿਅਕਤੀਗਤ ਵਿਕਾਸ ਅਤੇ ਵਿਕਾਸ ਲਈ ਵੀ ਜ਼ਰੂਰਤ ਹੈ। ",
     },
     "ta": {
+        "availabilityInLast3Months" : "கடந்த 3 மாதங்களில் விண்ணப்பம் கிடைக்கும்",
         "view" : "பார்",
         "language": "தமிழ்",
         "diksha": "தீக்‌ஷா",
@@ -27894,9 +27897,12 @@ const languageTranslations = {
         "digitalcontent" : "திறந்த டிஜிட்டல் உள்ளடக்கத்தின் உலகம்",
         "focusArea": "கவனம் செலுத்தும் பகுதி",
         "application" : "விண்ணப்பம் கிடைக்கும் தன்மை",
-        "downloadReport" : "அறிக்கையைப் பதிவிறக்கவும்"
+        "downloadReport" : "அறிக்கையைப் பதிவிறக்கவும்",
+        "missionVisionDiscp1" : "21-ാം നൂറ്റാണ്ടിൽ വിദ്യാർത്ഥികളെ അഭിവൃദ്ധിപ്പെടുത്താൻ പ്രാപ്തരാക്കുന്ന ഒരു വിപ്ലവകരമായ പഠന ആവാസവ്യവസ്ഥ സൃഷ്ടിക്കുക എന്നതാണ് ദീക്ഷയിലെ ഞങ്ങളുടെ ദൌത്യം. വിദ്യാഭ്യാസം പ്രാപ്യവും ആകർഷകവും ഓരോ പഠിതാവിന്റെയും വ്യക്തിഗത ആവശ്യങ്ങൾക്കനുസൃതവുമായിരിക്കണമെന്ന് ഞങ്ങൾ വിശ്വസിക്കുന്നു. " ,
+        "missionVisionDiscp2" :"സാങ്കേതികവിദ്യയും നവീകരണവും പ്രയോജനപ്പെടുത്തിക്കൊണ്ട് വിദ്യാഭ്യാസം നൽകുന്ന രീതിയെ പരിവർത്തനം ചെയ്യുക എന്നതാണ് ഞങ്ങളുടെ കാഴ്ചപ്പാട്. പരമ്പരാഗത ക്ലാസ് മുറികൾക്കപ്പുറമുള്ള സമഗ്രമായ പഠനാനുഭവം വിദ്യാർത്ഥികൾക്ക് നൽകാൻ ഞങ്ങൾ ലക്ഷ്യമിടുന്നു. ഞങ്ങളുടെ പ്ലാറ്റ്ഫോമിലൂടെ, അക്കാദമിക് വിജയത്തിന് മാത്രമല്ല, വ്യക്തിപരമായ വളർച്ചയ്ക്കും വികസനത്തിനും ആവശ്യമായ കഴിവുകൾ വിദ്യാർത്ഥികളെ സജ്ജമാക്കാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു .",
     },
     "te": {
+        "availabilityInLast3Months" : "గత 3 నెలల్లో అప్లికేషన్ లభ్యత",
         "view" : "వీక్షించండి",
         "language": "తెలుగు",
         "diksha": "DIKSHA",
@@ -28052,10 +28058,12 @@ const languageTranslations = {
         "focusArea": "దృష్టి కేంద్రీకరించిన ప్రాంతం",
         "application" : "అప్లికేషన్ లభ్యత",
         "downloadReport" : "నివేదికను డౌన్‌లోడ్ చేయండి",
-        "compreLearning" : "సమగ్ర అభ్యాసం"
+        "compreLearning" : "సమగ్ర అభ్యాసం",
+        "missionVisionDiscp1" : "దీక్షలో, 21వ శతాబ్దంలో విద్యార్థులు అభివృద్ధి చెందడానికి వీలు కల్పించే విప్లవాత్మక అభ్యాస పర్యావరణ వ్యవస్థను సృష్టించడం మా లక్ష్యం. విద్య అందుబాటులో ఉండాలని, ఆకర్షణీయంగా ఉండాలని, ప్రతి అభ్యాసకుడి వ్యక్తిగత అవసరాలకు అనుగుణంగా ఉండాలని మేము నమ్ముతున్నాము. " ,
+        "missionVisionDiscp2" :" సాంకేతిక పరిజ్ఞానం మరియు ఆవిష్కరణలను సద్వినియోగం చేసుకోవడం ద్వారా విద్యను అందించే విధానాన్ని మార్చడమే మా దృష్టి. సాంప్రదాయ తరగతి గదులకు మించిన సమగ్ర అభ్యాస అనుభవాన్ని విద్యార్థులకు అందించాలని మేము లక్ష్యంగా పెట్టుకున్నాము. మా వేదిక ద్వారా, విద్యార్థులను విద్యాపరంగా విజయవంతం కావడానికి మాత్రమే కాకుండా వ్యక్తిగత అభివృద్ధి మరియు అభివృద్ధికి కూడా అవసరమైన నైపుణ్యాలతో సన్నద్ధం చేయాలనుకుంటున్నాము. ",
     },
     "ur": {
-        "view" : "منظر",
+        "view" : "دیکھیں",
         "language": "اردو",
         "diksha": "DIKSHA",
         "govofIndia": "حکومت ہند",
@@ -28064,7 +28072,7 @@ const languageTranslations = {
         "btnExploreDiksha": "DIKSHA کو دریافت کریں",
         "explore": "دریافت کریں",
         "ExploreDikshaContent": "کھلی ڈیجیٹل مواد کی DIKSHA کی دنیا کو تلاش کریں",
-        "stateboard": "ریاست / UT بورڈ",
+        "stateboard": "ریاست / یوٹی بورڈ",
         "stateboardDescription": "22+ ریاستوں اور UTs کے ذریعہ شائع کردہ مواد کو دریافت کریں",
         "about": "کے بارے میں",
         "home": "گھر",
@@ -28163,7 +28171,7 @@ const languageTranslations = {
         "board-btntitle": "دریافت کریں",
         "login" : "لاگ ان",
         "getAppDesc": " DIKSHAایپلی کیشن پلے اسٹور اور ایپ اسٹور پر دستیاب ہے ، آپ اسے ڈاؤن لوڈ کرنے کے لئے کیو آر کوڈ بھی اسکین کرسکتے ہیں۔",
-        "mobileApp":  "",
+        "mobileApp":  "آج موبائل ایپ!",
         "downloadLinkAndroid": "اینڈروئیڈ کے لئے ڈاؤن لوڈ لنک",
         "downloadLinkIos":"آئی او ایس کے لئے ڈاؤن لوڈ لنک",
         "scanDownload":"ڈاؤن لوڈ کرنے کے لئے اسکین کریں",
@@ -28212,7 +28220,10 @@ const languageTranslations = {
         "digitalcontent" : "کھلے ڈیجیٹل مواد کی دنیا",
         "focusArea": "فوکس ایریاز",
         "application" : "درخواست کی دستیابی",
-        "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔"
+        "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔",
+        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی",
+        "missionVisionDiscp1" : "دیکشا میں، ہمارا مشن ایک انقلابی سیکھنے کا ماحولیاتی نظام تیار کرنا ہے جو طلباء کو 21 ویں صدی میں پھلنے پھولنے کے لئے بااختیار بناتا ہے۔ ہمارا ماننا ہے کہ تعلیم ہر طالب علم کی انفرادی ضروریات کے مطابق قابل رسائی، دلچسپ اور تیار ہونی چاہیے۔ " ,
+        "missionVisionDiscp2" :" ہمارا وژن ٹیکنالوجی اور جدت طرازی سے فائدہ اٹھاتے ہوئے تعلیم کی فراہمی کے طریقے کو تبدیل کرنا ہے۔ ہمارا مقصد طلباء کو ایک جامع سیکھنے کا تجربہ فراہم کرنا ہے جو روایتی کلاس رومز سے آگے جاتا ہے۔ اپنے پلیٹ فارم کے ذریعے ہم طالب علموں کو ان مہارتوں سے آراستہ کرنا چاہتے ہیں جن کی انہیں نہ صرف تعلیمی کامیابی بلکہ ذاتی ترقی اور ترقی کے لئے بھی ضرورت ہے۔",
     }
 };
 
