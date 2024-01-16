@@ -2151,7 +2151,6 @@ function getLangTranslations() {
 }
 
 window.onclick = function(event) {
-    console.log("window on click------------");
     if (!(
         event.target.matches('ul.language-dropdown') ||
         event.target.matches('ul.language-dropdown li') || 
