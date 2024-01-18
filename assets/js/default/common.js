@@ -456,31 +456,21 @@ $(document).ready(function () {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
     window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-    let pageExists =states.some(eachVal=>eachVal.value== slug && eachVal.tenantPageExist);
-    if(pageExists) {
-      window.open('/' + slug , "_self");
-    } else{
-      window.open('/' + slug + '/explore' , "_self");
-    }
+    window.open('/' + slug + '/explore' , "_self");
     return false;
   });
 
   $(".nonstate-explore").click(async(e) =>{
     e.preventDefault();
-      let slug =e.currentTarget.getAttribute('data-slug');
-      let  name = e.currentTarget.getAttribute('data-name');
-      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-      if(name === "NCERT"){
-        // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
-        window.open('/' + slug,"_self");
-      } else if (name === "CBSE"){
-        window.open('/' + slug ,"_self")
-      } else if (name === "NIOS"){
-        window.open('/' + slug ,"_self")
-      }else {
-        window.open('/' + slug ,"_self");
-      }
-      return false;
+    let slug =e.currentTarget.getAttribute('data-slug');
+    let  name = e.currentTarget.getAttribute('data-name');
+    window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+    if(name === "NCERT"){
+      window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
+    } else{
+      window.open('/' + slug ,"_self");
+    }
+    return false;
   });
 
   $(".nav-header-menu").click(function (e) {
