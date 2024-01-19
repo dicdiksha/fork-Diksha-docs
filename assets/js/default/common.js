@@ -470,7 +470,7 @@ $(document).ready(function () {
     if(name === "NCERT"){
       window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
     } else{
-      window.open('/' + slug ,"_self");
+      window.open('/' + slug + '/explore' ,"_self");
     }
     return false;
   });
