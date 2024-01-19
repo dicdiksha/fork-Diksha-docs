@@ -472,6 +472,7 @@ $(document).ready(function () {
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       if(name === "NCERT"){
         // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
+        //adding the comment
         window.open('/' + slug,"_self");
       } else if (name === "CBSE"){
         window.open('/' + slug ,"_self")
