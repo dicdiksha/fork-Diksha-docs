@@ -338,6 +338,11 @@ $(document).ready(function () {
     tenantPageExist: false
   },
   {
+    label: "Lakshdweep",
+    value: "lk",
+    tenantPageExist: false
+  },
+  {
     label: "Maharashtra",
     value: "mitra",
     tenantPageExist: true
