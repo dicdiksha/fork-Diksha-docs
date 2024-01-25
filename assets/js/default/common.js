@@ -3,7 +3,7 @@
 $(document).ready(function(){  
   $('#myCarousel .carousel-item').each(function () {
     // alert("Hello");
-    var minPerSlide = 4;
+    var minPerSlide = 3;
     var next = $(this).next();
     if (!next.length) {
     next = $(this).siblings(':first');
@@ -250,177 +250,143 @@ $(document).ready(function () {
   const states = [{
     label: "Andaman & Nicobar Islands",
     value: "an",
-    tenantPageExist: false
   },
   {
     label: "Arunachal Pradesh", 
     value: "ar",
-    tenantPageExist: false
   },
   {
     label: "Andhra Pradesh",
     value: "apekx",
-    tenantPageExist: true
   },
   {
     label: "Assam",
     value: "as",
-    tenantPageExist: true
   },
   {
     label: "Bihar",
     value: "br",
-    tenantPageExist: true
   },
   {
     label: "Chhattisgarh",
     value: "cg",
-    tenantPageExist: true
   },
   {
     label: "Chandigarh",
     value: "ch",
-    tenantPageExist: false
+    
   },
   {
     label: "Delhi",
     value: "dl",
-    tenantPageExist: true
   },
   {
     label: "Dadra And Nagar Haveli And Daman And Diu",
     value: "DD",
-    tenantPageExist: false
   },
   {
     label: "Goa",
     value: "ga",
-    tenantPageExist: true
   },
   {
     label: "Gujarat",
     value: "gj",
-    tenantPageExist: true
   },
   {
     label: "Himachal Pradesh",
     value: "hp",
-    tenantPageExist: false
   },
   {
     label: "Haryana",
     value: "hr",
-    tenantPageExist: true
   },
   {
     label: "Jharkhand",
     value: "jh",
-    tenantPageExist: true
   },
   {
     label: "Jammu And Kashmir",
     value: "jk",
-    tenantPageExist: true
   },
   {
     label: "Karnataka",
     value: "ka",
-    tenantPageExist: true
   },
   {
     label: "Kerala",
     value: "kl",
-    tenantPageExist: false
   },
   {
     label: "Ladakh",
     value: "ld",
-    tenantPageExist: false
   },
   {
-    label: "Lakshdweep",
+    label: "Lakshadweep",
     value: "lk",
-    tenantPageExist: false
   },
   {
     label: "Maharashtra",
     value: "mitra",
-    tenantPageExist: true
   },
   {
     label: "Meghalaya",
     value: "ml",
-    tenantPageExist: true
   },
   {
     label: "Manipur",
     value: "mn",
-    tenantPageExist: true
   },
   {
     label: "Madhya Pradesh",
     value: "mp",
-    tenantPageExist: true
   },
   {
     label: "Mizoram",
     value: "mz",
-    tenantPageExist: true
   },
   {
     label: "Nagaland",
     value: "nl",
-    tenantPageExist: true
   },
   {
     label: "Odisha",
     value: "od",
-    tenantPageExist: true
   },
   {
     label: "Punjab",
     value: "pb",
-    tenantPageExist: true
   },
   {
     label: "Pondicherry",
     value: "py",
-    tenantPageExist: false
   },
   {
     label: "Rajasthan",
     value: "rj",
-    tenantPageExist: true
   },
   {
     label: "Sikkim",
     value: "sk",
-    tenantPageExist: true
   },
   {
     label: "Tamil Nadu",
     value: "tn",
-    tenantPageExist: true
   },
   {
     label: "Tripura",
     value: "tp",
-    tenantPageExist: false
   },
   {
     label: "Telangana",
     value: "ts",
-    tenantPageExist: true
   },
   {
     label: "Uttarakhand",
     value: "uk",
-    tenantPageExist: false
   },
   {
     label: "Uttar Pradesh",
     value: "up",
-    tenantPageExist: true
   }];
 
   states.forEach(element => {
