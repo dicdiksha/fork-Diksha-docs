@@ -5,36 +5,36 @@
             "title": "Home",
             "url": "",
             "contains":"home",
-            "etype":"select-homepage",
-            "eid": "static-homepage"
+            "etype":"select-home",
+            "eid": "static-home"
         },
         {
             "title": "Dashboard",
             "url": "data/",
             "contains":"data",
-            "etype":"select-dashboardData",
-            "eid": "public-dashboardData"
+            "etype":"select-dashboard",
+            "eid": "public-dashboard"
         },
         {
             "title": "About",
             "url": "about/",
             "contains":"about",
-            "etype": "select-aboutUS",
-            "eid": "static-aboutUS"
+            "etype": "select-about",
+            "eid": "static-about"
         },
         {
             "title": "Getapp",
             "url": "getapp/",
             "contains":"getapp",
-            "etype": "select-getappInfo",
-            "eid": "static-getappInfo"
+            "etype": "select-getapp",
+            "eid": "static-getapp"
         },
         {
             "title": "Contribute",
             "url": "contribute/",
             "contains":"contribute",
-            "etype": "select-contributeUs",
-            "eid": "static-contributeUs"
+            "etype": "select-contribute",
+            "eid": "static-contribute"
         }
     ]
 }

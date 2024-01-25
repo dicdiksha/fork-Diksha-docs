@@ -3,7 +3,7 @@
 $(document).ready(function(){  
   $('#myCarousel .carousel-item').each(function () {
     // alert("Hello");
-    var minPerSlide = 4;
+    var minPerSlide = 3;
     var next = $(this).next();
     if (!next.length) {
     next = $(this).siblings(':first');
