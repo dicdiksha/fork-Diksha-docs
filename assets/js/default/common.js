@@ -338,7 +338,7 @@ $(document).ready(function () {
     tenantPageExist: false
   },
   {
-    label: "Lakshdweep",
+    label: "Lakshadweep",
     value: "lk",
     tenantPageExist: false
   },
