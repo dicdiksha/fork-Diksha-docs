@@ -3,15 +3,13 @@
         padding: 3.125rem 0;
         background-color: #ECF6FF;
     }
-    .focus-areas {
-    margin-left: 5%;
-    position: relative;
-    }
+
     .focus-items{
         font-family: 'Outfit', sans-serif;
         display: flex;
         flex-wrap: wrap;
     }
+    
     .focus-item{
         background-color: #fff;
         box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
@@ -23,6 +21,7 @@
         color: #202124;
         padding-bottom: 3.125rem;
         justify-content: space-between;
+        cursor: pointer;
     }
     
     .focus-desc {
@@ -203,15 +202,15 @@
                  <span class="title-diksha-color"  data-translate="diksha">{{site.data.text.diksha}}</span>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="container">
+            <div class="container-box">
                 <div class="focus-areas">
                     <div id="myCarousel" class=" focus-area carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner ">
                             <div class="carousel-item active">
                                 <div>
-                                    <div class="focus-item">
-                                        <div class="focus-desc">
+                                    <div class="focus-item" onclick="window.location.href='/fln.html'" target="_blank">
+                                        <div class="focus-desc" >
                                             <div class="focus-heading">
                                                 <span data-translate="nipunBharat">{{site.data.text.nipunBharat}}</span>
                                                 <div class="focus-border-bottom">
@@ -222,7 +221,7 @@
                                                 <br>
                                                 <span class="read-more">
                                                     <a href="/fln.html" >
-                                                        <span data-translate="readmore">{{site.data.text.readmore}}</span>
+                                                        <span data-translate="explore">{{site.data.text.explore}}</span>
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
                                                         </span>
@@ -239,7 +238,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div>
-                                    <div class="focus-item">
+                                    <div class="focus-item" onclick="window.location.href='https://bit.ly/BhashaSangam'" target="_blank">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
 
@@ -252,7 +251,7 @@
                                                 <br>
                                                 <span class="read-more">
                                                     <a href="https://bit.ly/BhashaSangam">
-                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                         <span data-translate="explore">{{site.data.text.explore}}</span>
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
                                                         </span>
@@ -268,7 +267,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div >
-                                    <div class="focus-item">
+                                    <div class="focus-item" onclick="window.location.href='/jadoo/index.html'" target="_blank">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
                                                 <span data-translate="jaduiPitara">{{site.data.text.jaduiPitara}}</span>
@@ -281,7 +280,7 @@
                                                 <span class="read-more">
                                                     <a href="/jadoo/index.html">
 
-                                                       <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                        <span data-translate="explore">{{site.data.text.explore}}</span>
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
                                                         </span>
@@ -297,7 +296,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div>
-                                    <div class="focus-item">
+                                    <div class="focus-item" onclick="window.location.href='/adult-education.html'" target="_blank">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
                                                 <span data-translate="adultEducation">{{site.data.text.adultEducation}}</span>
@@ -308,7 +307,7 @@
                                                 <span data-translate="adultEducationDesc">{{site.data.text.adultEducationDesc}}</span>
                                                 <br> <span class="read-more">
                                                     <a href="/adult-education.html">
-                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                         <span data-translate="explore">{{site.data.text.explore}}</span>
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
                                                         </span>
@@ -324,7 +323,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div>
-                                    <div class="focus-item">
+                                    <div class="focus-item"  onclick="window.location.href='/virtuallabs.html'" target="_blank">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
                                                 <span data-translate="virtualLab">{{site.data.text.virtualLab}}</span>
@@ -336,7 +335,7 @@
                                             
                                                 <br> <span class="read-more">
                                                     <a href="/virtuallabs.html" >
-                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                         <span data-translate="explore">{{site.data.text.explore}}</span>
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
                                                         </span>
@@ -352,7 +351,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div>
-                                    <div class="focus-item">
+                                    <div class="focus-item" onclick="window.location.href='/vocational-education.html'" target="_blank">
                                         <div class="focus-desc">
                                             <div class="focus-heading">
                                                 <span data-translate="vocationEducation">{{site.data.text.vocationEducation}}</span>
@@ -363,7 +362,7 @@
                                                 <span data-translate="vocationEducationDesc"> {{site.data.text.vocationEducationDesc}}</span>
                                                 <br> <span class="read-more">
                                                     <a href="/vocational-education.html">
-                                                        <span data-translate="readmore">  {{site.data.text.readmore}} </span>
+                                                         <span data-translate="explore">{{site.data.text.explore}}</span>
                                                         <span>
                                                             <img src="../assets/homepage/raed-more.png" alt="read more">
                                                         </span>
