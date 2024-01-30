@@ -62,7 +62,7 @@ title: Sitemap
             <div id="scrollMainContent"></div>
             <h1 class="page-title mb-24 d-flex">Site Map</h1>
             <ul class="ul-sitemap text-left">
-                {% for nav in site.data.nav.items %}
+                {% for nav in site.data.nav-new.items %}
                 <li>
                     <a href="{{site.baseurl}}/{{nav.url}}" title="{{nav.title}}">
                         <span>{{nav.title}}</span>
@@ -72,7 +72,7 @@ title: Sitemap
                 </li>
                 <!-- <li><a href="/help/getting-started/explore-diksha/index.html"
                         title="Help Center">Help Center</a></li> -->
-                <li><a href="/screenreader.html"
+                <li><a href="/screenreaderaccess.html"
                         title="Accessibility Corner">Accessibility Corner</a></li>
                 <li class="parent">Access Content
                     <ul id="loggedinUser" class="hide">
