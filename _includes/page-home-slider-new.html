@@ -1,7 +1,9 @@
 <style>
 .homepage-slides .carousel-indicators {
     width:100%;
-    bottom: 1rem !important;
+    bottom: 0 !important;
+    background-color: transparent;
+    padding: 10px;
 }
 
 .homepage-slides .carousel-indicators li {
@@ -26,90 +28,142 @@
     width: 24px;
     background-color:#fff
 }
-</style>
 
-<div id="homePageSlide" class="carousel homepage-slides" data-ride="carousel">
-    <div class="carousel-inner" title="">
-        <div class="carousel-item carousel3-bg active" role="option">
-            <img loading="lazy" decoding="async" class="carousel-img-height" 
-                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/banner-diksha.png"
-                onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/bannerImage/banner-diksha.png'"
-                alt="DIKSHA One nation one digital platform">
-        </div>
-        <!-- <div class="carousel-item carousel3-bg " role="option">
-            <a href="https://bit.ly/3sK21b9" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/vivo-ignite-banner-new.png"
-                    alt="vivo-ignite-banner" loading="lazy" decoding="async">
-            </a>
-        </div>  -->
-        <div class="carousel-item carousel3-bg " role="option">
-            <a href="/fln.html" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/nipun-bharat-new.png"
-                    alt="nipun-bharat" loading="lazy" decoding="async">
-            </a>
-        </div> 
-        <div class="carousel-item carousel3-bg " role="option">
-            <a href="/jadoo/index.html" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/jadui-pitara-new.png"
-                    alt="jadui-pitara" loading="lazy" decoding="async">
-            </a>
-        </div> 
-        <div class="carousel-item carousel3-bg " role="option">
-            <a href="/vocational-education.html" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/vocational-education-new.png"
-                    alt="vocational-education" loading="lazy" decoding="async">
-            </a>
-        </div> 
-        <div class="carousel-item carousel3-bg " role="option">
-            <a href="https://bit.ly/BhashaSangam" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/bhasha-sangam-new.png"
-                    alt="bhasha-sangam" loading="lazy" decoding="async">
-            </a>
-        </div> 
-        <div class="carousel-item carousel3-bg " role="option">
-            <a href="/virtuallabs.html" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/virual-lab-new.png"
-                    alt="virual-lab" loading="lazy" decoding="async">
-            </a>
-        </div> 
-        <div class="carousel-item carousel3-bg " role="option">
-            <a href="/adult-education.html" target="_blank">
-                <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/adult education-new.png"
-                    alt="adult-education" loading="lazy" decoding="async">
-            </a>
-        </div> 
-    </div>   
-    <ol class="carousel-indicators">      
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="0" aria-current="page" class="active"
-        aria-controls="carousel-items" aria-label="DIKSHA One nation one digital platform"></li>
-        <!-- <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
-        aria-controls="carousel-items" aria-label="vivo-ignite-banner"></li> -->
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
-        aria-controls="carousel-items" aria-label="nipun-bharat"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="2" aria-current="page" 
-        aria-controls="carousel-items" aria-label="jadui-pitara"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="3" aria-current="page" 
-        aria-controls="carousel-items" aria-label="vocational-education"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="4" aria-current="page" 
-        aria-controls="carousel-items" aria-label="bhasha sangam"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="5" aria-current="page" 
-        aria-controls="carousel-items" aria-label="virtual lab"></li>
-        <li data-target="#homePageSlide" tabindex="0" data-slide-to="6" aria-current="page" 
-        aria-controls="carousel-items" aria-label="adult-education"></li>
-    </ol>
-    <a class="carousel-control-prev" href="#homePageSlide" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#homePageSlide" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+#homePageSlide .carousel-control-next-icon {
+    background-image: url(../assets/homepage/arrow-back-slider.png);
+    background-repeat: no-repeat;
+    opacity: 1 !important;
+}
+#homePageSlide .carousel-control-prev-icon {
+    background-image: url(../assets/homepage/arrow-prev-slider.png);
+    background-repeat: no-repeat;
+    opacity: 1 !important;
+    
+}
+#homePageSlide .carousel-control-next-icon,
+#homePageSlide .carousel-control-prev-icon {
+
+    height: 2.8em !important;
+    width: 1.8rem;
+    opacity: 1 !important;
+}
+
+/* #homePageSlide .carousel-item {
+    animation: 0.5s slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 75%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+#homePageSlide .carousel-item:first-child {
+    animation: 0s;
+} */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1 !important;
+}
+.new-home-page-slider{
+    height: 444px;
+}
+.new-home-page-slider .carousel-item img{
+    height: 100%;
+}
+@media (max-width: 1024px) {
+    .new-home-page-slider  {
+    height: 100%;
+    }
+}
+
+</style>
+<div class="new-home-page-slider">
+    <div id="homePageSlide" class="carousel homepage-slides" data-ride="carousel">
+        <div class="carousel-inner" title="">
+            <div class="carousel-item carousel3-bg active" role="option">
+                <img loading="lazy" decoding="async" class="carousel-img-height" 
+                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/banner-diksha.png"
+                    alt="DIKSHA One nation one digital platform">
+            </div>
+            <!-- <div class="carousel-item carousel3-bg " role="option">
+                <a href="https://bit.ly/3sK21b9" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/vivo-ignite-banner-new.png"
+                        alt="vivo-ignite-banner" loading="lazy" decoding="async">
+                </a>
+            </div>  -->
+            <div class="carousel-item carousel3-bg " role="option">
+                <a href="/fln.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/nipun-bharat-new.jpg"
+                        alt="nipun-bharat" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg " role="option">
+                <a href="/jadoo/index.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/jadui-pitara-new.jpg"
+                        alt="jadui-pitara" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg " role="option">
+                <a href="/vocational-education.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/vocational-education-new.jpg"
+                        alt="vocational-education" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg " role="option">
+                <a href="https://bit.ly/BhashaSangam" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/bhasha-sangam-new.jpg"
+                        alt="bhasha-sangam" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg " role="option">
+                <a href="/virtuallabs.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/virual-lab-new.jpg"
+                        alt="virual-lab" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg " role="option">
+                <a href="/adult-education.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/adult education-new.jpg"
+                        alt="adult-education" loading="lazy" decoding="async">
+                </a>
+            </div> 
+        </div>   
+        <ol class="carousel-indicators">      
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+            aria-controls="carousel-items" aria-label="DIKSHA One nation one digital platform"></li>
+            <!-- <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
+            aria-controls="carousel-items" aria-label="vivo-ignite-banner"></li> -->
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
+            aria-controls="carousel-items" aria-label="nipun-bharat"></li>
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="2" aria-current="page" 
+            aria-controls="carousel-items" aria-label="jadui-pitara"></li>
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="3" aria-current="page" 
+            aria-controls="carousel-items" aria-label="vocational-education"></li>
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="4" aria-current="page" 
+            aria-controls="carousel-items" aria-label="bhasha sangam"></li>
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="5" aria-current="page" 
+            aria-controls="carousel-items" aria-label="virtual lab"></li>
+            <li data-target="#homePageSlide" tabindex="0" data-slide-to="6" aria-current="page" 
+            aria-controls="carousel-items" aria-label="adult-education"></li>
+        </ol>
+        <a class="carousel-control-prev" href="#homePageSlide" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Previous</span> -->
+          </a>
+          <a class="carousel-control-next" href="#homePageSlide" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <!-- <span class="sr-only">Next</span> -->
+          </a>
+    </div>
 </div>
