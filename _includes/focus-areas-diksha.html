@@ -12,7 +12,7 @@
         background-color: #fff;
         box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
         display:flex;
-        /* margin: 0.625rem; */
+        margin: 0.625rem;
         border-radius: 0.9375rem;
         padding: 0.625rem;
         /* width: 430px; */
@@ -45,51 +45,54 @@
     padding: 0 0.3125rem;
 }
 
-#myCarousel .carousel-control-next{
+#focus-area .carousel-control-next{
     right: 43%
 }
-#myCarousel .carousel-control-prev{
+#focus-area .carousel-control-prev{
     left: 44%
 }
 
-#myCarousel .carousel-control-next,
+/* #myCarousel .carousel-control-next,
 #myCarousel .carousel-control-prev {
     top: auto !important;
     bottom: auto !important;
     width: auto !important;
    
-}
+} */
 
-#myCarousel .carousel-control-next-icon {
+#focus-area .carousel-control-next-icon {
     background-image: url(../assets/homepage/arrow_back.png);
     background-repeat: no-repeat;
 }
 
-#myCarousel .carousel-control-prev-icon {
+#focus-area .carousel-control-prev-icon {
     background-image: url(../assets/homepage/arrow_prev.png);
     background-repeat: no-repeat;
 }
 
-#myCarousel .carousel-control-prev-icon,
+/* #myCarousel .carousel-control-prev-icon,
 #myCarousel .carousel-control-next-icon {
     top: auto !important;
     bottom: auto !important;
     background-position: unset !important;
     background-size: unset !important;
 
-}
+} */
 .focus-areas .carousel-indicators {
     bottom: -25px !important;
     margin-bottom: 0 !important;
     margin-left: 0 !important;
     margin-bottom: 0 !important;
-    width: 100% !important
+    width: 100% !important;
+    align-items: center;
 }
 
 .focus-areas .carousel-indicators li {
     background-color:#8C8C8C;
     height: 6px;
     width: 16px;
+    margin: 3px;
+    border-radius: 10px;
 
 }
 
@@ -116,44 +119,44 @@
         right: auto;
 }
 
-#myCarousel .carousel-item.active {
+#focus-area .carousel-item.active {
     display: block;
-    transition: -webkit-transform .6s ease-in;
-    transition: transform .3s ease-in;
-    transition: transform .3s ease-in;
+    /* transition: -webkit-transform .6s ease-in;
+    transition: transform .6s ease-in;
+    transition: transform .6s ease-in; */
      /* -webkit-transform .3s ease-in; */
     /* transition: none !important; */
 }
 
-#myCarousel .carousel-item.active .focus-item {
+#focus-area .carousel-item.active .focus-item {
     /* background-color: hsl(43.2deg 98.43% 75.1%); */
 }
 
-#myCarousel .carousel-inner .carousel-item.active,
-#myCarousel .carousel-inner .carousel-item-start,
-#myCarousel .carousel-inner .carousel-item-next,
-#myCarousel .carousel-inner .carousel-item-prev {
+#focus-area .carousel-inner .carousel-item.active,
+#focus-area .carousel-inner .carousel-item-start,
+#focus-area .carousel-inner .carousel-item-next,
+#focus-area .carousel-inner .carousel-item-prev {
     display: flex;
 }
 @media (min-width: 768px) {
-    #myCarousel .carousel-inner .carousel-item-prev,
-    #myCarousel .carousel-item-prev:not(.carousel-item-end) {
-        transform: translateX(-25%) !important;
+    #focus-area .carousel-inner .carousel-item-prev,
+    #focus-area .carousel-item-prev:not(.carousel-item-end) {
+        /* transform: translateX(-25%) !important; */
     }
-    #myCarousel .carousel-control-next {
+    #focus-area .carousel-control-next {
         right: 37%;
     }
-    #myCarousel .carousel-control-prev {
+    #focus-area .carousel-control-prev {
         left: 40%;
     }
 }
 
 @media (max-width: 768px) {
-    #myCarousel .carousel-inner .carousel-item>div {
+    #focus-area .carousel-inner .carousel-item>div {
         display: none;
     }
 
-    #myCarousel .carousel-inner .carousel-item>div:first-child {
+    #focus-area .carousel-inner .carousel-item>div:first-child {
         display: block;
     }
     .focus-item {
@@ -177,10 +180,10 @@
         margin-top: 12px;
 
     }
-    #myCarousel .carousel-control-next {
+    #focus-area .carousel-control-next {
         right: 27%;
     }
-    #myCarousel .carousel-control-prev {
+    #focus-area .carousel-control-prev {
         left: 27%;
     }
 
@@ -200,7 +203,7 @@
             <div class="container">
                 <div class="container-box">
                     <div class="focus-areas">
-                        <div id="myCarousel" class=" focus-area carousel slide" data-bs-ride="carousel">
+                        <div id="focus-area" class=" focus-area carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner ">
                                 <div class="carousel-item active">
                                     <div class="col-md-4">
@@ -373,17 +376,17 @@
                                 </div>
                             </div>
                             <ol class="carousel-indicators">      
-                                <li data-target="#myCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+                                <li data-target="#focus-area" tabindex="0" data-slide-to="0" aria-current="page" class="active"
                                 aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#myCarousel" tabindex="0" data-slide-to="1" aria-current="page"
+                                <li data-target="#focus-area" tabindex="0" data-slide-to="1" aria-current="page"
                                 aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#myCarousel" tabindex="0" data-slide-to="2" aria-current="page"
+                                <li data-target="#focus-area" tabindex="0" data-slide-to="2" aria-current="page"
                                 aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#myCarousel" tabindex="0" data-slide-to="3" aria-current="page"
+                                <li data-target="#focus-area" tabindex="0" data-slide-to="3" aria-current="page"
                                 aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#myCarousel" tabindex="0" data-slide-to="4" aria-current="page"
+                                <li data-target="#focus-area" tabindex="0" data-slide-to="4" aria-current="page"
                                 aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#myCarousel" tabindex="0" data-slide-to="5" aria-current="page"
+                                <li data-target="#focus-area" tabindex="0" data-slide-to="5" aria-current="page"
                                 aria-controls="carousel-items" aria-label=""></li>
                             </ol>
                             <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
