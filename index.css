@@ -787,3 +787,6 @@ html, body {
     align-content: center;
     justify-content: space-around;
 }
+.carousel-control-next, .carousel-control-prev{
+    opacity: 1 !important;
+}
