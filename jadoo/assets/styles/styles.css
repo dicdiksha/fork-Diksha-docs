@@ -128,7 +128,7 @@
 
 
 #homeVideo {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   right: 0;
   bottom: 0;
