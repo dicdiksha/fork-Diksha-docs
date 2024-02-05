@@ -128,7 +128,7 @@
 
 
 #homeVideo {
-  position: fixed;
+  position: absolute;
   z-index: 1;
   right: 0;
   bottom: 0;
@@ -554,4 +554,63 @@ p {
     position: fixed;
   }
  
+}
+
+.jadui-pitara .head-title{
+  display: flex;
+  justify-content: center;
+
+}
+.jadui-pitara {
+  position: relative;
+  padding: 70px 0;
+}
+.adui-pitara-bg{
+  position: relative;
+}
+.adui-pitara-bg .bg-img_one{
+  position: absolute; 
+
+}
+.adui-pitara-bg .bg-img_one{
+  position: absolute; 
+}
+.adui-pitara-bg.bg-img_one{
+  position: absolute; 
+}
+.adui-pitara-bg .bg-img_one{
+  position: absolute; 
+}
+.jadui-pitara .head-title{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.bg-img_one {
+  background-image: url(../img/circle_right.png);
+  background-repeat: no-repeat;
+}
+.bg-img_one {
+  background-image: url(../img/circle_right.png);
+  background-repeat: no-repeat;
+}
+.bg-img_two {
+  background-image: url(../img/circle_left.png);
+  background-repeat: no-repeat;
+
+}
+
+.ejadu-cart {
+  text-align: center;
+}
+.card-desc {
+  padding: 21px 0;
+}
+.desc-title {
+  font-weight: bold;
+  padding: 3px 0;
 }

@@ -1,54 +1,7 @@
 <style>
-  .diksha-numbers .diksha-number-bg {
-    position: relative;
-  }
-  .diksha-numbers .diksha-number-bg .bg-img {
-    width: 100%;
-  }
-  .diksha-number-bg .number-wrapper {
-    position: absolute;
-    left: 7%;
-    top: 15%;
-    width: 85%;
-  }
-  .dashboard-data {
-    background-color: #fff;
-    /* margin-top: 30px; */
-    padding: 10px;
-    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
-    border-radius: 12px;
-    margin: 30px 10px;
-    height: 380px;
-  }
-  .dashboard-card {
-      display: flex;
-      align-items: center;
-      margin: 20px;
-      margin: 36px 0px;
-      
-  }
-  .dashboard-title {
-      display: flex;
-      justify-content: center;
-      font-size: 23px;
-      font-weight: bold;
-      color: #0C4E9E;
-  }
-  .card-logo {
-      margin-right: 16px;
-  }
-  .data-number {
-      font-size: 30px;
-      color: #343082;
-      word-break: break-all;
-  }
-  .data-title{
-    color: #6D6D6D;
-    font-size: 16px;
-  }
-  .diksha-numbers {
-   padding: 50px 0;
-   background-color: #F8F8F8;
+  .diksha-dashbord{
+    background-color:#F8F8F8;
+    padding: 50px 0;
   }
   .view-dashboards{
     display: flex;
@@ -64,532 +17,639 @@
     border-radius: 4px;
     border-color: transparent;
   }
-  .icon.icon1 {
-    position: absolute;
-    right: 0;
-    top: -53px;
-  }
-
-  .matrix-dash {
-      background-color: #fff;
-  }
-
-  .learn-sessions {
-      display: flex;
-  } 
-  .icon-img img {
-      height: 45px;
-      width: 45px;
-  } 
-  .dashboard-head {
-      text-align: center;
-      padding: 26px;
-      font-size: 22px;
-      color: #024F9D;
-      font-family: 'Lato', sans-serif;
-      font-weight: bold;
-  }
-
-  .matrix-dash {
-      background-color: #fff;
-      margin: 0px 15px;
-      border-radius: 15px;
-      padding-top: 27px;
-      font-family: 'Outfit', sans-serif;
-      border: 1px solid #C3E8FF;
-    overflow: hidden;
-  }
-  .data-count {
-      color: #024F9D;
-      font-size: 30px;
-      font-weight: bold;
-      padding: 5px 0px
-  }
-  .data {
-    line-height: 0.8;
-  }
-
-  .data-lable {
-      color: #6D6D6D;
-      font-size: 16px;
-      padding: 5px 0px
-  }
-  .learn-sessions {
-    padding-right: 20px;
-      border: 1px solid #C3E8FF;
-      margin: 25px 0;
-      border-top-right-radius: 42px;
-      border-bottom-right-radius: 42px;
-      width: 90%;
-      display: flex;
-      justify-content: space-between;
-      padding: 10px 20px;
-  }
-  .icon-img {
-      border: 1px solid #024F9D;
-      border-radius: 50%;
-      padding: 6px;
-      background-color: #C3E8FF;
-  }
-  .dashboard-body .data .icon {
-      margin-left: 45px;
-  }
-  .dashboard-footer{
-    padding: 10px 20px;
-    background-color: #C3E8FF;
-      display: flex;
-      justify-content: space-between;
-  }
-  .dashboard-footer .update-report{
-    font-size: 14px;
-    color: #6D6D6D;
-    
-  }
-  .dashboard-footer .download {
-    color: #024F9D;
+  .date-time {
     font-size: 16px;
-    cursor: pointer;
-
+    color: #6D6D6D;
   }
+  .matrix-title {
+    font-size: 23px;
+    color: #005DA3;
+    font-weight: 500;
+    font-family: 'Outfit'
+}
+.matrix-title-desc {
+    font-size: 16px;
+    color: #6D6D6D;
+}
+.matrix-details {
+    background-color: #fff;
+    padding: 20px 15px;
+    margin: 20px 0;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+.martrics-cards {
+    margin: 0 20px;
+    height: 100%;
+    width:  100%;
+}
+.data-matrix-number{
+  color: #305082;
+    font-size: 30px;
+   
+    font-weight: 500;
+}
+.matrix-num {
+    margin-right: 15px;
+    font-family: 'Outfit';
+}
+.matrix-heading {
+    min-height: 62px;
+    /* height: 100% !important; */
+}
+.matrics-card {
+    width: 100%;
+}
+.data-matrix-desc{
+  color:#6D6D6D;
 
-  .dashboard-body {
-      /* margin: 55px 0; */
-      min-height: 358px;
-      height: 410px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
 
-  .dashboard-container{
-    position: relative;
-    /* background-image: url(../assets/homepage/number-bg/vector1.png) ;
-    background-repeat: no-repeat;
-    background-position: right top; */
+}
+.sr-only{
+  display: none;
+}
 
-  }
-  .dashboard-container .vecter-one{
-    position: absolute;
-      right: -28px;
-      top: -23px;
-      background-image: url(../assets/homepage/number-bg/vector1.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 151px;
-      width: 117px;
+.matrix-graph {
+    display: flex;
+}
+.matrix-graph img {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+}
 
-  }
-  .dashboard-container .vecter-two{
-    position: absolute;
-      right: -2%;
-      top: 48%;
-      background-image: url(../assets/homepage/number-bg/vector2.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 125px;
-      width: 105px;
+.matrix-details .matrix-details,
+.matrix-details .data-matrix-desc{
+  padding: 10px 0;
 
-  }
-  .dashboard-container .vecter-three{
-    position: absolute;
-      bottom: -9%;
-      right: 21%;
-      background-image: url(../assets/homepage/number-bg/vector3.png);
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      height: 100px;
-      width: 110px;
+}
+#recipeCarousel .carousel-control-next-icon{
+  background-image: url(../assets/homepage/arrow_back.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
 
-  }
-  .dashboard-container .vecter-four{
-    position: absolute;
+}
+#recipeCarousel .carousel-control-prev-icon{
+  background-image: url(../assets/homepage/arrow_prev.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: none;
 
-      background-image: url(../assets/homepage/number-bg/vector4.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 125px;
-      width: 124px;
-      bottom: -15%;
-      left: 20%;
+}
+#recipeCarousel .carousel-indicators {
+    align-items: center;
+    bottom: -29px;
+}
 
-  }
-  .dashboard-container .vecter-five{
-    position: absolute;
-      left: -4%;
-      bottom: 17%;
-      background-image: url(../assets/homepage/number-bg/vector5.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 146px;
-      width: 105px;
+#recipeCarousel .carousel-indicators .active {
+  background-color: #005DA3;
+  height: 9px;
+  width: 24px;
 
-  }
-  .dashboard-container .vecter-six{
-    position: absolute;
-      left: -2%;
-      top: -3%;
-      background-image: url(../assets/homepage/number-bg/vector6.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 97px;
-      width: 138px;
-  }
+}
+#recipeCarousel .carousel-indicators li {
+    margin: 10px 0px;
+    height: 6px;
+    width: 16px !important;
+    background-color: #8C8C8C;
+    margin: 3px;
+    border-radius: 5px;
+}
+/*=============START SLIDER==================*/
+@media (max-width: 768px) {
+    #recipeCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #recipeCarousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item.active,
+#recipeCarousel .carousel-inner .carousel-item-next,
+#recipeCarousel.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+    
+    #recipeCarousel .carousel-inner .carousel-item-right.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+    
+    #recipeCarousel .carousel-inner .carousel-item-left.active, 
+    #recipeCarousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+#recipeCarousel .carousel-inner .carousel-item-right,
+#recipeCarousel .carousel-inner .carousel-item-left{ 
+  transform: translateX(0);
+}
+
+/*=============END SLIDER==================*/
 </style>
 
-<div class="diksha-numbers">
-  <div class="head-title">
-      <span class="text" data-translate="diksha">{{site.data.text.diksha}} </span>
-      <span class="title-diksha-color" data-translate="dashboard"> {{site.data.text.dashboard}}</span>
-  </div>
+<div class="diksha-dashbord">
   <div class="container">
     <div class="container-box">
-      <div class="dashboard-container">
-        <div class="vecter-one"></div>
-        <div class="vecter-two"></div>
-        <div class="vecter-three"></div>
-        <div class="vecter-four"></div>
-        <div class="vecter-five"></div>
-        <div class="vecter-six"></div>
-        <div class="row">
-          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
-            <div class="dashboard-head" data-translate="usageMetrics">
-              {{site.data.text.usageMetrics}}
-            </div>
-              <div class="matrix-dash">
+      <div class="head-title">
+        <span class="text">DIKSHA <span class="title-diksha-color"> dashboard</span></span>
+        <div class="date-time">                      
+          <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span></div>
+      </div>
+     
+      <div class="row">
+        <!-- <div class="col-lg-4 d-flex justify-content-center">
+          <div class="martrics-cards d-flex flex-column justify-content-between">
+            <div class="matrics-card ">
+              <div class="matrix-heading">
+                <div class="matrix-title">
+                  Usage Metrics
+                  <span><img src="../assets/homepage/download-report.png" alt="download-report"></span>
+                </div>
+                <div class="matrix-title-desc">
+                  DIKSHA Current Usage
+                </div>
                 
-                <div class="dashboard-body">
-                  <div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count" title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
-                          <span class="learning-sessions mr-8" id="learningSession">
-                        </div>
-                        <div class="data-lable" data-translate="LearningLessons">{{ site.data.text.LearningLessons }}</div>
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="../assets/homepage/number-image/session.gif" alt="session gif">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count" ddata-placement="bottom" title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
-                        <span class="x-mins mr-8"></span>
-                        </div>
-                        <div class="data-lable" data-translate="minutes">
-                          {{ site.data.text.minutes }}
-                        </div>
-
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="../assets/homepage/number-image/minutes.gif" alt="session gif">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count" title="{{ site.data.text.availabilityInLast3Months }}" data-translate-attr="{availabilityInLast3Months: ['title']}">
-                          100%
-                        </div>
-                        <div class="data-lable" data-translate="application">
-                          {{ site.data.text.application }}
-                        </div>
-
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="../assets/homepage/number-image/availability.gif" alt="session gif">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dashboard-footer">
-                    <div class="update-report">
-                      <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
-                    </div>
-                    <!-- <div class="download download-overall">
-                      <a href="" data-translate="downloadReport"> {{site.data.text.downloadReport}}</a>
-                    </div> -->
-                  </div>
-                </div>
               </div>
-          </div>
-          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
-            <div class="dashboard-head" data-translate="contributionMetrics">
-              {{site.data.text.contributionMetrics}}
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
+              </div>
             </div>
-              <div class="matrix-dash">
-                <div class="dashboard-body">
-                  <div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count" data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
-                          <span class="total-contributions mr-8" id="totalContributions"></span>
-                        </div>
-                        <div class="data-lable" data-translate="contributions">
-                          {{ site.data.text.contributions }}
-                        </div>
-  
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="../assets/homepage/number-image/contribution.gif" alt="session gif">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count"  data-placement="bottom"
-                        title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
-                        <span class="total-contributors mr-8" id="totalContributors"></span>
-                        </div>
-                        <div class="data-lable" data-translate="contributors">
-                          {{ site.data.text.contributors }}
-                        </div>
-  
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="../assets/homepage/number-image/contributor.gif" alt="session gif">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                 
-                  <div class="dashboard-footer">
-                    <div class="update-report">
-                      <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
-                    </div>
-                    <!-- <div class="download">
-                      Download Report
-                    </div> -->
-                  </div>
-                </div>
-
-              </div>
           </div>
-          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
-            <div class="dashboard-head" data-translate="courseMetrics">
-              {{site.data.text.courseMetrics}}
-            </div>
-              <div class="matrix-dash">
-                
-                <div class="dashboard-body">
-                  <div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count" data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
-                          <span class="total-courses mr-8"  id="totalCourses"></span> 
-                        </div>
-                        <div class="data-lable" data-translate="courses">
-                          {{site.data.text.courses}}
-                        </div>
-  
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="../assets/homepage/number-image/course.gif" alt="session gif">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="learn-sessions">
-                    <div class="data">
-                      <div class="data-count" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                      title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}">
-                      <span class="total-enrolments mr-8" id="totalEnrolments"></span>
-                      </div>
-                      <div class="data-lable" data-translate="Enrolments">
-                        {{site.data.text.Enrolments}}
-                      </div>
-  
-                    </div>
-                    <div class="icon">
-                        <div class="icon-img">
-                          <img src="../assets/homepage/number-image/enrollment.gif" alt="session gif">
-                        </div>
-                    </div>
-                  </div>
-                  <div class="learn-sessions">
-                    <div class="data">
-                      <div class="data-count" aria-live="polite" data-toggle="tooltip" data-placement="bottom" 
-                      title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
-                        <span class="total-completions mr-8"  id="totalCompletions"></span> 
-                      </div>
-                      <div class="data-lable" data-translate="completions">
-                        {{site.data.text.completions}}
-                      </div>
-  
-                    </div>
-                    <div class="icon">
-                        <div class="icon-img">
-                          <img src="../assets/homepage/number-image/completion.gif" alt="session gif">
-                        </div>
-                    </div>
-                  </div>
-                  </div>
-                <div class="dashboard-footer">
-                  <div class="update-report">
-                    <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
-                  </div>
-                  <!-- <div class="download" data-translate="downloadReport">
-                    <a href="https://diksha.gov.in/data/reports/state_wise_course_data_public.csv" download  class="download-course"> {{site.data.text.downloadReport}}</a>
-                  </div> -->
-                </div>
-                </div>
-
-              </div>
-          </div>
-        
-          
         </div>
-      </div>
-      <div class="view-dashboards">  
-        <button tabindex="0" class="view-dashboard" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
-      </div>
-    </div>
-  </div>
-
-
-    <!-- <div class="container">     
-        <div class="container-box">
-          <div class="diksha-number-bg">
-            <img class="bg-img" src="../images/diksha-number-bg.png" alt="number-backgroud">
-            <div class="number-wrapper">
-              <div class="row row-eq-height">
-                <section class="col-md-4  col-sm-6" >
-                  <div class="matrix-height">
-                    <div class="dashboard-title">{{site.data.text.usageMetrics}}</div>
-                    <div class="dashboard-data">
-                      <div class="dashboard-card">
-                        <div class="card-logo">
-                          <img src="../assets/imgs/dashboard/learning-sessions.png" alt="live learing Sessions">
-                        </div>
-                        <div class="card-data">
-                          <div class="data-number" 
-                          title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
-                          <span class="learning-sessions mr-8" id="learningSession"></div>
-                          <div class="data-title" >{{ site.data.text.LearningLessons }}</div>
-                        </div>
-                      </div>
-                      <div class="dashboard-card">
-                        <div class="card-logo">
-                          <img src="../assets/imgs/dashboard/usage-minuts.png" alt="usage minus">
-                        </div>
-                        <div class="card-data">
-                          <div class="data-number" data-placement="bottom"
-                              title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
-                              <span class="x-mins mr-8"></span>
-                        </div>
-                          <div class="data-title">{{ site.data.text.minutes }}</div>
-                        </div>
-                      </div>
-                      <div class="dashboard-card">
-                        <div class="card-logo">
-                          <img src="../assets/imgs/dashboard/app-availiblity.png" alt="live learing Sessions">
-                        </div>
-                        <div class="card-data">
-                          <div class="data-number">100% </div>
-                          <div class="data-title">Application Availability</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-                <section class="col-md-4 col-sm-6  ">
-                  <div class="matrix-height">
-                    <div class="dashboard-title">{{site.data.text.courseMetrics}}</div>
-                    <div class="dashboard-data">
-                      <div class="dashboard-card">
-                        <div class="card-logo">
-                          <img src="../assets/imgs/dashboard/enrolments.png" alt="Enrolments">
-                        </div>
-                        <div class="card-data">
-                          <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                          title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}"><span class="total-enrolments mr-8"
-                            id="totalEnrolments"></span>
-                          </div>
-                          <div class="data-title">{{ site.data.text.Enrolments }}</div>
-                        </div>
-                      </div>
-                      <div class="dashboard-card">
-                        <div class="card-logo">
-                          <img src="../assets/imgs/dashboard/Courses.png" alt="Courses">
-                        </div>
-                        <div class="card-data">
-                          <div class="data-number"data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
-                            <span class="total-courses mr-8"  id="totalCourses"></span>  </div>
-                          <div class="data-title">{{ site.data.text.courses }}</div>
-                        </div>
-                      </div>
-                      <div class="dashboard-card">
-                        <div class="card-logo">
-                          <img src="../assets/imgs/dashboard/course-completions.png" alt="Course Completions">
-                        </div>
-                        <div class="card-data">
-                          <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
-                            <span class="total-completions mr-8"  id="totalCompletions"></span> 
-                          </div>
-                          <div class="data-title">{{ site.data.text.completions }}</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                
-                </section>
-                <section class="col-md-4  col-sm-6">
-                  <div class="matrix-height">
-                    <div class="dashboard-title">{{site.data.text.contributionMetrics}}</div>
-                  <div class="dashboard-data">
-                    <div class="dashboard-card">
-                      <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/Contributions.png" alt="Contributions">
-                      </div>
-                      <div class="card-data">
-                        <div class="data-number"  data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
-                              <span class="total-contributions mr-8" id="totalContributions"></span>
-                          </div>
-                        <div class="data-title">{{ site.data.text.ContentContributions }}</div>
-                      </div>
-                    </div>
-                    <div class="dashboard-card">
-                      <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors">
-                      </div>
-                      <div class="card-data">
-                        <div class="data-number" data-placement="bottom"
-                        title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
-                        <span class="total-contributors mr-8" id="totalContributors"></span></div>
-                        <div class="data-title">{{ site.data.text.ContentContributors }}</div>
-                      </div>
-                    </div>
-                  
-                    <div class="dashboard-card">
-                      <div class="card-logo">
-                      <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors">
-                      </div>
-                      <div class="card-data">
-                      </div>
-                    </div>
-                  
-                  </div>
-                  </div>
-                  
-                </section>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="martrics-cards d-flex align-items-end">
+            <div class="matrics-card">
+              <div class="matrix-heading">
               </div>
-              <div class="view-dashboards">  
-                <button tabindex="0" class="view-dashboard-redirect" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
               </div>
             </div>
           </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-center">
+          <div class="martrics-cards d-flex flex-column justify-content-between">
+            <div class="matrics-card ">
+              <div class="matrix-heading">
+                <div class="matrix-title">
+                  Contribution Metrics
+                </div>
+                <div class="matrix-title-desc">
+                  DIKSHA Content Contribution
+                </div>
+                
+              </div>
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4">
+          <div class="martrics-cards  d-flex flex-column justify-content-between">
+            <div class="matrics-card d-flex flex-column justify-content-between">
+       
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="martrics-cards d-flex flex-column justify-content-between">
+            <div class="matrics-card d-flex flex-column justify-content-between">
+              <div class="matrix-heading">
+                <div class="matrix-title">
+                  Usage Metrics
+                  <span><img src="../assets/homepage/download-report.png" alt="download-report"></span>
+                </div>
+                <div class="matrix-title-desc">
+                  DIKSHA Current Usage
+                </div>
+                
+              </div>
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="martrics-cards d-flex flex-column justify-content-between">
+            <div class="matrics-card d-flex flex-column">
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="martrics-cards d-flex flex-column justify-content-between">
+            <div class="matrics-card d-flex flex-column">
         
-        
+              <div class="matrix-details d-flex justify-content-between">
+                <div class="matrix-num">
+                  <div class="data-matrix-number">
+                    52.4L
+                  </div>
+                  <div class="data-matrix-desc">
+                    Learning Sessions
+                  </div>
+
+                </div>
+                <div class="matrix-graph">
+                    <img src="../assets/homepage/graph.jpg" alt="graph">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div> 
+        <div class="row mx-auto my-auto">
+          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex flex-column justify-content-between ">
+                        <div class="matrics-card  ">
+                          <div class="matrix-heading">
+                            <div class="matrix-title" data-translate="usagemetrics">
+                              {{site.data.text.usagemetrics}}
+                              <span>
+                                <a href="" class="download-overall">
+                                  <img src="../assets/homepage/download-report.png" alt="download-report"></span>
+                                </a>
+                              </span>
+                            </div>
+                            <div class="matrix-title-desc">
+                              DIKSHA Current Usage
+                            </div>
+                            
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                52.4L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="LearningLessons">{{ site.data.text.LearningLessons }}</div>
+                              </div>
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex align-items-end">
+                        <div class="matrics-card no-heading">
+                          <div class="matrix-heading">
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                612.1L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="minutes">{{ site.data.text.minutes }}</div>
+                              </div>
+            
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph2.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex flex-column justify-content-between">
+                        <div class="matrics-card ">
+                          <div class="matrix-heading">
+                            <div class="matrix-title">
+                              Contribution Metrics
+                              <!-- <span><img src="../assets/homepage/download-report.png" alt="download-report"></span> -->
+                            </div>
+                            <div class="matrix-title-desc">
+                              DIKSHA Content Contribution
+                            </div>
+                            
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                2.43L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="contributions">{{ site.data.text.contributions }}</div>
+                              </div>
+            
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards  d-flex  justify-content-between">
+                        <div class="matrics-card">
+                          <div class="matrix-heading">
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                0.111L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="contributors">{{ site.data.text.contributors }} </div>
+                              </div>
+            
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph2.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex  justify-content-between">
+                        <div class="matrics-card">
+                          <div class="matrix-heading">
+                            <div class="matrix-title">
+                              Course Metrics
+                              <span>
+                                <a href="https://diksha.gov.in/data/reports/state_wise_course_data_public.csv" download
+                                  class="download-course"> 
+                                  <img src="../assets/homepage/download-report.png" alt="download-report">
+                              </a>
+                              </span>
+                            </div>
+                            <div class="matrix-title-desc">
+                              DIKSHA Courses & Usage
+                            </div>
+                            
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                0.166L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="courses">{{site.data.text.courses}}</div>
+                              </div>
+            
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex justify-content-between">
+                        <div class="matrics-card no-heading">
+                          <div class="matrix-heading">
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                17.12L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="Enrolments">{{site.data.text.Enrolments}}</div>
+                              </div>
+            
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph2.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex justify-content-between">
+                        <div class="matrics-card no-heading">
+                          <div class="matrix-heading">
+                          </div>
+                          <div class="matrix-details d-flex justify-content-between">
+                            <div class="matrix-num">
+                              <div class="data-matrix-number">
+                                13.92L
+                              </div>
+                              <div class="data-matrix-desc">
+                                <div class="data-lable" data-translate="completions">{{site.data.text.completions}}</div>
+                              </div>
+            
+                            </div>
+                            <div class="matrix-graph">
+                                <img src="../assets/homepage/graph2.jpg" alt="graph">
+                            </div>
+            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <ol class="carousel-indicators">      
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="1" aria-current="page" 
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="2" aria-current="page" 
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="3" aria-current="page" 
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="4" aria-current="page" 
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="5" aria-current="page" 
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="6" aria-current="page" 
+                aria-controls="carousel-items" aria-label=""></li>
+            </ol>
+              <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
         </div>
       
-    </div> -->
+    </div>
+  </div>
+  <div class="view-dashboards">  
+    <button tabindex="0" class="view-dashboard" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
+  </div>
 </div>
-
-
- 
+<!-- 
+<div class="container text-center my-3">
+  <h2 class="font-weight-light">Bootstrap 4 - Multi Item Carousel</h2>
+  <div class="row mx-auto my-auto">
+      <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+          <div class="carousel-inner w-100" role="listbox">
+              <div class="carousel-item active">
+                  <div class="col-md-4">
+                      <div class="card card-body">
+                          <img class="img-fluid" src="http://placehold.it/380?text=1">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-4">
+                      <div class="card card-body">
+                          <img class="img-fluid" src="http://placehold.it/380?text=2">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-4">
+                      <div class="card card-body">
+                          <img class="img-fluid" src="http://placehold.it/380?text=3">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-4">
+                      <div class="card card-body">
+                          <img class="img-fluid" src="http://placehold.it/380?text=4">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-4">
+                      <div class="card card-body">
+                          <img class="img-fluid" src="http://placehold.it/380?text=5">
+                      </div>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="col-md-4">
+                      <div class="card card-body">
+                          <img class="img-fluid" src="http://placehold.it/380?text=6">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
+  </div>
+  <h5 class="mt-2">Advances one slide at a time</h5>
+</div> -->
