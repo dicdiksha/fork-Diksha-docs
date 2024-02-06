@@ -538,7 +538,9 @@ $(window).resize(function () {
 
 
 /*===================== Start focus area slider==============*/
-
+$('#focus-area .carousel-item').carousel({
+  interval: 2000
+})
 $(document).ready(function(){  
   $('#focus-area .carousel-item').each(function () {
     // alert("Hello");
@@ -556,8 +558,9 @@ $(document).ready(function(){
 $('#recipeCarousel').carousel({
   interval: 2000
 })
-
-$('#recipeCarousel .carousel-item').each(function(){
+$(document).ready(function(){  
+  $('#recipeCarousel .carousel-item').each(function () {
+    // alert("Hello");
     var minPerSlide = 3;
     var next = $(this).next();
     if (!next.length) {
@@ -565,13 +568,24 @@ $('#recipeCarousel .carousel-item').each(function(){
     }
     next.children(':first-child').clone().appendTo($(this));
     
-    for (var i=0;i<minPerSlide;i++) {
-        next=next.next();
-        if (!next.length) {
-        	next = $(this).siblings(':first');
-      	}
+    for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
+})
+
+// $('#recipeCarousel .carousel-item').each(function(){
+//     var minPerSlide = 3;
+//     var next = $(this).next();
+//     if (!next.length) {
+//     next = $(this).siblings(':first');
+//     }
+//     next.children(':first-child').clone().appendTo($(this));
+    
+//     for (var i=0;i<minPerSlide;i++) {
+//         next=next.next();
+//         if (!next.length) {
+//         	next = $(this).siblings(':first');
+//       	}
         
-        next.children(':first-child').clone().appendTo($(this));
-      }
-});
+//         next.children(':first-child').clone().appendTo($(this));
+//       }
+// });
 /*=====================End diksha dashbord===============*/

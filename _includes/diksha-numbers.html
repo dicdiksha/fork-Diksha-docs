@@ -62,9 +62,8 @@
 }
 .data-matrix-desc{
   color:#6D6D6D;
-
-
 }
+
 .sr-only{
   display: none;
 }
@@ -85,6 +84,9 @@
 .matrix-details .data-matrix-desc{
   padding: 10px 0;
 
+}
+#recipeCarousel .carousel-inner{
+  height: 240px;
 }
 #recipeCarousel .carousel-control-next-icon{
   background-image: url(../assets/homepage/arrow_back.png);
@@ -118,6 +120,12 @@
     background-color: #8C8C8C;
     margin: 3px;
     border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  #recipeCarousel .carousel-inner{
+  height: auto;
+}
 }
 /*=============START SLIDER==================*/
 @media (max-width: 768px) {
@@ -167,186 +175,6 @@
       </div>
      
       <div class="row">
-        <!-- <div class="col-lg-4 d-flex justify-content-center">
-          <div class="martrics-cards d-flex flex-column justify-content-between">
-            <div class="matrics-card ">
-              <div class="matrix-heading">
-                <div class="matrix-title">
-                  Usage Metrics
-                  <span><img src="../assets/homepage/download-report.png" alt="download-report"></span>
-                </div>
-                <div class="matrix-title-desc">
-                  DIKSHA Current Usage
-                </div>
-                
-              </div>
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div class="martrics-cards d-flex align-items-end">
-            <div class="matrics-card">
-              <div class="matrix-heading">
-              </div>
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 d-flex justify-content-center">
-          <div class="martrics-cards d-flex flex-column justify-content-between">
-            <div class="matrics-card ">
-              <div class="matrix-heading">
-                <div class="matrix-title">
-                  Contribution Metrics
-                </div>
-                <div class="matrix-title-desc">
-                  DIKSHA Content Contribution
-                </div>
-                
-              </div>
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div> -->
-        <!-- <div class="col-lg-4">
-          <div class="martrics-cards  d-flex flex-column justify-content-between">
-            <div class="matrics-card d-flex flex-column justify-content-between">
-       
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="martrics-cards d-flex flex-column justify-content-between">
-            <div class="matrics-card d-flex flex-column justify-content-between">
-              <div class="matrix-heading">
-                <div class="matrix-title">
-                  Usage Metrics
-                  <span><img src="../assets/homepage/download-report.png" alt="download-report"></span>
-                </div>
-                <div class="matrix-title-desc">
-                  DIKSHA Current Usage
-                </div>
-                
-              </div>
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="martrics-cards d-flex flex-column justify-content-between">
-            <div class="matrics-card d-flex flex-column">
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="martrics-cards d-flex flex-column justify-content-between">
-            <div class="matrics-card d-flex flex-column">
-        
-              <div class="matrix-details d-flex justify-content-between">
-                <div class="matrix-num">
-                  <div class="data-matrix-number">
-                    52.4L
-                  </div>
-                  <div class="data-matrix-desc">
-                    Learning Sessions
-                  </div>
-
-                </div>
-                <div class="matrix-graph">
-                    <img src="../assets/homepage/graph.jpg" alt="graph">
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div> 
         <div class="row mx-auto my-auto">
           <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
@@ -364,15 +192,15 @@
                                 </a>
                               </span>
                             </div>
-                            <div class="matrix-title-desc">
-                              DIKSHA Current Usage
+                            <div class="matrix-title-desc" data-translate="DIKSHAUsageTillDate">
+                              {{site.data.text.DIKSHAUsageTillDate}}
                             </div>
                             
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                52.4L
+                              <div class="data-matrix-number"  title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
+                                <span class="learning-sessions mr-8" id="learningSession">
                               </div>
                               <div class="data-matrix-desc">
                                 <div class="data-lable" data-translate="LearningLessons">{{ site.data.text.LearningLessons }}</div>
@@ -395,11 +223,11 @@
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                612.1L
+                              <div class="data-matrix-number" data-placement="bottom" title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
+                                <span class="x-mins mr-8"></span>
                               </div>
                               <div class="data-matrix-desc">
-                                <div class="data-lable" data-translate="minutes">{{ site.data.text.minutes }}</div>
+                                <div class="data-lable" data-translate="hours">{{ site.data.text.hours }}</div>
                               </div>
             
                             </div>
@@ -417,19 +245,18 @@
                       <div class="martrics-cards d-flex flex-column justify-content-between">
                         <div class="matrics-card ">
                           <div class="matrix-heading">
-                            <div class="matrix-title">
-                              Contribution Metrics
-                              <!-- <span><img src="../assets/homepage/download-report.png" alt="download-report"></span> -->
+                            <div class="matrix-title" data-translate="contributionMetrics" >
+                              {{site.data.text.contributionMetrics}}
                             </div>
-                            <div class="matrix-title-desc">
-                              DIKSHA Content Contribution
+                            <div class="matrix-title-desc" data-translate="dikshaContentContribution">
+                              {{site.data.text.dikshaContentContribution}}
                             </div>
                             
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                2.43L
+                              <div class="data-matrix-number" data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
+                                <span class="total-contributions mr-8" id="totalContributions"></span>
                               </div>
                               <div class="data-matrix-desc">
                                 <div class="data-lable" data-translate="contributions">{{ site.data.text.contributions }}</div>
@@ -453,8 +280,8 @@
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                0.111L
+                              <div class="data-matrix-number" data-placement="bottom" title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
+                                <span class="total-contributors mr-8" id="totalContributors"></span>
                               </div>
                               <div class="data-matrix-desc">
                                 <div class="data-lable" data-translate="contributors">{{ site.data.text.contributors }} </div>
@@ -475,8 +302,8 @@
                       <div class="martrics-cards d-flex  justify-content-between">
                         <div class="matrics-card">
                           <div class="matrix-heading">
-                            <div class="matrix-title">
-                              Course Metrics
+                            <div class="matrix-title" data-translate="courseMetrics">
+                              {{site.data.text.courseMetrics}}
                               <span>
                                 <a href="https://diksha.gov.in/data/reports/state_wise_course_data_public.csv" download
                                   class="download-course"> 
@@ -484,15 +311,15 @@
                               </a>
                               </span>
                             </div>
-                            <div class="matrix-title-desc">
-                              DIKSHA Courses & Usage
+                            <div class="matrix-title-desc" data-translate="courseUsage">
+                              {{site.data.text.courseUsage}}
                             </div>
                             
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                0.166L
+                              <div class="data-matrix-number" data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
+                                <span class="total-courses mr-8"  id="totalCourses"></span> 
                               </div>
                               <div class="data-matrix-desc">
                                 <div class="data-lable" data-translate="courses">{{site.data.text.courses}}</div>
@@ -516,8 +343,9 @@
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                17.12L
+                              <div class="data-matrix-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
+                              title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}">
+                              <span class="total-enrolments mr-8" id="totalEnrolments"></span>
                               </div>
                               <div class="data-matrix-desc">
                                 <div class="data-lable" data-translate="Enrolments">{{site.data.text.Enrolments}}</div>
@@ -541,8 +369,9 @@
                           </div>
                           <div class="matrix-details d-flex justify-content-between">
                             <div class="matrix-num">
-                              <div class="data-matrix-number">
-                                13.92L
+                              <div class="data-matrix-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom" 
+                              title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
+                              <span class="total-completions mr-8"  id="totalCompletions"></span> 
                               </div>
                               <div class="data-matrix-desc">
                                 <div class="data-lable" data-translate="completions">{{site.data.text.completions}}</div>

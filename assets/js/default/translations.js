@@ -59,6 +59,7 @@ const languageTranslations = {
         "DIKSHAUsageTillDate": "DIKSHA current usage",
         "LearningLessons": "Learning sessions",
         "minutes": "Minutes",
+        "hours" : "Hours" ,
         "TermsofUse": "Terms and Policies",
         "needHelp": "Need Help",
         "copyright": "© 2021, DIKSHA",
