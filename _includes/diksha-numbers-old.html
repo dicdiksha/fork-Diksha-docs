@@ -1,31 +1,31 @@
-
 <style>
   .diksha-numbers .diksha-number-bg {
-      position: relative;
+    position: relative;
   }
   .diksha-numbers .diksha-number-bg .bg-img {
-      width: 100%;
+    width: 100%;
   }
   .diksha-number-bg .number-wrapper {
-      position: absolute;
-      left: 7%;
-      top: 15%;
-      width: 85%;
+    position: absolute;
+    left: 7%;
+    top: 15%;
+    width: 85%;
   }
   .dashboard-data {
-      background-color: #fff;
-      /* margin-top: 30px; */
-      padding: 10px;
-      box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
-      border-radius: 12px;
-      margin: 30px 10px;
-      height: 380px;
+    background-color: #fff;
+    /* margin-top: 30px; */
+    padding: 10px;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    border-radius: 12px;
+    margin: 30px 10px;
+    height: 380px;
   }
   .dashboard-card {
       display: flex;
       align-items: center;
       margin: 20px;
       margin: 36px 0px;
+      
   }
   .dashboard-title {
       display: flex;
@@ -45,14 +45,16 @@
   .data-title{
     color: #6D6D6D;
     font-size: 16px;
-
-}
+  }
   .diksha-numbers {
-   margin-bottom: 60px;
+   padding: 50px 0;
+   background-color: #F8F8F8;
   }
   .view-dashboards{
     display: flex;
     justify-content: center;
+    margin: 40px 0;
+
   }
   .view-dashboards button{
     font-size: 15px;
@@ -67,154 +69,526 @@
     right: 0;
     top: -53px;
   }
-  .matrix-height{
-    /* height: 380px; */
+
+  .matrix-dash {
+      background-color: #fff;
+  }
+
+  .learn-sessions {
+      display: flex;
+  } 
+  .icon-img img {
+      height: 45px;
+      width: 45px;
+  } 
+  .dashboard-head {
+      text-align: center;
+      padding: 26px;
+      font-size: 22px;
+      color: #024F9D;
+      font-family: 'Lato', sans-serif;
+      font-weight: bold;
+  }
+
+  .matrix-dash {
+      background-color: #fff;
+      margin: 0px 15px;
+      border-radius: 15px;
+      padding-top: 27px;
+      font-family: 'Outfit', sans-serif;
+      border: 1px solid #C3E8FF;
+    overflow: hidden;
+  }
+  .data-count {
+      color: #024F9D;
+      font-size: 30px;
+      font-weight: bold;
+      padding: 5px 0px
+  }
+  .data {
+    line-height: 0.8;
+  }
+
+  .data-lable {
+      color: #6D6D6D;
+      font-size: 16px;
+      padding: 5px 0px
+  }
+  .learn-sessions {
+    padding-right: 20px;
+      border: 1px solid #C3E8FF;
+      margin: 25px 0;
+      border-top-right-radius: 42px;
+      border-bottom-right-radius: 42px;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+  }
+  .icon-img {
+      border: 1px solid #024F9D;
+      border-radius: 50%;
+      padding: 6px;
+      background-color: #C3E8FF;
+  }
+  .dashboard-body .data .icon {
+      margin-left: 45px;
+  }
+  .dashboard-footer{
+    padding: 10px 20px;
+    background-color: #C3E8FF;
+      display: flex;
+      justify-content: space-between;
+  }
+  .dashboard-footer .update-report{
+    font-size: 14px;
+    color: #6D6D6D;
+    
+  }
+  .dashboard-footer .download {
+    color: #024F9D;
+    font-size: 16px;
+    cursor: pointer;
+
+  }
+
+  .dashboard-body {
+      /* margin: 55px 0; */
+      min-height: 358px;
+      height: 410px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .dashboard-container{
+    position: relative;
+    /* background-image: url(../assets/homepage/number-bg/vector1.png) ;
+    background-repeat: no-repeat;
+    background-position: right top; */
+
+  }
+  .dashboard-container .vecter-one{
+    position: absolute;
+      right: -28px;
+      top: -23px;
+      background-image: url(../assets/homepage/number-bg/vector1.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      height: 151px;
+      width: 117px;
+
+  }
+  .dashboard-container .vecter-two{
+    position: absolute;
+      right: -2%;
+      top: 48%;
+      background-image: url(../assets/homepage/number-bg/vector2.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      height: 125px;
+      width: 105px;
+
+  }
+  .dashboard-container .vecter-three{
+    position: absolute;
+      bottom: -9%;
+      right: 21%;
+      background-image: url(../assets/homepage/number-bg/vector3.png);
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      height: 100px;
+      width: 110px;
+
+  }
+  .dashboard-container .vecter-four{
+    position: absolute;
+
+      background-image: url(../assets/homepage/number-bg/vector4.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      height: 125px;
+      width: 124px;
+      bottom: -15%;
+      left: 20%;
+
+  }
+  .dashboard-container .vecter-five{
+    position: absolute;
+      left: -4%;
+      bottom: 17%;
+      background-image: url(../assets/homepage/number-bg/vector5.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      height: 146px;
+      width: 105px;
+
+  }
+  .dashboard-container .vecter-six{
+    position: absolute;
+      left: -2%;
+      top: -3%;
+      background-image: url(../assets/homepage/number-bg/vector6.png);
+      background-repeat: no-repeat;
+      background-position: right top;
+      height: 97px;
+      width: 138px;
   }
 </style>
 
 <div class="diksha-numbers">
   <div class="head-title">
-    <span class="text">DIKSHA in Numbers<span class="bottom-image"><img src="../images/img-bottom.png"></span></span>
+      <span class="text" data-translate="diksha">{{site.data.text.diksha}} </span>
+      <span class="title-diksha-color" data-translate="dashboard"> {{site.data.text.dashboard}}</span>
   </div>
-  <div class="container">     
-      <div class="container-box">
-        <div class="diksha-number-bg">
-          <img class="bg-img" src="../images/diksha-number-bg.png" alt="number-backgroud">
-          <div class="number-wrapper">
-            <div class="row row-eq-height">
-              <section class="col-md-4  col-sm-6" >
-                <div class="matrix-height">
-                  <div class="dashboard-title" data-translate="usageMetrics">{{site.data.text.usageMetrics}}</div>
+  <div class="container">
+    <div class="container-box">
+      <div class="dashboard-container">
+        <div class="vecter-one"></div>
+        <div class="vecter-two"></div>
+        <div class="vecter-three"></div>
+        <div class="vecter-four"></div>
+        <div class="vecter-five"></div>
+        <div class="vecter-six"></div>
+        <div class="row">
+          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
+            <div class="dashboard-head" data-translate="usageMetrics">
+              {{site.data.text.usageMetrics}}
+            </div>
+              <div class="matrix-dash">
+                
+                <div class="dashboard-body">
+                  <div>
+                    <div class="learn-sessions">
+                      <div class="data">
+                        <div class="data-count" title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
+                          <span class="learning-sessions mr-8" id="learningSession">
+                        </div>
+                        <div class="data-lable" data-translate="LearningLessons">{{ site.data.text.LearningLessons }}</div>
+                      </div>
+                      <div class="icon">
+                          <div class="icon-img">
+                            <img src="../assets/homepage/number-image/session.gif" alt="session gif">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="learn-sessions">
+                      <div class="data">
+                        <div class="data-count" ddata-placement="bottom" title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
+                        <span class="x-mins mr-8"></span>
+                        </div>
+                        <div class="data-lable" data-translate="minutes">
+                          {{ site.data.text.minutes }}
+                        </div>
+
+                      </div>
+                      <div class="icon">
+                          <div class="icon-img">
+                            <img src="../assets/homepage/number-image/minutes.gif" alt="session gif">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="learn-sessions">
+                      <div class="data">
+                        <div class="data-count" title="{{ site.data.text.availabilityInLast3Months }}" data-translate-attr="{availabilityInLast3Months: ['title']}">
+                          100%
+                        </div>
+                        <div class="data-lable" data-translate="application">
+                          {{ site.data.text.application }}
+                        </div>
+
+                      </div>
+                      <div class="icon">
+                          <div class="icon-img">
+                            <img src="../assets/homepage/number-image/availability.gif" alt="session gif">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dashboard-footer">
+                    <div class="update-report">
+                      <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
+                    </div>
+                    <!-- <div class="download download-overall">
+                      <a href="" data-translate="downloadReport"> {{site.data.text.downloadReport}}</a>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
+            <div class="dashboard-head" data-translate="contributionMetrics">
+              {{site.data.text.contributionMetrics}}
+            </div>
+              <div class="matrix-dash">
+                <div class="dashboard-body">
+                  <div>
+                    <div class="learn-sessions">
+                      <div class="data">
+                        <div class="data-count" data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
+                          <span class="total-contributions mr-8" id="totalContributions"></span>
+                        </div>
+                        <div class="data-lable" data-translate="contributions">
+                          {{ site.data.text.contributions }}
+                        </div>
+  
+                      </div>
+                      <div class="icon">
+                          <div class="icon-img">
+                            <img src="../assets/homepage/number-image/contribution.gif" alt="session gif">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="learn-sessions">
+                      <div class="data">
+                        <div class="data-count"  data-placement="bottom"
+                        title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
+                        <span class="total-contributors mr-8" id="totalContributors"></span>
+                        </div>
+                        <div class="data-lable" data-translate="contributors">
+                          {{ site.data.text.contributors }}
+                        </div>
+  
+                      </div>
+                      <div class="icon">
+                          <div class="icon-img">
+                            <img src="../assets/homepage/number-image/contributor.gif" alt="session gif">
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                 
+                  <div class="dashboard-footer">
+                    <div class="update-report">
+                      <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
+                    </div>
+                    <!-- <div class="download">
+                      Download Report
+                    </div> -->
+                  </div>
+                </div>
+
+              </div>
+          </div>
+          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
+            <div class="dashboard-head" data-translate="courseMetrics">
+              {{site.data.text.courseMetrics}}
+            </div>
+              <div class="matrix-dash">
+                
+                <div class="dashboard-body">
+                  <div>
+                    <div class="learn-sessions">
+                      <div class="data">
+                        <div class="data-count" data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
+                          <span class="total-courses mr-8"  id="totalCourses"></span> 
+                        </div>
+                        <div class="data-lable" data-translate="courses">
+                          {{site.data.text.courses}}
+                        </div>
+  
+                      </div>
+                      <div class="icon">
+                          <div class="icon-img">
+                            <img src="../assets/homepage/number-image/course.gif" alt="session gif">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="learn-sessions">
+                    <div class="data">
+                      <div class="data-count" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
+                      title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}">
+                      <span class="total-enrolments mr-8" id="totalEnrolments"></span>
+                      </div>
+                      <div class="data-lable" data-translate="Enrolments">
+                        {{site.data.text.Enrolments}}
+                      </div>
+  
+                    </div>
+                    <div class="icon">
+                        <div class="icon-img">
+                          <img src="../assets/homepage/number-image/enrollment.gif" alt="session gif">
+                        </div>
+                    </div>
+                  </div>
+                  <div class="learn-sessions">
+                    <div class="data">
+                      <div class="data-count" aria-live="polite" data-toggle="tooltip" data-placement="bottom" 
+                      title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
+                        <span class="total-completions mr-8"  id="totalCompletions"></span> 
+                      </div>
+                      <div class="data-lable" data-translate="completions">
+                        {{site.data.text.completions}}
+                      </div>
+  
+                    </div>
+                    <div class="icon">
+                        <div class="icon-img">
+                          <img src="../assets/homepage/number-image/completion.gif" alt="session gif">
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                <div class="dashboard-footer">
+                  <div class="update-report">
+                    <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
+                  </div>
+                  <!-- <div class="download" data-translate="downloadReport">
+                    <a href="https://diksha.gov.in/data/reports/state_wise_course_data_public.csv" download  class="download-course"> {{site.data.text.downloadReport}}</a>
+                  </div> -->
+                </div>
+                </div>
+
+              </div>
+          </div>
+        
+          
+        </div>
+      </div>
+      <div class="view-dashboards">  
+        <button tabindex="0" class="view-dashboard" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- <div class="container">     
+        <div class="container-box">
+          <div class="diksha-number-bg">
+            <img class="bg-img" src="../images/diksha-number-bg.png" alt="number-backgroud">
+            <div class="number-wrapper">
+              <div class="row row-eq-height">
+                <section class="col-md-4  col-sm-6" >
+                  <div class="matrix-height">
+                    <div class="dashboard-title">{{site.data.text.usageMetrics}}</div>
+                    <div class="dashboard-data">
+                      <div class="dashboard-card">
+                        <div class="card-logo">
+                          <img src="../assets/imgs/dashboard/learning-sessions.png" alt="live learing Sessions">
+                        </div>
+                        <div class="card-data">
+                          <div class="data-number" 
+                          title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
+                          <span class="learning-sessions mr-8" id="learningSession"></div>
+                          <div class="data-title" >{{ site.data.text.LearningLessons }}</div>
+                        </div>
+                      </div>
+                      <div class="dashboard-card">
+                        <div class="card-logo">
+                          <img src="../assets/imgs/dashboard/usage-minuts.png" alt="usage minus">
+                        </div>
+                        <div class="card-data">
+                          <div class="data-number" data-placement="bottom"
+                              title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
+                              <span class="x-mins mr-8"></span>
+                        </div>
+                          <div class="data-title">{{ site.data.text.minutes }}</div>
+                        </div>
+                      </div>
+                      <div class="dashboard-card">
+                        <div class="card-logo">
+                          <img src="../assets/imgs/dashboard/app-availiblity.png" alt="live learing Sessions">
+                        </div>
+                        <div class="card-data">
+                          <div class="data-number">100% </div>
+                          <div class="data-title">Application Availability</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="col-md-4 col-sm-6  ">
+                  <div class="matrix-height">
+                    <div class="dashboard-title">{{site.data.text.courseMetrics}}</div>
+                    <div class="dashboard-data">
+                      <div class="dashboard-card">
+                        <div class="card-logo">
+                          <img src="../assets/imgs/dashboard/enrolments.png" alt="Enrolments">
+                        </div>
+                        <div class="card-data">
+                          <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
+                          title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}"><span class="total-enrolments mr-8"
+                            id="totalEnrolments"></span>
+                          </div>
+                          <div class="data-title">{{ site.data.text.Enrolments }}</div>
+                        </div>
+                      </div>
+                      <div class="dashboard-card">
+                        <div class="card-logo">
+                          <img src="../assets/imgs/dashboard/Courses.png" alt="Courses">
+                        </div>
+                        <div class="card-data">
+                          <div class="data-number"data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
+                            <span class="total-courses mr-8"  id="totalCourses"></span>  </div>
+                          <div class="data-title">{{ site.data.text.courses }}</div>
+                        </div>
+                      </div>
+                      <div class="dashboard-card">
+                        <div class="card-logo">
+                          <img src="../assets/imgs/dashboard/course-completions.png" alt="Course Completions">
+                        </div>
+                        <div class="card-data">
+                          <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
+                            <span class="total-completions mr-8"  id="totalCompletions"></span> 
+                          </div>
+                          <div class="data-title">{{ site.data.text.completions }}</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                
+                </section>
+                <section class="col-md-4  col-sm-6">
+                  <div class="matrix-height">
+                    <div class="dashboard-title">{{site.data.text.contributionMetrics}}</div>
                   <div class="dashboard-data">
                     <div class="dashboard-card">
                       <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/learning-sessions.png" alt="live learing Sessions">
+                        <img src="../assets/imgs/dashboard/Contributions.png" alt="Contributions">
                       </div>
                       <div class="card-data">
-                        <div class="data-number" 
-                        title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
-                        <span class="learning-sessions mr-8" id="learningSession"></div>
-                        <div class="data-title"  >{{ site.data.text.LearningLessons }}</div>
+                        <div class="data-number"  data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
+                              <span class="total-contributions mr-8" id="totalContributions"></span>
+                          </div>
+                        <div class="data-title">{{ site.data.text.ContentContributions }}</div>
                       </div>
                     </div>
                     <div class="dashboard-card">
                       <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/usage-minuts.png" alt="usage minus">
+                        <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors">
                       </div>
                       <div class="card-data">
                         <div class="data-number" data-placement="bottom"
-                            title="{{ site.data.text.totalDIKSHAusage }}" data-translate-attr="{totalDIKSHAusage: ['title']}">
-                            <span class="x-mins mr-8"></span>
-                      </div>
-                        <div class="data-title">{{ site.data.text.minutes }}</div>
+                        title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
+                        <span class="total-contributors mr-8" id="totalContributors"></span></div>
+                        <div class="data-title">{{ site.data.text.ContentContributors }}</div>
                       </div>
                     </div>
+                  
                     <div class="dashboard-card">
                       <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/app-availiblity.png" alt="live learing Sessions">
-                      </div>
-                      <div class="card-data">
-                        <div class="data-number">100%</div>
-                        <div class="data-title" >Application Availability</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section class="col-md-4 col-sm-6 ">
-                <div class="matrix-height">
-                  <div class="dashboard-title" data-translate="courseMetrics">{{site.data.text.courseMetrics}}</div>
-                  <div class="dashboard-data">
-                    <div class="dashboard-card">
-                      <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/enrolments.png" alt="Enrolments">
-                      </div>
-                      <div class="card-data">
-                        <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom"
-                        title="{{ site.data.text.EnrolmentsDiksha }}" data-translate-attr="{EnrolmentsDiksha: ['title']}"><span class="total-enrolments mr-8"
-                          id="totalEnrolments"></span>
-                        </div>
-                        <div class="data-title" data-translate="Enrolments">{{ site.data.text.Enrolments }}</div>
-                      </div>
-                    </div>
-                    <div class="dashboard-card">
-                      <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/Courses.png" alt="Courses">
-                      </div>
-                      <div class="card-data">
-                        <div class="data-number" data-placement="bottom"  title="{{ site.data.text.coursesDiksha }}" data-translate-attr="{coursesDiksha: ['title']}">
-                          <span class="total-courses mr-8"  id="totalCourses"></span>  </div>
-                        <div class="data-title">{{ site.data.text.courses }}</div>
-                      </div>
-                    </div>
-                    <div class="dashboard-card">
-                      <div class="card-logo">
-                        <img src="../assets/imgs/dashboard/course-completions.png" alt="Course Completions">
-                      </div>
-                      <div class="card-data">
-                        <div class="data-number" aria-live="polite" data-toggle="tooltip" data-placement="bottom" title="{{ site.data.text.CompletionsDiksha }}" data-translate-attr="{CompletionsDiksha: ['title']}">
-                          <span class="total-completions mr-8"  id="totalCompletions"></span> 
-                        </div>
-                        <div class="data-title">{{ site.data.text.completions }}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-               
-              </section>
-              <section class="col-md-4  col-sm-6">
-                <div class="matrix-height">
-                  <div class="dashboard-title">{{site.data.text.contributionMetrics}}</div>
-                <div class="dashboard-data">
-                  <div class="dashboard-card">
-                    <div class="card-logo">
-                      <img src="../assets/imgs/dashboard/Contributions.png" alt="Contributions">
-                    </div>
-                    <div class="card-data">
-                      <div class="data-number"  data-placement="bottom" title="{{ site.data.text.contributionsDiksha }}" data-translate-attr="{contributionsDiksha: ['title']}">
-                            <span class="total-contributions mr-8" id="totalContributions"></span>
-                         </div>
-                      <div class="data-title">{{ site.data.text.ContentContributions }}</div>
-                    </div>
-                  </div>
-                  <div class="dashboard-card">
-                    <div class="card-logo">
                       <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors">
+                      </div>
+                      <div class="card-data">
+                      </div>
                     </div>
-                    <div class="card-data">
-                      <div class="data-number" data-placement="bottom"
-                      title="{{ site.data.text.contributorsDiksha }}" data-translate-attr="{contributorsDiksha: ['title']}">
-                      <span class="total-contributors mr-8" id="totalContributors"></span></div>
-                      <div class="data-title">{{ site.data.text.ContentContributors }}</div>
-                    </div>
+                  
                   </div>
-                 
-                  <div class="dashboard-card">
-                    <div class="card-logo">
-                      <!-- <img src="../assets/imgs/dashboard/usage-live-session.png" alt="Contributors"> -->
-                    </div>
-                    <div class="card-data">
-                      <!-- <div class="data-number">11,624 </div> -->
-                      <!-- <div class="data-title">Contributors</div> -->
-                    </div>
                   </div>
-                 
-                </div>
-                </div>
-                
-              </section>
-            </div>
-            <div class="view-dashboards">  
-              <button tabindex="0" class="view-dashboard-redirect" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
+                  
+                </section>
+              </div>
+              <div class="view-dashboards">  
+                <button tabindex="0" class="view-dashboard-redirect" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
+              </div>
             </div>
           </div>
+        
+        
         </div>
-       
-       
-      </div>
-    
-  </div>
+      
+    </div> -->
 </div>
 
 

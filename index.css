@@ -543,7 +543,7 @@ h3 {
     }
 }
 
-.carousel-inner .carousel-item>img {
+#homePageSlide .carousel-inner .carousel-item>img {
     width: 100%;
 }
 
