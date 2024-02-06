@@ -559,12 +559,12 @@ p {
 .jadui-pitara .head-title{
   display: flex;
   justify-content: center;
-  margin-bottom: 80px;
+  
 
 }
 .jadui-pitara {
   position: relative;
-  padding: 70px 0;
+ padding-top: 70px;
 }
 .adui-pitara-bg{
   position: relative;
@@ -632,4 +632,31 @@ img.footer-img {
   display: inline-flex;
   padding: 10px;
   color: #fff;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.cart-img {
+  min-height: 244px;
+  height: 344px;
+}
+.extion-btn span {
+  padding: 10px;
+}
+
+.action-btn-mobile {
+  background-color: #01c9ba;
+  display: inline-flex;
+  padding: 10px 15px;
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.action-btn-mobile img {
+  padding: 0 6px;
+}
+.app-section{
+  padding: 80px 0;
+
 }

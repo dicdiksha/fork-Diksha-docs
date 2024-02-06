@@ -66,6 +66,7 @@ $(document).ready(function () {
               url: totalContentPlays,
               success: function (data, textStatus, request) {
                   data = typeof data == "string" ? JSON.parse(data) : data;
+                  console.log(learningSession);
                   let val = parseInt(data.data[0]['Total Plays']).toLocaleString("en-IN");
                   $("#learningSession").text(convertMetrics(val));
                   $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
@@ -319,4 +320,8 @@ $(document).ready(function () {
     return value;
   }
 
+  getUsageMetrics();
+  getCreationMetrics();
+  getCoursesMetrics();
 });
+
