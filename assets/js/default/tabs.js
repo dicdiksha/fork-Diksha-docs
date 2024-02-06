@@ -52,9 +52,9 @@ $(document).ready(function () {
             url: totalcontenttime,
             success: function (data, textStatus, request) {
                 data = typeof data == "string" ? JSON.parse(data) : data;
-                var valInt = data.data[0]['Total Time Spent']/60;
-                $(".x-mins").text(parseInt(valInt).toLocaleString("en-IN"));
-                usageMetricsObj['xMins'] = parseInt(valInt).toLocaleString("en-IN");
+                var valInt = parseInt(data.data[0]['Total Time Spent']).toLocaleString("en-IN");
+                $(".x-mins").text(convertMetrics(valInt));
+                usageMetricsObj['xMins'] = convertMetrics(valInt);
             },
             error: function (request, textStatus, errorThrown) {
                 console.log(errorThrown);
@@ -66,9 +66,8 @@ $(document).ready(function () {
               url: totalContentPlays,
               success: function (data, textStatus, request) {
                   data = typeof data == "string" ? JSON.parse(data) : data;
-                  console.log(learningSession);
                   let val = parseInt(data.data[0]['Total Plays']).toLocaleString("en-IN");
-                  $("#learningSession").text(convertMetrics(val));
+                  $(".learning-sessions-count").text(convertMetrics(val));
                   $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
                   usageMetricsObj['learningSession'] = convertMetrics(val);
                   usageMetricsObj['updatedOn'] = $.date(request.getResponseHeader('Last-Modified'));
@@ -83,9 +82,8 @@ $(document).ready(function () {
             url: totalContributions,
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
-              console.log(data);
               let val = parseInt(data.data[0]['Total Contents']).toLocaleString("en-IN");
-              $("#totalContributions").text(convertMetrics(val));
+              $(".total-contributions-count").text(convertMetrics(val));
               $(".updatedOn").text($.date(request.getResponseHeader('Last-Modified')));
               creationMetricsObj['totalContributions'] = convertMetrics(val);
               creationMetricsObj['updatedOn'] = $.date(request.getResponseHeader('Last-Modified'));
@@ -101,7 +99,7 @@ $(document).ready(function () {
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
               let val = parseInt(data.data[0]['No of Users Contributed']).toLocaleString("en-IN");
-              $("#totalContributors").text(convertMetrics(val));
+              $(".total-contributors-count").text(convertMetrics(val));
               creationMetricsObj['totalContributors'] = convertMetrics(val);
             },
             error: function (request, textStatus, errorThrown) {
@@ -115,7 +113,7 @@ $(document).ready(function () {
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
               let val = parseInt(data.data[0]['Total Courses']).toLocaleString("en-IN");
-              $("#totalCourses").text(convertMetrics(val));
+              $(".total-courses-count").text(convertMetrics(val));
               courseMetricsObj['totalCourses'] = convertMetrics(val);
             },
             error: function (request, textStatus, errorThrown) {
@@ -129,8 +127,8 @@ $(document).ready(function () {
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
               let val = parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN");
-              $("#totalEnrolments").text(convertMetrics(val));
-              courseMetricsObj['totalEnrolments'] = convertMetrics(val);
+              $(".total-enrolments-count").text(convertMetrics(val));
+              courseMetricsObj['totalEnrolments1'] = convertMetrics(val);
             },
             error: function (request, textStatus, errorThrown) {
               console.log(errorThrown);
@@ -143,7 +141,7 @@ $(document).ready(function () {
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
               let val = parseInt(data.data[0]['Total Completions']).toLocaleString("en-IN");
-              $("#totalCompletions").text(convertMetrics(val));
+              $(".total-completions-count").text(convertMetrics(val));
               courseMetricsObj['totalCompletions'] = convertMetrics(val);
             },
             error: function (request, textStatus, errorThrown) {
@@ -266,7 +264,6 @@ $(document).ready(function () {
             url: totalCourses,
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
-              console.log(data);
               let val = parseInt(data.data[0]['Total Courses']).toLocaleString("en-IN");
               $("#totalCourses").text(convertMetrics(val));
               courseMetricsObj['totalCourses'] = convertMetrics(val);
@@ -281,7 +278,6 @@ $(document).ready(function () {
             url: totalEnrollments,
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
-              console.log(data);
               let val = parseInt(data.data[0]['Total Enrolments']).toLocaleString("en-IN");
               $("#totalEnrolments").text(convertMetrics(val));
               courseMetricsObj['totalEnrolments'] = convertMetrics(val);
@@ -296,7 +292,6 @@ $(document).ready(function () {
             url: totalCompletions,
             success: function (data, textStatus, request) {
               data = typeof data == "string" ? JSON.parse(data) : data;
-              console.log(data);
               let val = parseInt(data.data[0]['Total Completions']).toLocaleString("en-IN");
               $("#totalCompletions").text(convertMetrics(val));
               courseMetricsObj['totalCompletions'] = convertMetrics(val);
@@ -315,13 +310,8 @@ $(document).ready(function () {
   function convertMetrics(value) {
     let val = parseFloat(value.replace(/,/g, ''));
     if (val >= 10000000) return `${(val / 10000000).toFixed(2)} Cr`
-    if (val >= 100000) return `${(val / 100000).toFixed(2)} Lac`
-    if (val >=1000) return `${(val / 1000).toFixed(2)} Th`
+    if (val >= 100000) return `${(val / 100000).toFixed(2)} L`
     return value;
   }
 
-  getUsageMetrics();
-  getCreationMetrics();
-  getCoursesMetrics();
 });
-
