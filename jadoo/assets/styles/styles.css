@@ -225,7 +225,8 @@
   align-items: center;
 }
 .bg-image{
-  height: 100%;
+  /* height: 100%; */
+  height: 710px;
   width: 100%;
 }
 .intro__content p {
@@ -564,7 +565,8 @@ p {
 }
 .jadui-pitara {
   position: relative;
- padding-top: 70px;
+ /* padding-top: 70px; */
+ 
 }
 .adui-pitara-bg{
   position: relative;
@@ -665,18 +667,14 @@ img.footer-img {
   padding: 80px 0;
 
 }
-.footer-jadoo-bg{
-  background-image: url(../img/footer.png);
-  background-repeat: no-repeat;
-  position: relative;
-}
+
 .footer-jadoo-bg {
-  background-image: url(../img/footer.png);
-  background-repeat: no-repeat;
-  position: relative;
-  height: 299px;
+  background-image: url(../img/footer.png);   background-repeat: no-repeat;
+  position: relative;   
+min-height: 200px; 
+height: 200px;
   width: 100%;
-  background-size: cover;
+ background-size: cover;
 }
 
 .footer-link {
@@ -728,3 +726,4 @@ img.footer-img {
 .privacy-policy{
   font-family: 'Noto Sans';
 }
+
