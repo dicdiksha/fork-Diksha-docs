@@ -182,7 +182,8 @@
 
 .intro {
   width: 100%;
-  height: 100vh;
+  height:735px;
+  /* height: 100vh; */
   /* background-color: var(--surface-bg);  */
   /* background-position: center; */
   background-repeat: no-repeat;
@@ -253,11 +254,6 @@
   /* height: 100%; */
   position:absolute;
   left: 4%;
-}
-
-
-.intro-container  img{
-  /* width: 100%; */
 }
 
 .banner-caption{
@@ -506,11 +502,7 @@ p {
     background-position: right;
   }
 }
-@media (max-width: 767.98px) {
-  .intro::after {
-    /* background-size: 130%; */
-  }
-}
+
 @media (max-width: 767.98px) {
   .intro__content {
     height: auto;
@@ -597,7 +589,7 @@ p {
   background-image: url(../img/circle_right.png);
   background-repeat: no-repeat;
 }
-.bg-img_two {
+/* .bg-img_two {
   background-image: url(../img/circle_right.png);
   background-repeat: no-repeat;
 }
@@ -605,7 +597,7 @@ p {
   background-image: url(../img/circle_left.png);
   background-repeat: no-repeat;
 
-}
+} */
 
 .jadui-pitara-bg{
   position: relative;
@@ -727,3 +719,47 @@ height: 200px;
   font-family: 'Noto Sans';
 }
 
+.jadu-vector-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+.bg-img_one {
+  background-image: url(../img/circle_right.png);
+  left: 0;
+}
+.bg-img_two {
+  background-image: url(../img/circle_left.png);
+  right: 0;
+  background-position: right top;
+  bottom: 30px;
+}
+.bg-img_three {
+  background-image: url(../img/arrow.png);
+  left: 0;
+  bottom: -25%;
+  background-position: left bottom;
+  background-size: 35%;
+}
+.bg-img_four {
+  background-image: url(../img/circle-design.png);
+  right: 5px;
+  background-position: right bottom;
+  bottom: 0px;
+}
+.footer {
+  padding-top: 10%;
+}
+@media (max-width: 767px) {
+ 
+  .jadu-vector-img{
+    display: none;
+  }
+}
+
+.footer-pitara-img {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
