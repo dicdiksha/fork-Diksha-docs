@@ -653,10 +653,75 @@ img.footer-img {
   cursor: pointer;
 }
 
+.action-btn-mobile a {
+  color: white;
+  text-decoration: none;
+}
+
 .action-btn-mobile img {
   padding: 0 6px;
 }
 .app-section{
   padding: 80px 0;
 
+}
+.footer-jadoo-bg{
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+.footer-jadoo-bg {
+  background-image: url(../img/footer.png);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 299px;
+  width: 100%;
+  background-size: cover;
+}
+
+.footer-link {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.footer-link {
+  position: absolute;
+  left: 0;
+  top: 71px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-link ul{
+  list-style: none;
+}
+
+.footer-link ul li {
+  list-style: none;
+}
+
+.footer-link ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  font-family: "MuseoModerno", cursive, Arial, Helvetica, sans-serif;
+}
+.footer-link ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+.footer-link ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.privacy-policy{
+  border-top: 1px solid gray;
+}
+
+#downloadAppModal .modal-header{
+  border-bottom: 0;
 }
