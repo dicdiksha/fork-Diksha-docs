@@ -20,6 +20,8 @@
         padding-bottom: 3.125rem;
         justify-content: space-between;
         cursor: pointer;
+        min-height: 260px;
+
     }
     
     .focus-desc {
@@ -93,7 +95,7 @@
     width: 16px;
     margin: 3px;
     border-radius: 10px;
-
+    cursor: pointer;
 }
 
 .focus-areas .carousel-indicators .active{
@@ -181,6 +183,27 @@
     }
 
 }
+#focus-area .carousel-item.active>:nth-child(2) .focus-item{
+    background-color: hsl(43.2deg 98.43% 75.1%);
+}
+
+@media (min-width: 768px) {
+   
+   #focus-area .carousel-inner .carousel-item-right.active,
+   #focus-area .carousel-inner .carousel-item-next {
+     transform: translateX(33.333%);
+   }
+  
+   #focus-area .carousel-inner .carousel-item-left.active,
+   #focus-area .carousel-inner .carousel-item-prev {
+     transform: translateX(-33.333%);
+   }
+}
+
+#focus-area .carousel-inner .carousel-item-right,
+#focus-area .carousel-inner .carousel-item-left{
+ transform: translateX(0);
+}
 </style>
 
 
@@ -199,7 +222,7 @@
                         <div id="focus-area" class=" focus-area carousel slide" data-bs-ride="carousel">
                             <div class="carousel-inner ">
                                 <div class="carousel-item active">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="focus-item" onclick="window.location.href='/fln.html'" target="_blank">
                                             <div class="focus-desc">
                                                 <div class="focus-heading">
@@ -228,7 +251,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="focus-item" onclick="window.location.href='https://bit.ly/BhashaSangam'" target="_blank">
                                             <div class="focus-desc">
                                                 <div class="focus-heading">
@@ -257,8 +280,8 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-4">
-                                        <div class="focus-item" onclick="window.location.href='/jadoo/index.html'" target="_blank">
+                                    <div class="col-md-6 col-lg-4">
+                                        <div class="focus-item" onclick="window.location.href='https://pp-myjp.diksha.gov.in/'" target="_blank">
                                             <div class="focus-desc">
                                                 <div class="focus-heading">
                                                     <span data-translate="jaduiPitara">{{site.data.text.jaduiPitara}}</span>
@@ -286,7 +309,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="focus-item" onclick="window.location.href='/adult-education.html'" target="_blank">
                                             <div class="focus-desc">
                                                 <div class="focus-heading">
@@ -313,7 +336,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="focus-item" onclick="window.location.href='/virtuallabs.html'" target="_blank">
                                             <div class="focus-desc">
                                                 <div class="focus-heading">
@@ -341,7 +364,7 @@
                                     </div>
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6 col-lg-4">
                                         <div class="focus-item" onclick="window.location.href='/vocational-education.html'" target="_blank">
                                             <div class="focus-desc">
                                                 <div class="focus-heading">
