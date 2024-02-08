@@ -254,11 +254,6 @@
   left: 4%;
 }
 
-
-.intro-container  img{
-  /* width: 100%; */
-}
-
 .banner-caption{
   position: absolute;
   left: 0;
@@ -505,11 +500,7 @@ p {
     background-position: right;
   }
 }
-@media (max-width: 767.98px) {
-  .intro::after {
-    /* background-size: 130%; */
-  }
-}
+
 @media (max-width: 767.98px) {
   .intro__content {
     height: auto;

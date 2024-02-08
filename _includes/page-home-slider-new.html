@@ -82,9 +82,16 @@
 
 </style>
 <div class="new-home-page-slider">
-    <div id="homePageSlide" class="carousel homepage-slides" data-ride="carousel">
+    <div id="homePageSlide" class="carousel slide homepage-slides" data-bs-ride="carousel">
         <div class="carousel-inner" title="">
             <div class="carousel-item carousel3-bg active" role="option">
+                <a href="https://ejaaduipitara.ncert.gov.in/" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/jadui-pitara-new.png"
+                        alt="jadui-pitara" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg" role="option">
                 <img loading="lazy" decoding="async" class="carousel-img-height" 
                     src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/banner-diksha.png"
                     alt="DIKSHA One nation one digital platform">
@@ -101,13 +108,6 @@
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
                         src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/nipun-bharat-new.jpg"
                         alt="nipun-bharat" loading="lazy" decoding="async">
-                </a>
-            </div> 
-            <div class="carousel-item carousel3-bg " role="option">
-                <a href="/jadoo/index.html" target="_blank">
-                    <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/bannerImage/jadui-pitara-new.jpg"
-                        alt="jadui-pitara" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg " role="option">
@@ -139,29 +139,30 @@
                 </a>
             </div> 
         </div>   
-        <ol class="carousel-indicators">      
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+        <ol class="carousel-indicators">    
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="0" aria-current="page" 
+            aria-controls="carousel-items" aria-label="jadui-pitara"></li>  
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="1" aria-current="page" class="active"
             aria-controls="carousel-items" aria-label="DIKSHA One nation one digital platform"></li>
-            <!-- <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
+            <!-- <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="1" aria-current="page" 
             aria-controls="carousel-items" aria-label="vivo-ignite-banner"></li> -->
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="1" aria-current="page" 
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="2" aria-current="page" 
             aria-controls="carousel-items" aria-label="nipun-bharat"></li>
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="2" aria-current="page" 
-            aria-controls="carousel-items" aria-label="jadui-pitara"></li>
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="3" aria-current="page" 
+            
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="3" aria-current="page" 
             aria-controls="carousel-items" aria-label="vocational-education"></li>
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="4" aria-current="page" 
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="4" aria-current="page" 
             aria-controls="carousel-items" aria-label="bhasha sangam"></li>
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="5" aria-current="page" 
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="5" aria-current="page" 
             aria-controls="carousel-items" aria-label="virtual lab"></li>
-            <li data-target="#homePageSlide" tabindex="0" data-slide-to="6" aria-current="page" 
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="6" aria-current="page" 
             aria-controls="carousel-items" aria-label="adult-education"></li>
         </ol>
-        <a class="carousel-control-prev" href="#homePageSlide" role="button" data-slide="prev">
+        <a class="carousel-control-prev" href="#homePageSlide" data-bs-target="#homePageSlide" role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <!-- <span class="sr-only">Previous</span> -->
           </a>
-          <a class="carousel-control-next" href="#homePageSlide" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#homePageSlide" data-bs-target="#homePageSlide" role="button" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <!-- <span class="sr-only">Next</span> -->
           </a>
