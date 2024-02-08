@@ -182,7 +182,7 @@
 
 .intro {
   width: 100%;
-  height:735px;
+  height:660px;
   /* height: 100vh; */
   /* background-color: var(--surface-bg);  */
   /* background-position: center; */
@@ -227,7 +227,7 @@
 }
 .bg-image{
   /* height: 100%; */
-  height: 710px;
+  height: 640px;
   width: 100%;
 }
 .intro__content p {
