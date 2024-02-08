@@ -138,7 +138,7 @@ const languageTranslations = {
         "nipunBharatDesc": "National Initiative for Proficiency in Reading with Understanding and Numeracy.",
         "bhasaSangam": "Bhasha Sangam",
         "bhasaSangamDesc":" National Initiative to teach basic sentences of everyday usage in 22 Indian languages.",
-        "jaduiPitara": "eJaadui Pitara",
+        "jaduiPitara": "e-Jaadui Pitara",
         "jaduiPitaraDesc": "Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.",
         'adultEducation': "Education For All",
         "adultEducationDesc": "To impart foundational literacy and numeracy, critical life skills for Citizens",
