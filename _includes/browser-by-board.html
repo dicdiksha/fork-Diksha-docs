@@ -193,6 +193,16 @@
 
     }
 
+    .modal-header {
+      color: #024f9d;
+      border-bottom: 0px;
+      padding: 25px;
+      font-weight: bold;
+    }
+    .modal-content {
+      font-size: 23px;
+    }
+
 </style>
 <div class="explore-study">
   <div class="head-title">
@@ -265,7 +275,29 @@
   </div>
 </div>
   
-
+<!-- Modal to show validation message -->
+<div
+  class="modal fade"
+  id="myModal1"
+  tabindex="-1"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        Please select a State/UT Board !
+        <button
+          type="button"
+          class="btn-close"
+          id="btnClosePopup"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
