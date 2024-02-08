@@ -32,16 +32,16 @@ $(document).ready(function () {
   });
 
   const colorsArr = [
-    { "range": "100000000+", "color": "#08306b" },
-    { "range": "50000000+", "color": "#0a4a90" },
-    { "range": "20000000+", "color": "#1864aa" },
-    { "range": "10000000+", "color": "#2f7ebc" },
-    { "range": "5000000+", "color": "#4b97c9" },
-    { "range": "2000000+", "color": "#6daed5" },
-    { "range": "1000000+", "color": "#93c3df" },
-    { "range": "500000+", "color": "#b5d4e9" },
-    { "range": "200000+", "color": "#cfe1f2" },
-    { "range": "<200000", "color": "#e3eef9" }
+    { "range": "10000000+", "color": "#08306b" },
+    { "range": "5000000+", "color": "#0a4a90" },
+    { "range": "2000000+", "color": "#1864aa" },
+    { "range": "1000000+", "color": "#2f7ebc" },
+    { "range": "500000+", "color": "#4b97c9" },
+    { "range": "200000+", "color": "#6daed5" },
+    { "range": "100000+", "color": "#93c3df" },
+    { "range": "50000+", "color": "#b5d4e9" },
+    { "range": "20000+", "color": "#cfe1f2" },
+    { "range": "<20000", "color": "#e3eef9" }
   ];
 
 
@@ -81,7 +81,7 @@ $(document).ready(function () {
 
     $(".download-overall").on('click', function () {
       download(dataset, 'India');
-      window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'India.csv', '', '', '', '');
+      window.logInteractEvent('home', 'download', '', 'public-dashboard', 'public-dashboard', 'DeviceType', window.getDeviceTypeValue(), 'ReportName', 'UsageMetrics.csv', '', '', '', '');
       return false;
     })
 
@@ -945,29 +945,15 @@ function download(arr, state) {
 }
 
 function fnum(x) {
+
   if (isNaN(x)) {
     return x;
-  }
-
-  if (x < 99999) {
-    return x.toLocaleString('en-IN');
-  }
-
-  if (x < 1000000) {
+  } else if (x >= 10000000){
+    return Math.round((x / 10000000)) + ' Crores';
+  } else if (x >=100000) {
     return Math.round(x / 100000) + ' Lakhs';
-  }
+  } else {
+    return x.toLocaleString('en-IN');
+  } 
 
-  if (x < 10000000) {
-    return (x / 1000000).toFixed(2) + ' Million';
-  }
-
-  if (x < 1000000000) {
-    return Math.round((x / 1000000)) + ' Million';
-  }
-
-  if (x < 1000000000000) {
-    return Math.round((x / 1000000000)) + ' Billion';
-  }
-
-  return ' 1Trillion+';
 }
