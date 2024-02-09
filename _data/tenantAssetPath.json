@@ -9,6 +9,7 @@
     },
     "development": {
         "baseCdnUrl": "/assets",
-        "baseBlobUrl": "/assets"
+        "baseBlobUrl": "/assets",
+        "cdnUrl": "https://obj.diksha.gov.in/ntp-content-production/banner-image/prod/eJaaduiPitara/"
     }
 }
