@@ -1,6 +1,10 @@
    /*===================== Start onload popup==============*/
-  //  $("#banner-modal-popup").modal('show');
-
+  window.onload = function () {
+    OpenBootstrapPopup();
+  };
+  function OpenBootstrapPopup() {
+      $("#banner-modal-popup").modal('show');
+  }
   /*===================== End onload popup==============*/
 $(document).ready(function () {
   $("#banner-modal-popup").modal('show');
