@@ -790,3 +790,22 @@ html, body {
 .carousel-control-next, .carousel-control-prev{
     opacity: 1 !important;
 }
+#banner-modal-popup .banner-popup-img{
+    width: 100%;
+}
+#banner-modal-popup .modal-content{
+    position: relative;
+}
+
+#banner-modal-popup .modal-header{
+    right: 0;
+    z-index: 999;
+    position: absolute;
+}
+#banner-modal-popup .modal-body {
+    padding: 0;
+}
+#banner-modal-popup .modal-header .close {
+    background-color: transparent;
+    border: transparent;
+}
