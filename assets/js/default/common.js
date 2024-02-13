@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
 
   let origin = '';
@@ -453,9 +452,8 @@ $(document).ready(function () {
     window.open('/term-of-use.html',"_self");
     return false;
   });
-
-   /*===================== Start login button==============*/
-   $(".login-home-btn").click(function (e) {
+  /*===================== Start login button==============*/
+  $(".login-home-btn").click(function (e) {
     e.preventDefault();
     window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
     window.open('/resources', "_self");
