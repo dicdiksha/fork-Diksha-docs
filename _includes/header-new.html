@@ -1,4 +1,40 @@
 <style>
+    #banner-modal-popup {
+        z-index: 99999 !important;
+    }
+#banner-modal-popup .banner-popup-img{
+    max-width: 100%;
+  
+}
+#banner-modal-popup .modal-content{
+    position: relative;
+}
+
+#banner-modal-popup .modal-header{
+    right: 0;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    font-size: 30px;
+}
+#banner-modal-popup .modal-body {
+    padding: 0;
+}
+#banner-modal-popup .modal-header .close {
+    background-color: transparent;
+    border: transparent;
+}
+
+#banner-modal-popup .modal.show .modal-dialog {
+    transform: none;
+    width: 42% !important;
+    max-width: 40%;
+}
+#homeVideoPopup{
+    width: 100%;
+
+}
     html {
         font-family: 'Lato', sans-serif;
         font-family: 'Outfit', sans-serif;
@@ -162,6 +198,21 @@
     }
   
 </style>
+<div class="modal fade bd-example-modal-lg" id="banner-modal-popup" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}onload-popup-image.gif" alt="pop-up-img" class="banner-popup-img">
+          <!-- <img src="assets/homepage/onload-popup-image.gif" alt="pop-up-img" class="banner-popup-img"> -->
+        </div>
+      </div>
+    </div>
+  </div>
 <div class="brand-top-header">
     <div class="container">
         <div class="container-box">
