@@ -1,7 +1,13 @@
 
+   /*===================== Start onload popup==============*/
+   window.onload = function () {
+    OpenBootstrapPopup();
+  };
+  function OpenBootstrapPopup() {
+      $("#banner-modal-popup").modal('show');
+  }
+  /*===================== End onload popup==============*/
 $(document).ready(function () {
-  $("#banner-modal-popup").modal('show');
-
 
   let origin = '';
   if (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') {
