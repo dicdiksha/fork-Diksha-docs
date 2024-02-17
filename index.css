@@ -790,7 +790,8 @@ html, body {
 .carousel-control-next, .carousel-control-prev{
     opacity: 1 !important;
 }
-#banner-modal-popup .banner-popup-img{
+/* START Baner popup */
+/* #banner-modal-popup .banner-popup-img{
     width: 100%;
 }
 #banner-modal-popup .modal-content{
@@ -808,4 +809,5 @@ html, body {
 #banner-modal-popup .modal-header .close {
     background-color: transparent;
     border: transparent;
-}
+} */
+/* END Baner popup */
