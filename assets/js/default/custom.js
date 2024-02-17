@@ -197,11 +197,13 @@ $(document).ready(function () {
           $('.dashboard-states').empty();
 
           $('.dashboard-states').append('<option value="India" selected>India</option>');
+          $('.dashboard-states').append('<optgroup label="Top States">');
           let tabledata = '<table><tr><th></th><th>STATE / UT</th><th>Total Learning Sessions</th></tr>';
           topElem.forEach((element, index) => {
             $('.dashboard-states').append('<option value="' + element.name + '">' + element.name + '</option>');
             tabledata += '<tr><td>' + (index + 1) + '</td><td>' + element.name + '</td><td>' + element.value + '</td></tr>';
           });
+          $('.dashboard-states').append(' </optgroup><optgroup label="All States / UTs">');
           tabledata += '</table>';
           $('.top-states-table').html(tabledata);
           remainingElem.forEach(element => {
@@ -369,9 +371,13 @@ $(document).ready(function () {
     return date;
   };
 
-  $(".dashboard-states").on("change", function () {
+  $(".dashboard-states").on("change", function (e) {
     var types = $(this).attr("type");
-    changeLayouts($(this).children("option:selected").val(), 'dropdown', 'usage', types);
+    let use = "usage"
+    if(types){
+      use = types;
+    }
+    changeLayouts($(this).children("option:selected").val(), 'dropdown', use, types);
   });
 
   function pathClick(d, type) {
