@@ -961,5 +961,4 @@ function fnum(x) {
   } else {
     return x.toLocaleString('en-IN');
   } 
-
 }
