@@ -335,7 +335,7 @@ const languageTranslations = {
         "language": "বাংলা",
         "diksha": "DIKSHA",
         "govofIndia": "ভারত সরকার",
-        "dikshamoto": "ডিজিটাল ইনফ্রাস্ট্রাকচার ফর নলেজ শেয়ারিং",
+        "dikshamoto": "জ্ঞান বিনিময়ের জন্য ডিজিটাল পরিকাঠামো",
         "dikshaDescription": "এটি জাতীয় শিক্ষা পরিষদ এবং প্রশিক্ষণ কাউন্সিলের একটি উদ্যোগ (শিক্ষা মন্ত্রনালয়, ভারত সরকার)",
         "btnExploreDiksha": "DIKSHA - তে এক্সপ্লোর করুন",
         "explore": "এক্সপ্লোর করুন",
