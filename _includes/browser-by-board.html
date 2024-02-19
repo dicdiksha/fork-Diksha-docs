@@ -193,16 +193,11 @@
 
     }
 
-    .modal-header {
-      color: #024f9d;
-      border-bottom: 0px;
-      padding: 25px;
-      font-weight: bold;
-    }
-    .modal-content {
-      font-size: 23px;
-    }
-
+  span#error-msg {
+    display: none;
+    padding: 0 10px;
+    text-align: end;
+  }
 </style>
 <div class="explore-study">
   <div class="head-title">
@@ -241,63 +236,53 @@
         {% endfor %}
           
         <div class="col-lg-3 col-md-6 col-sm-12 my-10">
-            <div class="item">
-                <div class="img-title">
-                    <div class="item-img">
-                      <img src="/assets/homepage/all-state.png" alt="UT-Borad">
-                    </div>
-                    <div class="title-dropdown">
-                        <div class="item-desc-title" data-translate="stateboard">{{site.data.text.stateboard}}</div>
-                        <div class="state-dropdown">
-                          <select name="state" id="state" class="state-boards" tabindex="0" aria-label="{{ site.data.text.selectState }}" role="presentation" title="state name">
-                            <option value="Select State" selected>Select State</option>
-                          </select>
-                        </div>
-                    </div>
+          <div class="item">
+            <div class="img-title">
+              <div class="item-img">
+                <img src="/assets/homepage/all-state.png" alt="UT-Borad" />
+              </div>
+              <div class="title-dropdown">
+                <div class="item-desc-title" data-translate="stateboard">
+                  {{site.data.text.stateboard}}
                 </div>
-                <div class="item-desc">
-                  <div class="item-desc-detail" data-translate="stateboardDescription">{{ site.data.text.stateboardDescription}}</div>
-                  <div class="items-deopdown">
-                  </div>
+                <div class="state-dropdown">
+                  <select
+                    name="state"
+                    id="state"
+                    class="state-boards"
+                    tabindex="0"
+                    aria-label="{{ site.data.text.selectState }}"
+                    role="presentation"
+                    title="state name"
+                  >
+                    <option value="Select State" selected>Select State</option>
+                  </select>
                 </div>
-                <div class="item-action">
-                  <div class="view_more state-explore" >
-                    
-                    <span  data-translate="viewMore">{{site.data.text.viewMore}}</span> 
-                    <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
-
-                  </div>
-                </div> 
+              </div>
             </div>
+            <span class="text-danger" id="error-msg">Please select a State/UT Board</span>
+            <div class="item-desc">
+              <div
+                class="item-desc-detail"
+                data-translate="stateboardDescription"
+              >
+                {{ site.data.text.stateboardDescription}}
+              </div>
+              <div class="items-deopdown"></div>
+            </div>
+            <div class="item-action">
+              <div class="view_more state-explore" id="stateExplore1">
+                <span data-translate="viewMore"
+                  >{{site.data.text.viewMore}}</span
+                >
+                <span class="ml-5">
+                  <img src="../assets/homepage/view-more.png" alt="view-more" />
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> 
   </div>
 </div>
-  
-<!-- Modal to show validation message -->
-<div
-  class="modal fade"
-  id="myModal1"
-  tabindex="-1"
-  aria-labelledby="myModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-md">
-    <div class="modal-content">
-      <div class="modal-header">
-        Please select a State/UT Board !
-        <button
-          type="button"
-          class="btn-close"
-          id="btnClosePopup"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-

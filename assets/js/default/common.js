@@ -1,14 +1,5 @@
 
-   /*===================== Start onload popup==============*/
-   window.onload = function () {
-    OpenBootstrapPopup();
-  };
-  function OpenBootstrapPopup() {
-      $("#banner-modal-popup").modal('show');
-  }
-  /*===================== End onload popup==============*/
 $(document).ready(function () {
-
   let origin = '';
   if (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') {
     origin = window.origin;
@@ -413,17 +404,15 @@ $(document).ready(function () {
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
+    let validationMessage = document.getElementById("error-msg");
     if(slug) {
       window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       window.open('/' + slug + '/explore' , "_self");
+      validationMessage.style.display = "none";
     } else {
-      $("#myModal1").modal('show');
+      validationMessage.style.display = "block";
     }
     return false;
-  });
-
-  $("#btnClosePopup").click(function () {
-    $("#myModal1").modal('hide');
   });
 
   $(".nonstate-explore").click(async(e) =>{
@@ -551,19 +540,6 @@ $(window).resize(function () {
 
 
 /*===================== Start focus area slider==============*/
-
-// $(document).ready(function(){  
-//   $('#focus-area .carousel-item').each(function () {
-//     // alert("Hello");
-//     var minPerSlide = 3;
-//     var next = $(this).next();
-//     if (!next.length) {
-//     next = $(this).siblings(':first');
-//     }
-//     next.children(':first-child').clone().appendTo($(this));
-
-//     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
-// })
 
 $('#focus-area').carousel({
   interval: 2000
