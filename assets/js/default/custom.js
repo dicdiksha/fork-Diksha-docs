@@ -400,6 +400,7 @@ $(document).ready(function () {
       d3.selectAll('.map_tooltip').remove();
       d3.selectAll('.tooltip').remove();
       $(".minutes-of-usage").hide();
+      $(".usage-all-contents").hide();
       generateStateWiseTopoGraph(stateObj[0], callType);
       if (callType === 'usage' || type == 'usage') {
         generateStateWiseTrendLine(stateObj[0]);
@@ -420,6 +421,7 @@ $(document).ready(function () {
       d3.selectAll('.map_tooltip').remove();
       d3.selectAll('.tooltip').remove();
       $(".minutes-of-usage").show();
+      $(".usage-all-contents").show();
       switch (callType || type) {
         case 'usage': generateTopoGraphMap(use); $(".state-wise-value").hide(); $(".state-ut-text").show(); break;
         case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); getTotalEnrollments(); break;
