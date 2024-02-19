@@ -48,10 +48,12 @@
 }
 
 #focus-area .carousel-control-next{
-    right: 43%
+    /* right: 43% */
+    right: -10%;
 }
 #focus-area .carousel-control-prev{
-    left: 44%
+    /* left: 44% */
+    left: -10%;
 }
 
 /* #myCarousel .carousel-control-next,
@@ -63,13 +65,21 @@
 } */
 
 #focus-area .carousel-control-next-icon {
-    background-image: url(../assets/homepage/arrow_back.png);
+    /* background-image: url(../assets/homepage/arrow_back.png); */
     background-repeat: no-repeat;
+    background-color: #024F9D;
+    height: 20px;
+    width: 20px;
+    padding: 7px;
 }
 
 #focus-area .carousel-control-prev-icon {
-    background-image: url(../assets/homepage/arrow_prev.png);
-    background-repeat: no-repeat;
+    /* background-image: url(../assets/homepage/arrow_prev.png);
+    background-repeat: no-repeat; */
+    background-color: #024F9D;
+    height: 20px;
+    width: 20px;
+    padding: 7px;
 }
 
 /* #myCarousel .carousel-control-prev-icon,
@@ -129,7 +139,10 @@
      /* -webkit-transform .3s ease-in; */
     /* transition: none !important; */
 }
-
+#focus-area .carousel-control-prev,
+    #focus-area .carousel-control-next{
+        display: none;
+    }
 #focus-area .carousel-inner .carousel-item.active,
 #focus-area .carousel-inner .carousel-item-start,
 #focus-area .carousel-inner .carousel-item-next,
@@ -139,10 +152,12 @@
 @media (min-width: 768px) {
    
     #focus-area .carousel-control-next {
-        right: 37%;
+        /* right: 37%; */
+        right: -10%;
     }
     #focus-area .carousel-control-prev {
-        left: 40%;
+        /* left: 40%; */
+        left: -10%;
     }
 }
 
@@ -170,16 +185,23 @@
     .focus-item {
     width: 92%;
     }
+    #focus-area .carousel-control-prev,
+    #focus-area .carousel-control-next{
+        display: block;
+        opacity: 0.4 !important;
+    }
     .focus-desc .focus-details{
         padding-right: 5px;
         margin-top: 12px;
 
     }
     #focus-area .carousel-control-next {
-        right: 27%;
+        /* right: 27%; */
+        right: -10%;
     }
     #focus-area .carousel-control-prev {
-        left: 27%;
+        /* left: 27%; */
+        left: -10%;
     }
 
 }
@@ -391,6 +413,14 @@
                                     </div>
                                 </div>
                             </div>
+                            <button class="carousel-control-prev" type="button" data-target="#focus-area" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-target="#focus-area" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
                             <ol class="carousel-indicators">      
                                 <li data-target="#focus-area" tabindex="0" data-slide-to="0" aria-current="page" class="active"
                                 aria-controls="carousel-items" aria-label=""></li>

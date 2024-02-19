@@ -585,7 +585,7 @@ $(document).ready(function(){
 })
 /*=====================End focus area slider==============*/
 
-$('#recipeCarousel').carousel({
+$('#recipeCarousel').carousel({ 
   interval: 2000
 })
 $(document).ready(function(){  
