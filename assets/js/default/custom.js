@@ -957,8 +957,13 @@ function fnum(x) {
     return Math.round(x / 100000) + ' Lakhs';
   }
 
-  if (x < 10000000) {
-    return (x / 1000000).toFixed(2) + ' Million';
+  //if (x > 1000001 || x < 10000000) {
+  //  return (x / 1000000).toFixed(2) + ' Lakhs';
+  //}
+
+  // Check if the number is in the millions range
+  if (x >= 1000000 && x < 1000000000) {
+    return Math.round(x / 100000) + ' Lakhs';
   }
 
   if (x < 1000000000) {
