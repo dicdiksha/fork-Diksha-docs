@@ -1,4 +1,11 @@
-
+   /*===================== Start onload popup==============*/
+  window.onload = function () {
+    OpenBootstrapPopup();
+  };
+  function OpenBootstrapPopup() {
+      $("#banner-modal-popup").modal('show');
+  }
+  /*===================== End onload popup==============*/
 $(document).ready(function () {
 
   let origin = '';
@@ -406,11 +413,18 @@ $(document).ready(function () {
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
-    window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
     if(slug) {
+      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       window.open('/' + slug + '/explore' , "_self");
+      // $("#myModal").modal();
+    } else {
+      $("#myModal1").modal('show');
     }
     return false;
+  });
+
+  $("#btnClosePopup").click(function () {
+    $("#myModal1").modal('hide');
   });
 
   $(".nonstate-explore").click(async(e) =>{
@@ -538,9 +552,44 @@ $(window).resize(function () {
 
 
 /*===================== Start focus area slider==============*/
+// $('#focus-area .carousel-item').carousel({
+//   interval: 2000
+// })
+// $(document).ready(function(){  
+//   $('#focus-area .carousel-item').each(function () {
+//     // alert("Hello");
+//     var minPerSlide = 3;
+//     var next = $(this).next();
+//     if (!next.length) {
+//     next = $(this).siblings(':first');
+//     }
+//     next.children(':first-child').clone().appendTo($(this));
+    
+//     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
+// })
 
+$('#focus-area').carousel({
+  interval: 2000
+})
 $(document).ready(function(){  
   $('#focus-area .carousel-item').each(function () {
+    // alert("Hello");
+    var fMinPerSlide = 3;
+    var fnext = $(this).next();
+    if (!fnext.length) {
+    fnext = $(this).siblings(':first');
+    }
+    fnext.children(':first-child').clone().appendTo($(this));
+   
+    for (var j = 0; j < fMinPerSlide; j++) { fnext=fnext.next(); if (!fnext.length) { fnext=$(this).siblings(':first'); } fnext.children(':first-child').clone().appendTo($(this)); } });
+})
+/*=====================End focus area slider==============*/
+
+$('#recipeCarousel').carousel({
+  interval: 2000
+})
+$(document).ready(function(){  
+  $('#recipeCarousel .carousel-item').each(function () {
     // alert("Hello");
     var minPerSlide = 3;
     var next = $(this).next();
@@ -551,4 +600,22 @@ $(document).ready(function(){
     
     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 })
-/*=====================End focus area slider==============*/
+
+// $('#recipeCarousel .carousel-item').each(function(){
+//     var minPerSlide = 3;
+//     var next = $(this).next();
+//     if (!next.length) {
+//     next = $(this).siblings(':first');
+//     }
+//     next.children(':first-child').clone().appendTo($(this));
+    
+//     for (var i=0;i<minPerSlide;i++) {
+//         next=next.next();
+//         if (!next.length) {
+//         	next = $(this).siblings(':first');
+//       	}
+        
+//         next.children(':first-child').clone().appendTo($(this));
+//       }
+// });
+/*=====================End diksha dashbord===============*/
