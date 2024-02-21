@@ -839,4 +839,22 @@ $(document).ready(function () {
         })
     });
 
+    /*===================== Start focus area slider==============*/
+
+        $('#focus-area').carousel({
+            interval: 2000
+        })
+        $(document).ready(function(){  
+            $('#focus-area .carousel-item').each(function () {
+            var fMinPerSlide = 3;
+            var fnext = $(this).next();
+            if (!fnext.length) {
+            fnext = $(this).siblings(':first');
+            }
+            fnext.children(':first-child').clone().appendTo($(this));
+            
+            for (var j = 0; j < fMinPerSlide; j++) { fnext=fnext.next(); if (!fnext.length) { fnext=$(this).siblings(':first'); } fnext.children(':first-child').clone().appendTo($(this)); } });
+        })
+    /*=====================End focus area slider==============*/
+
 });
