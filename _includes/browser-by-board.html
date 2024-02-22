@@ -215,6 +215,11 @@
     padding: 0 10px;
     text-align: end;
   }
+
+  .state-err-msg {
+    height:10px;
+  }
+  
 </style>
 <div class="explore-study">
   <div class="head-title">
@@ -304,7 +309,9 @@
                 </div>
               </div>
             </div>
-            <span class="text-danger" id="error-msg">Please select a State/UT Board</span>
+            <div class="state-err-msg">
+              <span class="text-danger" id="error-msg">Please select a State/UT Board</span>
+            </div>
             <div class="item-desc">
               <div
                 class="item-desc-detail"
@@ -331,28 +338,5 @@
   </div>
 </div>
 
-<div
-  class="modal fade"
-  id="myModal1"
-  tabindex="-1"
-  aria-labelledby="myModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered modal-md">
-    <div class="modal-content">
-      <div class="modal-header">
-        Please select a State/UT Board !
-        <!-- <span><img src="../assets/homepage/exclamation-triangle.svg" alt="warning"></span> Warning -->
-        <button
-          type="button"
-          class="btn-close"
-          id="btnClosePopup"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
