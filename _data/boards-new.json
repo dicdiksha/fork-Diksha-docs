@@ -5,7 +5,7 @@
             "slug": "ncert",
             "url": "/ncert/explore",
             "btntitle": "Explore",
-            "thumbnail": "homepage/ncert.png",
+            "thumbnail": "assets/homepage/ncert.png",
             "description": "Explore content published by NCERT <br> (National Council of Educational Research and Training)"
         },
         {
@@ -13,7 +13,7 @@
             "slug": "cbse",
             "url": "/cbse/explore",
             "btntitle": "Explore",
-            "thumbnail": "homepage/cbse.png",
+            "thumbnail": "assets/homepage/cbse.png",
             "description": "Explore content published by CBSE <br> (Central Board of Secondary Education)"
         },
         {
@@ -21,7 +21,7 @@
             "slug": "nios",
             "url": "/nios/explore",
             "btntitle": "Explore",
-            "thumbnail": "homepage/nios.png",
+            "thumbnail": "assets/homepage/nios.png",
             "description": "Explore content published by NIOS <br> (The National Institute of Open Schooling)"
         }
 

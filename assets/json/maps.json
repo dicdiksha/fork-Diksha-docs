@@ -2,230 +2,230 @@
     "MAP_META": {
         "India": {
             "name": "India",
-            "geoDataFile": "/assets/maps/india.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/india.json",
             "mapType": "country",
             "graphObjectName": "india"
         },
         "Andaman & Nicobar Islands": {
             "name": "Andaman and Nicobar Islands",
-            "geoDataFile": "/assets/maps/andamannicobarislands.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/andamannicobarislands.json",
             "mapType": "state",
             "graphObjectName": "andamannicobarislands_district"
         },
         "Arunachal Pradesh": {
             "name": "Arunachal Pradesh",
-            "geoDataFile": "/assets/maps/arunachalpradesh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/arunachalpradesh.json",
             "mapType": "state",
             "graphObjectName": "arunachalpradesh_district"
         },
         "Andhra Pradesh": {
             "name": "Andhra Pradesh",
-            "geoDataFile": "/assets/maps/andhrapradesh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/andhrapradesh.json",
             "mapType": "state",
             "graphObjectName": "andhrapradesh_district"
         },
         "Assam": {
             "name": "Assam",
-            "geoDataFile": "/assets/maps/assam.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/assam.json",
             "mapType": "state",
             "graphObjectName": "assam_district"
         },
         "Bihar": {
             "name": "Bihar",
-            "geoDataFile": "/assets/maps/bihar.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/bihar.json",
             "mapType": "state",
             "graphObjectName": "bihar_district"
         },
         "Chandigarh": {
             "name": "Chandigarh",
-            "geoDataFile": "/assets/maps/chandigarh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/chandigarh.json",
             "mapType": "state",
             "graphObjectName": "chandigarh_district"
         },
         "Chhattisgarh": {
             "name": "Chhattisgarh",
-            "geoDataFile": "/assets/maps/chhattisgarh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/chhattisgarh.json",
             "mapType": "state",
             "graphObjectName": "chhattisgarh_district"
         },
         "Dadra and Nagar Haveli and Daman and Diu": {
             "name": "Dadra and Nagar Haveli and Daman and Diu.json",
-            "geoDataFile": "/assets/maps/dadranagarhaveli.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/dadranagarhaveli.json",
             "mapType": "state",
             "graphObjectName": "dadranagarhaveli_district"
         },
         "Daman & Diu": {
             "name": "Daman and Diu",
-            "geoDataFile": "/assets/maps/damanDiu.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/damanDiu.json",
             "mapType": "state",
             "graphObjectName": "damandiu_district"
         },
         "Delhi": {
             "name": "Delhi",
-            "geoDataFile": "/assets/maps/delhi.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/delhi.json",
             "mapType": "state",
             "graphObjectName": "delhi_district"
         },
         "Karnataka": {
             "name": "Karnataka",
-            "geoDataFile": "/assets/maps/karnataka.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/karnataka.json",
             "mapType": "state",
             "graphObjectName": "karnataka_district"
         },
         "Kerala": {
             "name": "Kerala",
-            "geoDataFile": "/assets/maps/kerala.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/kerala.json",
             "mapType": "state",
             "graphObjectName": "kerala_district"
         },
         "Goa": {
             "name": "Goa",
-            "geoDataFile": "/assets/maps/goa.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/goa.json",
             "mapType": "state",
             "graphObjectName": "goa_district"
         },
         "Gujarat": {
             "name": "Gujarat",
-            "geoDataFile": "/assets/maps/gujarat.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/gujarat.json",
             "mapType": "state",
             "graphObjectName": "gujarat_district"
         },
         "Haryana": {
             "name": "Haryana",
-            "geoDataFile": "/assets/maps/haryana.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/haryana.json",
             "mapType": "state",
             "graphObjectName": "haryana_district"
         },
         "Himachal Pradesh": {
             "name": "Himachal Pradesh",
-            "geoDataFile": "/assets/maps/himachalpradesh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/himachalpradesh.json",
             "mapType": "state",
             "graphObjectName": "himachalpradesh_district"
         },
         "Jammu And Kashmir": {
             "name": "Jammu and Kashmir",
-            "geoDataFile": "/assets/maps/jammukashmir.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/jammukashmir.json",
             "mapType": "state",
             "graphObjectName": "jammukashmir_district"
         },
         "Jharkhand": {
             "name": "Jharkhand",
-            "geoDataFile": "/assets/maps/jharkhand.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/jharkhand.json",
             "mapType": "state",
             "graphObjectName": "jharkhand_district"
         },
         "Ladakh": {
             "name": "Ladakh",
-            "geoDataFile": "/assets/maps/ladakh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/ladakh.json",
             "mapType": "state",
             "graphObjectName": "ladakh_district"
         },
         "Lakshadweep": {
             "name": "Lakshadweep",
-            "geoDataFile": "/assets/maps/lakshadweep.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/lakshadweep.json",
             "mapType": "state",
             "graphObjectName": "lakshadweep_district"
         },
         "Madhya Pradesh": {
             "name": "Madhya Pradesh",
-            "geoDataFile": "/assets/maps/madhyapradesh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/madhyapradesh.json",
             "mapType": "state",
             "graphObjectName": "madhyapradesh_district"
         },
         "Maharashtra": {
             "name": "Maharashtra",
-            "geoDataFile": "/assets/maps/maharashtra.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/maharashtra.json",
             "mapType": "state",
             "graphObjectName": "maharashtra_district"
         },
         "Manipur": {
             "name": "Manipur",
-            "geoDataFile": "/assets/maps/manipur.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/manipur.json",
             "mapType": "state",
             "graphObjectName": "manipur_district"
         },
         "Meghalaya": {
             "name": "Meghalaya",
-            "geoDataFile": "/assets/maps/meghalaya.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/meghalaya.json",
             "mapType": "state",
             "graphObjectName": "meghalaya_district"
         },
         "Mizoram": {
             "name": "Mizoram",
-            "geoDataFile": "/assets/maps/mizoram.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/mizoram.json",
             "mapType": "state",
             "graphObjectName": "mizoram_district"
         },
         "Nagaland": {
             "name": "Nagaland",
-            "geoDataFile": "/assets/maps/nagaland.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/nagaland.json",
             "mapType": "state",
             "graphObjectName": "nagaland_district"
         },
         "Odisha": {
             "name": "Odisha",
-            "geoDataFile": "/assets/maps/odisha.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/odisha.json",
             "mapType": "state",
             "graphObjectName": "odisha_district"
         },
         "Pondicherry": {
             "name": "Pondicherry",
-            "geoDataFile": "/assets/maps/puducherry.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/puducherry.json",
             "mapType": "state",
             "graphObjectName": "puducherry_district"
         },
         "Punjab": {
             "name": "Punjab",
-            "geoDataFile": "/assets/maps/punjab.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/punjab.json",
             "mapType": "state",
             "graphObjectName": "punjab_district"
         },
         "Rajasthan": {
             "name": "Rajasthan",
-            "geoDataFile": "/assets/maps/rajasthan.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/rajasthan.json",
             "mapType": "state",
             "graphObjectName": "rajasthan_district"
         },
         "Sikkim": {
             "name": "Sikkim",
-            "geoDataFile": "/assets/maps/sikkim.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/sikkim.json",
             "mapType": "state",
             "graphObjectName": "sikkim_district"
         },
         "Tamil Nadu": {
             "name": "Tamil Nadu",
-            "geoDataFile": "/assets/maps/tamilnadu.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/tamilnadu.json",
             "mapType": "state",
             "graphObjectName": "tamilnadu_district"
         },
         "Telangana": {
             "name": "Telangana",
-            "geoDataFile": "/assets/maps/telangana.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/telangana.json",
             "mapType": "state",
             "graphObjectName": "telangana_district"
         },
         "Tripura": {
             "name": "Tripura",
-            "geoDataFile": "/assets/maps/tripura.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/tripura.json",
             "mapType": "state",
             "graphObjectName": "tripura_district"
         },
         "Uttarakhand": {
             "name": "Uttarakhand",
-            "geoDataFile": "/assets/maps/uttarakhand.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/uttarakhand.json",
             "mapType": "state",
             "graphObjectName": "uttarakhand_district"
         },
         "Uttar Pradesh": {
             "name": "Uttar Pradesh",
-            "geoDataFile": "/assets/maps/uttarpradesh.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/uttarpradesh.json",
             "mapType": "state",
             "graphObjectName": "uttarpradesh_district"
         },
 
         "West Bengal": {
             "name": "West Bengal",
-            "geoDataFile": "/assets/maps/westbengal.json",
+            "geoDataFile": "https://obj.diksha.gov.in/ntp-content-production/homepage/prod/stateJsonData/westbengal.json",
             "mapType": "state",
             "graphObjectName": "westbengal_district"
         }
