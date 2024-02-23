@@ -3,11 +3,6 @@
         padding: 3.125rem 0;
         background-color: #ECF6FF;
     }
-    .focus-items{
-        font-family: 'Outfit', sans-serif;
-        display: flex;
-        flex-wrap: wrap;
-    }
     .focus-item{
         background-color: #fff;
         box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
@@ -15,15 +10,13 @@
         margin: 0.625rem;
         border-radius: 0.9375rem;
         padding: 0.625rem;
-        /* width: 430px; */
         color: #202124;
         padding-bottom: 3.125rem;
         justify-content: space-between;
         cursor: pointer;
-        min-height: 260px;
-
-    }
-    
+        height: 270px;
+        max-height: 290px !important;
+    } 
     .focus-desc {
     display: flex;
     flex-direction: column;
@@ -38,6 +31,27 @@
         padding-right: 1.125rem;
         padding-top: 10px;
     }
+    .read-more {
+        color: #024F9D;
+        font-size: 0.875rem;
+        font-weight: bold;
+    }
+    .read-more span {
+        padding: 0 0.3125rem;
+    }
+    .focus-heading .focus-border-bottom {
+        position: absolute;
+        left: 0;
+        height: 7px;
+        width: 30%;
+        background-color: #024F9D;
+        border-radius: 10px;
+    }
+    .focus-item:hover {
+        background-color: hsl(43.2deg 98.43% 75.1%);
+    }
+    .focus-area-carousel .carousel-control-prev,
+    .focus-area-carousel .carousel-control-next{
 .read-more {
     color: #024F9D;
     font-size: 0.875rem;
@@ -143,89 +157,69 @@
     #focus-area .carousel-control-next{
         display: none;
     }
-#focus-area .carousel-inner .carousel-item.active,
-#focus-area .carousel-inner .carousel-item-start,
-#focus-area .carousel-inner .carousel-item-next,
-#focus-area .carousel-inner .carousel-item-prev {
-    display: flex;
-}
-@media (min-width: 768px) {
-   
-    #focus-area .carousel-control-next {
-        /* right: 37%; */
-        right: -10%;
+    .focus-area-carousel .carousel-item.active>:nth-child(2) .focus-item{
+        background-color: hsl(43.2deg 98.43% 75.1%);
     }
-    #focus-area .carousel-control-prev {
-        /* left: 40%; */
-        left: -10%;
+    .focus-area-carousel .carousel-indicators{
+        bottom: -25px !important;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
     }
-}
-
-@media (max-width: 768px) {
-    #focus-area .carousel-inner .carousel-item>div {
-        display: none;
+    .focus-area-carousel .carousel-indicators [data-bs-target]{
+        background-color: #8C8C8C;
+        height: 6px;
+        width: 16px;
+        margin: 3px;
+        border-radius: 10px !important;
+        border: 0 !important;
     }
-
-    #focus-area .carousel-inner .carousel-item>div:first-child {
-        display: block;
+    .focus-area-carousel .carousel-indicators [data-bs-target].active{
+        height: 9px;
+        width: 24px;
+        background-color: #024F9D;
     }
-    .focus-item {
-    width: 94%;
+    @media (max-width: 767px) {
+	    .focus-area-carousel .carousel-inner .carousel-item > div {
+			display: none;
+		}
+        .focus-area-carousel .carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+	}
+	.focus-area-carousel .carousel-inner .carousel-item.active,
+    .focus-area-carousel .carousel-inner .carousel-item-next,
+    .focus-area-carousel .carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+    @media (max-width: 576px){
+        .focus-area-carousel .carousel-control-prev,
+        .focus-area-carousel .carousel-control-next{
+            display: block;
+            top: 45%;
+            opacity: 1 !important;
+        }
+        .focus-area-carousel .carousel-control-prev{
+            left: -10%;
+        }
+        .focus-area-carousel .carousel-control-next{
+            right: -10%;
+        }
+        .focus-area-carousel .carousel-control-prev-icon,
+        .focus-area-carousel .carousel-control-next-icon {
+            background-color: #024F9D;
+            height: 20px;
+            width: 20px;
+            padding: 7px;
+            color: #ffffff;
+        }
     }
-
-    .focus-areas {
-    margin-left: 0%;
-    /* position: relative; */
+    @media (max-width: 350px){
+        .focus-item{
+            height: auto;
+            max-height: unset !important ;
+        }
     }
-
-}
-
-
-@media (max-width: 620px) {
-    .focus-item {
-    width: 92%;
-    }
-    #focus-area .carousel-control-prev,
-    #focus-area .carousel-control-next{
-        display: block;
-        opacity: 0.4 !important;
-    }
-    .focus-desc .focus-details{
-        padding-right: 5px;
-        margin-top: 12px;
-
-    }
-    #focus-area .carousel-control-next {
-        /* right: 27%; */
-        right: -10%;
-    }
-    #focus-area .carousel-control-prev {
-        /* left: 27%; */
-        left: -10%;
-    }
-
-}
-#focus-area .carousel-item.active>:nth-child(2) .focus-item{
-    background-color: hsl(43.2deg 98.43% 75.1%);
-}
-
-@media (min-width: 768px) {
-   
-   #focus-area .carousel-inner .carousel-item-right.active,
-   #focus-area .carousel-inner .carousel-item-next {
-     transform: translateX(33.333%);
-   }
-  
-   #focus-area .carousel-inner .carousel-item-left.active,
-   #focus-area .carousel-inner .carousel-item-prev {
-     transform: translateX(-33.333%);
-   }
-}
-
-#focus-area .carousel-inner .carousel-item-right,
-#focus-area .carousel-inner .carousel-item-left{
- transform: translateX(0);
-}
 </style>
 
 
@@ -413,41 +407,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-target="#focus-area" data-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-target="#focus-area" data-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                              </button>
-                            <ol class="carousel-indicators">      
-                                <li data-target="#focus-area" tabindex="0" data-slide-to="0" aria-current="page" class="active"
-                                aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#focus-area" tabindex="0" data-slide-to="1" aria-current="page"
-                                aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#focus-area" tabindex="0" data-slide-to="2" aria-current="page"
-                                aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#focus-area" tabindex="0" data-slide-to="3" aria-current="page"
-                                aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#focus-area" tabindex="0" data-slide-to="4" aria-current="page"
-                                aria-controls="carousel-items" aria-label=""></li>
-                                <li data-target="#focus-area" tabindex="0" data-slide-to="5" aria-current="page"
-                                aria-controls="carousel-items" aria-label=""></li>
-                            </ol>
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button> -->
-                            
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#focusAreaCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#focusAreaCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
             </div>
-        </div>
+        </div>		
     </div>
 </div>
