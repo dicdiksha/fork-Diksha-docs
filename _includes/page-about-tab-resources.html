@@ -3,7 +3,7 @@
 <div class="card">
     <div class="d-flex flex-ai-center">
       <div class="inner-column1">
-         <div class="d-flex"><img src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/{{resource.icon}}" 
+         <div class="d-flex"><img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}diksha-mission/{{resource.icon}}" 
           onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/{{resource.icon}}'" alt="PDF svg image"></div>
       </div>
       <div class="inner-column2 pl-8">
@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="d-flex flex-ai-center flex-jc-flex-end">
-      <!-- <button class="sb-btn sb-btn-xs sb-btn-outline-primary sb-btn-radius px-16" onclick='location.href="{{resource.url}}"' type="button"><img src="{{site.baseurl}}/assets/diksha-mission/icon-download.svg" width="20" class="pr-8"/> {{site.data.text.download}}</button> -->
+      <!-- <button class="sb-btn sb-btn-xs sb-btn-outline-primary sb-btn-radius px-16" onclick='location.href="{{resource.url}}"' type="button"><img src="{{site.baseurl}}/diksha-mission/icon-download.svg" width="20" class="pr-8"/> {{site.data.text.download}}</button> -->
       <button class="sb-btn sb-btn-xs sb-btn-outline-primary sb-btn-radius px-16 resources-click" data-link="{{resource.url}}" data-name="{{resource.title}}" aria-describedby="{{resource.title}} - {{site.data.text.openPdf}} "  type="button" data-translate="open">{{site.data.text.open}}</button>
     </div>
   </div>
