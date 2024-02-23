@@ -257,7 +257,7 @@
                   <img
                     loading="lazy"
                     decoding="async"
-                    src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/{{board.thumbnail}}"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}{{board.thumbnail}}"
                     onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
                     alt="{{board.title}} logo"
                   />
@@ -279,7 +279,7 @@
                   >
                   <span class="ml-5">
                     <img
-                      src="../assets/homepage/view-more.png"
+                      src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/view-more.png"
                       alt="view-more"
                     />
                   </span>
@@ -294,7 +294,7 @@
           <div class="item">
             <div class="img-title">
               <div class="item-img">
-                <img src="/assets/homepage/all-state.png" alt="UT-Borad" />
+                <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/all-state.png" alt="UT-Borad" />
               </div>
               <div class="title-dropdown">
                 <div class="item-desc-title" data-translate="stateboard">
@@ -333,7 +333,7 @@
                   >{{site.data.text.viewMore}}</span
                 >
                 <span class="ml-5">
-                  <img src="../assets/homepage/view-more.png" alt="view-more" />
+                  <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/view-more.png" alt="view-more" />
                 </span>
               </div>
             </div>

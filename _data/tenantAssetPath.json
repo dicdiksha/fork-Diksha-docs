@@ -1,15 +1,18 @@
 {
     "production": {
         "baseCdnUrl": "https://static.diksha.gov.in/tenants/ntp",
-        "baseBlobUrl": "https:\\/\\/ntpproductionall.blob.core.windows.net/tenants/ntp"
+        "baseBlobUrl": "https:\\/\\/ntpproductionall.blob.core.windows.net/tenants/ntp",
+        "cdnUrl":"https://obj.diksha.gov.in/ntp-content-production/homepage/prod/"
     },
     "preProduction": {
         "baseCdnUrl": "https://static.preprod.ntp.net.in/tenants/ntp",
-        "baseBlobUrl": "https:\\/\\/preprodall.blob.core.windows.net/tenants/ntp"
+        "baseBlobUrl": "https:\\/\\/preprodall.blob.core.windows.net/tenants/ntp",
+        "cdnUrl":"https://obj.diksha.gov.in/ntp-content-production/homepage/prod/"
     },
     "development": {
         "baseCdnUrl": "/assets",
         "baseBlobUrl": "/assets",
-        "cdnUrl": "https://obj.diksha.gov.in/ntp-content-production/banner-image/prod/eJaaduiPitara/"
+        // "cdnUrl": "https://obj.diksha.gov.in/ntp-content-production/banner-image/prod/eJaaduiPitara/",
+        "cdnUrl":"https://obj.diksha.gov.in/ntp-content-production/homepage/prod/"
     }
 }

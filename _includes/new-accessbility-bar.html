@@ -60,7 +60,7 @@
  } 
  .brand-top-header .dropdown-wrapper .language-text:after {
     content: "";
-    background-image: url(../images/dropdown.png);
+    background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/dropdown.png);
     background-repeat: no-repeat;
     height: 0.75rem;
     width: 0.563rem;
@@ -111,7 +111,7 @@
     border-bottom: 0px ;
 }
 .brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow{
-    background: url(../assets/homepage/arrow_back.png) no-repeat;
+    background: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/arrow_back.png) no-repeat;
     background-size: contain;
     display: inline-block;
     transform: rotate(270deg);
@@ -221,7 +221,7 @@
                 <img loading="lazy" decoding="async" 
                 data-translate-attr="{govofIndia: ['title','alt']}" 
                 title="{{ site.data.text.govofIndia }}"
-                src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/diksha-mission/Flag_of_India.svg"
+                src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}diksha-mission/Flag_of_India.svg"
                 onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/diksha-mission\/Flag_of_India.svg'"
                 width="32" alt="{{ site.data.text.govofIndia }}" />
                 <span data-translate="govofIndia">{{ site.data.text.govofIndia }}</span>
@@ -269,9 +269,9 @@
                             <div
                             class="sb-g-col-xs-12 sb-g-col-md-2 sb-g-col-lg-2 sb-g-col-xl-2 sb-g-col-xxl-3 sb-g-col-xxxl-4 d-flex dropdown-wrapper">
                             <div class="dropdown-language-div" tabindex="0">
-                                <span> <img src="../images/globe.png" alt="language-icon"> </span>
+                                <span> <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/globe.png" alt="language-icon"> </span>
                                 <span class="language-text">English 
-                                    <!-- <span> <img src="../images/Filled.png"></span> -->
+                                    <!-- <span> <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}images/Filled.png"></span> -->
                                 </span>
                                 <ul class="language-dropdown" id="langDropdown">
                                     <li tabindex="0" role="img" title="Select Language">Select Language<span class="language-dropdown-arrow arrow-rotate" aria-label="{{ site.data.text.selectedLanguage }}"></span></li>
