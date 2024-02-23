@@ -538,11 +538,11 @@ $(window).resize(function () {
     // alert('mobile browser')
   } else {
     if (x.matches) {
-      location.reload();
+      location.reload();   
     }
   }
 });
-
+ 
 
 /*===================== Start focus area slider==============*/
 // $('#focus-area .carousel-item').carousel({
@@ -561,21 +561,6 @@ $(window).resize(function () {
 //     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 // })
 
-// $('#focus-area').carousel({
-//   interval: 2000
-// })
-$(document).ready(function(){  
-  $('#focus-area .carousel-item').each(function () {
-    // alert("Hello");
-    var fMinPerSlide = 3;
-    var fnext = $(this).next();
-    if (!fnext.length) {
-    fnext = $(this).siblings(':first');
-    }
-    fnext.children(':first-child').clone().appendTo($(this));
-   
-    for (var j = 0; j < fMinPerSlide; j++) { fnext=fnext.next(); if (!fnext.length) { fnext=$(this).siblings(':first'); } fnext.children(':first-child').clone().appendTo($(this)); } });
-})
 /*=====================End focus area slider==============*/
 
 // $('#recipeCarousel').carousel({ 
@@ -607,8 +592,8 @@ $(document).ready(function(){
 //         if (!next.length) {
 //         	next = $(this).siblings(':first');
 //       	}
-        
-//         next.children(':first-child').clone().appendTo($(this));
+//     next.children(':first-child').clone().appendTo($(this));
 //       }
 // });
 /*=====================End diksha dashbord===============*/
+ 
