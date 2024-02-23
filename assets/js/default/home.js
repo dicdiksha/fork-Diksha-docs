@@ -7,7 +7,7 @@ $(document).ready(function () {
     
     // let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
     //     stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
-        mapsJson = `/assets/json/maps.json`,
+        mapsJson = `https://obj.diksha.gov.in/ntp-content-production/homepage/prod/assets/json/maps.json`,
         contentPlayData = d3.map(),
         tenantSlugs = [],
         dataset = [],
@@ -35,6 +35,7 @@ $(document).ready(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
     $.getJSON(mapsJson, function (data) {
+        console.log("data home.js---",data);
         MapJSON = data;
     });
 

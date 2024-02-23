@@ -1,11 +1,7 @@
 <style>
      .new-banner{
         width: 100%;
-        /* background: rgb(150,74,218); */
-        /* background: linear-gradient(258deg, rgba(150,74,218,0.6362920168067228) 0%, rgba(150,74,218,1) 40%, rgba(40,24,95,1) 86%); */
-        /* background: rgb(2,79,157) url(../assets/homepage/caption-bg.png) right top no-repeat; */
-        /* background-image: url(../assets/homepage/caption-bg.png); */
-        background: url(../assets/homepage/caption-bg.png), linear-gradient(74deg, rgba(2,79,157,1) 0%, rgba(75,72,228,0.8827906162464986) 100%);
+        background: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/caption-bg.png), linear-gradient(74deg, rgba(2,79,157,1) 0%, rgba(75,72,228,0.8827906162464986) 100%);
         background-position: right;
         background-repeat: no-repeat;
         

@@ -212,29 +212,50 @@
       <div class="row dk-browser-by-board">  
         {% for board in site.data.boards-new.items %}
         <div class="col-lg-3 col-md-6 col-sm-12 my-10">
-            <a  href="#"  title="{{board-new.btntitle}}s" class="nonstate-explore" data-slug="{{board.slug}}" data-name="{{board.title}}"
-                  data-translate-attr="{board-btntitle: ['title']}">
-              <div class="item" >
-                <div class="img-title">
-                    <div class="item-img">
-                      <img loading="lazy" decoding="async" src="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/{{board.thumbnail}}"
-                              onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
-                              alt="{{board.title}} logo">
-                  </div>
-                  <div class="item-desc-title">{{board.title}}</div>
+          <a
+            href="#"
+            title="{{board-new.btntitle}}s"
+            class="nonstate-explore"
+            data-slug="{{board.slug}}"
+            data-name="{{board.title}}"
+            data-translate-attr="{board-btntitle: ['title']}"
+          >
+            <div class="item">
+              <div class="img-title">
+                <div class="item-img">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}{{board.thumbnail}}"
+                    onerror="this.src='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/{{board.thumbnail}}'"
+                    alt="{{board.title}} logo"
+                  />
                 </div>
-                <div class="item-desc">
-                  <div class="item-desc-detail" data-translate="board-{{board.slug}}-description">{{board.description}}</div>
-                </div> 
-                <div class="item-action">
-                  <div class="view_more">
-                    <span data-translate="viewMore">{{site.data.text.viewMore}}</span>
-                    <span class="ml-5"> <img src="../assets/homepage/view-more.png" alt="view-more"> </span>
-                  </div>
-                </div> 
-              </div> 
-            </a>    
-
+                <div class="item-desc-title">{{board.title}}</div>
+              </div>
+              <div class="item-desc">
+                <div
+                  class="item-desc-detail"
+                  data-translate="board-{{board.slug}}-description"
+                >
+                  {{board.description}}
+                </div>
+              </div>
+              <div class="item-action">
+                <div class="view_more">
+                  <span data-translate="viewMore"
+                    >{{site.data.text.viewMore}}</span
+                  >
+                  <span class="ml-5">
+                    <img
+                      src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/view-more.png"
+                      alt="view-more"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
         {% endfor %}
           
@@ -242,7 +263,7 @@
           <div class="item">
             <div class="img-title">
               <div class="item-img">
-                <img src="/assets/homepage/all-state.png" alt="UT-Borad" />
+                <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/all-state.png" alt="UT-Borad" />
               </div>
               <div class="title-dropdown">
                 <div class="item-desc-title" data-translate="stateboard">
@@ -281,7 +302,7 @@
                   >{{site.data.text.viewMore}}</span
                 >
                 <span class="ml-5">
-                  <img src="../assets/homepage/view-more.png" alt="view-more" />
+                  <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/view-more.png" alt="view-more" />
                 </span>
               </div>
             </div>
