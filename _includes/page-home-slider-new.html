@@ -30,12 +30,12 @@
 }
 
 #homePageSlide .carousel-control-next-icon {
-    background-image: url(../assets/homepage/arrow-back-slider.png);
+    background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/arrow-back-slider.png);
     background-repeat: no-repeat;
     opacity: 1 !important;
 }
 #homePageSlide .carousel-control-prev-icon {
-    background-image: url(../assets/homepage/arrow-prev-slider.png);
+    background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/arrow-prev-slider.png);
     background-repeat: no-repeat;
     opacity: 1 !important;
     
@@ -87,20 +87,27 @@
             <div class="carousel-item carousel3-bg active" role="option">
                 <a >
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}apaar.jpg"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/apaar.jpg"
                         alt="apaar" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg" role="option">
+                <a >
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/Rashtriya-e-pustakalaya.jpg"
+                        alt="Rashtriya-e-pustakalaya" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg" role="option">
                 <a href="https://ejaaduipitara.ncert.gov.in/" target="_blank">
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}jadui-pitara-new.jpg"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/jadui-pitara-new.jpg"
                         alt="jadui-pitara" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg" role="option">
                 <img loading="lazy" decoding="async" class="carousel-img-height" 
-                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner-diksha.jpg"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/banner-diksha.jpg"
                     alt="DIKSHA One nation one digital platform">
             </div>
             <!-- <div class="carousel-item carousel3-bg " role="option">
@@ -113,58 +120,60 @@
             <div class="carousel-item carousel3-bg " role="option">
                 <a href="/fln.html" target="_blank">
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}nipun-bharat-new.jpg"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/nipun-bharat-new.jpg"
                         alt="nipun-bharat" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg " role="option">
                 <a href="/vocational-education.html" target="_blank">
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}vocational-education-new.jpg"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/vocational-education-new.jpg"
                         alt="vocational-education" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg " role="option">
                 <a href="https://bit.ly/BhashaSangam" target="_blank">
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}bhasha-sangam-new.jpg"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/bhasha-sangam-new.jpg"
                         alt="bhasha-sangam" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg " role="option">
                 <a href="/virtuallabs.html" target="_blank">
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}virual-lab-new.jpg"
+                        src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/virual-lab-new.jpg"
                         alt="virual-lab" loading="lazy" decoding="async">
                 </a>
             </div> 
             <div class="carousel-item carousel3-bg " role="option">
                 <a href="/adult-education.html" target="_blank">
                     <img loading="lazy" decoding="async"  class="carousel-img-height"
-                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}education-for-all.jpg"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/education-for-all.jpg"
                     alt="education-fo-all" loading="lazy" decoding="async">
                 </a>
             </div> 
         </div>   
         <ol class="carousel-indicators">    
             <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="0" aria-current="page" class="active"
-            aria-controls="carousel-items" aria-label="jadui-pitara"></li>  
-            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="1" aria-current="page" 
-            aria-controls="carousel-items" aria-label="jadui-pitara"></li>  
+            aria-controls="carousel-items" aria-label="apaar"></li>  
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="1" aria-current="page"
+            aria-controls="carousel-items" aria-label="Rashtriya-e-pustakalaya"></li>  
             <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="2" aria-current="page" 
+            aria-controls="carousel-items" aria-label="jadui-pitara"></li>  
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="3" aria-current="page" 
             aria-controls="carousel-items" aria-label="DIKSHA One nation one digital platform"></li>
             <!-- <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="1" aria-current="page" 
             aria-controls="carousel-items" aria-label="vivo-ignite-banner"></li> -->
-            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="3" aria-current="page" 
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="4" aria-current="page" 
             aria-controls="carousel-items" aria-label="nipun-bharat"></li>
             
-            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="4" aria-current="page" 
-            aria-controls="carousel-items" aria-label="vocational-education"></li>
             <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="5" aria-current="page" 
-            aria-controls="carousel-items" aria-label="bhasha sangam"></li>
+            aria-controls="carousel-items" aria-label="vocational-education"></li>
             <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="6" aria-current="page" 
-            aria-controls="carousel-items" aria-label="virtual lab"></li>
+            aria-controls="carousel-items" aria-label="bhasha sangam"></li>
             <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="7" aria-current="page" 
+            aria-controls="carousel-items" aria-label="virtual lab"></li>
+            <li data-bs-target="#homePageSlide" tabindex="0" data-bs-slide-to="8" aria-current="page" 
             aria-controls="carousel-items" aria-label="adult-education"></li>
         </ol>
         <a class="carousel-control-prev" href="#homePageSlide" data-bs-target="#homePageSlide" role="button" data-bs-slide="prev">
