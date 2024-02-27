@@ -841,21 +841,23 @@ $(document).ready(function () {
     });
 
     /*===================== Start focus area slider==============*/
-
-        $('#focus-area').carousel({
-            interval: 2000
-        })
-        $(document).ready(function(){  
-            $('#focus-area .carousel-item').each(function () {
-            var fMinPerSlide = 3;
-            var fnext = $(this).next();
-            if (!fnext.length) {
-            fnext = $(this).siblings(':first');
+    // Focus Area Section Carousel 
+        let items = document.querySelectorAll('.focus-area-carousel .carousel-item')
+            items.forEach((el) => {                
+            const minPerSlide = 3
+            let next = el.nextElementSibling
+            for (var i=1; i<minPerSlide; i++) {
+            if (!next) {
+            // wrap carousel by using first child
+            next = items[0]  
             }
-            fnext.children(':first-child').clone().appendTo($(this));
-            
-            for (var j = 0; j < fMinPerSlide; j++) { fnext=fnext.next(); if (!fnext.length) { fnext=$(this).siblings(':first'); } fnext.children(':first-child').clone().appendTo($(this)); } });
-        })
+            let cloneChild = next.cloneNode(true)
+            el.appendChild(cloneChild.children[0])
+            next = next.nextElementSibling 
+            }
+        });
+
+    
     /*=====================End focus area slider==============*/
 
 });
