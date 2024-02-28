@@ -73,7 +73,7 @@ $(document).ready(function () {
   //quiz telemetry end
   function OnLoad() {
     tenantId = sessionStorage.getItem("tenantSlug") || 'ntp';
-    getOrgInfo(tenantId).done(function () {
+    getOrgInfo(tenantId).done(function () {   
       initTelemetryService();
       let path = window.location.pathname, ftUser = "true";
       if (localStorage && localStorage.getItem("fpDetails_v2")) ftUser = "false";
@@ -94,7 +94,7 @@ $(document).ready(function () {
   OnLoad();
   
   function getChannelId(id){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => { 
       $.ajax({
         method: "POST",
         url: hostURL + "/api/org/v1/search",
@@ -567,7 +567,7 @@ $(window).resize(function () {
 //   interval: 2000
 // })
 $(document).ready(function(){  
-  $('#recipeCarousel .carousel-item').each(function () {
+  $('#recipeCarousel .carousel-item').each(function () {   
     // alert("Hello");
     var minPerSlide = 3;
     var next = $(this).next();
