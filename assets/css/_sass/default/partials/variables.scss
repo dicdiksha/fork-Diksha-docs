@@ -445,6 +445,21 @@ html.darkmode {
   filter: brightness(0) invert(1);
 
 }
+.focus-area-carousel .carousel-item.active>:nth-child(2) .focus-item,
+.focus-area-carousel .carousel-item.active>:nth-child(2) .focus-item .read-more{
+    color: #202124;
+}
+.focus-area-carousel .carousel-item.active>:nth-child(2) .focus-item .focus-heading .focus-border-bottom{
+    background-color: #202124;
+}
+.focus-area-carousel .carousel-item.active>:nth-child(2) .focus-item .read-more-img{
+  background-color: transparent !important;
+}
+.focus-area-carousel .carousel-indicators [data-bs-target].active,
+.focus-area-carousel .carousel-control-prev-icon,
+.focus-area-carousel .carousel-control-next-icon{
+  background-color: var(--tertiary-color) !important;
+}
 /*============diksha-numbers==========*/
 
  .diksha-numbers{
