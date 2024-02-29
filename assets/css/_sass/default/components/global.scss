@@ -297,7 +297,21 @@ html.darkmode {
     .digital-india{
         // filter: brightness(0) invert(1);
     }
-
+    .mob-menu-bg {
+        background-color: var(--dk-primary-navigation-bg-color);
+    }
+    .mob-menu-bg .navMenu a{
+        color: #fff;
+    }
+    .mob-menu-bg .navMenu a.active{
+        color: var(--tertiary-color);
+    }
+    .mob-menu-header .navbar-toggler{
+        border-color: var(--tertiary-color) !important;
+    }
+    .mob-menu-header .navbar-toggler-icon{
+        background-image: url('../homepage/hamburger-menu-yellow.svg');
+    }
 }
 
 .usage-metrics-content {
