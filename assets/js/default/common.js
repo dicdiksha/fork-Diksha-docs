@@ -538,21 +538,5 @@ $(window).resize(function () {
   }
 });
  
-
-/*===================== Start focus area slider==============*/
-
-$(document).ready(function(){  
-  $('#recipeCarousel .carousel-item').each(function () {   
-    // alert("Hello");
-    var minPerSlide = 3;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
-})
-
 /*=====================End diksha dashbord===============*/
  
