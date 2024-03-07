@@ -8,7 +8,7 @@ $(document).ready(function () {
     origin = 'https://preprod.ntp.net.in'
   }
 
-  let weeklyPlaysByState = `https://diksha.gov.in/data/reports/weekly_plays_by_state.json`,
+  let weeklyPlaysByState = `https://diksha.gov.in/data/reports/overall_play_state_data.json`,
     stateWiseDataCount = `https://diksha.gov.in/data/reports/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
     totalEnrollments = `https://diksha.gov.in/data/reports/total_enrolments_new_new.json`,
   // let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
@@ -32,16 +32,16 @@ $(document).ready(function () {
   });
 
   const colorsArr = [
-    { "range": "10000000+", "color": "#08306b" },
-    { "range": "5000000+", "color": "#0a4a90" },
-    { "range": "2000000+", "color": "#1864aa" },
-    { "range": "1000000+", "color": "#2f7ebc" },
-    { "range": "500000+", "color": "#4b97c9" },
-    { "range": "200000+", "color": "#6daed5" },
-    { "range": "100000+", "color": "#93c3df" },
-    { "range": "50000+", "color": "#b5d4e9" },
-    { "range": "20000+", "color": "#cfe1f2" },
-    { "range": "<20000", "color": "#e3eef9" }
+    { "range": "200000000+", "color": "#08306b" },
+    { "range": "100000000+", "color": "#0a4a90" },
+    { "range": "50000000+", "color": "#1864aa" },
+    { "range": "20000000+", "color": "#2f7ebc" },
+    { "range": "10000000+", "color": "#4b97c9" },
+    { "range": "5000000+", "color": "#6daed5" },
+    { "range": "2000000+", "color": "#93c3df" },
+    { "range": "1000000+", "color": "#b5d4e9" },
+    { "range": "500000+", "color": "#cfe1f2" },
+    { "range": "<500000", "color": "#e3eef9" }
   ];
 
 
@@ -120,76 +120,28 @@ $(document).ready(function () {
             });
           });
           e = typeof e == "string" ? JSON.parse(e) : e;
-          const arr = e['data'],
-            result = [...arr.reduce((r, o) => {
-              const key = o.state;
-
-              const item = r.get(key) || Object.assign({}, o, {
-                'learning sessions': 0
-              });
-
-              item['learning sessions'] += (parseInt(o[
-                'learning sessions'],
-                10));
-
-              return r.set(key, item);
-            }, new Map).values()];
-
-          let andaman = 0,
-            puducherry = 0,
-            delhi = 0,
-            up = 0,
-            jk = 0,
-            dnhdd = 0;
-          dataset = [];
+          const arr = e['data'];
+          
+          const result = arr.map((eachValue)=>{
+            return {
+              ...eachValue,
+            'learning sessions' : parseInt(eachValue['Total Learning Session'])}
+          });
+          let dataset = [];
           result.forEach(element => {
-            if (element.state === 'Andaman & Nicobar Islands' || element.state === 'Andaman and Nicobar') andaman += Number(element['learning sessions']);
-            if (element.state === 'Uttar Pradesh' || element.state === 'Uttar pradesh') up += Number(element['learning sessions']);
-            if (element.state === 'Delhi' || element.state === 'National Capital Territory of Delhi') delhi += Number(element['learning sessions']);
-            if (element.state === 'Union Territory of Puducherry' || element.state === 'Puducherry') puducherry += Number(element['learning sessions']);
-            if (element.state === 'Jammu and Kashmir' || element.state === 'Jammu And Kashmir') jk += Number(element['learning sessions']);
-            if (element.state === 'Dadra and Nagar Haveli and Daman and Diu') dnhdd += Number(element['learning sessions']);
-            if (!(doubleCheck.includes(element.state))) {
               tenantSlugs.forEach(elem => {
-                if (elem.st_nm === element.state) {
+                if (elem.st_nm === element.State) {
                   dataset.push({
-                    name: element.state,
-                    count: Number(element['learning sessions']),
+                    name: element.State,
+                    count: element['learning sessions'],
                     slug: elem.slug,
-                    value: fnum(Number(element['learning sessions']))
+                    value: fnum(element['learning sessions'])
                   });
                 }
               });
-            }
           });
 
-          dataset.push({
-            name: 'Andaman & Nicobar Islands',
-            count: Number(andaman),
-            slug: 'AN',
-            value: fnum(Number(andaman))
-          }, {
-            name: 'Uttar Pradesh',
-            count: Number(up),
-            slug: 'UP',
-            value: fnum(Number(up))
-          }, {
-            name: 'Delhi',
-            count: Number(delhi),
-            slug: 'DL',
-            value: fnum(Number(delhi))
-          }, {
-            name: 'Pondicherry',
-            count: Number(puducherry),
-            slug: 'PN',
-            value: fnum(Number(puducherry))
-          }, {
-            name: 'Jammu And Kashmir',
-            count: Number(jk),
-            slug: 'JK',
-            value: fnum(Number(jk))
-          });
-          dataset.splice(dataset.findIndex(item => item.name === "Daman & Diu"), 1)//remove daman and diu from dropdown
+          // dataset.splice(dataset.findIndex(item => item.name === "Daman & Diu"), 1)//remove daman and diu from dropdown
           dataset.sort((a, b) => a.slug.localeCompare(b.slug));
           let topElem = dataset.sort((a, b) => b.count - a.count).slice(0, 10);
           let remainingElem = dataset.sort((a, b) => b.count - a.count).slice(10, dataset.length);
@@ -457,14 +409,13 @@ $(document).ready(function () {
     let colorScale;
     if (use == 'creation') {
       colorScale = d3.scaleThreshold()
-        .domain([200000, 200001, 500001, 1000001, 2000001, 5000001, 10000001, 20000001, 50000001, 100000001])
-        .range(["#e3eef9", "#cfe1f2", "#b5d4e9", "#93c3df", "#6daed5", "#4b97c9", "#2f7ebc", "#1864aa", "#0a4a90", "#08306b"]);
+    .domain([500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000, 100000000, 200000000])
+    .range(["#e3eef9", "#cfe1f2", "#b5d4e9", "#93c3df", "#6daed5", "#4b97c9", "#2f7ebc", "#1864aa", "#0a4a90", "#08306b"]);
     } else {
       colorScale = d3.scaleThreshold()
-        .domain([200000, 200001, 500001, 1000001, 2000001, 5000001, 10000001, 20000001, 50000001, 100000001])
-        .range(["#e3eef9", "#cfe1f2", "#b5d4e9", "#93c3df", "#6daed5", "#4b97c9", "#2f7ebc", "#1864aa", "#0a4a90", "#08306b"]);
+      .domain([500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000, 100000000, 200000000])
+      .range(["#e3eef9", "#cfe1f2", "#b5d4e9", "#93c3df", "#6daed5", "#4b97c9", "#2f7ebc", "#1864aa", "#0a4a90", "#08306b"]);
     }
-
     $.get(MapJSON.MAP_META.India.geoDataFile, function (topo) {
       const width = 425;
       const height = 450;
@@ -670,8 +621,8 @@ $(document).ready(function () {
     }
     $(".state-wise-value").show();
     const colorScale = d3.scaleThreshold()
-      .domain([200000, 200001, 500001, 1000001, 2000001, 5000001, 10000001, 20000001, 50000001, 100000001])
-      .range(["#e3eef9", "#cfe1f2", "#b5d4e9", "#93c3df", "#6daed5", "#4b97c9", "#2f7ebc", "#1864aa", "#0a4a90", "#08306b"]);
+    .domain([500000, 1000000, 2000000, 5000000, 10000000, 20000000, 50000000, 100000000, 200000000])
+    .range(["#e3eef9", "#cfe1f2", "#b5d4e9", "#93c3df", "#6daed5", "#4b97c9", "#2f7ebc", "#1864aa", "#0a4a90", "#08306b"]);
         $.get(MapJSON.MAP_META[state.st_nm].geoDataFile, function (topo) {
           const width = 200;
           const height = 200;
