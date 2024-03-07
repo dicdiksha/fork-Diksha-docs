@@ -14,7 +14,7 @@ $(document).ready(function () {
   // let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
   //   stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
     // totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
-    mapsJson = `https://obj.diksha.gov.in/ntp-content-production/homepage/prod/assets/json/maps.json`,
+    mapsJson = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/usage_metrics/maps.json`,
     contentPlayData = d3.map(),
     tenantSlugs = [],
     dataset = [], MapJSON, category = "",
