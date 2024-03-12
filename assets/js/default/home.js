@@ -1134,4 +1134,5 @@ let cloneChild = next.cloneNode(true)
 el.appendChild(cloneChild.children[0])
 next = next.nextElementSibling 
 }
+}
 });                  
