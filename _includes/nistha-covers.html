@@ -1,0 +1,209 @@
+<style>
+    .sec-padding{
+        padding: 40px 0; 
+    }
+    .nistha-covers-bg{
+        background: url('../assets/homepage/nistha-lp/nistha-cover-bg.png') no-repeat;
+        height: 100%;
+        padding: 55px 0 40px 0;
+        background-size: cover;
+    }
+    .nistha-cover-accordion .accordion-item{
+        margin-bottom: 1rem;
+        border: 1px solid;
+        border-radius: 6px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        padding: 17px 0;
+        position: relative;
+        background: rgba(255, 255, 255, 0.73);
+    }
+    .nistha-cover-accordion .accordion-item:before{
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 5px;
+        left: 0;
+        top: 0;
+        border-radius: 91px;
+    }
+    .nistha-cover-accordion .accordion-item.orange-border{
+        border-color: #FFE0C4;
+    }
+    .nistha-cover-accordion .accordion-item.green-border{
+        border-color: #BBFFF1;
+    }
+    .nistha-cover-accordion .accordion-item.maroon-border{
+        border-color: #FFD4E4;
+    }
+    .nistha-cover-accordion .accordion-item.purple-border{
+        border-color: #F2D6FF;
+    }
+    .nistha-cover-accordion .accordion-item.blue-border{
+        border-color: #D4E6FF;
+    }
+    .nistha-cover-accordion .accordion-item.orange-border::before{
+        background-color: #ED8122;
+    }
+    .nistha-cover-accordion .accordion-item.green-border::before{
+        background-color: #0D6C58;
+    }
+    .nistha-cover-accordion .accordion-item.maroon-border::before{
+        background-color: #7F1C42;
+    }
+    .nistha-cover-accordion .accordion-item.purple-border::before{
+        background-color: #7A4990;
+    }
+    .nistha-cover-accordion .accordion-item.blue-border::before{
+        background-color: #3065AC;
+    }
+    .nistha-cover-accordion .accordion-header{
+        margin-left: 6px;
+    }
+    .nistha-cover-accordion .accordion-button {
+        color: #434141;
+        font-weight: 700;
+        line-height: 30px;
+        font-size: 24px;
+        font-family: "Lato";
+        padding: 10px 15px 10px 50px;
+        position: relative;
+        background: rgba(255, 255, 255, 0) !important;
+    }
+    .nistha-cover-accordion .accordion-button:not(.collapsed){
+        box-shadow: none;
+        background-color: #fff;
+    }
+    .nistha-cover-accordion .accordion-button:focus{
+        box-shadow: none;
+    }
+    .nistha-cover-accordion .accordion-body{
+        padding: 0 15px 10px 50px;
+        font-size: 14px;
+    }
+    .nistha-cover-accordion .accordion-button::before{
+        position: absolute;
+        left: 10px;
+        flex-shrink: 0;
+        width: 40px;
+        height: 40px;
+        content: "";
+        /* background-size: 1.25rem !important; */
+        transition: all .2s ease-in-out;
+    }
+    .nistha-cover-accordion .accordion-button::after{
+        content: unset;
+    }
+    .nistha-cover-accordion .accordion-button.orange-btn::before{
+        background: url('../assets/homepage/nistha-lp/cover/orange-plus.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.orange-btn:not(.collapsed)::before{
+        background: url('../assets/homepage/nistha-lp/cover/orange-remove.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.green-btn::before{
+        background: url('../assets/homepage/nistha-lp/cover/green-plus.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.green-btn:not(.collapsed)::before{
+        background: url('../assets/homepage/nistha-lp/cover/green-remove.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.maroon-btn::before{
+        background: url('../assets/homepage/nistha-lp/cover/maroon-plus.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.maroon-btn:not(.collapsed)::before{
+        background: url('../assets/homepage/nistha-lp/cover/maroon-remove.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.purple-btn::before{
+        background: url('../assets/homepage/nistha-lp/cover/purple-plus.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.purple-btn:not(.collapsed)::before{
+        background: url('../assets/homepage/nistha-lp/cover/purple-remove.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.blue-btn::before{
+        background: url('../assets/homepage/nistha-lp/cover/blue-plus.png') no-repeat;
+    }
+    .nistha-cover-accordion .accordion-button.blue-btn:not(.collapsed)::before{
+        background: url('../assets/homepage/nistha-lp/cover/blue-remove.png') no-repeat;
+    }
+    @media (max-width: 768px){
+        .nistha-cover-accordion .accordion-item{
+            padding: 10px 0;
+        }
+        .nistha-cover-accordion .accordion-button{
+            font-size: 16px;
+        }
+        .nistha-cover-accordion .accordion-body {
+            padding: 0 5px 10px 45px;
+            font-size: 14px;
+        }
+    }
+</style>
+<div class="nistha-covers-sec sec-padding">
+    <div class="nistha-sub-head">
+        <h2>What NISHTHA covers?</h2>
+    </div>
+    <div class="nistha-covers-bg">
+        <div class="container">
+            <div class="container-box">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-9">
+                        <div class="accordion nistha-cover-accordion" id="coverAccordion">
+                            <div class="accordion-item orange-border">
+                              <h2 class="accordion-header" id="cover-headingOne">
+                                <button class="accordion-button collapsed orange-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cover-collapseOne" aria-expanded="false" aria-controls="cover-collapseOne">
+                                    Real-world scenarios example
+                                </button>
+                              </h2>
+                              <div id="cover-collapseOne" class="accordion-collapse collapse" aria-labelledby="cover-headingOne" data-bs-parent="#coverAccordion">
+                                <div class="accordion-body">Real-life scenarios can help to make lessons more engaging by allowing user to see the practical applications of what they are learning.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item green-border">
+                              <h2 class="accordion-header" id="cover-headingTwo">
+                                <button class="accordion-button collapsed green-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cover-collapseTwo" aria-expanded="false" aria-controls="cover-collapseTwo">
+                                    Interactive content & Assesments
+                                </button>
+                              </h2>
+                              <div id="cover-collapseTwo" class="accordion-collapse collapse" aria-labelledby="cover-headingTwo" data-bs-parent="#coverAccordion">
+                                <div class="accordion-body">
+                                    Interactive content & Assessments enable the evaluation of diverse skills such as problem-solving, critical thinking, and domain-specific knowledge.
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item maroon-border">
+                              <h2 class="accordion-header" id="cover-headingThree">
+                                <button class="accordion-button collapsed maroon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cover-collapseThree" aria-expanded="false" aria-controls="cover-collapseThree">
+                                    Feedback from mentors and peers
+                                </button>
+                              </h2>
+                              <div id="cover-collapseThree" class="accordion-collapse collapse" aria-labelledby="cover-headingThree" data-bs-parent="#coverAccordion">
+                                <div class="accordion-body">It is a valuable source of learning and improvement for any professional. It can help you identify your strengths and weaknesses, develop new skills and perspectives, and build trust and rapport with your colleagues.</div>
+                              </div>
+                            </div>
+                            <div class="accordion-item purple-border">
+                                <h2 class="accordion-header" id="cover-headingFour">
+                                  <button class="accordion-button collapsed purple-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cover-collapseFour" aria-expanded="false" aria-controls="cover-collapseFour">
+                                    Incorporating multimedia content & simulations
+                                  </button>
+                                </h2>
+                                <div id="cover-collapseFour" class="accordion-collapse collapse" aria-labelledby="cover-headingFour" data-bs-parent="#coverAccordion">
+                                  <div class="accordion-body">The various media elements, such as text, images, audio, video, and interactive elements, to deliver information in a dynamic and engaging format.</div>
+                                </div>
+                              </div>
+                              <div class="accordion-item blue-border">
+                                <h2 class="accordion-header" id="cover-headingFive">
+                                  <button class="accordion-button collapsed blue-btn" type="button" data-bs-toggle="collapse" data-bs-target="#cover-collapseFive" aria-expanded="false" aria-controls="cover-collapseFive">
+                                    Opportunity to connect with colleagues & sharing best practices
+                                  </button>
+                                </h2>
+                                <div id="cover-collapseFive" class="accordion-collapse collapse" aria-labelledby="cover-headingFive" data-bs-parent="#coverAccordion">
+                                  <div class="accordion-body">Opportunity to connect with colleagues & sharing best practices helps in streamlining the work and increasing the productivity of employees.</div>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>

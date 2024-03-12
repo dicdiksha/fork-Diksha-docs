@@ -402,6 +402,8 @@ $(document).ready(function () {
     return false;
   });
 
+  
+
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
@@ -464,6 +466,20 @@ $(document).ready(function () {
     /*===================== End login button==============*/
   // });
 
+  // View all nistha course button js
+    $(".view-nistha-courses-btn").click(function (e) {
+      e.preventDefault();
+      window.logInteractEvent('diksha-for-teachers', 'select-viewall', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+      window.open('/explore/1?key=nistha', "_self");
+      return false;
+    });
+    // Explore Nistha button js
+    $(".explore-nistha-btn").click(function (e) {
+      e.preventDefault();
+      window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+      window.open('/explore', "_self");
+      return false;
+    });
 });
 
 
@@ -597,3 +613,4 @@ $(document).ready(function(){
 // });
 /*=====================End diksha dashbord===============*/
  
+                                  

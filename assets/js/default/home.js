@@ -839,7 +839,6 @@ $(document).ready(function () {
             $('#ppc-modal video')[0].play();
         })
     });
-
 });  
 
 // Focus Area Section Carousel 
@@ -858,3 +857,18 @@ next = next.nextElementSibling
 }
 });
     
+// Nistha Testimonial Carousel 
+let reviewitems = document.querySelectorAll('.nistha-testimonial-carousel .carousel-item')
+reviewitems.forEach((el) => {                        
+const reviewMinPerSlide = 3
+let next = el.nextElementSibling
+for (var review=1; review<reviewMinPerSlide; review++) { 
+    if (!next) {
+// wrap carousel by using first child
+next = reviewitems[0]  
+}
+let cloneChild = next.cloneNode(true)
+el.appendChild(cloneChild.children[0])
+next = next.nextElementSibling 
+}
+});                  
