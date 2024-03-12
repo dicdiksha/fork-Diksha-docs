@@ -9,6 +9,13 @@
             "eid": "static-home"
         },
         {
+            "title": "Diksha For Teachers",
+            "url": "dikshaforteachers",
+            "contains":"dikshaforteachers",
+            "etype":"select-dikshaforteachers",
+            "eid": "static dikshaforteachers"
+        },
+        {
             "title": "Dashboard",
             "url": "data/",
             "contains":"data",

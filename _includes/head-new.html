@@ -54,6 +54,12 @@ onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/
     onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/contribute.min.css?{{site.time || date: '%d%m%Y'}}"
 onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/contribute.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+{% elsif page.url contains '/dikshaforteachers/' %}
+<link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/optimized.min.css?{{site.time || date: '%d%m%Y'}}"
+    onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/optimized.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- <link rel="preload" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/nisthalp.min.css?{{site.time || date: '%d%m%Y'}}"
+onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/nisthalp.min.css?{{site.time || date: %d%m%Y}}'" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 {% else %}
 <!-- <link rel="stylesheet" href="{{site.data.tenantAssetPath[site.environment].baseCdnUrl}}/css/preload.css?{{site.time || date: '%d%m%Y'}}"
     onerror="this.href='{{site.data.tenantAssetPath[site.environment].baseBlobUrl}}/css/preload.css?{{site.time || date: %d%m%Y}}'" /> -->
