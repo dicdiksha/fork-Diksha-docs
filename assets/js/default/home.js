@@ -1107,31 +1107,40 @@ items.forEach((el) => {
   }
 });
 
-$(document).ready(function(){  
-    $('#recipeCarousel .carousel-item').each(function () {   
-      // alert("Hello");
-      var minPerSlide = 3;
-      var next = $(this).next();
-      if (!next.length) {
-      next = $(this).siblings(':first');
-      }
-      next.children(':first-child').clone().appendTo($(this));
-      
-      for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
-  })
+$(document).ready(function () {
+  $("#recipeCarousel .carousel-item").each(function () {
+    // alert("Hello");
+    var minPerSlide = 3;
+    var next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(":first");
+    }
+    next.children(":first-child").clone().appendTo($(this));
 
-// Nistha Testimonial Carousel 
-let reviewitems = document.querySelectorAll('.nistha-testimonial-carousel .carousel-item')
-reviewitems.forEach((el) => {                        
-const reviewMinPerSlide = 3
-let next = el.nextElementSibling
-for (var review=1; review<reviewMinPerSlide; review++) { 
+    for (var i = 0; i < minPerSlide; i++) {
+      next = next.next();
+      if (!next.length) {
+        next = $(this).siblings(":first");
+      }
+      next.children(":first-child").clone().appendTo($(this));
+    }
+  });
+});
+
+// Nistha Testimonial Carousel
+let reviewitems = document.querySelectorAll(
+  ".nistha-testimonial-carousel .carousel-item"
+);
+reviewitems.forEach((el) => {
+  const reviewMinPerSlide = 3;
+  let next = el.nextElementSibling;
+  for (var review = 1; review < reviewMinPerSlide; review++) {
     if (!next) {
-// wrap carousel by using first child
-next = reviewitems[0]  
-}
-let cloneChild = next.cloneNode(true)
-el.appendChild(cloneChild.children[0])
-next = next.nextElementSibling 
-}
-});                  
+      // wrap carousel by using first child
+      next = reviewitems[0];
+    }
+    let cloneChild = next.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    next = next.nextElementSibling;
+  }
+});
