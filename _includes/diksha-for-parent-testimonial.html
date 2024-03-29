@@ -1,7 +1,4 @@
 <style>
-    .sec-padding{
-        padding: 40px 0; 
-    }
     .nistha-testimonial-item {
         background-color: #FFEFDD;
         border-radius: 6px;
@@ -55,7 +52,6 @@
     .nistha-testimonial-item h5{
         font-size: 14px;
         font-weight: 500;
-        /* line-height: 24px; */
         color: #919191;
     }
     .nistha-testimonial-item .testi-detail {
@@ -126,6 +122,9 @@
     .nistha-testimonial-carousel .carousel-item{
         padding-bottom: 30px;
     }
+    .test-sec-padding{
+        padding: 40px 0 80px 0;
+    }
     @media (max-width: 767px) {
 	    .nistha-testimonial-carousel .carousel-inner .carousel-item > div {
 			display: none;
@@ -133,6 +132,11 @@
         .nistha-testimonial-carousel .carousel-inner .carousel-item > div:first-child {
 			display: block;
 		}
+        .nistha-testimonial-carousel .carousel-inner .carousel-item.active,
+        .nistha-testimonial-carousel .carousel-inner .carousel-item-next,
+        .nistha-testimonial-carousel .carousel-inner .carousel-item-prev {
+            justify-content: center;
+        }
 	}
     @media (max-width: 576px){
          .nistha-testimonial-carousel .carousel-control-prev,
@@ -157,17 +161,17 @@
         }
     }
 </style>
-<div class="nistha-testimonial sec-padding">
+<div class="nistha-testimonial test-sec-padding">
     <div class="nistha-sub-head">
-        <h2>Testimonials</h2>
+        <h2>What Parent say about DIKSHA</h2>
     </div>
     <div class="container">
         <div class="container-box">
-            <div id="nisthaTestiCarousel" class="nistha-testimonial-carousel diksha-teachers-carousel carousel slide" data-bs-ride="carousel">
+            <div id="parentTestiCarousel" class="nistha-testimonial-carousel parent-say-carousel carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#nisthaTestiCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#nisthaTestiCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#nisthaTestiCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#parentTestiCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#parentTestiCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#parentTestiCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
                   </div>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -178,15 +182,13 @@
                                         <img src="../assets/homepage/nistha-lp/testimonial/i1.png" alt="">
                                     </div>
                                     <div class="testi-detail">
-                                       <h4>Jyoti Patil</h4>
-                                       <h5>Primary Teacher, Kendriya Vidyalaya</h5>
+                                       <h4>Shobha Rani</h4>
+                                       <h5>Parent</h5>
                                     </div>
                                 </div>
                                 <div class="testi-desc">
                                     <div class="texti-desc-limit">
-                                    <p>It is Indeed a step up towards the change in the teaching and learning methods.
-                                         This has covered all the modules and explained very briefly through videos.
-                                         Being a Mathematics teacher, I loved that Pedagogy...</p>
+                                    <p>It's really great app it has improved my child studies more and more....Very nice an easy to learn.</p>
                                          </div>
                                     <div class="star-rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
@@ -204,24 +206,23 @@
                             <div class="nistha-testimonial-item green-box">
                                 <div class="testi-upper-box">
                                     <div class="testi-img">
-                                        <img src="../assets/homepage/nistha-lp/testimonial/i2.png" alt="">
+                                        <img src="../assets/homepage/nistha-lp/testimonial/i3.png" alt="">
                                     </div>
                                     <div class="testi-detail">
-                                       <h4>R.Vijaya Reddy</h4>
-                                       <h5>Higher Sec Teacher, HVS School</h5>
+                                       <h4>Durga Shankar Garg</h4>
+                                       <h5>Parent</h5>
                                     </div>
                                 </div>
                                 <div class="testi-desc">
                                     <div class="texti-desc-limit">
-                                    <p>Very simple and impressive. The icons are presentational. Good work. NISHTHA will provide an opportunity for the teachers to come out.
-                                         This could simplify the app further when you would add more...</p>
+                                    <p>Amazing and useful aap. It's helpful for every one who want to go-ahead. It's friendly app for all teacher staff, students and parents. It's my favorite platform.</p>
                                          </div>
                                     <div class="star-rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
-                                        <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                        <!-- <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating"> -->
                                     </div>
                                 </div>
                             </div>
@@ -232,34 +233,33 @@
                             <div class="nistha-testimonial-item pink-box">
                                 <div class="testi-upper-box">
                                     <div class="testi-img">
-                                        <img src="../assets/homepage/nistha-lp/testimonial/i3.png" alt="">
+                                        <img src="../assets/homepage/nistha-lp/testimonial/i2.png" alt="">
                                     </div>
                                     <div class="testi-detail">
-                                       <h4>Ayush Pandey</h4>
-                                       <h5>Highschool Teacher, VKS Vidyalaya</h5>
+                                       <h4>Myra Francis</h4>
+                                       <h5>Parent</h5>
                                     </div>
                                 </div>
                                 <div class="testi-desc">
                                     <div class="texti-desc-limit">
-                                    <p>Very good app . This app is very useful and knowledgeable for students and teachers.
-                                         I have used this app to complete my project work. So everyone please install this useful app. </p>
+                                    <p>Easily Accessible . Language used is appropriate and to the point. Videos and audio clips superb. Appropriate and Excellent theory used and easy to understand by students speaking both languages.</p>
                                          </div>
                                     <div class="star-rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
                                         <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
-                                        <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                        <!-- <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating"> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#nisthaTestiCarousel" role="button" data-bs-slide="prev">
+                <a class="carousel-control-prev" href="#parentTestiCarousel" role="button" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 </a>
-                <a class="carousel-control-next" href="#nisthaTestiCarousel" role="button" data-bs-slide="next">
+                <a class="carousel-control-next" href="#parentTestiCarousel" role="button" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 </a>
             </div>

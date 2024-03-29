@@ -1129,7 +1129,7 @@ $(document).ready(function () {
 
 // Nistha Testimonial Carousel
 let reviewitems = document.querySelectorAll(
-  ".nistha-testimonial-carousel .carousel-item"
+  ".diksha-teachers-carousel .carousel-item"
 );
 reviewitems.forEach((el) => {
   const reviewMinPerSlide = 3;
@@ -1144,3 +1144,42 @@ reviewitems.forEach((el) => {
     next = next.nextElementSibling;
   }
 });
+
+// What Parent say about DIKSHA Carousel
+let parentsayitems = document.querySelectorAll(
+  ".parent-say-carousel .carousel-item"
+);
+parentsayitems.forEach((el) => {
+  const parentsayMinPerSlide = 3;
+  let parentsaynext = el.nextElementSibling;
+  for (var parentsay = 1; parentsay < parentsayMinPerSlide; parentsay++) {
+    if (!parentsaynext) {
+      // wrap carousel by using first child
+      parentsaynext = parentsayitems[0];
+    }
+    let cloneChild = parentsaynext.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    parentsaynext = parentsaynext.nextElementSibling;
+  }
+});
+
+
+
+// Diksha for parents Carousel
+let parentstudyitems = document.querySelectorAll(
+  ".parent-study-carousel .carousel-item"
+);
+parentstudyitems.forEach((el) => {
+  const studyMinPerSlide = 3;
+  let studynext = el.nextElementSibling;
+  for (var parentstudy = 1; parentstudy < studyMinPerSlide; parentstudy++) {
+    if (!studynext) {
+      // wrap carousel by using first child
+      studynext = parentstudyitems[0];
+    }
+    let cloneChild = studynext.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    studynext = studynext.nextElementSibling;
+  }
+});
+
