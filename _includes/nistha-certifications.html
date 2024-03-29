@@ -8,7 +8,7 @@
         border: 1px solid #005DA380;
         border-radius: 4px;
         padding: 5px;
-        /* min-width: 540px; */
+        width: 405px;
         margin-bottom: 2rem;
     }
     .nistha-certif-tab .nav-link{
@@ -16,6 +16,7 @@
         font-size: 16px;
         line-height: 30px;
         font-weight: 500;
+        padding: 9px 20px;
     }
     .nistha-certif-tab .nav-link:hover{
         border-color: transparent;
@@ -25,7 +26,7 @@
         background-color: #005DA3;
         color: #fff;
         border-radius: 4px;
-        padding: 12px 25px;
+        padding: 9px 20px;
     }
     .nistha-course-box{
         box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.12);
@@ -222,8 +223,17 @@
 				width: 280px;
                 margin: 0 auto 20px auto;
 			}
-            .nistha-certif-tab{
-                min-width: auto;
+		}
+        @media (max-width: 767.98px) {
+			.nistha-certif-tab{
+                justify-content: center;
+                padding: 0;
+                width: 100%;
+                border: 0;
+			}
+            .nistha-certif-tab .nav-link.active,
+            .nistha-certif-tab .nav-link{
+                padding: 4px 12px;
             }
 		}
         @media (max-width: 576px) {
@@ -263,7 +273,7 @@
     <div class="container">
         <div class="container-box">
             <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-7 col-xl-6">
+                <div class="col-sm-9 col-md-8 col-lg-6 col-xl-5 d-flex justify-content-center">
                     <ul class="nav nav-tabs nistha-certif-tab" id="nisthaCertificateTab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button class="nav-link active" id="all-course-tab" data-bs-toggle="tab" data-bs-target="#all-course" type="button" role="tab" aria-controls="all-course" aria-selected="true">All Courses</button>

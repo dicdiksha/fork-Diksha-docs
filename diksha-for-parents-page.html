@@ -1,0 +1,25 @@
+---
+layout: home-layout
+permalink: /dikshaforparents/
+title: Diksha For Parents Page
+---
+
+<div>
+    {% include diksha-for-parent-banner.html %}
+    {% include diksha-for-parent-feature.html %}
+    {% include diksha-for-parent-pedagogy.html %}
+    {% include diksha-for-parent-study.html %}
+    {% include diksha-for-parent-testimonial.html %}
+    <div id="scrollMainContent"></div>
+</div>
+
+{% contentfor mobileview %}
+<div>
+    {% include diksha-for-parent-banner.html %}
+    {% include diksha-for-parent-feature.html %}
+    {% include diksha-for-parent-pedagogy.html %}
+    {% include diksha-for-parent-study.html %}
+    {% include diksha-for-parent-testimonial.html %}
+    <div id="scrollMainContent"></div>
+</div>
+{% endcontentfor %}
