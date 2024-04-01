@@ -2,7 +2,6 @@
     .focus-area-diksha{
         padding: 3.125rem 0;
         background-color: #ECF6FF;
-        position: relative;
     }
     .focus-item{
         background-color: #fff;
@@ -119,207 +118,202 @@
         }
     }
 </style>
-
-
-<div>
-    <div class="focus-area-diksha">
-        <div class="container">
-            <div class="head-title">
-                 <span class="text" data-translate="focusArea" >{{site.data.text.focusArea}}</span>
-                 <span class="title-diksha-color"  data-translate="diksha">{{site.data.text.diksha}}</span>
-                
-            </div>
+<div class="focus-area-diksha">
+    <div class="container">
+        <div class="head-title">
+            <span class="text" data-translate="focusArea" >{{site.data.text.focusArea}}</span>
+            <span class="title-diksha-color"  data-translate="diksha">{{site.data.text.diksha}}</span>
         </div>
-        <div class="container">
-            <div class="container-box">
-                <div id="focusAreaCarousel" class="focus-area-carousel focus-area carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                    </div>
-                    <div class="carousel-inner ">
-                        <div class="carousel-item active">
-                            <div class="col-md-6  col-xl-4">
-                                <div class="focus-item" onclick="window.open('/fln.html', '_blank')">
-                                    <div class="focus-desc">
-                                        <div class="focus-heading">
-                                            <span data-translate="nipunBharat">{{site.data.text.nipunBharat}}</span>
-                                            <div class="focus-border-bottom">
-                                            </div>
-                                        </div>
-                                        <div class="focus-details">
-                                            <span data-translate="nipunBharatDesc"> {{site.data.text.nipunBharatDesc}}</span>
-                                            <br>
-                                            <span class="read-more">
-                                                <a href="/fln.html"  target="_blank">
-                                                    <span data-translate="explore">{{site.data.text.explore}}</span>
-                                                    <span>
-                                                        <img src="../assets/homepage/raed-more.png" alt="read more">
-                                                    </span>
-                                                </a>
-                                            
-                                            </span>
+    </div>
+    <div class="container">
+        <div class="container-box">
+            <div id="focusAreaCarousel" class="focus-area-carousel focus-areas carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#focusAreaCarousel" tabindex="0" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="focus-item" onclick="window.open('/fln.html', '_blank')">
+                                <div class="focus-desc">
+                                    <div class="focus-heading">
+                                        <span data-translate="nipunBharat">{{site.data.text.nipunBharat}}</span>
+                                        <div class="focus-border-bottom">
                                         </div>
                                     </div>
-                                    <div class="focus-img">
-                                        <img src="../assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-6  col-xl-4">
-                                <div class="focus-item" onclick="window.open('https://bit.ly/BhashaSangam', '_blank')">
-                                    <div class="focus-desc">
-                                        <div class="focus-heading">
-
-                                            <span data-translate="bhasaSangam">{{site.data.text.bhasaSangam}}</span>
-                                            <div class="focus-border-bottom">
-                                            </div>
-                                        </div>
-                                        <div class="focus-details">
-                                            <span data-translate="bhasaSangamDesc">{{site.data.text.bhasaSangamDesc}}</span>
-                                            <br>
-                                            <span class="read-more">
-                                                <a href="https://bit.ly/BhashaSangam"  target="_blank">
-                                                    <span data-translate="explore">  {{site.data.text.explore}} </span>
-                                                    <span>
-                                                        <img src="../assets/homepage/raed-more.png" alt="read more">
-                                                    </span>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="focus-img">
-                                        <img src="../assets/homepage/focus-area/bhasha-sangam.png" alt="nipun bharat">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-6  col-xl-4">
-                                <div class="focus-item" onclick="window.open('https://ejaaduipitara.ncert.gov.in/', '_blank')">
-                                    <div class="focus-desc">
-                                        <div class="focus-heading">
-                                            <span data-translate="jaduiPitara">{{site.data.text.jaduiPitara}}</span>
-                                            <div class="focus-border-bottom">
-                                            </div>
-                                        </div>
-                                        <div class="focus-details">
-                                            <span data-translate="jaduiPitaraDesc">{{site.data.text.jaduiPitaraDesc}}</span>
-                                            <br>
-                                            <span class="read-more">
-                                                <a href="https://ejaaduipitara.ncert.gov.in/"  target="_blank">
-
-                                                <span data-translate="explore">  {{site.data.text.explore}} </span>
-                                                    <span>
-                                                        <img src="../assets/homepage/raed-more.png" alt="read more">
-                                                    </span>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="focus-img">
-                                        <img src="../assets/homepage/focus-area/jadui-pitara.png" alt="nipun bharat">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-6  col-xl-4">
-                                <div class="focus-item" onclick="window.open('/adult-education.html', '_blank')">
-                                    <div class="focus-desc">
-                                        <div class="focus-heading">
-                                            <span data-translate="adultEducation">{{site.data.text.adultEducation}}</span>
-                                            <div class="focus-border-bottom">
-                                            </div>
-                                        </div>
-                                        <div class="focus-details" >
-                                            <span data-translate="adultEducationDesc">{{site.data.text.adultEducationDesc}}</span>
-                                            <br> <span class="read-more">
-                                                <a href="/adult-education.html"  target="_blank">
-                                                    <span data-translate="explore">  {{site.data.text.explore}} </span>
-                                                    <span>
-                                                        <img src="../assets/homepage/raed-more.png" alt="read more">
-                                                    </span>
-                                                </a>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="focus-img">
-                                        <img src="../assets/homepage/focus-area/adult-education.png" alt="nipun bharat">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="col-md-6  col-xl-4">
-                                <div class="focus-item" onclick="window.open('/virtuallabs.html', '_blank')">
-                                    <div class="focus-desc">
-                                        <div class="focus-heading">
-                                            <span data-translate="virtualLab">{{site.data.text.virtualLab}}</span>
-                                            <div class="focus-border-bottom">
-                                            </div>
-                                        </div>
-                                        <div class="focus-details">
-                                            <span data-translate="virtualLabDesc">{{site.data.text.virtualLabDesc}}</span>
+                                    <div class="focus-details">
+                                        <span data-translate="nipunBharatDesc"> {{site.data.text.nipunBharatDesc}}</span>
+                                        <br>
+                                        <span class="read-more">
+                                            <a href="/fln.html"  target="_blank">
+                                                <span data-translate="explore">{{site.data.text.explore}}</span>
+                                                <span>
+                                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/raed-more.png" alt="read more" class="read-more-img">
+                                                </span>
+                                            </a>
                                         
-                                            <br> <span class="read-more">
-                                                <a href="/virtuallabs.html"  target="_blank" >
-                                                    <span data-translate="explore">  {{site.data.text.explore}} </span>
-                                                    <span>
-                                                        <img src="../assets/homepage/raed-more.png" alt="read more">
-                                                    </span>
-                                                </a>
-                                            </span>
-                                        </div>
+                                        </span>
                                     </div>
-                                    <div class="focus-img">
-                                        <img src="../assets/homepage/focus-area/vietual-lab.png" alt="nipun bharat">
-                                    </div>
+                                </div>
+                                <div class="focus-img">
+                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/focus-area/nipun-bharat.png" alt="nipun bharat">
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
-                            <div class="col-md-6  col-xl-4">
-                                <div class="focus-item" onclick="window.open('/vocational-education.html', '_blank')">
-                                    <div class="focus-desc">
-                                        <div class="focus-heading">
-                                            <span data-translate="vocationEducation">{{site.data.text.vocationEducation}}</span>
-                                            <div class="focus-border-bottom">
-                                            </div>
-                                        </div>
-                                        <div class="focus-details">
-                                            <span data-translate="vocationEducationDesc"> {{site.data.text.vocationEducationDesc}}</span>
-                                            <br> <span class="read-more">
-                                                <a href="/vocational-education.html"  target="_blank">
-                                                    <span data-translate="explore">  {{site.data.text.explore}} </span>
-                                                    <span>
-                                                        <img src="../assets/homepage/raed-more.png" alt="read more">
-                                                    </span>
-                                                </a>
-                                            </span>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="focus-item" onclick="window.open('https://bit.ly/BhashaSangam', '_blank')">
+                                <div class="focus-desc">
+                                    <div class="focus-heading">
+    
+                                        <span data-translate="bhasaSangam">{{site.data.text.bhasaSangam}}</span>
+                                        <div class="focus-border-bottom">
                                         </div>
                                     </div>
-                                    <div class="focus-img">
-                                        <img src="../assets/homepage/focus-area/vocation-education.png" alt="nipun bharat">
+                                    <div class="focus-details">
+                                        <span data-translate="bhasaSangamDesc">{{site.data.text.bhasaSangamDesc}}</span>
+                                        <br>
+                                        <span class="read-more">
+                                            <a href="https://bit.ly/BhashaSangam"  target="_blank">
+                                                <span data-translate="explore">  {{site.data.text.explore}} </span>
+                                                <span>
+                                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/raed-more.png" alt="read more" class="read-more-img">
+                                                </span>
+                                            </a>
+                                        </span>
                                     </div>
+                                </div>
+                                <div class="focus-img">
+                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/focus-area/bhasha-sangam.png" alt="nipun bharat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="focus-item" onclick="window.open('https://ejaaduipitara.ncert.gov.in/', '_blank')">
+                                <div class="focus-desc">
+                                    <div class="focus-heading">
+                                        <span data-translate="jaduiPitara">{{site.data.text.jaduiPitara}}</span>
+                                        <div class="focus-border-bottom">
+                                        </div>
+                                    </div>
+                                    <div class="focus-details">
+                                        <span data-translate="jaduiPitaraDesc">{{site.data.text.jaduiPitaraDesc}}</span>
+                                        <br>
+                                        <span class="read-more">
+                                            <a href="https://ejaaduipitara.ncert.gov.in/"  target="_blank">
+    
+                                            <span data-translate="explore"> {{site.data.text.explore}} </span>
+                                                <span>
+                                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/raed-more.png" alt="read more" class="read-more-img">
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="focus-img">
+                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/focus-area/jadui-pitara.png" alt="nipun bharat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="focus-item" onclick="window.open('/adult-education.html', '_blank')">
+                                <div class="focus-desc">
+                                    <div class="focus-heading">
+                                        <span data-translate="adultEducation">{{site.data.text.adultEducation}}</span>
+                                        <div class="focus-border-bottom">
+                                        </div>
+                                    </div>
+                                    <div class="focus-details" >
+                                        <span data-translate="adultEducationDesc">{{site.data.text.adultEducationDesc}}</span>
+                                        <br> <span class="read-more">
+                                            <a href="/adult-education.html"  target="_blank">
+                                                <span data-translate="explore">  {{site.data.text.explore}} </span>
+                                                <span>
+                                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/raed-more.png" alt="read more" class="read-more-img">
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="focus-img">
+                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/focus-area/adult-education.png" alt="nipun bharat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="focus-item" onclick="window.open('/virtuallabs.html', '_blank')">
+                                <div class="focus-desc">
+                                    <div class="focus-heading">
+                                        <span data-translate="virtualLab">{{site.data.text.virtualLab}}</span>
+                                        <div class="focus-border-bottom">
+                                        </div>
+                                    </div>
+                                    <div class="focus-details">
+                                        <span data-translate="virtualLabDesc">{{site.data.text.virtualLabDesc}}</span>
+                                    
+                                        <br> <span class="read-more">
+                                            <a href="/virtuallabs.html"  target="_blank" >
+                                                <span data-translate="explore">  {{site.data.text.explore}} </span>
+                                                <span>
+                                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/raed-more.png" alt="read more" class="read-more-img">
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="focus-img">
+                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/focus-area/vietual-lab.png" alt="nipun bharat">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-6 col-xl-4">
+                            <div class="focus-item" onclick="window.open('/vocational-education.html', '_blank')">
+                                <div class="focus-desc">
+                                    <div class="focus-heading">
+                                        <span data-translate="vocationEducation">{{site.data.text.vocationEducation}}</span>
+                                        <div class="focus-border-bottom">
+                                        </div>
+                                    </div>
+                                    <div class="focus-details">
+                                        <span data-translate="vocationEducationDesc"> {{site.data.text.vocationEducationDesc}}</span>
+                                        <br> <span class="read-more">
+                                            <a href="/vocational-education.html"  target="_blank">
+                                                <span data-translate="explore">  {{site.data.text.explore}} </span>
+                                                <span>
+                                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/raed-more-blue.svg" alt="read more" class="read-more-img">
+                                                </span>
+                                            </a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="focus-img">
+                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/focus-area/vocation-education.png" alt="nipun bharat">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#focusAreaCarousel" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#focusAreaCarousel" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#focusAreaCarousel" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#focusAreaCarousel" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
-        </div>
+        </div>		
     </div>
 </div>

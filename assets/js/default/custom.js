@@ -14,7 +14,7 @@ $(document).ready(function () {
   // let weeklyPlaysByState = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/weekly_plays_by_state.json`,
   //   stateWiseDataCount = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/state_wise_course_data_public.json`,//`https://ntpproductionall.blob.core.windows.net/reports/hawk-eye/state_wise_course_data_public.json`,
     // totalEnrollments = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/public/total_enrolments_new_new.json`,
-    mapsJson = `/assets/json/maps.json`,
+    mapsJson = `https://obj.diksha.gov.in/odev-dev-diksha-publicreports/usage_metrics/maps.json`,
     contentPlayData = d3.map(),
     tenantSlugs = [],
     dataset = [], MapJSON, category = "",
@@ -27,6 +27,7 @@ $(document).ready(function () {
   let clickType = a.get('type');
 
   $.getJSON(mapsJson, function (data) {
+    console.log("data---",data);
     MapJSON = data;
     (clickType) ? radioTabsClickType(clickType) : radioTabsClickType('usage');
   });
@@ -352,7 +353,6 @@ $(document).ready(function () {
       d3.selectAll('.map_tooltip').remove();
       d3.selectAll('.tooltip').remove();
       $(".minutes-of-usage").hide();
-      $(".usage-all-contents").hide();
       generateStateWiseTopoGraph(stateObj[0], callType);
       if (callType === 'usage' || type == 'usage') {
         generateStateWiseTrendLine(stateObj[0]);
@@ -373,7 +373,6 @@ $(document).ready(function () {
       d3.selectAll('.map_tooltip').remove();
       d3.selectAll('.tooltip').remove();
       $(".minutes-of-usage").show();
-      $(".usage-all-contents").show();
       switch (callType || type) {
         case 'usage': generateTopoGraphMap(use); $(".state-wise-value").hide(); $(".state-ut-text").show(); break;
         case 'course': $(".state-courses").show(); generateTopoGraphMap(use); $(".state-ut-text").show(); $('.top-states-table').hide(); getTotalEnrollments(); break;
