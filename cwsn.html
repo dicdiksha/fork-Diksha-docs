@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -109,7 +110,7 @@
 		font-weight: 500;
     	display: flex;
     	justify-content: center;
-    	font-size: 26px;
+    	font-size: 22px;
 		color: #fff;
 	}
 
@@ -153,11 +154,215 @@
 		font-size: 1rem;
 		font-weight: bold;
 	}
+	.flex-card-grade{
+		justify-content: center;
+	}
+	.fln-content-section {
+		padding-top: 40px;
+	}
+	.card-body{
+		display: flex;
+		flex-direction: column;
+	}
+	.card-body li {
+		padding: 4px 5px;
+	}
+	.dk-primary-navigation {
+		display: none;
+	}
+
+	.brand-top-header {
+        margin: 0;
+        padding: 0;
+        min-height: auto;
+		background-color: #000;
+		color: #fff;
+		padding: 10px;
+
+    }
+    .brand-top-header div.dk-top-head-ul ul li a:hover, 
+    .brand-top-header div.dk-top-head-ul ul li a.active {
+        /* text-decoration: underline; */
+        text-decoration: none;
+        /* color: var(--primary-menu-link-active); */
+        color: inherit;
+    }
+    .brand-top-header .fontResize-container .fontResizeBtn {
+        border: 0;
+        background: none;
+        color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .3s ease-in-out;
+        outline :none;
+        padding: 0.938em 1.188rem;
+    }
+    .brand-top-header .fontResize-container .fontResizeBtn:hover,
+    .brand-top-header .fontResize-container .fontResizeBtn:active {
+        background: transparent;
+        color: var(--white);
+        cursor: pointer;
+    }    
+
+.brand-top-header .dark-mode-toggle {
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    padding: 0.625rem 0.5rem;
+}
+.brand-top-header .dark-mode-toggle:hover {
+    outline: none;
+    background:inherit;
+    border-radius: 0;
+}
+
+.brand-top-header .dropdown-wrapper .dropdown-language-div{
+    display: flex;
+} 
+.brand-top-header .dropdown-wrapper .dropdown-language-div span {
+    margin: 0 0.313rem;
+}
+.brand-top-header .dropdown-wrapper .language-text {
+    /* position: relative;
+     width: 75px;  */
+    display: flex;     
+    cursor: pointer;
+
+ } 
+ .brand-top-header .dropdown-wrapper .language-text:after {
+    content: "";
+    background-image: url(../images/dropdown.png);
+    background-repeat: no-repeat;
+    height: 0.75rem;
+    width: 0.563rem;
+    margin-left: 0.313rem;
+    margin-top: 0.438rem;
+}
+.brand-top-header .dropdown-wrapper{
+    position: relative;
+}
+.brand-top-header .dropdown-wrapper ul.language-dropdown {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    color: #434141;
+    z-index: 9999;
+    top: 20px;
+    width: 145px;
+    border-radius: 10px;
+    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
+    display: none;
+    min-width: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    transition: opacity .1s ease;
+}
+
+.brand-top-header .dropdown-wrapper .language-dropdown li{
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: 1px solid #0c4e9e26;
+    cursor: pointer;
+    width: 100%;
+    color: #434141;
+    text-align: left;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li.active{
+    font-weight: 700;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li:last-child {
+    border-bottom: 0px ;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow{
+    background: url(../assets/homepage/arrow_back.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    transform: rotate(270deg);
+    width: 14px;
+    height: 14px;
+    margin-top: 8px;
+}
+.brand-top-header .dropdown-wrapper .language-dropdown li span.language-dropdown-arrow.arrow-rotate{
+    transform: rotate(90deg);
+}
+.brand-top-header .dropdown-wrapper .dropdown-language-div:hover #langDropdown{
+    /* display: block; */
+}
+.brand-top-header .dropdown-wrapper .language-text.collapsed:after {
+    transform: rotate(180deg);
+    margin-top: 0;
+}
+.fontResize-container{
+    display: flex;
+}
+
+.top-header .header-content-right {
+    display: flex;
+    justify-content: end;
+}
+
+.dropdown-wrapper-lang {
+    display: flex;
+}
+
+.dropdown-wrapper-lang span {
+    margin: 0 5px;
+}
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 9px;
+        height: .3125rem;
+    }
+
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar-thumb {
+        cursor: pointer;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, .25);
+        transition: color .2s ease;
+    }
+
+    .brand-top-header .dropdown-wrapper ul::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, .1);
+        border-radius: 0;
+    }
 	</style>
 </head>
 
 <body>
-	<div class="wrapper">
+	<div class="brand-top-header">
+		<div class="mob-menu-container container-fuild">
+			<div class="container-box">
+				<div class="top-header row">
+					<div class="col-md-4">
+						<div class="dk-country-flag">
+							<img loading="lazy" decoding="async" 
+							
+							title="भारत सरकार | Government of India"
+							src="assets/homepage/cwsn/Flag_of_India.svg"
+							width="32" alt="भारत सरकार | Government of India" />
+							<span data-translate="govofIndia">भारत सरकार | Government of India</span>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fuild">
 		<header>
 			<nav class="navbar navbar-light p-l-r-0">
 				<div>
@@ -166,7 +371,7 @@
 			</nav>
 		</header>
 		<section class="intro-section">
-			<section class="bg-mask-1"> <img src="/assets/bannerImage/Equitable-Inclusive-banner.jpg" alt="cswn intro image" /> </section>
+			<section class="bg-mask-1"> <img src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/banner/cwsn.png" alt="cswn intro image" /> </section>
 		</section>
 		<section>
 			<div class="container mt-4">
@@ -175,7 +380,7 @@
 						<div class="item-wrap guideline">
 							<div class="item">
 								<div class="box ">
-									Guidelines
+									Documents
 								</div>
 							</div>
 						</div>
@@ -189,7 +394,7 @@
 						<div class="item-wrap book-practice">
 							<div class="item">
 								<div class="box">
-									Good practices
+									Salient Practices
 								</div>
 							</div>
 						</div>
@@ -203,7 +408,7 @@
 						<div class="item-wrap videos">
 							<div class="item">
 								<div class="box ">
-									Videos
+									Disability Workshop
 								</div>
 							</div>
 						</div>
@@ -267,416 +472,264 @@
 			</div>
 		</section>
 		<section class="thumbnail-heading">
-			<div class="thumbnail-title"> Explore E-content</div>
+			<div class="thumbnail-title"> Explore the Vertical</div>
 		</section>
 		<section class="fln-content-section">
+			<div class="container">
+				<!-- first row -->
+				<div class="row text-center">
+					<div class="container flex-card-grade">
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/course.png" class="img-fluid">
+							</div>
+							<a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+							<div id="collapsesix" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+								<div class="card-body text-left">
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6hindimedium" aria-expanded="false">
+										&nbsp;<strong>Students</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Teachers</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Special Educators</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Parents</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Pre Vocational Others</strong>
+									</li>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/tutorials.png" class="img-fluid">
+							</div>
+							<a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+							<div id="collapseseven" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+								<div class="card-body text-left">
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class7hindimedium" aria-expanded="false">
+										&nbsp;<strong>Multiple collection (Micro learning & Navigation videos)</strong>
+										
+									</li>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/remedial.png" class="img-fluid">
+							</div>							
+							<a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+							<div id="collapseeight" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+								<div class="card-body text-left">
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8hindimedium" aria-expanded="false">
+									&nbsp;<strong>OT</strong>
+												
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong> PT</strong>
+									
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong>  ST</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong>  LT</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong>  Basic ISL
+									</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong>  ABA
+									</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong> Counseling
+									</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
+									&nbsp;<strong> Prashast (Screening)
+									</strong>
+									</li>
+
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/teach.png" class="img-fluid">
+							</div>
+							<a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+							<div id="collapseone" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+								<div class="card-body text-left">
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class9hindimedium" aria-expanded="false">
+										&nbsp;<strong>Social Narratives</strong>
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class9henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Curricular</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class9henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Vocational</strong>	
+									</li>
+								</div>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<!-- second row -->
+				<div class="row text-center">
+					<div class="container flex-card-grade">
+						<div class="col-sm-3 mb-4">
+								<div class="image mb-2">
+									<img loading="lazy" decoding="async" src="assets/homepage/cwsn/materials.png" class="img-fluid">
+								</div>
+								<a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+								<div id="collapsetwo" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+									<div class="card-body text-left">
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Scholastic</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Flashcards</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Mathematics</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Immersive spaces</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Text books TLM</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Dictionary</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong>Glossary</strong>	
+										</li>
+										<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
+												&nbsp;<strong> Academic Terms</strong>	
+										</li>
+										
+									</div>
+								</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/assistive.png" class="img-fluid">
+							</div>
+							
+							<a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+							
+							<div id="collapsethree" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+								<div class="card-body text-left">
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11hindimedium" aria-expanded="false">
+									&nbsp;<strong>Scholastic</strong>			
+								</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Flashcards</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Mathematics</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Immersive spaces</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Text books TLM</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong>ISL videos</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong>Dictionary</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong> Glossary</strong>	
+									</li>
+									<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
+										&nbsp;<strong> Academic Terms</strong>	
+									</li>
+								</div>
+								</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/parant.png" class="img-fluid">
+							</div>
+							<a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapseparant" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+						
+							<div id="collapseparant" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+							<div class="card-body text-left">
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Career counseling, Certification</strong>			
+								</li>
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Life Skills Processes/Mandates</strong>			
+								</li>
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Norms and Guidelines</strong>			
+								</li>
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Institutions</strong>			
+								</li>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/reserch.png" class="img-fluid">
+							</div>
+							<a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsereserch" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+							<div id="collapsereserch" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+							<div class="card-body text-left">
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Collection of various researches
+									</strong>
+								</li>
+							</div>
+							</div>
+						</div>
+						<div class="col-sm-3 mb-4">
+							<div class="image mb-2">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/wellness.png" class="img-fluid">
+							</div>
+							<a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsewellness" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+						
+							<div id="collapsewellness" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample1">
+							<div class="card-body text-left">
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Mental health</strong>
+								</li>
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong> Sports</strong>
+								</li>
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong> Yoga</strong>
+	                            </li>
+								<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
+									&nbsp;<strong>Msic And Dance</strong>
+								</li>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		  	</div>
 			<section class="cards-dg">
-				<!-- <h2 class="sub-heading mt-4 mb-3">CWSN Stakeholders</h2> -->
 				<div class="container">
 					<div class="row text-center">
 						<div class="container flex-card-grade">
 						</div>
-					</div>
-					<div class="row text-center">
-						<div class="container flex-card-grade">
-							<div class="col-sm-4 mb-4">
-								<div class="image mb-2">
-									 <img src="/images/cwsn/student-min.png" class="img-fluid">
-								 </div> 
-								 <a class="btn text-light" style="background-color:#5DC48A;" target="_blank" href="#"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapsefifteen">
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong>
-								</a>
-								<div id="collapseOne" class="collapse" aria-labelledby="headingfifteen">
-                                    <div class="card-body-cwsn card-body text-left">
-										<ul>
-                                            <li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapseCurricular" aria-expanded="false" aria-controls="collapseCurricular">
-                                                </i>&nbsp;<strong>Curricular Resources</strong>
-											</li>
-												<div id="collapseCurricular" class="collapse" aria-labelledby="heading0" data-parent="#accordion">  
-													<div class="card-body-cwsn cwsn-grade">
-														<ul>
-															<li class="grade-data" data-toggle="collapse" data-target="#collapseGrad" aria-expanded="false" aria-controls="collapseGrad">
-															</i>&nbsp;<strong>Grade</strong><br>
-																<div id="collapseGrad" class="collapse" >
-																	<div class="grade-items">
-																		<div class="grade-item"  class="collapse" >
-																			<div>Grade 1 <span class="far fdivnd-point-right"></span></div>
-																			<div>Grade 2</div>
-																			<div>Grade 3</div>
-																			<div>Grade 4</div>
-																			<div>Grade 5</div>
-																			<div>Grade 6</div>
-																		</div>
-																	</div>
-																</div>
-															</li>
-														</ul>
-													</div>
-												</div>
-											
-                                           <br> 
-                                            <li class="far fa-hand-point-right" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapse00">
-                                                </i>&nbsp;<strong>Supplementary Resources</strong><br>
-                                            </li><br>
-											<li class="far fa-hand-point-right" href=""  aria-expanded="false">
-                                            	</i>&nbsp;<strong>Wellbeing Services Resources</strong>
-                                            </li>
-											<li class="far fa-hand-point-right" href=""  aria-expanded="false">
-                                            	</i>&nbsp;<strong>Schemes & Scholarships</strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-								</div>
-							</div>
-							<div class="col-sm-4 mb-4">
-								<div class="image mb-2"> 
-									<img src="/images/cwsn/stackholder.png" class="img-fluid">
-									<!-- <div class="isl-resource">Stakeholders</div> -->
-								</div>
-								<a class="btn text-light" style="background-color:#5DC48A;" target="_blank" href="#"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapsefifteen" >
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong>
-								</a>
-								<div id="collapseTwo" class="collapse" aria-labelledby="headingfifteen">
-                                    <div class="card-body-cwsn card-body text-left">
-										<ul>
-                                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="" aria-expanded="false">
-                                                </i>&nbsp;<strong>Prashast</strong>
-                                            </li><br>
-                                            <li class="far fa-hand-point-right" data-toggle="collapse" data-target="" aria-expanded="false" aria-controls="collapse00">
-                                                </i>&nbsp;<strong>Handbook Material</strong><br>
-                                            </li><br>
-											<li class="far fa-hand-point-right" href=""  aria-expanded="false">
-                                            	</i>&nbsp;<strong>Legal & Policy Instruments</strong>
-                                            </li>
-											<li class="far fa-hand-point-right" href=""  aria-expanded="false">
-                                            	</i>&nbsp;<strong>Salient Monographs</strong>
-                                            </li>
-											<li class="far fa-hand-point-right" href=""  aria-expanded="false">
-                                            	</i>&nbsp;<strong>Other Resources </strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-								</div>
-							</div>
-							<div class="col-sm-4 mb-4">
-								<div class="image mb-2"> 
-									<img src="/images/cwsn/glossary.png" class="img-fluid">
-									<!-- <div class="isl-resource">Resources</div> -->
-								</div> 
-								<a class="btn text-light" style="background-color:#5DC48A;" href="" data-toggle="collapse" data-target="#collapsefive1" aria-expanded="false" aria-controls="collapsefifteen">
-									<i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong>
-								</a>
-								<div id="collapsefive1" class="collapse" aria-labelledby="headingfifteen">
-                                    <div class="card-body-cwsn card-body text-left">
-										<ul>
-                                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical4" aria-expanded="false">
-                                                </i>&nbsp;<strong>Dictionary</strong>
-                                                <div id="collapsephysical4" class="collapse" aria-labelledby="headingfifteen">
-                                                    <div class="card-body-cwsn card-body text-left">
-														<div class="space-letter" href="" data-toggle="collapse" data-target="#collapsephysical4" aria-expanded="false">
-															</i>&nbsp;<strong>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332806565767577615571&selectedTab=all">A</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332806565767577615571&selectedTab=all">B</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332806565767577615571&selectedTab=all">C</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332806565767577615571&selectedTab=all">D</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332806565767577615571&selectedTab=all">E</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810048022937615610&selectedTab=all">F</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810048022937615610&selectedTab=all">G</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810048022937615610&selectedTab=all">H</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810048022937615610&selectedTab=all">I</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810048022937615610&selectedTab=all">J</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810244564582415621&selectedTab=all">K</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810244564582415621&selectedTab=all">L</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810244564582415621&selectedTab=all">M</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810244564582415621&selectedTab=all">N</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810244564582415621&selectedTab=all">O</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810357468364815632&selectedTab=all">P</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810357468364815632&selectedTab=all">Q</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810357468364815632&selectedTab=all">R</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810357468364815632&selectedTab=all">S</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810357468364815632&selectedTab=all">T</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">U</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">V</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">W</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">X</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">Y</a>
-																<a target="_blank"  href="https://diksha.gov.in/explore/1?key=do_31332810434043904015643&selectedTab=all">Z</a>
-															</strong>
-														</div>
-                                                    </div>
-                                                </div>
-                                            </li><br>
-                                            <li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapse00" aria-expanded="false" aria-controls="collapse00">
-                                                </i>&nbsp;<strong>Glossary</strong><br>
-                                            </li>
-											<div id="collapse00" class="collapse" aria-labelledby="heading0" data-parent="#accordion">
-												<div class="card-body-cwsn card-body text-left">
-													<ul>
-														<li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapse0_1" aria-expanded="false" aria-controls="collapse0_1">
-															</i>&nbsp;<strong>History</strong>
-															<div id="collapse0_1" class="collapse" aria-labelledby="heading0_1">
-																<div class="card-body-cwsn card-body text-left">
-																	<div class="space-letter" id="collapse0_1" class="collapse" aria-labelledby="heading0_1">
-																		</i>&nbsp;<strong>
-																			<a target="_blank"  href="">A</a>
-																			<a target="_blank"  href="">B</a>
-																			<a target="_blank"  href="">C</a>
-																			<a target="_blank"  href="">D</a>
-																			<a target="_blank"  href="">E</a>
-																			<a target="_blank"  href="">F</a>
-																			<a target="_blank"  href="">G</a>
-																			<a target="_blank"  href="">H</a>
-																			<a target="_blank"  href="">I</a>
-																			<a target="_blank"  href="">J</a>
-																			<a target="_blank"  href="">K</a>
-																			<a target="_blank"  href="">L</a>
-																			<a target="_blank"  href="">M</a>
-																			<a target="_blank"  href="">N</a>
-																			<a target="_blank"  href="">O</a>
-																			<a target="_blank"  href="">P</a>
-																			<a target="_blank"  href="">Q</a>
-																			<a target="_blank"  href="">R</a>
-																			<a target="_blank"  href="">S</a>
-																			<a target="_blank"  href="">T</a>
-																			<a target="_blank"  href="">U</a>
-																			<a target="_blank"  href="">V</a>
-																			<a target="_blank"  href="">W</a>
-																			<a target="_blank"  href="">X</a>
-																			<a target="_blank"  href="">Y</a>
-																			<a target="_blank"  href="">Z</a>
-																		</strong>
-																	</div>
-																</div>
-															</div>
-														</li><br>
-														<li class="far fa-hand-point-right" data-toggle="collapse" data-target="#collapse0_2" aria-expanded="false" aria-controls="collapse0_2">
-															</i>&nbsp;<strong>Economics</strong>
-															<!-- <div id="collapse0_2" class="collapse" aria-labelledby="heading0_2">
-																<div class="card-body-cwsn card-body text-left">
-																		<div class="space-letter" id="collapse0_2" class="collapse" aria-labelledby="heading0_2">
-																			</i>&nbsp;<strong>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629332334845952147">A</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629335302438912136">B</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629343760883712143">C</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293695301877761105">D</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293702270894081576">E</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293717501952001107">F</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293776693411841610">G</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499758383104011458">H</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499922414796811426">I</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500055375052811429">J</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500284006400011430">K</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501401807257611437">L</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501624479744011440">M</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501791118950411441">N</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501882447462411444">O</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502013462937611448">P</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502182676889611451">Q</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502366793728011477">R</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502414561280011459">S</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502648359321611480">T</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504298832691211471">U</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504392731033611600">V</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504452434329611475">W</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504516838195211479">X</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510565516902411542">Y</a>
-																				<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510637690880011543">Z</a>
-																				
-							
-																			</strong>
-																			
-																		</div>
-																</div>
-															</div> -->
-															</li><br>
-														<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical52" aria-expanded="true">
-															</i>&nbsp;<strong>Geography</strong>
-															<!-- <div id="collapsephysical52" class="collapse" aria-labelledby="headingfifteen">
-																<div class="card-body-cwsn card-body text-left">
-																	<div class="space-letter" href="" data-toggle="collapse" data-target="#collapsephysical52" aria-expanded="false">
-																		</i>&nbsp;<strong>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629332334845952147">A</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629335302438912136">B</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629343760883712143">C</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293695301877761105">D</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293702270894081576">E</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293717501952001107">F</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293776693411841610">G</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499758383104011458">H</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499922414796811426">I</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500055375052811429">J</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500284006400011430">K</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501401807257611437">L</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501624479744011440">M</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501791118950411441">N</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501882447462411444">O</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502013462937611448">P</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502182676889611451">Q</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502366793728011477">R</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502414561280011459">S</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502648359321611480">T</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504298832691211471">U</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504392731033611600">V</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504452434329611475">W</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504516838195211479">X</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510565516902411542">Y</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510637690880011543">Z</a>
-																			
-						
-																		</strong>
-																		
-																	</div>
-																</div>
-															</div> -->
-																	</li><br>
-														<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical54" aria-expanded="true">
-															</i>&nbsp;<strong>Urdu</strong>
-															<!-- <div id="collapsephysical54" class="collapse" aria-labelledby="headingfifteen">
-																<div class="card-body-cwsn card-body text-left">
-																	<div class="space-letter" href="" data-toggle="collapse" data-target="#collapsephysical54" aria-expanded="false">
-																		</i>&nbsp;<strong>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629332334845952147">A</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629335302438912136">B</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629343760883712143">C</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293695301877761105">D</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293702270894081576">E</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293717501952001107">F</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293776693411841610">G</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499758383104011458">H</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499922414796811426">I</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500055375052811429">J</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500284006400011430">K</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501401807257611437">L</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501624479744011440">M</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501791118950411441">N</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501882447462411444">O</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502013462937611448">P</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502182676889611451">Q</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502366793728011477">R</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502414561280011459">S</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502648359321611480">T</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504298832691211471">U</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504392731033611600">V</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504452434329611475">W</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504516838195211479">X</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510565516902411542">Y</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510637690880011543">Z</a>
-																		</strong>
-																	</div>
-																</div>
-															</div> -->
-														</li><br>
-														<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical55" aria-expanded="true">
-															</i>&nbsp;<strong>Sociology</strong>
-															<!-- <div id="collapsephysical55" class="collapse" aria-labelledby="headingfifteen">
-																<div class="card-body-cwsn card-body text-left">
-																	<div class="space-letter" href="" data-toggle="collapse" data-target="#collapsephysical55" aria-expanded="false">
-																		</i>&nbsp;<strong>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629332334845952147">A</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629335302438912136">B</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629343760883712143">C</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293695301877761105">D</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293702270894081576">E</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293717501952001107">F</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293776693411841610">G</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499758383104011458">H</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499922414796811426">I</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500055375052811429">J</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500284006400011430">K</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501401807257611437">L</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501624479744011440">M</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501791118950411441">N</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501882447462411444">O</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502013462937611448">P</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502182676889611451">Q</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502366793728011477">R</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502414561280011459">S</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502648359321611480">T</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504298832691211471">U</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504392731033611600">V</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504452434329611475">W</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504516838195211479">X</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510565516902411542">Y</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510637690880011543">Z</a>
-																			
-						
-																		</strong>
-																	</div>
-																</div>
-															</div> -->
-															</li><br>
-															<li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#collapsephysical56" aria-expanded="true">
-															</i>&nbsp;<strong>Psychology</strong>
-															<!-- <div id="collapsephysical56" class="collapse" aria-labelledby="headingfifteen">
-																<div class="card-body-cwsn card-body text-left">
-																	<div class="space-letter" href="" data-toggle="collapse" data-target="#collapsephysical56" aria-expanded="false">
-																		</i>&nbsp;<strong>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629332334845952147">A</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629335302438912136">B</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_313629343760883712143">C</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293695301877761105">D</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293702270894081576">E</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293717501952001107">F</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_3136293776693411841610">G</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499758383104011458">H</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363499922414796811426">I</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500055375052811429">J</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363500284006400011430">K</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501401807257611437">L</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501624479744011440">M</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501791118950411441">N</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363501882447462411444">O</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502013462937611448">P</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502182676889611451">Q</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502366793728011477">R</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502414561280011459">S</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363502648359321611480">T</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504298832691211471">U</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504392731033611600">V</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504452434329611475">W</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363504516838195211479">X</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510565516902411542">Y</a>
-																			<a target="_blank"  href="https://diksha.gov.in/play/collection/do_31363510637690880011543">Z</a>
-																			
-						
-																		</strong>
-																	</div>
-																</div>
-															</div> -->
-															</li>
-													</ul>
-												</div>
-											</div>
-												<br>
-											<li class="far fa-hand-point-right" href=""  aria-expanded="false">
-                                            </i>&nbsp;<strong>Academic Terms</strong>
-                                            </li>
-                                        </ul>
-                                    </div>
-								</div>
-							</div>
-							<!--<div class="col-sm-3 mb-4">
-								<div class="image mb-2"> <img src="/images/cwsn/glossary.png" class="img-fluid"> </div> <a class="btn text-light" style="background-color:#5D28B8;" href="" data-toggle="collapse" data-target="#collapsefive" aria-expanded="false" aria-controls="collapsefifteen"><i
-                                        class="far fa-hand-point-right"></i>&nbsp;<strong>Explore
-                                    </strong></a>
-							
-							</div> -->
-						</div>
-					</div>
+					</div>	
 				</div>
 			</section>
 		</section>
-		<!-- <section class="fln-footer-section">
-            <div class="row flex-align-center">
-               <div class="col-12">
-                <h2 class="sub-heading mt-4 mb-3">Courses for continuous professional development</h2>
-                 <img src="./images/Courses-Banner.jpg" style="object-fit: contain;">
-                 <div class="button text-center">
-                  <a href="https://diksha.gov.in/explore/1?key=NISHTHAFLN&amp;selectedTab=all" target="_blank" class="btn btn-info btn-lg text-light">Explore</a>
-              </div>
-               </div>
-            </div>
-        </section> -->
 	</div>
 	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
