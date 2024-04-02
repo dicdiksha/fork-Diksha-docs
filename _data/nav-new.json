@@ -9,11 +9,41 @@
             "eid": "static-home"
         },
         {
-            "title": "Diksha For Teachers",
-            "url": "dikshaforteachers",
-            "contains":"dikshaforteachers",
-            "etype":"select-dikshaforteachers",
-            "eid": "static dikshaforteachers"
+            "title": "DIKSHA For",
+            "url": "",
+            "contains": "dropdown",
+            "etype": "select-dikshafor",
+            "eid": "static-dikshafor",
+            "dropdowns": [
+                {
+                    "title": "Teachers",
+                    "url": "dikshaforteachers",
+                    "contains": "dikshaforteachers",
+                    "etype": "select-teachers",
+                    "eid": "static-teachers"
+                },
+                {
+                    "title": "Parents",
+                    "url": "dikshaforparents",
+                    "contains": "dikshaforparents",
+                    "etype": "select-parents",
+                    "eid": "static-parents"
+                },
+                {
+                    "title": "Students",
+                    "url": "dikshaforstudents",
+                    "contains": "dikshaforstudents",
+                    "etype": "select-students",
+                    "eid": "static-students"
+                },
+                {
+                    "title": "Others",
+                    "url": "dikshaforothers",
+                    "contains": "dikshaforothers",
+                    "etype": "select-others",
+                    "eid": "static-others"
+                }
+            ]
         },
         {
             "title": "Dashboard",
