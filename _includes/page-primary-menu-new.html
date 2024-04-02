@@ -13,6 +13,10 @@
         text-decoration: none;
         /* border-bottom: 2px solid #0C4E9E; */
     }   
+
+    .navMenu {
+        display: flex;
+    }
     
     
   
@@ -20,10 +24,28 @@
 <div class="">
     <div class="navMenu">
         {% for nav-new in site.data.nav-new.items %}
-        <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
-        class=" {% if page.url contains {{nav-new.contains}} or page.title == {{nav-new.title}} %} active {% endif %}" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
-           <span data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}" >{{nav-new.title}}</span>
-        </a>
+            {% if nav-new.dropdowns %}
+            <span class="dropdown">
+                <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
+                class="dropdown-toggle {% if page.url contains {{nav-new.contains}} or page.title == {{nav-new.title}} %} active {% endif %}" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+                <span data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}" >{{nav-new.title}}</span>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    {% for dropdown_item in nav-new.dropdowns %}
+                        <li>
+                            <a  class="dropdown-item" href="{{site.baseurl}}/{{dropdown_item.url}}" title="{{dropdown_item.title}}">
+                            <span>{{dropdown_item.title}}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </span>
+            {% else %}
+                <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
+                class=" {% if page.url contains {{nav-new.contains}} or page.title == {{nav-new.title}} %} active {% endif %}" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+                <span data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}" >{{nav-new.title}}</span>
+                </a>
+            {% endif %}
         {% endfor %}
     </div>
 </div>
