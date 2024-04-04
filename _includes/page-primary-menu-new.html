@@ -1,21 +1,52 @@
 <style>
     .navMenu a {
-    /* padding: 8px 0px; */
     text-decoration: none;
     border-style: none;
     outline: none;
-    /* border-bottom: 3px solid #0C4E9E; */
-
     }
     .navMenu a:hover, .navMenu a :active{
-        /* padding: 8px 0px; */
-        /* margin: 0 10px; */
         text-decoration: none;
-        /* border-bottom: 2px solid #0C4E9E; */
     }   
 
     .navMenu {
         display: flex;
+    }
+
+    .diksha-for-dropdown{
+        margin-top: -2px;
+    padding: 0 15px 0 5px;
+    }
+    .diksha-for-dropdown .dropdown-toggle{
+        padding: 0;
+    }
+    .diksha-for-dropdown .dropdown-toggle::after{
+        height: 100%;
+        background: url(../assets/homepage/nistha-lp/blue-arrow-down.svg) no-repeat;
+        position: absolute;
+        top: 8px;
+        border: 0;
+        width: 20%;
+    }
+    .diksha-for-dropdown .dropdown-toggle:active{
+        padding: 2px;
+    }
+    .diksha-for-dropdown .dropdown-item{
+        font-size: 14px;
+        line-height: 22px;
+        color: #434141;
+        font-weight: 500;
+        padding: 14px;
+        transition: all .3s ease-out;
+    }
+    .diksha-for-dropdown .dropdown-menu{
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 0;
+        padding: 0;
+        border: 0;
+    }
+    .diksha-for-dropdown .dropdown-item:hover{
+        background-color: #005DA3;
+        color: #fff;
     }
     
     @media (max-width: 991px){
@@ -25,6 +56,19 @@
         #dropdownMenuLink::after{
             margin-top: 8px;
         }
+        .diksha-for-dropdown{
+            display: flex;
+            padding: 0 0.5625rem;
+            margin-top: 3px;
+        }
+        .diksha-for-dropdown .dropdown-toggle {
+            padding: 0;
+            margin: 0;
+        }
+        .diksha-for-dropdown .dropdown-toggle::after{
+            right: 57%;
+            top: 0;
+        }
     }
     
   
@@ -33,7 +77,7 @@
     <div class="navMenu">
         {% for nav-new in site.data.nav-new.items %}
             {% if nav-new.dropdowns %}
-            <span class="dropdown">
+            <span class="dropdown diksha-for-dropdown">
                 <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
                 class="dropdown-toggle {% if page.url contains {{nav-new.contains}} or page.title == {{nav-new.title}} %} active {% endif %}" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
                 <span id="title" data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}" >{{nav-new.title}}</span>
