@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   let origin = "";
   window.origin == "https://diksha.gov.in" ||
@@ -1213,4 +1214,3 @@ othersitems.forEach((el) => {
     othersnext = othersnext.nextElementSibling;
   }
 });
-

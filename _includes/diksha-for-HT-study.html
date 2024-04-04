@@ -1,0 +1,884 @@
+<style>
+    .diksha-study-sec{
+        background-color: #EAF8FF;
+    }
+    .view-btn-div{
+        margin: 2rem 0 1rem 0;
+    }
+    .study-view-more-btn{
+        background-color: #024F9D;
+        color: #ffffff;
+        border-radius: 90px;
+        border: 1px solid #024F9D;
+        padding: 0.7rem 1.8rem;
+    }
+    .study-view-more-btn:hover{
+        color: #ffffff;
+    }
+    .nistha-certif-tab{
+        justify-content: space-between;
+        border-bottom: 0;
+        border: 1px solid #005DA380;
+        border-radius: 4px;
+        padding: 5px;
+        margin-bottom: 2rem;
+        align-items: center;
+    }
+    .nistha-certif-tab.nistha-bluebg-tab{
+        background-color: #1C61A7;
+        border: 0;
+        padding: 0;
+        border-radius: 10px;
+    }
+    .nistha-certif-tab.nistha-bluebg-tab .nav-link{
+        color: #ffffff;
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .nistha-certif-tab .nav-link:hover{
+        border-color: transparent;
+    }
+    .nistha-certif-tab .nav-link.active{
+        border: 0;
+        color: #fff;
+        border-radius: 4px;
+        padding: 12px 25px;
+    }
+    .nistha-certif-tab.nistha-bluebg-tab .nav-link.active{
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+        transform: scale(1.1);
+        background-color: #0088EE;
+        border-radius: 10px;
+        background-image: url(../assets/homepage/nistha-lp/parents/study.svg);
+        background-repeat: no-repeat;
+        background-position: 15px;
+        padding: 1.25rem 1.26rem 1.25rem 4.33rem;
+    }
+       /* new */
+    .nistha-course-card{
+        background: #ffffff;
+        box-shadow: 0px 4px 20px 0px rgba(159, 159, 159, 0.27);
+        border-radius: 10px;
+        display: flex;
+        padding: 10px;
+        margin-bottom: 15px;
+        min-height: 195px;
+        max-height: 195px;
+        height: 100%;
+        overflow: hidden;
+    }
+    .nistha-course-card .book-image {
+        width: 117px;
+        height: 169px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+    }
+    .nistha-course-detail{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .course-strip{
+        height: auto;
+        position: relative;
+        margin: 0.4rem 1rem 1.4rem 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .course-strip .strip-title{
+        margin-left: 5px;
+        font-size: 12px;
+        line-height: 14.4px;
+    }
+    .course-strip .strip-wrap::before{
+        position: absolute;
+        right: -8px;
+        transform: rotatey(-180deg);
+        left: inherit;
+        content: '';
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 0.3125rem solid transparent;
+        border-bottom: 0.625rem solid #000000;
+        border-right: 0.3125rem solid #000000;
+        border-top: 0.625rem solid #000000;
+    }
+    .strip-wrap {
+        padding: 0 8px;
+        position: absolute;
+        background: #000000;
+        height: 1.25rem;
+        color: #ffffff;
+        font-size: .6875rem;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0 0;
+    }
+    .nistha-course-card .course-title.right-align{
+        direction: rtl;
+    }
+    .nistha-course-card .course-title{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        max-width: 25ch;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        height: 2.5rem;
+    }
+    .nistha-course-card .course-title h4{
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 400;
+        color: #333333;
+    }
+    .nistha-course-card .course-icon{
+        height: 23px;
+        width: 23px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+    .nistha-course-card .course-icon.subject{
+        background-color: #E0F9F7;
+    }
+    .nistha-course-card .course-icon.publish{
+        background-color: #FFF1ED;
+    }
+    .nistha-course-card .book-detail{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .book-text{
+        font-size: 12px;
+        line-height: 16.34px;
+        font-weight: 500;
+        color: #696F88;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 20ch;
+        margin-left: 5px;
+    }
+    .bmc-detail {
+        border-bottom: 1px solid #F3F4F6;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .bmc-detail span{
+        font-size: 9px;
+        line-height: 22px;
+        letter-spacing: -0.1px;
+        position: relative;
+        padding: 0 3px;
+    }
+    .bmc-detail .board{
+        color: #008840;     
+    }
+    .bmc-detail .medium{
+        color: #6236FF;
+    }
+    .bmc-detail .grade{
+        color: #0076FE;
+    }
+    .bmc-detail span::before{
+        position: absolute;
+        content: " ";
+        top: 20%;
+        height: 12px;
+        width: 1px;
+        background-color: #F3F4F6;
+        left: 0;
+    }
+    .bmc-detail span:first-child::before,
+    .bmc-detail span:last-child::before{
+        display: none;
+    }
+    .bmc-detail span:first-child,
+    .bmc-detail span:last-child{
+        padding-left: 0;
+    }
+    .nistha-course-nav-link{
+        text-decoration: none !important;
+    }
+    @media (max-width: 991px) {
+        .nistha-certif-tab.nistha-bluebg-tab .nav-link.active{
+            background-position: 8px;
+            background-size: 15%;
+            padding: 12px 10px 12px 40px;
+        }
+        .nistha-certif-tab.nistha-bluebg-tab .nav-link{
+            font-size: 14px;
+        }
+    }
+    #nisthaCertificateTabContent{
+        margin-bottom: 2rem;
+    }
+    @media (min-width: 993px) and (max-width: 1024px){
+        .banner-course-detail .course-data.box4 {
+            right: -23%;
+            bottom: 16%;
+        }
+        .banner-course-detail .course-data.box3 {
+            left: -17%;
+        }
+        .nistha-course-card{
+            max-width: 385px;
+            width: 100%;
+        }
+    }
+    /* New css */
+    .diksha-study-sec .tab-content{
+        margin-top: 0.5rem;
+    }
+    .parent-study-carousel .nistha-course-card{
+        margin: 0 0.625rem;
+    }
+    .hr-border{
+        color: #0091FF29;
+        opacity: 1;
+    }
+    .explore-filter label{
+        color: #434141;
+    }
+    .explore-filter .custom-fc{
+        border-radius: 8px;
+        border: 1px solid #0000001F;
+        color: #757575;
+        background-image: url('../assets/homepage/nistha-lp/parents/arrow-down.png');
+        background-size: unset;
+    }
+    .diksha-student .nistha-sub-head{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .diksha-student .nistha-sub-head h2{
+        font-size: 40px;
+        line-height: 33.6px;
+        color: #434141;
+        font-weight: 500;
+        font-family: 'Outfit';
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+        line-height: 1.4;
+    }
+    .diksha-student .nistha-sub-head h2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: #005DA3;
+        bottom: -15px;
+    }
+
+    @media (max-width: 767.98px){
+        .diksha-student .nistha-sub-head {
+            padding: 0 5px;
+        }
+        .diksha-student .nistha-sub-head h2{
+            font-size: 27px !important;
+        }
+    }
+</style>
+<div class="diksha-student">
+    <div class="diksha-study-sec sec-padding">
+        <div class="nistha-sub-head">
+            <h2>Complete K-12 Coverage <br> with 12L+ Open Digital Content</h2>
+        </div>
+        <div class="container">
+            <div class="container-box">
+                <div class="row justify-content-center">
+                    <div class="col-md-12">
+                        <ul class="nav nav-tabs nistha-certif-tab nistha-bluebg-tab" id="nisthaCertificateTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="found-stage-tab" data-bs-toggle="tab" data-bs-target="#found-stage" type="button" role="tab" aria-controls="found-stage" aria-selected="true">Foundational Stage</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="prep-stage-tab" data-bs-toggle="tab" data-bs-target="#prep-stage" type="button" role="tab" aria-controls="prep-stage" aria-selected="false">Preparatory  Stage</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="mid-stage-tab" data-bs-toggle="tab" data-bs-target="#mid-stage" type="button" role="tab" aria-controls="mid-stage" aria-selected="false">Middle Stage</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="sec-stage-tab" data-bs-toggle="tab" data-bs-target="#sec-stage" type="button" role="tab" aria-controls="sec-stage" aria-selected="false">Secondary Stage</button>
+                              </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="explore-filter">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                            <div class="row mb-3">
+                                <label for="board" class="col-sm-2 col-form-label">Board</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select custom-fc">
+                                        <option>Select Board</option>
+                                        <option>CBSE</option>
+                                        <option>NCERT</option>
+                                        <option>ICSE</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                            <div class="row mb-3">
+                                <label for="grade" class="col-sm-2 col-form-label">Grade</label>
+                                <div class="col-sm-10">
+                                    <select class="form-select custom-fc">
+                                        <option>Select Grade</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="hr-border">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12">
+                        <div class="tab-content" id="nisthaCertificateTabContent">
+                            <div class="tab-pane fade show active" id="found-stage" role="tabpanel" aria-labelledby="found-stage-tab">
+                                <div id="foundStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#foundStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#foundStageCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#foundStageCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b1.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b2.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b3.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title right-align">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board">Board : CBSE</span>
+                                                                <span class="medium">Medium : English</span>
+                                                                <span class="grade">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#foundStageCarousel" role="button" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#foundStageCarousel" role="button" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="prep-stage" role="tabpanel" aria-labelledby="prep-stage-tab">
+                                <div id="prepStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#prepStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#prepStageCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#prepStageCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b1.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b2.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b3.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title right-align">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board">Board : CBSE</span>
+                                                                <span class="medium">Medium : English</span>
+                                                                <span class="grade">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#prepStageCarousel" role="button" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#prepStageCarousel" role="button" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="mid-stage" role="tabpanel" aria-labelledby="mid-stage-tab">
+                                <div id="midStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#midStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#midStageCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#midStageCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b1.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b2.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b3.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title right-align">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board">Board : CBSE</span>
+                                                                <span class="medium">Medium : English</span>
+                                                                <span class="grade">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#midStageCarousel" role="button" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#midStageCarousel" role="button" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="sec-stage" role="tabpanel" aria-labelledby="sec-stage-tab">
+                                <div id="secStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#secStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#secStageCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#secStageCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                      </div>
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="carousel-item active">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b1.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b2.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board" title="CBSE">Board : CBSE</span>
+                                                                <span class="medium" title="English">Medium : English</span>
+                                                                <span class="grade" title="Class 9">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="col-md-6 col-xl-4">
+                                                <a href="#" target="_blank" class="nistha-course-nav-link">
+                                                    <div class="nistha-course-card">
+                                                        <div class="book-image">
+                                                            <img src="../assets/homepage/nistha-lp/parents/study/b3.png" alt="">
+                                                        </div>
+                                                        <div class="nistha-course-detail">
+                                                            <div class="course-strip">
+                                                                <div class="strip-wrap">
+                                                                    <span>
+                                                                        <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                                    </span>
+                                                                    <span class="strip-title">Digital Textbook</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="course-title right-align">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <span class="board">Board : CBSE</span>
+                                                                <span class="medium">Medium : English</span>
+                                                                <span class="grade">Class 9</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject : CBSE Training</span>
+                                                            </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
+                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#secStageCarousel" role="button" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#secStageCarousel" role="button" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-sm-12 text-center view-btn-div">
+                        <a href="#" class="study-view-more-btn" target="_blank">View More</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

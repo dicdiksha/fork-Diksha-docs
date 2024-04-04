@@ -1,0 +1,29 @@
+---
+layout: home-layout
+permalink: /dikshaforhead/
+title: Diksha For HT Page
+---
+
+<div>
+    {% include diksha-for-HT-banner.html %}
+    {% include diksha-for-HT-track-progress.html %}
+    {% include diksha-for-HT-student.html %}
+    {% include diksha-for-HT-teacher.html %}
+    {% include diksha-for-HT-study.html %}
+    <div id="scrollMainContent"></div> 
+    {% include diksha-for-HT-diksha.html %}
+    {% include diksha-for-HT-testimonial.html %}
+</div>
+
+{% contentfor mobileview %}
+<div>
+    {% include diksha-for-HT-banner.html %}
+    {% include diksha-for-HT-track-progress.html %}
+    {% include diksha-for-HT-student.html %}
+    {% include diksha-for-HT-teacher.html %}
+    {% include diksha-for-HT-study.html %}
+    <div id="scrollMainContent"></div>
+    {% include diksha-for-HT-diksha.html %}
+    {% include diksha-for-HT-testimonial.html %}
+</div>
+{% endcontentfor %}
