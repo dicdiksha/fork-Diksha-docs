@@ -1,0 +1,298 @@
+<style>
+    .nistha-testimonial-item {
+        background-color: #FFEFDD;
+        border-radius: 6px;
+        min-height: 260px;
+        padding: 15px;
+        position: relative;
+        margin: 0 0.625rem;
+    }
+    .nistha-testimonial-item:after {
+        content: " ";
+        position: absolute;
+        right: 85%;
+        bottom: -21px;
+        border-top: 26px solid #ffefdd;
+        border-right: 32px solid transparent;
+        border-left: 0px solid transparent;
+        border-bottom: none;
+        border-bottom-left-radius: 4px;
+        transform: rotate(17deg);
+    }
+    .nistha-testimonial-item.peach-box{
+        background-color: #FFEFDD;
+    }
+    .nistha-testimonial-item.green-box{
+        background-color: #E9FFFA;
+    }
+    .nistha-testimonial-item.pink-box{
+        background-color: #FFF1F7;
+    }
+    .nistha-testimonial-item.peach-box::after{
+        border-top: 33px solid #ffefdd;
+    }
+    .nistha-testimonial-item.green-box::after{
+        border-top: 33px solid #E9FFFA;
+    }
+    .nistha-testimonial-item.pink-box::after{
+        border-top: 33px solid #FFF1F7;
+    }
+    .nistha-testimonial-item .testi-upper-box{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.3rem;
+    }
+    .nistha-testimonial-item h4{
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #434141;
+        margin-bottom: 0;
+    }
+    .nistha-testimonial-item h5{
+        font-size: 14px;
+        font-weight: 500;
+        color: #919191;
+    }
+    .nistha-testimonial-item .testi-detail {
+        margin-left: 15px;
+    }
+    .nistha-testimonial-item .testi-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        overflow: hidden;
+        border: 1px solid transparent;
+    }
+    .nistha-testimonial-item .testi-desc p{
+        margin-bottom: 5px;
+        font-size: 14px;
+        line-height: 26px;
+    }
+    .nistha-testimonial-item .texti-desc-limit{
+        height: 130px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        max-width: 215ch;
+    }
+    .nistha-testimonial-carousel .carousel-inner .carousel-item.active,
+    .nistha-testimonial-carousel .carousel-inner .carousel-item-next,
+    .nistha-testimonial-carousel .carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+    .nistha-testimonial-carousel .carousel-control-prev,
+    .nistha-testimonial-carousel .carousel-control-next{
+        display: none;
+    }
+    .nistha-testimonial-carousel .carousel-indicators{
+        bottom: -10% !important;
+        margin: 0 auto;
+        text-align: center;
+        align-items: center;
+    }
+    .nistha-testimonial-carousel .carousel-indicators [data-bs-target]{
+        background-color: #005DA3;
+        height: 8px;
+        width: 8px;
+        margin: 3px 8px;
+        border-radius: 50% !important;
+        border: 0 !important;
+        opacity: 1;
+    }
+    .nistha-testimonial-carousel .carousel-indicators [data-bs-target].active{
+        background-color: #005DA3;
+        box-sizing: content-box;
+        flex: 0 1 auto;
+        transition: all .6s ease;
+        position: relative;
+    }
+    .nistha-testimonial-carousel .carousel-indicators [data-bs-target].active::after{
+        border-radius: 50%;
+        border: 1px solid #005DA3;
+        position: absolute;
+        content: "";
+        top: -4px;
+        left: -4px;
+        bottom: -4px;
+        right: -4px;
+    }
+    .nistha-testimonial-carousel .carousel-item{
+        padding-bottom: 30px;
+    }
+    .test-sec-padding{
+        padding: 40px 0 80px 0;
+    }
+    @media (max-width: 767px) {
+	    .nistha-testimonial-carousel .carousel-inner .carousel-item > div {
+			display: none;
+		}
+        .nistha-testimonial-carousel .carousel-inner .carousel-item > div:first-child {
+			display: block;
+		}
+        .nistha-testimonial-carousel .carousel-inner .carousel-item.active,
+        .nistha-testimonial-carousel .carousel-inner .carousel-item-next,
+        .nistha-testimonial-carousel .carousel-inner .carousel-item-prev {
+            justify-content: center;
+        }
+	}
+    @media (max-width: 576px){
+         .nistha-testimonial-carousel .carousel-control-prev,
+         .nistha-testimonial-carousel .carousel-control-next{
+            display: block;
+            opacity: 1;
+        }
+         .nistha-testimonial-carousel .carousel-control-prev{
+            left: -10%;
+            top: 40%;
+        }
+         .nistha-testimonial-carousel .carousel-control-next{
+            right: -10%;
+            top: 40%;
+        }
+         .nistha-testimonial-carousel .carousel-control-prev-icon,
+         .nistha-testimonial-carousel .carousel-control-next-icon {
+            background-color: #024F9D;
+            height: 20px;
+            width: 20px;
+            padding: 7px;
+        }
+    }
+    .student-ht-testimonial {
+        margin: 3rem 0;
+        }
+        .student-ht-testimonial .nistha-sub-head {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.student-ht-testimonial .nistha-sub-head h2 {
+    font-size: 40px;
+    line-height: 33.6px;
+    color: #434141;
+    font-weight: 500;
+    font-family: 'Outfit';
+    position: relative;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+@media (max-width: 767.98px){
+    .student-ht-testimonial .nistha-sub-head {
+            padding: 0 5px;
+        }
+        .student-ht-testimonial .nistha-sub-head h2{
+            font-size: 27px !important;
+        }
+    }
+</style>
+<div class="student-ht-testimonial">
+    <div class="nistha-testimonial">
+        <div class="nistha-sub-head">
+            <h2>Students Testimonials about the DIKSHA</h2>
+        </div>
+        <div class="container">
+            <div class="container-box">
+                <div id="parentTestiCarousel" class="nistha-testimonial-carousel parent-say-carousel carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#parentTestiCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#parentTestiCarousel" tabindex="0" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#parentTestiCarousel" tabindex="0" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      </div>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="nistha-testimonial-item peach-box">
+                                    <div class="testi-upper-box">
+                                        <div class="testi-img">
+                                            <img src="../assets/homepage/diksha-student/testimonials1.png" alt="">
+                                        </div>
+                                        <div class="testi-detail">
+                                           <h4>Mahira</h4>
+                                           <h5>Student, Kendriya Vidyalaya</h5>
+                                        </div>
+                                    </div>
+                                    <div class="testi-desc">
+                                        <div class="texti-desc-limit">
+                                        <p>It is really a very good application software and l got a lot of help in my studies. I shared also among my friends and they liked and enbibed contents from it. Thanking you Yours's truly A Student</p>
+                                             </div>
+                                        <div class="star-rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="nistha-testimonial-item green-box">
+                                    <div class="testi-upper-box">
+                                        <div class="testi-img">
+                                            <img src="../assets/homepage/diksha-student/testimonials2.png" alt="">
+                                        </div>
+                                        <div class="testi-detail">
+                                           <h4>Jay  Vilhekar</h4>
+                                           <h5>Student, HVS School</h5>
+                                        </div>
+                                    </div>
+                                    <div class="testi-desc">
+                                        <div class="texti-desc-limit">
+                                        <p>It is best for the students ,who are on stateboard level, also for students who are not on stateboard level but they have some stateboard books. I am very happy it is very happy for self study.</p>
+                                             </div>
+                                        <div class="star-rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <!-- <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating"> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="nistha-testimonial-item pink-box">
+                                    <div class="testi-upper-box">
+                                        <div class="testi-img">
+                                            <img src="../assets/homepage/diksha-student/testimonials3.png" alt="">
+                                        </div>
+                                        <div class="testi-detail">
+                                           <h4>Ashmita Roy</h4>
+                                           <h5>Student, VKS Vidyalaya</h5>
+                                        </div>
+                                    </div>
+                                    <div class="testi-desc">
+                                        <div class="texti-desc-limit">
+                                        <p>It is such a good app. We can get many extra questions and also complete explanation of each chapter. For this I got better marks in my English test than before.</p>
+                                             </div>
+                                        <div class="star-rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating">
+                                            <!-- <img src="../assets/homepage/nistha-lp/testimonial/star.png" alt="rating"> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#parentTestiCarousel" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#parentTestiCarousel" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
