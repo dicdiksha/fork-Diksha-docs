@@ -1189,3 +1189,21 @@ function toTitleCase(str) {
       let suffixText =  toTitleCase(remainingText1);
       document.getElementById('title').textContent = document.getElementById('title').textContent + " " +suffixText;
   }
+// Diksha for Others Carousel
+let othersitems = document.querySelectorAll(
+  ".others-testimonial-carousel .carousel-item"
+);
+othersitems.forEach((el) => {
+  const othersMinPerSlide = 3;
+  let othersnext = el.nextElementSibling;
+  for (var otherstest = 1; otherstest < othersMinPerSlide; otherstest++) {
+    if (!othersnext) {
+      // wrap carousel by using first child
+      othersnext = othersitems[0];
+    }
+    let cloneChild = othersnext.cloneNode(true);
+    el.appendChild(cloneChild.children[0]);
+    othersnext = othersnext.nextElementSibling;
+  }
+});
+

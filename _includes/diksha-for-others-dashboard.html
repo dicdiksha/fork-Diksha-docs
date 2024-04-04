@@ -1,0 +1,314 @@
+<style>
+    .nistha-sub-head{
+        text-align: center;
+        margin-bottom: 3rem;       
+    }
+    .nistha-sub-head h2{
+        font-size: 40px;
+        line-height: 33.6px;
+        color: #434141;
+        font-weight: 500;
+        font-family: 'Outfit';
+        position: relative;
+        display: inline-block;
+        padding: 0 10px;
+    }
+    .others-dashboard-sec .metrics-wrap{
+        border: 1px solid #80BDFA;
+        box-shadow: 0px 4px 16.200000762939453px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 6px;
+        padding: 15px 13px;
+        text-align: center;
+    }
+    .others-dashboard-sec .metrics-wrap.dashboard-height{
+        min-height: 545px;
+    }
+    .others-dashboard-sec .metrics-title {
+        display: flex;
+        align-items: center;
+    }
+    .metric-icon{
+        height: 42px;
+        width: 42px;
+        border-radius: 50%;
+        border: 1px solid #024F9D;
+        background-color: #E1F1FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .others-dashboard-sec .metric-name{
+        color: #024F9D;
+        font-size: 17px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-left: 6px;
+    }
+    .others-dashboard-sec .metric-count{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 24px;
+    }
+    .others-dashboard-sec .metric-count.learning{
+        color: #00B2FF;
+    }
+    .others-dashboard-sec .metric-count.minutes{
+        color: #5BDF78;
+    }
+    .others-dashboard-sec .metric-count.contribution{
+        color: #FFB039;
+    }
+    .others-dashboard-sec .metric-count.contributor{
+        color: #2EDED4;
+    }
+
+    .others-dashboard-sec .metric-count.course{
+        color: #8C4BF5;
+    }
+    .others-dashboard-sec .metric-count.enrolment{
+        color: #FFE145;
+    }
+    .others-dashboard-sec .metric-count.course-comp{
+        color: #316BEF;
+    }
+    .others-dashboard-sec .metric-count.course-certif{
+        color: #FA39AD;
+    }
+    .others-dashboard-sec .graph-name{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28px;
+    }
+    .others-dashboard-sec .dashed-border img{
+        max-width: 100%;
+        height: auto;
+    }
+    .others-dashboard-sec .view-dashboard-btn button{
+        border: 1px solid #024F9D;
+        border-radius: 90px;
+        background-color: #F0F7FF;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 5px 17px;
+        margin-top: 25px;
+    }
+    .metric-graph img {
+        max-width: 100%;
+        height: auto;
+    }
+    .discover-wrap{
+        border: 1px solid #80BDFA;
+        border-radius: 6px;
+        padding: 15px;
+        padding: 15px;
+        display: flex;
+        align-items: flex-start;
+        background-color: #FFFFFF;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .discover-wrap .detail{
+        margin-left: 10px;
+    }
+    .discover-wrap h4 {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #000000;
+    }
+    .discover-wrap p{
+        margin-bottom: 10px;
+        color: #434141;
+    }
+    .others-dashboard-sec .dashboard-bg{
+        background-color: #F8F8F8;
+        padding: 20px;
+    }
+    .metric-graph-detail {
+        padding: 20px 0;
+    }
+    .metric-graph-detail.course-pading{
+        padding: 15px 0 0px 0;
+    }
+    .metric-graph-detail.contrib-pading{
+        padding: 5px 0 20px 0;
+    }
+    .last-upd-div{
+        display: flex;
+        justify-content: end;
+        margin-bottom: 20px;
+    }
+    .last-upd-div span{
+        background: linear-gradient(90.22deg, #D9E9F3 49.51%, #A8DEFF 107.44%);
+        font-size: 12px;
+        padding: 9px 19px;
+        border-radius: 3px;
+        font-weight: 500;
+        color: #024F9D;
+        line-height: 24px;
+    }
+    @media (max-width: 767.98px){
+        .others-dashboard-sec .metrics-wrap{
+            margin-bottom: 10px;
+        }
+        .discover-wrap{
+            margin-bottom: 20px;
+        }
+    }
+</style>
+<div class="others-dashboard-sec">
+    <div class="nistha-sub-head">
+        <h2>DIKSHA Dashboard</h2>
+    </div>
+    <div class="container">
+        <div class="container-box">
+            <div class="dashboard-bg">
+                <div class="last-upd-div">
+                    <span> Last Updated on 30-21-2024, 02:01 PM</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="metrics-wrap dashboard-height">
+                                    <div class="metrics-title">
+                                        <span class="metric-icon">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/usage-icon.svg" alt="usage metric">
+                                        </span>
+                                        <span class="metric-name">Usage Metrics</span>
+                                    </div>
+                                    <div class="metric-graph-detail">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/learning.png" alt="Learning session">
+                                        </div>
+                                        <div class="metric-count learning">5,34,95,81,277</div>
+                                        <div class="graph-name">Learning Sessions</div>
+                                    </div>
+            
+                                    <div class="dashed-border">
+                                        <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
+                                    </div>
+            
+                                    <div class="metric-graph-detail">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/minute.png" alt="Learning session">
+                                        </div>
+                                        <div class="metric-count minutes">62,44,47,15,282</div>
+                                        <div class="graph-name">Minutes</div>
+                                    </div>
+            
+                                    <div class="view-dashboard-btn">
+                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye-svg.svg"> View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="metrics-wrap dashboard-height">
+                                    <div class="metrics-title">
+                                        <span class="metric-icon">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/contrib-icon.svg" alt="Contribution Metrics">
+                                        </span>
+                                        <span class="metric-name">Contribution Metrics</span>
+                                    </div>
+                                    <div class="metric-graph-detail contrib-pading">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/contribution.png" alt="contribution">
+                                        </div>
+                                        <div class="metric-count contribution">2,55,292</div>
+                                        <div class="graph-name">Contributions</div>
+                                    </div>
+                                    <div class="dashed-border">
+                                        <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
+                                    </div>
+            
+                                    <div class="metric-graph-detail contrib-pading">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/contributor.png" alt="contributor">
+                                        </div>
+                                        <div class="metric-count contributor">11,787</div>
+                                        <div class="graph-name">Contributors</div>
+                                    </div>
+            
+                                    <div class="view-dashboard-btn">
+                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye-svg.svg"> View</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="discover-wrap">
+                                    <img src="../assets/homepage/nistha-lp/others/dashboard/discover.png" alt="discover">
+                                    <div class="detail">
+                                        <h4>Discover Insights</h4>
+                                        <p>This dashboard presents data on five thematic areas across India. Click on any thematic areas to explore further.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-4">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-12">
+                                <div class="metrics-wrap">
+                                    <div class="metrics-title">
+                                        <span class="metric-icon">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/course-icon.svg" alt="Course Metrics">
+                                        </span>
+                                        <span class="metric-name">Course Metrics</span>
+                                    </div>
+                                    <div class="metric-graph-detail course-pading">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/courses.png" alt="contribution">
+                                        </div>
+                                        <div class="metric-count course">17,458</div>
+                                        <div class="graph-name">Courses</div>
+                                    </div>
+            
+                                    <div class="dashed-border">
+                                        <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
+                                    </div>
+            
+                                    <div class="metric-graph-detail course-pading">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/enrolments.png" alt="enrollments">
+                                        </div>
+                                        <div class="metric-count enrolment">17,18,79,338</div>
+                                        <div class="graph-name">enrollments</div>
+                                    </div>
+            
+                                    <div class="dashed-border">
+                                        <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
+                                    </div>
+            
+                                    <div class="metric-graph-detail course-pading">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/course-complete.png" alt="course-complete">
+                                        </div>
+                                        <div class="metric-count course-comp">13,96,11,258</div>
+                                        <div class="graph-name">Course Completions</div>
+                                    </div>
+            
+                                    <div class="dashed-border">
+                                        <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
+                                    </div>
+            
+                                    <div class="metric-graph-detail course-pading">
+                                        <div class="metric-graph">
+                                            <img src="../assets/homepage/nistha-lp/others/dashboard/course-certif.png" alt="course-certificate">
+                                        </div>
+                                        <div class="metric-count course-certif">1,30,000</div>
+                                        <div class="graph-name">Course Certificates issued</div>
+                                    </div>
+            
+                                    <div class="view-dashboard-btn">
+                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye-svg.svg"> View</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
