@@ -1213,3 +1213,4 @@ othersitems.forEach((el) => {
     othersnext = othersnext.nextElementSibling;
   }
 });
+

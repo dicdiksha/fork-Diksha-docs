@@ -17,8 +17,11 @@
         border: 1px solid #80BDFA;
         box-shadow: 0px 4px 16.200000762939453px 0px rgba(0, 0, 0, 0.15);
         border-radius: 6px;
-        padding: 15px;
+        padding: 15px 13px;
         text-align: center;
+    }
+    .others-dashboard-sec .metrics-wrap.dashboard-height{
+        min-height: 545px;
     }
     .others-dashboard-sec .metrics-title {
         display: flex;
@@ -36,10 +39,10 @@
     }
     .others-dashboard-sec .metric-name{
         color: #024F9D;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 600;
         line-height: 28px;
-        margin-left: 10px;
+        margin-left: 6px;
     }
     .others-dashboard-sec .metric-count{
         font-size: 25px;
@@ -87,6 +90,7 @@
         font-size: 12px;
         font-weight: 500;
         padding: 5px 17px;
+        margin-top: 25px;
     }
     .metric-graph img {
         max-width: 100%;
@@ -101,6 +105,7 @@
         align-items: flex-start;
         background-color: #FFFFFF;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .discover-wrap .detail{
         margin-left: 10px;
@@ -111,12 +116,22 @@
         line-height: 24px;
         color: #000000;
     }
+    .discover-wrap p{
+        margin-bottom: 10px;
+        color: #434141;
+    }
     .others-dashboard-sec .dashboard-bg{
         background-color: #F8F8F8;
         padding: 20px;
     }
     .metric-graph-detail {
-        padding: 20px 0 30px 0;
+        padding: 20px 0;
+    }
+    .metric-graph-detail.course-pading{
+        padding: 15px 0 0px 0;
+    }
+    .metric-graph-detail.contrib-pading{
+        padding: 5px 0 20px 0;
     }
     .last-upd-div{
         display: flex;
@@ -136,6 +151,9 @@
         .others-dashboard-sec .metrics-wrap{
             margin-bottom: 10px;
         }
+        .discover-wrap{
+            margin-bottom: 20px;
+        }
     }
 </style>
 <div class="others-dashboard-sec">
@@ -152,7 +170,7 @@
                     <div class="col-md-12 col-lg-8">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="metrics-wrap">
+                                <div class="metrics-wrap dashboard-height">
                                     <div class="metrics-title">
                                         <span class="metric-icon">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/usage-icon.svg" alt="usage metric">
@@ -185,14 +203,14 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="metrics-wrap">
+                                <div class="metrics-wrap dashboard-height">
                                     <div class="metrics-title">
                                         <span class="metric-icon">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/contrib-icon.svg" alt="Contribution Metrics">
                                         </span>
                                         <span class="metric-name">Contribution Metrics</span>
                                     </div>
-                                    <div class="metric-graph-detail">
+                                    <div class="metric-graph-detail contrib-pading">
                                         <div class="metric-graph">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/contribution.png" alt="contribution">
                                         </div>
@@ -203,7 +221,7 @@
                                         <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
                                     </div>
             
-                                    <div class="metric-graph-detail">
+                                    <div class="metric-graph-detail contrib-pading">
                                         <div class="metric-graph">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/contributor.png" alt="contributor">
                                         </div>
@@ -212,7 +230,7 @@
                                     </div>
             
                                     <div class="view-dashboard-btn">
-                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye.png"> View</button>
+                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye-svg.svg"> View</button>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +255,7 @@
                                         </span>
                                         <span class="metric-name">Course Metrics</span>
                                     </div>
-                                    <div class="metric-graph-detail">
+                                    <div class="metric-graph-detail course-pading">
                                         <div class="metric-graph">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/courses.png" alt="contribution">
                                         </div>
@@ -249,7 +267,7 @@
                                         <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
                                     </div>
             
-                                    <div class="metric-graph-detail">
+                                    <div class="metric-graph-detail course-pading">
                                         <div class="metric-graph">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/enrolments.png" alt="enrollments">
                                         </div>
@@ -261,7 +279,7 @@
                                         <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
                                     </div>
             
-                                    <div class="metric-graph-detail">
+                                    <div class="metric-graph-detail course-pading">
                                         <div class="metric-graph">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/course-complete.png" alt="course-complete">
                                         </div>
@@ -273,7 +291,7 @@
                                         <img src="../assets/homepage/nistha-lp/others/dashboard/dash-border.png" alt="border">
                                     </div>
             
-                                    <div class="metric-graph-detail">
+                                    <div class="metric-graph-detail course-pading">
                                         <div class="metric-graph">
                                             <img src="../assets/homepage/nistha-lp/others/dashboard/course-certif.png" alt="course-certificate">
                                         </div>
@@ -282,7 +300,7 @@
                                     </div>
             
                                     <div class="view-dashboard-btn">
-                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye.png"> View</button>
+                                        <button class="btn"><img src="../assets/homepage/nistha-lp/others/dashboard/eye-svg.svg"> View</button>
                                     </div>
                                 </div>
                             </div>
