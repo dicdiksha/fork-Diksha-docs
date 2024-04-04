@@ -1,0 +1,27 @@
+---
+layout: home-layout
+permalink: /dikshaforothers/
+title: Diksha For Others Page
+---
+
+<div>
+    {% include diksha-for-others-banner.html %}
+    {% include diksha-for-others-about.html %}
+    {% include diksha-for-others-ecosystem.html %}
+    {% include diksha-for-others-testimonial.html %}
+    {% include diksha-for-others-dashboard.html %}
+    {% include diksha-for-others-contributor.html %}
+    <div id="scrollMainContent"></div>
+</div>
+
+{% contentfor mobileview %}
+<div>
+    {% include diksha-for-others-banner.html %}
+    {% include diksha-for-others-about.html %}
+    {% include diksha-for-others-ecosystem.html %}
+    {% include diksha-for-others-testimonial.html %}
+    {% include diksha-for-others-dashboard.html %}
+    {% include diksha-for-others-contributor.html %}
+    <div id="scrollMainContent"></div>
+</div>
+{% endcontentfor %}
