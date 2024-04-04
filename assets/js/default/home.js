@@ -1183,3 +1183,16 @@ parentstudyitems.forEach((el) => {
   }
 });
 
+function toTitleCase(str) {
+  return str.replace(/\w\S*/g, function(txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+  });
+}
+
+  let winText1 = window.location.href;
+  let remainingText1 = "";
+  remainingText1= winText1.split('dikshafor')[1].split('/')[0];
+  if(remainingText1){
+      let suffixText =  toTitleCase(remainingText1);
+      document.getElementById('title').textContent = document.getElementById('title').textContent + " " +suffixText;
+  }
