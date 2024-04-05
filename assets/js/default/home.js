@@ -1187,9 +1187,13 @@ function toTitleCase(str) {
   let remainingText1 = "";
   remainingText1= winText1.split('dikshafor')[1].split('/')[0];
   if(remainingText1){
-      let suffixText =  toTitleCase(remainingText1);
-      document.getElementById('title').textContent = document.getElementById('title').textContent + " " +suffixText;
+    let suffixText =  toTitleCase(remainingText1);
+    document.getElementById('title').textContent = document.getElementById('title').textContent + " " +suffixText;
+    var linkElement = document.getElementById('dropdownMenuLink');
+    // Add the "active" class to the element
+    linkElement.classList.add('active');
   }
+
 // Diksha for Others Carousel
 let othersitems = document.querySelectorAll(
   ".others-testimonial-carousel .carousel-item"
