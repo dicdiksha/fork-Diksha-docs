@@ -3,6 +3,7 @@
         max-width: 100%;
         height: auto;
         width: 100%;
+        min-height: 410px;
     }
 
     .diksha-ht-track-process {
@@ -39,11 +40,43 @@
         .nistha-sub-head h2{
             font-size: 27px !important;
         }
+        .diksha-ht-banner img{
+            min-height: auto !important;
+        }
     }
+
+    .ht-banner-slider .carousel-indicators {
+        bottom: 0 !important;
+        background-color: transparent;
+        padding: 10px;
+    }
+
+.ht-banner-slider .carousel-indicators li {
+    /* width: .4375rem;
+    height: .4375rem; */
+    background: rgba(140, 140, 140, 1);
+    margin-right: .6875rem;
+    cursor: pointer;
+    height: 6px;
+    width: 16px;
+    border: none;
+    border-radius: 8px;
+}
+.ht-banner-slider .carousel-indicators li,.ht-banner-slider .carousel-indicators .active {
+    border-radius: 16px
+}
+
+.ht-banner-slider .carousel-indicators .active {
+    /* width: .75rem;
+    height: .75rem; */
+    height: 9px;
+    width: 24px;
+    background-color:#005DA3;
+}
 </style>
 <div class="diksha-ht-banner">
   
-        <div id="student-head" class="carousel slide" data-bs-ride="carousel">
+        <div id="student-head" class="carousel slide ht-banner-slider" data-bs-ride="carousel">
             <div class="carousel-inner" title="">
                 <div class="carousel-item carousel3-bg active" role="option">
                     <img loading="lazy" decoding="async" class="carousel-img-height" 
@@ -63,7 +96,7 @@
                 aria-controls="carousel-items" aria-label="slider2"></li>  
 
             </ol>
-            <a class="carousel-control-prev" href="#student-head" data-bs-target="student-head" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev" href="#student-head" data-bs-target="#student-head" role="button" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               </a>
               <a class="carousel-control-next" href="#student-head"  data-bs-target="#student-head" role="button" data-bs-slide="next">
