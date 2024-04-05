@@ -32,6 +32,7 @@
     font-size: 12px;
     color: #0A589A;
     align-items: center;
+    justify-content: space-around;
 }
 
 .app-download .app-img {
@@ -68,9 +69,9 @@
     color: inherit;
 }
 
-.mobile-app .mobile-app-left img{
+/* .mobile-app .mobile-app-left img{
     width: 105px
-}
+} */
 .mobile-app .mobile-app-right img {
     width: 80%;
 
@@ -82,6 +83,12 @@
 @media (max-width: 575.98px){
         .mobile-app-title{
             font-size: 1.75rem !important;
+        }
+        .scan-img img{
+            max-width: 100%;
+        }
+        .app-download .border-line{
+            margin: 0 15px;
         }
     }
 </style>
@@ -101,18 +108,17 @@
                              <span class="diksha" data-translate="diksha"> {{site.data.text.diksha}} </span> <br> <span data-translate="mobileApp">{{site.data.text.mobileApp}}</span>
                             <div class="app-download">
                                 <div class="scan-img">
-                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/google-playstore.png" alt="mobile-app-paly-store-scanner" class="app-scanner">
+                                    <img src="../assets/homepage/diksha-qr-code.png" alt="mobile-app-paly-store-scanner" class="app-scanner">
                                     <span class="my-3" data-translate="scanDownload">{{site.data.text.scanDownload}}</span>
-                                    <span class="app-icon ">
-                                        <a href="https://play.google.com/store/apps/details?id=in.gov.diksha.app" target="_blank">
-                                            <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/imgs/get-app/play-store.png" alt="paly store">
-                                        </a>
-                                    </span>
+                                    
                                 </div>
                                 <div class="border-line"></div>
                                 <div class="scan-img">
-                                    <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/app-store.png" alt="mobile-app-app-store-scanner" class="app-scanner">
-                                    <span class="my-3" data-translate="scanDownload">{{site.data.text.scanDownload}}</span>
+                                    <span class="app-icon ">
+                                        <a href="https://play.google.com/store/apps/details?id=in.gov.diksha.app&hl=en&gl=US" target="_blank">
+                                            <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/imgs/get-app/play-store.png" alt="play store">
+                                        </a>
+                                    </span>
                                     <span class="app-icon">
                                         <a href="https://apps.apple.com/in/app/diksha/id1587874277" target="_blank">
                                             <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/imgs/get-app/apple-store.png" alt="apple store">
@@ -134,7 +140,7 @@
                 <div class="col-md-1"> <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/imgs/get-app/play-store-icon.png" alt="play-store-icon"></span></div>
                 <div class="col-md-3" data-translate="downloadLinkAndroid">{{site.data.text.downloadLinkAndroid}}</div>
                 <div class="col-md-8">
-                    <a href="https://play.google.com/store/apps/details?id=in.gov.diksha.app" target="_blank" class="applink" data-translate="clickHere">
+                    <a href="https://play.google.com/store/apps/details?id=in.gov.diksha.app&hl=en&gl=US" target="_blank" class="applink" data-translate="clickHere">
                         {{site.data.text.clickHere}}
                     </a>
                 </div>
