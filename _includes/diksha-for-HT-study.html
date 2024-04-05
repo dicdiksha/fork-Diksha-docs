@@ -291,67 +291,231 @@
             font-size: 27px !important;
         }
     }
+    /* New css */
+    .diksha-blue-head{
+        color: #024F9D;
+    }
+    .diksha-ht-tab {
+        border: 0;
+    }
+    .diksha-ht-tab li{
+        border-radius: 50px;
+    }
+    .diksha-ht-tab li.found{
+        border: 1px solid #7653A2;
+    }
+    .diksha-ht-tab li.prep{
+        border: 1px solid #219FAF;
+    }
+    .diksha-ht-tab li.middle{
+        border: 1px solid #FFD04F;
+    }
+    .diksha-ht-tab li.second{
+        border: 1px solid #F89521;
+    }
+    .diksha-ht-tab .nav-link{
+        font-size: 18px;
+        color: #434141;
+        display: flex;
+        align-items: center;
+        padding: 10px 18px 10px 10px !important;
+    }
+    span.tab-course-icon {
+        background-color: #7653A2;
+        border-radius: 50%;
+        height: 60px;
+        width: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    span.tab-course-icon.found-color {
+        background-color: #7653A2;
+    }
+    span.tab-course-icon.prep-color {
+        background-color: #219FAF;
+    }
+    span.tab-course-icon.mid-color {
+        background-color: #FFD04F;
+    }
+    span.tab-course-icon.sec-color {
+        background-color: #F89521;
+    }
+    .diksha-ht-tab .nav-link.active{
+       color: #ffffff;
+       border-radius: 50px;
+    }
+    .study-active-icon{
+        display: none;
+    }
+    .diksha-ht-tab .nav-link.active span.tab-course-icon .study-icon {
+        display: none;
+    }
+    .diksha-ht-tab .nav-link.active span.tab-course-icon .study-active-icon{
+        display: block;
+    }
+
+    .diksha-ht-tab .nav-link.active span.tab-course-icon{
+        background-color: #ffffff;
+    }
+    .diksha-ht-tab .nav-link.found-link.active {
+        background-color: #7653A2;
+    }
+    .diksha-ht-tab .nav-link.prep-link.active{
+        background-color: #219FAF;
+    }
+    .diksha-ht-tab .nav-link.mid-link.active{
+        background-color: #FFD04F;
+    }
+    .diksha-ht-tab .nav-link.sec-link.active{
+        background-color: #F89521;
+    }
+    .explore-filter .custom-fc.ht{
+        background-color: #F9F9F9;
+        border: 0;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #757575;
+        height: 48px;
+    }
+    select.form-select.custom-fc.ht:focus-visible {
+        border: 1px solid #0000001F !important;
+    }
+    .ht-board-filter{
+        display: flex;
+    }
+    .ht-board-filter span{
+        margin-right: 20px;
+    }
+    @media (min-width: 991px) and (max-width: 1199.98px){
+        .diksha-ht-tab .nav-link{
+            font-size: 16px;
+            padding: 10px 14px 10px 10px !important;
+        }
+        span.tab-course-icon{
+            height: 45px;
+            width: 45px;
+            margin-right: 10px;
+        }
+        .study-icon, .study-active-icon{
+            max-width: 80%;
+        }
+    }
+    @media (max-width: 768px){
+        .diksha-ht-tab{
+            justify-content: center !important;
+        }
+        .diksha-ht-tab{
+            justify-content: center;
+        }
+        .diksha-ht-tab .nav-link{
+            font-size: 15px !important;
+        }
+        .diksha-ht-tab li {
+            margin: 10px;
+        }
+        .diksha-ht-tab .nav-link span.tab-course-icon .study-active-icon,
+        .diksha-ht-tab .nav-link span.tab-course-icon .study-icon {
+            width: 25px;
+        }
+        span.tab-course-icon{
+            height: 35px;
+            width: 35px;
+        }
+    }
+    @media (max-width: 576px){
+        .ht-board-filter {
+            display: block !important; 
+        }
+    }
+    @media (min-width: 577px) and (max-width: 768px){
+        .progress-img {
+            margin-top: -6%;
+        }
+    }
 </style>
 <div class="diksha-student">
-    <div class="diksha-study-sec sec-padding">
+    <div class="diksha-ht-cover-sec sec-padding">
         <div class="nistha-sub-head">
-            <h2>Complete K-12 Coverage <br> with 12L+ Open Digital Content</h2>
+            <h2>Complete K-12 Coverage <br> with <span class="diksha-blue-head">12L+ </span> Open Digital Content</h2>
         </div>
         <div class="container">
             <div class="container-box">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
-                        <ul class="nav nav-tabs nistha-certif-tab nistha-bluebg-tab" id="nisthaCertificateTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="found-stage-tab" data-bs-toggle="tab" data-bs-target="#found-stage" type="button" role="tab" aria-controls="found-stage" aria-selected="true">Foundational Stage</button>
+                        <ul class="nav nav-tabs nistha-certif-tab diksha-ht-tab" id="nisthaCertificateTab" role="tablist">
+                            <li class="nav-item found" role="presentation">
+                              <button class="nav-link found-link active" id="found-stage-tab" data-bs-toggle="tab" data-bs-target="#found-stage" type="button" role="tab" aria-controls="found-stage" aria-selected="true">
+                                <span class="tab-course-icon found-color">
+                                    <img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="study-icon">
+                                    <img src="../assets/homepage/nistha-lp/parents/study-purple.svg" class="study-active-icon" alt="">
+                                </span>
+                                Foundational Stage
+                            </button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="prep-stage-tab" data-bs-toggle="tab" data-bs-target="#prep-stage" type="button" role="tab" aria-controls="prep-stage" aria-selected="false">Preparatory  Stage</button>
+                            <li class="nav-item prep" role="presentation">
+                              <button class="nav-link prep-link" id="prep-stage-tab" data-bs-toggle="tab" data-bs-target="#prep-stage" type="button" role="tab" aria-controls="prep-stage" aria-selected="false">
+                                <span class="tab-course-icon prep-color">
+                                    <img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="study-icon">
+                                    <img src="../assets/homepage/nistha-lp/parents/study-green.svg" class="study-active-icon" alt="">
+                                </span>
+                                Preparatory  Stage
+                            </button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="mid-stage-tab" data-bs-toggle="tab" data-bs-target="#mid-stage" type="button" role="tab" aria-controls="mid-stage" aria-selected="false">Middle Stage</button>
+                            <li class="nav-item middle" role="presentation">
+                              <button class="nav-link mid-link" id="mid-stage-tab" data-bs-toggle="tab" data-bs-target="#mid-stage" type="button" role="tab" aria-controls="mid-stage" aria-selected="false">
+                                <span class="tab-course-icon mid-color">
+                                    <img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="study-icon">
+                                    <img src="../assets/homepage/nistha-lp/parents/study-yellow.svg" class="study-active-icon" alt="">
+                                </span>
+                                Middle Stage
+                            </button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="sec-stage-tab" data-bs-toggle="tab" data-bs-target="#sec-stage" type="button" role="tab" aria-controls="sec-stage" aria-selected="false">Secondary Stage</button>
+                            <li class="nav-item second" role="presentation">
+                                <button class="nav-link sec-link" id="sec-stage-tab" data-bs-toggle="tab" data-bs-target="#sec-stage" type="button" role="tab" aria-controls="sec-stage" aria-selected="false">
+                                    <span class="tab-course-icon sec-color">
+                                        <img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="study-icon">
+                                    <img src="../assets/homepage/nistha-lp/parents/study-orange.svg" class="study-active-icon" alt="">
+                                    </span>
+                                    Secondary Stage
+                                </button>
                               </li>
                           </ul>
                     </div>
                 </div>
                 <div class="explore-filter">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
-                            <div class="row mb-3">
-                                <label for="board" class="col-sm-2 col-form-label">Board</label>
-                                <div class="col-sm-10">
-                                    <select class="form-select custom-fc">
-                                        <option>Select Board</option>
-                                        <option>CBSE</option>
-                                        <option>NCERT</option>
-                                        <option>ICSE</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
-                            <div class="row mb-3">
-                                <label for="grade" class="col-sm-2 col-form-label">Grade</label>
-                                <div class="col-sm-10">
-                                    <select class="form-select custom-fc">
-                                        <option>Select Grade</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="ht-board-filter">
+                        <span>
+                            <select class="form-select custom-fc ht">
+                                <option>CBSE</option>
+                                <option>NCERT</option>
+                                <option>ICSE</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select class="form-select custom-fc ht">
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                                <option>Class 6</option>
+                                <option>Class 7</option>
+                                <option>Class 8</option>
+                                <option>Class 9</option>
+                                <option>Class 10</option>
+                            </select>
+                        </span>
+                        <span>
+                            <select class="form-select custom-fc ht">
+                                <option>Digital Textbook</option>
+                                <option>CBSE</option>
+                                <option>NCERT</option>
+                                <option>ICSE</option>
+                            </select>
+                        </span>
                     </div>
                 </div>
                 
