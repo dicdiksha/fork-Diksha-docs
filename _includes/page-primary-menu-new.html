@@ -79,7 +79,7 @@
             {% if nav-new.dropdowns %}
             <span class="dropdown diksha-for-dropdown">
                 <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}"  tabindex="0"
-                class="dropdown-toggle {% if page.url contains {{nav-new.contains}} or page.title == {{nav-new.title}} %} active {% endif %}" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+                class="dropdown-toggle" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
                 <span id="title" data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}" >{{nav-new.title}}</span>
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">

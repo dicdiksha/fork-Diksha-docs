@@ -17,28 +17,35 @@
             "dropdowns": [
                 {
                     "title": "Teachers",
-                    "url": "dikshaforteachers",
+                    "url": "dikshaforteachers/",
                     "contains": "dikshaforteachers",
                     "etype": "select-teachers",
                     "eid": "static-teachers"
                 },
                 {
                     "title": "Parents",
-                    "url": "dikshaforparents",
+                    "url": "dikshaforparents/",
                     "contains": "dikshaforparents",
                     "etype": "select-parents",
                     "eid": "static-parents"
                 },
                 {
                     "title": "Students",
-                    "url": "dikshaforstudents",
+                    "url": "dikshaforstudents/",
                     "contains": "dikshaforstudents",
                     "etype": "select-students",
                     "eid": "static-students"
                 },
                 {
+                    "title": "Administrator",
+                    "url": "dikshaforht/",
+                    "contains": "dikshaforht",
+                    "etype": "select-ht",
+                    "eid": "static-ht"
+                },
+                {
                     "title": "Others",
-                    "url": "dikshaforothers",
+                    "url": "dikshaforothers/",
                     "contains": "dikshaforothers",
                     "etype": "select-others",
                     "eid": "static-others"
