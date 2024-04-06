@@ -1196,7 +1196,7 @@ function toTitleCase(str) {
   
   if(remainingText1){
     let suffixText =  toTitleCase(remainingText1);
-    if(winText1.indexOf("diskhaforht") == -1){
+    if(winText1.indexOf("dikshaforht") !== -1){
       suffixText= remainingText1.toUpperCase();
       }
     document.getElementById('title').textContent = document.getElementById('title').textContent + " " +suffixText;
