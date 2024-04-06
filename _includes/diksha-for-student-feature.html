@@ -1,13 +1,6 @@
 
 <style>
-    /* .student-feature-detail::after{
-        content: "";
-        width: 0;
-        height: 0;
-        border-top: 50px solid transparent;
-        border-right: 100px solid red;
-        border-bottom: 50px solid transparent;
-    } */
+
     .bg-purple{
         background-image: url(../assets/homepage/diksha-student/bg-purple.png);
         background-repeat: no-repeat;
@@ -18,40 +11,44 @@
     .border-purple{
         color:#7653A2;
     }
-
-    .student-feature-detail{
-        font-size: 22px;
-        color:#fff;
-    }
-
-
     .feature-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 76%;
+    width: 80%;
     margin: 0 auto;
    align-items: center;
-   margin-top: -60px;
+   /* margin-top: -60px; */
 }
 
 .students-feature-items {
-    margin-left: -60px;
-    /* padding: 31px 0; */
     z-index: 1;
-  margin-top: -62px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100%;
+    margin-left: -4.4%;
+    justify-content: center;
+
     
 }
+/* .students-feature-items::before{
+    content: "";
+    background-image: url(../assets/homepage/diksha-student/pencil.png);
+    background-repeat: no-repeat;
+
+} */
 .student-feature-detail {
-    font-size: 22px;
+    font-size: 20px;
     color: #fff;
-    padding: 16px;
-    padding-left: 45px;
-    padding-right: 113px;
-    /* margin: 20px 0; */
-    /* margin-left: -32px; */
+    /* padding: 16px; */
     background-repeat: no-repeat;
     line-height: 35px;
+    /* padding-right: 100px; */
+    padding: 2% 6% 2% 4%;
+    background-size: cover;
+   
 }
 .bg-green {
     background-image: url(../assets/homepage/diksha-student/bg-green.png);
@@ -92,16 +89,17 @@
 .student-feature-count {
     border: 11px solid;
     /* height: 100%; */
-    width: 93px;
-    height: 90%; 
+    width: 100px;
+    /* height: 90%;  */
     position: absolute;
-    right: 0;
+    right: -2%;
     display: flex;
     justify-content: center;
     border-radius: 50%;
     font-size: 51px;
     align-items: center;
     /* font-weight: bold; */
+    /* margin-left: -100%; */
 }
 
 .students-feature-item {
@@ -151,12 +149,11 @@
     padding: 2rem;
 }
 
- @media (max-width: 769px){  
+ @media (max-width: 991px){  
     .diksha-student .nistha-sub-head{
         padding: 2rem;
         margin-bottom: 0;
     }
-
     .feature-section{
         width: 100%;
         margin-top: 0;
@@ -164,10 +161,9 @@
     }
     .students-feature-items{
         margin-left: 0;
-
     }
     .student-feature-detail {
-        width: 80%;
+        width: 90%;
         padding-right: 40px;
         background-size: cover;
         padding: 16px;
@@ -176,23 +172,18 @@
         padding-right: 33px !important;
         background-position: right;
     }
-
     .student-feature-img {
     display: none;
     }
-
     .students-feature-items{
         margin-left: 0;
         margin-top: 0;
-    }
-    
+    }   
     .student-feature-count{
-        right: -17px;
-        width: 68px;
+        width: 78px;
         font-size: 33px;
-
-    }
-    
+        top: 0;
+    } 
 }
 @media (max-width: 576px){  
 
@@ -235,7 +226,48 @@
 }
 
 }
-
+@media (max-width: 769px){
+    .student-feature-count{
+            right: 0;
+        }
+}
+    @media (min-width: 769px) and (max-width: 991px){
+            .student-feature-count{
+            right: 8%;
+        }
+        .student-feature-detail{
+            font-size: 16px;
+        }
+    }
+@media (min-width: 769px) and (max-width: 1200px){
+    .feature-section{
+        width: 100%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1250px){
+    .student-feature-detail{
+        font-size: 18px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1599px){
+    .students-feature-items{
+    margin-top: -8%;
+    }
+}
+@media (min-width: 1600px){
+    .students-feature-items{
+        margin-left: -8.4%;
+    }
+    .student-feature-detail{
+        min-height: 125px;
+        display: flex;
+        align-items: center; 
+    }
+    .student-feature-count{
+        right: 1%;
+        top: 3px;
+    }
+}
 </style>
 
 <div class="nistha-step-sec sec-padding">
@@ -245,49 +277,87 @@
     <div class="container">
         <div class="container-box">
             <div class="feature-section">
-                <div class="student-feature-img">
-                    <img src="../assets/homepage/diksha-student/pencil.png">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="student-feature-img">
+                            <img src="../assets/homepage/diksha-student/pencil1.png">
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="students-feature-items">
+                            <div class="students-feature-item row">
+                                <div class="col-md-11">
+                                    <div class="student-feature-detail bg-purple ">
+                                        Scan QR codes in your textbook for easy access to the associated lessons on the platform.
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="student-feature-count border-purple"> 1 </div>
+                                </div>   
+                            </div>
+                            <div class="students-feature-item row">
+                                <div class="col-md-11">
+                                    <div class="student-feature-detail bg-green">
+                                        Students to do quick revisions and test his/her learning through self-assessment practice exercises.
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="student-feature-count border-green">2</div>
+                                </div>
+                               
+                             
+                            </div>
+                            <div class="students-feature-item row">
+                                <div class="col-md-11">
+                                    <div class="student-feature-detail bg-pink">
+                                        Availability of various types of e-learning resources like courses,
+                                        textbook, quizzes, videos, interactive content & many more.
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="student-feature-count border-pink">3</div>
+                                </div>  
+                            </div>
+                            <div class="students-feature-item row">
+                                <div class="col-md-11">
+                                    <div class="student-feature-detail bg-blue">
+                                        Students can revise lessons that they learnt in class due to 24*7 availability of content.
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="student-feature-count border-blue">4 </div>
+                                </div>
+                                
+                                
+                            </div>
+                            <div class="students-feature-item row">
+                                <div class="col-md-11">
+                                    <div class="student-feature-detail bg-lightblue">
+                                        Students can download the content & save in their local device which can be used in offline mode also.
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="student-feature-count border-lightblue">5</div>
+                                </div>
+                                
+                            </div>
+                            <div class="students-feature-item row">
+                                <div class="col-md-11">
+                                    <div class="student-feature-detail bg-orange">
+                                        Teaching and Learning for Children With Special Needs <br> (CWSN) is available.
+                                    </div>
+                                </div>
+                                <div class="col-md-1">
+                                    <div class="student-feature-count border-orange">6 </div>
+                                </div>
+                                
+                                
+                            </div>
+                        </div>  
+                    </div>
                 </div>
-                    <div class="students-feature-items">
-                        <div class="students-feature-item">
-                            <div class="student-feature-detail bg-purple">
-                                Scan QR codes in your textbook for easy access to the associated lessons on the platform.
-                            </div>
-                            <div class="student-feature-count border-purple"> 1 </div>
-                        </div>
-                        <div class="students-feature-item">
-                            <div class="student-feature-detail bg-green">
-                                Students to do quick revisions and test his/her learning through 
-                                self-assessment practice exercises.
-                            </div>
-                            <div class="student-feature-count border-green">2</div>
-                        </div>
-                        <div class="students-feature-item">
-                            <div class="student-feature-detail bg-pink">
-                                Availability of various types of e-learning resources like courses, 
-                                textbook, quizzes, videos, interactive content & many more.
-                            </div>
-                            <div class="student-feature-count border-pink">3</div>
-                        </div>
-                        <div class="students-feature-item">
-                            <div class="student-feature-detail bg-blue">
-                                Students can revise lessons that they learnt in class due to 24*7 availability of content.
-                            </div>
-                            <div class="student-feature-count border-blue">4 </div>
-                        </div>
-                        <div class="students-feature-item">
-                            <div class="student-feature-detail bg-lightblue">
-                                Students can download the content & save in their local device which can be used in offline mode also.
-                            </div>
-                            <div class="student-feature-count border-lightblue">5</div>
-                        </div>
-                        <div class="students-feature-item">
-                            <div class="student-feature-detail bg-orange">
-                                Teaching and Learning for Children With Special Needs (CWSN) is available.
-                            </div>
-                            <div class="student-feature-count border-orange">6 </div>
-                        </div>
-                    </div>    
+                
+                        
             </div>
         </div>
     </div>
