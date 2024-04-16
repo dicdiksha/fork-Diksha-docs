@@ -9,46 +9,46 @@
             "eid": "static-home"
         },
         {
-            "title": "DIKSHA For",
+            "title": "Explore As",
             "url": "",
             "contains": "dropdown",
-            "etype": "select-dikshafor",
-            "eid": "static-dikshafor",
+            "etype": "select-exploreAs",
+            "eid": "static-exploreAs",
             "dropdowns": [
                 {
-                    "title": "Teachers",
-                    "url": "dikshaforteachers/",
-                    "contains": "dikshaforteachers",
-                    "etype": "select-teachers",
-                    "eid": "static-teachers"
+                    "title": "Student",
+                    "url": "exploreasstudent/",
+                    "contains": "exploreasstudent",
+                    "etype": "select-student",
+                    "eid": "static-student"
                 },
                 {
-                    "title": "Parents",
-                    "url": "dikshaforparents/",
-                    "contains": "dikshaforparents",
-                    "etype": "select-parents",
-                    "eid": "static-parents"
+                    "title": "Teacher",
+                    "url": "exploreasteacher/",
+                    "contains": "exploreasteacher",
+                    "etype": "select-teacher",
+                    "eid": "static-teacher"
                 },
                 {
-                    "title": "Students",
-                    "url": "dikshaforstudents/",
-                    "contains": "dikshaforstudents",
-                    "etype": "select-students",
-                    "eid": "static-students"
+                    "title": "Parent",
+                    "url": "exploreasparent/",
+                    "contains": "exploreasparent",
+                    "etype": "select-parent",
+                    "eid": "static-parent"
                 },
                 {
                     "title": "Administrator",
-                    "url": "dikshaforht/",
-                    "contains": "dikshaforht",
+                    "url": "exploreasht/",
+                    "contains": "exploreasht",
                     "etype": "select-ht",
                     "eid": "static-ht"
                 },
                 {
-                    "title": "Others",
-                    "url": "dikshaforothers/",
-                    "contains": "dikshaforothers",
-                    "etype": "select-others",
-                    "eid": "static-others"
+                    "title": "Regulator",
+                    "url": "exploreasregulator/",
+                    "contains": "exploreasregulator",
+                    "etype": "select-regulator",
+                    "eid": "static-regulator"
                 }
             ]
         },

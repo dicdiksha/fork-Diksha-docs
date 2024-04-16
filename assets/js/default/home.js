@@ -1192,17 +1192,20 @@ function toTitleCase(str) {
 
   let winText1 = window.location.href;
   let remainingText1 = "";
-  remainingText1= winText1.split('dikshafor')[1].split('/')[0];
-  
-  if(remainingText1){
-    let suffixText =  toTitleCase(remainingText1);
-    if(winText1.indexOf("dikshaforht") !== -1){
-      suffixText= remainingText1.toUpperCase();
-      }
-    document.getElementById('title').textContent = document.getElementById('title').textContent + " " +suffixText;
-    var linkElement = document.getElementById('dropdownMenuLink');
-    // Add the "active" class to the element
-    linkElement.classList.add('active');
+  let titleElement = document.getElementById('title');
+  let linkElement = document.getElementById('dropdownMenuLink');
+  if(winText1.indexOf("exploreas") !== -1) {
+    remainingText1= winText1.split('exploreas')[1].split('/')[0];
+    
+    if(remainingText1){
+      let suffixText =  toTitleCase(remainingText1);
+      if(winText1.indexOf("exploreasht") !== -1){
+        suffixText= remainingText1.toUpperCase();
+        }
+      titleElement.textContent += " " +suffixText;
+      // Add the "active" class to the element
+      linkElement.classList.add('active');
+    }
   }
 
 // Diksha for Others Carousel
