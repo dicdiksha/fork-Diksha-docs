@@ -33,515 +33,515 @@ compress_html:
   profile: false
 
 defaults:
-  -
-    scope:
-      path: "help"
-    values:
-      layout: "help"
-      showSidebar: "false"
-      allowSearch: "false"
-      pageClass: ""
-      categoryOrder: 99
-  -
-    scope:
-      path: "help/documents"
-    values:
-      layout: "documents"
-      showSidebar: "true"
-      allowSearch: "true"
-  -
-    scope:
-      path: "help/documents/general"
-    values:
-      folder: "documents"
-      category: "General Documentation"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/documents/partners"
-    values:
-      folder: "documents"
-      category: "Diksha Partners Related Documents"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/documents/videos"
-    values:
-      folder: "documents"
-      category: "Videos"
-      categoryOrder: 3
-  -
-    scope:
-      path: "help/getting-started"
-    values:
-      userRole: "Getting Started"
-      type: "Help"
-  -
-    scope:
-      path: "help/administrator"
-    values:
-      userRole: "Administrator"
-      type: "Help"
-  -
-    scope:
-      path: "help/creator"
-    values:
-      userRole: "Creator"
-      type: "Help"
-  -
-    scope:
-      path: "help/reviewer"
-    values:
-      userRole: "Reviewer"
-      type: "Help"
-  -
-    scope:
-      path: "help/energised-textbooks"
-    values:
-      userRole: "Energised Textbooks"
-      type: "Help"
-  -
-    scope:
-      path: "help/courses"
-    values:
-      userRole: "Courses"
-      type: "Help"
-  -
-    scope:
-      path: "help/surveys"
-    values:
-      userRole: "Surveys"
-      type: "Help"
-  -
-    scope:
-      path: "help/observations"
-    values:
-      userRole: "Observations"
-      type: "Help"      
-  -
-    scope:
-      path: "help/projects"
-    values:
-      userRole: "Projects"
-      type: "Help"
-  -
-    scope:
-      path: "help/programs"
-    values:
-      userRole: "Programs"
-      type: "Help"
-  -
-    scope:
-      path: "help/release-notes"
-    values:
-      userRole: "Release Notes"
-      type: "Help"
-  -
-    scope:
-      path: "help/faqs"
-    values:
-      userRole: "FAQs"
-      type: "Help"
-  -
-    scope:
-      path: "help/diksha-oss"
-    values:
-      userRole: "DIKSHA OSS"
-      type: "Help"
-  -
-    scope:
-      path: "help/getting-started/explore-diksha"
-    values:
-      category: "Explore DIKSHA"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/getting-started/diksha-mobile-app"
-    values:
-      category: "DIKSHA Mobile App"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/getting-started/login"
-    values:
-      category: "Login"
-      categoryOrder: 3
-  -
-    scope:
-      path: "help/getting-started/user-profile"
-    values:
-      category: "User Profile"
-      categoryOrder: 4
-  -
-    scope:
-      path: "help/getting-started/recover-password"
-    values:
-      category: "Recover Password"
-      categoryOrder: 5
-  -
-    scope:
-      path: "help/getting-started/library"
-    values:
-      category: "Library"
-      categoryOrder: 6
-  -
-    scope:
-      path: "help/getting-started/groups"
-    values:
-      category: "Groups"
-      categoryOrder: 7
-  -
-    scope:
-      path: "help/getting-started/tv-classes"
-    values:
-      category: "TV Classes"
-      categoryOrder: 9    
-  -
-    scope:
-      path: "help/getting-started/workspace"
-    values:
-      category: "Workspace"
-      categoryOrder: 10
-  -
-    scope:
-      path: "help/getting-started/content-type"
-    values:
-      category: "Content Type"
-      categoryOrder: 11
-  -
-    scope:
-      path: "help/getting-started/notifications"
-    values:
-      category: "Notifications"
-      categoryOrder: 12
-  -
-    scope:
-      path: "help/getting-started/content-player"
-    values:
-      category: "Content Player"
-      categoryOrder: 13
-  -
-    scope:
-      path: "help/getting-started/chatbot"
-    values:
-      category: "Chatbot"
-      categoryOrder: 14
-  -
-    scope:
-      path: "help/getting-started/discussion-forum"
-    values:
-      category: "Discussion Forum"
-      categoryOrder: 15
-  -
-    scope:
-      path: "help/administrator/manage-users"
-    values:
-      category: "Manage Users"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/administrator/view-dashboard"
-    values:
-      category: "View Dashboard"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/administrator/communication-console"
-    values:
-      category: "Communication Console"
-      categoryOrder: 3
-  -
-    scope:
-      path: "help/administrator/program-dashboard"
-    values:
-      category: "Program Dashboard"
-      categoryOrder: 4
-  -  
-    scope:
-      path: "help/creator/content-lifecycle"
-    values:
-      category: "Content Lifecycle"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/creator/understand-content-editor-tool"
-    values:
-      category: "Understand Content Editor Tool"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/creator/create-assessment"
-    values:
-      category: "Create Assessment"
-      categoryOrder: 3
-  -
-    scope:
-      path: "help/creator/create-resource"
-    values:
-      category: "Create Resource"
-      categoryOrder: 4
-  -
-    scope:
-      path: "help/creator/compile-collection"
-    values:
-      category: "Compile Collection"
-      categoryOrder: 5
-  -
-    scope:
-      path: "help/creator/create-lesson-plan"
-    values:
-      category: "Create Lesson Plan"
-      categoryOrder: 6
-  -
-    scope:
-      path: "help/creator/create-book"
-    values:
-      category: "Create Book"
-      categoryOrder: 7
-  -
-    scope:
-      path: "help/creator/upload-content"
-    values:
-      category: "Upload Content"
-      categoryOrder: 8
-  -
-    scope:
-      path: "help/reviewer/review-content"
-    values:
-      category: "Review Content"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/reviewer/review-book"
-    values:
-      category: "Review Book"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/energised-textbooks/book-material-creation"
-    values:
-      category: "Book Material Creation"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/energised-textbooks/book-creation"
-    values:
-      category: "Book Creation"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/energised-textbooks/consumption"
-    values:
-      category: "Consumption"
-      categoryOrder: 3
-  -
-    scope:
-      path: "help/courses/overview"
-    values:
-      category: "Overview"
-      categoryOrder: 1
-  -
-    scope:
-      path: "help/courses/course-material-creation"
-    values:
-      category: "Course Material Creation"
-      categoryOrder: 2
-  -
-    scope:
-      path: "help/courses/course-creation"
-    values:
-      category: "Course Creation"
-      categoryOrder: 3
-  -
-    scope:
-      path: "help/courses/batch-management"
-    values:
-      category: "Batch Management"
-      categoryOrder: 4
-  -
-    scope:
-      path: "help/courses/certificate-management"
-    values:
-      category: "Certificate Management"
-      categoryOrder: 5
-  -
-    scope:
-      path: "help/courses/discussion-forum-management"
-    values:
-      category: "Discussion Forum Management"
-      categoryOrder: 6                        
-  -
-    scope:
-      path: "help/courses/user-management"
-    values:
-      category: "User Management"
-      categoryOrder: 7
-  -
-    scope:
-      path: "help/courses/dashboard-report"
-    values:
-      category: "Dashboard & Report"
-      categoryOrder: 8
-  -
-    scope:
-      path: "help/courses/course-consumption"
-    values:
-      category: "Course Consumption"
-      categoryOrder: 9        
-  -
-    scope:
-       path: "help/surveys/overview"
-    values:
-      category: "Overview"
-      categoryOrder: 1  
-  -
-    scope:
-       path: "help/surveys/survey-consumption"
-    values:
-      category: "Survey Consumption"
-      categoryOrder: 2  
-  -
-    scope:
-       path: "help/surveys/survey-creation"
-    values:
-      category: "Survey Creation"
-      categoryOrder: 3  
-  -
-    scope:
-       path: "help/surveys/survey-reports"
-    values:
-      category: "Survey Reports"
-      categoryOrder: 4           
-  -
-    scope:
-      path: "help/observations/overview"
-    values:
-      category: "Overview"
-      categoryOrder: 1  
-  -
-    scope:
-      path: "help/observations/observation-creation"
-    values:
-      category: "Observation Creation"
-      categoryOrder: 3  
-  -
-    scope:
-      path: "help/observations/observation-consumption"
-    values:
-      category: "Observation Consumption"
-      categoryOrder: 2  
-  -
-    scope:
-      path: "help/observations/observation-reports"
-    values:
-      category: "Observation Reports"
-      categoryOrder: 4  
-  -
-    scope:
-       path: "help/projects/overview"
-    values:
-      category: "Overview"
-      categoryOrder: 1  
-  -
-    scope:
-      path: "help/projects/project-creation"
-    values:
-      category: "Project Creation"
-      categoryOrder: 3  
-  -
-    scope:
-      path: "help/projects/project-consumption"
-    values:
-      category: "Project Consumption"
-      categoryOrder: 2    
-  -
-    scope:
-      path: "help/projects/project-reports"
-    values:
-      category: "Project Reports"
-      categoryOrder: 4    
-  -
-    scope:
-       path: "help/programs/overview"
-    values:
-      category: "Overview"
-      categoryOrder: 1  
-  -
-    scope:
-       path: "help/programs/program-consumption"
-    values:
-      category: "Program Consumption"
-      categoryOrder: 2  
-  -
-    scope:
-       path: "help/programs/program-creation"
-    values:
-      category: "Program Creation"
-      categoryOrder: 3  
-  -
-    scope:
-       path: "help/programs/dashboard-report"
-    values:
-      category: "Dashboard & Report"
-      categoryOrder: 4 
-  -
-    scope:
-      path: "help/faqs/user"
-    values:
-      category: "User"
-      categoryOrder: 1
-  -    
-    scope:
-      path: "help/faqs/mobile-user"
-    values:
-      category: "Mobile User"
-      categoryOrder: 2 
-  -    
-    scope:
-      path: "help/faqs/creator"
-    values:
-      category: "Creator"
-      categoryOrder: 3
-  -    
-    scope:
-      path: "help/faqs/reviewer"
-    values:
-      category: "Reviewer"
-      categoryOrder: 4 
-  - 
-    scope:
-      path: "help/faqs/course"
-    values:
-      category: "Course"
-      categoryOrder: 5
-  -   
-    scope:
-      path: "help/faqs/error-handling"
-    values:
-      category: "Error Handling"
-      categoryOrder: 6
-  -    
-    scope:
-      path: "help/faqs/surveys"
-    values:
-      category: "Surveys"
-      categoryOrder: 7
-  -    
-    scope:
-      path: "help/faqs/projects"
-    values:
-      category: "Projects"
-      categoryOrder: 8
-  -    
-    scope:
-      path: "help/faqs/observations"
-    values:
-      category: "Observations"
-      categoryOrder: 9
-  -    
-    scope:
-      path: "help/faqs/ht-officials"
-    values:
-      category: "HT & Officials"
-      categoryOrder: 10    
+  # -
+  #   scope:
+  #     path: "help"
+  #   values:
+  #     layout: "help"
+  #     showSidebar: "false"
+  #     allowSearch: "false"
+  #     pageClass: ""
+  #     categoryOrder: 99
+  # -
+  #   scope:
+  #     path: "help/documents"
+  #   values:
+  #     layout: "documents"
+  #     showSidebar: "true"
+  #     allowSearch: "true"
+  # -
+  #   scope:
+  #     path: "help/documents/general"
+  #   values:
+  #     folder: "documents"
+  #     category: "General Documentation"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/documents/partners"
+  #   values:
+  #     folder: "documents"
+  #     category: "Diksha Partners Related Documents"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/documents/videos"
+  #   values:
+  #     folder: "documents"
+  #     category: "Videos"
+  #     categoryOrder: 3
+  # -
+  #   scope:
+  #     path: "help/getting-started"
+  #   values:
+  #     userRole: "Getting Started"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/administrator"
+  #   values:
+  #     userRole: "Administrator"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/creator"
+  #   values:
+  #     userRole: "Creator"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/reviewer"
+  #   values:
+  #     userRole: "Reviewer"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/energised-textbooks"
+  #   values:
+  #     userRole: "Energised Textbooks"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/courses"
+  #   values:
+  #     userRole: "Courses"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/surveys"
+  #   values:
+  #     userRole: "Surveys"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/observations"
+  #   values:
+  #     userRole: "Observations"
+  #     type: "Help"      
+  # -
+  #   scope:
+  #     path: "help/projects"
+  #   values:
+  #     userRole: "Projects"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/programs"
+  #   values:
+  #     userRole: "Programs"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/release-notes"
+  #   values:
+  #     userRole: "Release Notes"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/faqs"
+  #   values:
+  #     userRole: "FAQs"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/diksha-oss"
+  #   values:
+  #     userRole: "DIKSHA OSS"
+  #     type: "Help"
+  # -
+  #   scope:
+  #     path: "help/getting-started/explore-diksha"
+  #   values:
+  #     category: "Explore DIKSHA"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/getting-started/diksha-mobile-app"
+  #   values:
+  #     category: "DIKSHA Mobile App"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/getting-started/login"
+  #   values:
+  #     category: "Login"
+  #     categoryOrder: 3
+  # -
+  #   scope:
+  #     path: "help/getting-started/user-profile"
+  #   values:
+  #     category: "User Profile"
+  #     categoryOrder: 4
+  # -
+  #   scope:
+  #     path: "help/getting-started/recover-password"
+  #   values:
+  #     category: "Recover Password"
+  #     categoryOrder: 5
+  # -
+  #   scope:
+  #     path: "help/getting-started/library"
+  #   values:
+  #     category: "Library"
+  #     categoryOrder: 6
+  # -
+  #   scope:
+  #     path: "help/getting-started/groups"
+  #   values:
+  #     category: "Groups"
+  #     categoryOrder: 7
+  # -
+  #   scope:
+  #     path: "help/getting-started/tv-classes"
+  #   values:
+  #     category: "TV Classes"
+  #     categoryOrder: 9    
+  # -
+  #   scope:
+  #     path: "help/getting-started/workspace"
+  #   values:
+  #     category: "Workspace"
+  #     categoryOrder: 10
+  # -
+  #   scope:
+  #     path: "help/getting-started/content-type"
+  #   values:
+  #     category: "Content Type"
+  #     categoryOrder: 11
+  # -
+  #   scope:
+  #     path: "help/getting-started/notifications"
+  #   values:
+  #     category: "Notifications"
+  #     categoryOrder: 12
+  # -
+  #   scope:
+  #     path: "help/getting-started/content-player"
+  #   values:
+  #     category: "Content Player"
+  #     categoryOrder: 13
+  # -
+  #   scope:
+  #     path: "help/getting-started/chatbot"
+  #   values:
+  #     category: "Chatbot"
+  #     categoryOrder: 14
+  # -
+  #   scope:
+  #     path: "help/getting-started/discussion-forum"
+  #   values:
+  #     category: "Discussion Forum"
+  #     categoryOrder: 15
+  # -
+  #   scope:
+  #     path: "help/administrator/manage-users"
+  #   values:
+  #     category: "Manage Users"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/administrator/view-dashboard"
+  #   values:
+  #     category: "View Dashboard"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/administrator/communication-console"
+  #   values:
+  #     category: "Communication Console"
+  #     categoryOrder: 3
+  # -
+  #   scope:
+  #     path: "help/administrator/program-dashboard"
+  #   values:
+  #     category: "Program Dashboard"
+  #     categoryOrder: 4
+  # -  
+  #   scope:
+  #     path: "help/creator/content-lifecycle"
+  #   values:
+  #     category: "Content Lifecycle"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/creator/understand-content-editor-tool"
+  #   values:
+  #     category: "Understand Content Editor Tool"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/creator/create-assessment"
+  #   values:
+  #     category: "Create Assessment"
+  #     categoryOrder: 3
+  # -
+  #   scope:
+  #     path: "help/creator/create-resource"
+  #   values:
+  #     category: "Create Resource"
+  #     categoryOrder: 4
+  # -
+  #   scope:
+  #     path: "help/creator/compile-collection"
+  #   values:
+  #     category: "Compile Collection"
+  #     categoryOrder: 5
+  # -
+  #   scope:
+  #     path: "help/creator/create-lesson-plan"
+  #   values:
+  #     category: "Create Lesson Plan"
+  #     categoryOrder: 6
+  # -
+  #   scope:
+  #     path: "help/creator/create-book"
+  #   values:
+  #     category: "Create Book"
+  #     categoryOrder: 7
+  # -
+  #   scope:
+  #     path: "help/creator/upload-content"
+  #   values:
+  #     category: "Upload Content"
+  #     categoryOrder: 8
+  # -
+  #   scope:
+  #     path: "help/reviewer/review-content"
+  #   values:
+  #     category: "Review Content"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/reviewer/review-book"
+  #   values:
+  #     category: "Review Book"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/energised-textbooks/book-material-creation"
+  #   values:
+  #     category: "Book Material Creation"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/energised-textbooks/book-creation"
+  #   values:
+  #     category: "Book Creation"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/energised-textbooks/consumption"
+  #   values:
+  #     category: "Consumption"
+  #     categoryOrder: 3
+  # -
+  #   scope:
+  #     path: "help/courses/overview"
+  #   values:
+  #     category: "Overview"
+  #     categoryOrder: 1
+  # -
+  #   scope:
+  #     path: "help/courses/course-material-creation"
+  #   values:
+  #     category: "Course Material Creation"
+  #     categoryOrder: 2
+  # -
+  #   scope:
+  #     path: "help/courses/course-creation"
+  #   values:
+  #     category: "Course Creation"
+  #     categoryOrder: 3
+  # -
+  #   scope:
+  #     path: "help/courses/batch-management"
+  #   values:
+  #     category: "Batch Management"
+  #     categoryOrder: 4
+  # -
+  #   scope:
+  #     path: "help/courses/certificate-management"
+  #   values:
+  #     category: "Certificate Management"
+  #     categoryOrder: 5
+  # -
+  #   scope:
+  #     path: "help/courses/discussion-forum-management"
+  #   values:
+  #     category: "Discussion Forum Management"
+  #     categoryOrder: 6                        
+  # -
+  #   scope:
+  #     path: "help/courses/user-management"
+  #   values:
+  #     category: "User Management"
+  #     categoryOrder: 7
+  # -
+  #   scope:
+  #     path: "help/courses/dashboard-report"
+  #   values:
+  #     category: "Dashboard & Report"
+  #     categoryOrder: 8
+  # -
+  #   scope:
+  #     path: "help/courses/course-consumption"
+  #   values:
+  #     category: "Course Consumption"
+  #     categoryOrder: 9        
+  # -
+  #   scope:
+  #      path: "help/surveys/overview"
+  #   values:
+  #     category: "Overview"
+  #     categoryOrder: 1  
+  # -
+  #   scope:
+  #      path: "help/surveys/survey-consumption"
+  #   values:
+  #     category: "Survey Consumption"
+  #     categoryOrder: 2  
+  # -
+  #   scope:
+  #      path: "help/surveys/survey-creation"
+  #   values:
+  #     category: "Survey Creation"
+  #     categoryOrder: 3  
+  # -
+  #   scope:
+  #      path: "help/surveys/survey-reports"
+  #   values:
+  #     category: "Survey Reports"
+  #     categoryOrder: 4           
+  # -
+  #   scope:
+  #     path: "help/observations/overview"
+  #   values:
+  #     category: "Overview"
+  #     categoryOrder: 1  
+  # -
+  #   scope:
+  #     path: "help/observations/observation-creation"
+  #   values:
+  #     category: "Observation Creation"
+  #     categoryOrder: 3  
+  # -
+  #   scope:
+  #     path: "help/observations/observation-consumption"
+  #   values:
+  #     category: "Observation Consumption"
+  #     categoryOrder: 2  
+  # -
+  #   scope:
+  #     path: "help/observations/observation-reports"
+  #   values:
+  #     category: "Observation Reports"
+  #     categoryOrder: 4  
+  # -
+  #   scope:
+  #      path: "help/projects/overview"
+  #   values:
+  #     category: "Overview"
+  #     categoryOrder: 1  
+  # -
+  #   scope:
+  #     path: "help/projects/project-creation"
+  #   values:
+  #     category: "Project Creation"
+  #     categoryOrder: 3  
+  # -
+  #   scope:
+  #     path: "help/projects/project-consumption"
+  #   values:
+  #     category: "Project Consumption"
+  #     categoryOrder: 2    
+  # -
+  #   scope:
+  #     path: "help/projects/project-reports"
+  #   values:
+  #     category: "Project Reports"
+  #     categoryOrder: 4    
+  # -
+  #   scope:
+  #      path: "help/programs/overview"
+  #   values:
+  #     category: "Overview"
+  #     categoryOrder: 1  
+  # -
+  #   scope:
+  #      path: "help/programs/program-consumption"
+  #   values:
+  #     category: "Program Consumption"
+  #     categoryOrder: 2  
+  # -
+  #   scope:
+  #      path: "help/programs/program-creation"
+  #   values:
+  #     category: "Program Creation"
+  #     categoryOrder: 3  
+  # -
+  #   scope:
+  #      path: "help/programs/dashboard-report"
+  #   values:
+  #     category: "Dashboard & Report"
+  #     categoryOrder: 4 
+  # -
+  #   scope:
+  #     path: "help/faqs/user"
+  #   values:
+  #     category: "User"
+  #     categoryOrder: 1
+  # -    
+  #   scope:
+  #     path: "help/faqs/mobile-user"
+  #   values:
+  #     category: "Mobile User"
+  #     categoryOrder: 2 
+  # -    
+  #   scope:
+  #     path: "help/faqs/creator"
+  #   values:
+  #     category: "Creator"
+  #     categoryOrder: 3
+  # -    
+  #   scope:
+  #     path: "help/faqs/reviewer"
+  #   values:
+  #     category: "Reviewer"
+  #     categoryOrder: 4 
+  # - 
+  #   scope:
+  #     path: "help/faqs/course"
+  #   values:
+  #     category: "Course"
+  #     categoryOrder: 5
+  # -   
+  #   scope:
+  #     path: "help/faqs/error-handling"
+  #   values:
+  #     category: "Error Handling"
+  #     categoryOrder: 6
+  # -    
+  #   scope:
+  #     path: "help/faqs/surveys"
+  #   values:
+  #     category: "Surveys"
+  #     categoryOrder: 7
+  # -    
+  #   scope:
+  #     path: "help/faqs/projects"
+  #   values:
+  #     category: "Projects"
+  #     categoryOrder: 8
+  # -    
+  #   scope:
+  #     path: "help/faqs/observations"
+  #   values:
+  #     category: "Observations"
+  #     categoryOrder: 9
+  # -    
+  #   scope:
+  #     path: "help/faqs/ht-officials"
+  #   values:
+  #     category: "HT & Officials"
+  #     categoryOrder: 10    
        

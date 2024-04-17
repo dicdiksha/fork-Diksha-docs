@@ -338,6 +338,47 @@
         background: rgba(0, 0, 0, .1);
         border-radius: 0;
     }
+	.infocus-section .book {
+		width: 763px;
+    height: 365px;
+    border: 1px solid #333;
+    margin: 20px auto;
+    position: relative;
+    background: #FFF;
+    padding: 30px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.infocus-section .book:before {
+    content: '';
+    width: 30px;
+    height: 100%;
+    border-left: 1px solid #333;
+    position: absolute;
+    left: 13px;
+    border-radius: 0;
+    z-index: 0;
+    top: 0px;
+}
+
+.infocus-section .book img {
+	width: 220px;
+}
+
+.fln-about-section p {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: justify;
+    padding: 15px;
+}
+
 	</style>
 </head>
 
@@ -422,8 +463,8 @@
 			</div>
 		</section>
 		<section class="fln-about-section">
-			<h3>About</h3>
-			<div class="row">
+			 <h3>About</h3>
+			<!-- <div class="row">
 				<div class="col-12">
 					<p> Differences are fluid in nature, not always fixed, respecting individual rights 
 						of self-identity, recognizing that no one is superior and based on several 
@@ -469,9 +510,143 @@
 							 Equitable and Inclusive Education Vertical, which is evolving in nature.
 						</p>
 					</div> <a href="javascript:void(0);" class="read-more" title="Read More">Read More</a> </div>
-			</div>
+			</div>  -->
+			<section class="P1060 infocus-section">
+				<div class="row">
+				  <div class="col-12">
+					<div class="row">
+					  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+						<div class="blue book" id="blueBook">
+						  <img src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/ka/assets/imgs/icons/2.svg" alt="Teaching & Learning content">
+						  <p>About CWSN</p>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<!-- Modal -->
+				<div class="modal" id="energizedTextbooksModal" tabindex="-1" role="dialog"
+				  aria-labelledby="energizedTextbooksModal" aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="row">
+						  <div class="col-12">
+							<div class="d-md-none d-sm-none d-xs-none d-lg-block d-xl-block generate"></div>
+							<div id="greenbookCarousel"
+							  class="carousel slide d-xl-none d-lg-none d-md-block d-block d-sm-block" data-ride="carousel">
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <div class="coverSprite bookcover1 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite bookcover2 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite bookcover3 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite bookcover4 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite bookcover5 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite bookcover6 mobileBook"></div>
+								</div>
+							  </div>
+							  <a class="carousel-control-prev" href="#greenbookCarousel" role="button" data-slide="prev">
+								<i class="fa fa-angle-left" aria-hidden="true"></i>
+							  </a>
+							  <a class="carousel-control-next" href="#greenbookCarousel" role="button" data-slide="next">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+				<div class="modal" id="teachAndLearnModal" tabindex="-1" role="dialog" aria-labelledby="teachAndLearnModal"
+				  aria-hidden="true">
+				  <div class="modal-dialog" role="document">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					  </div>
+					  <div class="modal-body">
+						<div class="row">
+						  <div class="col-12">
+							<div class="d-md-none d-sm-none d-xs-none d-lg-block d-xl-block generate1"></div>
+							<div id="bluebookCarousel"
+							  class="carousel slide d-xl-none d-lg-none d-md-block d-block d-sm-block">
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <div class="coverSprite1 bookcover21 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite1 bookcover22 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite1 bookcover23 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite1 bookcover24 mobileBook"></div>
+								</div>
+								<div class="carousel-item">
+								  <div class="coverSprite1 bookcover25 mobileBook"></div>
+								</div>
+							  </div>
+							  <a class="carousel-control-prev" href="#bluebookCarousel" role="button" data-slide="prev">
+								<i class="fa fa-angle-left" aria-hidden="true"></i>
+							  </a>
+							  <a class="carousel-control-next" href="#bluebookCarousel" role="button" data-slide="next">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							  </a>
+							</div>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</section>
 		</section>
-		<section class="thumbnail-heading">
+		<section class=" section-4 bg-lght featured-content-container feature-content-section" id="section4">
+			<section class="thumbnail-heading">
+				<div class="thumbnail-title">Featured Content</div>
+			</section>
+                <div class="container relative mt-5">
+                    <div class="row video-player-div">
+                      <div class="col-sm-12 col-md-12 text-center">
+                        <div class="featured-content-video">
+                          <div class="video-container">
+                            <div class="video-player content-player" id="featuredContentPlayer">
+                              <div class="phone-sensors">
+                                <div class="sensor"></div>
+                                <div class="speaker"></div>
+                                <div class="sensor"></div>
+                              </div>
+                              <div class="play-button" id="featureContentPlay">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <script async defer src="assets/js/default/featured-content-video.js"></script>
+        </section>
+		<section class="thumbnail-heading mt-5">
 			<div class="thumbnail-title"> Explore the Vertical</div>
 		</section>
 		<section class="fln-content-section">
@@ -481,7 +656,7 @@
 					<div class="container flex-card-grade">
 						<div class="col-sm-3 mb-4">
 							<div class="image mb-2">
-								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/course.png" class="img-fluid">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/course.jpg" class="img-fluid">
 							</div>
 							<a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
 							<div id="collapsesix" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
@@ -683,7 +858,7 @@
 						</div>
 						<div class="col-sm-3 mb-4">
 							<div class="image mb-2">
-								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/reserch.png" class="img-fluid">
+								<img loading="lazy" decoding="async" src="assets/homepage/cwsn/research.png" class="img-fluid">
 							</div>
 							<a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsereserch" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
 							<div id="collapsereserch" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
@@ -731,19 +906,17 @@
 			</section>
 		</section>
 	</div>
-	<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="/js/js-cwsn/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="/index.js"></script>
-	<script>
-	$('.read-more').click(function() {
-		$(this).prev().slideToggle();
-		if(($(this).text()) == "Read More") {
-			$(this).text("Read Less");
-		} else {
-			$(this).text("Read More");
-		}
-	});
-	</script>
+	<script type="text/javascript" src="js/js-cwsn/jquery-3.3.1.min.js"></script>
+	<!-- <script type="text/javascript" src="js/js-cwsn/popper.min.js"></script> -->
+	<script type="text/javascript" src="js/js-cwsn/modernizr.2.5.3.min.js"></script>
+	<script type="text/javascript" src="js/js-cwsn/jquery-ui-1.8.20.custom.min.js"></script>
+	<script type="text/javascript" src="js/lib/hash.js"></script>
+	<script src="js/js-cwsn/jquery.waypoints.min.js"></script>
+	<script src="js/js-cwsn/jquery.counterup.min.js"></script>
+	<script src="js/js-cwsn/custom.js"></script>
+	<script type="text/javascript" src="js/js-cwsn/telemetry_service.js"></script>
 </body>
-
-</html>
+</html> 
