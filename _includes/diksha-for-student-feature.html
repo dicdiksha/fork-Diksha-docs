@@ -1,9 +1,12 @@
 
 <style>
 
-    .bg-purple{
+    /* .bg-purple{
         background-image: url(../assets/homepage/diksha-student/bg-purple.png);
         background-repeat: no-repeat;
+    } */
+    .sec-padding{
+        padding: 40px 0; 
     }
     .border-purple{
         border-color:#7653A2;
@@ -11,353 +14,329 @@
     .border-purple{
         color:#7653A2;
     }
-    .feature-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-   align-items: center;
-   /* margin-top: -60px; */
-}
 
-.students-feature-items {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    height: 100%;
-    margin-left: -4.4%;
-    justify-content: center;
+    .students-feature-items {
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-left: 0;
+        justify-content: flex-start;
+    }
+    .student-feature-detail {
+        font-size: 18px;
+        color: #fff;
+        line-height: 35px;
+        padding: 2% 3% 2% 5%;
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        height: 80px;
+        position: relative;
+    }
+    .student-feature-detail.bg-purple{
+        background-color: #7653A2;
+    }
+    .student-feature-detail.bg-green{
+        background-color: #219FAF;
+    }
+    .student-feature-detail.bg-pink{
+        background-color: #E257E5;
+    }
+    .student-feature-detail.bg-blue{
+        background-color: #876AF7;
+    }
+    .student-feature-detail.bg-lightblue{
+        background-color: #62C3FF;
+    }
+    .student-feature-detail.bg-orange{
+        background-color: #F89521;
+    }
+    .student-feature-detail::before{
+        position: absolute;
+        content: "";
+        right: -38px;
+        top: 0px;
+        width: 7%;
+        height: 100%;
+        transform: rotatey(-180deg);
+        border-left: 2.4rem solid transparent;
+    }
+    .student-feature-detail.bg-purple::before{
+        border-bottom: 40px solid #7653A2;
+        border-top: 40px solid #7653A2;
+    }
+    .student-feature-detail.bg-green::before{
+        border-bottom: 40px solid #219FAF;
+        border-top: 40px solid #219FAF;
+    }
+    .student-feature-detail.bg-pink::before{
+        border-bottom: 40px solid #E257E5;
+        border-top: 40px solid #E257E5;
+    }
+    .student-feature-detail.bg-blue::before{
+        border-bottom: 40px solid #876AF7;
+        border-top: 40px solid #876AF7;
+    }
+    .student-feature-detail.bg-lightblue::before{
+        border-bottom: 40px solid #62C3FF;
+        border-top: 40px solid #62C3FF;
+    }
+    .student-feature-detail.bg-orange::before{
+        border-bottom: 40px solid #F89521;
+        border-top: 40px solid #F89521;
+    }
+    .student-feature-img {
+        z-index: 9;
+        margin-left: 47%;
+        position: relative;
+    }
+    /* .student-feature-img img{
+        width: 100%; 
+    } */
+    .student-feature-count {
+        border: 11px solid;
+        width: 80px;
+        height: 80px; 
+        position: absolute;
+        right: 8%;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: 36px;
+        align-items: center;
+        font-weight: 600;
+    }
+    .students-feature-item {
+        display: flex;
+        position: relative;
+        border-radius: 50%;
+        margin-bottom: 17px;
+    }
+    .students-feature-item:last-child{
+        margin-bottom: 0px;
+    }
+    .border-purple{
+        border-color: #7653A2;
+        color: #7653A2;
+    }
+    .border-pink{
+        border-color: #E257E5;
+        color: #E257E5;
+    }
+    .border-green{
+        border-color: #219FAF;
+        color: #219FAF;
 
-    
-}
-/* .students-feature-items::before{
-    content: "";
-    background-image: url(../assets/homepage/diksha-student/pencil.png);
-    background-repeat: no-repeat;
+    }
+    .border-blue{
+        border-color: #876AF7;
+        color: #876AF7;
+    }
+    .border-lightblue{
+        border-color: #62C3FF;
+        color: #62C3FF;
+    }
+    .border-orange{
+        border-color: #F89521;
+        color: #F89521;
+    }
+    /* .diksha-student .nistha-sub-head{
+        padding: 2rem;
+    } */
 
-} */
-.student-feature-detail {
-    font-size: 20px;
-    color: #fff;
-    /* padding: 16px; */
-    background-repeat: no-repeat;
-    line-height: 35px;
-    /* padding-right: 100px; */
-    padding: 2% 6% 2% 4%;
-    background-size: cover;
-   
-}
-.bg-green {
-    background-image: url(../assets/homepage/diksha-student/bg-green.png);
-   
-
-}
-.bg-pink {
-    background-image: url(../assets/homepage/diksha-student/bg-pink.png);
-    
-}
-.bg-blue {
-    background-image: url(../assets/homepage/diksha-student/bg-pink.png);
-  
-
-}
-.bg-blue {
-    background-image: url(../assets/homepage/diksha-student/bg-blue.png);
-  
-
-}
-.bg-lightblue {
-    background-image: url(../assets/homepage/diksha-student/bg-lightblue.png);
-   
-
-}
-.bg-orange {
-    background-image: url(../assets/homepage/diksha-student/bg-orange.png);
-  
-
-}
-.student-feature-img {
-    z-index: 9;
-}
-
-/* .student-feature-img img{
-    width: 100%; 
-} */
-.student-feature-count {
-    border: 11px solid;
-    /* height: 100%; */
-    width: 100px;
-    /* height: 90%;  */
-    position: absolute;
-    right: -2%;
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 51px;
-    align-items: center;
-    /* font-weight: bold; */
-    /* margin-left: -100%; */
-}
-
-.students-feature-item {
-    display: flex;
-    position: relative;
-    /* margin: 20px 0; */
-    /* align-items: center; */
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.students-feature-item:last-child{
-    margin-bottom: 0px;
-
-}
-.border-purple{
-    border-color: #7653A2;
-    color: #7653A2;
-
-}
-.border-pink{
-    border-color: #E257E5;
-    color: #E257E5;
-
-}
-.border-green{
-    border-color: #219FAF;
-    color: #219FAF;
-
-}
-.border-blue{
-    border-color: #876AF7;
-    color: #876AF7;
-
-}
-.border-lightblue{
-    border-color: #62C3FF;
-    color: #62C3FF;
-
-}
-.border-orange{
-    border-color: #F89521;
-    color: #F89521;
-
-}
-.diksha-student .nistha-sub-head{
-    padding: 2rem;
-}
-
- @media (max-width: 991px){  
+    @media (max-width: 991px){  
     .diksha-student .nistha-sub-head{
         padding: 2rem;
         margin-bottom: 0;
     }
-    .feature-section{
-        width: 100%;
-        margin-top: 0;
-        padding: 2rem 0;
-    }
-    .students-feature-items{
-        margin-left: 0;
-    }
     .student-feature-detail {
         width: 90%;
-        padding-right: 40px;
-        background-size: cover;
-        padding: 16px;
         font-size: 16px;
-        line-height: 22px;
-        padding-right: 33px !important;
-        background-position: right;
+        line-height: 26px;
     }
     .student-feature-img {
-    display: none;
-    }
-    .students-feature-items{
-        margin-left: 0;
-        margin-top: 0;
-    }   
-    .student-feature-count{
-        width: 78px;
-        font-size: 33px;
-        top: 0;
+        margin-left: 12%;
     } 
+    .student-feature-img {
+        display: none;
+    }
 }
-@media (max-width: 576px){  
-
-    
-    .student-feature-count {
-    right: 0px;
-    width: 66px;
-    font-size: 33px;
-    border: 5px solid;
-     
-
-} 
-.students-feature-item{
-    margin-bottom: 13px;
-    align-items: center;
-}
-.student-feature-count {
-    right: 0px;
-    width: 66px;
-    font-size: 33px;
-    border: 5px solid;
-}
-.diksha-student .nistha-certif-tab.nistha-bluebg-tab{
-    display: flex;
-    flex-direction: column;
-
-}
-.student-feature-detail{
-    padding: 10px;
-    font-size: 13px;
-    width: 85%;
-    padding: 10px;
-    font-size: 13px;
-    line-height: 17px;
-    padding-right: 28px ;
-    min-height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-}
-@media (max-width: 769px){
-    .student-feature-count{
-            right: 0;
+    @media (max-width: 576px){  
+        .student-feature-count {
+            font-size: 33px;
+            right: -1% !important;
+            border: 5px solid;
+    } 
+        .students-feature-item{
+            margin-bottom: 13px;
+            align-items: center;
         }
-}
-    @media (min-width: 769px) and (max-width: 991px){
-            .student-feature-count{
-            right: 8%;
+        .diksha-student .nistha-certif-tab.nistha-bluebg-tab{
+            display: flex;
+            flex-direction: column;
         }
         .student-feature-detail{
-            font-size: 16px;
+            padding: 10px;
+            width: 80% !important;
+            padding: 10px;
+            font-size: 13px;
+            line-height: 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nistha-certif-tab{
+            flex-direction: column;
+            justify-content: center;
         }
     }
-@media (min-width: 769px) and (max-width: 1200px){
-    .feature-section{
-        width: 100%;
+    @media (max-width: 769px){
+        .student-feature-count{
+            right: 0%;
+            width: 65px;
+            height: 65px;
+            border: 5px solid;
+        }
+        .student-feature-detail{
+            width: 85%;
+        }
+        .student-feature-count{
+            top: 6px;
+        }
     }
-}
-@media (min-width: 992px) and (max-width: 1250px){
-    .student-feature-detail{
-        font-size: 18px;
+    @media (min-width: 769px) and (max-width: 991px){
+        .student-feature-count{
+            right: -4%;
+            top: 0;
+        }
     }
-}
-@media (min-width: 991px) and (max-width: 1599px){
-    .students-feature-items{
-    margin-top: -8%;
+    @media (min-width: 992px) and (max-width: 1040px){
+        .student-feature-img{
+            margin-left: 17%;
+        }
+        .student-feature-count{
+            right: -4%;
+        }
+        .students-feature-items {
+            margin-top: 8%;
+        }
     }
-}
-@media (min-width: 1600px){
-    .students-feature-items{
-        margin-left: -8.4%;
+    @media (min-width: 1025px) and (max-width: 1439px){
+        .student-feature-img{
+            margin-left: 17%;
+        }
+        .student-feature-count{
+            right: -4%;
+        }
+        .students-feature-items {
+            margin-top: 8%;
+        }
     }
-    .student-feature-detail{
-        min-height: 125px;
-        display: flex;
-        align-items: center; 
+    @media (min-width: 991px) and (max-width: 1599px){
+        .students-feature-items{
+        margin-top: 6%;
+        }
     }
-    .student-feature-count{
-        right: 1%;
-        top: 3px;
+    @media (min-width: 1600px){
+        .students-feature-items{
+            margin-left: -8.4%;
+        }
+        .student-feature-detail{
+            min-height: 125px;
+            display: flex;
+            align-items: center; 
+        }
+        .student-feature-count{
+            right: 1%;
+            top: 3px;
+        }
     }
-}
 </style>
 
 <div class="nistha-step-sec sec-padding">
     <div class="nistha-sub-head">
-        <h2>Key Features of DIKSHA for Students</h2>
+        <h2>Key Features of DIKSHA for Student</h2>
     </div>
     <div class="container">
         <div class="container-box">
-            <div class="feature-section">
-                <div class="row">
-                    <div class="col-md-2">
-                        <div class="student-feature-img">
-                            <img src="../assets/homepage/diksha-student/pencil1.png">
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="students-feature-items">
-                            <div class="students-feature-item row">
-                                <div class="col-md-11">
-                                    <div class="student-feature-detail bg-purple ">
-                                        Scan QR codes in your textbook for easy access to the associated lessons on the platform.
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="student-feature-count border-purple"> 1 </div>
-                                </div>   
-                            </div>
-                            <div class="students-feature-item row">
-                                <div class="col-md-11">
-                                    <div class="student-feature-detail bg-green">
-                                        Students to do quick revisions and test his/her learning through self-assessment practice exercises.
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="student-feature-count border-green">2</div>
-                                </div>
-                               
-                             
-                            </div>
-                            <div class="students-feature-item row">
-                                <div class="col-md-11">
-                                    <div class="student-feature-detail bg-pink">
-                                        Availability of various types of e-learning resources like courses,
-                                        textbook, quizzes, videos, interactive content & many more.
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="student-feature-count border-pink">3</div>
-                                </div>  
-                            </div>
-                            <div class="students-feature-item row">
-                                <div class="col-md-11">
-                                    <div class="student-feature-detail bg-blue">
-                                        Students can revise lessons that they learnt in class due to 24*7 availability of content.
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="student-feature-count border-blue">4 </div>
-                                </div>
-                                
-                                
-                            </div>
-                            <div class="students-feature-item row">
-                                <div class="col-md-11">
-                                    <div class="student-feature-detail bg-lightblue">
-                                        Students can download the content & save in their local device which can be used in offline mode also.
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="student-feature-count border-lightblue">5</div>
-                                </div>
-                                
-                            </div>
-                            <div class="students-feature-item row">
-                                <div class="col-md-11">
-                                    <div class="student-feature-detail bg-orange">
-                                        Teaching and Learning for Children With Special Needs <br> (CWSN) is available.
-                                    </div>
-                                </div>
-                                <div class="col-md-1">
-                                    <div class="student-feature-count border-orange">6 </div>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>  
+            <div class="row">
+                <div class="col-md-12 col-lg-2">
+                    <div class="student-feature-img">
+                        <img src="../assets/homepage/diksha-student/pens2.png" alt="pen">
                     </div>
                 </div>
-                
-                        
+                <div class="col-md-12 col-lg-10">
+                    <div class="students-feature-items">
+                        <div class="students-feature-item row">
+                            <div class="col-lg-11 col-xl-10">
+                                <div class="student-feature-detail bg-purple ">
+                                    Scan QR codes in your textbook for easy access to the associated lessons on the platform.
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-xl-1">
+                                <div class="student-feature-count border-purple"> 1 </div>
+                            </div>   
+                        </div>
+                        <div class="students-feature-item row">
+                            <div class="col-lg-11 col-xl-10">
+                                <div class="student-feature-detail bg-green">
+                                    Students to do quick revisions and test his/her learning through self-assessment practice exercises.
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-xl-1">
+                                <div class="student-feature-count border-green">2</div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="students-feature-item row">
+                            <div class="col-lg-11 col-xl-10">
+                                <div class="student-feature-detail bg-pink">
+                                    Availability of various types of e-learning resources like courses, textbook, quizzes, videos, interactive content & many more.
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-xl-1">
+                                <div class="student-feature-count border-pink">3</div>
+                            </div>  
+                        </div>
+                        <div class="students-feature-item row">
+                            <div class="col-lg-11 col-xl-10">
+                                <div class="student-feature-detail bg-blue">
+                                    Students can revise lessons that they learnt in class due to 24*7 availability of content.
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-xl-1">
+                                <div class="student-feature-count border-blue">4 </div>
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="students-feature-item row">
+                            <div class="col-lg-11 col-xl-10">
+                                <div class="student-feature-detail bg-lightblue">
+                                    Students can download the content & save in their local device which can be used in offline mode also.
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-xl-1">
+                                <div class="student-feature-count border-lightblue">5</div>
+                            </div>
+                            
+                        </div>
+                        <div class="students-feature-item row">
+                            <div class="col-lg-11 col-xl-10">
+                                <div class="student-feature-detail bg-orange">
+                                    Teaching and Learning for Children With Special Needs <br> (CWSN) is available.
+                                </div>
+                            </div>
+                            <div class="col-lg-1 col-xl-1">
+                                <div class="student-feature-count border-orange">6 </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>  
+                </div>
             </div>
         </div>
     </div>

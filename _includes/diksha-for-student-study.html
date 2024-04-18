@@ -1,9 +1,12 @@
 <style>
+     .sec-padding{
+        padding: 40px 0; 
+    }
     .diksha-study-sec{
         background-color: #EAF8FF;
     }
     .view-btn-div{
-        margin: 2rem 0 1rem 0;
+        margin: 4rem 0 1rem 0;
     }
     .study-view-more-btn{
         background-color: #024F9D;
@@ -16,25 +19,21 @@
         color: #ffffff;
     }
     .nistha-certif-tab{
-        justify-content: space-between;
+        justify-content: space-around;
         border-bottom: 0;
-        border: 1px solid #005DA380;
-        border-radius: 4px;
+        border: 1px solid #005DA3;
+        border-radius: 12px;
         padding: 5px;
         margin-bottom: 2rem;
         align-items: center;
+        background-color: #FFFFFF;
     }
-    .nistha-certif-tab.nistha-bluebg-tab{
-        background-color: #1C61A7;
-        border: 0;
-        padding: 0;
-        border-radius: 10px;
-    }
-    .nistha-certif-tab.nistha-bluebg-tab .nav-link{
-        color: #ffffff;
+    .nistha-certif-tab .nav-link{
+        color: #005DA3;
         font-size: 18px;
-        line-height: 30px;
         font-weight: 500;
+        line-height: 30px;
+        font-family: 'Lato', sans-serif;
     }
     .nistha-certif-tab .nav-link:hover{
         border-color: transparent;
@@ -42,18 +41,44 @@
     .nistha-certif-tab .nav-link.active{
         border: 0;
         color: #fff;
-        border-radius: 4px;
-        padding: 12px 25px;
-    }
-    .nistha-certif-tab.nistha-bluebg-tab .nav-link.active{
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
-        transform: scale(1.1);
-        background-color: #0088EE;
+        box-shadow: 0px 0px 10px 0px #00000040;
+        transform: scale(1.3);
         border-radius: 10px;
-        background-image: url(../assets/homepage/nistha-lp/parents/study.svg);
-        background-repeat: no-repeat;
-        background-position: 15px;
-        padding: 1.25rem 1.26rem 1.25rem 4.33rem;
+        padding: 0.8rem 2rem 0.8rem 1.1rem;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        min-width: 216px;
+        margin-left: -34px;
+        margin-right: -34px;
+    }
+    .nistha-certif-tab .nav-link.active .active-tab-img{
+        display: block;
+        height: 24px;
+        margin-right: 15px;
+    }
+    .nistha-certif-tab .nav-link.found-stage-link.active{
+        background-color: #7653A2;
+    }
+    .nistha-certif-tab .nav-link.prep-stage-link.active{
+        background-color: #219FAF;
+    }
+    .nistha-certif-tab .nav-link.mid-stage-link.active{
+        background-color: #F1C447;
+    }
+    .nistha-certif-tab .nav-link.sec-stage-link.active{
+        background-color: #F89521;
+    }
+    .tab-msg p {
+        font-size: 22px !important;
+        line-height: 30px;
+        text-align: center;
+        font-weight: 500;
+    }
+    .active-tab-msg p{
+        font-size: 16px;
+        line-height: 30px;
+        font-weight: 500;
     }
        /* new */
     .nistha-course-card{
@@ -79,18 +104,19 @@
     .nistha-course-detail{
         margin-left: 10px;
         margin-right: 10px;
+        width: 100%;
     }
     .course-strip{
         height: auto;
         position: relative;
-        margin: 0.4rem 1rem 1.4rem 0px;
+        margin: 0.2rem 1rem 1.5rem 0px;
         display: flex;
         flex-direction: row;
         align-items: center;
     }
     .course-strip .strip-title{
         margin-left: 5px;
-        font-size: 12px;
+        font-size: 10px;
         line-height: 14.4px;
     }
     .course-strip .strip-wrap::before{
@@ -101,7 +127,7 @@
         content: '';
         content: "";
         width: 0;
-        height: 0;
+        height: 99%;
         border-left: 0.3125rem solid transparent;
         border-bottom: 0.625rem solid #000000;
         border-right: 0.3125rem solid #000000;
@@ -118,32 +144,43 @@
         align-items: center;
         margin: 1rem 0 0;
     }
+    .strip-wrap span img{
+        height: 16px;
+        width: 16px;
+        margin-bottom: 1px;
+    }
     .nistha-course-card .course-title.right-align{
         direction: rtl;
     }
     .nistha-course-card .course-title{
-        overflow: hidden;
-        text-overflow: ellipsis;
-        word-break: break-word;
-        max-width: 25ch;
-        -webkit-box-orient: vertical;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        height: 2.5rem;
+        min-height: 2.5rem;
+        border-bottom: 1px solid #c1c1c1;
+        padding-bottom: 5px;
     }
     .nistha-course-card .course-title h4{
         font-size: 14px;
         line-height: 19px;
         font-weight: 400;
         color: #333333;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-word;
+        max-width: 25ch;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
     }
     .nistha-course-card .course-icon{
-        height: 23px;
-        width: 23px;
+        height: 16px;
+        width: 16px;
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+    }
+    .nistha-course-card .course-icon img {
+        height: 9px;
+        width: 12px;
     }
     .nistha-course-card .course-icon.subject{
         background-color: #E0F9F7;
@@ -154,32 +191,31 @@
     .nistha-course-card .book-detail{
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin-bottom: 6px;
     }
     .book-text{
-        font-size: 12px;
-        line-height: 16.34px;
+        font-size: 10px;
+        line-height: 13.62px;
         font-weight: 500;
         color: #696F88;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        max-width: 20ch;
+        max-width: 27ch;
         margin-left: 5px;
     }
     .bmc-detail {
-        border-bottom: 1px solid #F3F4F6;
         margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
+        margin-top: 6px;
     }
-    .bmc-detail span{
-        font-size: 9px;
-        line-height: 22px;
+    .bmc-detail p{
+        font-size: 10px;
+        line-height: 13px;
         letter-spacing: -0.1px;
         position: relative;
         padding: 0 3px;
+        font-weight: 400;
+        margin-bottom: 5px;
     }
     .bmc-detail .board{
         color: #008840;     
@@ -190,47 +226,15 @@
     .bmc-detail .grade{
         color: #0076FE;
     }
-    .bmc-detail span::before{
-        position: absolute;
-        content: " ";
-        top: 20%;
-        height: 12px;
-        width: 1px;
-        background-color: #F3F4F6;
-        left: 0;
-    }
-    .bmc-detail span:first-child::before,
-    .bmc-detail span:last-child::before{
-        display: none;
-    }
-    .bmc-detail span:first-child,
-    .bmc-detail span:last-child{
-        padding-left: 0;
+    .bmc-detail p span{
+        border-left: 1px solid #7b7676;
+        padding: 0 8px 0 9px !important;
+        margin-left: 5px !important;
     }
     .nistha-course-nav-link{
         text-decoration: none !important;
     }
-    @media (max-width: 991px) {
-        .nistha-certif-tab.nistha-bluebg-tab .nav-link.active{
-            background-position: 8px;
-            background-size: 15%;
-            padding: 12px 10px 12px 40px;
-        }
-        .nistha-certif-tab.nistha-bluebg-tab .nav-link{
-            font-size: 14px;
-        }
-    }
-    #nisthaCertificateTabContent{
-        margin-bottom: 2rem;
-    }
     @media (min-width: 993px) and (max-width: 1024px){
-        .banner-course-detail .course-data.box4 {
-            right: -23%;
-            bottom: 16%;
-        }
-        .banner-course-detail .course-data.box3 {
-            left: -17%;
-        }
         .nistha-course-card{
             max-width: 385px;
             width: 100%;
@@ -246,9 +250,21 @@
     .hr-border{
         color: #0091FF29;
         opacity: 1;
+        margin: 1.5rem 0 2.5rem 0;
+    }
+   
+    .explore-filter .filter-wrap{
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
     .explore-filter label{
         color: #434141;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        width: auto;
+        margin-right: 10px;
     }
     .explore-filter .custom-fc{
         border-radius: 8px;
@@ -256,9 +272,42 @@
         color: #757575;
         background-image: url('../assets/homepage/nistha-lp/parents/arrow-down.png');
         background-size: unset;
+        width: 265px;
+        height: 48px;
     }
-    .diksha-studen{
-        
+    .explore-filter .req-field{
+        color: #FF0000;
+    }
+    .active-tab-img{
+        display: none;
+    }
+    @media (min-width: 992px){
+        .explore-filter{
+            display: flex;
+            width: 100%;
+        }
+    }
+    @media (max-width: 991.98px){
+        .explore-filter{
+            display: block;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px){
+        .explore-filter .filter-wrap{
+            display: block;
+        }
+    }
+    @media (max-width: 768px){
+        .explore-filter{
+            display: block;
+        }
+        .nistha-certif-tab .nav-link.active{
+            font-size: 13px;
+            transform: scale(1.2);
+            padding: 0.8rem;
+            margin: 0;
+            min-width: auto;
+        }
     }
 </style>
 <div class="diksha-student">
@@ -270,65 +319,109 @@
             <div class="container-box">
                 <div class="row justify-content-center">
                     <div class="col-md-12">
-                        <ul class="nav nav-tabs nistha-certif-tab nistha-bluebg-tab" id="nisthaCertificateTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="found-stage-tab" data-bs-toggle="tab" data-bs-target="#found-stage" type="button" role="tab" aria-controls="found-stage" aria-selected="true">Foundational Stage</button>
+                        <ul class="nav nav-tabs nistha-certif-tab" id="nisthaCertificateTab" role="tablist">
+                            <li class="nav-item tab-pane-link" role="presentation">
+                              <button class="nav-link found-stage-link" id="found-stage-tab" data-bs-toggle="tab" data-bs-target="#found-stage" type="button" role="tab" aria-controls="found-stage" aria-selected="true">
+                                <span><img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="active-tab-img"> </span>
+                                Foundational Stage</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="prep-stage-tab" data-bs-toggle="tab" data-bs-target="#prep-stage" type="button" role="tab" aria-controls="prep-stage" aria-selected="false">Preparatory  Stage</button>
+                            <li class="nav-item tab-pane-link" role="presentation">
+                              <button class="nav-link prep-stage-link" id="prep-stage-tab" data-bs-toggle="tab" data-bs-target="#prep-stage" type="button" role="tab" aria-controls="prep-stage" aria-selected="false">
+                                <span><img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="active-tab-img"> </span>Preparatory  Stage</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="mid-stage-tab" data-bs-toggle="tab" data-bs-target="#mid-stage" type="button" role="tab" aria-controls="mid-stage" aria-selected="false">Middle Stage</button>
+                            <li class="nav-item tab-pane-link" role="presentation">
+                              <button class="nav-link mid-stage-link" id="mid-stage-tab" data-bs-toggle="tab" data-bs-target="#mid-stage" type="button" role="tab" aria-controls="mid-stage" aria-selected="false">
+                                <span><img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="active-tab-img"> </span>
+                                Middle Stage</button>
                             </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="sec-stage-tab" data-bs-toggle="tab" data-bs-target="#sec-stage" type="button" role="tab" aria-controls="sec-stage" aria-selected="false">Secondary Stage</button>
+                            <li class="nav-item tab-pane-link" role="presentation">
+                                <button class="nav-link sec-stage-link" id="sec-stage-tab" data-bs-toggle="tab" data-bs-target="#sec-stage" type="button" role="tab" aria-controls="sec-stage" aria-selected="false">
+                                    <span><img src="../assets/homepage/nistha-lp/parents/study.svg" alt="" class="active-tab-img"> </span>
+                                    Secondary Stage</button>
                               </li>
                           </ul>
                     </div>
                 </div>
-                <div class="explore-filter">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
-                            <div class="row mb-3">
-                                <label for="board" class="col-sm-2 col-form-label">Board</label>
-                                <div class="col-sm-10">
-                                    <select class="form-select custom-fc">
-                                        <option>Select Board</option>
-                                        <option>CBSE</option>
-                                        <option>NCERT</option>
-                                        <option>ICSE</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
-                            <div class="row mb-3">
-                                <label for="grade" class="col-sm-2 col-form-label">Grade</label>
-                                <div class="col-sm-10">
-                                    <select class="form-select custom-fc">
-                                        <option>Select Grade</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                        <option>6</option>
-                                        <option>7</option>
-                                        <option>8</option>
-                                        <option>9</option>
-                                        <option>10</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 
-                <hr class="hr-border">
                 <div class="row justify-content-center">
                     <div class="col-sm-12">
                         <div class="tab-content" id="nisthaCertificateTabContent">
-                            <div class="tab-pane fade show active" id="found-stage" role="tabpanel" aria-labelledby="found-stage-tab">
+                            <div class="tab-msg">
+                                <p>Select any stage to know more about curriculum </p>
+                            </div>
+                         
+                            <div class="tab-pane fade" id="found-stage" role="tabpanel" aria-labelledby="found-stage-tab">
+                                <div class="active-tab-msg">
+                                    <p>The Foundational stage under the National Education Policy will cover school education from Pre Primary to Grade 2. It will cover the age group of 3-8 years. 
+                                        The foundational stage seeks to encourage holistic development by cultivating all aspects of a child’s growth. 
+                                        This includes fostering social skills, cognitive development, emotional intelligence, physical well-being, and creativity. </p>
+                                </div>
+                                <div class="explore-filter">
+                                        <div class="filter-wrap mb-3">
+                                            <label for="board" class="col-form-label">Board <span class="req-field">*</span></label>
+                                            <select class="form-select custom-fc">
+                                                <option value="Select Board" selected="">Select Board</option>
+                                                <option value="cbse">CBSE</option>
+                                                <option value="ncert">NCERT</option>
+                                                <option value="icse">ICSE</option>
+                                                <option value="an">Andaman &amp; Nicobar Islands</option>
+                                                <option value="ar">Arunachal Pradesh</option>
+                                                <option value="apekx">Andhra Pradesh</option>
+                                                <option value="as">Assam</option>
+                                                <option value="br">Bihar</option>
+                                                <option value="cg">Chhattisgarh</option>
+                                                <option value="ch">Chandigarh</option>
+                                                <option value="dl">Delhi</option>
+                                                <option value="DD">Dadra And Nagar Haveli And Daman And Diu</option>
+                                                <option value="ga">Goa</option>
+                                                <option value="gj">Gujarat</option>
+                                                <option value="hp">Himachal Pradesh</option>
+                                                <option value="hr">Haryana</option>
+                                                <option value="jh">Jharkhand</option>
+                                                <option value="jk">Jammu And Kashmir</option>
+                                                <option value="ka">Karnataka</option>
+                                                <option value="kl">Kerala</option>
+                                                <option value="ld">Ladakh</option>
+                                                <option value="lk">Lakshadweep</option>
+                                                <option value="mitra">Maharashtra</option>
+                                                <option value="ml">Meghalaya</option>
+                                                <option value="mn">Manipur</option>
+                                                <option value="mp">Madhya Pradesh</option>
+                                                <option value="mz">Mizoram</option>
+                                                <option value="nl">Nagaland</option>
+                                                <option value="od">Odisha</option>
+                                                <option value="pb">Punjab</option>
+                                                <option value="py">Pondicherry</option>
+                                                <option value="rj">Rajasthan</option>
+                                                <option value="sk">Sikkim</option>
+                                                <option value="tn">Tamil Nadu</option>
+                                                <option value="tp">Tripura</option>
+                                                <option value="ts">Telangana</option>
+                                                <option value="uk">Uttarakhand</option>
+                                                <option value="up">Uttar Pradesh</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-wrap mb-3">
+                                            <label for="grade" class=" col-form-label">Grade <span class="req-field">*</span></label>
+                                            <select class="form-select custom-fc">
+                                                <option>Select Grade</option>
+                                                <option>Pre-School</option>
+                                                <option>Grade 1</option>
+                                                <option>Grade 2</option>
+                                                </select>
+                                        </div>
+                                    <div class="filter-wrap mb-3">
+                                        <label for="content" class="col-sm-2 col-form-label">Content Type</label>
+                                            <select class="form-select custom-fc">
+                                                <option>Select Content Type</option>
+                                                <option>Digital Textbook</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <hr class="hr-border">
                                 <div id="foundStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#foundStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -352,21 +445,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium" title="English">Medium &nbsp;:&nbsp; English <span title="English">+1</span></p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -389,21 +478,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium" title="English">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -426,21 +511,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title right-align">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board">Board : CBSE</span>
-                                                                <span class="medium">Medium : English</span>
-                                                                <span class="grade">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -455,8 +536,96 @@
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </a>
                                 </div>
+                                <div class="text-center view-btn-div">
+                                    <a href="#" class="study-view-more-btn">View More</a>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="prep-stage" role="tabpanel" aria-labelledby="prep-stage-tab">
+                                <div class="active-tab-msg">
+                                    <p>The Preparatory Stage under the National Education Policy will cover school education from Grade 3 to Grade 5 with a focus on experimental learning.
+                                         It will cover the age group of 8-11 years. The focus would shift to play, discovery and activity-based and interaction classroom learning. 
+                                        It will lay a solid groundwork across subjects, including reading, writing, speaking, physical education, art, languages, science, and mathematics. </p>
+                                </div>
+                                <div class="explore-filter">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="board" class="col-sm-3 col-form-label">Board <span class="req-field">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-select custom-fc">
+                                                        <option value="Select Board" selected="">Select Board</option>
+                                                        <option value="cbse">CBSE</option>
+                                                        <option value="ncert">NCERT</option>
+                                                        <option value="icse">ICSE</option>
+                                                        <option value="an">Andaman &amp; Nicobar Islands</option>
+                                                        <option value="ar">Arunachal Pradesh</option>
+                                                        <option value="apekx">Andhra Pradesh</option>
+                                                        <option value="as">Assam</option>
+                                                        <option value="br">Bihar</option>
+                                                        <option value="cg">Chhattisgarh</option>
+                                                        <option value="ch">Chandigarh</option>
+                                                        <option value="dl">Delhi</option>
+                                                        <option value="DD">Dadra And Nagar Haveli And Daman And Diu</option>
+                                                        <option value="ga">Goa</option>
+                                                        <option value="gj">Gujarat</option>
+                                                        <option value="hp">Himachal Pradesh</option>
+                                                        <option value="hr">Haryana</option>
+                                                        <option value="jh">Jharkhand</option>
+                                                        <option value="jk">Jammu And Kashmir</option>
+                                                        <option value="ka">Karnataka</option>
+                                                        <option value="kl">Kerala</option>
+                                                        <option value="ld">Ladakh</option>
+                                                        <option value="lk">Lakshadweep</option>
+                                                        <option value="mitra">Maharashtra</option>
+                                                        <option value="ml">Meghalaya</option>
+                                                        <option value="mn">Manipur</option>
+                                                        <option value="mp">Madhya Pradesh</option>
+                                                        <option value="mz">Mizoram</option>
+                                                        <option value="nl">Nagaland</option>
+                                                        <option value="od">Odisha</option>
+                                                        <option value="pb">Punjab</option>
+                                                        <option value="py">Pondicherry</option>
+                                                        <option value="rj">Rajasthan</option>
+                                                        <option value="sk">Sikkim</option>
+                                                        <option value="tn">Tamil Nadu</option>
+                                                        <option value="tp">Tripura</option>
+                                                        <option value="ts">Telangana</option>
+                                                        <option value="uk">Uttarakhand</option>
+                                                        <option value="up">Uttar Pradesh</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="grade" class="col-sm-3 col-form-label">Grade <span class="req-field">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-select custom-fc">
+                                                        <option>Select Grade</option>
+                                                        <option>Grade 3</option>
+                                                        <option>Grade 4</option>
+                                                        <option>Grade 5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="content" class="col-sm-2 col-form-label">Content Type</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-select custom-fc">
+                                                        <option>Select Content Type</option>
+                                                        <option>Digital Textbook</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-border">
                                 <div id="prepStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#prepStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -480,21 +649,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium" title="English">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -517,21 +682,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium" title="English">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -554,21 +715,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title right-align">
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject &nbsp;:&nbsp; CBSE Training</span>
+                                                            </div>
+                                                            <div class="course-title">
                                                                 <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
                                                             </div>
                                                             <div class="bmc-detail">
-                                                                <span class="board">Board : CBSE</span>
-                                                                <span class="medium">Medium : English</span>
-                                                                <span class="grade">Class 9</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
-                                                                <span class="book-text">Subject : CBSE Training</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                                <p class="board">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -583,8 +740,96 @@
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </a>
                                 </div>
+                                <div class="text-center view-btn-div">
+                                    <a href="#" class="study-view-more-btn">View More</a>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="mid-stage" role="tabpanel" aria-labelledby="mid-stage-tab">
+                                <div class="active-tab-msg">
+                                    <p>The Middle stage under the National Education Policy will cover school education from Grade 6 to Grade 8.
+                                         It will cover the age group of 11-14 years. The Middle Stage, will see a greater focus on subject learning and discussion of more abstract concepts in subjects like sciences, mathematics, arts, social sciences, and humanities.  It helps in preparing students across various streams. 
+                                        Experiential learning is explored in relations with different subjects. </p>
+                                </div>
+                                <div class="explore-filter">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="board" class="col-sm-3 col-form-label">Board <span class="req-field">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-select custom-fc">
+                                                        <option value="Select Board" selected="">Select Board</option>
+                                                        <option value="cbse">CBSE</option>
+                                                        <option value="ncert">NCERT</option>
+                                                        <option value="icse">ICSE</option>
+                                                        <option value="an">Andaman &amp; Nicobar Islands</option>
+                                                        <option value="ar">Arunachal Pradesh</option>
+                                                        <option value="apekx">Andhra Pradesh</option>
+                                                        <option value="as">Assam</option>
+                                                        <option value="br">Bihar</option>
+                                                        <option value="cg">Chhattisgarh</option>
+                                                        <option value="ch">Chandigarh</option>
+                                                        <option value="dl">Delhi</option>
+                                                        <option value="DD">Dadra And Nagar Haveli And Daman And Diu</option>
+                                                        <option value="ga">Goa</option>
+                                                        <option value="gj">Gujarat</option>
+                                                        <option value="hp">Himachal Pradesh</option>
+                                                        <option value="hr">Haryana</option>
+                                                        <option value="jh">Jharkhand</option>
+                                                        <option value="jk">Jammu And Kashmir</option>
+                                                        <option value="ka">Karnataka</option>
+                                                        <option value="kl">Kerala</option>
+                                                        <option value="ld">Ladakh</option>
+                                                        <option value="lk">Lakshadweep</option>
+                                                        <option value="mitra">Maharashtra</option>
+                                                        <option value="ml">Meghalaya</option>
+                                                        <option value="mn">Manipur</option>
+                                                        <option value="mp">Madhya Pradesh</option>
+                                                        <option value="mz">Mizoram</option>
+                                                        <option value="nl">Nagaland</option>
+                                                        <option value="od">Odisha</option>
+                                                        <option value="pb">Punjab</option>
+                                                        <option value="py">Pondicherry</option>
+                                                        <option value="rj">Rajasthan</option>
+                                                        <option value="sk">Sikkim</option>
+                                                        <option value="tn">Tamil Nadu</option>
+                                                        <option value="tp">Tripura</option>
+                                                        <option value="ts">Telangana</option>
+                                                        <option value="uk">Uttarakhand</option>
+                                                        <option value="up">Uttar Pradesh</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="grade" class="col-sm-3 col-form-label">Grade <span class="req-field">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-select custom-fc">
+                                                        <option>Select Grade</option>
+                                                        <option>Grade 6</option>
+                                                        <option>Grade 7</option>
+                                                        <option>Grade 8</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="content" class="col-sm-2 col-form-label">Content Type</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-select custom-fc">
+                                                        <option>Select Content Type</option>
+                                                        <option>Digital Textbook</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-border">
                                 <div id="midStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#midStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -608,21 +853,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject &nbsp;:&nbsp; CBSE Training</span>
+                                                            </div>
                                                             <div class="course-title">
                                                                 <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
                                                             </div>
                                                             <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
-                                                                <span class="book-text">Subject : CBSE Training</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : NCERT </span>
+                                                                <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium" title="English">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -645,21 +886,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject &nbsp;:&nbsp; CBSE Training</span>
+                                                            </div>
                                                             <div class="course-title">
                                                                 <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
                                                             </div>
                                                             <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
-                                                                <span class="book-text">Subject : CBSE Training</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                                <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium" title="English">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -682,21 +919,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title right-align">
+                                                            <div class="book-detail">
+                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                                <span class="book-text">Subject &nbsp;:&nbsp; CBSE Training</span>
+                                                            </div>
+                                                            <div class="course-title">
                                                                 <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
                                                             </div>
                                                             <div class="bmc-detail">
-                                                                <span class="board">Board : CBSE</span>
-                                                                <span class="medium">Medium : English</span>
-                                                                <span class="grade">Class 9</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
-                                                                <span class="book-text">Subject : CBSE Training</span>
-                                                            </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                                <p class="board">Board &nbsp;:&nbsp; CBSE</p>
+                                                                <p class="medium">Medium &nbsp;:&nbsp; English</p>
+                                                                <p class="grade">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -711,8 +944,97 @@
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </a>
                                 </div>
+                                <div class="text-center view-btn-div">
+                                    <a href="#" class="study-view-more-btn">View More</a>
+                                </div>
                             </div>
                             <div class="tab-pane fade" id="sec-stage" role="tabpanel" aria-labelledby="sec-stage-tab">
+                                <div class="active-tab-msg">
+                                    <p>The Secondary stage under the National Education Policy will cover school education from Grade 9 to Grade 12.
+                                         It will cover the age group of 14-18 years. 
+                                        The Secondary Stage will comprise of four years of multidisciplinary study, building on the subject-oriented pedagogical and curricular style of the Middle Stage, but with greater depth, greater critical thinking, greater attention to life aspirations, and  greater flexibility and student choice of subjects. </p>
+                                </div>
+                                <div class="explore-filter">
+                                    <div class="row">
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="board" class="col-sm-3 col-form-label">Board <span class="req-field">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-select custom-fc">
+                                                        <option value="Select Board" selected="">Select Board</option>
+                                                        <option value="cbse">CBSE</option>
+                                                        <option value="ncert">NCERT</option>
+                                                        <option value="icse">ICSE</option>
+                                                        <option value="an">Andaman &amp; Nicobar Islands</option>
+                                                        <option value="ar">Arunachal Pradesh</option>
+                                                        <option value="apekx">Andhra Pradesh</option>
+                                                        <option value="as">Assam</option>
+                                                        <option value="br">Bihar</option>
+                                                        <option value="cg">Chhattisgarh</option>
+                                                        <option value="ch">Chandigarh</option>
+                                                        <option value="dl">Delhi</option>
+                                                        <option value="DD">Dadra And Nagar Haveli And Daman And Diu</option>
+                                                        <option value="ga">Goa</option>
+                                                        <option value="gj">Gujarat</option>
+                                                        <option value="hp">Himachal Pradesh</option>
+                                                        <option value="hr">Haryana</option>
+                                                        <option value="jh">Jharkhand</option>
+                                                        <option value="jk">Jammu And Kashmir</option>
+                                                        <option value="ka">Karnataka</option>
+                                                        <option value="kl">Kerala</option>
+                                                        <option value="ld">Ladakh</option>
+                                                        <option value="lk">Lakshadweep</option>
+                                                        <option value="mitra">Maharashtra</option>
+                                                        <option value="ml">Meghalaya</option>
+                                                        <option value="mn">Manipur</option>
+                                                        <option value="mp">Madhya Pradesh</option>
+                                                        <option value="mz">Mizoram</option>
+                                                        <option value="nl">Nagaland</option>
+                                                        <option value="od">Odisha</option>
+                                                        <option value="pb">Punjab</option>
+                                                        <option value="py">Pondicherry</option>
+                                                        <option value="rj">Rajasthan</option>
+                                                        <option value="sk">Sikkim</option>
+                                                        <option value="tn">Tamil Nadu</option>
+                                                        <option value="tp">Tripura</option>
+                                                        <option value="ts">Telangana</option>
+                                                        <option value="uk">Uttarakhand</option>
+                                                        <option value="up">Uttar Pradesh</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="grade" class="col-sm-3 col-form-label">Grade <span class="req-field">*</span></label>
+                                                <div class="col-sm-9">
+                                                    <select class="form-select custom-fc">
+                                                        <option>Select Grade</option>
+                                                        <option>Grade 9</option>
+                                                        <option>Grade 10</option>
+                                                        <option>Grade 11</option>
+                                                        <option>Grade 12</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 col-md-6 col-lg-5 col-xl-4">
+                                            <div class="row mb-3">
+                                                <label for="content" class="col-sm-2 col-form-label">Content Type</label>
+                                                <div class="col-sm-10">
+                                                    <select class="form-select custom-fc">
+                                                        <option>Select Content Type</option>
+                                                        <option>Digital Textbook</option>
+                                                        <option>1</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="hr-border">
                                 <div id="secStageCarousel" class="nistha-testimonial-carousel parent-study-carousel carousel slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#secStageCarousel" tabindex="0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -736,21 +1058,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : NCERT </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board" title="CBSE">Board : CBSE</p>
+                                                                <p class="medium" title="English">Medium : English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -773,21 +1091,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board" title="CBSE">Board : CBSE</span>
-                                                                <span class="medium" title="English">Medium : English</span>
-                                                                <span class="grade" title="Class 9">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education "><bdi>Parent Handbook Copy of Health & Physical Education </bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board" title="CBSE">Board : CBSE</p>
+                                                                <p class="medium" title="English">Medium : English</p>
+                                                                <p class="grade" title="Class 9">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -810,21 +1124,17 @@
                                                                     <span class="strip-title">Digital Textbook</span>
                                                                 </div>
                                                             </div>
-                                                            <div class="course-title right-align">
-                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
-                                                            </div>
-                                                            <div class="bmc-detail">
-                                                                <span class="board">Board : CBSE</span>
-                                                                <span class="medium">Medium : English</span>
-                                                                <span class="grade">Class 9</span>
-                                                            </div>
                                                             <div class="book-detail">
                                                                 <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                                 <span class="book-text">Subject : CBSE Training</span>
                                                             </div>
-                                                            <div class="book-detail">
-                                                                <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                                <span class="book-text">Publisher : CBSE </span>
+                                                            <div class="course-title">
+                                                                <h4 title="Parent Handbook Copy of Health & Physical Education"><bdi>Parent Handbook Copy of Health & Physical Education</bdi></h4>
+                                                            </div>
+                                                            <div class="bmc-detail">
+                                                                <p class="board">Board : CBSE</p>
+                                                                <p class="medium">Medium : English</p>
+                                                                <p class="grade">Class 9</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -839,15 +1149,15 @@
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </a>
                                 </div>
+                                <div class="text-center view-btn-div">
+                                    <a href="#" class="study-view-more-btn">View More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 text-center view-btn-div">
-                        <a href="#" class="study-view-more-btn" target="_blank">View More</a>
-                    </div>
+                  
                 </div>
             </div>
         </div>
     </div>
 </div>
-
