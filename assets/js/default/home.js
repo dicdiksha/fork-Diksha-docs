@@ -1218,3 +1218,9 @@ othersitems.forEach((el) => {
     othersnext = othersnext.nextElementSibling;
   }
 });
+
+// To hide element from dropdown in header
+$(document).ready(function() {
+  let path= window.location.pathname.split('/')[1];
+  if(path){document.getElementById(path).style.display = 'none';}
+})
