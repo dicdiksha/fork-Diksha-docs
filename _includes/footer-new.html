@@ -99,13 +99,13 @@
     align-items: baseline;
 }
 .footer-links {
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }
 
 /*neww*/
 .footer-links ul{
-    display: flex;
+    /* display: flex; */
     margin: 0;
     padding: 0;
 }
@@ -118,20 +118,18 @@ color: #434141;
 align-items: center;
 }
 
-.footer-links ul li::after {
+/* .footer-links ul li::after {
     content: "|";
     font-size: 1.25rem;
     padding: 0 0.625rem;
     color: #909090;
-
 }
 .footer-links ul li:last-child:after {
     content: "";
     font-size: 1.25rem;
     padding: 0 0.625rem;
     display: none;
-
-}
+} */
 .diksha-social-media {
     display: flex;
     /* justify-content: center; */
@@ -204,6 +202,29 @@ img.digital-india {
         display: none;
     }
 }
+.footer-links li a{
+    font-size: 14px;
+    color: #005DA3;
+    line-height: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.footer-links li:last-child a {
+    margin-bottom: 5px;
+}
+.footer-links .footer-exp-title{
+    margin-bottom: 2px;
+    text-decoration: underline;
+    color: #434141;
+    line-height: 20px;
+    font-size: 14px;
+}
+@media (min-width: 992px) and (max-width: 1024px){
+    .logo-ngerd img {
+        max-width: 270px;
+    }
+    
+}
 </style>
 
 <div class="footer-logo">
@@ -241,11 +262,32 @@ img.digital-india {
             <div class="container-box">
                 <div  class="footer-details">
                     <div class="row d-flex">
-                        <div class="col-lg-6  col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                        <div class="col-lg-3  col-md-6 col-sm-6">
                             <div class="diksha-links-pages">
                                 <div class="footer-links">
                                     <ul>
                                         {% for nav-new in site.data.nav-new.items %}
+                                    <li> 
+                                        {% if nav-new.title != 'DIKSHA For' %}
+                                            <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}" tabindex="0"
+                                            class=" {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}" 
+                                            data-etype="{{nav-new.etype}}" data-eid="{{nav-new.eid}}">
+                                            <span data-translate="{%if(nav-new.contains == 'data')%}dashboard{%else%}{{nav-new.contains}}{%endif%}">{{nav-new.title}}</span>
+                                            </a>
+                                        {% endif %}
+                                    </li>
+                                    {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3  col-md-6 col-sm-6">
+                            <div class="diksha-links-pages">
+                                <div class="footer-links">
+                                    <p class="footer-exp-title">{{site.data.nav-new.items[1].title}}</p>
+                                    
+                                    <ul>
+                                        {% for nav-new in site.data.nav-new.items[1].dropdowns %}
                                     <li>
                                         <a href="{{site.baseurl}}/{{nav-new.url}}" title="{{nav-new.title}}" tabindex="0"
                                         class=" {% if page.url contains {{nav.contains}} or page.title == {{nav.title}} %} active {% endif %}" 
