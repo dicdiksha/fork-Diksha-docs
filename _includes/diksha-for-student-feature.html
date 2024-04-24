@@ -22,6 +22,7 @@
         height: 100%;
         margin-left: 0;
         justify-content: flex-start;
+        margin-top: 4%;
     }
     .student-feature-detail {
         font-size: 18px;
@@ -141,33 +142,29 @@
         border-color: #F89521;
         color: #F89521;
     }
-    /* .diksha-student .nistha-sub-head{
-        padding: 2rem;
-    } */
-
-    @media (max-width: 991px){  
-    .diksha-student .nistha-sub-head{
-        padding: 2rem;
-        margin-bottom: 0;
+    .feat-sub-head{
+        margin-bottom: 2.5rem;
     }
-    .student-feature-detail {
-        width: 90%;
-        font-size: 16px;
-        line-height: 26px;
+    @media (max-width: 992px){  
+        .diksha-student .nistha-sub-head{
+            padding: 2rem;
+            margin-bottom: 0;
+        }
+        .student-feature-detail {
+            width: 90%;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .student-feature-img {
+            display: none;
+        }
     }
-    .student-feature-img {
-        margin-left: 12%;
-    } 
-    .student-feature-img {
-        display: none;
-    }
-}
     @media (max-width: 576px){  
         .student-feature-count {
             font-size: 33px;
             right: -1% !important;
             border: 5px solid;
-    } 
+        } 
         .students-feature-item{
             margin-bottom: 13px;
             align-items: center;
@@ -190,6 +187,9 @@
             flex-direction: column;
             justify-content: center;
         }
+        .student-feature-detail::before{
+            width: 11%;
+        }
     }
     @media (max-width: 769px){
         .student-feature-count{
@@ -205,10 +205,15 @@
             top: 6px;
         }
     }
-    @media (min-width: 769px) and (max-width: 991px){
+    @media (min-width: 769px) and (max-width: 992px){
         .student-feature-count{
             right: -4%;
             top: 0;
+        }
+    }
+    @media (min-width: 992px) and (max-width: 1200px){
+        .feat-ml-0{
+            margin-left: 0 !important;
         }
     }
     @media (min-width: 992px) and (max-width: 1040px){
@@ -218,9 +223,6 @@
         .student-feature-count{
             right: -4%;
         }
-        .students-feature-items {
-            margin-top: 8%;
-        }
     }
     @media (min-width: 1025px) and (max-width: 1439px){
         .student-feature-img{
@@ -229,37 +231,46 @@
         .student-feature-count{
             right: -4%;
         }
-        .students-feature-items {
-            margin-top: 8%;
+    }
+    @media (min-width: 1026px) and (max-width: 1199.98px){
+        .student-feature-img {
+            margin-left: 32%;
         }
     }
-    @media (min-width: 991px) and (max-width: 1599px){
-        .students-feature-items{
-        margin-top: 6%;
+    @media (min-width: 1200px) and (max-width: 1300px){
+        .student-feature-img {
+            margin-left: 35%;
+        }
+        .student-feature-count {
+            right: 6% !important;
         }
     }
-    @media (min-width: 1600px){
-        .students-feature-items{
-            margin-left: -8.4%;
+    @media (min-width: 1301px) and (max-width: 1439px){
+        .student-feature-count {
+            right: 7%;
         }
-        .student-feature-detail{
-            min-height: 125px;
-            display: flex;
-            align-items: center; 
+        .student-feature-img {
+            margin-left: 47% !important;
         }
-        .student-feature-count{
-            right: 1%;
-            top: 3px;
+    }
+    @media (min-width: 1600px) and (max-width: 1859px){
+        .student-feature-img {
+            margin-left: 55% !important;
+        }
+    }
+    @media (min-width: 1860px){
+        .student-feature-img {
+            margin-left: 60% !important;
         }
     }
 </style>
 
 <div class="nistha-step-sec sec-padding">
-    <div class="nistha-sub-head">
+    <div class="nistha-sub-head feat-sub-head">
         <h2>Key Features of DIKSHA for Student</h2>
     </div>
     <div class="container">
-        <div class="container-box">
+        <div class="container-box feat-ml-0">
             <div class="row">
                 <div class="col-md-12 col-lg-2">
                     <div class="student-feature-img">

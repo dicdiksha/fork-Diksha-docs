@@ -474,7 +474,7 @@ $(document).ready(function () {
   });
     /*===================== End login button==============*/
   // });
-
+ 
   // View all nistha course button js
     $(".view-nistha-courses-btn").click(function (e) {
       e.preventDefault();
@@ -487,6 +487,14 @@ $(document).ready(function () {
       e.preventDefault();
       window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
       window.open('/explore', "_self");
+      return false;
+    });
+
+    // Explore as DIKSHA For student page explore study material courses js
+    $(".view-study-courses-btn").click(function (e) {
+      e.preventDefault();
+      window.logInteractEvent('diksha-for-student', 'select-viewall', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+      window.open('/explore/', "_self");
       return false;
     });
 });
@@ -585,5 +593,5 @@ $(window).resize(function () {
 //     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 // });
 /*=====================End diksha dashbord===============*/
- 
-                                  
+      
+                                                               

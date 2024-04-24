@@ -13,8 +13,9 @@
     }
 
     .diksha-for-dropdown{
-        margin-top: -2px;
-    padding: 0 15px 0 5px;
+        margin-top: -1px;
+        padding: 0 15px 0 5px;
+        line-height: 20px;
     }
     .diksha-for-dropdown .dropdown-toggle{
         padding: 0;
@@ -23,7 +24,7 @@
         height: 100%;
         background: url(../assets/homepage/nistha-lp/blue-arrow-down.svg) no-repeat;
         position: absolute;
-        top: 8px;
+        top: 7px;
         border: 0;
         width: 20%;
     }
@@ -33,7 +34,7 @@
     .diksha-for-dropdown .dropdown-item{
         font-size: 14px;
         line-height: 22px;
-        color: #434141;
+        color: #434141 !important;
         font-weight: 500;
         padding: 14px;
         transition: all .3s ease-out;
@@ -44,9 +45,11 @@
         padding: 0;
         border: 0;
     }
-    .diksha-for-dropdown .dropdown-item:hover{
+    .diksha-for-dropdown .dropdown-item:hover,
+    .diksha-for-dropdown .dropdown-item.active, .diksha-for-dropdown .dropdown-item:active,
+    .diksha-for-dropdown .dropdown-item:focus{
         background-color: #005DA3;
-        color: #fff;
+        color: #fff !important;
     }
     
     @media (max-width: 991px){
