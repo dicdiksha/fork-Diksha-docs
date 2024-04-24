@@ -301,7 +301,7 @@ html.darkmode {
         background-color: var(--dk-primary-navigation-bg-color);
     }
     .mob-menu-bg .navMenu a{
-        color: #fff;
+        color: #fff !important;
     }
     .mob-menu-bg .navMenu a.active{
         color: var(--tertiary-color);
