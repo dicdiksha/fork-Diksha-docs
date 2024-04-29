@@ -159,8 +159,9 @@ cwsnDesc: Enable Study and learning materials for Visually/ Hearning Impaired Le
 
 compleateCoverage: Complete K-12 Coverage
 compleateCoverageDesc: Access complete K-12 study material covering all boards, classes and subjects
-practiceContent: Unlimited Practice Content
-practiceContentDesc: Access practice content such as NCERT solutions and trending content
+practiceContent: Practice Content
+# practiceContentDesc: Access practice content such as NCERT solutions and trending content
+practiceContentDesc: Access unlimited practice content with their solutions
 studyMaterial: Interactive Study Material
 studyMaterialDesc: Media-rich visually engaging 2D 3D videos in accordance with the syllabus
 participateQuiz: Participate in Quizzes
