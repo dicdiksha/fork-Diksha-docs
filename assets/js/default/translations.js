@@ -1817,7 +1817,7 @@ const languageTranslations = {
         "virtualLabDesc": "వర్చువల్ ల్యాబ్",
         "compleateCoverage": "K-12 కవరేజీని పూర్తి చేయండి",
         "compleateCoverageDesc": "అన్ని బోర్డులు, తరగతులు మరియు సబ్జెక్ట్‌లను కవర్ చేసే పూర్తి K-12 స్టడీ మెటీరియల్‌ని యాక్సెస్ చేయండి",
-       "practiceContent": "సాధన సామగ్రి",
+        "practiceContent": "కంటెంట్‌ను ప్రాక్టీస్ చేయండి",
         "practiceContentDesc" :"వాటి పరిష్కారాలతో అపరిమిత అభ్యాస సామగ్రిని ఉపయోగించండి.",
         "studyMaterial": "ఇంటరాక్టివ్ స్టడీ మెటీరియల్",
         "studyMaterialDesc":"సిలబస్‌కు అనుగుణంగా మీడియా-రిచ్ దృశ్యమానంగా 2D 3D వీడియోలు",
