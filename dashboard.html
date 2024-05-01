@@ -159,16 +159,27 @@ title: dashboard
     filter: brightness(0) invert(1);
  }
 
+ .dashboard-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+}
+
+.dashboard-container-box {
+    width: 100% !important;
+    margin: 0 auto;
+}
+
 </style>   
 <div>
   {% include line-banner.html %}
-  {% include dashboard-banner.html %}
 </div>
 <div id="scrollMainContent"></div>
-<div class="dashbord-matrics-data">
-  <div class="container">
-    <div class="container-box">
-      <div class="row">
+<!-- <div class="dashbord-matrics-data"> -->
+  <div class="dashboard-container container">
+    <div class="dashboard-container-box container-box">
+      <iframe src="https://diksha-data.diksha.gov.in/login/?username=anandarup.kar@trigyn.com&redirect=/bi/dashboard/dashboard_details/?standalone=1&show_filters=0" width="100%" height="800" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe>
+      <!-- <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">
               <div class="switch-field">
                   <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
@@ -187,22 +198,22 @@ title: dashboard
                  
               </div>
           </div>
-      </div>
-      {% include page-data-dashboard-updated.html %}
+      </div> -->
+     
     </div>
   </div>
-</div>
+<!-- </div> -->
 
 
 {% contentfor mobileview %}
 <div>
   {% include line-banner.html %}
-  {% include dashboard-banner.html %}
 </div>
-<div class="dashbord-matrics-data">
-  <div class="container">
-    <div class="container-box">
-      <div class="row">
+<!-- <div class="dashbord-matrics-data"> -->
+  <div class="dashboard-container container">
+    <div class="dashboard-container-box container-box">
+      <iframe src="https://diksha-data.diksha.gov.in/bi/dashboard/4/" width="100%" height="500" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe>
+      <!-- <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
               <div class="switch-field">
                   <input type="radio" id="radio-four" name="switch-two" value="usageMetrics" checked />
@@ -222,9 +233,8 @@ title: dashboard
                  
               </div>
           </div>
-      </div>
-      {% include page-data-dashboard-updated.html %}
+      </div> -->
     </div>
   </div>
-</div>
+<!-- </div> -->
 {% endcontentfor %}
