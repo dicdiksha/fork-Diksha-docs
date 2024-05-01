@@ -1,8 +1,8 @@
 <style>
-  .diksha-dashbord{
-    background-color:#F8F8F8;
-    padding: 50px 0;
-  }
+  /* .diksha-dashbord{ */
+    /* background-color:#F8F8F8;
+    padding: 50px 0; */
+  /* } */
   .view-dashboards{
     display: flex;
     justify-content: center;
@@ -162,14 +162,25 @@
 #recipeCarousel .carousel-inner .carousel-item-left{
   transform: translateX(0);
 }
+
+.dashboard-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+}
+
+.dashboard-container-box {
+    width: 100% !important;
+    margin: 0 auto;
+}
  
 /*=============END SLIDER==================*/
 </style>
  
 <div class="diksha-dashbord">
-  <div class="container">
-    <div class="container-box">
-      <div class="head-title">
+  <div class="dashboard-container container">
+    <div class="dashboard-container-box container-box">
+      <!-- <div class="head-title">
         <span class="text">
           <span data-translate="diksha">
             {{ site.data.text.diksha }}
@@ -177,12 +188,14 @@
           <span class="title-diksha-color" data-translate="dashboard">{{ site.data.text.dashboard }}</span></span>
         <div class="date-time">                      
           <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span></div>
-      </div>
+      </div> -->
      
-      <div class="row">
-      </div>
+      <!-- <div class="row">
+      </div> -->
+
         <div class="row mx-auto my-auto">
-          <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+          <iframe src="https://diksha-data.diksha.gov.in/login/?username=anandarup.kar@trigyn.com&redirect=/bi/dashboard/diksha_dashboard/?standalone=1&show_filters=0" width="100%" height="700" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe>
+          <!-- <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
               <div class="carousel-inner w-100" role="listbox">
                   <div class="carousel-item active">
                     <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
@@ -418,12 +431,12 @@
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Next</span>
               </a>
-          </div>
+          </div> -->
         </div>
      
     </div>
   </div>
-  <div class="view-dashboards">  
+  <!-- <div class="view-dashboards">  
     <button tabindex="0" class="view-dashboard" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
-  </div>
+  </div> -->
 </div>
