@@ -7,15 +7,14 @@
     .navMenu a:hover, .navMenu a :active{
         text-decoration: none;
     }   
-
     .navMenu {
         display: flex;
     }
-
     .diksha-for-dropdown{
-        margin-top: -1px;
+        margin-top: 0px;
         padding: 0 15px 0 5px;
         line-height: 20px;
+        display: flex;
     }
     .diksha-for-dropdown .dropdown-toggle{
         padding: 0;
@@ -24,7 +23,7 @@
         height: 100%;
         background: url(../assets/homepage/nistha-lp/blue-arrow-down.svg) no-repeat;
         position: absolute;
-        top: 7px;
+        top: 6px;
         border: 0;
         width: 20%;
     }
@@ -56,9 +55,6 @@
         .navMenu {
             display: block !important;
         }
-        #dropdownMenuLink::after{
-            margin-top: 8px;
-        }
         .diksha-for-dropdown{
             display: flex;
             padding: 0 0.5625rem;
@@ -67,14 +63,13 @@
         .diksha-for-dropdown .dropdown-toggle {
             padding: 0;
             margin: 0;
+            position: relative;
         }
         .diksha-for-dropdown .dropdown-toggle::after{
-            right: 57%;
-            top: 0;
+            top: 6px;
+            right: -22px;
         }
     }
-    
-  
 </style>
 <div class="">
     <div class="navMenu">

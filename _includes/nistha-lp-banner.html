@@ -1,23 +1,29 @@
 <style>
     .nistha-lp-banner{
         background-color: #ECF6FF;
-        padding: 30px 0 60px 0;
+        padding: 20px 0 30px 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
     }
     .nistha-main-head {
         margin-bottom: 2rem;
     }
     .nistha-main-head h1{
-        font-size: 50px;
+        font-size: 48px;
         font-family: 'Outfit';
         color: #434141;
         line-height: 58px;
         font-weight: 500;
     }
+    .nistha-banner-desc{
+        padding-right: 20px;
+    }
     .nistha-banner-desc p {
         color: #919191;
         font-weight: 500;
         line-height: 33.6px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .nistha-banner-desc p span{
         font-weight: 700;
@@ -25,22 +31,24 @@
     .lp-login-btn{
         border: 0;
         background-color: #005DA3;
-        padding: 0.5375rem 0.75rem;
+        padding: 0.8rem 1.5rem;
         border-radius: 0.25rem;
         color: #FFFFFF;
         cursor: pointer;
         text-transform: capitalize;
+        font-size: 16px;
+        line-height: 24px;
     }
     .lp-login-btn:hover{
         color: #ffffff !important;
     }
     .banner-course-detail {
 		position: relative;
-        margin-left: 4rem;
+        margin-left: 6rem;
 	}
 	.banner-course-detail .course-data.box1{
-		right: 6%;
-    	top: 5%;
+		right: 8%;
+    	top: 9%;
 	}
     .banner-course-detail .course-data.box2{
         top: 59%;
@@ -51,7 +59,7 @@
         left: 5%;
 	}
     .banner-course-detail .course-data.box4{
-        right: -4%;
+        right: 1%;
         bottom: 21%;
 	}
 	.banner-course-detail .course-data {
@@ -74,7 +82,7 @@
 	}
 	.banner-course-detail .course-text{
 		color: #005DA3;
-		font-size: 18px;
+		font-size: 16px;
 		line-height: 30px;
 		font-weight: 500;
 		background-color: #FFFFFF;
@@ -85,14 +93,28 @@
     .banner-course-detail .banner-img-fluid {
         max-width: 100%;
         height: auto;
+        width: auto;
+        min-height: auto;
     }
     .login-btn-div {
-        margin-top: 4rem;
+        margin-top: 3.5rem;
+    }
+    .course-icons img {
+        width: auto;
+        height: auto !important;
+        min-height: auto;
+    }
+    #teacher-lp-slider .carousel-control-prev{
+        left: 1%;
+    }
+    #teacher-lp-slider .carousel-control-next{
+        right: 1%;
+    }
+    #teacher-lp-slider .carousel-control-prev,
+    #teacher-lp-slider .carousel-control-next{
+        width: 6%;
     }
     @media (max-width: 576px){
-        .nistha-lp-banner{
-            text-align: center;
-        }
         .banner-course-detail .course-icons{
             height: 33px;
             width: 33px;
@@ -116,25 +138,61 @@
             right: -7%;
             bottom: 21%;
         }
+        .nistha-main-head h1 {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        .nistha-banner-desc p {
+            margin-bottom: 4px;
+            font-size: 10px !important;
+            line-height: 16px;
+        }
+        .login-btn-div {
+            margin: 0;
+        }
+        .lp-login-btn {
+            font-size: 10px;
+            padding: 7px 10px;
+        }
+        .ht-banner-slider img {
+            min-height: 140px;
+        }
+        .nistha-lp-banner {
+            padding: 5px 0;
+        }
     }
     @media (min-width:576px) and (max-width: 768px){
         .banner-course-detail .course-data.box2 {
             top: 59%;
             left: -13%;
         }
+        .nistha-lp-banner{
+            padding: 10px 0;
+        }
     }
-    @media (max-width: 768px){
+    @media (min-width: 768px) and (max-width: 992px){
         .nistha-main-head h1{
-            font-size: 35px;
+            font-size: 30px;
+            line-height: 35px;
         }
         .nistha-main-head {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
         .login-btn-div{
-            margin-bottom: 2rem;
+           margin: 1rem 0 0 0; 
         }
         .nistha-lp-banner{
-            padding: 20px 0 50px 0;
+            padding: 10px 0;
+        }
+        .nistha-banner-desc p{
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .nistha-banner-desc {
+            padding-right: 0;
+        }
+        .diksha-student-banner img{
+            height: 305px;
         }
     }
     @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -142,8 +200,8 @@
             right: 0%;
             top: 0%;
         }
-        .nistha-main-head h1{
-            font-size: 46px;
+        .nistha-lp-banner {
+            padding: 15px 0;
         }
         .why-nistha-wrap .logo-box.left{
             left: -6%;
@@ -151,9 +209,332 @@
         .why-nistha-wrap .logo-box {
             right: -6%;
         }
+        .nistha-main-head h1{
+            font-size: 40px;
+            line-height: 50px;
+        }
+     }
+     @media (max-width: 768px) {
+        .banner-margin{
+            margin-left: 1rem;
+        }
+        .nistha-main-head{
+            margin-bottom: 0;
+        }
+        .banner-course-detail {
+            display: none;
+        }
+     }
+     @media (min-width: 576px) and (max-width: 768px) {
+        .ht-banner-slider img {
+            min-height: 230px;
+        }
+        .nistha-main-head h1{
+            font-size: 24px;
+            line-height: 35px;
+        }
+        .nistha-banner-desc {
+            padding-right: 0;
+        }
+        .nistha-banner-desc p{
+            margin-bottom: 10px;
+            font-size: 12px;
+            line-height: 24px;
+        }
+        .login-btn-div {
+            margin: 0.5rem 0 0 0;
+        }
+        .lp-login-btn{
+            font-size: 10px;
+        }
+     }
+     @media (min-width: 992px) and (max-width: 1399.98px) {
+        .nistha-main-head {
+            margin-bottom: 0rem;
+        }
+        .nistha-banner-desc {
+            padding-right: 0;
+        }
+        .nistha-banner-desc p {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .login-btn-div {
+            margin-top: 0.5rem;
+        }
+        .banner-course-detail .course-text{
+            font-size: 14px;
+        }
+        .banner-course-detail .course-icons{
+            height: 40px;
+            width: 40px;
+        }
+     }
+     @media (min-width: 992px) and (max-width: 1024px) {
+        .banner-course-detail .course-data.box1 {
+            right: -20%;
+            top: 9%;
+        }
+        .banner-course-detail .course-data.box2 {
+            top: 50%;
+            left: -29%;
+        }
+        .banner-course-detail .course-data.box3 {
+            left: -29%;
+            bottom: 7%;
+        }
+        .banner-course-detail .course-data.box4 {
+           right: -23%;
+        bottom: 16%;
+        }
+     }
+     @media (min-width: 1025px) and (max-width: 1200px) {
+        .banner-course-detail .course-data.box1 {
+            right: 0%;
+            top: 9%;
+        }
+        .banner-course-detail .course-data.box2 {
+            top: 59%;
+            left: -18%;
+        }
+        .banner-course-detail .course-data.box3 {
+            left: -2%;
+            bottom: 2%;
+        }
+        .banner-course-detail .course-data.box4 {
+           right: -20%;
+            bottom: 21%;
+        }
+        .banner-course-detail .banner-img-fluid{
+            height: 320px;
+        }
+     }
+     @media (min-width: 1200px) and (max-width: 1400px) {
+        .banner-course-detail .course-data.box1 {
+            right: 8%;
+            top: 9%;
+        }
+        .banner-course-detail .course-data.box2 {
+            top: 50%;
+            left: 2%;
+        }
+        .banner-course-detail .course-data.box3 {
+            bottom: 9%;
+            left: 5%;
+        }
+        .banner-course-detail .course-data.box4 {
+            right: -7%;
+            bottom: 15%;
+        }
+        .banner-course-detail .banner-img-fluid{
+            height: 320px;
+        }
+        .banner-course-detail {
+            margin-left: 0;
+            text-align: center;
+        }
+     }
+     @media (min-width: 1600px) and (max-width: 2099px){
+        .banner-course-detail .course-data.box1 {
+            right: 12%;
+            top: 9%;
+        }
+        .banner-course-detail .course-data.box2 {
+            top: 54%;
+            left: 14%;
+        }
+        .banner-course-detail .course-data.box3 {
+            bottom: -3%;
+            left: 21%;
+        }
+        .banner-course-detail .course-data.box4 {
+            right: 10%;
+            bottom: 21%;
+        }
+     }
+     @media (min-width: 1600px){
+        .banner-course-detail {
+            margin-left: 0;
+            text-align: center;
+        }
+     }
+     @media (min-width: 2100px) and (max-width: 2499px){
+        .banner-course-detail .course-data.box1 {
+            right: 20%;
+            top: 9%;
+        }
+        .banner-course-detail .course-data.box2 {
+            top: 54%;
+            left: 20%;
+        }
+        .banner-course-detail .course-data.box3 {
+            bottom: -3%;
+            left: 28%;
+        }
+        .banner-course-detail .course-data.box4 {
+            right: 16%;
+            bottom: 21%;
+        }
+     }
+     @media (max-width: 992px){
+        .banner-course-detail{
+            display: none;
+        }
+     }
+     @media (max-width: 540px){
+        .mob-hidden{
+            display: none;
+        }
+        .nistha-main-head h1 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+        .nistha-banner-desc {
+            padding-right: 0;
+        }
+        .nistha-banner-desc p {
+            margin-bottom: 0;
+        }
+        .lp-login-btn {
+            font-size: 9px;
+            padding: 5px;
+        }
+        .banner-margin {
+            margin-left: 0;
+        }
+     }
+     @media (min-width: 2500px){
+        .banner-course-detail .course-data.box1 {
+            right: 25%;
+            top: 9%;
+        }
+        .banner-course-detail .course-data.box2 {
+            top: 54%;
+            left: 25%;
+        }
+        .banner-course-detail .course-data.box3 {
+            bottom: -3%;
+            left: 32%;
+        }
+        .banner-course-detail .course-data.box4 {
+            right: 22%;
+            bottom: 21%;
+        }
+        .step-img-wrap {
+            width: 350px;
+            margin-left: 12px;
+        }
      }
 </style>
-<div class="nistha-lp-banner">
+<div class="diksha-student-banner">
+    <div id="teacher-lp-slider" class="carousel slide ht-banner-slider" data-bs-ride="carousel">
+        <div class="carousel-inner" title="">
+            <div class="carousel-item carousel3-bg active position-relative" role="option">
+                <img loading="lazy" decoding="async" class="carousel-img-height nistha-banner" 
+                    src="../assets/homepage/nistha-lp/banner/blue-banner-bg.png"
+                    alt="slider1">
+                    <!-- <img loading="lazy" decoding="async" class="carousel-img-height nistha-mob-banner" 
+                    src="../assets/homepage/nistha-lp/banner/blue-mob-banner.png"
+                    alt="slider1"> -->
+                    <div class="nistha-lp-banner">
+                        <div class="container">
+                            <div class="container-box">
+                                <div class="row justify-content-center banner-margin">
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+                                        <div class="nistha-main-head">
+                                            <h1>Empowering Minds,<br class="mob-hidden"/> Shaping Futures</h1>
+                                        </div>
+                                        <div class="nistha-banner-desc">
+                                            <p><span>The National Initiative for School Heads and Teachers Holistic Advancement (NISHTHA) </span> is a flagship teacher training program launched by the Ministry of Education,
+                                                Government of India, with the aim <span> of improving the quality of school education by enhancing the knowledge and skills of teachers.</span></p>
+                                        </div>
+                                        <div class="login-btn-div">
+                                            <a href="https://dev-mylearn.diksha.gov.in/diksha/login.php" target="_blank" class="lp-login-btn">View NISHTHA Courses</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11 col-lg-6">
+                                        <div class="banner-course-detail">
+                                            <img src="../assets/homepage/nistha-lp/banner/img1.png" alt="" class="banner-img-fluid">
+                                            <div class="course-data box1">
+                                                <div class="course-icons">
+                                                    <img src="../assets/homepage/nistha-lp/banner/certificate1.svg" alt="certificate">
+                                                </div>
+                                                <div class="course-text">1M Certification</div>
+                                            </div>
+                                            <div class="course-data box2">
+                                                <div class="course-icons">
+                                                    <img src="../assets/homepage/nistha-lp/banner/course1.svg" alt="course">
+                                                </div>
+                                                <div class="course-text">53 Courses</div>
+                                            </div>
+                                            <div class="course-data box3">
+                                                <div class="course-icons">
+                                                    <img src="../assets/homepage/nistha-lp/banner/enroll1.svg" alt="enroll">
+                                                </div>
+                                                <div class="course-text">2.38M Enrollments</div>
+                                            </div>
+                                            <div class="course-data box4">
+                                                <div class="course-icons">
+                                                    <img src="../assets/homepage/nistha-lp/banner/complete1.svg" alt="complete">
+                                                </div>
+                                                <div class="course-text">1.22M Course Completion</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="carousel-item carousel3-bg" role="option">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/Rashtriya-e-pustakalaya.jpg"
+                        alt="slider2" loading="lazy" decoding="async">
+            </div> 
+            <div class="carousel-item carousel3-bg" role="option">
+                <a href="https://ejaaduipitara.ncert.gov.in/" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/jadui-pitara-new.jpg"
+                        alt="slider3" loading="lazy" decoding="async">
+                </a>
+            </div> 
+            <div class="carousel-item carousel3-bg" role="option">
+                <a href="/fln.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/nipun-bharat-new.jpg"
+                        alt="slider4" loading="lazy" decoding="async">
+                </a>
+            </div>  
+            <div class="carousel-item carousel3-bg" role="option">
+                <a href="/fln.html" target="_blank">
+                    <img loading="lazy" decoding="async"  class="carousel-img-height"
+                    src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}banner/virual-lab-new.jpg"
+                        alt="slider5" loading="lazy" decoding="async">
+                </a>
+            </div>  
+        </div>   
+        <ol class="carousel-indicators">
+            <li data-bs-target="#teacher-lp-slider" tabindex="0" data-bs-slide-to="0" aria-current="page" class="active"
+            aria-controls="carousel-items" aria-label="slider1"></li>
+            <li data-bs-target="#teacher-lp-slider" tabindex="0" data-bs-slide-to="1" aria-current="page" 
+            aria-controls="carousel-items" aria-label="slider2"></li>  
+            <li data-bs-target="#teacher-lp-slider" tabindex="0" data-bs-slide-to="2" aria-current="page" 
+            aria-controls="carousel-items" aria-label="slider3"></li>  
+            <li data-bs-target="#teacher-lp-slider" tabindex="0" data-bs-slide-to="3" aria-current="page" 
+            aria-controls="carousel-items" aria-label="slider4"></li>  
+            <li data-bs-target="#teacher-lp-slider" tabindex="0" data-bs-slide-to="4" aria-current="page" 
+            aria-controls="carousel-items" aria-label="slider5"></li>  
+
+        </ol>
+        <a class="carousel-control-prev" href="#teacher-lp-slider" data-bs-target="#teacher-lp-slider" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a class="carousel-control-next" href="#teacher-lp-slider"  data-bs-target="#teacher-lp-slider" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+    </div>
+</div>
+<!-- <div class="nistha-lp-banner">
     <div class="container">
         <div class="container-box">
             <div class="row">
@@ -166,7 +547,7 @@
                             Government of India, with the aim <span> of improving the quality of school education by enhancing the knowledge and skills of teachers.</span></p>
                     </div>
                     <div class="login-btn-div">
-                        <a href="https://dev-mylearn.diksha.gov.in/diksha/login.php" target="_blank" class="lp-login-btn">Login to NISHTHA</a>
+                        <a href="https://dev-mylearn.diksha.gov.in/diksha/login.php" target="_blank" class="lp-login-btn">View NISHTHA Courses</a>
                     </div>
                 </div>
                 <div class="col-md-12 col-lg-6">
@@ -201,4 +582,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

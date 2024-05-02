@@ -656,20 +656,38 @@ html.darkmode {
  .dashbord-matrics-data .top-states-table table tr td:first-child  {
   color: #fff;
  }
-  .diksha-study-sec {
+  .diksha-study-sec,
+  .nistha-classroom-sec {
     background-color: #061F35;
   }
   .nistha-sub-head h2,
-  .diksha-study-sec .tab-msg p,
-  .diksha-study-sec .active-tab-msg p,
-  .diksha-study-sec .explore-filter label,
-  .footer-links .footer-exp-title{
+  .tab-msg p,
+  .active-tab-msg p,
+  .explore-filter label,
+  .footer-links .footer-exp-title,
+  .nistha-steps-div h3,
+  .nistha-steps-div p,
+  .nistha-desc p{
     color: #FFFFFF;
   }
-  .explore-study-tab .nav-link{
-    color: #ffe350;
+  .explore-study-tab .nav-link,
+  .nistha-certif-tab .nav-link,
+  .view-all-btn{
+    color: #ffe350 !important;
   }
-  .diksha-study-sec .explore-study-tab{
+   .explore-study-tab{
     background-color: #191919;
+  }
+  .nistha-certif-tab .nav-link.active,
+  .study-view-more-btn{
+    color: #202124 !important;
+  }
+  .nistha-certif-tab .nav-link.active,
+  .study-view-more-btn{
+   background-color: #ffe350;
+  }
+  .nistha-certif-tab,
+  .view-all-btn{
+    border-color: #ffe350 !important;
   }
 }
