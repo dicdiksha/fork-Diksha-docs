@@ -32,15 +32,16 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 33.6px;
-        margin: 0 0 0 -27px;
+        color: #434141;
     }
     .nistha-steps-div h4{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
         line-height: 33.6px;
+        margin-bottom: 10px;
     }
     .nistha-steps-div h4.blue-text{
-        color: #3065AD;
+        color: #005DA3;
     }
     .nistha-steps-div h4.purple-text{
         color: #7A4990;
@@ -62,19 +63,20 @@
         padding: 0 1rem;
     }
     .nistha-steps-div .step-img{
-        max-width: 70%;
+        max-width: 100%;
+    }
+    .nistha-steps-div .step-img.last-img{
+        max-width: 95%;
     }
     .nistha-steps-div .step-arrow-img{
         margin-top: -24px;
         padding-left: 8px;
     }
-    .nistha-steps-div .step-arrow-mob-img{
+    .nistha-steps-div .step-arrow-mob-img,
+    .nistha-steps-div  .step-mob-img{
         display: none;
     }
-    @media (max-width: 576px) {
-        .nistha-steps-div h3{
-            margin: 0;
-        }
+    @media (max-width: 575.98px) {
 	    .nistha-steps-div .step-arrow-mob-img{
             display: block;
             margin: 0 auto;
@@ -82,6 +84,14 @@
         }
         .nistha-steps-div .step-arrow-img{
             display: none;
+        }
+        .nistha-steps-div .step-img{
+            display: none;
+        }
+        .nistha-steps-div .step-mob-img{
+            display: block;
+            margin: 0 auto;
+            width: 35%;
         }
         .nistha-steps-div{
             margin-bottom: 12px;
@@ -99,78 +109,103 @@
             font-size: 27px !important;
         }
 	}
-    @media (min-width: 576px) and (max-width: 768px) {
+    /* @media (min-width: 576px) and (max-width: 768px) {
         .nistha-steps-div .step-img {
             max-width: 60%;
         }
-    }
+    } */
     @media (min-width: 992px) and (max-width: 1199.98px) { 
         .nistha-steps-div h4{
             font-size: 13px;
         }
      }
+     @media (min-width: 1024px){
+        .nistha-steps-div {
+            margin-left: -8px;
+        }
+     }
+     @media (min-width: 1440px){
+        .steps-width{
+            width: 1200px;
+            margin: 0 auto;
+        }
+     }
+     @media (min-width: 694px) and (max-width: 992px){
+        .step-col-width{
+            width: 215px;
+        }
+        .steps-width {
+            justify-content: center;
+        }
+     }
 </style>
 <div class="nistha-step-sec sec-padding">
     <div class="nistha-sub-head">
-        <h2>Steps to access NISHTHA Course</h2>
+        <h2>Steps to access Teacher Training Program</h2>
     </div>
     <div class="container">
         <div class="container-box">
-            <div class="row">
-                <div class="col-sm-4 col-lg-2 px-0">
+            <div class="row steps-width">
+                <div class="col-sm-4 col-lg-2 px-0 step-col-width">
                     <div class="nistha-steps-div">
                         <h3>Step 01</h3>
-                        <img src="../assets/homepage/nistha-lp/steps/s1.png" class="step-img" alt="step1">
-                        <img src="../assets/homepage/nistha-lp/steps/blue-arrow.png" class="step-arrow-img" alt="">
+                        <img src="../assets/homepage/nistha-lp/steps/step1.png" class="step-img" alt="step1">
+                        <img src="../assets/homepage/nistha-lp/steps/s1.png" class="step-mob-img" alt="step1">
+                        <!-- <img src="../assets/homepage/nistha-lp/steps/blue-arrow.png" class="step-arrow-img" alt=""> -->
                         <h4 class="blue-text">Registration / Sign In</h4>
                         <p>Do registration or sign in on portal.</p>
                         <img src="../assets/homepage/nistha-lp/steps/blue-arrow.png" class="step-arrow-mob-img" alt="">
                     </div>
                 </div>
-                <div class="col-sm-4 col-lg-2 px-0">
+                <div class="col-sm-4 col-lg-2 px-0 step-col-width">
                     <div class="nistha-steps-div">
                         <h3>Step 02</h3>
-                        <img src="../assets/homepage/nistha-lp/steps/s2.png" class="step-img" alt="step2">
-                        <img src="../assets/homepage/nistha-lp/steps/purple-arrow.png" class="step-arrow-img" alt="">
+                        <img src="../assets/homepage/nistha-lp/steps/step2.png" class="step-img" alt="step2">
+                        <img src="../assets/homepage/nistha-lp/steps/s2.png" class="step-mob-img" alt="step1">
+                        <!-- <img src="../assets/homepage/nistha-lp/steps/purple-arrow.png" class="step-arrow-img" alt=""> -->
                         <h4 class="purple-text">Search Course </h4>
                         <p>Search for a desired course that you want to take.</p>
                         <img src="../assets/homepage/nistha-lp/steps/purple-arrow.png" class="step-arrow-mob-img" alt="">
                     </div>
                 </div>
-                <div class="col-sm-4 col-lg-2 px-0">
+                <div class="col-sm-4 col-lg-2 px-0 step-col-width">
                     <div class="nistha-steps-div">
                         <h3>Step 03</h3>
-                        <img src="../assets/homepage/nistha-lp/steps/s3.png" class="step-img" alt="step3">
-                        <img src="../assets/homepage/nistha-lp/steps/orange-arrow.png" class="step-arrow-img" alt="">
+                        <img src="../assets/homepage/nistha-lp/steps/step3.png" class="step-img" alt="step3">
+                        <img src="../assets/homepage/nistha-lp/steps/s3.png" class="step-mob-img" alt="step1">
+                        <!-- <img src="../assets/homepage/nistha-lp/steps/orange-arrow.png" class="step-arrow-img" alt=""> -->
                         <h4 class="orange-text">Register Course </h4>
                         <p>Register for the course that you want to take.</p>
                         <img src="../assets/homepage/nistha-lp/steps/orange-arrow.png" class="step-arrow-mob-img" alt="">
                     </div>
                 </div>
-                <div class="col-sm-4 col-lg-2 px-0">
+                <div class="col-sm-4 col-lg-2 px-0 step-col-width">
                     <div class="nistha-steps-div">
                         <h3>Step 04</h3>
-                        <img src="../assets/homepage/nistha-lp/steps/s4.png" class="step-img" alt="step4">
-                        <img src="../assets/homepage/nistha-lp/steps/green-arrow.png" class="step-arrow-img" alt="">
+                        <img src="../assets/homepage/nistha-lp/steps/step4.png" class="step-img" alt="step4">
+                        <img src="../assets/homepage/nistha-lp/steps/s4.png" class="step-mob-img" alt="step1">
+                        <!-- <img src="../assets/homepage/nistha-lp/steps/green-arrow.png" class="step-arrow-img" alt=""> -->
                         <h4 class="green-text">Consume Course </h4>
                         <p>Consume all the course contents.</p>
                         <img src="../assets/homepage/nistha-lp/steps/green-arrow.png" class="step-arrow-mob-img" alt="">
                     </div>
                 </div>
-                <div class="col-sm-4 col-lg-2 px-0">
+                <div class="col-sm-4 col-lg-2 px-0 step-col-width">
                     <div class="nistha-steps-div">
                         <h3>Step 05</h3>
-                        <img src="../assets/homepage/nistha-lp/steps/s5.png" class="step-img" alt="step5">
-                        <img src="../assets/homepage/nistha-lp/steps/maroon-arrow.png" class="step-arrow-img" alt="">
+                        <img src="../assets/homepage/nistha-lp/steps/step5.png" class="step-img" alt="step5">
+                        <img src="../assets/homepage/nistha-lp/steps/s5.png" class="step-mob-img" alt="step1">
+                        <!-- <img src="../assets/homepage/nistha-lp/steps/maroon-arrow.png" class="step-arrow-img" alt=""> -->
                         <h4 class="maroon-text">Take Assessment </h4>
                         <p>Take the assessment of consumed course.</p>
                         <img src="../assets/homepage/nistha-lp/steps/maroon-arrow.png" class="step-arrow-mob-img" alt="">
                     </div>
                 </div>
-                <div class="col-sm-4 col-lg-2 px-0">
+                <div class="col-sm-4 col-lg-2 px-0 step-col-width">
                     <div class="nistha-steps-div">
                         <h3>Step 06</h3>
-                        <img src="../assets/homepage/nistha-lp/steps/s6.png" class="step-img" alt="step6">
+                        <img src="../assets/homepage/nistha-lp/steps/step6.png" class="step-img last-img" alt="step6">
+                        <img src="../assets/homepage/nistha-lp/steps/s6.png" class="step-mob-img" alt="step1">
                         <h4 class="blue-text">Get Certificate</h4>
                         <p>After successful assessment get your certificate. </p>
                     </div>
