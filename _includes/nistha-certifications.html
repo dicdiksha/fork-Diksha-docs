@@ -2,13 +2,16 @@
     .sec-padding{
         padding: 40px 0; 
     }
+    .nistha-certif-sec {
+        padding-bottom: 20px;
+    }
     .nistha-certif-tab{
         justify-content: space-between;
         border-bottom: 0;
         border: 1px solid #005DA380;
         border-radius: 4px;
         padding: 5px;
-        width: 405px;
+        min-width: 405px;
         margin-bottom: 2rem;
     }
     .nistha-certif-tab .nav-link{
@@ -61,14 +64,16 @@
             padding:  6px 11px;;
        }
        .view-all-btn{
-            padding: 0.4375rem 0.75rem;
-            border-radius: 0.25rem;
+            padding: 0.75rem 1.3rem;
+            border-radius: 4px;
             color: #005DA3 !important;
             cursor: pointer;
-            border: 0.0625px solid #005DA3 !important;
+            border: 1px solid #005DA3 !important;
             text-transform: capitalize;
-            font-weight: bold;
-            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.15px;
        }
        /* new */
        .nistha-course-card{
@@ -78,8 +83,8 @@
         display: flex;
         padding: 10px;
         margin-bottom: 15px;
-        min-height: 195px;
-        max-height: 195px;
+        min-height: 190px;
+        max-height: 190px;
         height: 100%;
         overflow: hidden;
        }
@@ -89,131 +94,18 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 10px;
+            height: 100%;
         }
-       .nistha-course-detail{
-            margin-left: 10px;
-            margin-right: 10px;
-
-       }
-       .course-strip{
-            padding-left: 8px;
-            background: #000;
-            height: 1.25rem;
-            color: #ffffff;
-            font-size: 12px;
-            display: flex;
-            align-items: center;
-            margin: 3px 0 5px 0;
-            position: relative;
-            width: 95px;
-       }
-       .course-strip .strip-title{
-            margin-left: 5px;
-       }
-       .course-strip::before{
-            position: absolute;
-            right: -8px;
-            transform: rotatey(-180deg);
-            left: inherit;
-            content: '';
-            content: "";
-            width: 0;
-            height: 0;
-            border-left: 0.3125rem solid transparent;
-            border-bottom: 0.625rem solid #000000;
-            border-right: 0.3125rem solid #000000;
-            border-top: 0.625rem solid #000000;
+        .nistha-course-card .book-image img{
+            border-radius: 8px;
+            width: 117px;
+            height: 170px;
         }
         .nistha-course-card .course-title.right-align{
             direction: rtl;
         }
-        .nistha-course-card .course-title{
-            overflow: hidden;
-            text-overflow: ellipsis;
-            word-break: break-word;
-            max-width: 25ch;
-            -webkit-box-orient: vertical;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            height: 2.5rem;
-        }
-        .nistha-course-card .course-title h4{
-            font-size: 14px;
-            line-height: 19px;
-            font-weight: 400;
-            color: #333333;
-        }
-        .nistha-course-card .course-icon{
-            height: 23px;
-            width: 23px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-        }
-        .nistha-course-card .course-icon.subject{
-            background-color: #E0F9F7;
-        }
         .nistha-course-card .course-icon.publish{
             background-color: #FFF1ED;
-        }
-        .nistha-course-card .book-detail{
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .book-text{
-            font-size: 12px;
-            line-height: 16.34px;
-            font-weight: 500;
-            color: #696F88;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            max-width: 20ch;
-            margin-left: 5px;
-        }
-        .bmc-detail {
-            border-bottom: 1px solid #F3F4F6;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .bmc-detail span{
-            font-size: 9px;
-            line-height: 22px;
-            letter-spacing: -0.1px;
-            position: relative;
-            padding: 0 3px;
-        }
-        .bmc-detail .board{
-            color: #008840;
-            
-        }
-        .bmc-detail .medium{
-            color: #6236FF;
-        }
-        .bmc-detail .grade{
-            color: #0076FE;
-        }
-        .bmc-detail span::before{
-            position: absolute;
-            content: " ";
-            top: 20%;
-            height: 12px;
-            width: 1px;
-            background-color: #F3F4F6;
-            left: 0;
-        }
-        .bmc-detail span:first-child::before,
-        .bmc-detail span:last-child::before{
-            display: none;
-        }
-        .bmc-detail span:first-child,
-        .bmc-detail span:last-child{
-            padding-left: 0;
         }
         .nistha-course-nav-link{
             text-decoration: none !important;
@@ -265,6 +157,13 @@
                 width: 100%;
             }
         }
+        @media (min-width: 576px) and (max-width: 767.984px){
+            .certif-course .nistha-course-card{
+                margin: 5px auto;
+                width: 382px;
+            }
+        }
+        
 </style>
 <div class="nistha-certif-sec">
     <div class="nistha-sub-head">
@@ -292,11 +191,11 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-12">
-                    <div class="tab-content" id="nisthaCertificateTabContent">
+                    <div class="tab-content certif-course" id="nisthaCertificateTabContent">
                         <div class="tab-pane fade show active" id="all-course" role="tabpanel" aria-labelledby="all-course-tab">
                             <div class="row">
-                                <div class="col-sm-6 col-xl-4">
-                                    <a href="https://diksha.gov.in/explore-course/course/do_31394797503179980816618" target="_blank" class="nistha-course-nav-link">
+                                <div class="col-md-6 col-xl-4">
+                                    <!-- <a href="https://diksha.gov.in/explore-course/course/do_31394797503179980816618" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
                                                 <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
@@ -308,28 +207,55 @@
                                                     </span>
                                                     <span class="strip-title">Course</span>
                                                 </div>
+                                                <div class="book-detail">
+                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                    <span class="book-text">Subject : CPD</span>
+                                                </div>
                                                 <div class="course-title">
                                                     <h4 title="Introduction to FLN Mission"><bdi>Introduction to FLN Mission</bdi></h4>
                                                 </div>
                                                 <div class="bmc-detail">
-                                                    <span class="board" title="NCERT">Board : NCERT</span>
-                                                    <span class="medium" title="English">Medium : English</span>
-                                                    <span class="grade" title="Class 9">Class 9</span>
+                                                    <p class="board" title="NCERT">Board : NCERT</p>
+                                                    <p class="medium" title="English">Medium : English</p>
+                                                    <p class="grade" title="Class 9">Class 9</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> -->
+
+                                    <a href="https://diksha.gov.in/explore-course/course/do_31394797503179980816618" target="_blank" class="nistha-course-nav-link">
+                                        <div class="nistha-course-card">
+                                            <div class="book-image">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
+                                            </div>
+                                            <div class="nistha-course-detail">
+                                                <div class="course-strip">
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
                                                 </div>
                                                 <div class="book-detail">
                                                     <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                     <span class="book-text">Subject : CPD</span>
                                                 </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : NCERT </span>
+                                                <div class="course-title">
+                                                    <h4 title="Introduction to FLN Mission"><bdi>Introduction to FLN Mission</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="NCERT">Board &nbsp;:&nbsp; NCERT</p>
+                                                    <p class="medium" title="English">Medium &nbsp;:&nbsp; English <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
+
                                 </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <a href="https://diksha.gov.in/explore-course/course/do_31395000352395264016807" target="_blank" class="nistha-course-nav-link">
+                                <div class="col-md-6 col-xl-4">
+                                    <!-- <a href="https://diksha.gov.in/explore-course/course/do_31395000352395264016807" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
                                                 <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
@@ -359,10 +285,40 @@
                                                 </div>
                                             </div>
                                         </div>
+                                    </a> -->
+                                    <a href="https://diksha.gov.in/explore-course/course/do_31395000352395264016807" target="_blank" class="nistha-course-nav-link">
+                                        <div class="nistha-course-card">
+                                            <div class="book-image">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
+                                            </div>
+                                            <div class="nistha-course-detail">
+                                                <div class="course-strip">
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
+                                                </div>
+                                                <div class="book-detail">
+                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                    <span class="book-text">Subject : CBSE Training</span>
+                                                </div>
+                                                <div class="course-title">
+                                                    <h4 title="बुनियादी साक्षरता और संख्या ज्ञान मिशन का परिचय"><bdi>बुनियादी साक्षरता और संख्या ज्ञान मिशन का परिचय</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="NCERT">Board &nbsp;:&nbsp; NCERT</p>
+                                                    <p class="medium" title="Hindi">Medium &nbsp;:&nbsp; Hindi <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </a>
+                                    
                                 </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <a href="https://diksha.gov.in/explore-course/course/do_31395008661970124817557" target="_blank" class="nistha-course-nav-link">
+                                <div class="col-md-6 col-xl-4">
+                                    <!-- <a href="https://diksha.gov.in/explore-course/course/do_31395008661970124817557" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
                                                 <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
@@ -379,8 +335,8 @@
                                                 </div>
                                                 <div class="bmc-detail">
                                                     <span class="board">Board : NCERT</span>
-                                                    <!-- <span class="medium">Medium : English</span>
-                                                    <span class="grade">Class 9</span> -->
+                                                    <span class="medium">Medium : English</span>
+                                                    <span class="grade">Class 9</span>
                                                 </div>
                                                 <div class="book-detail">
                                                     <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
@@ -389,6 +345,35 @@
                                                 <div class="book-detail">
                                                     <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
                                                     <span class="book-text">Publisher : NCERT </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a> -->
+                                    <a href="https://diksha.gov.in/explore-course/course/do_31395008661970124817557" target="_blank" class="nistha-course-nav-link">
+                                        <div class="nistha-course-card">
+                                            <div class="book-image">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
+                                            </div>
+                                            <div class="nistha-course-detail">
+                                                <div class="course-strip">
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
+                                                </div>
+                                                <div class="book-detail">
+                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                    <span class="book-text">Subject : CPD</span>
+                                                </div>
+                                                <div class="course-title">
+                                                     <h4 title="بنیادی خواندگی اور اعداد شناسی مشن کا تعارف"><bdi>نیادی خواندگی اور اعداد شناسی مشن کا تعارف</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="NCERT">Board &nbsp;:&nbsp; NCERT</p>
+                                                    <p class="medium" title="Hindi">Medium &nbsp;:&nbsp; Hindi <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -398,100 +383,94 @@
                         </div>
                         <div class="tab-pane fade" id="recent-add" role="tabpanel" aria-labelledby="recent-add-tab">
                             <div class="row">
-                                <div class="col-sm-6 col-xl-4">
+                                <div class="col-md-6 col-xl-4">
                                     <a href="https://diksha.gov.in/explore-course/course/do_31394797503179980816618" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
-                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
                                             </div>
                                             <div class="nistha-course-detail">
                                                 <div class="course-strip">
-                                                    <span>
-                                                        <img src="../assets/homepage/nistha-lp/course/course.svg" alt="">
-                                                    </span>
-                                                    <span class="strip-title">Course</span>
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
+                                                </div>
+                                                <div class="book-detail">
+                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                    <span class="book-text">Subject : CPD</span>
                                                 </div>
                                                 <div class="course-title">
                                                     <h4 title="Introduction to FLN Mission"><bdi>Introduction to FLN Mission</bdi></h4>
                                                 </div>
                                                 <div class="bmc-detail">
-                                                    <span class="board" title="NCERT">Board : NCERT</span>
-                                                    <span class="medium" title="English">Medium : English</span>
-                                                    <span class="grade" title="Class 9">Class 9</span>
-                                                </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
-                                                    <span class="book-text">Subject : CPD</span>
-                                                </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : NCERT </span>
+                                                    <p class="board" title="NCERT">Board &nbsp;:&nbsp; NCERT</p>
+                                                    <p class="medium" title="English">Medium &nbsp;:&nbsp; English <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 col-xl-4">
+                                <div class="col-md-6 col-xl-4">
                                     <a href="https://diksha.gov.in/explore-course/course/do_31395000352395264016807" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
-                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
                                             </div>
                                             <div class="nistha-course-detail">
                                                 <div class="course-strip">
-                                                    <span>
-                                                        <img src="../assets/homepage/nistha-lp/course/course.svg" alt="">
-                                                    </span>
-                                                    <span class="strip-title">Course</span>
-                                                </div>
-                                                <div class="course-title">
-                                                    <h4 title="बुनियादी साक्षरता और संख्या ज्ञान मिशन का परिचय"><bdi>बुनियादी साक्षरता और संख्या ज्ञान मिशन का परिचय</bdi></h4>
-                                                </div>
-                                                <div class="bmc-detail">
-                                                    <span class="board" title="NCERT">Board : NCERT</span>
-                                                    <span class="medium" title="Hindi">Medium : Hindi</span>
-                                                    <span class="grade" title="Class 9">Class 9</span>
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
                                                 </div>
                                                 <div class="book-detail">
                                                     <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                     <span class="book-text">Subject : CBSE Training</span>
                                                 </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : CBSE </span>
+                                                <div class="course-title">
+                                                    <h4 title="बुनियादी साक्षरता और संख्या ज्ञान मिशन का परिचय"><bdi>बुनियादी साक्षरता और संख्या ज्ञान मिशन का परिचय</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="NCERT">Board &nbsp;:&nbsp; NCERT</p>
+                                                    <p class="medium" title="Hindi">Medium &nbsp;:&nbsp; Hindi <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 col-xl-4">
+                                <div class="col-md-6 col-xl-4">
                                     <a href="https://diksha.gov.in/explore-course/course/do_31395008661970124817557" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
-                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
                                             </div>
                                             <div class="nistha-course-detail">
                                                 <div class="course-strip">
-                                                    <span>
-                                                        <img src="../assets/homepage/nistha-lp/course/course.svg" alt="">
-                                                    </span>
-                                                    <span class="strip-title">Course</span>
-                                                </div>
-                                                <div class="course-title right-align">
-                                                    <h4 title="بنیادی خواندگی اور اعداد شناسی مشن کا تعارف"><bdi>نیادی خواندگی اور اعداد شناسی مشن کا تعارف</bdi></h4>
-                                                </div>
-                                                <div class="bmc-detail">
-                                                    <span class="board" title="NCERT">Board : NCERT</span>
-                                                    <span class="medium" title="English">Medium : English</span>
-                                                    <span class="grade" title="Class 9">Class 9</span>
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
                                                 </div>
                                                 <div class="book-detail">
                                                     <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                     <span class="book-text">Subject : CPD</span>
                                                 </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : NCERT </span>
+                                                <div class="course-title">
+                                                     <h4 title="بنیادی خواندگی اور اعداد شناسی مشن کا تعارف"><bdi>نیادی خواندگی اور اعداد شناسی مشن کا تعارف</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="NCERT">Board &nbsp;:&nbsp; NCERT</p>
+                                                    <p class="medium" title="Hindi">Medium &nbsp;:&nbsp; Hindi <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -501,100 +480,94 @@
                         </div>
                         <div class="tab-pane fade" id="trend" role="tabpanel" aria-labelledby="trend-tab">
                             <div class="row">
-                                <div class="col-sm-6 col-xl-4">
-                                    <a href="https://diksha.gov.in/explore-course/course/do_31394795174537625616871" target="_blank" class="nistha-course-nav-link">
+                                <div class="col-md-6 col-xl-4">
+                                    <a  href="https://diksha.gov.in/explore-course/course/do_31394795174537625616871" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
-                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
                                             </div>
                                             <div class="nistha-course-detail">
                                                 <div class="course-strip">
-                                                    <span>
-                                                        <img src="../assets/homepage/nistha-lp/course/course.svg" alt="">
-                                                    </span>
-                                                    <span class="strip-title">Course</span>
-                                                </div>
-                                                <div class="course-title">
-                                                    <h4 title="Significance of the Early Years"><bdi>Significance of the Early Years</bdi></h4>
-                                                </div>
-                                                <div class="bmc-detail">
-                                                    <span class="board" title="CBSE">Board : CBSE</span>
-                                                    <span class="medium" title="English">Medium : English</span>
-                                                    <span class="grade" title="Class 9">Class 9</span>
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
                                                 </div>
                                                 <div class="book-detail">
                                                     <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                     <span class="book-text">Subject : CBSE Training</span>
                                                 </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : CBSE </span>
+                                                <div class="course-title">
+                                                        <h4 title="Significance of the Early Years"><bdi>Significance of the Early Years</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                    <p class="medium" title="English">Medium &nbsp;:&nbsp; English <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <a href="https://diksha.gov.in/explore-course/course/do_31394795340605849616321" target="_blank" class="nistha-course-nav-link">
+                                <div class="col-md-6 col-xl-4">
+                                    <a  href="https://diksha.gov.in/explore-course/course/do_31394795340605849616321" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
-                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
                                             </div>
                                             <div class="nistha-course-detail">
                                                 <div class="course-strip">
-                                                    <span>
-                                                        <img src="../assets/homepage/nistha-lp/course/course.svg" alt="">
-                                                    </span>
-                                                    <span class="strip-title">Course</span>
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
+                                                </div>
+                                                <div class="book-detail">
+                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
+                                                    <span class="book-text">Subject : CBSE Training</span>
                                                 </div>
                                                 <div class="course-title">
                                                     <h4 title="प्रारंभिक वर्षों का महत्व"><bdi>प्रारंभिक वर्षों का महत्व</bdi></h4>
                                                 </div>
                                                 <div class="bmc-detail">
-                                                    <span class="board">Board : CBSE</span>
-                                                    <span class="medium">Medium : English</span>
-                                                    <span class="grade">Class 9</span>
-                                                </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
-                                                    <span class="book-text">Subject : CBSE Training</span>
-                                                </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : CBSE </span>
+                                                    <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                    <p class="medium" title="English">Medium &nbsp;:&nbsp; English <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-sm-6 col-xl-4">
-                                    <a href="https://diksha.gov.in/explore-course/course/do_31394795513368576016870" target="_blank" class="nistha-course-nav-link">
+                                <div class="col-md-6 col-xl-4">
+                                    <a  href="https://diksha.gov.in/explore-course/course/do_31394795513368576016870" target="_blank" class="nistha-course-nav-link">
                                         <div class="nistha-course-card">
                                             <div class="book-image">
-                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="">
+                                                <img src="../assets/homepage/nistha-lp/course/b1.png" alt="book">
                                             </div>
                                             <div class="nistha-course-detail">
                                                 <div class="course-strip">
-                                                    <span>
-                                                        <img src="../assets/homepage/nistha-lp/course/course.svg" alt="">
-                                                    </span>
-                                                    <span class="strip-title">Course</span>
-                                                </div>
-                                                <div class="course-title">
-                                                    <h4 title="Planning a Play-Based Learning Environment"><bdi>Planning a Play-Based Learning Environment</bdi></h4>
-                                                </div>
-                                                <div class="bmc-detail">
-                                                    <span class="board">Board : CBSE</span>
-                                                    <span class="medium">Medium : English</span>
-                                                    <span class="grade">Class 9</span>
+                                                    <div class="strip-wrap">
+                                                        <span>
+                                                            <img src="../assets/homepage/nistha-lp/parents/book-icon.svg" alt="book">
+                                                        </span>
+                                                        <span class="strip-title">Course</span>
+                                                    </div>
                                                 </div>
                                                 <div class="book-detail">
                                                     <span class="course-icon subject"><img src="../assets/homepage/nistha-lp/course/subject.svg" alt=""> </span>
                                                     <span class="book-text">Subject : CBSE Training</span>
                                                 </div>
-                                                <div class="book-detail">
-                                                    <span class="course-icon publish"><img src="../assets/homepage/nistha-lp/course/publish.svg" alt=""></span>
-                                                    <span class="book-text">Publisher : CBSE </span>
+                                                <div class="course-title">
+                                                    <h4 title="Planning a Play-Based Learning Environment"><bdi>Planning a Play-Based Learning Environment</bdi></h4>
+                                                </div>
+                                                <div class="bmc-detail">
+                                                    <p class="board" title="CBSE">Board &nbsp;:&nbsp; CBSE</p>
+                                                    <p class="medium" title="English">Medium &nbsp;:&nbsp; English <span title="English">+1</span></p>
+                                                    <p class="grade" title="Class 9">Class 9 <span title="Class">+1</span></p>
                                                 </div>
                                             </div>
                                         </div>

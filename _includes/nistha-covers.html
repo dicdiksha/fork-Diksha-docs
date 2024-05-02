@@ -2,8 +2,11 @@
     .sec-padding{
         padding: 40px 0; 
     }
+    .nistha-covers-sec{
+        padding-top: 40px;
+    }
     .nistha-covers-bg{
-        background: url('../assets/homepage/nistha-lp/nistha-cover-bg.png') no-repeat;
+        background: url('../assets/homepage/nistha-lp/nistha-cover-bg1.png') no-repeat;
         height: 100%;
         padding: 55px 0 40px 0;
         background-size: cover;
@@ -14,7 +17,7 @@
         border-radius: 6px;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0;
-        padding: 17px 0;
+        padding: 0;
         position: relative;
         background: rgba(255, 255, 255, 0.73);
     }
@@ -64,9 +67,9 @@
         color: #434141;
         font-weight: 700;
         line-height: 30px;
-        font-size: 24px;
+        font-size: 18px;
         font-family: "Lato";
-        padding: 10px 15px 10px 65px;
+        padding: 16px 15px 16px 70px;
         position: relative;
         background: rgba(255, 255, 255, 0) !important;
     }
@@ -78,26 +81,32 @@
         box-shadow: none;
     }
     .nistha-cover-accordion .accordion-body{
-        padding: 0 15px 10px 70px;
+        padding: 0 15px 10px 75px;
         font-size: 14px;
+        color: #434141;
+        font-weight: 500;
+        line-height: 24px;
     }
     .nistha-cover-accordion .accordion-button::before{
         position: absolute;
+        top: 9px;
         left: 10px;
         flex-shrink: 0;
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         content: "";
-        transition:  0.3s;
+        transition:  0.3s ease;
     }
     .nistha-cover-accordion .accordion-button::after{
         content: unset;
     }
     .nistha-cover-accordion .accordion-button.orange-btn::before{
         background: url('../assets/homepage/nistha-lp/cover/orange-plus.png') no-repeat;
+        transition:  0.3s ease;
     }
     .nistha-cover-accordion .accordion-button.orange-btn:not(.collapsed)::before{
         background: url('../assets/homepage/nistha-lp/cover/orange-remove.png') no-repeat;
+        transition:  0.3s ease;
     }
     .nistha-cover-accordion .accordion-button.green-btn::before{
         background: url('../assets/homepage/nistha-lp/cover/green-plus.png') no-repeat;
@@ -130,13 +139,9 @@
         .nistha-cover-accordion .accordion-button{
             font-size: 16px;
         }
-        .nistha-cover-accordion .accordion-body {
-            padding: 0 5px 10px 45px;
-            font-size: 14px;
-        }
     }
 </style>
-<div class="nistha-covers-sec sec-padding">
+<div class="nistha-covers-sec">
     <div class="nistha-sub-head">
         <h2>What NISHTHA covers?</h2>
     </div>

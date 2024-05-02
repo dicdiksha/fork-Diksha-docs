@@ -565,6 +565,17 @@ $(document).ready(function () {
     $(activeTab).fadeIn();
     return false;
   });
+
+    // Explore As pages Explore sgtudy material tab js
+    $('.tab-pane-link').click(function(event) {
+      if($(event.target).is('button.active'))
+
+          $('.tab-msg').hide();
+      else
+
+          $('.tab-msg').show();
+  });
+
 });
 
 $(window).resize(function () {
@@ -594,5 +605,5 @@ $(window).resize(function () {
 //     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
 // });
 /*=====================End diksha dashbord===============*/
-      
-                                                               
+                      
+                                                                                                                                     
