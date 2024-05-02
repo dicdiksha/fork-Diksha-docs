@@ -3997,24 +3997,17 @@ define(function () {
         throw new Error('unknown environment');
     }
 })());
-/*===================== Start focus area slider==============*/
-
-$(document).ready(function(){  
-  $('#myCarousel .carousel-item').each(function () {
-    // alert("Hello");
-    var minPerSlide = 4;
-    var next = $(this).next();
-    if (!next.length) {
-    next = $(this).siblings(':first');
-    }
-    next.children(':first-child').clone().appendTo($(this));
-    
-    for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
-})
-/*=====================End focus area slider==============*/
-
+   
+   /*===================== Start onload popup==============*/
+  //  $("#banner-modal-popup").modal('show');
+  window.onload = function () {
+    OpenBootstrapPopup();
+  };
+  function OpenBootstrapPopup() {
+      $("#banner-modal-popup").modal('show');
+  }
+  /*===================== End onload popup==============*/
 $(document).ready(function () {
-
   let origin = '';
   if (window.origin == 'https://diksha.gov.in' || window.origin == 'https://staging.ntp.net.in') {
     origin = window.origin;
@@ -4088,7 +4081,7 @@ $(document).ready(function () {
   //quiz telemetry end
   function OnLoad() {
     tenantId = sessionStorage.getItem("tenantSlug") || 'ntp';
-    getOrgInfo(tenantId).done(function () {
+    getOrgInfo(tenantId).done(function () {   
       initTelemetryService();
       let path = window.location.pathname, ftUser = "true";
       if (localStorage && localStorage.getItem("fpDetails_v2")) ftUser = "false";
@@ -4109,7 +4102,7 @@ $(document).ready(function () {
   OnLoad();
   
   function getChannelId(id){
-    return new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => { 
       $.ajax({
         method: "POST",
         url: hostURL + "/api/org/v1/search",
@@ -4249,177 +4242,143 @@ $(document).ready(function () {
   const states = [{
     label: "Andaman & Nicobar Islands",
     value: "an",
-    tenantPageExist: false
   },
   {
     label: "Arunachal Pradesh", 
     value: "ar",
-    tenantPageExist: false
   },
   {
     label: "Andhra Pradesh",
     value: "apekx",
-    tenantPageExist: true
   },
   {
     label: "Assam",
     value: "as",
-    tenantPageExist: true
   },
   {
     label: "Bihar",
     value: "br",
-    tenantPageExist: true
   },
   {
     label: "Chhattisgarh",
     value: "cg",
-    tenantPageExist: true
   },
   {
     label: "Chandigarh",
     value: "ch",
-    tenantPageExist: false
+    
   },
   {
     label: "Delhi",
     value: "dl",
-    tenantPageExist: true
   },
   {
     label: "Dadra And Nagar Haveli And Daman And Diu",
     value: "DD",
-    tenantPageExist: false
   },
   {
     label: "Goa",
     value: "ga",
-    tenantPageExist: true
   },
   {
     label: "Gujarat",
     value: "gj",
-    tenantPageExist: true
   },
   {
     label: "Himachal Pradesh",
     value: "hp",
-    tenantPageExist: false
   },
   {
     label: "Haryana",
     value: "hr",
-    tenantPageExist: true
   },
   {
     label: "Jharkhand",
     value: "jh",
-    tenantPageExist: true
   },
   {
     label: "Jammu And Kashmir",
     value: "jk",
-    tenantPageExist: true
   },
   {
     label: "Karnataka",
     value: "ka",
-    tenantPageExist: true
   },
   {
     label: "Kerala",
     value: "kl",
-    tenantPageExist: false
   },
   {
     label: "Ladakh",
     value: "ld",
-    tenantPageExist: false
   },
   {
-    label: "Lakshdweep",
+    label: "Lakshadweep",
     value: "lk",
-    tenantPageExist: false
   },
   {
     label: "Maharashtra",
     value: "mitra",
-    tenantPageExist: true
   },
   {
     label: "Meghalaya",
     value: "ml",
-    tenantPageExist: true
   },
   {
     label: "Manipur",
     value: "mn",
-    tenantPageExist: true
   },
   {
     label: "Madhya Pradesh",
     value: "mp",
-    tenantPageExist: true
   },
   {
     label: "Mizoram",
     value: "mz",
-    tenantPageExist: true
   },
   {
     label: "Nagaland",
     value: "nl",
-    tenantPageExist: true
   },
   {
     label: "Odisha",
     value: "od",
-    tenantPageExist: true
   },
   {
     label: "Punjab",
     value: "pb",
-    tenantPageExist: true
   },
   {
     label: "Pondicherry",
     value: "py",
-    tenantPageExist: false
   },
   {
     label: "Rajasthan",
     value: "rj",
-    tenantPageExist: true
   },
   {
     label: "Sikkim",
     value: "sk",
-    tenantPageExist: true
   },
   {
     label: "Tamil Nadu",
     value: "tn",
-    tenantPageExist: true
   },
   {
     label: "Tripura",
     value: "tp",
-    tenantPageExist: false
   },
   {
     label: "Telangana",
     value: "ts",
-    tenantPageExist: true
   },
   {
     label: "Uttarakhand",
     value: "uk",
-    tenantPageExist: false
   },
   {
     label: "Uttar Pradesh",
     value: "up",
-    tenantPageExist: true
   }];
 
   states.forEach(element => {
@@ -4451,35 +4410,37 @@ $(document).ready(function () {
     return false;
   });
 
+  
+
   $(".state-explore").click(function (e) {
     e.preventDefault();
     let slug = $(this).attr('data-slug'), name = $(this).attr('data-name');
-    window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-    let pageExists =states.some(eachVal=>eachVal.value== slug && eachVal.tenantPageExist);
-    if(pageExists) {
-      window.open('/' + slug , "_self");
-    } else{
+    let validationMessage = document.getElementById("error-msg");
+    if(slug) {
+      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
       window.open('/' + slug + '/explore' , "_self");
+      validationMessage.style.display = "none";
+    } else {
+      validationMessage.style.display = "block";
     }
     return false;
   });
 
+  // $("#btnClosePopup").click(function () {
+  //   $("#myModal1").modal('hide');
+  // });
+
   $(".nonstate-explore").click(async(e) =>{
     e.preventDefault();
-      let slug =e.currentTarget.getAttribute('data-slug');
-      let  name = e.currentTarget.getAttribute('data-name');
-      window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
-      if(name === "NCERT"){
-        // window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
-        window.open('/' + slug,"_self");
-      } else if (name === "CBSE"){
-        window.open('/' + slug ,"_self")
-      } else if (name === "NIOS"){
-        window.open('/' + slug ,"_self")
-      }else {
-        window.open('/' + slug ,"_self");
-      }
-      return false;
+    let slug =e.currentTarget.getAttribute('data-slug');
+    let  name = e.currentTarget.getAttribute('data-name');
+    window.logInteractEvent('home', 'select-explore-' + slug.toLowerCase(), '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), 'State', name, '', '', '', '');
+    // if(name === "NCERT"){
+    //   window.open('/' + slug + '/exploren/1?selectedTab=home', "_self");
+    // } else{
+      window.open('/' + slug + '/explore' ,"_self");
+    // }
+    return false;
   });
 
   $(".nav-header-menu").click(function (e) {
@@ -4512,7 +4473,29 @@ $(document).ready(function () {
   });
     /*===================== End login button==============*/
   // });
+ 
+  // View all nistha course button js
+    $(".view-nistha-courses-btn").click(function (e) {
+      e.preventDefault();
+      window.logInteractEvent('diksha-for-teachers', 'select-viewall', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+      window.open('/explore/1?key=nistha', "_self");
+      return false;
+    });
+    // Explore Nistha button js
+    $(".explore-nistha-btn").click(function (e) {
+      e.preventDefault();
+      window.logInteractEvent('home', 'select-explore', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+      window.open('/explore', "_self");
+      return false;
+    });
 
+    // Explore as DIKSHA For student page explore study material courses js
+    $(".view-study-courses-btn").click(function (e) {
+      e.preventDefault();
+      window.logInteractEvent('diksha-for-student', 'select-viewall', '', 'static-home', 'static-home', 'DeviceType', window.getDeviceTypeValue(), '', '', '', '', '', '');
+      window.open('/explore/', "_self");
+      return false;
+    });
 });
 
 
@@ -4587,13 +4570,30 @@ $(window).resize(function () {
     // alert('mobile browser')
   } else {
     if (x.matches) {
-      location.reload();
+      location.reload();   
     }
   }
 });
+ 
 
-
-
+// $('#recipeCarousel').carousel({ 
+//   interval: 2000
+// })
+// $(document).ready(function(){  
+//   $('#recipeCarousel .carousel-item').each(function () {   
+//     // alert("Hello");
+//     var minPerSlide = 3;
+//     var next = $(this).next();
+//     if (!next.length) {
+//     next = $(this).siblings(':first');
+//     }
+//     next.children(':first-child').clone().appendTo($(this));
+    
+//     for (var i = 0; i < minPerSlide; i++) { next=next.next(); if (!next.length) { next=$(this).siblings(':first'); } next.children(':first-child').clone().appendTo($(this)); } });
+// });
+/*=====================End diksha dashbord===============*/
+      
+                                                               
 /* font resizer */
 var min = 12;
 var base = 16;
@@ -4759,6 +4759,7 @@ const languageTranslations = {
         "DIKSHAUsageTillDate": "DIKSHA current usage",
         "LearningLessons": "Learning sessions",
         "minutes": "Minutes",
+        "hours" : "Hours" ,
         "TermsofUse": "Terms and Policies",
         "needHelp": "Need Help",
         "copyright": "© 2021, DIKSHA",
@@ -4833,15 +4834,15 @@ const languageTranslations = {
         "footerNCERT":" National Council of Educational Research And Training (NCERT)",
         "ncertAdd": "Aurobindo Marg, New Delhi-110016",
         "footerBottom": " © 2024 - Copyright DIKSHA. All rights reserved. Powered by NeGD | MeitY Government of India ®2024 DIKSHA",
-        "nipunBharat": "NIPUN BHARAT",
+        "nipunBharat": "Nipun Bharat",
         "nipunBharatDesc": "National Initiative for Proficiency in Reading with Understanding and Numeracy.",
         "bhasaSangam": "Bhasha Sangam",
         "bhasaSangamDesc":" National Initiative to teach basic sentences of everyday usage in 22 Indian languages.",
-        "jaduiPitara": "Jaadui Pitara ",
+        "jaduiPitara": "e-Jaadui Pitara",
         "jaduiPitaraDesc": "Foundational Stage Content with toys, games, puzzles, puppets, posters, flashcards etc.",
-        'adultEducation': "Adult Education",
+        'adultEducation': "Education For All",
         "adultEducationDesc": "To impart foundational literacy and numeracy, critical life skills for Citizens",
-        "vocationEducation":" Vocation Educational",
+        "vocationEducation":" Vocational Education",
         "vocationEducationDesc": "Initative to focus on integration of vocational training with general education",
         "virtualLab": "Virtual Lab" ,
         "virtualLabDesc": "Virtual laboratories access for students to enhance actual laboratory experiences",
@@ -4860,7 +4861,7 @@ const languageTranslations = {
         "application" : "Application Availability",
         "downloadReport" : "Download Report",
         "view" : "View",
-        "availabilityInLast3Months" : "Application Availability In Last 3 Months",
+        "applicationAvailability" : "Application Availability In Last 3 Months",
         "missionVisionDiscp1" : "At Diksha, our mission is to create a revolutionary learning ecosystem that empowers students to thrive in the 21st century. We believe that education should be accessible, engaging, and tailored to the individual needs of each learner." ,
         "missionVisionDiscp2" :" Our vision is to transform the way education is delivered by leveraging technology and innovation. We aim to provide students with a holistic learning experience that goes beyond traditional classrooms. Through our platform, we want to equip students with the skills they need not only for academic success but also for personal growth and development.",
 
@@ -4980,7 +4981,7 @@ const languageTranslations = {
         "scanDownload": "ଡାଉନ୍ଲୋଡ୍ କରିବା ପାଇଁ ସ୍କାନ୍ କରନ୍ତୁ",
         "clickHere" : "ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ",
         "contributeBanner": "সমগ্ৰ ভাৰতৰ শিক্ষাৰ্থীসকলৰ বাবে গুণগত মানৰ শিক্ষা অব্যাহত ৰখাটো নিশ্চিত কৰিবলৈ শিক্ষাৰ ক্ষেত্ৰত ই-লৰ্ণিং সম্পদসমূহৰ অৱদান আগবঢ়াব।",
-        "aboutDikshaHeading" : "DIKSHA-এক জাতি, এক ডিজিটেল প্লেটফৰ্ম",
+        "aboutDikshaHeading" : "DIKSHA - এক জাতি, এক ডিজিটেল প্লেটফৰ্ম",
         "aboutDescription": "DIKSHA (ডিজিটেল ইনফ্ৰাষ্ট্ৰাকচাৰ ফৰ নলেজ শ্বেয়াৰিং) হৈছে বিদ্যালয় শিক্ষাৰ বাবে এক ৰাষ্ট্ৰীয় মঞ্চ, যিটো ৰাষ্ট্ৰীয় শৈক্ষিক গৱেষণা আৰু প্ৰশিক্ষণ পৰিষদ (এনচিইআৰটি) ৰ এক পদক্ষেপ, যি শিক্ষা মন্ত্ৰালয় (এমওই), ভাৰত চৰকাৰৰ তত্বাৱধানত আছে। ভাৰতৰ সন্মানীয় উপ-ৰাষ্ট্ৰপতি শ্ৰী এম ভেংকায়া নাইডুৱে 2017 চনত আৰম্ভ কৰা DIKSHA প্ৰায় সকলো ৰাজ্য, কেন্দ্ৰীয় শাসিত অঞ্চল, কেন্দ্ৰীয় স্বায়ত্তশাসিত সংস্থা/ব ৰ্ডৰ দ্বাৰা গ্ৰহণ কৰা হৈছে।",
         "teacherNeedHelp": "শিক্ষকৰ সহায়",
         "viewMore" : "অধিক চাওক",
@@ -5021,16 +5022,16 @@ const languageTranslations = {
         "participateQuiz": "কুইজত অংশগ্ৰহণ কৰক",
         "participateQuizDesc": "এন. চি. ই. আৰ. টি. সমাধান আৰু ট্ৰেণ্ডিং সমলৰ দৰে অনুশীলন সমল প্ৰৱেশ কৰক।",
         "digitalcontent" : "মুকলি ডিজিটেল সমলৰ জগত",
-        "focusArea": "কেন্দ্ৰীয় ক্ষেত্ৰ",
+        "focusArea": "কেন্দ্ৰ বিন্দু এলেকা",        
         "application" : "এপ্লিকেচনৰ উপলব্ধতা",
         "downloadReport" : "ৰিপৰ্ট ডাউনলোড কৰক",
-        "availabilityInLast3Months" : "যোৱা ৩ মাহত আবেদনৰ উপলব্ধতা",
+        "applicationAvailability" : "যোৱা ৩ মাহত আবেদনৰ উপলব্ধতা",
         "missionVisionDiscp1" : "দীক্ষাত, আমাৰ লক্ষ্য হৈছে এক বিপ্লৱী শিক্ষণ পৰিৱেশ তন্ত্ৰ সৃষ্টি কৰা যি শিক্ষাৰ্থীসকলক একবিংশ শতিকাত উন্নতি কৰিবলৈ শক্তিশালী কৰে। আমি বিশ্বাস কৰোঁ যে শিক্ষা প্ৰতিজন শিক্ষাৰ্থীৰ ব্যক্তিগত প্ৰয়োজনীয়তা অনুসৰি সুলভ, আকৰ্ষণীয় আৰু উপযোগী হোৱা উচিত।" ,
         "missionVisionDiscp2" :"আমাৰ দৃষ্টিভংগী হৈছে প্ৰযুক্তি আৰু উদ্ভাৱনৰ জৰিয়তে শিক্ষা প্ৰদানৰ পদ্ধতি সলনি কৰা। আমি শিক্ষাৰ্থীসকলক পৰম্পৰাগত শ্ৰেণীকোঠাৰ বাহিৰেও এক সামগ্ৰিক শিক্ষণৰ অভিজ্ঞতা প্ৰদান কৰাৰ লক্ষ্য লৈছো। আমাৰ মঞ্চৰ জৰিয়তে আমি শিক্ষাৰ্থীসকলক কেৱল শৈক্ষিক সফলতাৰ বাবেই নহয়, ব্যক্তিগত বিকাশ আৰু বিকাশৰ বাবেও প্ৰয়োজনীয় দক্ষতাৰে সজ্জিত কৰিব বিচাৰো। ",
 
     },
     "bn": {
-        "availabilityInLast3Months" : "গত 3 মাসে আবেদনের উপলব্ধতা",
+        "applicationAvailability" : "গত 3 মাসে আবেদনের উপলব্ধতা",
         "view" : "দেখুন",
         "language": "বাংলা",
         "diksha": "DIKSHA",
@@ -5145,11 +5146,11 @@ const languageTranslations = {
         "scanDownload": "ডাউনলোড করতে স্ক্যান করুন",
         "clickHere" : "এখানে ক্লিক করুন",
         "contributeBanner": "সারা ভারতে শিক্ষার্থীদের জন্য মানসম্মত শিক্ষা যাতে অব্যাহত থাকে তা নিশ্চিত করতে শিক্ষার ক্ষেত্রে ই-লার্নিং সম্পদের অবদান রাখুন।",
-        "aboutDikshaHeading" : "জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (শিক্ষা মন্ত্রক, ভারত সরকার) একটি উদ্যোগ ",
+        "aboutDikshaHeading" : "DIKSHA - জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (শিক্ষা মন্ত্রক, ভারত সরকার) একটি উদ্যোগ ",
         "aboutDescription": "DIKSHA (ডিজিটাল ইনফ্রাস্ট্রাকচার ফর নলেজ শেয়ারিং) হল স্কুল শিক্ষার জন্য একটি জাতীয় মঞ্চ, যা ভারত সরকারের শিক্ষা মন্ত্রকের অধীনে জাতীয় শিক্ষা গবেষণা ও প্রশিক্ষণ পর্ষদের (এন. সি. ই. আর. টি) একটি উদ্যোগ। 2017 সালে ভারতের মাননীয় উপরাষ্ট্রপতি শ্রী এম ভেঙ্কাইয়া নাইডু দ্বারা চালু হওয়া DIKSHA সিবিএসই সহ প্রায় সমস্ত রাজ্য, কেন্দ্রশাসিত অঞ্চল, কেন্দ্রীয় স্বায়ত্তশাসিত সংস্থা/বোর্ড দ্বারা গৃহীত হয়েছে।",
         "viewMore" : "আরও পড়ুন",
         "teacherNeedHelp": "শিক্ষকের সাহায্য",
-        "footerDoc": "জ্ঞান ভাগ-বতৰাৰ বাবে ডিজিটেল আন্তঃগাঁথনি",
+        "footerDoc": "জ্ঞান ভাগ করে নেওয়ার জন্য ডিজিটাল পরিকাঠামো",
         "footerNCERT":"ন্যাশনাল কাউন্সিল অফ এডুকেশনাল রিসার্চ এন্ড ট্রেনিং",
         "ncertAdd": "শ্রী অরবিন্দ মার্গ, নতুন দিল্লি-110016",
         "footerBottom":"© 2024-কপিরাইট DIKSHA। সকল অধিকার সংরক্ষিত। এনইজিডি দ্বারা চালিত। এমইআইটিওয়াই ভারত সরকার® 2024 DIKSHA",
@@ -5186,7 +5187,7 @@ const languageTranslations = {
         "participateQuiz": "কুইজে অংশগ্রহণ করুন",
         "participateQuizDesc": "এন. সি. ই. আর. টি সমাধান এবং ট্রেন্ডিং বিষয়বস্তুর মতো অনুশীলন বিষয়বস্তু অ্যাক্সেস করুন।",
         "digitalcontent" : "উন্মুক্ত ডিজিটাল বিষয়বস্তুর জগৎ",
-        "focusArea": "ফোকাস এলাকা",
+        "focusArea": "কেন্দ্র বিন্দু এলাকা",
         "application" : "অ্যাপ্লিকেশন প্রাপ্যতা",
         "downloadReport" : "প্রতিবেদন ডাউনলোড করুন",
         "missionVisionDiscp1" : "দীক্ষায়, আমাদের লক্ষ্য হল একবিংশ শতাব্দীতে শিক্ষার্থীদের সাফল্য অর্জনের জন্য ক্ষমতায়িত করে এমন একটি বৈপ্লবিক শিক্ষার বাস্তুতন্ত্র তৈরি করা। আমরা বিশ্বাস করি যে শিক্ষা প্রতিটি শিক্ষার্থীর ব্যক্তিগত চাহিদা অনুযায়ী সহজলভ্য, আকর্ষণীয় এবং উপযোগী হওয়া উচিত। " ,
@@ -5197,7 +5198,7 @@ const languageTranslations = {
 
     },
     "gu": {
-        "availabilityInLast3Months" : "છેલ્લા 3 મહિનામાં એપ્લિકેશનની ઉપલબ્ધતા",
+        "applicationAvailability" : "છેલ્લા 3 મહિનામાં એપ્લિકેશનની ઉપલબ્ધતા",
         "view" : "દર્શન કરો",
         "language": "ગુજરાતી",
         "diksha": "DIKSHA",
@@ -5312,7 +5313,7 @@ const languageTranslations = {
         "scanDownload": "ડાઉનલોડ કરવા માટે સ્કેન કરો",
         "clickHere" : "અહીં ક્લિક કરો",
         "contributeBanner": "સમગ્ર ભારતમાં વિદ્યાર્થીઓ માટે ગુણવત્તાયુક્ત શિક્ષણ ચાલુ રહે તે સુનિશ્ચિત કરવા માટે શિક્ષણ ક્ષેત્રમાં ઇ-લર્નિંગ સંસાધનોનું યોગદાન આપવું.",
-        "aboutDikshaHeading" : "DIKSHA-એક રાષ્ટ્ર, એક ડિજિટલ મંચ ",
+        "aboutDikshaHeading" : "DIKSHA - એક રાષ્ટ્ર, એક ડિજિટલ મંચ ",
         "aboutDescription": "DIKSHA (ડિજિટલ ઇન્ફ્રાસ્ટ્રક્ચર ફોર નોલેજ શેરિંગ) એ શાળા શિક્ષણ માટેનું એક રાષ્ટ્રીય મંચ છે, જે શિક્ષણ મંત્રાલય (એમઓઇ), ભારત સરકારના નેજા હેઠળ રાષ્ટ્રીય શૈક્ષણિક સંશોધન અને તાલીમ પરિષદ (એનસીઇઆરટી) ની પહેલ છે. ભારતના માનનીય ઉપરાષ્ટ્રપતિ-શ્રી એમ. વેંકૈયા નાયડુ દ્વારા 2017 માં શરૂ કરાયેલ, DIKSHA લગભગ તમામ રાજ્યો, કેન્દ્રશાસિત પ્રદેશો, કેન્દ્રીય સ્વાયત્ત સંસ્થાઓ/બોર્ડ દ્વારા અપનાવવામાં આવી છે જેમાં સીબીએસઈનો સમાવેશ થાય છે.",
         "viewMore" : "વધુ જુઓ",
         "teacherNeedHelp": "શિક્ષકની મદદ",
@@ -5353,7 +5354,7 @@ const languageTranslations = {
         "participateQuiz": "ક્વિઝમાં ભાગ લો",
         "participateQuizDesc": "ક્વિઝ શીખવાની મજા લાવે છે અને વિદ્યાર્થીઓને વધુ સારું પ્રદર્શન કરવામાં મદદ કરે છે",
         "digitalcontent" : "ખુલ્લી ડિજિટલ સામગ્રીની દુનિયા",
-        "focusArea": "ધ્યાન કેન્દ્રિત વિસ્તાર",
+        "focusArea": "કેન્દ્ર બિંદુ વિસ્તાર",
         "application" : "એપ્લિકેશન ઉપલબ્ધતા",
         "downloadReport" : "રિપોર્ટ ડાઉનલોડ કરો",
         "missionVisionDiscp1" : "દીક્ષા ખાતે, અમારું મિશન એક ક્રાંતિકારી શિક્ષણ ઇકોસિસ્ટમ બનાવવાનું છે જે વિદ્યાર્થીઓને 21મી સદીમાં સફળ થવા માટે સશક્ત બનાવે છે. અમારું માનવું છે કે શિક્ષણ સુલભ, આકર્ષક અને દરેક શીખનારની વ્યક્તિગત જરૂરિયાતો અનુસાર હોવું જોઈએ. " ,
@@ -5361,19 +5362,21 @@ const languageTranslations = {
         
     },
     "hi": {
-        "availabilityInLast3Months" : "पिछले 3 महीनों में आवेदन की उपलब्धता",
         "view" : "देखिये",
         "language": "हिंदी",
         "diksha": "DIKSHA",
         "govofIndia": "भारत सरकार",
         "dikshamoto": "डिजिटल इंफ्रास्ट्रक्चर फॉर नॉलेज शेयरिंग",
-        "dikshaDescription": "राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद की एक पहल (शिक्षा मंत्रालय, भारत सरकार )",
+        "dikshaDescription": " राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद (शिक्षा मंत्रालय, भारत सरकार) की एक पहल",
         "btnExploreDiksha": "DIKSHA का अन्वेषण कीजिए",
         "explore": "अन्वेषण",
+        "fontResizeA-": "ए-",
+        "fontResizeA":"ए",
+        "fontResizeA+":"ए+",
         "ExploreDikshaContent": "DIKSHA से विवृत डिजिटल कंटेन्ट की दुनिया का अन्वेषण कीजिए",
         "stateboard": "राज्य/केंद्रशासित प्रदेश बोर्ड",
         "stateboardDescription": "22+ राज्य और केंद्र शासित प्रदेश द्वारा प्रकाशित कंटेन्ट का अन्वेषण कीजिए",
-        "about": "के बारे में",
+        "about": "हमारे बारे में जानें",
         "home": "होम",
         "dashboard": "डैशबोर्ड",
         "getapp": "ऐप प्राप्त करे",
@@ -5420,7 +5423,7 @@ const languageTranslations = {
         "download": "डाउनलोड",
         "DIKSHAUsageTillDate": "DIKSHA का वर्तमान उपयोग",
         "LearningLessons": "सीखने के सत्र",
-        "minutes": "मिनट्स",
+        "minutes": "मिनट",
         "TermsofUse": "नियम और शर्तें",
         "needHelp":"मदद की ज़रूरत है",
         "copyright": "© 2021, DIKSHA",
@@ -5431,6 +5434,7 @@ const languageTranslations = {
         "lastupdatedonresult": "साप्ताहिक रिपोर्ट अपडेट, हर सोमवार -दोपहर",
         "lastupdatedonresultdaily": "रिपोर्ट रोजाना अपडेट होती है",
         "totalDIKSHAusage": "DIKSHA का मिनटों में कुल उपयोग समय",
+        "applicationAvailability" : "पिछले 3 महीनों में आवेदन की उपलब्धता",
         "numberLearningActivities": "शिक्षार्थियों द्वारा DIKSHA बुनियादी ढांचे का उपयोग करते हुए कई बार सीखने की गतिविधियाँ की गई थीं",
         "noevents": "कोई आगामी कार्यक्रम उपलब्ध नहीं है",
         "updateticker1": "शिक्षा की गुणवत्ता की निरंतरता सुनिश्चित करने के लिए राष्ट्र और राष्ट्र द्वारा राष्ट्र का एक कार्यक्रम",
@@ -5468,29 +5472,29 @@ const languageTranslations = {
         "board-cbse-description": "सीबीएसई (केंद्रीय माध्यमिक शिक्षा बोर्ड) द्वारा प्रकाशित सामग्री का अन्वेषण करें",
         "board-nios-description": "NIOS (राष्ट्रीय मुक्त विद्यालयी शिक्षा संस्थान) द्वारा प्रकाशित सामग्री का अन्वेषण करें",
         "board-btntitle": "अन्वेषण",
-        "login" : "लॉगइन करें",
+        "login" : "लॉग इन करें",
         "getAppDesc": "DIKSHA एप्लीकेशन प्ले स्टोर और ऐप स्टोर पर उपलब्ध है, आप इसे डाउनलोड करने के लिए क्यू. आर. कोड भी स्कैन कर सकते हैं।",
         "mobileApp":  "मोबाइल ऐप आज!",
-        "downloadLinkAndroid": "एंड्रॉइड के लिए लिंक डाउनलोड करें",
+        "downloadLinkAndroid": "एंड्रॉइड के लिए डाउनलोड लिंक",
         "downloadLinkIos": "आई. ओ. एस. के लिए डाउनलोड लिंक",
         "scanDownload": "डाउनलोड के लिए स्कैन करें",
         "clickHere" : "यहाँ क्लिक करें",
         "contributeBanner": "शिक्षा के क्षेत्र में ई-लर्निंग संसाधनों का योगदान करें ताकि यह सुनिश्चित किया जा सके कि पूरे भारत में शिक्षार्थियों के लिए गुणवत्तापूर्ण शिक्षा जारी रहे।",
-        "aboutDikshaHeading" : "DIKSHA - वन नेशन, वन डिजिटल प्लेटफॉर्म ",
+        "aboutDikshaHeading" : "DIKSHA - एक राष्ट्र, एक डिजिटल प्लेटफार्म.",
         "aboutDescription": "DIKSHA (ज्ञान साझा करने के लिए डिजिटल इन्फ्रास्ट्रक्चर) स्कूली शिक्षा के लिए एक राष्ट्रीय मंच है, जो शिक्षा मंत्रालय (एमओई), भारत सरकार के तत्वावधान में राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद (एनसीईआरटी) की एक पहल है। भारत के माननीय उपराष्ट्रपति श्री एम. वेंकैया नायडू द्वारा 2017 में शुरू की गई, DIKSHA को सीबीएसई सहित लगभग सभी राज्यों, केंद्र शासित प्रदेशों, केंद्रीय स्वायत्त निकायों / बोर्डों द्वारा अपनाया गया है।",
         "viewMore" : "अधिक देखें",
         "teacherNeedHelp": "शिक्षक की मदद लें",
         "footerDoc": "ज्ञान साझा करने के लिए डिजिटल बुनियादी ढांचा",
-        "footerNCERT":"राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद",
+        "footerNCERT":"राष्ट्रीय शैक्षिक अनुसंधान और प्रशिक्षण परिषद(एनसीईआरटी)",
         "ncertAdd": "श्री अरविंद मार्ग, नई दिल्ली-110016",
         "footerBottom":"© 2024-कॉपीराइट DIKSHA। सभी अधिकार सुरक्षित हैं। एन. ई. जी. डी. द्वारा संचालित। एम. ई. आई. टी. वाई. भारत सरकार® 2024 DIKSHA",
         "dikshaGlance" : "DIKSHA एक नज़र में",
         "userDesc" : "DIKSHA का उपयोग देश भर के शिक्षार्थियों और शिक्षकों द्वारा किया जा सकता है और वर्तमान में यह 36 भारतीय भाषाओं का समर्थन करता है",
         "missionVision":"मिशन और विजन",
         "nipunBharat": "निपुण भारत",
-        "aboutGlanceStudent" : "छात्र",
-        "aboutGlanceTeacher" : "टीचर",
-        "aboutGlanceParent" : "जनक",
+        "aboutGlanceStudent" : "विद्यार्थी",
+        "aboutGlanceTeacher" : "अध्यापक",
+        "aboutGlanceParent" : "माता-पिता",
         "aboutGlanceHTOfficials" :"एचटी और अधिकारी",
         "aboutGlanceOther" : "अन्य",
         "aboutUserTitle" : "उपयोगकर्ताओं के लिए अत्याधुनिक शिक्षण पारिस्थितिकी तंत्र",
@@ -5517,7 +5521,7 @@ const languageTranslations = {
         "participateQuiz": "प्रश्नोत्तरी में भाग लें",
         "participateQuizDesc": "प्रश्नोत्तरी सीखने को मजेदार बनाती है और छात्रों को बेहतर प्रदर्शन करने में मदद करती है",
         "digitalcontent" : "खुली डिजिटल सामग्री की दुनिया",
-        "focusArea": "फोकस क्षेत्र",
+        "focusArea": "केंद्रबिंदु क्षेत्र",
         "application" : "आवेदन उपलब्धता",
         "downloadReport" : "रिपोर्ट डाउनलोड करें",
         "missionVisionDiscp1" : "दीक्षा में, हमारा मिशन एक क्रांतिकारी शिक्षण पारिस्थितिकी तंत्र बनाना है जो छात्रों को 21वीं सदी में फलने-फूलने के लिए सशक्त बनाता है। हम मानते हैं कि शिक्षा सुलभ, आकर्षक और प्रत्येक शिक्षार्थी की व्यक्तिगत जरूरतों के अनुरूप होनी चाहिए।" ,
@@ -5525,7 +5529,7 @@ const languageTranslations = {
 
     },
     "kn": {
-        "availabilityInLast3Months" : "ಕಳೆದ 3 ತಿಂಗಳುಗಳಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
+        "applicationAvailability" : "ಕಳೆದ 3 ತಿಂಗಳುಗಳಲ್ಲಿ ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
         "view" : "ನೋಟ",
         "language": "ಕನ್ನಡ",
         "diksha": "DIKSHA",
@@ -5639,7 +5643,7 @@ const languageTranslations = {
         "scanDownload": "ಡೌನ್ಲೋಡ್ ಮಾಡಲು ಸ್ಕ್ಯಾನ್ ಮಾಡಿ",
         "clickHere" : "ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ",
         "contributeBanner": "ಭಾರತದಾದ್ಯಂತ ಕಲಿಯುವವರಿಗೆ ಗುಣಮಟ್ಟದ ಕಲಿಕೆ ಮುಂದುವರಿಯುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಲು ಶಿಕ್ಷಣ ಕ್ಷೇತ್ರದಲ್ಲಿ ಇ-ಲರ್ನಿಂಗ್ ಸಂಪನ್ಮೂಲಗಳನ್ನು ಒದಗಿಸಿ.",
-        "aboutDikshaHeading" : "DIKSHA-ಒಂದು ರಾಷ್ಟ್ರ, ಒಂದು ಡಿಜಿಟಲ್ ವೇದಿಕೆ",
+        "aboutDikshaHeading" : "DIKSHA - ಒಂದು ರಾಷ್ಟ್ರ, ಒಂದು ಡಿಜಿಟಲ್ ವೇದಿಕೆ",
         "aboutDescription": "DIKSHA (ಡಿಜಿಟಲ್ ಇನ್ಫ್ರಾಸ್ಟ್ರಕ್ಚರ್ ಫಾರ್ ನಾಲೆಡ್ಜ್ ಶೇರಿಂಗ್) ಶಾಲಾ ಶಿಕ್ಷಣದ ರಾಷ್ಟ್ರೀಯ ವೇದಿಕೆಯಾಗಿದ್ದು, ಇದು ಶಿಕ್ಷಣ ಸಚಿವಾಲಯದ (ಎಂ. ಓ. ಇ.) ಆಶ್ರಯದಲ್ಲಿರುವ ರಾಷ್ಟ್ರೀಯ ಶೈಕ್ಷಣಿಕ ಸಂಶೋಧನೆ ಮತ್ತು ತರಬೇತಿ ಮಂಡಳಿಯ (ಎನ್. ಸಿ. ಇ. ಆರ್. ಟಿ.) ಉಪಕ್ರಮವಾಗಿದೆ. 2017ರಲ್ಲಿ ಭಾರತದ ಗೌರವಾನ್ವಿತ ಉಪರಾಷ್ಟ್ರಪತಿ ಶ್ರೀ ಎಂ. ವೆಙ್ಕಯ್ಯ ನಾಯ್ಡು ಅವರು ಪ್ರಾರಂಭಿಸಿದ ದಿಕ್ಷಾವನ್ನು ಸಿಬಿಎಸ್ಇ ಸೇರಿದಂತೆ ಬಹುತೇಕ ಎಲ್ಲಾ ರಾಜ್ಯಗಳು, ಕೇಂದ್ರಾಡಳಿತ ಪ್ರದೇಶಗಳು, ಕೇಂದ್ರ ಸ್ವಾಯತ್ತ ಸಂಸ್ಥೆಗಳು/ಮಂಡಳಿಗಳು ಅಳವಡಿಸಿಕೊಂಡಿವೆ.",
         "viewMore" : "ಹೆಚ್ಚಿನದನ್ನು ವೀಕ್ಷಿಸಿ",
         "teacherNeedHelp": "ಶಿಕ್ಷಕರ ಸಹಾಯ",
@@ -5680,14 +5684,14 @@ const languageTranslations = {
         "participateQuiz": "ರಸಪ್ರಶ್ನೆಗಳಲ್ಲಿ ಭಾಗವಹಿಸಿ",
         "participateQuizDesc": "ರಸಪ್ರಶ್ನೆಗಳು ಕಲಿಕೆಯನ್ನು ವಿನೋದಮಯವಾಗಿಸುತ್ತವೆ ಮತ್ತು ವಿದ್ಯಾರ್ಥಿಗಳು ಉತ್ತಮವಾಗಿ ಕಾರ್ಯನಿರ್ವಹಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತವೆ.",
         "digitalcontent" : "ಮುಕ್ತ ಡಿಜಿಟಲ್ ವಿಷಯದ ಜಗತ್ತು",
-        "focusArea": "ಕೇಂದ್ರೀಕೃತ ಪ್ರದೇಶ",
+        "focusArea": "ಕೇಂದ್ರ ಬಿಂದು ಪ್ರದೇಶ",
         "application" : "ಅಪ್ಲಿಕೇಶನ್ ಲಭ್ಯತೆ",
         "downloadReport" : "ವರದಿಯನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
         "missionVisionDiscp1" : "ದೀಕ್ಷೆಯಲ್ಲಿ, 21ನೇ ಶತಮಾನದಲ್ಲಿ ಅಭಿವೃದ್ಧಿ ಹೊಂದಲು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಅಧಿಕಾರ ನೀಡುವ ಕ್ರಾಂತಿಕಾರಿ ಕಲಿಕಾ ಪರಿಸರ ವ್ಯವಸ್ಥೆಯನ್ನು ರಚಿಸುವುದು ನಮ್ಮ ಉದ್ದೇಶವಾಗಿದೆ. ಶಿಕ್ಷಣವು ಪ್ರತಿಯೊಬ್ಬ ಕಲಿಯುವವರ ವೈಯಕ್ತಿಕ ಅಗತ್ಯಗಳಿಗೆ ಅನುಗುಣವಾಗಿ ಲಭ್ಯವಾಗಬೇಕು, ಆಕರ್ಷಕವಾಗಿರಬೇಕು ಮತ್ತು ಹೊಂದಿಕೆಯಾಗಬೇಕು ಎಂದು ನಾವು ನಂಬುತ್ತೇವೆ . " ,
         "missionVisionDiscp2" :"ತಂತ್ರಜ್ಞಾನ ಮತ್ತು ನಾವೀನ್ಯತೆಯನ್ನು ಸದುಪಯೋಗಪಡಿಸಿಕೊಳ್ಳುವ ಮೂಲಕ ಶಿಕ್ಷಣವನ್ನು ನೀಡುವ ವಿಧಾನವನ್ನು ಪರಿವರ್ತಿಸುವುದು ನಮ್ಮ ದೃಷ್ಟಿಕೋನವಾಗಿದೆ. ಸಾಂಪ್ರದಾಯಿಕ ತರಗತಿ ಕೊಠಡಿಗಳನ್ನು ಮೀರಿದ ಸಮಗ್ರ ಕಲಿಕೆಯ ಅನುಭವವನ್ನು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಒದಗಿಸುವ ಗುರಿಯನ್ನು ನಾವು ಹೊಂದಿದ್ದೇವೆ. ನಮ್ಮ ವೇದಿಕೆಯ ಮೂಲಕ, ನಾವು ವಿದ್ಯಾರ್ಥಿಗಳನ್ನು ಶೈಕ್ಷಣಿಕ ಯಶಸ್ಸಿಗೆ ಮಾತ್ರವಲ್ಲದೆ ವೈಯಕ್ತಿಕ ಬೆಳವಣಿಗೆ ಮತ್ತು ಅಭಿವೃದ್ಧಿಗೆ ಅಗತ್ಯವಾದ ಕೌಶಲ್ಯಗಳೊಂದಿಗೆ ಸಜ್ಜುಗೊಳಿಸಲು ಬಯಸುತ್ತೇವೆ. ",
     },
     "mr": {
-        "availabilityInLast3Months" : "मागील 3 महिन्यांत अर्जाची उपलब्धता",
+        "applicationAvailability" : "मागील 3 महिन्यांत अर्जाची उपलब्धता",
         "view" : "पहा",
         "language": "मराठी",
         "diksha": "DIKSHA",
@@ -5802,7 +5806,7 @@ const languageTranslations = {
         "scanDownload": "डाउनलोड करण्यासाठी स्कॅन करा",
         "clickHere" : "येथे क्लिक करा",
         "contributeBanner": "भारतभरातील विद्यार्थ्यांसाठी दर्जेदार शिक्षण सुरू राहील हे सुनिश्चित करण्यासाठी शैक्षणिक क्षेत्रात ई-शिक्षण संसाधनांचे योगदान द्या.",
-        "aboutDikshaHeading" : " DIKSHA-एक राष्ट्र, एक डिजिटल मंच",
+        "aboutDikshaHeading" : "DIKSHA - एक राष्ट्र, एक डिजिटल मंच",
         "aboutDescription": "DIKSHA (डिजिटल इन्फ्रास्ट्रक्चर फॉर नॉलेज शेअरिंग) हा शालेय शिक्षणासाठीचा एक राष्ट्रीय मंच आहे, जो शिक्षण मंत्रालय (एम. ओ. ई.), भारत सरकारच्या अखत्यारीत येणाऱ्या राष्ट्रीय शैक्षणिक संशोधन आणि प्रशिक्षण परिषदेचा (एन. सी. ई. आर. टी.) एक उपक्रम आहे. भारताचे माननीय उपराष्ट्रपती-एम. व्यंकय्या नायडू यांनी 2017 मध्ये सुरू केलेली DIKSHA, सी. बी. एस. ई. सह जवळजवळ सर्व राज्ये, केंद्रशासित प्रदेश, केंद्रीय स्वायत्त संस्था/मंडळांनी स्वीकारली आहे.",
         "viewMore" : "अधिक पहा",
         "teacherNeedHelp": "शिक्षकांची मदत",
@@ -5881,7 +5885,7 @@ const languageTranslations = {
         "login" : "ലോഗിൻ",
     },
     "or": {
-        "availabilityInLast3Months" : "ଗତ 3 ମାସରେ ଆବେଦନ ଉପଲବ୍ଧତା |",
+        "applicationAvailability" : "ଗତ 3 ମାସରେ ଆବେଦନ ଉପଲବ୍ଧତା |",
         "view" : "ଦେଖନ୍ତୁ",
         "language": "ଓଡ଼ିଆ",
         "diksha": "DIKSHA",
@@ -5996,7 +6000,7 @@ const languageTranslations = {
         "scanDownload": "ଡାଉନ୍ଲୋଡ୍ କରିବା ପାଇଁ ସ୍କାନ୍ କରନ୍ତୁ",
         "clickHere" : "ଏଠାରେ କ୍ଲିକ୍ କରନ୍ତୁ",
         "contributeBanner": "ସମଗ୍ର ଭାରତରେ ବିଦ୍ଯ଼ାର୍ଥୀମାନଙ୍କ ପାଇଁ ଗୁଣାତ୍ମକ ଶିକ୍ଷା ଜାରି ରଖିବା ସୁନିଶ୍ଚିତ କରିବା ପାଇଁ ଶିକ୍ଷା କ୍ଷେତ୍ରରେ ଇ-ଲର୍ଣ୍ଣିଂ ସମ୍ବଳର ଯୋଗଦାନ କରନ୍ତୁ।",
-        "aboutDikshaHeading" : "DIKSHA-ଏକ ରାଷ୍ଟ୍ର, ଏକ ଡିଜିଟାଲ ମଞ୍ଚ",
+        "aboutDikshaHeading" : "DIKSHA - ଏକ ରାଷ୍ଟ୍ର, ଏକ ଡିଜିଟାଲ ମଞ୍ଚ",
         "aboutDescription": "DIKSHA (ଜ୍ଞାନ ବାଣ୍ଟିବା ପାଇଁ ଡିଜିଟାଲ ଭିତ୍ତିଭୂମି) ହେଉଛି ବିଦ୍ଯ଼ାଳଯ଼ ଶିକ୍ଷା ପାଇଁ ଏକ ଜାତୀଯ଼ ପ୍ଲାଟଫର୍ମ, ଯାହା ଶିକ୍ଷା ମନ୍ତ୍ରଣାଳଯ଼ (ଏମଓଇ), ଭାରତ ସରକାରଙ୍କ ତତ୍ତ୍ୱାବଧାନରେ ଜାତୀଯ଼ ଶିକ୍ଷା ଗବେଷଣା ଏବଂ ତାଲିମ ପରିଷଦ (ଏନସିଇଆରଟି) ର ଏକ ପଦକ୍ଷେପ। ଭାରତର ମାନ୍ଯ଼ବର ଉପରାଷ୍ଟ୍ରପତି ଶ୍ରୀ ଏମ୍. ଭେଙ୍କେଯ଼ା ନାଇଡୁଙ୍କ ଦ୍ୱାରା 2017 ରେ ଆରମ୍ଭ ହୋଇଥିବା DIKSHA ସିବିଏସ୍ଇ ସମେତ ପ୍ରାଯ଼ ସମସ୍ତ ରାଜ୍ଯ଼, କେନ୍ଦ୍ରଶାସିତ ଅଞ୍ଚଳ, କେନ୍ଦ୍ରୀଯ଼ ସ୍ୱଯ଼ଂଶାସିତ ସଂସ୍ଥା/ବୋର୍ଡ ଦ୍ୱାରା ଗ୍ରହଣ କରାଯାଇଛି।",
         "viewMore" : "ଅଧିକ ଦେଖନ୍ତୁ",
         "teacherNeedHelp": "ଶିକ୍ଷକଙ୍କ ସହାଯ଼ତା",
@@ -6037,14 +6041,14 @@ const languageTranslations = {
         "participateQuiz": "କୁଇଜ୍ରେ ଅଂଶଗ୍ରହଣ କରନ୍ତୁ",
         "participateQuizDesc": "କୁଇଜ୍ ଶିକ୍ଷଣକୁ ଆନନ୍ଦଦାଯ଼କ କରିଥାଏ ଏବଂ ଛାତ୍ରଛାତ୍ରୀମାନଙ୍କୁ ଉନ୍ନତ ପ୍ରଦର୍ଶନ କରିବାରେ ସାହାଯ୍ଯ଼ କରିଥାଏ।",
         "digitalcontent" : "ମୁକ୍ତ ଡିଜିଟାଲ ବିଷଯ଼ବସ୍ତୁର ଦୁନିଆ",
-        "focusArea": "ଫୋକସ୍ କ୍ଷେତ୍ର",
+        "focusArea": "സെൻ്റർ പോയിൻ്റ് ഏരിയ",
         "application" : "ପ୍ରୟୋଗ ଉପଲବ୍ଧତା |",
         "downloadReport" : "ରିପୋର୍ଟ ଡାଉନଲୋଡ୍ କରନ୍ତୁ |",
         "missionVisionDiscp1" : "ଦୀକ୍ଷାରେ, ଆମର ଲକ୍ଷ୍ଯ଼ ହେଉଛି ଏକ ବୈପ୍ଳବିକ ଶିକ୍ଷଣ ଇକୋସିଷ୍ଟମ ସୃଷ୍ଟି କରିବା ଯାହା ଛାତ୍ରମାନଙ୍କୁ ଏକବିଂଶ ଶତାବ୍ଦୀରେ ଉନ୍ନତି କରିବାକୁ ସଶକ୍ତ କରେ। ଆମେ ବିଶ୍ୱାସ କରୁ ଯେ ଶିକ୍ଷା ସୁଲଭ, ଆକର୍ଷଣୀଯ଼ ଏବଂ ପ୍ରତ୍ଯ଼େକ ଶିକ୍ଷାର୍ଥୀଙ୍କ ବ୍ଯ଼କ୍ତିଗତ ଆବଶ୍ଯ଼କତା ଅନୁଯାଯ଼ୀ ହେବା ଉଚିତ। " ,
         "missionVisionDiscp2" :" ପ୍ରଯୁକ୍ତିବିଦ୍ଯ଼ା ଏବଂ ନବସୃଜନର ଲାଭ ଉଠାଇ ଶିକ୍ଷା ପ୍ରଦାନ କରିବାର ଉପାଯ଼କୁ ପରିବର୍ତ୍ତନ କରିବା ହେଉଛି ଆମର ଲକ୍ଷ୍ଯ଼। ଆମର ଲକ୍ଷ୍ଯ଼ ହେଉଛି ବିଦ୍ଯ଼ାର୍ଥୀମାନଙ୍କୁ ଏକ ସାମଗ୍ରିକ ଶିକ୍ଷଣ ଅଭିଜ୍ଞତା ପ୍ରଦାନ କରିବା, ଯାହା ପାରମ୍ପରିକ ଶ୍ରେଣୀଗୃହ ଠାରୁ ଆଗକୁ ଯାଇପାରିବ। ଆମର ପ୍ଲାଟଫର୍ମ ମାଧ୍ଯ଼ମରେ, ଆମେ ଛାତ୍ରଛାତ୍ରୀମାନଙ୍କୁ କେବଳ ଏକାଡେମିକ୍ ସଫଳତା ପାଇଁ ନୁହେଁ ବରଂ ବ୍ଯ଼କ୍ତିଗତ ଅଭିବୃଦ୍ଧି ଏବଂ ବିକାଶ ପାଇଁ ଆବଶ୍ଯ଼କ କୌଶଳ ସହିତ ସଜ୍ଜିତ କରିବାକୁ ଚାହୁଁଛୁ।",
     },
     "pa": {
-        "availabilityInLast3Months" : "ਪਿਛਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ", 
+        "applicationAvailability" : "ਪਿਛਲੇ 3 ਮਹੀਨਿਆਂ ਵਿੱਚ ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ", 
         "view" : "ਦ੍ਰਿਸ਼",
         "language": "ਪੰਜਾਬੀ",
         "diksha": "DIKSHA",
@@ -6159,7 +6163,7 @@ const languageTranslations = {
         "scanDownload": "ਡਾਊਨਲੋਡ ਕਰਨ ਲਈ ਸਕੈਨ ਕਰੋ",
         "clickHere" : "ਇਥੇ ਕਲਿੱਕ ਕਰੋ",
         "contributeBanner": "ਸਿੱਖਿਆ ਦੇ ਖੇਤਰ ਵਿੱਚ ਈ-ਲਰਨਿੰਗ ਸਰੋਤਾਂ ਦਾ ਯੋਗਦਾਨ ਪਾਓ ਤਾਂ ਜੋ ਇਹ ਸੁਨਿਸ਼ਚਿਤ ਕੀਤਾ ਜਾ ਸਕੇ ਕਿ ਪੂਰੇ ਭਾਰਤ ਵਿੱਚ ਸਿੱਖਣ ਵਾਲਿਆਂ ਲਈ ਗੁਣਵੱਤਾਪੂਰਨ ਸਿੱਖਿਆ ਜਾਰੀ ਰਹੇ।",
-        "aboutDikshaHeading" : "DIKSHA-ఒక దేశం, ఒక డిజిటల్ వేదిక",
+        "aboutDikshaHeading" : "DIKSHA - ఒక దేశం, ఒక డిజిటల్ వేదిక",
         "viewMore" : "ਹੋਰ ਵੇਖੋ",
         "teacherNeedHelp": "ਅਧਿਆਪਕ ਦੀ ਮਦਦ",
         "footerDoc": "ਗਿਆਨ ਸਾਂਝਾ ਕਰਨ ਲਈ ਡਿਜੀਟਲ ਬੁਨਿਆਦੀ ਢਾਂਚਾ",
@@ -6199,14 +6203,14 @@ const languageTranslations = {
         "participateQuiz": "ਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓ",
         "participateQuizDesc": "ਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓਕੁਇਜ਼ ਵਿੱਚ ਹਿੱਸਾ ਲਓ",
         "digitalcontent" : "ਖੁੱਲ੍ਹੀ ਡਿਜੀਟਲ ਸਮੱਗਰੀ ਦੀ ਦੁਨੀਆ",
-        "focusArea": "ਦਾ ਫੋਕਸ ਖੇਤਰ",
+        "focusArea": "ਕੇਂਦਰ ਬਿੰਦੂ ਖੇਤਰ",
         "application" : "ਐਪਲੀਕੇਸ਼ਨ ਦੀ ਉਪਲਬਧਤਾ",
         "downloadReport" : "ਰਿਪੋਰਟ ਡਾਊਨਲੋਡ ਕਰੋ",
         "missionVisionDiscp1" : "ਦੀਕਸ਼ਾ ਵਿੱਚ, ਸਾਡਾ ਮਿਸ਼ਨ ਇੱਕ ਕ੍ਰਾਂਤੀਕਾਰੀ ਸਿੱਖਣ ਦਾ ਈਕੋਸਿਸਟਮ ਬਣਾਉਣਾ ਹੈ ਜੋ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ 21ਵੀਂ ਸਦੀ ਵਿੱਚ ਪ੍ਰਫੁੱਲਤ ਕਰਨ ਲਈ ਸਮਰੱਥ ਬਣਾਉਂਦਾ ਹੈ। ਸਾਡਾ ਮੰਨਣਾ ਹੈ ਕਿ ਸਿੱਖਿਆ ਪਹੁੰਚਯੋਗ, ਆਕਰਸ਼ਕ ਅਤੇ ਹਰੇਕ ਸਿੱਖਣ ਵਾਲੇ ਦੀਆਂ ਵਿਅਕਤੀਗਤ ਜ਼ਰੂਰਤਾਂ ਦੇ ਅਨੁਸਾਰ ਹੋਣੀ ਚਾਹੀਦੀ ਹੈ। " ,
         "missionVisionDiscp2" :"ਸਾਡਾ ਦ੍ਰਿਸ਼ਟੀਕੋਣ ਟੈਕਨੋਲੋਜੀ ਅਤੇ ਇਨੋਵੇਸ਼ਨ ਦਾ ਲਾਭ ਉਠਾ ਕੇ ਸਿੱਖਿਆ ਪ੍ਰਦਾਨ ਕਰਨ ਦੇ ਤਰੀਕੇ ਨੂੰ ਬਦਲਣਾ ਹੈ। ਸਾਡਾ ਉਦੇਸ਼ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਇੱਕ ਸੰਪੂਰਨ ਸਿੱਖਣ ਦਾ ਤਜਰਬਾ ਪ੍ਰਦਾਨ ਕਰਨਾ ਹੈ ਜੋ ਰਵਾਇਤੀ ਕਲਾਸਰੂਮਾਂ ਤੋਂ ਪਰੇ ਹੈ। ਆਪਣੇ ਮੰਚ ਰਾਹੀਂ, ਅਸੀਂ ਵਿਦਿਆਰਥੀਆਂ ਨੂੰ ਉਨ੍ਹਾਂ ਹੁਨਰਾਂ ਨਾਲ ਲੈਸ ਕਰਨਾ ਚਾਹੁੰਦੇ ਹਾਂ ਜਿਨ੍ਹਾਂ ਦੀ ਉਨ੍ਹਾਂ ਨੂੰ ਨਾ ਸਿਰਫ ਅਕਾਦਮਿਕ ਸਫਲਤਾ ਲਈ ਬਲਕਿ ਵਿਅਕਤੀਗਤ ਵਿਕਾਸ ਅਤੇ ਵਿਕਾਸ ਲਈ ਵੀ ਜ਼ਰੂਰਤ ਹੈ। ",
     },
     "ta": {
-        "availabilityInLast3Months" : "கடந்த 3 மாதங்களில் விண்ணப்பம் கிடைக்கும்",
+        "applicationAvailability" : "கடந்த 3 மாதங்களில் விண்ணப்பம் கிடைக்கும்",
         "view" : "பார்",
         "language": "தமிழ்",
         "diksha": "தீக்‌ஷா",
@@ -6321,7 +6325,7 @@ const languageTranslations = {
         "scanDownload": "பதிவிறக்கம் செய்ய ஸ்கேன்",
         "clickHere" : "இங்கே சொடுக்கவும்",
         "contributeBanner": " இந்தியா முழுவதும் உள்ள கற்பவர்களுக்கு தரமான கற்றல் தொடர்வதை உறுதி செய்வதற்காக கல்வி களத்தில் மின்னணு கற்றல் வளங்களை பங்களிக்கவும்.",
-        "aboutDikshaHeading" : "DIKSHA-ஒரு நாடு, ஒரு டிஜிட்டல் தளம்",
+        "aboutDikshaHeading" : "DIKSHA - ஒரு நாடு, ஒரு டிஜிட்டல் தளம்",
         "aboutDescription": "DIKSHA (அறிவு பகிர்வுக்கான டிஜிட்டல் உள்கட்டமைப்பு) என்பது பள்ளிக் கல்விக்கான ஒரு தேசிய தளமாகும், இது இந்திய அரசின் கல்வி அமைச்சகத்தின் (எம். ஓ. இ) ஆதரவின் கீழ் தேசிய கல்வி ஆராய்ச்சி மற்றும் பயிற்சி கவுன்சிலின் (என். சி. இ. ஆர். டி) முன்முயற்சியாகும். மாண்புமிகு குடியரசுத் துணைத் தலைவர் திரு. எம். வெங்கையா நாயுடு அவர்களால் 2017 ஆம் ஆண்டில் தொடங்கப்பட்ட DIKSHA, சிபிஎஸ்இ உட்பட கிட்டத்தட்ட அனைத்து மாநிலங்கள், யூனியன் பிரதேசங்கள், மத்திய தன்னாட்சி அமைப்புகள்/வாரியங்களால் ஏற்றுக்கொள்ளப்பட்டுள்ளது.",
         "viewMore" : "மேலும் காண்க",
         "teacherNeedHelp": "ஆசிரியர் உதவி",
@@ -6361,14 +6365,14 @@ const languageTranslations = {
         "studyMaterial": "ஊடாடும் படிப்புப் பொருள்",
         "studyMaterialDesc":" ஊடகங்கள் நிறைந்தவர்கள் பாடத்திட்டத்திற்கு ஏற்ப 2டி 3டி வீடியோக்களை பார்வைக்கு ஈர்க்கிறார்கள்",
         "digitalcontent" : "திறந்த டிஜிட்டல் உள்ளடக்கத்தின் உலகம்",
-        "focusArea": "கவனம் செலுத்தும் பகுதி",
+        "focusArea": "மைய புள்ளி பகுதி",
         "application" : "விண்ணப்பம் கிடைக்கும் தன்மை",
         "downloadReport" : "அறிக்கையைப் பதிவிறக்கவும்",
-        "missionVisionDiscp1" : "21-ാം നൂറ്റാണ്ടിൽ വിദ്യാർത്ഥികളെ അഭിവൃദ്ധിപ്പെടുത്താൻ പ്രാപ്തരാക്കുന്ന ഒരു വിപ്ലവകരമായ പഠന ആവാസവ്യവസ്ഥ സൃഷ്ടിക്കുക എന്നതാണ് ദീക്ഷയിലെ ഞങ്ങളുടെ ദൌത്യം. വിദ്യാഭ്യാസം പ്രാപ്യവും ആകർഷകവും ഓരോ പഠിതാവിന്റെയും വ്യക്തിഗത ആവശ്യങ്ങൾക്കനുസൃതവുമായിരിക്കണമെന്ന് ഞങ്ങൾ വിശ്വസിക്കുന്നു. " ,
-        "missionVisionDiscp2" :"സാങ്കേതികവിദ്യയും നവീകരണവും പ്രയോജനപ്പെടുത്തിക്കൊണ്ട് വിദ്യാഭ്യാസം നൽകുന്ന രീതിയെ പരിവർത്തനം ചെയ്യുക എന്നതാണ് ഞങ്ങളുടെ കാഴ്ചപ്പാട്. പരമ്പരാഗത ക്ലാസ് മുറികൾക്കപ്പുറമുള്ള സമഗ്രമായ പഠനാനുഭവം വിദ്യാർത്ഥികൾക്ക് നൽകാൻ ഞങ്ങൾ ലക്ഷ്യമിടുന്നു. ഞങ്ങളുടെ പ്ലാറ്റ്ഫോമിലൂടെ, അക്കാദമിക് വിജയത്തിന് മാത്രമല്ല, വ്യക്തിപരമായ വളർച്ചയ്ക്കും വികസനത്തിനും ആവശ്യമായ കഴിവുകൾ വിദ്യാർത്ഥികളെ സജ്ജമാക്കാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു .",
+        "missionVisionDiscp1" : "தீட்சாவில், 21 ஆம் நூற்றாண்டில் மாணவர்கள் செழிக்க அதிகாரம் அளிக்கும் ஒரு புரட்சிகர கற்றல் சூழலை உருவாக்குவதே எங்கள் நோக்கம். கல்வி அணுகக்கூடியதாகவும், ஈடுபாட்டுடனும், ஒவ்வொரு கற்பவரின் தனிப்பட்ட தேவைகளுக்கு ஏற்பவும் இருக்க வேண்டும் என்று நாங்கள் நம்புகிறோம் ." ,
+        "missionVisionDiscp2" :"தொழில்நுட்பம் மற்றும் புதுமைகளை மேம்படுத்துவதன் மூலம் கல்வி வழங்கப்படும் முறையை மாற்றுவதே எங்கள் பார்வை. பாரம்பரிய வகுப்பறைகளுக்கு அப்பாற்பட்ட முழுமையான கற்றல் அனுபவத்தை மாணவர்களுக்கு வழங்குவதை நோக்கமாகக் கொண்டுள்ளோம். எங்கள் தளத்தின் மூலம், கல்வி வெற்றிக்கு மட்டுமல்ல, தனிப்பட்ட வளர்ச்சி மற்றும் மேம்பாட்டிற்கும் மாணவர்களுக்குத் தேவையான திறன்களை சித்தப்படுத்த விரும்புகிறோம்.",
     },
     "te": {
-        "availabilityInLast3Months" : "గత 3 నెలల్లో అప్లికేషన్ లభ్యత",
+        "applicationAvailability" : "గత 3 నెలల్లో అప్లికేషన్ లభ్యత",
         "view" : "వీక్షించండి",
         "language": "తెలుగు",
         "diksha": "DIKSHA",
@@ -6483,7 +6487,7 @@ const languageTranslations = {
         "scanDownload": "డౌన్లోడ్ చేయడానికి స్కాన్ చేయండి",
         "clickHere" : "ఇక్కడ క్లిక్ చేయండి",
         "contributeBanner": "భారతదేశం అంతటా అభ్యాసకులకు నాణ్యమైన అభ్యాసం కొనసాగేలా విద్యా రంగంలో ఇ-లెర్నింగ్ వనరులను అందించండి.",
-        "aboutDikshaHeading" : "DIKSHAా-ఒక దేశం, ఒక డిజిటల్ వేదిక ",
+        "aboutDikshaHeading" : "DIKSHA - ఒక దేశం, ఒక డిజిటల్ వేదిక ",
         "aboutDescription": "DIKSHAా (డిజిటల్ ఇన్ఫ్రాస్ట్రక్చర్ ఫర్ నాలెడ్జ్ షేరింగ్) అనేది పాఠశాల విద్య కోసం ఒక జాతీయ వేదిక, ఇది భారత ప్రభుత్వ విద్యా మంత్రిత్వ శాఖ (ఎంఓఈ) ఆధ్వర్యంలో నేషనల్ కౌన్సిల్ ఫర్ ఎడ్యుకేషనల్ రీసెర్చ్ అండ్ ట్రైనింగ్ (ఎన్సీఈఆర్టీ) యొక్క చొరవ. 2017లో భారత గౌరవనీయ ఉపరాష్ట్రపతి శ్రీ ఎం. వెంకటేశ్వర్లు ప్రారంభించిన DIKSHAను సిబిఎస్ఇతో సహా దాదాపు అన్ని రాష్ట్రాలు, కేంద్రపాలిత ప్రాంతాలు, కేంద్ర స్వయంప్రతిపత్తి సంస్థలు/బోర్డులు స్వీకరించాయి.",
         "viewMore" : "మరింత చూడండి",
         "teacherNeedHelp": "ఉపాధ్యాయుల సహాయం",
@@ -6521,7 +6525,7 @@ const languageTranslations = {
         "studyMaterial": "ఇంటరాక్టివ్ స్టడీ మెటీరియల్",
         "studyMaterialDesc":"సిలబస్‌కు అనుగుణంగా మీడియా-రిచ్ దృశ్యమానంగా 2D 3D వీడియోలు",
         "digitalcontent" : "ఓపెన్ డిజిటల్ కంటెంట్ ప్రపంచం",
-        "focusArea": "దృష్టి కేంద్రీకరించిన ప్రాంతం",
+        "focusArea": "సెంటర్ పాయింట్ ప్రాంతం",
         "application" : "అప్లికేషన్ లభ్యత",
         "downloadReport" : "నివేదికను డౌన్‌లోడ్ చేయండి",
         "compreLearning" : "సమగ్ర అభ్యాసం",
@@ -6643,7 +6647,7 @@ const languageTranslations = {
         "scanDownload":"ڈاؤن لوڈ کرنے کے لئے اسکین کریں",
         "clickHere" : "یہاں کلک کریں",
         "contributeBanner": "اس بات کو یقینی بنانے کے لئے کہ ہندوستان بھر میں سیکھنے والوں کے لئے معیاری تعلیم جاری رہے، تعلیم کے شعبے میں ای لرننگ وسائل کا حصہ ڈالیں۔",
-        "aboutDikshaHeading" : "DIKSHA- ایک قوم، ایک ڈیجیٹل پلیٹ فارم",
+        "aboutDikshaHeading" : "DIKSHA - ایک قوم، ایک ڈیجیٹل پلیٹ فارم",
         "aboutDescription": "DIKSHA(ڈیجیٹل انفراسٹرکچر فار نالج شیئرنگ) اسکولی تعلیم کے لئے ایک قومی پلیٹ فارم ہے، جو وزارت تعلیم (ایم او ای)، حکومت ہند کی سرپرستی میں نیشنل کونسل فار ایجوکیشنل ریسرچ اینڈ ٹریننگ (این سی ای آر ٹی) کی ایک پہل ہے۔ نائب صدر جمہوریہ ہند جناب ایم وینکیا نائیڈو کے ذریعہ 2017 میں شروع کئے گئے DIKSHAکو سی بی ایس ای سمیت تقریبا تمام ریاستوں ، مرکز کے زیر انتظام علاقوں ، مرکزی خود مختار اداروں / بورڈوں نے اپنایا ہے۔",
         "viewMore" : "مزید دیکھیں",
         "teacherNeedHelp": "استاد کی مدد",
@@ -6684,10 +6688,10 @@ const languageTranslations = {
         "participateQuiz": "کوئز میں حصہ لیں۔",
         "participateQuizDesc": "کوئز سیکھنے کو مزہ دیتے ہیں اور طلباء کو بہتر کارکردگی کا مظاہرہ کرنے میں مدد کرتے ہیں۔",
         "digitalcontent" : "کھلے ڈیجیٹل مواد کی دنیا",
-        "focusArea": "فوکس ایریاز",
+        "focusArea": "سینٹر پوائنٹ ایریا",
         "application" : "درخواست کی دستیابی",
         "downloadReport" : "رپورٹ ڈاؤن لوڈ کریں۔",
-        "availabilityInLast3Months" : "پچھلے 3 مہینوں میں درخواست کی دستیابی",
+        "applicationAvailability" : "پچھلے 3 مہینوں میں درخواست کی دستیابی",
         "missionVisionDiscp1" : "دیکشا میں، ہمارا مشن ایک انقلابی سیکھنے کا ماحولیاتی نظام تیار کرنا ہے جو طلباء کو 21 ویں صدی میں پھلنے پھولنے کے لئے بااختیار بناتا ہے۔ ہمارا ماننا ہے کہ تعلیم ہر طالب علم کی انفرادی ضروریات کے مطابق قابل رسائی، دلچسپ اور تیار ہونی چاہیے۔ " ,
         "missionVisionDiscp2" :" ہمارا وژن ٹیکنالوجی اور جدت طرازی سے فائدہ اٹھاتے ہوئے تعلیم کی فراہمی کے طریقے کو تبدیل کرنا ہے۔ ہمارا مقصد طلباء کو ایک جامع سیکھنے کا تجربہ فراہم کرنا ہے جو روایتی کلاس رومز سے آگے جاتا ہے۔ اپنے پلیٹ فارم کے ذریعے ہم طالب علموں کو ان مہارتوں سے آراستہ کرنا چاہتے ہیں جن کی انہیں نہ صرف تعلیمی کامیابی بلکہ ذاتی ترقی اور ترقی کے لئے بھی ضرورت ہے۔",
     }

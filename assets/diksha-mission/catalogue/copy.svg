@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="19px" height="22px" viewBox="0 0 19 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <title>copy</title>
-    <g id="dataset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Dataset-details--2" transform="translate(-671.000000, -666.000000)" fill="#024F9D">
-            <path d="M685,666 L673,666 C671.9,666 671,666.9 671,668 L671,682 L673,682 L673,668 L685,668 L685,666 L685,666 Z M688,670 L677,670 C675.9,670 675,670.9 675,672 L675,686 C675,687.1 675.9,688 677,688 L688,688 C689.1,688 690,687.1 690,686 L690,672 C690,670.9 689.1,670 688,670 L688,670 Z M688,686 L677,686 L677,672 L688,672 L688,686 L688,686 Z" id="copy"></path>
-        </g>
-    </g>
-</svg>
