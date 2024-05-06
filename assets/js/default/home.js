@@ -1231,3 +1231,9 @@ $(document).ready(function() {
   let path= window.location.pathname.split('/')[1];
   if(path){document.getElementById(path).style.display = 'none';}
 })
+
+$(".action-button").click(function (e) {
+  e.preventDefault();
+  window.location.href = "/data/"
+  return false;
+});
