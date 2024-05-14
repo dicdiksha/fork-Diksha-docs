@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -338,8 +337,172 @@
         background: rgba(0, 0, 0, .1);
         border-radius: 0;
     }
-	.infocus-section .book {
-		width: 763px;
+	
+.fln-about-section p {
+    color: #333333;
+    font-family: "Noto Sans";
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: justify;
+    padding: 15px;
+}
+
+
+.coversSprite {
+    /* background: url(https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/pages/coverCG.jpg);
+    background-repeat: no-repeat; */
+    width: 471px;
+    height: 600px;
+	padding: 15px;
+}
+
+.coversSprite.bookcover21 {
+    background-position: -20px -4920px;
+	padding: 25px 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.coversSprite.bookcover22 {
+    background-position: -20px -5580px;
+	padding: 25px 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.coversSprite.bookcover23 {
+    background-position:-20px -6210px;
+	padding: 25px 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.coversSprite.bookcover24 {
+    background-position: -20px -6840px;
+	padding: 25px 20px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.mobileBook {
+    margin: 0 auto
+}
+
+
+@media only screen and (max-width :471px) {
+
+    .coversSprite {
+        width: 320px;
+        height: 400px;
+        margin-top: 130px
+    }
+
+    .coversSprite.bookcover1 {
+        background-position: -15px 0px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover2 {
+        background-position: -15px -380px;
+        background-size: 312px;    
+    }
+    
+    .coversSprite.bookcover3 {
+        background-position: -15px -730px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover4 {
+        background-position: -15px -1120px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover5 {
+        background-position: -18px -1510px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover6 {
+        background-position: -18px -1900px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover7 {
+        background-position: -18px -2290px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover8 {
+        background-position: -18px -2670px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover21 {
+        background-position: -18px -3050px;
+        background-size: 312px;
+    }
+    
+    .coversSprite.bookcover22 {
+        background-position: -18px -3470px;
+        background-size: 312px;    
+    }
+    
+    .coversSprite.bookcover23 {
+        background-position: -18px -3860px;
+        background-size: 312px;  
+    }
+    
+    .coversSprite.bookcover24 {
+        background-position: -18px -4260px;
+        background-size: 312px;    
+    }
+    
+    .coversSprite.bookcover25 {
+        background-position: -18px -4660px;
+        background-size: 312px;    
+    }
+    
+    .coversSprite.bookcover26 {
+        background-position: -18px -5050px;
+        background-size: 312px;    
+    }
+    
+    .coversSprite.bookcover31 {
+        background-position: -18px -5460px;
+        background-size: 312px;  
+    }
+    
+    .coversSprite.bookcover32 {
+        background-position: -18px -5830px;
+        background-size: 312px;  
+    }
+    
+    .coversSprite.bookcover33 {
+        background-position: -18px -6180px;
+        background-size: 312px;  
+    }
+    
+    .coversSprite.bookcover34 {
+        background-position: -18px -6580px;
+        background-size: 312px;  
+    }    
+}
+
+.infocus-section {
+    background-color: #f1f5ff;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+.infocus-section h3{
+    margin-bottom: 5rem;
+    color : #333;
+    line-height: 33px;
+}
+
+.infocus-section .book {
+    width: 763px;
     height: 365px;
     border: 1px solid #333;
     margin: 20px auto;
@@ -353,7 +516,8 @@
     justify-content: center;
     align-items: center;
 }
-.infocus-section .book:before {
+
+.infocus-section .book:before{
     content: '';
     width: 30px;
     height: 100%;
@@ -369,16 +533,151 @@
 	width: 220px;
 }
 
-.fln-about-section p {
-    color: #333333;
-    font-family: "Noto Sans";
-    font-size: 44px;
-    letter-spacing: 0;
-    line-height: 30px;
-    text-align: justify;
-    padding: 15px;
+.infocus-section .blue.book:hover{
+    box-shadow: -11px 11px 20px 0 rgba(0,118,254,0.3);
 }
 
+.infocus-section .green img,
+.infocus-section .blue img,
+.infocus-section .orange img
+{
+    margin: 0 auto 35px;
+    display: block;
+}
+
+.infocus-section .green p,
+.infocus-section .blue p,
+.infocus-section .orange p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    text-align: center;
+}
+
+.infocus-section .green p{
+    color: #008840;
+}
+
+.infocus-section .blue p{
+	color: #0076FE;
+}
+
+.infocus-section .orange p{
+	color: #E55A28;
+}
+
+.infocus-section .modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1112;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+    width: 100%;
+    padding-right: 0 !important;
+}
+
+.infocus-section .modal .modal-header{
+    padding : 0; border : 0;
+}
+
+.infocus-section .modal button.close {
+    margin-right: -15px;
+    opacity: 1;
+    padding: 0;
+    outline: 0;
+}
+
+.infocus-section .modal button.close span{
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    padding: 3px 9px;
+    color : #fff;
+}
+
+.infocus-section .modal .modal-dialog{
+    width: 960px;
+    max-width: unset;
+    height: 630px;
+    top: 220px;
+}
+
+.infocus-section .modal .modal-dialog .modal-content{
+    height: inherit;
+    border: none;
+    background: transparent;
+}
+
+.infocus-section{
+        background: #f1f5ff;
+    }
+
+    .infocus-section .modal{
+        z-index : 1112;
+        position: fixed;
+        width : 100%;
+        height: 99%;
+    }
+
+    .infocus-section .carousel-control-next,
+    .infocus-section .carousel-control-prev {
+        width: 10%;
+        color: #333;
+        opacity: 1;
+        font-size: 40px;
+        z-index: 1146;
+    }
+
+    .infocus-section .carousel-control-next{
+        right: -15px;
+    }
+    .infocus-section .carousel-control-prev{
+        left : -15px;
+    }
+
+    .infocus-section .modal .modal-dialog {
+        width: 96%;
+        top: 0px;
+    }
+
+    .infocus-section .modal .modal-dialog,
+    .infocus-section .modal .modal-dialog .modal-content,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body .row,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body .row .col-12,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body .row .col-12 .carousel,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body .row .col-12 .carousel .carousel-inner,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body .row .col-12 .carousel .carousel-inner .carousel-item,
+    .infocus-section .modal .modal-dialog .modal-content .modal-body .row .col-12 .carousel .carousel-inner .carousel-item img{
+        height : inherit;
+    }
+
+
+    .infocus-section .modal .modal-header{
+        padding : 0; border : 0;
+    }
+
+    .infocus-section .modal button.close {
+        margin-right: -5px;
+        margin-top: -5px;
+        z-index: 1111;
+    }
+
+    .infocus-section .modal button.close span{
+        font-size: 18px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        padding: 3px 9px;
+    }
+
+    .infocus-section .modal .modal-dialog img {
+        width: 100%;
+        object-fit: scale-down;
+    }
 	</style>
 </head>
 
@@ -464,53 +763,6 @@
 		</section>
 		<section class="fln-about-section">
 			 <h3>About</h3>
-			<!-- <div class="row">
-				<div class="col-12">
-					<p> Differences are fluid in nature, not always fixed, respecting individual rights 
-						of self-identity, recognizing that no one is superior and based on several 
-						socio-cultural-linguistic-plurality in the Indian society, some  categorization 
-						have been suggested in the NEP 2020 for addressing the diverse needs and paying 
-						more attention to education of children belonging to socio-economically disadvantaged 
-						groups (SEDGs). SEDGs are broadly categorized into five sub categories, based on gender 
-						identities (particularly female and transgender individuals), socio-cultural identities 
-						(such as Scheduled Castes, Scheduled Tribes, OBCs, linguistic and religious minorities), 
-						geographical identities (such as students from villages, small towns, and aspirational 
-						districts), socio-economic conditions (such as migrant communities, low income households, 
-						children in vulnerable situations, victims of or children of victims of trafficking, 
-						orphans including child beggars in urban areas, and the urban poor) and disabilities. 
-						The Rights of Persons with Disabilities Act 2016 has specified a schedule of disabilities 
-						such as locomotor disability, leprosy cured person, cerebral palsy, dwarfism,  muscular 
-						dystrophy, acid attack victims,  blindness, low-vision, deafness, hard of hearing,  
-						speech & language disability, intellectual disability, specific learning disabilities, 
-						autism spectrum disorder, mental illness, chronic neurological conditions, multiple 
-						sclerosis, parkinson’s disease, haemophilia, thalassemia, sickle cell disease, multiple 
-						disabilities and deaf-blindness or as further notified disability. The NEP 2020 endorses all recommendations of the RPwD Act 2016 with regard to school education.
-					</p>
-					<div class="read-more-content">
-						<p>The National Education Policy, 2020 has a vision of transforming India by
-							providing high-quality equitable and inclusive education to ensure that all 
-							students with diverse learning needs are able to thrive in the education system
-						   with equal learning opportunities in an inclusive environment to realize their 
-						   full potentials. Equitable and Inclusive education is a dynamic process which 
-						   brings change in the society. Equitable does not mean the equal. Equitable 
-						   education is more concerned with the learner's specific learning needs. 
-						   Inclusion aims at bringing all these children with their different
-							abilities and needs together to learn under one roof. The need of the hour 
-							is to address the diverse socio-economic, geographic, cultural and idiographic 
-							issues through adopting the policy of 'Teaching all children together'
-							 and facilitating 'Equitable and outcome based Learning for All'. 
-					   </p>
-						<p> 
-							In coherence with NEP 2020, a lot of resources have been developed based on 
-							the philosophy of equitable and inclusive education and principles of Universal
-							 Design to provide educational e-Content to learners across and beyond the country. 
-							 These resources and e-contents are developed by experts in the field following systematic 
-							 procedures of evaluation and reviews for delivering the quality end product.  
-							 The resources and e-contents are available on 'One Nation One Platform' DIKSHA - 
-							 Equitable and Inclusive Education Vertical, which is evolving in nature.
-						</p>
-					</div> <a href="javascript:void(0);" class="read-more" title="Read More">Read More</a> </div>
-			</div>  -->
 			<section class="P1060 infocus-section">
 				<div class="row">
 				  <div class="col-12">
@@ -525,54 +777,6 @@
 				  </div>
 				</div>
 				<!-- Modal -->
-				<div class="modal" id="energizedTextbooksModal" tabindex="-1" role="dialog"
-				  aria-labelledby="energizedTextbooksModal" aria-hidden="true">
-				  <div class="modal-dialog" role="document">
-					<div class="modal-content">
-					  <div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						  <span aria-hidden="true">&times;</span>
-						</button>
-					  </div>
-					  <div class="modal-body">
-						<div class="row">
-						  <div class="col-12">
-							<div class="d-md-none d-sm-none d-xs-none d-lg-block d-xl-block generate"></div>
-							<div id="greenbookCarousel"
-							  class="carousel slide d-xl-none d-lg-none d-md-block d-block d-sm-block" data-ride="carousel">
-							  <div class="carousel-inner">
-								<div class="carousel-item active">
-								  <div class="coverSprite bookcover1 mobileBook"></div>
-								</div>
-								<div class="carousel-item">
-								  <div class="coverSprite bookcover2 mobileBook"></div>
-								</div>
-								<div class="carousel-item">
-								  <div class="coverSprite bookcover3 mobileBook"></div>
-								</div>
-								<div class="carousel-item">
-								  <div class="coverSprite bookcover4 mobileBook"></div>
-								</div>
-								<div class="carousel-item">
-								  <div class="coverSprite bookcover5 mobileBook"></div>
-								</div>
-								<div class="carousel-item">
-								  <div class="coverSprite bookcover6 mobileBook"></div>
-								</div>
-							  </div>
-							  <a class="carousel-control-prev" href="#greenbookCarousel" role="button" data-slide="prev">
-								<i class="fa fa-angle-left" aria-hidden="true"></i>
-							  </a>
-							  <a class="carousel-control-next" href="#greenbookCarousel" role="button" data-slide="next">
-								<i class="fa fa-angle-right" aria-hidden="true"></i>
-							  </a>
-							</div>
-						  </div>
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</div>
 				<div class="modal" id="teachAndLearnModal" tabindex="-1" role="dialog" aria-labelledby="teachAndLearnModal"
 				  aria-hidden="true">
 				  <div class="modal-dialog" role="document">
@@ -906,16 +1110,27 @@
 			</section>
 		</section>
 	</div>
-	<script type="text/javascript" src="/js/js-cwsn/jquery-3.3.1.min.js"></script>
-	<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+	<!-- <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script> -->
+
+	<script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/assets/js/default/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/assets/js/default/popper.min.js"></script>
+  <script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/assets/js/default/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/extras/jquery-ui-1.8.20.custom.min.js"></script>
+  <script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/extras/jquery.mousewheel.min.js"></script>
+  <script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/extras/modernizr.2.5.3.min.js"></script>
+  <script type="text/javascript" src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/lib/hash.js"></script>
+  <script src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/js/jquery.waypoints.min.js"></script>
+  <script src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/js/jquery.counterup.min.js"></script>
+  <!-- <script src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/cg/js/custom.js"></script> -->
+	<!-- <script type="text/javascript" src="/js/js-cwsn/jquery-3.3.1.min.js"></script> -->
 	<script type="text/javascript" src="/index.js"></script>
-	<script type="text/javascript" src="js/js-cwsn/jquery-3.3.1.min.js"></script>
 	<!-- <script type="text/javascript" src="js/js-cwsn/popper.min.js"></script> -->
-	<script type="text/javascript" src="js/js-cwsn/modernizr.2.5.3.min.js"></script>
-	<script type="text/javascript" src="js/js-cwsn/jquery-ui-1.8.20.custom.min.js"></script>
-	<script type="text/javascript" src="js/lib/hash.js"></script>
-	<script src="js/js-cwsn/jquery.waypoints.min.js"></script>
-	<script src="js/js-cwsn/jquery.counterup.min.js"></script>
+	<!-- <script type="text/javascript" src="js/js-cwsn/modernizr.2.5.3.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/js-cwsn/jquery-ui-1.8.20.custom.min.js"></script> -->
+	<!-- <script type="text/javascript" src="js/lib/hash.js"></script> -->
+	<!-- <script src="js/js-cwsn/jquery.waypoints.min.js"></script>
+	<script src="js/js-cwsn/jquery.counterup.min.js"></script> -->
 	<script src="js/js-cwsn/custom.js"></script>
 	<script type="text/javascript" src="js/js-cwsn/telemetry_service.js"></script>
 </body>

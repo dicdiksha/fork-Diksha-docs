@@ -2,7 +2,49 @@
 $(document).ready(function () {
 
   $("#blueBook").on("click", function () {
-    var htmlData1 = '<div id="canvas1"><div id="book-zoom1"> <div class="sample-docs" id="sample-docs1"> <div ignore="1" class="next-button"></div> <div ignore="1" class="previous-button"></div> <div class="hard"></div> <div> <div class="gradient"></div>  <div class="coversSprite bookcover21"></div> </div> <div> <div class="gradient"></div>  <div class="coversSprite bookcover22"></div></div> <div> <div class="gradient"></div> <div class="coversSprite bookcover23"></div> </div> <div> <div class="gradient"></div>  <div class="coversSprite bookcover24"></div> </div> <div> <div class="gradient"></div>  <div class="coversSprite bookcover25"></div> </div> <div> <div class="gradient"></div>  <div class="coversSprite bookcover26"></div> </div><div class="hard p8"></div> </div> </div>';
+    console.log("book clicked..");
+    var htmlData1 = `<div id="canvas1"><div id="book-zoom1"> <div class="sample-docs" id="sample-docs1"> <div ignore="1" class="next-button"></div> <div ignore="1" class="previous-button"></div> <div class="hard"></div> 
+    <div> <div class="gradient"></div>  
+    <div class="coversSprite bookcover21">Differences are fluid in nature, not always fixed, respecting individual rights 
+    of self-identity, recognizing that no one is superior and based on several 
+    socio-cultural-linguistic-plurality in the Indian society, some  categorization 
+    have been suggested in the NEP 2020 for addressing the diverse needs and paying 
+    more attention to education of children belonging to socio-economically disadvantaged 
+    groups (SEDGs). SEDGs are broadly categorized into five sub categories, based on gender 
+    identities (particularly female and transgender individuals), socio-cultural identities 
+    (such as Scheduled Castes, Scheduled Tribes, OBCs, linguistic and religious minorities), 
+    geographical identities (such as students from villages, small towns, and aspirational 
+    districts), socio-economic conditions (such as migrant communities, low income households, 
+    children in vulnerable situations, victims of or children of victims of trafficking, 
+    orphans including child beggars in urban areas, and the urban poor) and disabilities. 
+    </div> </div> <div> <div class="gradient"></div>  
+    <div class="coversSprite bookcover22">The Rights of Persons with Disabilities Act 2016 has specified a schedule of disabilities 
+    such as locomotor disability, leprosy cured person, cerebral palsy, dwarfism,  muscular 
+    dystrophy, acid attack victims,  blindness, low-vision, deafness, hard of hearing,  
+    speech & language disability, intellectual disability, specific learning disabilities, 
+    autism spectrum disorder, mental illness, chronic neurological conditions, multiple 
+    sclerosis, parkinson’s disease, haemophilia, thalassemia, sickle cell disease, multiple 
+    disabilities and deaf-blindness or as further notified disability. The NEP 2020 endorses all recommendations of the RPwD Act 2016 with regard to school education. </div></div> <div> <div class="gradient"></div> 
+     <div class="coversSprite bookcover23">The National Education Policy, 2020 has a vision of transforming India by
+     providing high-quality equitable and inclusive education to ensure that all 
+     students with diverse learning needs are able to thrive in the education system
+      with equal learning opportunities in an inclusive environment to realize their 
+      full potentials. Equitable and Inclusive education is a dynamic process which 
+      brings change in the society. Equitable does not mean the equal. Equitable 
+      education is more concerned with the learner's specific learning needs. 
+      Inclusion aims at bringing all these children with their different
+     abilities and needs together to learn under one roof. The need of the hour 
+     is to address the diverse socio-economic, geographic, cultural and idiographic 
+     issues through adopting the policy of 'Teaching all children together'
+      and facilitating 'Equitable and outcome based Learning for All'.</div> </div> <div> <div class="gradient"></div>  
+      <div class="coversSprite bookcover24">In coherence with NEP 2020, a lot of resources have been developed based on 
+      the philosophy of equitable and inclusive education and principles of Universal
+       Design to provide educational e-Content to learners across and beyond the country. 
+       These resources and e-contents are developed by experts in the field following systematic 
+       procedures of evaluation and reviews for delivering the quality end product.  
+       The resources and e-contents are available on 'One Nation One Platform' DIKSHA - 
+       Equitable and Inclusive Education Vertical, which is evolving in nature.</div> </div> 
+       <div> <div class="gradient"></div>  <div class="coversSprite bookcover25"></div> </div> <div class="hard p6"></div> </div> </div>`;
 
     $('#canvas1').css({ visibility: 'hidden' });
 
@@ -237,8 +279,8 @@ $(document).ready(function () {
   });
   yepnope({
     test: Modernizr.csstransforms,
-    yep: ['../js/lib/turn.min.js', '../css/jquery.ui.css'],
-    nope: ['../js/lib/turn.html4.min.js', '../css/jquery.ui.html4.css'],
-    both: ['../css/docs.css', '../js/lib/docs.js']
+    yep: ['js/lib/turn.min.js', 'css/jquery.ui.css'],
+    nope: ['js/lib/turn.html4.min.js', 'css/jquery.ui.html4.css'],
+    both: ['css/docs.css', 'js/lib/docs.js']
   });
 });
