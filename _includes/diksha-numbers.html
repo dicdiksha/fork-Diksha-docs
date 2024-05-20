@@ -1,55 +1,8 @@
 <style>
-  .diksha-numbers .diksha-number-bg {
-    position: relative;
-  }
-  .diksha-numbers .diksha-number-bg .bg-img {
-    width: 100%;
-  }
-  .diksha-number-bg .number-wrapper {
-    position: absolute;
-    left: 7%;
-    top: 15%;
-    width: 85%;
-  }
-  .dashboard-data {
-    background-color: #fff;
-    /* margin-top: 30px; */
-    padding: 10px;
-    box-shadow: 0 0.125rem 0.875rem 0 rgba(0,0,0,0.1);
-    border-radius: 12px;
-    margin: 30px 10px;
-    height: 380px;
-  }
-  .dashboard-card {
-      display: flex;
-      align-items: center;
-      margin: 20px;
-      margin: 36px 0px;
-      
-  }
-  .dashboard-title {
-      display: flex;
-      justify-content: center;
-      font-size: 23px;
-      font-weight: bold;
-      color: #0C4E9E;
-  }
-  .card-logo {
-      margin-right: 16px;
-  }
-  .data-number {
-      font-size: 30px;
-      color: #343082;
-      word-break: break-all;
-  }
-  .data-title{
-    color: #6D6D6D;
-    font-size: 16px;
-  }
-  .diksha-numbers {
-   padding: 50px 0;
-   background-color: #F8F8F8;
-  }
+  /* .diksha-dashbord{ */
+    /* background-color:#F8F8F8;
+    padding: 50px 0; */
+  /* } */
   .view-dashboards{
     display: flex;
     justify-content: center;
@@ -149,121 +102,128 @@
     color: #024F9D;
     font-size: 16px;
     cursor: pointer;
+}
+ 
+@media (max-width: 1024px) {
+  #recipeCarousel .carousel-inner{
+  height: auto;
+}
+}
+/*=============START SLIDER==================*/
+@media (max-width: 768px) {
+    #recipeCarousel .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    #recipeCarousel .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+ 
+#recipeCarousel .carousel-inner .carousel-item.active,
+#recipeCarousel .carousel-inner .carousel-item-next,
+#recipeCarousel.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+ 
+/* display 3 */
+@media (min-width: 768px) {
+   
+    #recipeCarousel .carousel-inner .carousel-item-right.active,
+    #recipeCarousel .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+   
+    #recipeCarousel .carousel-inner .carousel-item-left.active,
+    #recipeCarousel .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+ 
+#recipeCarousel .carousel-inner .carousel-item-right,
+#recipeCarousel .carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
 
-  }
+.dashboard-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+}
 
-  .dashboard-body {
-      min-height: 358px;
-      height: 410px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-  }
+.dashboard-container-box {
+    width: 100% !important;
+    margin: 0 auto;
+}
 
-  .dashboard-container{
-    position: relative;
-  }
-  .dashboard-container .vecter-one{
-    position: absolute;
-      right: -28px;
-      top: -23px;
-      background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-bg/vector1.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 151px;
-      width: 117px;
-
-  }
-  .dashboard-container .vecter-two{
-    position: absolute;
-      right: -2%;
-      top: 48%;
-      background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-bg/vector2.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 125px;
-      width: 105px;
-
-  }
-  .dashboard-container .vecter-three{
-    position: absolute;
-      bottom: -9%;
-      right: 21%;
-      background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-bg/vector3.png);
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      height: 100px;
-      width: 110px;
-
-  }
-  .dashboard-container .vecter-four{
-    position: absolute;
-
-      background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-bg/vector4.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 125px;
-      width: 124px;
-      bottom: -15%;
-      left: 20%;
-
-  }
-  .dashboard-container .vecter-five{
-    position: absolute;
-      left: -4%;
-      bottom: 17%;
-      background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-bg/vector5.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 146px;
-      width: 105px;
-
-  }
-  .dashboard-container .vecter-six{
-    position: absolute;
-      left: -2%;
-      top: -3%;
-      background-image: url({{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-bg/vector6.png);
-      background-repeat: no-repeat;
-      background-position: right top;
-      height: 97px;
-      width: 138px;
-  }
+.view-dashboard-button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.view-dashboard-button-wrapper button.ant-btn {
+    font-size: 15px !important;
+    text-transform: capitalize;
+    box-shadow: 0px 4px 4px 0px #b9deff;
+    font-weight: 500;
+    height: 45px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 192px;
+    background: #005a9e ;
+    color: #fff !important;
+    font-family: 'Lato', sans-serif;
+    border-color: #005a9e;
+    line-height: 20px ;
+    padding: 0.5rem 1.5rem ;
+    border-radius: 50px;
+    border:0px;
+}
+.view-dashboard-button-wrapper button.ant-btn img {
+    margin-right: 10px;
+}
+ 
+/*=============END SLIDER==================*/
 </style>
+ 
+<div class="diksha-dashbord">
+  <div class="dashboard-container container">
+    <div class="dashboard-container-box container-box">
+      <!-- <div class="head-title">
+        <span class="text">
+          <span data-translate="diksha">
+            {{ site.data.text.diksha }}
+          </span>
+          <span class="title-diksha-color" data-translate="dashboard">{{ site.data.text.dashboard }}</span></span>
+        <div class="date-time">                      
+          <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span></div>
+      </div> -->
+     
+      <!-- <div class="row">
+      </div> -->
 
-<div class="diksha-numbers">
-  <div class="head-title">
-      <span class="text" data-translate="diksha">{{site.data.text.diksha}} </span>
-      <span class="title-diksha-color" data-translate="dashboard"> {{site.data.text.dashboard}}</span>
-  </div>
-  <div class="container">
-    <div class="container-box">
-      <div class="dashboard-container">
-        <div class="vecter-one"></div>
-        <div class="vecter-two"></div>
-        <div class="vecter-three"></div>
-        <div class="vecter-four"></div>
-        <div class="vecter-five"></div>
-        <div class="vecter-six"></div>
-        <div class="row">
-          <div class="col-lg-4 col-ms-12 col-sm-12 fix-height">
-            <div class="dashboard-head" data-translate="usageMetrics">
-              {{site.data.text.usageMetrics}}
-            </div>
-              <div class="matrix-dash">
-                
-                <div class="dashboard-body">
-                  <div>
-                    <div class="learn-sessions">
-                      <div class="data">
-                        <div class="data-count" title="{{ site.data.text.numberLearningActivities }}" data-translate-attr="{numberLearningActivities: ['title']}">
-                          <span class="learning-sessions mr-8" id="learningSession">
-                        </div>
-                        <div class="data-lable" data-translate="LearningLessons">{{ site.data.text.LearningLessons }}</div>
-                      </div>
-                      <div class="icon">
-                          <div class="icon-img">
-                            <img src="{{site.data.tenantAssetPath[site.environment].cdnUrl}}assets/homepage/number-image/session.gif" alt="session gif">
+        <div class="row mx-auto my-auto">
+          <iframe src="https://diksha-data.diksha.gov.in/login/?username=anandarup.kar@trigyn.com&redirect=/bi/dashboard/diksha_dashboard/?standalone=1&show_filters=0" width="100%" height="625" sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-downloads"></iframe>
+          <!-- <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+              <div class="carousel-inner w-100" role="listbox">
+                  <div class="carousel-item active">
+                    <div class="col-lg-4 col-md-6 col-sm-12 h-100 d-flex justify-content-center">
+                      <div class="martrics-cards d-flex flex-column justify-content-between ">
+                        <div class="matrics-card  ">
+                          <div class="matrix-heading">
+                            <div class="matrix-title" >
+                              <span data-translate="usagemetrics">  {{site.data.text.usagemetrics}}</span>
+                              <span>
+                                <a href="" class="download-overall">
+                                  <img src="../assets/homepage/download-report.png" alt="download-report"></span>
+                                </a>
+                              </span>
+                            </div>
+                            <div class="matrix-title-desc" data-translate="DIKSHAUsageTillDate">
+                              {{site.data.text.DIKSHAUsageTillDate}}
+                            </div>
+                           
                           </div>
                       </div>
                     </div>
@@ -304,9 +264,9 @@
                     <div class="update-report">
                       <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
                     </div>
-                    <!-- <div class="download download-overall">
+                     <div class="download download-overall">
                       <a href="" data-translate="downloadReport"> {{site.data.text.downloadReport}}</a>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
               </div>
@@ -357,9 +317,9 @@
                     <div class="update-report">
                       <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
                     </div>
-                    <!-- <div class="download">
+                    <div class="download">
                       Download Report
-                    </div> -->
+                    </div> 
                   </div>
                 </div>
 
@@ -424,27 +384,46 @@
                     </div>
                   </div>
                   </div>
-                <div class="dashboard-footer">
-                  <div class="update-report">
-                    <span data-translate="lastupdated">{{ site.data.text.lastupdated }}</span>: <span class="updatedOn"></span>
-                  </div>
-                  <!-- <div class="download" data-translate="downloadReport">
-                    <a href="https://diksha.gov.in/data/reports/state_wise_course_data_public.csv" download  class="download-course"> {{site.data.text.downloadReport}}</a>
-                  </div> -->
-                </div>
-                </div>
-
               </div>
-          </div>
-        
-          
+              <ol class="carousel-indicators">      
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="0" aria-current="page" class="active"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="1" aria-current="page"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="2" aria-current="page"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="3" aria-current="page"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="4" aria-current="page"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="5" aria-current="page"
+                aria-controls="carousel-items" aria-label=""></li>
+                <li data-target="#recipeCarousel" tabindex="0" data-slide-to="6" aria-current="page"
+                aria-controls="carousel-items" aria-label=""></li>
+            </ol>
+              <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div> -->
         </div>
-      </div>
-      <div class="view-dashboards">  
-        <button tabindex="0" class="view-dashboard" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
-      </div>
+     
     </div>
   </div>
+  <div class='view-dashboard-button-wrapper'>
+    <button type="button" class="ant-btn action-button">
+      <img src='/assets/homepage/view-dashboard.svg' />
+     <span>View Dashboard</span>
+   </button>
+  </div>
+  
+  <!-- <div class="view-dashboards">  
+    <button tabindex="0" class="view-dashboard" category="usage" data-translate="btnViewDashboard">{{ site.data.text.btnViewDashboard }}</a> </button>
+  </div> -->
 </div>
 
 
