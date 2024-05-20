@@ -1,0 +1,43 @@
+<style>
+   
+.w-40 {
+    width: 40%;
+}
+.bg-mask-1 > img{
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+    object-fit: contain;
+}
+@media only screen and (max-width: 992px) {
+    .bg-mask-1 > img{
+        height: auto;
+        object-fit: unset;
+    }
+}
+
+
+@media only screen and (max-width : 540px) {
+    
+    /* .carousel-inner .carousel-item.active{
+        height: 250px;
+    } */
+    .bg-mask-1 > img{
+        border-radius: 0;
+    }
+    .intro-section {
+        margin: 0 -24px;
+    }
+    
+}
+</style>
+<header>
+    <nav class="navbar navbar-light p-l-r-0">
+        <div>
+            <a class="navbar-brand" href="#"> <img src="/images/cwsn/logo.png" class="w-40" alt=""> </a>
+        </div>
+    </nav>
+</header>
+<section class="intro-section">
+    <section class="bg-mask-1"> <img src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/banner/cwsn.png" alt="cswn intro image" /> </section>
+</section>
