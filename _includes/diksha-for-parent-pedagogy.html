@@ -1,9 +1,187 @@
 <style>
     .parent-pedagogy-sec img{
-        margin-bottom: 3rem;
         max-width: 100%;
         height: auto;
     }
+    .pedagogy-div img {
+        position: relative;
+    }
+    .pedagogy-div p {
+        line-height: 16.8px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+    .stages-div{
+        position: absolute;
+        width: 34%;
+        text-align: left;
+    }
+    .stages-div.middle {
+        top: 53%;
+        left: 19.7%;
+    }
+    .stages-div.foundational {
+        left: 19.8%;
+         top: 60%;
+    }
+    .stages-div.secondary {
+        top: 24%;
+    right: 14.6%;
+    }
+    .stages-div.preparatory {
+        bottom: 35%;
+        right: 7.6%;
+    }
+    .ped-title{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19.2px;
+        font-family: 'Lato', sans-serif;
+        margin: 3px 0 2px 0;
+    }
+    .ped-title::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 23%;
+        height: 2px;
+        
+        top: 2px;
+    }
+    .ped-title.yellow::before {
+        background-color: #ECBE3E;
+    }
+    .ped-title.purple::before {
+        background-color: #7653a2;
+    }
+    .ped-title.orange::before {
+        background-color: #F89521;
+    }
+    .ped-title.green::before {
+        background-color: #1D868D;
+    }
+    .ped-title.yellow {
+        color: #ECBE3E;
+    }
+    .ped-title.purple {
+        color: #7653a2;
+    }
+    .ped-title.orange {
+        color: #F89521;
+    }
+    .ped-title.green {
+        color: #1D868D;
+    }
+    .pedagogy-mob-wrap{
+        display: block;
+        margin: 0 auto 25px auto;
+    }
+    .stage-name{
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .stage-name span{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #434141;
+        margin-left: 15px;
+    }
+    .stage-box{
+        background-color: #F2F5FA;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stage-count{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 8px;
+    }
+    .stage-count.second{
+        background-color: #F89521;
+    }
+    .stage-count.mid{
+        background-color: #FFD04F;
+    }
+    .stage-count.prep{
+        background-color: #1D868D;
+    }
+    .stage-count.found{
+        background-color: #7653A2;
+    }
+    .stage-count span{
+        color: #fff;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 33.6px;
+    }
+    .stage-title .sec-title{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        font-family: 'Lato', sans-serif;
+        margin: 10px 15px 0 0;
+        position: relative;
+        padding-top: 5px;
+    }
+    .stage-title .sec-title::before {
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 1px;
+        top: 0;
+        right: 0;
+    }
+    .stage-title .sec-title.orange::before{
+        background: #F89521;
+    }
+    .stage-title .sec-title.yellow::before{
+         background: #ECBE3E;
+    }
+    .stage-title .sec-title.green::before{
+         background: #1D868D;
+    }
+    .stage-title .sec-title.purple::before{
+         background: #6C4B94;
+    }
+    .stage-title .sec-title.orange{
+        color: #F89521;
+        text-align: right;
+    }
+    .stage-title .sec-title.yellow{
+        color: #ECBE3E;
+    }
+    .stage-title .sec-title.green{
+        color: #1D868D;
+    }
+    .stage-title .sec-title.purple{
+        color: #6C4B94;
+    }
+    .pedagogy-div{
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+    }
+    .pedagogy-mob-div{
+        display: none;
+    }
+    @media (max-width: 576px){
+        .pedagogy-mob-div{
+            display: block;
+        }
+        .pedagogy-div{
+            display: none;
+        }
+    }
+    @media (min-width: 450px) and (max-width: 576px){
+        .pedagogy-mob-wrap{
+            width: 400px;
+        }
+    }
+   
 </style>
 <div class="parent-pedagogy-sec">
     <div class="nistha-sub-head">
@@ -11,9 +189,95 @@
     </div>
     <div class="container">
         <div class="container-box">
-            <div class="row justify-content-center text-center">
+            <div class="row">
                 <div class="col-sm-12">
-                    <img src="../assets/homepage/nistha-lp/parents/pedagogy.png" alt="pedagogy" class="img-fluid">
+                    <!-- <img src="../assets/homepage/nistha-lp/parents/pedagogy.png" alt="pedagogy" class="img-fluid"> -->
+                    <div class="pedagogy-div">
+
+                            
+                        <img src="../assets/homepage/nistha-lp/parents/pedagogy1.png" alt="pedagogy" class="peadagofy-img">
+                        <div class="stages-div middle">
+                            <div class="ped-title yellow"> Middle Stage</div>
+                            <p>Conceptual & experimental learning in the Science, <br> Math, Arts, Social Sciences & Humanities</p>
+                        </div>
+                        <div class="stages-div foundational">
+                            <div class="ped-title purple"> Foundational Stage</div>
+                            <p>Play/activity-based learning</p>
+                        </div>
+                        <div class="stages-div secondary">
+                            <div class="ped-title orange"> Secondary Stage</div>
+                            <p>Multidisciplinary study, flexibility and student choice of subjects</p>
+                        </div>
+                        <div class="stages-div preparatory">
+                            <div class="ped-title green"> Preparatory Stage</div>
+                            <p>Play, discovery and activity-based learning</p>
+                        </div>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="pedagogy-mob-div">
+                        <div class="pedagogy-mob-wrap">
+                            <div class="stage-name">
+                                <img src="../assets/homepage/nistha-lp/parents/p1.png" alt="">
+                                <span> Grades 9 to 12 (Age 14-18)</span>
+                            </div>
+                            <div class="stage-box">
+                                <div class="stage-title">
+                                    <h3 class="sec-title orange">Secondary Stage</h3>
+                                    <p>Multidisciplinary study, flexibility and student choice of subjects</p>
+                                </div>
+                                <div class="stage-count second">
+                                    <span>4</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pedagogy-mob-wrap">
+                            <div class="stage-name">
+                                <img src="../assets/homepage/nistha-lp/parents/p2.png" alt="">
+                                <span>Grades 6 to 8 (Age 11-14)</span>
+                            </div>
+                            <div class="stage-box">
+                                <div class="stage-count mid">
+                                    <span>3</span>
+                                </div>
+                                <div class="stage-title">
+                                    <h3 class="sec-title yellow">Middle Stage</h3>
+                                    <p>Conceptual & experiential learning in the Science, Math, Arts, Social Sciences & Humanities</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pedagogy-mob-wrap">
+                            <div class="stage-name">
+                                <img src="../assets/homepage/nistha-lp/parents/p3.png" alt="">
+                                <span>Grades 3 to 5 (Age 8-11)</span>
+                            </div>
+                            <div class="stage-box">
+                                <div class="stage-title">
+                                    <h3 class="sec-title green">Preparatory Stage</h3>
+                                    <p>Play, discovery and activity-based learning</p>
+                                </div>
+                                <div class="stage-count prep">
+                                    <span>2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pedagogy-mob-wrap">
+                            <div class="stage-name">
+                                <img src="../assets/homepage/nistha-lp/parents/p4.png" alt="">
+                                <span>Anganwadi/Pre-School/Balvatika,Grades 1 & 2
+                                    (Age 3-8)</span>
+                            </div>
+                            <div class="stage-box">
+                                <div class="stage-count found">
+                                    <span>1</span>
+                                </div>
+                                <div class="stage-title">
+                                    <h3 class="sec-title purple">Foundational Stage</h3>
+                                    <p>Play/activity-based learning</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
