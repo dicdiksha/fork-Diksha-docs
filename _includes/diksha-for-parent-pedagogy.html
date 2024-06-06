@@ -1,8 +1,318 @@
 <style>
     .parent-pedagogy-sec img{
-        margin-bottom: 3rem;
         max-width: 100%;
         height: auto;
+    }    
+    .pedagogy-div{
+        display: block;
+        margin-bottom: 3rem;
+        text-align: center;
+        position: relative;
+    }
+    .pedagogy-div img {
+        position: relative;
+    }
+    .pedagogy-div p {
+        line-height: 18px;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    .stages-div{
+        position: absolute;
+        width: 310px;
+        text-align: left;
+    }
+    .stages-div.middle {
+        top: 220px;
+        left: 190px;
+    }
+    .stages-div.foundational {
+        left: 190px;
+        bottom: 70px;
+    }
+    .stages-div.secondary {
+        top: 93px;
+        right: 190px;
+        text-align: right;
+    }
+    .stages-div.preparatory {
+        bottom: 185px;
+        right: 190px;
+        text-align: right;
+    }
+    .ped-title{
+        font-weight: 600;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        margin: 0px 0 2px 0;
+        width: fit-content;
+    }
+    .ped-title::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1.5px;        
+        top: -3px;
+    }
+    .ped-title.yellow {
+        color: #ECBE3E;
+        position: relative;
+    }
+    .ped-title.yellow::before {
+        left: 0;
+        background-color: #ECBE3E;
+    }
+    .ped-title.purple {
+        color: #7653a2;
+        position: relative;
+    }
+    .ped-title.purple::before {
+        left: 0;
+        background-color: #7653a2;
+    }
+    .ped-title.orange {
+        color: #F89521;
+        position: relative;
+        float: right;
+    }
+    .ped-title.orange::before {
+        right: 0px;
+        background-color: #F89521;
+    }
+    .ped-title.green {
+        color: #1D868D;
+        position: relative;
+        float: right;
+    }
+    .ped-title.green::before {
+        right: 0px;
+        background-color: #1D868D;
+    }
+    .pedagogy-mob-wrap{
+        display: block;
+        margin: 0 auto 25px auto;
+    }
+    .stage-name{
+        display: flex;
+        margin-bottom: 10px;
+        align-items: center;
+    }
+    .stage-name span{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #434141;
+        margin-left: 15px;
+    }
+    .stage-box{
+        background-color: #F2F5FA;
+        display: flex;
+        justify-content: space-between;
+    }
+    .stage-count{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 8px;
+        color: #fff;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 33.6px;
+    }
+    .stage-count.second{
+        background-color: #F89521;
+    }
+    .stage-count.mid{
+        background-color: #FFD04F;
+    }
+    .stage-count.prep{
+        background-color: #1D868D;
+    }
+    .stage-count.found{
+        background-color: #7653A2;
+    }
+    .stage-title .sec-title{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        font-family: 'Lato', sans-serif;
+        margin: 10px 15px 0 0;
+        position: relative;
+        padding-top: 5px;
+    }
+    .stage-title .sec-title::before {
+        position: absolute;
+        content: '';
+        width: 50%;
+        height: 1px;
+        top: 0;
+        right: 0;
+    }
+    .stage-title .sec-title.orange::before{
+        background: #F89521;
+    }
+    .stage-title .sec-title.yellow::before{
+         background: #ECBE3E;
+    }
+    .stage-title .sec-title.green::before{
+         background: #1D868D;
+    }
+    .stage-title .sec-title.purple::before{
+         background: #6C4B94;
+    }
+    .stage-title .sec-title.orange{
+        color: #F89521;
+        text-align: right;
+    }
+    .stage-title .sec-title.yellow{
+        color: #ECBE3E;
+    }
+    .stage-title .sec-title.green{
+        color: #1D868D;
+    }
+    .stage-title .sec-title.purple{
+        color: #6C4B94;
+    }
+    .pedagogy-mobile {
+        display: none;
+    }
+    @media screen and (max-width: 767.99px){
+        .pedagogy-mobile {
+            display: block;
+        }
+        .pedagogy-div {
+            display: none;
+        }
+        .pedagogy-mobile .pedagogy-stage {
+            margin: 0 0 25px 0;
+            display: block;
+            width: 100%;
+        }
+        .pedagogy-mobile .pedagogy-stage .stage-duration {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .pedagogy-mobile .pedagogy-stage .stage-duration span {
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            color: #434141;
+            line-height: 16.8px;
+        }
+        .pedagogy-mobile .pedagogy-stage .pedagogy-stage-description {
+            display: flex;
+            justify-content: space-between;
+            background-color: #F2F5FA;
+        }
+        .pedagogy-mobile .pedagogy-stage .pedagogy-stage-description .pedagogy-stage-desc {
+            padding: 15px;
+        }
+        .pedagogy-mobile .pedagogy-stage .pedagogy-stage-description .pedagogy-stage-desc p {
+            margin: 0px;
+        }
+        .pedagogy-mobile .pedagogy-stage.secondary .pedagogy-stage-description .pedagogy-stage-desc {
+            text-align: end;
+            direction: rtl;
+        }
+        .pedagogy-mobile .pedagogy-stage.preparatory .pedagogy-stage-description .pedagogy-stage-desc {
+            text-align: end;
+            direction: rtl;
+        }
+        .pedagogy-mobile .pedagogy-stage .pedagogy-stage-description .pedagogy-stage-desc h3 {            
+            margin: 0px 0 2px 0;
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            width: fit-content;
+        }
+        .pedagogy-mobile .pedagogy-stage.secondary .pedagogy-stage-description .pedagogy-stage-desc h3 {
+            color: #F89521;
+        }
+        .pedagogy-mobile .pedagogy-stage.middle .pedagogy-stage-description .pedagogy-stage-desc h3 {
+            color: #FFD04F;
+        }
+        .pedagogy-mobile .pedagogy-stage.preparatory .pedagogy-stage-description .pedagogy-stage-desc h3 {
+            color: #1D868D;
+        }
+        .pedagogy-mobile .pedagogy-stage.foundational .pedagogy-stage-description .pedagogy-stage-desc h3 {
+            color: #7653A2;
+        }
+        .pedagogy-mobile .pedagogy-stage .pedagogy-stage-description .pedagogy-stage-desc h3:before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 1.5px;
+            top: -3px;
+        }
+        .pedagogy-mobile .pedagogy-stage.secondary .pedagogy-stage-description .pedagogy-stage-desc h3:before {
+            left: 0;
+            background-color: #F89521;
+        }
+        .pedagogy-mobile .pedagogy-stage.middle .pedagogy-stage-description .pedagogy-stage-desc h3:before {
+            left: 0;
+            background-color: #FFD04F;
+        }
+        .pedagogy-mobile .pedagogy-stage.preparatory .pedagogy-stage-description .pedagogy-stage-desc h3:before {
+            left: 0;
+            background-color: #1D868D;
+        }
+        .pedagogy-mobile .pedagogy-stage.foundational .pedagogy-stage-description .pedagogy-stage-desc h3:before {
+            left: 0;
+            background-color: #7653A2;
+        }
+        .pedagogy-mobile .pedagogy-stage .pedagogy-stage-description .pedagogy-stage-count {
+            padding: 0px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 500;
+            color: #fff;
+        }
+        .pedagogy-mobile .pedagogy-stage.secondary .pedagogy-stage-description .pedagogy-stage-count {
+            background-color: #F89521;
+        }
+        .pedagogy-mobile .pedagogy-stage.middle .pedagogy-stage-description .pedagogy-stage-count {
+            background-color: #FFD04F;
+        }
+        .pedagogy-mobile .pedagogy-stage.preparatory .pedagogy-stage-description .pedagogy-stage-count {
+            background-color: #1D868D;
+        }
+        .pedagogy-mobile .pedagogy-stage.foundational .pedagogy-stage-description .pedagogy-stage-count {
+            background-color: #7653A2;
+        }
+    }
+    /* @media (min-width: 450px) and (max-width: 767.99){
+        .pedagogy-mob-wrap{
+            width: 400px;
+        }
+    } */
+    .grade-and-age {
+        position: absolute;
+        font-size: 14px;
+        width: 95px;
+    }
+    .middle .grade-and-age {
+        top: 115px;
+        right: 55px;
+    }    
+    .foundational .grade-and-age {
+        right: -330px;
+        bottom: -100px;
+    }    
+    .secondary .grade-and-age {
+        left: -345px;
+        top: -25px;
+        text-align: left;
+    }
+    .preparatory .grade-and-age {
+        right: 105px;
+        bottom: -75px;
+        text-align: left;
     }
 </style>
 <div class="parent-pedagogy-sec">
@@ -11,12 +321,7 @@
     </div>
     <div class="container">
         <div class="container-box">
-            <div class="row justify-content-center text-center">
-                <div class="col-sm-12">
-                    <img src="../assets/homepage/nistha-lp/parents/pedagogy.png" alt="pedagogy" class="img-fluid">
-                </div>
-            </div>
+            
         </div>
     </div>
-    
 </div>
