@@ -49,7 +49,7 @@
         min-height: 134px;
     }
     .diksha-feature-wrap .detail p{
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 34.6px;
         color: #434141;
@@ -86,9 +86,9 @@
         z-index: 1;
         left: -10%;
     }
-    .pen-img{
+    /* .pen-img{
         height: 95%;
-    }
+    } */
     @media (max-width: 576px){       
         .nistha-certif-tab.nistha-bluebg-tab{
             flex-direction: column;
@@ -169,25 +169,207 @@
         .feat-num{
             transform: translate(-100%, -50%);
         }
-        .pen-img {
+        /* .pen-img {
             margin-left: -6%;
-        }
+        } */
     }
     @media (min-width: 991px) and (max-width: 1025px){
         .diksha-feature-wrap .detail p{
             font-size: 14px;
         }
     }
+    .feature-desc1, .feature-desc2, .feature-desc3, .feature-desc4 {
+        font-size: 14px;
+        /* background: url(../assets/homepage/nistha-lp/parents/img-diksha-feature-parent01-textbg.svg) no-repeat center right; */
+        position: relative;
+    }
+    .feature-circle {
+        position: absolute;
+        z-index: 1;
+        width: 132px;
+        height: 132px;
+        font-size: 50px;
+        font-weight: 500;
+        color: #434141;
+    }
+    .feature1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../assets/homepage/nistha-lp/parents/img-diksha-feature-parent01-circle.svg) no-repeat center center;
+    }
+    .feature2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../assets/homepage/nistha-lp/parents/img-diksha-feature-parent02-circle.svg) no-repeat center center;
+    }
+    .feature3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../assets/homepage/nistha-lp/parents/img-diksha-feature-parent03-circle.svg) no-repeat center center;
+    }
+    .feature4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url(../assets/homepage/nistha-lp/parents/img-diksha-feature-parent04-circle.svg) no-repeat center center;
+    }
+    .feature-description {
+        border-radius: 20px;
+    }
+    .feature-description.description {
+        transform: rotate(0.65deg);
+        transform-origin: 0% 100%;
+        background-color: #B6C2D2;
+
+    }
+    .feature-desc {
+        padding-left: 150px;
+        padding-right: 15px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        width: 99%;
+        min-height: 118px;
+        border-radius: 20px;
+        transform: rotate(-0.65deg);
+        transform-origin: 0% 100%;
+        background-color: #FFFFFF;
+    }
+    .end-bar {
+        width: 25px;
+        min-height: 85px;
+        position: absolute;
+        top: 14px;
+        right: 0px;
+        z-index: 2;
+        border-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0px;
+    }
+    .feature-desc1 .end-bar {
+        background: #9975C5;
+    }
+    .feature-desc2 .end-bar {
+        background: #FFD04F;
+    }
+    .feature-desc3 .end-bar {
+        background: #1FBFD3;
+    }
+    .feature-desc4 .end-bar {
+        background: #F89521;
+    }
+    .mb-4 {
+        margin-bottom: 30px !important;
+    }
+    @media screen and (max-width:767.98px) {
+        .mobile-wrap .end-bar {
+            right: -5px;
+            width: 20px;
+            height: 85%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .mobile-wrap .feature-circle {
+            width: 80px;
+            height: 80px;
+            background-size: cover;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 0%;
+        }
+        .mobile-wrap .feature-description {
+            margin-left: 20px;
+        }
+        .mobile-wrap .feature-description .feature-desc {
+            padding: 20px;
+            padding-left: 60px;
+            padding-right: 20px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            font-size: 14px;
+            width: 100%;
+            transform: rotate(-1deg);
+            background: linear-gradient(90deg, #EEF5FF 0%, #FFFFFF 73.63%);
+        }
+        .mobile-wrap .feature-description.description {
+            transform: rotate(1deg);
+        }
+    }
 </style>
 <div class="nistha-step-sec sec-padding">
     <div class="nistha-sub-head">
-        <h2>Features of DIKSHA for Parents</h2>
+        <h2>Features of DIKSHA for Parent</h2>
     </div>
     <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-2 text-center d-sm-none d-md-block">
+                <img src="../assets/homepage/nistha-lp/parents/pen1.png" alt="pen" class="pen-img">
+            </div>
+            <div class="col-md-10 mobile-wrap">
+                <div class="row mb-4">
+                    <div class="col-md-12 feature-desc1">
+                        <div class="end-bar"></div>
+                        <div class="feature-circle feature1">
+                            1
+                        </div>
+                        <div class="feature-description description">
+                            <div class="feature-desc">
+                                DIKSHA is accessible in English and varied languages. Parent can choose any language depending upon their comfort and convenience. You can access various learning materials through DIKSHA.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12 feature-desc2">
+                        <div class="end-bar"></div>
+                        <div class="feature-circle feature2">
+                            2
+                        </div>
+                        <div class="feature-description description">
+                            <div class="feature-desc">
+                                Find additional materials like videos, interactive content, textbook, assessments etc. around topics that are difficult to understand for their kids & you can store and share content offline, even without Internet connectivity.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12 feature-desc3">
+                        <div class="end-bar"></div>
+                        <div class="feature-circle feature3">
+                            3
+                        </div>
+                        <div class="feature-description description">
+                            <div class="feature-desc">
+                                Parents can also scan QR codes in their kids textbook for easy access to the associated lessons on the DIKSHA platform & take revision of lessons that kids learnt in class.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-12 feature-desc4">
+                        <div class="end-bar"></div>
+                        <div class="feature-circle feature4">
+                            4
+                        </div>
+                        <div class="feature-description description">
+                            <div class="feature-desc">
+                                Parents can follow classroom activities and can clear their doubts outside school hours through one to one sessions with the teachers. DIKSHA is a comprehensive platform for hassle-free interaction of all the stakeholders involved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="container">
         <div class="container-box">
             <div class="row feat-row">
                 <div class="col-sm-3 text-center">
-                    <img src="../assets/homepage/nistha-lp/parents/pen.png" alt="pen" class="pen-img">
+                    <img src="../assets/homepage/nistha-lp/parents/pen1.png" alt="pen" class="pen-img">
                 </div>
                 <div class="col-sm-10 col-md-9">
                     <div class="diksha-feat-sec">
@@ -267,5 +449,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 </div>
