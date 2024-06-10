@@ -5,10 +5,9 @@ title: terms-of-use
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
-<head>
-  {% include head.html %}
-  <!-- <meta charset="utf-8">
+  <head>
+    {% include head.html %}
+    <!-- <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.ico">
@@ -42,1052 +41,1058 @@ title: terms-of-use
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous"> -->
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
 
-  <style type="text/css">
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url(assets/fonts/NotoSans-Regular.woff2) format("woff2"), url(assets/fonts/NotoSans-Regular.woff) format("woff");
-      font-display: swap
-    }
-
-    @font-face {
-      font-family: 'Noto Sans';
-      src: url(assets/fonts/NotoSans-Bold.woff2) format("woff2"), url(assets/fonts/NotoSans-Bold.woff) format("woff");
-      font-display: swap;
-      font-weight: 700
-    }
-
-    a,
-    body,
-    button,
-    div,
-    footer,
-    header,
-    html,
-    label,
-    li,
-    ol,
-    p,
-    span,
-    ul {
-      font-family: "Noto Sans", sans-serif !important
-    }
-
-    .header {
-      border-bottom: 0.0625rem solid #ccc;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 99;
-      transition: all .8s, border .1s, box-shadow .1s, padding .1s
-    }
-
-    .header-fix {
-      height: 8.5rem
-    }
-
-    h1.logo {
-      margin: 0;
-      padding: 0
-    }
-
-    img.logo1 {
-      height: 2.8125rem
-    }
-
-    img.logo2 {
-      height: 3.75rem;
-      margin-top: 0.3125rem;
-    }
-
-    #initiatorText {
-      display: none !important
-    }
-
-    .hdrtxt1,
-    .hdrtxt2 {
-      line-height: 1;
-      color: #333;
-      text-align: center
-    }
-
-    .hdrtxt1 {
-      font-size: 0.875rem;
-    }
-
-    .hdrtxt1 {
-      padding-top: 0.625rem;
-    }
-
-    #initiatorText1 .hdrtxt2 {
-      padding-bottom: 0.625rem;
-    }
-
-    .hdrtxt2 {
-      font-size: 1rem;
-      font-weight: 600;
-      padding-top: 0.3125rem;
-    }
-
-    .nav-fix {
-      height: 3.625rem;
-      padding: 0.3125rem 0;
-      box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, .16), 0 0 0 0.0625rem rgba(0, 0, 0, .08);
-      border-bottom: 0;
-      transition: all .8s, border .1s, box-shadow .1s, padding .1s;
-    }
-
-    .nav-fix .logo img {
-      max-height: 3rem;
-      transition: all .2s ease-in-out;
-    }
-
-    .nav>li {
-      margin-bottom: 0
-    }
-
-    .navbar.bg-white-header {
-      transition: ease-in .25s;
-      background: #fff;
-      box-shadow: 0 0.125rem 0.875rem 0.625rem rgba(0, 0, 0, .1);
-    }
-
-    .nav .open>a,
-    .nav>li>a {
-      transition: color .25s ease-out;
-      padding: .5rem 1rem;
-      font-size: 0.875rem;
-    }
-
-    .nav>li>a.btn {
-      padding: 0.625rem 0.4375rem !important;
-      margin: 0
-    }
-
-    .nav .open>a:focus,
-    .nav .open>a:hover,
-    .nav>li>a:focus,
-    .nav>li>a:hover {
-      background-color: transparent
-    }
-
-    .nav>li>a.btn-default {
-      border-color: #ccc;
-      color: #4a4a4a
-    }
-
-    .nav>li>a.btn-primary {
-      border-color: #2e6da4;
-      background: #337ab7;
-      color: #fff
-    }
-
-    .nav>li>a.btn-default:focus,
-    .nav>li>a.btn-default:hover,
-    .nav>li>a.btn-primary:focus,
-    .nav>li>a.btn-primary:hover {
-      color: #286090;
-      background-color: #fff;
-      border-color: #204d74;
-      transition: none
-    }
-
-    .header .navbar-toggle {
-      margin: 0;
-      padding: 1.25rem 0.9375rem 0;
-      background-color: #fff !important;
-      font-size: 1rem
-    }
-
-    .navbar-collapse.in {
-      z-index: 2;
-      max-height: 85vh
-    }
-
-    .navbar-collapse .btn {
-      margin-bottom: 0.9375rem !important
-    }
-
-    .nav-tabs .open>a:focus,
-    .nav-tabs .open>a:hover,
-    .nav-tabs>li.active>a,
-    .nav-tabs>li.active>a:focus,
-    .nav-tabs>li.active>a:hover,
-    .nav-tabs>li>a:focus,
-    .nav-tabs>li>a:hover {
-      color: #4a90e2
-    }
-
-    .hash-fix:before {
-      display: block;
-      content: " ";
-      visibility: hidden;
-      margin-top: -3.75rem;
-      height: 3.75rem
-    }
-
-    .header-bg {
-      background: url(assets/imgs/our-teachers-our-heroes.jpg) 0 0 no-repeat;
-      background-size: auto;
-      height: 22.5rem;
-      position: relative
-    }
-
-    @media (min-width:480px) {
-      .header-fix {
-        height: 7.5rem;
+    <style type="text/css">
+      @font-face {
+        font-family: "Noto Sans";
+        src: url(assets/fonts/NotoSans-Regular.woff2) format("woff2"),
+          url(assets/fonts/NotoSans-Regular.woff) format("woff");
+        font-display: swap;
       }
-    }
 
-    @media (min-width:768px) {
+      @font-face {
+        font-family: "Noto Sans";
+        src: url(assets/fonts/NotoSans-Bold.woff2) format("woff2"),
+          url(assets/fonts/NotoSans-Bold.woff) format("woff");
+        font-display: swap;
+        font-weight: 700;
+      }
+
+      a,
+      body,
+      button,
+      div,
+      footer,
+      header,
+      html,
+      label,
+      li,
+      ol,
+      p,
+      span,
+      ul {
+        font-family: "Noto Sans", sans-serif !important;
+      }
+
+      .header {
+        border-bottom: 0.0625rem solid #ccc;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        transition: all 0.8s, border 0.1s, box-shadow 0.1s, padding 0.1s;
+      }
+
       .header-fix {
-        height: 8.625rem;
+        height: 8.5rem;
+      }
+
+      h1.logo {
+        margin: 0;
+        padding: 0;
       }
 
       img.logo1 {
-        height: 3.75rem;
+        height: 2.8125rem;
       }
 
       img.logo2 {
-        height: 4.6875rem;
+        height: 3.75rem;
+        margin-top: 0.3125rem;
       }
 
-      .hdrtxt1 {
-        font-size: 1rem;
-      }
-
-      #initiatorText1 {
-        display: block !important
-      }
-
-      .navbar-collapse .btn {
-        margin-bottom: 0 !important
-      }
-
-      .logo img {
-        max-height: auto
-      }
-    }
-
-    @media (min-width:1200px) {
-      .header-fix {
-        height: 5.125rem;
+      #initiatorText {
+        display: none !important;
       }
 
       .hdrtxt1,
       .hdrtxt2 {
-        text-align: left
+        line-height: 1;
+        color: #333;
+        text-align: center;
       }
 
       .hdrtxt1 {
-        padding-top: 0
+        font-size: 0.875rem;
       }
 
-      #initiatorText {
-        display: block !important;
-        padding-top: 1.375rem;
-        padding-bottom: 1.375rem;
-      }
-
-      #initiatorText1 {
-        display: none !important
-      }
-    }
-
-    @media (min-width:1280px) {
       .hdrtxt1 {
-        font-size: 1.125rem;
-      }
-    }
-
-    .getStartedBtn {
-      cursor: pointer
-    }
-
-    .navbar.bg-white-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 999;
-      background: #fff;
-      box-shadow: 0 0.125rem 0.875rem 0.625rem rgba(0, 0, 0, .1);
-      padding: 0 5rem;
-      border-radius: 0;
-    }
-
-    .navbar.bg-white-header .btn-header-exp {
-      border: 0.0625rem solid rgba(2, 79, 157, .4);
-    }
-
-    .navbar.bg-white-header .btn-header {
-      width: 9.875rem;
-      color: #024f9d;
-      padding: .25rem .5rem !important;
-      font-size: 0.875rem;
-      line-height: 1.5;
-      border-radius: 0.1875rem;
-    }
-
-    .navbar.bg-white-header .btn-header.active,
-    .navbar.bg-white-header .btn-header:hover {
-      font-weight: 700;
-      box-shadow: none
-    }
-
-    .navbar.bg-white-header .navbar-toggle {
-      border: none;
-      position: relative
-    }
-
-    .navbar.bg-white-header .navbar-toggle span {
-      display: block;
-      background-color: #024f9d;
-      height: 0.1875rem;
-      width: 1.5625rem;
-      margin-top: 0.25rem;
-      margin-bottom: 0.25rem;
-      -webkit-transform: rotate(0);
-      -moz-transform: rotate(0);
-      -o-transform: rotate(0);
-      transform: rotate(0);
-      position: relative;
-      left: 0;
-      opacity: 1
-    }
-
-    .navbar.bg-white-header .navbar-toggle span:nth-child(1),
-    .navbar.bg-white-header .navbar-toggle span:nth-child(3) {
-      -webkit-transition: transform .35s ease-in-out;
-      -moz-transition: transform .35s ease-in-out;
-      -o-transition: transform .35s ease-in-out;
-      transition: transform .35s ease-in-out
-    }
-
-    .navbar.bg-white-header .navbar-toggle:not(.collapsed) span:nth-child(1) {
-      position: absolute;
-      left: 0.75rem;
-      top: 0.625rem;
-      -webkit-transform: rotate(135deg);
-      -moz-transform: rotate(135deg);
-      -o-transform: rotate(135deg);
-      transform: rotate(135deg);
-      opacity: .9
-    }
-
-    .navbar.bg-white-header .navbar-toggle:not(.collapsed) span:nth-child(2) {
-      height: 0.75rem;
-      visibility: hidden;
-      background-color: transparent
-    }
-
-    .navbar.bg-white-header .navbar-toggle:not(.collapsed) span:nth-child(3) {
-      position: absolute;
-      left: 0.75rem;
-      top: 0.625rem;
-      -webkit-transform: rotate(-135deg);
-      -moz-transform: rotate(-135deg);
-      -o-transform: rotate(-135deg);
-      transform: rotate(-135deg);
-      opacity: .9
-    }
-
-    .header-img {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      padding: 0.625rem 0.625rem;
-      background: #fff;
-      border-bottom-right-radius: 0.25rem;
-      border-bottom-left-radius: 0.25rem
-    }
-
-    .header-img .img {
-      padding: 0 0.625rem
-    }
-
-    .section-footer {
-      background: var(--section-footer-bg);
-      padding: 4rem 0 1rem;
-      color: #fff
-    }
-
-    .section-footer .img-div {
-      width: 5rem;
-      padding: 0.625rem;
-      background: #fff;
-      margin: 0 auto
-    }
-
-    .section-footer .footer-link {
-      font-size: 0.875rem;
-      color: #fff;
-      text-align: left;
-      border: none;
-      padding: 0 0 0.9375rem 0 !important
-    }
-
-    .section-footer .footer-app-details .txt {
-      font-size: 0.875rem;
-      text-align: center
-    }
-
-    .section-footer .footer-app-details .txt label {
-      font-weight: 400
-    }
-
-    .section-footer .footer-app-details .app-img {
-      width: 150px;
-      margin: 0 auto
-    }
-
-    .section-footer .footer-app-details .app-img img {
-      border-radius: 0.3125rem
-    }
-
-    .section-footer .page-view-count .txt {
-      font-size: 0.875rem
-    }
-
-    .section-footer .page-view-count .count {
-      font-size: 32px
-    }
-
-    .section-footer .contact-div .contact-txt label {
-      text-align: left;
-      font-size: 0.875rem;
-      font-weight: 400
-    }
-
-    .section-footer .contact-div .contact-txt label .footer-link {
-      padding-bottom: 1px !important
-    }
-
-    .section-footer .contact-div .contact-txt label .footer-link:hover {
-      color: #fff
-    }
-
-    .section-footer .contact-div .terms-of-use-txt {
-      text-align: right
-    }
-
-    .section-footer .contact-div .terms-of-use-txt a {
-      cursor: pointer;
-      font-size: 0.875rem;
-      color: #fff;
-      padding: 0 !important;
-    }
-
-    .section-footer .contact-div .terms-of-use-txt a.disabled {
-      opacity: 1
-    }
-
-    .container {
-      width: auto
-    }
-
-    .header-gap {
-      padding-top: 60px
-    }
-
-    * {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box
-    }
-
-    body {
-      font-family: Lato, sans-serif;
-      font-size: 0.875rem;
-      line-height: 1.5;
-      color: var(--default-text);
-      background-color: var(--body-bg);
-    }
-
-    h1,
-    h2 {
-      font-size: 20.25rem;
-      color: #005da2;
-      font-weight: 700;
-      margin-bottom: 30px
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 30px;
-      margin-bottom: 1.5625rem
-    }
-
-    b,
-    strong {
-      font-weight: 700
-    }
-
-    dl,
-    ol,
-    ul {
-      margin-top: 0;
-      margin-bottom: 1rem
-    }
-
-    ol li {
-      margin: 0.625rem 0
-    }
-
-    .list-circle {
-      list-style-type: circle
-    }
-
-    .lower-roman {
-      list-style-type: lower-roman
-    }
-
-    a {
-      text-decoration: none;
-      color: #4a4a4a;
-      cursor: pointer
-    }
-
-    a.no-underline:active,
-    a.no-underline:focus,
-    a.no-underline:hover,
-    a:active,
-    a:focus,
-    a:hover {
-      color: var(--primary-color);
-      text-decoration: none
-    }
-
-    a:focus {
-      outline: 0.3125rem auto -webkit-focus-ring-color;
-      outline-offset: -0.125rem;
-    }
-
-    .container {
-      margin-right: auto;
-      margin-left: auto
-    }
-
-    li {
-      overflow-wrap: break-word
-    }
-
-    ol li ul li {
-      list-style-type: circle
-    }
-
-    @media (min-width:320px) {
-
-      #terms-of-use ol,
-      #terms-of-use ul {
-        padding-inline-start: 2.5rem;
+        padding-top: 0.625rem;
       }
 
-      .container {
-        max-width: 100% !important;
-        width: 100% !important
+      #initiatorText1 .hdrtxt2 {
+        padding-bottom: 0.625rem;
       }
 
-      .section-footer .contact-div .contact-txt label,
-      .section-footer .contact-div .terms-of-use-txt {
-        text-align: center
+      .hdrtxt2 {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-top: 0.3125rem;
       }
 
-      .section-footer .contact-div .contact-txt label .footer-link {
-        padding-bottom: 0.0625rem !important;
+      .nav-fix {
+        height: 3.625rem;
+        padding: 0.3125rem 0;
+        box-shadow: 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.16),
+          0 0 0 0.0625rem rgba(0, 0, 0, 0.08);
+        border-bottom: 0;
+        transition: all 0.8s, border 0.1s, box-shadow 0.1s, padding 0.1s;
+      }
+
+      .nav-fix .logo img {
+        max-height: 3rem;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .nav > li {
+        margin-bottom: 0;
+      }
+
+      .navbar.bg-white-header {
+        transition: ease-in 0.25s;
+        background: #fff;
+        box-shadow: 0 0.125rem 0.875rem 0.625rem rgba(0, 0, 0, 0.1);
+      }
+
+      .nav .open > a,
+      .nav > li > a {
+        transition: color 0.25s ease-out;
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+      }
+
+      .nav > li > a.btn {
+        padding: 0.625rem 0.4375rem !important;
+        margin: 0;
+      }
+
+      .nav .open > a:focus,
+      .nav .open > a:hover,
+      .nav > li > a:focus,
+      .nav > li > a:hover {
+        background-color: transparent;
+      }
+
+      .nav > li > a.btn-default {
+        border-color: #ccc;
+        color: #4a4a4a;
+      }
+
+      .nav > li > a.btn-primary {
+        border-color: #2e6da4;
+        background: #337ab7;
+        color: #fff;
+      }
+
+      .nav > li > a.btn-default:focus,
+      .nav > li > a.btn-default:hover,
+      .nav > li > a.btn-primary:focus,
+      .nav > li > a.btn-primary:hover {
+        color: #286090;
+        background-color: #fff;
+        border-color: #204d74;
+        transition: none;
+      }
+
+      .header .navbar-toggle {
+        margin: 0;
+        padding: 1.25rem 0.9375rem 0;
+        background-color: #fff !important;
+        font-size: 1rem;
+      }
+
+      .navbar-collapse.in {
+        z-index: 2;
+        max-height: 85vh;
+      }
+
+      .navbar-collapse .btn {
+        margin-bottom: 0.9375rem !important;
+      }
+
+      .nav-tabs .open > a:focus,
+      .nav-tabs .open > a:hover,
+      .nav-tabs > li.active > a,
+      .nav-tabs > li.active > a:focus,
+      .nav-tabs > li.active > a:hover,
+      .nav-tabs > li > a:focus,
+      .nav-tabs > li > a:hover {
+        color: #4a90e2;
+      }
+
+      .hash-fix:before {
         display: block;
-        text-align: center
+        content: " ";
+        visibility: hidden;
+        margin-top: -3.75rem;
+        height: 3.75rem;
       }
-    }
 
-    @media (min-width:768px) {
-      .section-footer .contact-div .contact-txt label .footer-link {
-        padding-bottom: 0.0625rem !important;
-        display: inline;
-        text-align: left
+      .header-bg {
+        background: url(assets/imgs/our-teachers-our-heroes.jpg) 0 0 no-repeat;
+        background-size: auto;
+        height: 22.5rem;
+        position: relative;
+      }
+
+      @media (min-width: 480px) {
+        .header-fix {
+          height: 7.5rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .header-fix {
+          height: 8.625rem;
+        }
+
+        img.logo1 {
+          height: 3.75rem;
+        }
+
+        img.logo2 {
+          height: 4.6875rem;
+        }
+
+        .hdrtxt1 {
+          font-size: 1rem;
+        }
+
+        #initiatorText1 {
+          display: block !important;
+        }
+
+        .navbar-collapse .btn {
+          margin-bottom: 0 !important;
+        }
+
+        .logo img {
+          max-height: auto;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .header-fix {
+          height: 5.125rem;
+        }
+
+        .hdrtxt1,
+        .hdrtxt2 {
+          text-align: left;
+        }
+
+        .hdrtxt1 {
+          padding-top: 0;
+        }
+
+        #initiatorText {
+          display: block !important;
+          padding-top: 1.375rem;
+          padding-bottom: 1.375rem;
+        }
+
+        #initiatorText1 {
+          display: none !important;
+        }
+      }
+
+      @media (min-width: 1280px) {
+        .hdrtxt1 {
+          font-size: 1.125rem;
+        }
+      }
+
+      .getStartedBtn {
+        cursor: pointer;
+      }
+
+      .navbar.bg-white-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background: #fff;
+        box-shadow: 0 0.125rem 0.875rem 0.625rem rgba(0, 0, 0, 0.1);
+        padding: 0 5rem;
+        border-radius: 0;
+      }
+
+      .navbar.bg-white-header .btn-header-exp {
+        border: 0.0625rem solid rgba(2, 79, 157, 0.4);
+      }
+
+      .navbar.bg-white-header .btn-header {
+        width: 9.875rem;
+        color: #024f9d;
+        padding: 0.25rem 0.5rem !important;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        border-radius: 0.1875rem;
+      }
+
+      .navbar.bg-white-header .btn-header.active,
+      .navbar.bg-white-header .btn-header:hover {
+        font-weight: 700;
+        box-shadow: none;
+      }
+
+      .navbar.bg-white-header .navbar-toggle {
+        border: none;
+        position: relative;
+      }
+
+      .navbar.bg-white-header .navbar-toggle span {
+        display: block;
+        background-color: #024f9d;
+        height: 0.1875rem;
+        width: 1.5625rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        -webkit-transform: rotate(0);
+        -moz-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+        position: relative;
+        left: 0;
+        opacity: 1;
+      }
+
+      .navbar.bg-white-header .navbar-toggle span:nth-child(1),
+      .navbar.bg-white-header .navbar-toggle span:nth-child(3) {
+        -webkit-transition: transform 0.35s ease-in-out;
+        -moz-transition: transform 0.35s ease-in-out;
+        -o-transition: transform 0.35s ease-in-out;
+        transition: transform 0.35s ease-in-out;
+      }
+
+      .navbar.bg-white-header .navbar-toggle:not(.collapsed) span:nth-child(1) {
+        position: absolute;
+        left: 0.75rem;
+        top: 0.625rem;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        opacity: 0.9;
+      }
+
+      .navbar.bg-white-header .navbar-toggle:not(.collapsed) span:nth-child(2) {
+        height: 0.75rem;
+        visibility: hidden;
+        background-color: transparent;
+      }
+
+      .navbar.bg-white-header .navbar-toggle:not(.collapsed) span:nth-child(3) {
+        position: absolute;
+        left: 0.75rem;
+        top: 0.625rem;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        opacity: 0.9;
+      }
+
+      .header-img {
+        clear: both;
+        display: block;
+        overflow: hidden;
+        padding: 0.625rem 0.625rem;
+        background: #fff;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+
+      .header-img .img {
+        padding: 0 0.625rem;
+      }
+
+      .section-footer {
+        background: var(--section-footer-bg);
+        padding: 4rem 0 1rem;
+        color: #fff;
+      }
+
+      .section-footer .img-div {
+        width: 5rem;
+        padding: 0.625rem;
+        background: #fff;
+        margin: 0 auto;
+      }
+
+      .section-footer .footer-link {
+        font-size: 0.875rem;
+        color: #fff;
+        text-align: left;
+        border: none;
+        padding: 0 0 0.9375rem 0 !important;
+      }
+
+      .section-footer .footer-app-details .txt {
+        font-size: 0.875rem;
+        text-align: center;
+      }
+
+      .section-footer .footer-app-details .txt label {
+        font-weight: 400;
+      }
+
+      .section-footer .footer-app-details .app-img {
+        width: 150px;
+        margin: 0 auto;
+      }
+
+      .section-footer .footer-app-details .app-img img {
+        border-radius: 0.3125rem;
+      }
+
+      .section-footer .page-view-count .txt {
+        font-size: 0.875rem;
+      }
+
+      .section-footer .page-view-count .count {
+        font-size: 32px;
       }
 
       .section-footer .contact-div .contact-txt label {
-        text-align: left
+        text-align: left;
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+
+      .section-footer .contact-div .contact-txt label .footer-link {
+        padding-bottom: 1px !important;
+      }
+
+      .section-footer .contact-div .contact-txt label .footer-link:hover {
+        color: #fff;
       }
 
       .section-footer .contact-div .terms-of-use-txt {
-        text-align: right
-      }
-    }
-
-    @media (min-width:992px) {
-      .container {
-        width: 60rem !important;
-        max-width: 60rem !important;
-      }
-    }
-
-    @media (min-width:1200px) {
-      .container {
-        width: 71.25rem !important;
-        max-width: 71.25rem !important;
-      }
-    }
-
-    ul#termsAndPoliciesTab {
-      padding-inline-start: 0
-    }
-
-    .nav {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      padding-left: 0;
-      margin-bottom: 0;
-      list-style: none
-    }
-
-    .nav-tabs .nav-item {
-      margin-bottom: -0.0625rem;
-    }
-
-    .sub-heading {
-      font-size: 1.125rem;
-    }
-
-    .nav-tabs .nav-item.show .nav-link,
-    .nav-tabs .nav-link.active {
-      color: #495057;
-      background-color: #fff;
-      border-color: #dee2e6 #dee2e6 #fff
-    }
-
-    .nav-tabs .nav-link {
-      border: 0.0625rem solid transparent;
-      border-top-left-radius: .25rem;
-      border-top-right-radius: .25rem
-    }
-
-    .nav-link {
-      display: block;
-      padding: .5rem 1rem
-    }
-
-
-
-    #terms-of-use .nav-tabs .nav-link {
-      border: 1px solid #dfe1e5;
-      color: rgb(41, 56, 69);
-      font-size: 0.875rem;
-    }
-
-    ul#termsAndPoliciesTab>li>a {
-      height: 3rem;
-      box-shadow: 0.375rem 0.375rem 0.125rem 0 rgb(0 0 0 / 10%);
-      font-size: .875rem;
-      background: #fff;
-      color: #008840;
-      border: none;
-      border-radius: 24px;
-      min-height: 2rem;
-      margin: 5px;
-      cursor: pointer;
-      word-wrap: break-word;
-      white-space: normal;
-      outline: 0;
-      transform: rotateZ(0);
-      display: flex;
-
-      transition: box-shadow .1s ease, width .1s ease;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-
-    #terms-of-use #termsAndPolicies {
-      /* border: 0.125rem solid #bcbcbc; */
-      margin-top: 1.25rem;
-      padding: 1.875rem;
-      margin-bottom: 1.875rem;
-    }
-
-    #terms-of-use .TermsOfUseClick,
-    #terms-of-use .TermsOfUseClick:hover,
-    #terms-of-use .tab-pane a,
-    #terms-of-use .tab-pane a:hover {
-      color: var(--primary-color);
-      cursor: pointer;
-      text-decoration: underline;
-    }
-
-    #terms-of-use .TermsOfUseClick:hover,
-    #terms-of-use .tab-pane a:hover {
-      text-decoration: underline;
-    }
-
-    #terms-of-use a,
-    #terms-of-use p,
-    #terms-of-use li,
-    #terms-of-use div {
-      word-break: break-word;
-      font-size: 0.875rem;
-    }
-
-    .arrow-list li {
-      list-style-type: none;
-      position: relative;
-      padding-right: 15px;
-    }
-
-    .arrow-list li:before {
-      content: "\203A";
-      font-size: 25px;
-      position: absolute;
-      top: -10px;
-      left: -20px;
-      color: #4A4A4A;
-    }
-
-
-    #terms-of-use .scrollToTop {
-      cursor: pointer;
-    }
-
-
-    #terms-of-use .scrollToTop .scrollTopWrapper {
-      text-align: center;
-      border-radius: 50%;
-      width: 3.125rem;
-      height: 3.125rem;
-      background: #dfe6ed;
-      position: fixed;
-      padding: 0.625rem;
-      z-index: 1;
-      bottom: 0.625rem;
-      right: 0.625rem;
-    }
-
-
-
-    #terms-of-use .scrollToTop .scrollTopWrapper i {
-      display: block;
-      font-size: 1.5rem;
-      line-height: 0.625rem;
-    }
-
-    #terms-of-use .scrollToTop .scrollTopWrapper span {
-      display: block;
-      font-size: 0.875rem;
-    }
-
-
-
-    #terms-of-use label.tagLine {
-      display: block;
-      font-size: 0.875rem;
-      margin-bottom: 1.875rem;
-    }
-
-    .pull-right {
-      float: right;
-    }
-
-    .text-right {
-      text-align: right !important;
-    }
-
-    #terms-of-use .early-box {
-      /* border: 2px solid #bcbcbc; */
-      margin-top: 8rem;
-      margin-bottom: 1.25rem;
-      text-align: center;
-    }
-
-    #terms-of-use .early-box h6 {
-      margin-bottom: 0.9375rem;
-      color: #024f9d;
-      font-weight: bold;
-    }
-
-    #terms-of-use .early-box ul {
-      padding-left: 0;
-    }
-
-    #terms-of-use .early-box ul li {
-      list-style: none;
-      margin-bottom: 1.5625rem;
-      border-left: 1px solid #dfe1e5;
-    }
-
-    #terms-of-use .early-box ul li a {
-      color: #024f9d;
-      cursor: pointer;
-    }
-
-
-    #terms-of-use .early-box ul li a sub {
-      display: block;
-      color: #333;
-      bottom: -0.5em;
-    }
-
-    #terms-of-use .showVersions.active {
-      font-size: 1.0625rem;
-      font-weight: bold;
-    }
-
-    ul#termsAndPoliciesTab {
-      border-bottom: 1px solid #dfe1e5;
-      padding-bottom: 24px;
-      width: auto;
-    }
-
-    @media only screen and (max-width: 769px) {
-
-      #terms-of-use ul,
-      #terms-of-use ol {
-        padding-inline-start: 1.25rem;
-        width: 100vw;
-        padding-left: 10px;
-
+        text-align: right;
       }
 
-      #terms-of-use.container {
-        max-width: 100%;
-      }
-
-      .version-list {
-        margin-top: -20%;
-      }
-    }
-
-    .navbar.no-sticky-top {
-      position: absolute;
-      background: 0 0;
-      z-index: 999;
-      width: 100%
-    }
-
-    #terms-of-use h3 {
-      font-size: 1.25rem;
-      font-weight: 600;
-    }
-
-    #terms-of-use label.tagLine {
-      display: block;
-      font-size: 0.875rem;
-      margin-bottom: 1.875rem;
-    }
-
-    .heading-term {
-      color: #4A4A4A;
-      font-size: 18px;
-    }
-
-    .pull-right {
-      float: right;
-    }
-
-    .text-right {
-      text-align: right !important;
-    }
-
-    #terms-of-use .nav-tabs {
-      flex-wrap: nowrap;
-      overflow-x: auto;
-    }
-
-    #terms-of-use .nav-tabs .nav-link {
-      white-space: nowrap;
-    }
-
-    #terms-of-use .nav-tabs::-webkit-scrollbar {
-      width: 0.5rem;
-      height: 0.5rem;
-      background-color: #F5F5F5;
-    }
-
-    #terms-of-use .nav-tabs::-webkit-scrollbar-thumb {
-      border-radius: 0.625rem;
-      -webkit-box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.5);
-    }
-
-    .dk-copyright-text {
-      font-size: 0.875rem;
-      color: var(--white);
-      text-align: left;
-      border: none;
-      padding: 0 0 0px 0 !important
-    }
-
-    ul#termsAndPoliciesTab>li>a.active {
-      background-color: #024f9d !important;
-      color: white !important;
-    }
-
-    .first-row-top {
-      margin-top: -30px;
-      margin-bottom: 30px;
-    }
-
-    /* v12 css */
-    .arrow-list-alpha li {
-      list-style-type: lower-alpha;
-    }
-
-    .lower-roman-v12 li {
-      list-style-type: upper-roman;
-    }
-
-    li.sub-heading {
-      font-weight: bold;
-      font-size: 1.2rem !important;
-    }
-
-    @media (max-width:768px) {
-      .TermsOfUseClick{
-        display: none;
-      }
-      #terms-of-use .nav-tabs {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        display: flex;
-        align-content: space-around;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      #termsAndPoliciesTab>.nav-item {
-        width: 100%;
-        border-bottom: 1px solid black;
-        height: 60px;
-        padding: 10px;
-        font-weight: 600;
-      }
-
-      ul#termsAndPoliciesTab>li>a {
-        height: auto;
-        box-shadow: none;
-        background: transparent;
-        border-radius: initial;
-        min-height: 2rem;
-        margin: auto;
+      .section-footer .contact-div .terms-of-use-txt a {
         cursor: pointer;
-        word-wrap: break-word;
-        outline: 0;
-        transform: rotateZ(0);
-        display: flex;
-        transition: box-shadow .1s ease, width .1s ease;
-        justify-content: flex-start;
-        align-items: center;
+        font-size: 0.875rem;
+        color: #fff;
+        padding: 0 !important;
       }
 
-      div#terms-of-use,
-      #header nav {
-        background-color: #e8e9d8;
+      .section-footer .contact-div .terms-of-use-txt a.disabled {
+        opacity: 1;
+      }
+
+      .container {
+        width: auto;
+      }
+
+      .header-gap {
+        padding-top: 60px;
+      }
+
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Lato, sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: var(--default-text);
+        background-color: var(--body-bg);
+      }
+
+      h1,
+      h2 {
+        font-size: 20.25rem;
+        color: #005da2;
+        font-weight: 700;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-bottom: 1.5625rem;
+      }
+
+      b,
+      strong {
+        font-weight: 700;
+      }
+
+      dl,
+      ol,
+      ul {
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      ol li {
+        margin: 0.625rem 0;
+      }
+
+      .list-circle {
+        list-style-type: circle;
+      }
+
+      .lower-roman {
+        list-style-type: lower-roman;
+      }
+
+      a {
+        text-decoration: none;
+        color: #4a4a4a;
+        cursor: pointer;
+      }
+
+      a.no-underline:active,
+      a.no-underline:focus,
+      a.no-underline:hover,
+      a:active,
+      a:focus,
+      a:hover {
+        color: var(--primary-color);
+        text-decoration: none;
+      }
+
+      a:focus {
+        outline: 0.3125rem auto -webkit-focus-ring-color;
+        outline-offset: -0.125rem;
+      }
+
+      .container {
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      li {
+        overflow-wrap: break-word;
+      }
+
+      ol li ul li {
+        list-style-type: circle;
+      }
+
+      @media (min-width: 320px) {
+        #terms-of-use ol,
+        #terms-of-use ul {
+          padding-inline-start: 2.5rem;
+        }
+
+        .container {
+          max-width: 100% !important;
+          width: 100% !important;
+        }
+
+        .section-footer .contact-div .contact-txt label,
+        .section-footer .contact-div .terms-of-use-txt {
+          text-align: center;
+        }
+
+        .section-footer .contact-div .contact-txt label .footer-link {
+          padding-bottom: 0.0625rem !important;
+          display: block;
+          text-align: center;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .section-footer .contact-div .contact-txt label .footer-link {
+          padding-bottom: 0.0625rem !important;
+          display: inline;
+          text-align: left;
+        }
+
+        .section-footer .contact-div .contact-txt label {
+          text-align: left;
+        }
+
+        .section-footer .contact-div .terms-of-use-txt {
+          text-align: right;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .container {
+          width: 60rem !important;
+          max-width: 60rem !important;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .container {
+          width: 71.25rem !important;
+          max-width: 71.25rem !important;
+        }
+      }
+
+      ul#termsAndPoliciesTab {
+        padding-inline-start: 0;
+      }
+
+      .nav {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+      }
+
+      .nav-tabs .nav-item {
+        margin-bottom: -0.0625rem;
+      }
+
+      .sub-heading {
+        font-size: 1.125rem;
+      }
+
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+        color: #495057;
+        background-color: #fff;
+        border-color: #dee2e6 #dee2e6 #fff;
+      }
+
+      .nav-tabs .nav-link {
+        border: 0.0625rem solid transparent;
+        border-top-left-radius: 0.25rem;
+        border-top-right-radius: 0.25rem;
+      }
+
+      .nav-link {
+        display: block;
+        padding: 0.5rem 1rem;
       }
 
       #terms-of-use .nav-tabs .nav-link {
-        /* border-bottom: 1px solid black; */
-        color: black;
-        font-size: medium;
-      }
-      #terms-of-use h3,li.sub-heading {
-    font-size: medium;
-    
-}
-#terms-of-use label.tagLine,p{
-  font-size: small;
-}
-
-      ul#termsAndPoliciesTab>li>a.active {
-        background-color: transparent !important;
-        color: black !important;
+        border: 1px solid #dfe1e5;
+        color: rgb(41, 56, 69);
+        font-size: 0.875rem;
       }
 
-      .nav-link::after {
-        content: "\f106";
-        font-family: 'Font Awesome 5 Free';
-        position: absolute;
-        right: 20px;
-        color: #024f9d;
-      }
-      .up-arrow-accord::after{
-        content: "\f106";
-      }
-      .down-arrow-accord::after{
-        content: "\f107";
+      ul#termsAndPoliciesTab > li > a {
+        height: 3rem;
+        box-shadow: 0.375rem 0.375rem 0.125rem 0 rgb(0 0 0 / 10%);
+        font-size: 0.875rem;
+        background: #fff;
+        color: #008840;
+        border: none;
+        border-radius: 24px;
+        min-height: 2rem;
+        margin: 5px;
+        cursor: pointer;
+        word-wrap: break-word;
+        white-space: normal;
+        outline: 0;
+        transform: rotateZ(0);
+        display: flex;
+
+        transition: box-shadow 0.1s ease, width 0.1s ease;
+        justify-content: space-between;
+        align-items: center;
       }
 
-      .tab-pane .fade .active .show {
-        margin-left: 25px;
-        margin-right: 25px
+      #terms-of-use #termsAndPolicies {
+        /* border: 0.125rem solid #bcbcbc; */
+        margin-top: 1.25rem;
+        padding: 1.875rem;
+        margin-bottom: 1.875rem;
+      }
+
+      #terms-of-use .TermsOfUseClick,
+      #terms-of-use .TermsOfUseClick:hover,
+      #terms-of-use .tab-pane a,
+      #terms-of-use .tab-pane a:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+        text-decoration: underline;
+      }
+
+      #terms-of-use .TermsOfUseClick:hover,
+      #terms-of-use .tab-pane a:hover {
+        text-decoration: underline;
       }
 
       #terms-of-use a,
       #terms-of-use p,
       #terms-of-use li,
       #terms-of-use div {
-        font-size: 14px;
-   
-
+        word-break: break-word;
+        font-size: 0.875rem;
       }
 
-      #terms-of-use ul,
-      #terms-of-use ol {
+      .arrow-list li {
+        list-style-type: none;
+        position: relative;
+        padding-right: 15px;
+      }
+
+      .arrow-list li:before {
+        content: "\203A";
+        font-size: 25px;
+        position: absolute;
+        top: -10px;
+        left: -20px;
+        color: #4a4a4a;
+      }
+
+      #terms-of-use .scrollToTop {
+        cursor: pointer;
+      }
+
+      #terms-of-use .scrollToTop .scrollTopWrapper {
+        text-align: center;
+        border-radius: 50%;
+        width: 3.125rem;
+        height: 3.125rem;
+        background: #dfe6ed;
+        position: fixed;
+        padding: 0.625rem;
+        z-index: 1;
+        bottom: 0.625rem;
+        right: 0.625rem;
+      }
+
+      #terms-of-use .scrollToTop .scrollTopWrapper i {
+        display: block;
+        font-size: 1.5rem;
+        line-height: 0.625rem;
+      }
+
+      #terms-of-use .scrollToTop .scrollTopWrapper span {
+        display: block;
+        font-size: 0.875rem;
+      }
+
+      #terms-of-use label.tagLine {
+        display: block;
+        font-size: 0.875rem;
+        margin-bottom: 1.875rem;
+      }
+
+      .pull-right {
+        float: right;
+      }
+
+      .text-right {
+        text-align: right !important;
+      }
+
+      #terms-of-use .early-box {
+        /* border: 2px solid #bcbcbc; */
+        margin-top: 8rem;
+        margin-bottom: 1.25rem;
+        text-align: center;
+      }
+
+      #terms-of-use .early-box h6 {
+        margin-bottom: 0.9375rem;
+        color: #024f9d;
+        font-weight: bold;
+      }
+
+      #terms-of-use .early-box ul {
+        padding-left: 0;
+      }
+
+      #terms-of-use .early-box ul li {
+        list-style: none;
+        margin-bottom: 1.5625rem;
+        border-left: 1px solid #dfe1e5;
+      }
+
+      #terms-of-use .early-box ul li a {
+        color: #024f9d;
+        cursor: pointer;
+      }
+
+      #terms-of-use .early-box ul li a sub {
+        display: block;
+        color: #333;
+        bottom: -0.5em;
+      }
+
+      #terms-of-use .showVersions.active {
+        font-size: 1.0625rem;
+        font-weight: bold;
+      }
+
+      ul#termsAndPoliciesTab {
+        border-bottom: 1px solid #dfe1e5;
+        padding-bottom: 24px;
+        width: auto;
+      }
+
+      @media only screen and (max-width: 769px) {
+        #terms-of-use ul,
+        #terms-of-use ol {
+          padding-inline-start: 1.25rem;
+          width: 100vw;
+          padding-left: 10px;
+        }
+
+        #terms-of-use.container {
+          max-width: 100%;
+        }
+
+        .version-list {
+          margin-top: -20%;
+        }
+      }
+
+      .navbar.no-sticky-top {
+        position: absolute;
+        background: 0 0;
+        z-index: 999;
         width: 100%;
       }
-      #termsAndPolicies{
-        display: none;
-      }
-      .header-gap{
-        padding: 0px;
-      }
-      #termsOfUse,#privacyPolicy,#contentPolicy,#groupGuidelines,#courseGuidelines,#administratorGuidelines{
-    padding: 8px;
-    padding-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.row {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-#terms-of-use .early-box ul {
-   
-    padding-bottom: 10px;
-}
-.col-md-10 {
-   
-    max-width:initial;
-}
-.col-md-2{
-  max-width:initial;
-}
-.first-row-top {
-    margin-top: auto;
-   margin-bottom: auto; 
-   margin-left: 24px;
-    padding-top: 14px;
-}
-.sb-sitemap-back-btn{
-  background-color: #e8e9d8;
-  border-color:#e8e9d8;
-}
-    }
-  </style>
-</head>
 
-<body>
-  <div class="container-fluid p-0 ">
-    <div id="header">
-      {% include global-header.html %}
-    </div>
-    <!-- <header id="header">
+      #terms-of-use h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+      }
+
+      #terms-of-use label.tagLine {
+        display: block;
+        font-size: 0.875rem;
+        margin-bottom: 1.875rem;
+      }
+
+      .heading-term {
+        color: #4a4a4a;
+        font-size: 18px;
+      }
+
+      .pull-right {
+        float: right;
+      }
+
+      .text-right {
+        text-align: right !important;
+      }
+
+      #terms-of-use .nav-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+      }
+
+      #terms-of-use .nav-tabs .nav-link {
+        white-space: nowrap;
+      }
+
+      #terms-of-use .nav-tabs::-webkit-scrollbar {
+        width: 0.5rem;
+        height: 0.5rem;
+        background-color: #f5f5f5;
+      }
+
+      #terms-of-use .nav-tabs::-webkit-scrollbar-thumb {
+        border-radius: 0.625rem;
+        -webkit-box-shadow: inset 0 0 0.375rem rgba(0, 0, 0, 0.5);
+      }
+
+      .dk-copyright-text {
+        font-size: 0.875rem;
+        color: var(--white);
+        text-align: left;
+        border: none;
+        padding: 0 0 0px 0 !important;
+      }
+
+      ul#termsAndPoliciesTab > li > a.active {
+        background-color: #024f9d !important;
+        color: white !important;
+      }
+
+      .first-row-top {
+        margin-top: -30px;
+        margin-bottom: 30px;
+      }
+
+      /* v12 css */
+      .arrow-list-alpha li {
+        list-style-type: lower-alpha;
+      }
+
+      .lower-roman-v12 li {
+        list-style-type: upper-roman;
+      }
+
+      li.sub-heading {
+        font-weight: bold;
+        font-size: 1.2rem !important;
+      }
+
+      @media (max-width: 768px) {
+        .TermsOfUseClick {
+          display: none;
+        }
+        #terms-of-use .nav-tabs {
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          display: flex;
+          align-content: space-around;
+          justify-content: space-around;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        #termsAndPoliciesTab > .nav-item {
+          width: 100%;
+          border-bottom: 1px solid black;
+          height: 60px;
+          padding: 10px;
+          font-weight: 600;
+        }
+
+        ul#termsAndPoliciesTab > li > a {
+          height: auto;
+          box-shadow: none;
+          background: transparent;
+          border-radius: initial;
+          min-height: 2rem;
+          margin: auto;
+          cursor: pointer;
+          word-wrap: break-word;
+          outline: 0;
+          transform: rotateZ(0);
+          display: flex;
+          transition: box-shadow 0.1s ease, width 0.1s ease;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        div#terms-of-use,
+        #header nav {
+          background-color: #e8e9d8;
+        }
+
+        #terms-of-use .nav-tabs .nav-link {
+          /* border-bottom: 1px solid black; */
+          color: black;
+          font-size: medium;
+        }
+        #terms-of-use h3,
+        li.sub-heading {
+          font-size: medium;
+        }
+        #terms-of-use label.tagLine,
+        p {
+          font-size: small;
+        }
+
+        ul#termsAndPoliciesTab > li > a.active {
+          background-color: transparent !important;
+          color: black !important;
+        }
+
+        .nav-link::after {
+          content: "\f106";
+          font-family: "Font Awesome 5 Free";
+          position: absolute;
+          right: 20px;
+          color: #024f9d;
+        }
+        .up-arrow-accord::after {
+          content: "\f106";
+        }
+        .down-arrow-accord::after {
+          content: "\f107";
+        }
+
+        .tab-pane .fade .active .show {
+          margin-left: 25px;
+          margin-right: 25px;
+        }
+
+        #terms-of-use a,
+        #terms-of-use p,
+        #terms-of-use li,
+        #terms-of-use div {
+          font-size: 14px;
+        }
+
+        #terms-of-use ul,
+        #terms-of-use ol {
+          width: 100%;
+        }
+        #termsAndPolicies {
+          display: none;
+        }
+        .header-gap {
+          padding: 0px;
+        }
+        #termsOfUse,
+        #privacyPolicy,
+        #contentPolicy,
+        #groupGuidelines,
+        #courseGuidelines,
+        #administratorGuidelines {
+          padding: 8px;
+          padding-top: 20px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        .row {
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+        }
+        #terms-of-use .early-box ul {
+          padding-bottom: 10px;
+        }
+        .col-md-10 {
+          max-width: initial;
+        }
+        .col-md-2 {
+          max-width: initial;
+        }
+        .first-row-top {
+          margin-top: auto;
+          margin-bottom: auto;
+          margin-left: 24px;
+          padding-top: 14px;
+        }
+        .sb-sitemap-back-btn {
+          background-color: #e8e9d8;
+          border-color: #e8e9d8;
+        }
+      }
+    </style>
+  </head>
+<style>
+  .td-heading {
+    width: 10rem;
+    padding: 5px;
+}
+table, tr, td {
+    border: 1px solid black;
+}
+</style>
+  <body>
+    <div class="container-fluid p-0">
+      <div id="header">{% include global-header.html %}</div>
+      <!-- <header id="header">
             <nav class="navbar navbar-expand-lg navbar-light py-0 pl-5 pr-5 no-sticky-top bg-white-header d-none d-lg-flex"
                 id="menuHeader">
                 <a class="navbar-brand py-0 domain-binder" href="#">
@@ -1127,142 +1132,144 @@ title: terms-of-use
                 </div>
             </nav>
         </header> -->
-    <div class="container main-cont header-gap" id="terms-of-use">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-      <div id="scrollMainContent"></div>
-      <div class="row first-row-top">
-        <button type="button" class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn"
-          onclick="window.location.href='index.html'" title="Go Back"><i class="arrow left"></i> Go Back</button>
-        <!-- <button type="button" class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn" onclick="history.back()" title="Go Back"><i class="arrow left"></i> Go Back</button> -->
-      </div>
-      <div class="row first-row-bottom">
-        <div class="col-md-10" id="actualData">
-          <div class="row tncs" id="version12">
-
-          </div>
-          <div class="row tncs" id="version11">
-
-          </div>
-          <div class="row tncs" id="version10">
-
-          </div>
-          <div class="row tncs" id="version9">
-
-          </div>
-          <div class="row tncs" id="version8">
-
-          </div>
-          <div class="row tncs" id="version7">
-
-          </div>
-          <div class="row tncs" id="version6">
-
-          </div>
-          <div class="row tncs" id="version5">
-
-          </div>
-          <div class="row tncs" id="version4">
-
-          </div>
-          <div class="row tncs" id="version3">
-
-          </div>
-          <div class="row tncs" id="version2">
-
-          </div>
-          <div class="row tncs" id="version1">
-
-          </div>
+      <div class="container main-cont header-gap" id="terms-of-use">
+        <link
+          rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+          crossorigin="anonymous"
+        />
+        <div id="scrollMainContent"></div>
+        <div class="row first-row-top">
+          <!-- <button type="button" class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn"
+          onclick="history.back()" title="Go Back"><i class="arrow left"></i> Go Back</button> -->
+          <button
+            type="button"
+            class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn"
+            onclick="window.location.href='index.html'"
+            title="Go Back"
+          >
+            <i class="arrow left"></i> Go Back
+          </button>
+          <!-- <button type="button" class="sb-btn sb-btn-xs sb-btn-outline-primary d-flex flex-ai-center sb-sitemap-back-btn" onclick="history.back()" title="Go Back"><i class="arrow left"></i> Go Back</button> -->
         </div>
-        <div class="col-md-2 version-list">
-          <div class="early-box">
-            <div class="row">
-              <div class="col-12">
-                <h6>Earlier versions</h6>
-                <ul>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v12" versionToShow="version12">
-                      Version - 12
-                      <sub>( October 25, 2021 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v11" versionToShow="version11">
-                      Version - 11
-                      <sub>( April 26, 2021 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v10" versionToShow="version10">
-                      Version - 10
-                      <sub>( February 3, 2021 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v9" versionToShow="version9">
-                      Version - 9
-                      <sub>( December 21, 2020 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v8" versionToShow="version8">
-                      Version - 8
-                      <sub>( October 22, 2020 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v7" versionToShow="version7">
-                      Version - 7
-                      <sub>( August 05, 2020 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v6" versionToShow="version6">
-                      Version - 6
-                      <sub>( June 23, 2020 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v5" versionToShow="version5">
-                      Version - 5
-                      <sub>( May 21, 2020 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v4" versionToShow="version4">
-                      Version - 4
-                      <sub>( Jan 9, 2020 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v3" versionToShow="version3">
-                      Version - 3
-                      <sub>( May 19, 2019 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v2" versionToShow="version2">
-                      Version - 2
-                      <sub>( Jan 2, 2019 )</sub>
-                    </a>
-                  </li>
-                  <li tabindex="0">
-                    <a class="showVersions" id="v1" versionToShow="version1">
-                      Version - 1
-                    </a>
-                  </li>
-                </ul>
+        <div class="row first-row-bottom">
+          <div class="col-md-10" id="actualData">
+            <div class="row tncs" id="version12"></div>
+            <div class="row tncs" id="version11"></div>
+            <div class="row tncs" id="version10"></div>
+            <div class="row tncs" id="version9"></div>
+            <div class="row tncs" id="version8"></div>
+            <div class="row tncs" id="version7"></div>
+            <div class="row tncs" id="version6"></div>
+            <div class="row tncs" id="version5"></div>
+            <div class="row tncs" id="version4"></div>
+            <div class="row tncs" id="version3"></div>
+            <div class="row tncs" id="version2"></div>
+            <div class="row tncs" id="version1"></div>
+          </div>
+          <div class="col-md-2 version-list">
+            <div class="early-box">
+              <div class="row">
+                <div class="col-12">
+                  <h6>Earlier versions</h6>
+                  <ul>
+                    <li tabindex="0">
+                      <a
+                        class="showVersions"
+                        id="v12"
+                        versionToShow="version12"
+                      >
+                        Version - 12
+                        <sub>( October 25, 2021 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a
+                        class="showVersions"
+                        id="v11"
+                        versionToShow="version11"
+                      >
+                        Version - 11
+                        <sub>( April 26, 2021 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a
+                        class="showVersions"
+                        id="v10"
+                        versionToShow="version10"
+                      >
+                        Version - 10
+                        <sub>( February 3, 2021 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v9" versionToShow="version9">
+                        Version - 9
+                        <sub>( December 21, 2020 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v8" versionToShow="version8">
+                        Version - 8
+                        <sub>( October 22, 2020 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v7" versionToShow="version7">
+                        Version - 7
+                        <sub>( August 05, 2020 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v6" versionToShow="version6">
+                        Version - 6
+                        <sub>( June 23, 2020 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v5" versionToShow="version5">
+                        Version - 5
+                        <sub>( May 21, 2020 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v4" versionToShow="version4">
+                        Version - 4
+                        <sub>( Jan 9, 2020 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v3" versionToShow="version3">
+                        Version - 3
+                        <sub>( May 19, 2019 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v2" versionToShow="version2">
+                        Version - 2
+                        <sub>( Jan 2, 2019 )</sub>
+                      </a>
+                    </li>
+                    <li tabindex="0">
+                      <a class="showVersions" id="v1" versionToShow="version1">
+                        Version - 1
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div class="scrollToTop">
+          <span class="scrollTopWrapper"
+            ><i class="fas fa-chevron-up"></i><span>TOP</span></span
+          >
+        </div>
       </div>
-      <div class="scrollToTop">
-        <span class="scrollTopWrapper"><i class="fas fa-chevron-up"></i><span>TOP</span></span>
-      </div>
-    </div>
-    <!-- <footer id="footer">
+      <!-- <footer id="footer">
             <div class="section-footer bg-black" id="sectionFooter">
                 <div class="container">
                     <div class="row links-container">
@@ -1293,34 +1300,39 @@ title: terms-of-use
                 </div>
             </div>
         </footer> -->
-    <footer id="footer">
-      {% include global-footer.html %}
-    </footer>
-  </div>
-  <script type="text/javascript">
-    var url_string = window.location.href
-    var url = new URL(url_string);
-    var c = url.searchParams.get("session");
-    if (c == 'true') {
-      document.getElementById("loggedinUser").classList.remove("hide");
-      document.getElementById("userlogout").classList.remove("hide");
-
-    } else {
-      document.getElementById("nonloggedinUser").classList.remove("hide");
-      document.getElementById("userlogin").classList.remove("hide");
-    }
-  </script>
-  <script async defer src="{{site.baseurl}}/assets/js/default/fontSizing.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+      <footer id="footer">{% include global-footer.html %}</footer>
+    </div>
+    <script type="text/javascript">
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var c = url.searchParams.get("session");
+      if (c == "true") {
+        document.getElementById("loggedinUser").classList.remove("hide");
+        document.getElementById("userlogout").classList.remove("hide");
+      } else {
+        document.getElementById("nonloggedinUser").classList.remove("hide");
+        document.getElementById("userlogin").classList.remove("hide");
+      }
     </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+    <script
+      async
+      defer
+      src="{{site.baseurl}}/assets/js/default/fontSizing.js"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
 
-  <script type="text/javascript">
-    var version12 = `<div class="row">
+    <script type="text/javascript">
+      var version12 = `<div class="row">
     <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
       <li class="nav-item" role="tab">
         <a
@@ -1398,7 +1410,7 @@ title: terms-of-use
       >
         <h3 class="heading-term">Terms of Use</h3>
         <label class="tagLine"
-          ><em>( Last updated on <b>25-10-2021</b> )</em></label
+          ><em>( Last updated on <b>05-06-2024</b> )</em></label
         >
         <p>
           This website is designed, developed and maintained by the National Council for Educational Research and Training (NCERT) (Ministry of Education (MoE), Government of India) (together referred to as <strong>“GoI”</strong>). 
@@ -1691,7 +1703,7 @@ title: terms-of-use
   
               </li>
               <li>
-                Registered Users are solely responsible for maintaining the security and confidentiality of the username and password. Any unauthorised use of your username or password or any other breach of security must be notified by sending an email notification to support@teamdiksha.org. GoI, administrators and technology support providers of DIKSHA and Institutional Users will not be liable for any loss or damage arising from failure to comply with this provision. 
+                Registered Users are solely responsible for maintaining the security and confidentiality of the username and password. Any unauthorised use of your username or password or any other breach of security must be notified by sending an email notification to dikshahelp2023@gmail.com. GoI, administrators and technology support providers of DIKSHA and Institutional Users will not be liable for any loss or damage arising from failure to comply with this provision. 
   
               </li>
               <li>
@@ -1738,7 +1750,7 @@ title: terms-of-use
       >
         <h3><strong>Privacy Policy of DIKSHA</strong></h3>
         <label class="tagLine"
-          ><em>( Last updated on <b>25-10-2021</b> )</em></label
+          ><em>( Last updated on <b>05-06-2024</b> )</em></label
         >
         <p>
           DIKSHA (Digital Infrastructure for Knowledge Sharing ) is the National Platform for School Education for the benefit of teachers and learners across India. DIKSHA is an initiative of National Council for Educational Research and Training (NCERT) (Ministry of Education (MoE), Government of India). Users of DIKSHA can access content for learning on the web at https://diksha.gov.in/, through the DIKSHA mobile application, and the desktop application.
@@ -1956,7 +1968,55 @@ title: terms-of-use
 
               </li>
             </ol>
-         
+
+            <li class="sub-heading">When you create an account and/or use the Services, including through a third-party platform, we collect the following data:</li>
+            <table>
+              <tr>
+                <td class ="td-heading"><b>Account and Related Data</b></td>
+                <td>
+                    In order to use certain features (like joining a course), you need to create a user account. When you create or update your account, or provide your information via any other forms or means, we collect and store the data you provide, like your name, email address, password, state, district, cluster, block, school, IP address, year of birth, gender, photograph, phone number, 
+                      School U-DISE code or Organisation code / number, ID as provided by your state/board/organisation, Geographical Information, and assign you a unique identifying number (“DIKSHA ID”). If you are a registered user, we may also have access to your login credentials.
+                    Declared Information of Registered Users is collected with their explicit consent when they choose to provide the same on DIKSHA, through their profile or otherwise.
+                </td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Profile Data</b></td>
+                <td>You can also choose to provide profile information like a photo, or other data. Your Profile Data will be private and can be accessed by you or the regulators.</td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Other Identification Data</b></td>
+                <td>In order to provide our Services, we may request you to provide certain other identification details such as Aadhar Card number, or such similar identification details.</td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Program Data</b></td>
+                <td>When you enrol into a program / course, we collect certain data including without limitation which program, courses, assignments and quizzes you’ve started and completed; your exchanges with instructors, and other students; and essays, answers to questions, other items submitted to satisfy course requirements, web-cam recordings, posts made to public forums through our Services. We also collect and retain your data for the certificates issued to you. 
+                To clarify, NCERT, or its educational partners and third-party service providers may also collect certain information from you in conjunction with enrolment, assignments, exams and other assessments related to the programs. NCERT may also collect information from you or about your performance or your accomplishments, such as quiz/exam scores, grades, project evaluations, teacher evaluations and other evaluations of your performance or accomplishments.
+                </td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Data About Your Accounts on Other Services</b></td>
+                <td>We may obtain certain information through your social media or other online accounts if they are connected to your DIKSHA account. If you log in to DIKSHA via Google or another third-party platform or service, we ask for your permission to access certain information about that other account. For example, depending on the platform or service we may collect your name, educational details, account ID number, login email address, etc.
+                Those platforms and services make information available to us through their APIs. The information we receive depends on what information you (via your privacy settings) or the platform or service decide to give us.
+                If you access or use our Services through a third-party platform or service, or click on any third-party links, the collection, use, and sharing of your data will also be subject to the privacy policies and other agreements of that third party.
+                </td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Communications and Support</b></td>
+                <td>If you contact us for support or to report a problem or concern (regardless of whether you have created an account), we collect and store your contact information, messages, and other data about you like your name, email address, location, operating system, IP address, and any other data you provide or that we collect through automated means (which we cover below). We use this data to respond to you and research your question or concern, in accordance with this Privacy Policy. In order to have a record of our communication with you and for internal training and quality maintenance purposes, we may also record your calls with us.</td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Behavioural Data</b> </td>
+                <td>Data inferred or assumed information relating to your behaviour and interests based on your online activity on our sites, which may be derived from the Usage Data (mentioned below). </td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Legal Requirements<b></td>
+                <td>Information needed in order to comply with any procedures, laws, and regulations which apply to us where it is necessary for our legitimate interests or the legitimate interests of others </td>
+              </tr>
+              <tr>
+                <td class ="td-heading"><b>Any other information</b> </td>
+                <td>Any other information you choose to directly provide to us in connection with your use of the Services </td>
+              </tr>
+            </table>
        
             <li class="sub-heading">Who has access to User data and information?</li>
             <ol class="arrow-list-alpha" type="a">
@@ -2047,6 +2107,27 @@ title: terms-of-use
 
                   </li>
                   <li>
+                    Manage your account preferences;
+                  </li>
+                  <li>
+                    Solicit feedback from users;
+                  </li>
+                  <li>
+                    Learn more about you by linking your data with additional data through third-party data providers or analysing the data with the help of analytics service providers;
+                  </li>
+                  <li>
+                    Identify unique users across devices;
+                  </li>
+                  <li>
+                    Improve our Services and develop new products, services, and features;
+                  </li>
+                  <li>
+                    Analyse trends and traffic, and track usage data;
+                  </li>
+                  <li>
+                    As required or permitted by law; or
+                  </li>
+                  <li>
                     To report anonymised usage of DIKSHA and its Content by Administrators to improve DIKSHA over time;
 
                   </li>
@@ -2077,10 +2158,38 @@ title: terms-of-use
                     For any other use that may be described to you at the time of collection.
 
                   </li>
+                  <li>
+                    As we, in our sole discretion, otherwise determine to be necessary to ensure the safety or integrity of our users, employees, third parties, the public, or our Services.
+                  </li>
                 </ol>
               </li>
               <li>
-                The administrators and technology support providers of DIKSHA may use third parties as service providers to facilitate or outsource one or more aspects of service operations that are provided on DIKSHA (e.g., search technology, discussion boards, technical service providers, affiliate) and therefore some of your information or data may be provided directly to these service providers. These service providers are subject to confidentiality and other legal restrictions that prohibit their use of the information provided to them for any purpose other than to facilitate specific website related operations. 
+                The administrators and technology support providers of DIKSHA may use third parties as service providers to facilitate or outsource one or more aspects of service operations that are provided on DIKSHA (e.g., search technology, discussion boards, technical service providers, affiliate) and therefore some of your information or data may be provided directly to these service providers. These service providers are subject to confidentiality 
+                and other legal restrictions that prohibit their use of the information provided to them for any purpose other than to facilitate specific website related operations. 
+
+              </li> 
+              <li>
+                Communicate with you about your account by:
+                <ol class="lower-roman-v12">
+                  <li>
+                    Responding to your questions and concerns through email, SMS, WhatsApp or call; 
+
+                  </li>
+                  <li>
+                    NCERT or its technical partner may contact you to understand your issue and help in resolving same;
+
+                  </li>
+                  <li>
+                    Sending you administrative messages and information, including messages from instructors, notifications about changes to our Service, and updates to our agreements;
+                  </li>
+                  <li>
+                    Sending you information and in-app messages about your progress in courses, new services, new features, and other available courses (which you can opt out of at any time);
+                  </li>
+                  <li>
+                    Sending push notifications to your wireless device to provide updates and other relevant messages;
+                  </li>
+
+                </ol>
 
               </li>
               <li>
@@ -2118,8 +2227,8 @@ title: terms-of-use
               </li>
               <li>
                 Administrators are responsible for any use of data and information outside the proper use and shall be held accountable for the violation of the terms and policies of DIKSHA, as well as applicable laws and policies of India for any misuse. Administrators shall be liable for such actions and for any loss or damage arising from failure to comply with the obligation of proper use of your data and information. Should you believe that your data or information is being used in a manner inconsistent with this Privacy Policy, please contact the DIKSHA support team with the details of your concern by sending an email to 
-                <a href="mailto:support@teamdiksha.org"
-                  ><b>support@teamdiksha.org</b></a
+                <a href="mailto:dikshahelp2023@gmail.com"
+                  ><b>dikshahelp2023@gmail.com</b></a
                 >.
               </li>
               <li>
@@ -2127,6 +2236,13 @@ title: terms-of-use
 
               </li>
             </ol>
+
+            
+            It is hereby clarified that irrespective of the fact that you have registered yourself under DND or DNC or NCPR service, or any such similar service, you still authorize us to give you a call from us or any third party for the above mentioned purposes till you withdraw/cancel your registration with us. 
+              NCERT may send email notices or contact you via SMS, phone call or any other medium to communicate about its Services. We may, from time to time, use business partners, operational service providers and subcontractors to operate and provide our services to you and to comply with legal and regulatory requirements. 
+              As necessary under this Privacy Policy, our service providers are required to protect the information we provide them in a manner that is consistent with this Privacy Policy. 
+              Although we exercise care in selecting our service providers and require them to protect information as mentioned above, they are independent third parties and we may not have control on their privacy practices.  
+            
          
         
             <li class="sub-heading">How is User data and information stored?</li>
@@ -2152,8 +2268,8 @@ title: terms-of-use
               </li>
               <li>
                 Additionally, a variety of methods such as network and infrastructure security, encryption and manual security procedures are used to secure your information and data against loss or damage and to help protect the accuracy and security of your personal information / general information / usage data and to prevent unauthorized access or improper use. If you think that DIKSHA or any of your personal information / general information / usage data is not secure or that there has been unauthorized access to the website or your personal data, please contact 
-                <a href="mailto:support@teamdiksha.org"
-                  ><b>support@teamdiksha.org</b></a
+                <a href="mailto:dikshahelp2023@gmail.com"
+                  ><b>dikshahelp2023@gmail.com</b></a
                 >
                 immediately.
               </li>
@@ -2165,12 +2281,33 @@ title: terms-of-use
           
         
             <li class="sub-heading">How long is User data and information stored?</li>
-            <ol class="arrow-list-alpha" type="a">
-              <li>
-                Your data will not be retained for a period more than necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law or for directly related legitimate purposes.
+              <ol class="arrow-list-alpha" type="a">
 
-              </li>
-            </ol>
+                <li>	
+                  It is not possible for us to determine a specific period for which we may retain your data. However, we will not retain your data for longer than necessary, taking into account the following:
+                </li>
+                <li>
+                  The purpose(s) and use of your data, both now and in the future (such as whether it is necessary to continue to store that information in furtherance of our obligations under a contract with you, or to contact you in the future);
+                </li>
+                <li>
+                  Whether we have any legal obligation to continue processing your data (such as any record-keeping obligations imposed by any applicable law);
+                </li>
+                <li>
+                  Whether we have any further legal basis to continue processing your information (including your consent);
+                </li>
+                <li>
+                  Whether there is any relevant agreed industry practice on how long such data should be retained;
+                </li>
+                <li>
+                  The levels of risk and liability involved for us to continue holding the data;
+                </li>
+                <li>
+                  The amount of difficulty we may face to ensure the data can be kept updated and accurate; and
+                </li>
+                <li>
+                  Any other circumstances (such as the nature and status of NCERT’s relationship with you).
+                </li>
+              </ol>
        
             <li class="sub-heading"
               >What are the system permissions required by the DIKSHA?</li
@@ -2237,16 +2374,27 @@ title: terms-of-use
             </ol>
        
        
-            <li class="sub-heading">Deleting your information</li>
+            <li class="sub-heading">Deleting your account and information</li>
             <ol class="arrow-list-alpha" type="a">
               <li>
-                If you wish to have the information or data that you have provided deleted, you can always do so by sending an email request to
-                <a href="mailto:support@teamdiksha.org"
-                  ><b>support@teamdiksha.org</b></a
-                >. You may note that deletion of certain information or data may lead to cancellation of your registration with DIKSHA and your access to certain features of DIKSHA. You also agree and acknowledge that certain data or information cannot be deleted or may be prohibited to be deleted as required under any applicable law, law enforcement requests or under any judicial proceedings.
-
+                If you are a student, or a teacher, to delete your account permanently please click on Delete Account from your profile page and follow the steps on screen. 
+              </li>
+              <li>
+                Alternatively you can drop in an email to <email ID>. Our team will review your request and respond back in 30 days. 
+              </li>
+              <li>
+                Account can be deleted from web or mobile app. 
+              </li>
+              <li>
+                Do note that once the account is deleted it cannot be restored back. 
+              </li>
+              <li>
+                Please note: even after your account is terminated, some or all of your data may still be visible to others, including without limitation any data that has been (a) copied, stored, or disseminated by other users (including in course comment); (b) shared or disseminated by you or others (including in your shared content); or (c) posted to a third-party platform. Even after your account is terminated, we retain your data for as long as we have a legitimate purpose to do so (and in accordance with applicable law), including to assist with legal obligations, resolve disputes, and enforce our agreements. We may retain and disclose such data pursuant to this Privacy Policy after your account has been terminated.
               </li>
             </ol>
+
+            Please note that we post deletion, we may retain certain data where we have a lawful basis to do so, including for mandatory record-keeping and to complete transactions.
+            <br>
         
          
             <li class="sub-heading">Changes to this Privacy Policy</li>
@@ -2263,8 +2411,8 @@ title: terms-of-use
               <li>
                 If you have any queries, comments, or requests, please contact us
                 by sending an email to
-                <a href="mailto:support@teamdiksha.org"
-                  ><b>support@teamdiksha.org</b></a
+                <a href="mailto:dikshahelp2023@gmail.com"
+                  ><b>dikshahelp2023@gmail.com</b></a
                 >.
               </li>
             </ol>
@@ -3758,7 +3906,7 @@ title: terms-of-use
   
   
   `;
-    var version11 = `<div class="row">
+      var version11 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab">
       <a
@@ -3836,7 +3984,7 @@ title: terms-of-use
     >
       <h3 class="heading-term">Terms of Use</h3>
       <label class="tagLine"
-        ><em>( Last updated on <b>28-04-2021</b> )</em></label
+        ><em>( Last updated on <b>05-06-2024</b> )</em></label
       >
       <p>
         This website is designed, developed and maintained by the National
@@ -3860,9 +4008,8 @@ title: terms-of-use
           <h4 class="sub-heading">Definitions</h4>
           <ol class="arrow-list" type="a">
             <li>
-              Administrator means any natural person who is a
-              Registered User and who is authorised to be an administrator by an
-              Institutional User on behalf of such Institutional User.
+              Administrator means any natural person who is a Registered User and who is authorised to be an 
+              administrator by an Institutional User on behalf of such Institutional User.
             </li>
             <li>
               Content means and includes, as the context
@@ -4401,7 +4548,7 @@ title: terms-of-use
     >
       <h3><strong>Privacy Policy of DIKSHA</strong></h3>
       <label class="tagLine"
-        ><em>( Last updated on <b>28-04-2021</b> )</em></label
+        ><em>( Last updated on <b>05-06-2024</b> )</em></label
       >
       <p>
         DIKSHA (Digital Infrastructure for Knowledge Sharing ) is the National
@@ -6661,8 +6808,7 @@ title: terms-of-use
 
 `;
 
-    var version10 =
-      `<div class="row">
+      var version10 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"> <a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse"
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a></li>
@@ -7928,8 +8074,7 @@ title: terms-of-use
   </div>
 </div>`;
 
-    var version9 =
-      `<div class="row">
+      var version9 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"> <a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse"
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a></li>
@@ -9192,8 +9337,7 @@ title: terms-of-use
   </div>
 </div>`;
 
-    var version8 =
-      `<div class="row">
+      var version8 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"> <a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse"
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a></li>
@@ -9602,7 +9746,7 @@ title: terms-of-use
                   of DIKSHA</b></a> shall not be in violation of any third party agreement, laws, charter documents,
               judgments, orders and decrees.</li>
           </ol>
-        </li>
+        </li>        
         <h4 class="sub-heading">How is User data and information collected?</h4>
           <ol class="arrow-list" type="a">
             <li>Basic Information, Geographical Information and Preferences are collected when a User accesses and uses
@@ -10353,8 +10497,7 @@ title: terms-of-use
   </div>
 </div>`;
 
-    var version7 =
-      `<div class="row">
+      var version7 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"> <a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse" 
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a>
@@ -11226,11 +11369,9 @@ title: terms-of-use
       </div>
     </div>
   </div>
-</div>`
+</div>`;
 
-
-    var version6 =
-      `<div class="row">
+      var version6 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"> <a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse" 
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a>
@@ -12021,10 +12162,9 @@ title: terms-of-use
             Privacy Policy of DIKSHA</a> </span></div>
     </div>
   </div>
-</div>;`
+</div>;`;
 
-    let version5 =
-      `<div class="row">
+      let version5 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"><a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse" 
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a></li>
@@ -12829,10 +12969,9 @@ title: terms-of-use
             Privacy Policy ofDIKSHA</a></span></div>
     </div>
   </div>
-</div>`
+</div>`;
 
-    let version4 =
-      `<div class="row">
+      let version4 = `<div class="row">
   <ul class="nav nav-tabs tncTabs" id="termsAndPoliciesTab" role="tablist">
     <li class="nav-item" role="tab"><a class="nav-link" id="terms-of-use-tab" data-toggle="tab" href="#termsOfUse" 
         aria-controls="termsOfUse" aria-selected="true">Terms of Use</a></li>
@@ -13329,10 +13468,9 @@ title: terms-of-use
           tabPaneToShow="termsOfUse"><i class="fas fa-chevron-left"></i> Read Terms of Use</a></div>
     </div>
   </div>
-</div>;`
+</div>;`;
 
-    let version3 =
-      `<div class="row">
+      let version3 = `<div class="row">
   <div id="termsAndPolicies">
     <h3 class="heading-term">Terms of Use</h3>
     <p>This website is designed, developed and maintained by National Council for Teacher Education, Ministry
@@ -13713,10 +13851,9 @@ title: terms-of-use
       NOTGUARANTEETHE AVAILABILITY OF SUCH LINKED PAGES AT ALL TIMES.</p>
     </ol>
   </div>
-</div>;`
+</div>;`;
 
-    let version2 =
-      `<div class="row">
+      let version2 = `<div class="row">
   <div class="container-fluid">
     <div id="termsAndPolicies">
       <h3 class="heading-term">Terms of Use</h3>
@@ -14115,10 +14252,9 @@ title: terms-of-use
       </ol>
     </div>
   </div>
-</div>;`
+</div>;`;
 
-    let version1 =
-      `<div class="row">
+      let version1 = `<div class="row">
   <div class="container-fluid">
     <div id="termsAndPolicies">
       <h3 class="heading-term">Terms of Use</h3>
@@ -14457,262 +14593,294 @@ title: terms-of-use
       </ol>
     </div>
   </div>
-</div>;`
-    $(document).ready(function () {
-      $("#v12").addClass("active");
-      $("#version12").append(version12);
-      var windowHash = window.location.hash;
-      $('.tncTabs a,.tab-pane').removeClass("active").removeClass("show");
-      if (windowHash == '#termsOfUse') {
-        $(`#terms-of-use-tab`).addClass("show").addClass("active");
-        $(`#termsOfUse`).addClass("show").addClass("active");
-      } else if (windowHash == '#contentPolicy') {
-        $(`#content-policy-tab`).addClass("show").addClass("active");
-        $(`#contentPolicy`).addClass("show").addClass("active");
-      } else if (windowHash == '#privacyPolicy') {
-        $(`#privacy-policy-tab`).addClass("show").addClass("active");
-        $(`#privacyPolicy`).addClass("show").addClass("active");
-      } else if (windowHash == '#groupGuidelines') {
-        $(`#group-guidelines-tab`).addClass("show").addClass("active");
-        $(`#groupGuidelines`).addClass("show").addClass("active");
-      } else if (windowHash == '#courseGuidelines') {
-        $(`#course-guidelines-tab`).addClass("show").addClass("active");
-        $(`#courseGuidelines`).addClass("show").addClass("active");
-      } else if (windowHash == '#administratorGuidelines') {
-        $(`#administrator-guidelines-tab`).addClass("show").addClass("active");
-        $(`#administratorGuidelines`).addClass("show").addClass("active");
-      } else {
-        $(`#terms-of-use-tab`).addClass("show").addClass("active");
-        $(`#termsOfUse`).addClass("show").addClass("active");
-      }
-      $("html, body").animate({
-        scrollTop: 0
-      }, "slow");
+</div>;`;
+      $(document).ready(function () {
+        $("#v12").addClass("active");
+        $("#version12").append(version12);
+        var windowHash = window.location.hash;
+        $(".tncTabs a,.tab-pane").removeClass("active").removeClass("show");
+        if (windowHash == "#termsOfUse") {
+          $(`#terms-of-use-tab`).addClass("show").addClass("active");
+          $(`#termsOfUse`).addClass("show").addClass("active");
+        } else if (windowHash == "#contentPolicy") {
+          $(`#content-policy-tab`).addClass("show").addClass("active");
+          $(`#contentPolicy`).addClass("show").addClass("active");
+        } else if (windowHash == "#privacyPolicy") {
+          $(`#privacy-policy-tab`).addClass("show").addClass("active");
+          $(`#privacyPolicy`).addClass("show").addClass("active");
+        } else if (windowHash == "#groupGuidelines") {
+          $(`#group-guidelines-tab`).addClass("show").addClass("active");
+          $(`#groupGuidelines`).addClass("show").addClass("active");
+        } else if (windowHash == "#courseGuidelines") {
+          $(`#course-guidelines-tab`).addClass("show").addClass("active");
+          $(`#courseGuidelines`).addClass("show").addClass("active");
+        } else if (windowHash == "#administratorGuidelines") {
+          $(`#administrator-guidelines-tab`)
+            .addClass("show")
+            .addClass("active");
+          $(`#administratorGuidelines`).addClass("show").addClass("active");
+        } else {
+          $(`#terms-of-use-tab`).addClass("show").addClass("active");
+          $(`#termsOfUse`).addClass("show").addClass("active");
+        }
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          "slow"
+        );
 
-      $('.TermsOfUseClick').click(function (e) {
+        $(".TermsOfUseClick").click(function (e) {
+          e.preventDefault();
+          console.log(
+            `#${$(this).attr("tabPaneToShow")}`,
+            `#${$(this).attr("tabToShow")}`
+          );
+          $(".tncTabs a,.tab-pane").removeClass("active").removeClass("show");
+          $(`#${$(this).attr("tabToShow")}`)
+            .addClass("show")
+            .addClass("active");
+          $(`#${$(this).attr("tabPaneToShow")}`)
+            .addClass("show")
+            .addClass("active");
+          $("html, body").animate(
+            {
+              scrollTop: 0,
+            },
+            "slow"
+          );
+        });
+      });
+      $(document).on("click", "a.TermsOfUseClick", function (e) {
         e.preventDefault();
-        console.log(`#${$(this).attr("tabPaneToShow")}`, `#${$(this).attr("tabToShow")}`);
-        $('.tncTabs a,.tab-pane').removeClass("active").removeClass("show");
-        $(`#${$(this).attr("tabToShow")}`).addClass("show").addClass("active");
-        $(`#${$(this).attr("tabPaneToShow")}`).addClass("show").addClass("active");
-        $("html, body").animate({
-          scrollTop: 0
-        }, "slow");
+        console.log(
+          `#${$(this).attr("tabPaneToShow")}`,
+          `#${$(this).attr("tabToShow")}`
+        );
+        $(".tncTabs a,.tab-pane").removeClass("active").removeClass("show");
+        $(`#${$(this).attr("tabToShow")}`)
+          .addClass("show")
+          .addClass("active");
+        $(`#${$(this).attr("tabPaneToShow")}`)
+          .addClass("show")
+          .addClass("active");
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          "slow"
+        );
       });
 
-    });
-    $(document).on('click', 'a.TermsOfUseClick', function (e) {
-      e.preventDefault();
-      console.log(`#${$(this).attr("tabPaneToShow")}`, `#${$(this).attr("tabToShow")}`);
-      $('.tncTabs a,.tab-pane').removeClass("active").removeClass("show");
-      $(`#${$(this).attr("tabToShow")}`).addClass("show").addClass("active");
-      $(`#${$(this).attr("tabPaneToShow")}`).addClass("show").addClass("active");
-      $("html, body").animate({
-        scrollTop: 0
-      }, "slow");
-    });
+      $(window).scroll(function () {
+        if (
+          $(this).scrollTop() >
+          $(document).height() - $(window).height() - 300
+        ) {
+          $(".scrollToTop").fadeIn();
+        } else {
+          $(".scrollToTop").fadeOut();
+        }
+      });
+      //Click event to scroll to top
+      $(".scrollToTop").click(function () {
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          800
+        );
+        return false;
+      });
 
-    $(window).scroll(function () {
-      if ($(this).scrollTop() > $(document).height() - $(window).height() - 300) {
-        $('.scrollToTop').fadeIn();
-      } else {
-        $('.scrollToTop').fadeOut();
-      }
-    });
-    //Click event to scroll to top
-    $('.scrollToTop').click(function () {
-      $('html, body').animate({
-        scrollTop: 0
-      }, 800);
-      return false;
-    });
+      $(".showVersions").on("click", function (e) {
+        e.preventDefault();
+        $(".showVersions").removeClass("active");
+        $(`#${$(this).attr("id")}`).addClass("active");
+        $(".tncs").empty();
+        var val = $(this).attr("versionToShow");
+        if (val == "version12")
+          $(`#${$(this).attr("versionToShow")}`).append(version12);
+        else if (val == "version11")
+          $(`#${$(this).attr("versionToShow")}`).append(version11);
+        else if (val == "version10")
+          $(`#${$(this).attr("versionToShow")}`).append(version10);
+        else if (val == "version9")
+          $(`#${$(this).attr("versionToShow")}`).append(version9);
+        else if (val == "version8")
+          $(`#${$(this).attr("versionToShow")}`).append(version8);
+        else if (val == "version7")
+          $(`#${$(this).attr("versionToShow")}`).append(version7);
+        else if (val == "version6")
+          $(`#${$(this).attr("versionToShow")}`).append(version6);
+        else if (val == "version5")
+          $(`#${$(this).attr("versionToShow")}`).append(version5);
+        else if (val == "version4")
+          $(`#${$(this).attr("versionToShow")}`).append(version4);
+        else if (val == "version3")
+          $(`#${$(this).attr("versionToShow")}`).append(version3);
+        else if (val == "version2")
+          $(`#${$(this).attr("versionToShow")}`).append(version2);
+        else if (val == "version1")
+          $(`#${$(this).attr("versionToShow")}`).append(version1);
+        $(`#${$(this).attr("versionToShow")}`).show();
+        $(`#${$(this).attr("versionToShow")} #terms-of-use-tab`)
+          .addClass("show")
+          .addClass("active");
+        $(`#${$(this).attr("versionToShow")} #termsOfUse`)
+          .addClass("show")
+          .addClass("active");
+        $("html, body").animate(
+          {
+            scrollTop: 0,
+          },
+          "slow"
+        );
+      });
 
-    $('.showVersions').on('click', function (e) {
-      e.preventDefault();
-      $(".showVersions").removeClass("active");
-      $(`#${$(this).attr("id")}`).addClass("active");
-      $(".tncs").empty();
-      var val = $(this).attr('versionToShow');
-      if (val == 'version12') $(`#${$(this).attr('versionToShow')}`).append(version12);
-      else if (val == 'version11') $(`#${$(this).attr('versionToShow')}`).append(version11);
-      else if (val == 'version10') $(`#${$(this).attr('versionToShow')}`).append(version10);
-      else if (val == 'version9') $(`#${$(this).attr('versionToShow')}`).append(version9);
-      else if (val == 'version8') $(`#${$(this).attr('versionToShow')}`).append(version8);
-      else if (val == 'version7') $(`#${$(this).attr('versionToShow')}`).append(version7);
-      else if (val == 'version6') $(`#${$(this).attr('versionToShow')}`).append(version6);
-      else if (val == 'version5') $(`#${$(this).attr('versionToShow')}`).append(version5);
-      else if (val == 'version4') $(`#${$(this).attr('versionToShow')}`).append(version4);
-      else if (val == 'version3') $(`#${$(this).attr('versionToShow')}`).append(version3);
-      else if (val == 'version2') $(`#${$(this).attr('versionToShow')}`).append(version2);
-      else if (val == 'version1') $(`#${$(this).attr('versionToShow')}`).append(version1);
-      $(`#${$(this).attr('versionToShow')}`).show();
-      $(`#${$(this).attr('versionToShow')} #terms-of-use-tab`).addClass("show").addClass("active");
-      $(`#${$(this).attr('versionToShow')} #termsOfUse`).addClass("show").addClass("active");
-      $("html, body").animate({
-        scrollTop: 0
-      }, "slow");
-    });
-  
-
-
-    const mediaQuery1 = window.matchMedia('(max-width: 768px)')
-    if (mediaQuery1.matches) {
-      window.onload = function () {
-          function accordianFormat(){
-        $("#terms-of-use-tab").click(function (event) {
-          var termcondit = $("#termsOfUse")[0];
-          if ($("#termsAndPoliciesTab #termsOfUse").length > 0) {
-            event.target.classList.add("up-arrow-accord");
-            event.target.classList.remove("down-arrow-accord");
-            $("#termsAndPolicies").append(termcondit);
-          } else {
-            event.target.classList.add("down-arrow-accord");
-            event.target.classList.remove("up-arrow-accord");
-            let parentNode = event.target.parentNode;
-            parentNode.after(termcondit);
-
+      const mediaQuery1 = window.matchMedia("(max-width: 768px)");
+      if (mediaQuery1.matches) {
+        window.onload = function () {
+          function accordianFormat() {
+            $("#terms-of-use-tab").click(function (event) {
+              var termcondit = $("#termsOfUse")[0];
+              if ($("#termsAndPoliciesTab #termsOfUse").length > 0) {
+                event.target.classList.add("up-arrow-accord");
+                event.target.classList.remove("down-arrow-accord");
+                $("#termsAndPolicies").append(termcondit);
+              } else {
+                event.target.classList.add("down-arrow-accord");
+                event.target.classList.remove("up-arrow-accord");
+                let parentNode = event.target.parentNode;
+                parentNode.after(termcondit);
+              }
+            });
+            $("#privacy-policy-tab").click(function (event) {
+              var termcondit = $("#privacyPolicy")[0];
+              if ($("#termsAndPoliciesTab #privacyPolicy").length > 0) {
+                event.target.classList.add("up-arrow-accord");
+                event.target.classList.remove("down-arrow-accord");
+                $("#termsAndPolicies").append(termcondit);
+              } else {
+                event.target.classList.add("down-arrow-accord");
+                event.target.classList.remove("up-arrow-accord");
+                let parentNode = event.target.parentNode;
+                parentNode.after(termcondit);
+              }
+            });
+            $("#content-policy-tab").click(function (event) {
+              var termcondit = $("#contentPolicy")[0];
+              if ($("#termsAndPoliciesTab #contentPolicy").length > 0) {
+                event.target.classList.add("up-arrow-accord");
+                event.target.classList.remove("down-arrow-accord");
+                $("#termsAndPolicies").append(termcondit);
+              } else {
+                event.target.classList.add("down-arrow-accord");
+                event.target.classList.remove("up-arrow-accord");
+                let parentNode = event.target.parentNode;
+                parentNode.after(termcondit);
+              }
+            });
+            $("#group-guidelines-tab").click(function (event) {
+              var termcondit = $("#groupGuidelines")[0];
+              if ($("#termsAndPoliciesTab #groupGuidelines").length > 0) {
+                event.target.classList.add("up-arrow-accord");
+                event.target.classList.remove("down-arrow-accord");
+                $("#termsAndPolicies").append(termcondit);
+              } else {
+                event.target.classList.add("down-arrow-accord");
+                event.target.classList.remove("up-arrow-accord");
+                let parentNode = event.target.parentNode;
+                parentNode.after(termcondit);
+              }
+            });
+            $("#course-guidelines-tab").click(function (event) {
+              var termcondit = $("#courseGuidelines")[0];
+              if ($("#termsAndPoliciesTab #courseGuidelines").length > 0) {
+                event.target.classList.add("up-arrow-accord");
+                event.target.classList.remove("down-arrow-accord");
+                $("#termsAndPolicies").append(termcondit);
+              } else {
+                event.target.classList.add("down-arrow-accord");
+                event.target.classList.remove("up-arrow-accord");
+                let parentNode = event.target.parentNode;
+                parentNode.after(termcondit);
+              }
+            });
+            $("#administrator-guidelines-tab").click(function (event) {
+              var termcondit = $("#administratorGuidelines")[0];
+              if (
+                $("#termsAndPoliciesTab #administratorGuidelines").length > 0
+              ) {
+                event.target.classList.add("up-arrow-accord");
+                event.target.classList.remove("down-arrow-accord");
+                $("#termsAndPolicies").append(termcondit);
+              } else {
+                event.target.classList.add("down-arrow-accord");
+                event.target.classList.remove("up-arrow-accord");
+                let parentNode = event.target.parentNode;
+                parentNode.after(termcondit);
+              }
+            });
           }
-        });
-        $("#privacy-policy-tab").click(function (event) {
-          var termcondit = $("#privacyPolicy")[0];
-          if ($("#termsAndPoliciesTab #privacyPolicy").length > 0) {
-            event.target.classList.add("up-arrow-accord");
-            event.target.classList.remove("down-arrow-accord");
-            $("#termsAndPolicies").append(termcondit)
-          } else {
-            event.target.classList.add("down-arrow-accord");
-            event.target.classList.remove("up-arrow-accord");
-            let parentNode = event.target.parentNode;
-            parentNode.after(termcondit);
+          accordianFormat();
 
-          }
-        });
-        $("#content-policy-tab").click(function (event) {
-          var termcondit = $("#contentPolicy")[0];
-          if ($("#termsAndPoliciesTab #contentPolicy").length > 0) {
-            event.target.classList.add("up-arrow-accord");
-            event.target.classList.remove("down-arrow-accord");
-            $("#termsAndPolicies").append(termcondit)
-          } else {
-            event.target.classList.add("down-arrow-accord");
-            event.target.classList.remove("up-arrow-accord");
-            let parentNode = event.target.parentNode;
-            parentNode.after(termcondit);
+          $(".showVersions").on("click", function (e) {
+            e.preventDefault();
+            $(".showVersions").removeClass("active");
+            $(`#${$(this).attr("id")}`).addClass("active");
+            $(".tncs").empty();
+            var val = $(this).attr("versionToShow");
+            if (val == "version12") {
+              $(`#${$(this).attr("versionToShow")}`).append(version12);
+              accordianFormat();
+            } else if (val == "version11") {
+              $(`#${$(this).attr("versionToShow")}`).append(version11);
+              accordianFormat();
+            } else if (val == "version10") {
+              $(`#${$(this).attr("versionToShow")}`).append(version10);
+              accordianFormat();
+            } else if (val == "version9") {
+              $(`#${$(this).attr("versionToShow")}`).append(version9);
+              accordianFormat();
+            } else if (val == "version8") {
+              $(`#${$(this).attr("versionToShow")}`).append(version8);
+            } else if (val == "version7") {
+              $(`#${$(this).attr("versionToShow")}`).append(version7);
+              accordianFormat();
+            } else if (val == "version6") {
+              $(`#${$(this).attr("versionToShow")}`).append(version6);
+              accordianFormat();
+            } else if (val == "version5") {
+              $(`#${$(this).attr("versionToShow")}`).append(version5);
+              accordianFormat();
+            } else if (val == "version4") {
+              $(`#${$(this).attr("versionToShow")}`).append(version4);
+              accordianFormat();
+            } else if (val == "version3") {
+              $(`#${$(this).attr("versionToShow")}`).append(version3);
+              accordianFormat();
+              $("#termsAndPolicies").css("display", "block");
+            } else if (val == "version2") {
+              $(`#${$(this).attr("versionToShow")}`).append(version2);
+              accordianFormat();
+              $("#termsAndPolicies").css("display", "block");
+            } else if (val == "version1") {
+              $(`#${$(this).attr("versionToShow")}`).append(version1);
+              accordianFormat();
+              $("#termsAndPolicies").css("display", "block");
+            }
+            $(`#${$(this).attr("versionToShow")}`).show();
 
-          }
-        });
-        $("#group-guidelines-tab").click(function (event) {
-          var termcondit = $("#groupGuidelines")[0];
-          if ($("#termsAndPoliciesTab #groupGuidelines").length > 0) {
-            event.target.classList.add("up-arrow-accord");
-            event.target.classList.remove("down-arrow-accord");
-            $("#termsAndPolicies").append(termcondit)
-          } else {
-            event.target.classList.add("down-arrow-accord");
-            event.target.classList.remove("up-arrow-accord");
-            let parentNode = event.target.parentNode;
-            parentNode.after(termcondit);
-
-          }
-        });
-        $("#course-guidelines-tab").click(function (event) {
-          var termcondit = $("#courseGuidelines")[0];
-          if ($("#termsAndPoliciesTab #courseGuidelines").length > 0) {
-            event.target.classList.add("up-arrow-accord");
-            event.target.classList.remove("down-arrow-accord");
-            $("#termsAndPolicies").append(termcondit)
-          } else {
-            event.target.classList.add("down-arrow-accord");
-            event.target.classList.remove("up-arrow-accord");
-            let parentNode = event.target.parentNode;
-            parentNode.after(termcondit);
-
-          }
-        });
-        $("#administrator-guidelines-tab").click(function (event) {
-          var termcondit = $("#administratorGuidelines")[0];
-          if ($("#termsAndPoliciesTab #administratorGuidelines").length > 0) {
-            event.target.classList.add("up-arrow-accord");
-            event.target.classList.remove("down-arrow-accord");
-            $("#termsAndPolicies").append(termcondit)
-          } else {
-            event.target.classList.add("down-arrow-accord");
-            event.target.classList.remove("up-arrow-accord");
-            let parentNode = event.target.parentNode;
-            parentNode.after(termcondit);
-
-          }
-        });
+            $("html, body").animate(
+              {
+                scrollTop: 0,
+              },
+              "slow"
+            );
+          });
+        };
       }
-      accordianFormat();
-
-      $('.showVersions').on('click', function (e) {
-      e.preventDefault();
-      $(".showVersions").removeClass("active");
-      $(`#${$(this).attr("id")}`).addClass("active");
-      $(".tncs").empty();
-      var val = $(this).attr('versionToShow');
-      if (val == 'version12'){
-        $(`#${$(this).attr('versionToShow')}`).append(version12) ;
-        accordianFormat();
-      } 
-      else if (val == 'version11'){
-        $(`#${$(this).attr('versionToShow')}`).append(version11);
-        accordianFormat();
-      } 
-      else if (val == 'version10'){
-        $(`#${$(this).attr('versionToShow')}`).append(version10);
-        accordianFormat();
-      } 
-      else if (val == 'version9'){
-        $(`#${$(this).attr('versionToShow')}`).append(version9);
-        accordianFormat();
-      }
-      else if (val == 'version8'){
-        $(`#${$(this).attr('versionToShow')}`).append(version8);
-      
-      } 
-      else if (val == 'version7'){
-        $(`#${$(this).attr('versionToShow')}`).append(version7);
-        accordianFormat();
-      } 
-      else if (val == 'version6'){
-        $(`#${$(this).attr('versionToShow')}`).append(version6);
-        accordianFormat();
-      } 
-      else if (val == 'version5') {
-        $(`#${$(this).attr('versionToShow')}`).append(version5);
-        accordianFormat();
-      }
-      else if (val == 'version4') {
-        $(`#${$(this).attr('versionToShow')}`).append(version4);
-        accordianFormat();
-      }
-      else if (val == 'version3') {
-        $(`#${$(this).attr('versionToShow')}`).append(version3);
-        accordianFormat();
-        $("#termsAndPolicies").css("display", "block");
-      }
-      else if (val == 'version2'){
-        $(`#${$(this).attr('versionToShow')}`).append(version2);
-        accordianFormat();
-        $("#termsAndPolicies").css("display", "block");
-      } 
-      else if (val == 'version1'){
-        $(`#${$(this).attr('versionToShow')}`).append(version1);
-        accordianFormat();
-        $("#termsAndPolicies").css("display", "block");
-      } 
-      $(`#${$(this).attr('versionToShow')}`).show();
-   
-      $("html, body").animate({
-        scrollTop: 0
-      }, "slow");
-    });
-
-
-      }
-    }
-  
-  
-  </script>
+    </script>
+  </body>
+</html>
