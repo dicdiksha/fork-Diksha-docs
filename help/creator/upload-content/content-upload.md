@@ -30,7 +30,7 @@ It supports maximum of 50 MB file size
  <tr>
     <td>1. Log in to DIKSHA portal using your content creator credential <br>2. Click <b>Create</b><br>3. Click <b>Upload Content</b>
        </td>
-      <td><img src="../images/upload/upload_workspace.png"></td>
+      <td><img src="../images/upload/upload_content.jpg"></td>
   </tr>
   </table>
 
