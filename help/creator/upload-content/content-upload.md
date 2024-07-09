@@ -17,7 +17,7 @@ A content creator may create content without using DIKSHA Content creation platf
 - Document format (.pdf)
 - URLs for YouTube videos and other files
 
-It supports maximum of 50 MB file size
+It supports maximum of 500 MB file size
 
 **Note:** DIKSHA validates the standard YouTube credits and licenses before it allows the upload. Users have the permission of using, copying or distributing YouTube contents with the regulations, in accordance with its license policy.
 
