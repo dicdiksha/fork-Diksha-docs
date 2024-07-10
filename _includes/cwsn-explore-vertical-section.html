@@ -1,34 +1,56 @@
 <style>
     .thumbnail-title {
-		font-family: inherit;
-		font-weight: 500;
-		line-height: 1.2;
-		color: inherit;
-		font-size: 32px;
-		padding: 14px 0;
-		text-align: center;
-	}
-	section.thumbnail-heading {
-		color: #fff;
-		background-color: #64b2dc;
-		margin: 0 -54px;
-	}
-    .flex-card-grade{
-		justify-content: center;
-	}
-	.fln-content-section {
-		padding-top: 40px;
-	}
-	.card-body{
-		display: flex;
-		flex-direction: column;
-	}
-	.card-body li {
-		padding: 4px 5px;
-	}
+        font-family: inherit;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #fff;
+        font-size: 1.25rem;
+        padding: 7px 0;
+        text-align: center;
+    }
+
+    section.thumbnail-heading {
+        color: #fff;
+        background-color: #000;
+        margin: 0 -54px;
+    }
+
+    .flex-card-grade {
+        justify-content: center;
+    }
+
+    .fln-content-section {
+        padding-top: 40px;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body li {
+        padding: 4px 5px;
+    }
+    ul[class^='far fa-'], ul[class*='far fa-'] {
+        list-style: none;
+    }
+    ul[class^='far fa-']:before {
+        content: '' !important;
+    }
+    ul[class^='far fa-'] li {
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    }
+    ul[class^='far fa-'] li:before, ul[class*='far fa-'] li:before {
+        font-family: "Font Awesome 5 Free";
+        margin-left: -1.35rem;
+        padding-right: 0.5rem;
+    }
+    ul.fa-hand-point-right li:before {
+        content: "\f0a4";
+    }
 </style>
-<section class="thumbnail-heading mt-5">
-    <div class="thumbnail-title"> Explore the Vertical</div>
+<section class="thumbnail-heading">
+    <div class="thumbnail-title">Explore eContent</div>
 </section>
 <section class="fln-content-section">
     <div class="container">
@@ -37,26 +59,47 @@
             <div class="container flex-card-grade">
                 <div class="col-sm-3 mb-4">
                     <div class="image mb-2">
-                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/course.jpg" class="img-fluid">
+                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/materials.png" class="img-fluid">
                     </div>
-                    <a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapsesix" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                    <div id="collapsesix" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+                    <a class="btn text-light collapsed" style="background-color: #060349;" href=""
+                        data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false"
+                        aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapsetwo" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
                         <div class="card-body text-left">
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6hindimedium" aria-expanded="false">
-                                &nbsp;<strong>Students</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Teachers</strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Special Educators</strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Parents</strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class6henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Pre Vocational Others</strong>
-                            </li>
+                            <ul class="far fa-hand-point-right">
+                                <li>Scholastic</li>
+                                <li>Flashcards</li>
+                                <li>Mathematics</li>
+                                <li>Immersive spaces</li>
+                                <li>Text books TLM</li>
+                                <li>Dictionary</li>
+                                <li>Glossary</li>
+                                <li>Academic Terms</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 mb-4">
+                    <div class="image mb-2">
+                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/remedial.png" class="img-fluid">
+                    </div>
+                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse"
+                        data-target="#collapseeight" aria-expanded="false" aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapseeight" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-left">
+                            <ul class="far fa-hand-point-right">
+                                <li>OT</li>
+                                <li>PT</li>
+                                <li>ST</li>
+                                <li>LT</li>
+                                <li>Basic ISL</li>
+                                <li>ABA</li>
+                                <li>Counseling</li>
+                                <li>Prashast (Screening)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -64,55 +107,16 @@
                     <div class="image mb-2">
                         <img loading="lazy" decoding="async" src="assets/homepage/cwsn/tutorials.png" class="img-fluid">
                     </div>
-                    <a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapseseven" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                    <div id="collapseseven" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+                    <a class="btn text-light collapsed" style="background-color: #060349;" href=""
+                        data-toggle="collapse" data-target="#collapseseven" aria-expanded="false"
+                        aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapseseven" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
                         <div class="card-body text-left">
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class7hindimedium" aria-expanded="false">
-                                &nbsp;<strong>Multiple collection (Micro learning & Navigation videos)</strong>
-                                
-                            </li>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 mb-4">
-                    <div class="image mb-2">
-                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/remedial.png" class="img-fluid">
-                    </div>							
-                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapseeight" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                    <div id="collapseeight" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
-                        <div class="card-body text-left">
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8hindimedium" aria-expanded="false">
-                            &nbsp;<strong>OT</strong>
-                                        
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong> PT</strong>
-                            
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong>  ST</strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong>  LT</strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong>  Basic ISL
-                            </strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong>  ABA
-                            </strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong> Counseling
-                            </strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class8henglishmedium" aria-expanded="false">
-                            &nbsp;<strong> Prashast (Screening)
-                            </strong>
-                            </li>
-
+                            <ul class="far fa-hand-point-right">
+                                <li>Multiple collection (Micro learning & Navigation videos)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -120,20 +124,20 @@
                     <div class="image mb-2">
                         <img loading="lazy" decoding="async" src="assets/homepage/cwsn/teach.png" class="img-fluid">
                     </div>
-                    <a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapseone" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                    <div id="collapseone" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
+                    <a class="btn text-light collapsed" style="background-color: #060349;" href=""
+                        data-toggle="collapse" data-target="#collapseone" aria-expanded="false"
+                        aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapseone" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
                         <div class="card-body text-left">
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class9hindimedium" aria-expanded="false">
-                                &nbsp;<strong>Social Narratives</strong>
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class9henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Curricular</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class9henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Vocational</strong>	
-                            </li>
+                            <ul class="far fa-hand-point-right">
+                                <li>Social Narratives</li>
+                                <li>Curricular</li>
+                                <li>Vocational</li>
+                            </ul>
                         </div>
-                    </div>	
+                    </div>
                 </div>
             </div>
         </div>
@@ -141,148 +145,104 @@
         <div class="row text-center">
             <div class="container flex-card-grade">
                 <div class="col-sm-3 mb-4">
-                        <div class="image mb-2">
-                            <img loading="lazy" decoding="async" src="assets/homepage/cwsn/materials.png" class="img-fluid">
+                    <div class="image mb-2">
+                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/course.jpg" class="img-fluid">
+                    </div>
+                    <a class="btn text-light collapsed" style="background-color: #060349;" href=""
+                        data-toggle="collapse" data-target="#collapsesix" aria-expanded="false"
+                        aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapsesix" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-left">
+                            <ul class="far fa-hand-point-right">
+                                <li>Students</li>
+                                <li>Teachers</li>
+                                <li>Special Educators</li>
+                                <li>Parents</li>
+                                <li>Pre Vocational Others</li>
+                            </ul>
                         </div>
-                        <a class="btn text-light collapsed" style="background-color: #060349;" href="" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                        <div id="collapsetwo" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
-                            <div class="card-body text-left">
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Scholastic</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Flashcards</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Mathematics</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Immersive spaces</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Text books TLM</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Dictionary</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong>Glossary</strong>	
-                                </li>
-                                <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class10hindimedium" aria-expanded="false">
-                                        &nbsp;<strong> Academic Terms</strong>	
-                                </li>
-                                
-                            </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3 mb-4">
                     <div class="image mb-2">
                         <img loading="lazy" decoding="async" src="assets/homepage/cwsn/assistive.png" class="img-fluid">
                     </div>
-                    
-                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsethree" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                    
+                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse"
+                        data-target="#collapsethree" aria-expanded="false" aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
                     <div id="collapsethree" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
                         <div class="card-body text-left">
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Scholastic</strong>			
-                        </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Flashcards</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Mathematics</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Immersive spaces</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Text books TLM</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>ISL videos</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong>Dictionary</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong> Glossary</strong>	
-                            </li>
-                            <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class11henglishmedium" aria-expanded="false">
-                                &nbsp;<strong> Academic Terms</strong>	
-                            </li>
+                            <ul class="far fa-hand-point-right">
+                                <li>Collection of various assistive technologies</li>
+                            </ul>
                         </div>
-                        </div>
+                    </div>
                 </div>
                 <div class="col-sm-3 mb-4">
                     <div class="image mb-2">
                         <img loading="lazy" decoding="async" src="assets/homepage/cwsn/parant.png" class="img-fluid">
                     </div>
-                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapseparant" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                
-                    <div id="collapseparant" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
-                    <div class="card-body text-left">
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Career counseling, Certification</strong>			
-                        </li>
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Life Skills Processes/Mandates</strong>			
-                        </li>
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Norms and Guidelines</strong>			
-                        </li>
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Institutions</strong>			
-                        </li>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 mb-4">
-                    <div class="image mb-2">
-                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/research.png" class="img-fluid">
-                    </div>
-                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsereserch" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                    <div id="collapsereserch" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample">
-                    <div class="card-body text-left">
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Collection of various researches
-                            </strong>
-                        </li>
-                    </div>
+                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse"
+                        data-target="#collapseparant" aria-expanded="false" aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapseparant" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-left">
+                            <ul class="far fa-hand-point-right">
+                                <li>Career counseling, Certification</li>
+                                <li>Life Skills Processes/Mandates</li>
+                                <li>Norms and Guidelines</li>
+                                <li>Institutions</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3 mb-4">
                     <div class="image mb-2">
                         <img loading="lazy" decoding="async" src="assets/homepage/cwsn/wellness.png" class="img-fluid">
                     </div>
-                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse" data-target="#collapsewellness" aria-expanded="false" aria-controls="collapsefifteen"><i class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
-                
-                    <div id="collapsewellness" class="collapse" aria-labelledby="headingfifteen" data-parent="#accordionExample1">
-                    <div class="card-body text-left">
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Mental health</strong>
-                        </li>
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong> Sports</strong>
-                        </li>
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong> Yoga</strong>
-                        </li>
-                        <li class="far fa-hand-point-right" href="" data-toggle="collapse" data-target="#class12hindimedium" aria-expanded="false">
-                            &nbsp;<strong>Msic And Dance</strong>
-                        </li>
-                    </div>
+                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse"
+                        data-target="#collapsewellness" aria-expanded="false" aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapsewellness" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample1">
+                        <div class="card-body text-left">
+                            <ul class="far fa-hand-point-right">
+                                <li>Mental health</li>
+                                <li>Sports</li>
+                                <li>Yoga</li>
+                                <li>Music And Dance</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-      </div>
-    <section class="cards-dg">
-        <div class="container">
-            <div class="row text-center">
-                <div class="container flex-card-grade">
+        <!-- second row -->
+        <div class="row text-center">
+            <div class="container flex-card-grade">
+                <div class="col-sm-3 mb-4">
+                    <div class="image mb-2">
+                        <img loading="lazy" decoding="async" src="assets/homepage/cwsn/research.png" class="img-fluid">
+                    </div>
+                    <a class="btn text-light" style="background-color:#060349;" href="" data-toggle="collapse"
+                        data-target="#collapsereserch" aria-expanded="false" aria-controls="collapsefifteen"><i
+                            class="far fa-hand-point-right"></i>&nbsp;<strong>Explore</strong></a>
+                    <div id="collapsereserch" class="collapse" aria-labelledby="headingfifteen"
+                        data-parent="#accordionExample">
+                        <div class="card-body text-left">
+                            <ul class="far fa-hand-point-right">
+                                <li>Collection of various researches</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>	
+            </div>
         </div>
-    </section>
+    </div>
 </section>
+<script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/adultEducation.js"></script>
