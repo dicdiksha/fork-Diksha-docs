@@ -4,7 +4,7 @@ description: Release Notes for older releases of DIKSHA
 keywords: release notes, version 3.9.0 and below
 showSidebar: true
 allowSearch: true
-order: 6
+order: 7
 pageClass: 'release-notes'
 ---
 
@@ -21,13 +21,14 @@ To view and read the release notes, click the view icon that corresponds to the 
     <th>Release Date</th>
     <th>View</th>
     <th>Download</th>
-    <tr>
+    </tr>
     <tr>
     <td class="text-center">Release 4.8.0</td>
     <td class="text-center">28/04/2022</td>
     <td class="text-center"><a href="pdf/DIKSHA-Release-Notes-V-4.8.0.pdf" target="_blank"><img src="../../assets/imgs/icons/view-release-notes.png"></a></td>
     <td class="text-center"><a href="pdf/DIKSHA-Release-Notes-V-4.8.0.pdf" download><img src="../../assets/imgs/icons/download-release-notes.png"></a></td>
   </tr>
+  <tr>
   <td class="text-center">Release 4.7.0</td>
     <td class="text-center">16/03/2022</td>
     <td class="text-center"><a href="pdf/DIKSHA-Release-Notes-V-4.7.0.pdf" target="_blank"><img src="../../assets/imgs/icons/view-release-notes.png"></a></td>
