@@ -55,6 +55,9 @@ There are three reports specific to the consumption data of observation and impr
    - District wise distribution of the submissions of the observations with rubric
    - Levels achieved for the domain and criteria.
 
+There are reports related to User active on DIKSHA.
+- **DIKSHA Active User**: This report gives a detailed Diksha Active user count on daily basis. It will have the data of no of users on the portal and App and sum of the same.
+
 ## Analytics
 The State administrator or report viewer gets creation and consumption analytics from the reports. 
 
