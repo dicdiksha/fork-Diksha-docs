@@ -234,6 +234,12 @@ defaults:
       categoryOrder: 15
   -
     scope:
+      path: "help/getting-started/all"
+    values:
+      category: "All"
+      categoryOrder: 16
+  -
+    scope:
       path: "help/administrator/manage-users"
     values:
       category: "Manage Users"
