@@ -12,28 +12,25 @@ An anonymous user can explore DIKSHA and access the content available in the rep
 
 ## Exploring Content 
 
-DIKSHA has a repository of content that can be used by teachers and students. It is recommended that you select a user profile so that content relevant to you is displayed thereby enhancing your search results and overall accessibilty of content.
+DIKSHA has a repository of content that can be used by teachers and students. It is recommended that you select a user profile so that content relevant to you is displayed thereby enhancing you search results and overall accessibility of content.
 
-To explore content on DIKSHA, type [diksha.gov.in](diksha.gov.in) in the browser, and follow the below steps:	
+To explore content on DIKSHA, type <a href="https://diksha.gov.in" target="_blank">Diksha.gov.in</a> in the browser, and follow the below steps:	
 
 <table>
   <tr>
     <th style="width:35%;">Image with instructions</th>
  </tr>
   <tr>
-    <td><img src="../images/explorediksha/userprofile.png"></td>
+    <td><img src="../images/explorediksha/userprofile4.png"></td>
     </tr>
   <tr>
-    <td><img src="../images/explorediksha/userprofile1.png"></td>
+    <td><img src="../images/explorediksha/userprofile5.png"></td>
     </tr>
    <tr>
-    <td><img src="../images/explorediksha/userprofile2.png"></td>
+    <td><img src="../images/explorediksha/userprofile6.png"></td>
     </tr>
     <tr>
-    <td><img src="../images/explorediksha/userprofile3.png"></td>
-    </tr>
-    <tr>
-    <td><img src="../images/explorediksha/homepage.png"></td>
+    <td><img src="../images/explorediksha/userprofile7.png"></td>
     </tr>
 </table>
 
@@ -59,7 +56,7 @@ The DIKSHA portal is available in the following languages:
     <th style="width:35%;">Image with instructions</th>
  </tr>
   <tr>
-    <td><img src="../images/explorediksha/language.png"></td>
+    <td><img src="../images/explorediksha/language1.png"></td>
     </tr>
 </table>
 
@@ -72,7 +69,7 @@ One final step before exploring the variety of content is to update your locatio
     <th style="width:35%;">Image with instructions</th>
  </tr>
   <tr>
-    <td><img src="../images/explorediksha/location.png"></td>
+    <td><img src="../images/explorediksha/location1.png"></td>
     </tr>
 </table>
 
@@ -85,10 +82,10 @@ On DIKSHA you can search for content using the Search bar, QR codes or Explore C
     <th style="width:35%;">Image with instructions</th>
  </tr>
   <tr>
-    <td><img src="../images/explorediksha/search.png"></td>
+    <td><img src="../images/explorediksha/search2.png"></td>
     </tr>
   <tr>
-    <td><img src="../images/explorediksha/search1.png"></td>
+    <td><img src="../images/explorediksha/search3.png"></td>
     </tr>
 </table>
 
