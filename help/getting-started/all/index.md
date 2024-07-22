@@ -17,13 +17,13 @@ Here are step-by-step instructions to access content in ALL tab.
 
 <table>
   <tr>
-  </tr> 
-    <tr><td>
-     <img src="../images/all/img01.jpg"></td>
-    </tr>
-    <br>
-    <tr><td>
-   <img src="../images/all/img02.jpg"></td>
-    </tr>
-
+    <td>
+      <img src="../images/all/img01.jpg">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="../images/all/img02.jpg"></td>
+  </tr>
+</table>
 
