@@ -237,7 +237,13 @@ defaults:
       path: "help/getting-started/all"
     values:
       category: "All"
-      categoryOrder: 16
+      categoryOrder: 16  
+  -
+    scope:
+      path: "help/getting-started/all"
+    values:
+      category: "Collabgeo Integration with DIKSHA"
+      categoryOrder: 17
   -
     scope:
       path: "help/administrator/manage-users"
