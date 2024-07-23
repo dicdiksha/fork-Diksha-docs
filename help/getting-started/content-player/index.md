@@ -105,6 +105,9 @@ The controls are different for different kinds of files. For example, the contro
   <tr>
     <td><img src="../images/content-player/h5p4.png"></td>
   </tr>
+  <tr>
+    <td><img src="../images/content-player/h5p5.png"></td>
+  </tr>
 </table>
 
 ### QUML player (For example, Practice question papers, test question papers and so on)
