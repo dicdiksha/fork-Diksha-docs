@@ -23,7 +23,7 @@ To view and read the release notes, click the view icon that corresponds to the 
   </tr>
   <tr>
     <td class="text-center">Release 5.2.0</td>
-    <td class="text-center">05/06/2024</td>
+    <td class="text-center">06/06/2024</td>
     <td class="text-center"><a href="pdf/DIKSHA-Release-Notes-V-5.2.0.pdf" target="_blank"><img src="../../assets/imgs/icons/view-release-notes.png"></a></td>
     <td class="text-center"><a href="pdf/DIKSHA-Release-Notes-V-5.2.0.pdf" download><img src="../../assets/imgs/icons/download-release-notes.png"></a></td>
   </tr>
