@@ -240,7 +240,7 @@ defaults:
       categoryOrder: 16  
   -
     scope:
-      path: "help/getting-started/all"
+      path: "help/getting-started/collabgeo-integration"
     values:
       category: "Collabgeo Integration with DIKSHA"
       categoryOrder: 17
