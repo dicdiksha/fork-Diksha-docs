@@ -97,9 +97,6 @@ The controls are different for different kinds of files. For example, the contro
     <th>Image with instructions</th>
   </tr>
   <tr>
-    <td><img src="../images/content-player/h5p2.png"></td>
-  </tr>
-  <tr>
     <td><img src="../images/content-player/h5p3.png"></td>
   </tr>
   <tr>
