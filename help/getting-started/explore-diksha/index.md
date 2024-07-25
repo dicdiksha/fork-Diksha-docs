@@ -95,7 +95,7 @@ On DIKSHA you can search for content using the Search bar, QR codes or Explore C
 
 ### Navigating DIKSHA Portal
 
-On DIKSHA you can now navigate DIKSHA portal pages using your keyboard. This is applicable for both old and new theme. You can also navigate with the help of screen reader tool (e.g. NVDA) and use these keyboard buttons to select and unselect: 
+On DIKSHA you can now navigate DIKSHA portal pages using your keyboard. This is applicable for both old and new theme. You can also navigate with the help of screen reader tool (e.g. NVDA) and use these keyboard buttons to select and unselect:
 
 **Tab** key - move to different options on the page using tab key. i.e. use tab key to jump from **Digital textbooks** to **Courses** and then to **TV classes** and so on.    
 
