@@ -240,6 +240,12 @@ defaults:
       categoryOrder: 16
   -
     scope:
+      path: "help/getting-started/collabgeo-integration-with-diksha"
+    values:
+      category: "Collabgeo Integration with DIKSHA"
+      categoryOrder: 17
+  -
+    scope:
       path: "help/administrator/manage-users"
     values:
       category: "Manage Users"
