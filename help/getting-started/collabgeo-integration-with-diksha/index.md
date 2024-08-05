@@ -14,11 +14,11 @@ When the user plays the content/ collection/ Question set collabgeo plugin would
 <table>
   <tr>
     <td>
-      <img src="../images/collabgeointegration/img01.png">
+      <img src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/help_center/collabgeointegration/img01.png">
     </td>
   </tr>
   <tr>
     <td>
-      <img src="../images/collabgeointegration/img02.png"></td>
+      <img src="https://obj.diksha.gov.in/ntp-content-production/homepage/prod/tenants/help_center/collabgeointegration/img02.png"></td>
   </tr>
 </table>
